@@ -60,9 +60,10 @@ Beautiify comprises a curated selection of beautifully designed components and a
 
 <h3>Home/Main Page :-</h3>
 
-<br><br>
+![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/c98e8194-798d-43fd-9aee-59ae65b25c33)<br><br>
 <h3>Components Page :-</h3>
 
+![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/7f8f4f2d-1d91-4d46-9403-6a497a83cc45)
 <br><br>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
