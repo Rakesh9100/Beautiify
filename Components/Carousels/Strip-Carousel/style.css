@@ -1,0 +1,115 @@
+div {
+    outline: 0px solid #FF0000;
+}
+
+body {
+    font-size: 12px;
+    font-family: verdana;
+}
+
+#carouselContainer {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto 0 auto;
+}
+
+.margin {
+    width: 10%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    font-size: 5em;
+}
+
+.margin input[type="button"] {
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    margin-top: 250px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0px solid red;
+    background-color: rgba(255, 200, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.margin input[type="button"]:hover {
+    background-color: rgba(255, 200, 0, 0.5);
+}
+
+#viewport {
+    width: 80%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#contentContainer {
+    width: 100%;
+    height: 100%;
+    background-color: #004400;
+    transition: transform 0.5s ease;
+}
+
+.StripContentContainer {
+    width: 10%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.StripContent {
+    width: 200%;
+    height: 100%;
+}
+
+.content {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #000044;
+    background-size: 1100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+}
+
+.StripContentContainer:nth-of-type(1) .StripContent .content {
+    background-position: 0% 50%;
+}
+
+.StripContentContainer:nth-of-type(2) .StripContent .content {
+    background-position: 10% 50%;
+}
+
+.StripContentContainer:nth-of-type(3) .StripContent .content {
+    background-position: 20% 50%;
+}
+
+.StripContentContainer:nth-of-type(4) .StripContent .content {
+    background-position: 30% 50%;
+}
+
+.StripContentContainer:nth-of-type(5) .StripContent .content {
+    background-position: 40% 50%;
+}
+
+.StripContentContainer:nth-of-type(6) .StripContent .content {
+    background-position: 50% 50%;
+}
+
+.StripContentContainer:nth-of-type(7) .StripContent .content {
+    background-position: 60% 50%;
+}
+
+.StripContentContainer:nth-of-type(8) .StripContent .content {
+    background-position: 70% 50%;
+}
+
+.StripContentContainer:nth-of-type(9) .StripContent .content {
+    background-position: 80% 50%;
+}
+
+.StripContentContainer:nth-of-type(10) .StripContent .content {
+    background-position: 90% 50%;
+}

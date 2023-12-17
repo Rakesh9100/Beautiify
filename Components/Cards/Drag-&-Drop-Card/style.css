@@ -1,0 +1,67 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 20px;
+    color: white;
+    background: #00B8A9;
+}
+
+.drop_container {
+    display: grid;
+    gap: 1em;
+    background-color: #f8e671;
+    padding: 60px;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 5px -7px #F8F3D4;
+}
+
+.drop_content {
+    display: flex;
+    align-items: center;
+}
+
+.drop_card {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    width: 300px;
+    justify-content: space-between;
+    background: #F6416C;
+    border-radius: 3em;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.drop_img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: -2.5em;
+}
+
+.about {
+    line-height: 0.7em;
+    letter-spacing: 1px;
+    margin: -10px 0 0 20px;
+}
+
+h1.name {
+    font-size: 1.2rem;
+    color: #FFDE7D;
+    font-weight: 200;
+}
+
+span.profession {
+    font-size: 0.9rem;
+    color: #650b65;
+}
+
+.sortable-drag {
+    opacity: 0;
+}

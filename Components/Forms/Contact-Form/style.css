@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    height: 100%;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    overflow-y: hidden;
+}
+
+.styling {
+    height: 100%;
+    width: 100%;
+}
+
+.circle1 {
+    height: 300px;
+    width: 150px;
+    border-radius: 50%;
+    background: linear-gradient(
+        90deg,
+        rgba(36, 175, 254, 1) 0%,
+        rgba(111, 141, 251, 1) 40%,
+        rgba(130, 132, 250, 1) 50%,
+        rgba(220, 92, 249, 1) 100%
+    );
+    position: absolute;
+    top: 20%;
+    left: -2%;
+    z-index: 1;
+}
+
+.circle2 {
+    height: 400px;
+    width: 150px;
+    border-radius: 50%;
+    background: linear-gradient(159deg, #399777, #e3dc3d);
+    position: absolute;
+    rotate: 30deg;
+    top: 50%;
+    left: 80%;
+    z-index: 2;
+}
+
+.main {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    backdrop-filter: blur(90px);
+}
+
+.navbar {
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.navbar .logo {
+    margin-left: 30px;
+    font-size: 28px;
+    margin-right: 120px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    list-style: none;
+}
+
+.navbar ul li {
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s all;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar ul li:hover {
+    color: white;
+}
+
+.main-form {
+    width: 60%;
+    padding-left: 20px;
+}
+
+.main .title {
+    color: white;
+    cursor: u;
+}
+
+.main-title {
+    margin: 10px 0;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(254, 222, 36);
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form {
+    margin-left: 60px;
+    padding: 60px 100px;
+}
+
+form {
+    padding-top: 25px;
+}
+
+.input-field input::placeholder {
+    color: white;
+    opacity: 1;
+    font-family: "Poppins", sans-serif;
+}
+
+.input-field {
+    position: relative;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    margin-bottom: 50px;
+}
+
+.input-field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #d3d3d3;
+    transition: 0.2s all;
+    cursor: text;
+}
+
+.input-field input {
+    width: 80%;
+    border: 0;
+    outline: 0;
+    padding: 5px 5px;
+    border-bottom: 1px solid #d3d3d3;
+    box-shadow: none;
+    color: white;
+    background: transparent;
+    height: 40px;
+    font-size: 18px;
+    transition: 0.5s all;
+}
+
+.input-field input:focus,
+.input-field input:hover {
+    border-color: white;
+}
+
+.input-field input:focus ~ label,
+.input-field input:hover ~ label {
+    font-size: 16px;
+    top: -24px;
+    color: rgb(254, 222, 36);
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-upload {
+    margin-right: 6%;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.upload-btn {
+    transition: 0.2s all;
+    border-radius: 10px;
+}
+
+.upload-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.file-upload label {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    height: 16px;
+    border-radius: 10px;
+}
+
+.custom-file-upload {
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upload-title {
+    font-size: 14px;
+    text-align: left;
+    width: 70%;
+    color: white;
+}
+
+.contact-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit-button button {
+    padding: 8px 13px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    color: white;
+    border: none;
+    outline: none;
+    transition: 0.2s all;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}

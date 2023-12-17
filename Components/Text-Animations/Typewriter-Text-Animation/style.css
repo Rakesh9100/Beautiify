@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-background: #ffedca;
+    --title-color: #333;
+    --title-font: monospace;
+    --typewriter-characters: 18;
+    --animation-time: 5s;
+    --animation-delay: 0.75s;
+    --accent-color: rgb(0, 48, 4);
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--body-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title-box {
+    width: max-content;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    transform: scale(2);
+    color: var(--title-color);
+    font-family: var(--title-font);
+    font-weight: 600;
+    position: relative;
+    width: max-content;
+}
+
+.title::before,
+.title::after,
+.sub-title::before,
+.sub-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.title::before {
+    background-color: var(--body-background);
+    animation: typewriter var(--animation-time) steps(var(--typewriter-characters)) var(--animation-delay) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+.title::after {
+    width: 0.12em;
+    background: var(--title-color);
+    animation: typewriter var(--animation-time) steps(var(--typewriter-characters)) var(--animation-delay) forwards, blinker 500ms infinite forwards;
+    opacity: 1;
+
+}
+
+@keyframes blinker {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    to {
+        opacity: 1;
+    }
+}

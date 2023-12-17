@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card-container{
+    height: 350px;
+    width: 250px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover .card{
+    transform: rotateY(180deg);
+}
+
+.card div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.card .front{
+    background:linear-gradient(45deg, #1717d7, #df3fdf);
+    color: white;
+}
+
+.card .back{
+    background:linear-gradient(135deg, #e14c1d, #feea3b);
+    color: white;
+    transform: rotateY(180deg);
+}

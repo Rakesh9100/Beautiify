@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop Card</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+</head>
+<body>
+    <div class="drop_container" id="drop-item">
+        <div class="drop_card">
+            <div class="drop_content">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" class="drop_img">
+                <div class="about">
+                    <h1 class="name">Joseph Gonzalez</h1>
+                    <span class="profession">Photographer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="drop_card">
+            <div class="drop_content">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="drop_img">
+                <div class="about">
+                    <h1 class="name">Albert Dera</h1>
+                    <span class="profession">Artist</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="drop_card">
+            <div class="drop_content">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="drop_img">
+                <div class="about">
+                    <h1 class="name">J. Michelle</h1>
+                    <span class="profession">Model</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="drop_card">
+            <div class="drop_content">
+                <img src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="drop_img">
+                <div class="about">
+                    <h1 class="name">Jefferson Santos</h1>
+                    <span class="profession">Developer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const dropItem = document.getElementById('drop-item');
+
+    new Sortable(dropItem, {
+        animation: 350,
+        dragClass: "sortable-drag"
+    });
+</script>
+</html>

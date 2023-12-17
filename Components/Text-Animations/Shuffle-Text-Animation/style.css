@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+
+@import url("//fonts.googleapis.com/css?family=Inconsolata:700");
+
+body {
+    background-color: rgb(23, 27, 48);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+p {
+    font-family: Inconsolata, source code pro, consolas, monospace;
+    margin-left: 50%;
+    transform: translateX(-6em);
+    font-size: 24px;
+    font-weight: bold;
+}

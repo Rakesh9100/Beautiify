@@ -1,0 +1,75 @@
+html,
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #1d1e22;
+}
+
+button {
+    position: relative;
+    width: 182px;
+    height: 90px;
+    background: transparent;
+    border: 1px solid #434343;
+    border-radius: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+button a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: hover;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(16px);
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+button a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1));
+    transform: skewX(30deg);
+    transition: transform ease 0.3s;
+}
+
+button a:hover::before {
+    transform: skewX(30deg) translateX(-150%);
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    right: 50%;
+    border-radius: 8px;
+    height: 24px;
+    width: 48px;
+    background: #ffff00;
+    filter: drop-shadow(0 0 12px #ffff00);
+    transform: translateX(50%);
+    transition: 0.4s ease;
+}
+
+button:hover::after {
+    bottom: 50%;
+    transform: translateY(50%) translateX(50%);
+    height: 30%;
+    width: 30%;
+}

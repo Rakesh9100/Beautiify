@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    color: #fff;
+    font-size: 100px;
+    letter-spacing: 5px;
+    font-family: 'Francois One', sans-serif;
+}
+
+#home {
+    background-color: rgb(17, 126, 89);
+}
+
+#gallery {
+    background-color: brown;
+}
+
+#contact {
+    background-color: rgb(68, 115, 204);
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #414141;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-link i {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #414141;
+    transition: all 0.3s;
+}
+
+.nav-link .title {
+    position: absolute;
+    background-color: #414141;
+    height: 100%;
+    padding-right: 65px;
+    padding-left: 20px;
+    line-height: 70px;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    z-index: -1;
+    font-family: 'Roboto Slab', serif;
+}
+
+.nav-item:hover i {
+    transform: scale(1.1);
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.nav-item:hover .title {
+    transform: translateX(0);
+}
