@@ -96,3 +96,26 @@ h1 {
     height: 41px;
     width: 41px;
 }
+
+/* Back To components */
+ 
+.back_to_components{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin: 0;
+}
+.back_to_components a{
+    text-decoration: none;
+}
+.back_to_components button{
+    background: #bad8e1;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #a4599a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
