@@ -211,7 +211,7 @@ section {
     justify-content: center;
     align-items: center;
     margin: 36px 25px;
-    transition: transform 0.1s;
+    transition: transform 0.3s, border 0.3s; /* Adds a smooth transition effect */
     background: var(--secondary);
     border: 5px solid var(--light);
     border-radius: 14px;
@@ -234,7 +234,8 @@ section {
 }
 
 .container .box:hover {
-    transform: rotate(10deg);
+    transform: scale(1.05); /* Make the box 5% larger on hover */
+    border: 5px solid var(--ternary); /* Change border color on hover */
 }
 
 .container .box .content h2 {
@@ -243,7 +244,6 @@ section {
     margin-top: 25px;
     margin-bottom: 5px;
 }
-
 /* Footer Css */
 
 .footer {
