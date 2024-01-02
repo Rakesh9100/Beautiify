@@ -195,14 +195,26 @@ li {
     outline: 0;
 }
 
-.carousel::before,
-.carousel__prev {
+.carousel__next,
+.carousel__prev{
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+.carousel::before{
     left: -1rem;
 }
 
-.carousel::after,
-.carousel__next {
+.carousel::after{
     right: -1rem;
+}
+
+.carousel__prev{
+    left:-0.1rem;
+}
+
+.carousel__next{
+    right:-0.1rem;
 }
 
 .carousel::before,
