@@ -33,6 +33,7 @@ html {
     background: rgba(152, 151, 151, 0.883);
 }
 
+
 body {
     justify-content: center;
     align-items: center;
@@ -41,11 +42,13 @@ body {
     margin:4%;
     /* background: var(--primary); */
     font-size: 1.4rem;
+
     background-image: url(/assets/images/bg7.png);
     background-repeat: no repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
+
 }
 
 section {
@@ -62,6 +65,9 @@ section {
     text-shadow: 2px 2px 2px black, 1px 1px 1px white;
 
 }
+
+
+
 
 .contain {
     display: flex;
@@ -89,6 +95,7 @@ h1 {
     text-align: center;
     text-shadow: 1px 1px 1px black, 1px 1px 1px white;
     font-size: 1.8em;
+
 }
 
 .preview {
@@ -99,6 +106,11 @@ h1 {
 .preview img {
     height: 41px;
     width: 41px;
+    transition: transform 0.3s ease; 
+}
+
+.preview img:hover {
+    transform: scale(1.2); 
 }
 
 .source {
@@ -109,4 +121,9 @@ h1 {
 .source img {
     height: 41px;
     width: 41px;
+    transition: transform 0.3s ease;
+}
+
+.source img:hover {
+transform: scale(1.2);
 }

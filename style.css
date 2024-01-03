@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
 :root {
     --primary: #ff1b82;
@@ -6,14 +6,14 @@
     --ternary: #1327ff;
     --light: #f7f26c;
     --dark: #f50414;
+
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
-    font-family: Ubuntu;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* Scrollbar Css */
@@ -40,7 +40,9 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
+
     font-size: 1.4rem;
+    
 }
 
 html {
@@ -59,7 +61,7 @@ header {
     /* position: sticky; */
     top: 0;
     z-index: 100;
-    /* background: linear-gradient(315deg, var(--primary), var(--light)); */
+
 }
 
 .navbar {
@@ -78,11 +80,15 @@ ul {
 }
 
 nav {
+    background: linear-gradient(315deg, #0082ba, var(--light));
+    border-radius: 20px;
+    margin-top: 20px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     box-shadow: 0px 3px 5px rgb(30, 30, 30);
+
 }
 
 nav ul {
@@ -91,7 +97,7 @@ nav ul {
 }
 
 nav li {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
     margin-right: 10px;
@@ -109,6 +115,10 @@ nav li:hover {
     font-family: Ubuntu;
     color: white;
     text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
+
+}
+.logo img{
+    filter: drop-shadow(2px 20px 10px rgba(0, 0, 0, 0.57)) hue-rotate(0.64turn);
 }
 .hamburger {
     display: none;
@@ -142,6 +152,7 @@ section {
     flex-direction: column;
     gap: 30px;
     z-index: 200;
+    
 }
 
 .comp-section .compcontainer h1 {
@@ -185,10 +196,27 @@ section {
     text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(57, 4, 100);
 }
 
+.compcontainer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+.headtxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: justify;
+    flex: 0.9;
+}
+
 .comp-section .compcontainer .started:hover {
+
     transform: scale(1.05);
     border: 2px solid var(black);
     background: rgba(255, 255, 255, 0.881);
+
 }
 
 .comp-section {
@@ -203,10 +231,12 @@ section {
 
 /* .comp-section h1 {
     font-size: 96px;
+    color: #0082ba !important;
 }
 
 .comp-section h3 {
     font-size: 32px;
+
 } */
 
 /* Container Section Css */
@@ -228,10 +258,12 @@ section {
     align-items: center;
     margin: 36px 25px;
     transition: transform 0.3s, border 0.3s; /* Adds a smooth transition effect */
+
     background: rgba(224, 202, 245, 0.743);
     border: 4px solid rgb(18, 100, 166);
     border-radius: 14px;
     box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
+
     cursor: pointer;
 }
 
@@ -246,10 +278,11 @@ section {
 
 .container .box .content i {
     font-size: 73px;
+
     color: rgb(18, 100, 166);
     text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172) ;
-}
 
+}
 .container .box:hover {
     transform: scale(1.05); 
     border: 5px solid rgb(51, 129, 193); 
@@ -261,7 +294,9 @@ section {
     color: rgb(37, 111, 172);
     margin-top: 25px;
     margin-bottom: 5px;
+
     text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172) ;
+
 }
 /* Footer Css */
 
@@ -338,6 +373,93 @@ footer p a {
     display: inline-block;
 }
 
+  
+  .btn {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    display: block;
+
+  }
+  
+  .text {
+    padding: 0 50px;
+    visibility: hidden;
+  }
+  
+  .flip-front, 
+  .flip-back {
+      position: absolute;
+      left: 60px;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transform-style: flat;
+      transform-style: flat;
+      -webkit-transition: -webkit-transform .3s ease-out;
+      -o-transition: -o-transform .3s ease-out;
+      transition: transform .3s ease-out;
+  }
+  
+  .flip-front {
+      color: #313131;
+      border: 2px solid #313131;
+      background-color: transparent;
+      -webkit-transform: rotateX(0deg) translateZ(25px);
+      -ms-transform: rotateX(0deg) translateZ(25px);
+      -o-transform: rotateX(0deg) translateZ(25px);
+      transform: rotateX(0deg) translateZ(25px);
+  }
+  
+  .flip-back {
+    color: #fff;
+    background-color: #313131;
+    border: 2px solid #313131;
+    -webkit-transform: rotateX(90deg) translateZ(25px);
+    -ms-transform: rotateX(90deg) translateZ(25px);
+    -o-transform: rotateX(90deg) translateZ(25px);
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  
+  .btn:hover .flip-front {
+      -webkit-transform: rotateX(-90deg) translateZ(25px);
+      -ms-transform: rotateX(-90deg) translateZ(25px);
+      -o-transform: rotateX(-90deg) translateZ(25px);
+      transform: rotateX(-90deg) translateZ(25px);
+  }
+  
+  .btn:hover .flip-back {
+      -webkit-transform: rotateX(0deg) translateZ(25px);
+      -ms-transform: rotateX(0deg) translateZ(25px);
+      -o-transform: rotateX(0deg) translateZ(25px);
+      transform: rotateX(0deg) translateZ(25px);
+  }
+
+  .box {
+    transform:
+      perspective(800px)
+      rotateY(25deg) scale(0.9)
+      rotateX(10deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: 1s ease all;
+    
+    &:hover {
+        transform:
+        perspective(800px)
+        rotateY(-2deg)
+        translateY(-10px)
+        rotateX(2deg)
+        scale(1);
+        filter: blur(0);
+        box-shadow: 40px 30px 50px rgba(0, 0, 0, 0.447);
+      opacity: 1;
+    }
+  }
+
 /* Media Queries */
 
 @media (max-width: 1030px) {
@@ -358,8 +480,14 @@ footer p a {
     }
 
     .compcontainer {
+        flex-direction: column-reverse;
         border: 1px transparent;
         padding-bottom: 10px;
+    }
+    .headtxt{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -403,9 +531,9 @@ footer p a {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 8rem;
         flex-direction: column;
-        background-color: var(--primary);
+        background-color: #0082ba;
         width: 100%;
         border-radius: 10px;
         text-align: center;
