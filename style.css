@@ -2,7 +2,7 @@
 
 :root {
     --primary: #ff1b82;
-    --secondary: #f4eff0;
+    --secondary: #ffffff;
     --ternary: #1327ff;
     --light: #f7f26c;
     --dark: #f50414;
@@ -19,22 +19,27 @@
 /* Scrollbar Css */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--secondary);
+    background: var(white);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--ternary);
+    background: rgba(152, 151, 151, 0.883);
 }
 
 body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #49025f;
+    /* background: #49025f; */
+    background-image: url(/assets/images/bg8.png);
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
     font-size: 1.4rem;
 }
 
@@ -51,10 +56,10 @@ html {
 }
 
 header {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 100;
-    background: linear-gradient(315deg, var(--primary), var(--light));
+    /* background: linear-gradient(315deg, var(--primary), var(--light)); */
 }
 
 .navbar {
@@ -63,8 +68,9 @@ header {
 
 a {
     text-decoration: none;
-    color: var(--secondary);
+    color: white;
     font-weight: 500;
+    text-shadow: 1px 1px 2px black, 1px 1px 1px white;
 }
 
 ul {
@@ -76,7 +82,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    box-shadow: 0px 5px 10px 0px var(--ternary);
+    box-shadow: 0px 3px 5px rgb(30, 30, 30);
 }
 
 nav ul {
@@ -92,7 +98,7 @@ nav li {
 }
 
 nav li:hover {
-    border-bottom: 0.4rem var(--light) solid;
+    border-bottom: 0.1rem var(--secondary) solid;
     transition: 0.3s ease-in-out;
 }
 
@@ -101,7 +107,8 @@ nav li:hover {
     font-weight: 700;
     margin-left: 10px;
     font-family: Ubuntu;
-    color: var(--dark);
+    color: white;
+    text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
 }
 .hamburger {
     display: none;
@@ -114,7 +121,7 @@ nav li:hover {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--secondary);
+    background-color: white;
 }
 
 /* Components Section Css */
@@ -139,12 +146,24 @@ section {
 
 .comp-section .compcontainer h1 {
     font-size: 7rem;
-    text-shadow: 2px 2px 10px var(--light);
+    text-shadow: 2px 2px 3px black, 1px 1px 2px white;
 }
 
 .comp-section .compcontainer h3 {
     font-weight: 300;
     font-size: 2.8rem;
+    margin:0.5%;
+    text-shadow: 2px 2px 2px black, 0.5px 0.5px 1px white;
+}
+
+.paragraph {
+    font-size: 2rem;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0.5px 0.5px 1px white;
 }
 
 .comp-section .compcontainer a {
@@ -152,29 +171,24 @@ section {
 }
 
 .comp-section .compcontainer .started {
+    height: 9vh;
     font-size: 25px;
-    font-weight: 900;
-    margin-top: 21px;
+    font-weight: 600;
+    margin-top: 20px;
     padding: 10px 45px;
-    border-radius: 45px;
-    color: var(--dark);
-    background: var(--light);
+    border-radius: 30px;
+    color: rgb(57, 4, 100);
+    background: rgba(224, 202, 245, 0.743);
     cursor: pointer;
     transition: transform 0.5s;
+    box-shadow: 2px 2px 2px black, 1px 1px 1px white;
+    text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(57, 4, 100);
 }
 
 .comp-section .compcontainer .started:hover {
-    transform: scale(1.1);
-    border: 5px solid var(--ternary);
-}
-
-.paragraph {
-    font-size: 2rem;
-    width: 70%;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-    color: var(--secondary);
+    transform: scale(1.05);
+    border: 2px solid var(black);
+    background: rgba(255, 255, 255, 0.881);
 }
 
 .comp-section {
@@ -187,13 +201,15 @@ section {
     z-index: 4;
 }
 
-.comp-section h1 {
+/* .comp-section h1 {
     font-size: 96px;
 }
 
 .comp-section h3 {
     font-size: 32px;
-}
+} */
+
+/* Container Section Css */
 
 .container {
     display: flex;
@@ -212,10 +228,10 @@ section {
     align-items: center;
     margin: 36px 25px;
     transition: transform 0.3s, border 0.3s; /* Adds a smooth transition effect */
-    background: var(--secondary);
-    border: 5px solid var(--light);
+    background: rgba(224, 202, 245, 0.743);
+    border: 4px solid rgb(18, 100, 166);
     border-radius: 14px;
-    box-shadow: 2px 2px 4px 2px var(--ternary);
+    box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
     cursor: pointer;
 }
 
@@ -230,22 +246,32 @@ section {
 
 .container .box .content i {
     font-size: 73px;
-    color: var(--dark);
+    color: rgb(18, 100, 166);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172) ;
 }
 
 .container .box:hover {
-    transform: scale(1.05); /* Make the box 5% larger on hover */
-    border: 5px solid var(--ternary); /* Change border color on hover */
+    transform: scale(1.05); 
+    border: 5px solid rgb(51, 129, 193); 
 }
 
 .container .box .content h2 {
     font-size: 23px;
-    color: var(--dark);
+    /* color: rgb(57, 4, 100); */
+    color: rgb(37, 111, 172);
     margin-top: 25px;
     margin-bottom: 5px;
+    text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172) ;
 }
 /* Footer Css */
 
+hr.line{
+    border: 1px solid gray;
+    /* width: 90%; */
+    margin-left: 10%;
+    margin-right:10%;
+    
+}
 .footer {
     display: flex;
     justify-content: center;
@@ -256,7 +282,7 @@ section {
 footer {
     position: relative;
     width: 100%;
-    background: var(--dark);
+    /* background: #49025f; */
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -303,7 +329,7 @@ footer p {
 }
 
 footer p a {
-    background-color: var(--ternary);
+    background-color: rgba(239, 230, 230, 0.551);
     color: var(--secondary);
     text-align: center;
     margin-top: 15px;
