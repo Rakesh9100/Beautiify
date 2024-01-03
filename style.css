@@ -233,7 +233,7 @@ section {
     justify-content: center;
     align-items: center;
     margin: 36px 25px;
-    transition: transform 0.1s;
+    transition: transform 0.3s, border 0.3s; /* Adds a smooth transition effect */
     background: var(--secondary);
     border: 1px solid cyan;
     border-radius: 14px;
@@ -263,7 +263,6 @@ section {
     margin-bottom: 5px;
     color: rgba(0, 151, 197, 0.542);
 }
-
 /* Footer Css */
 
 .footer {
