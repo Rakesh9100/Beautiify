@@ -40,28 +40,45 @@ body {
     line-height: 1.4;
     background: var(--primary);
     font-size: 1.4rem;
+    background-image: url('https://images.unsplash.com/photo-1686301170323-6fc146a9bfc7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover; /* Adjust the background size */
+    background-position: center; /* Adjust the background position */
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
+
 
 section {
     scroll-margin-top: 50px;
     z-index: 100;
 }
 
+
+
 .heading {
-    font-size: 41px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
-    color: var(--ternary);
+    color: rgb(189, 180, 180);
     text-align: center;
-    text-decoration: underline;
-    margin: 50px 0;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    position: relative;
+    transition: color 0.3s ease;
 }
+
+.heading:hover {
+    color: #fff; /* Change text color on hover */
+}
+
+
+
 
 .contain {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .box {
     box-sizing: border-box;
     border: 3px solid var(--light);
@@ -71,10 +88,20 @@ section {
     padding: 20px 40px;
     width: 370px;
     color: black;
+    background-color: rgba(255, 255, 255, 0.363);
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
 }
 
+.box:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+
 h1 {
-    color: var(--secondary);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    text-align:center;
 }
 
 .preview {
@@ -85,6 +112,11 @@ h1 {
 .preview img {
     height: 41px;
     width: 41px;
+    transition: transform 0.3s ease; 
+}
+
+.preview img:hover {
+    transform: scale(1.2); 
 }
 
 .source {
@@ -95,4 +127,9 @@ h1 {
 .source img {
     height: 41px;
     width: 41px;
+    transition: transform 0.3s ease;
+}
+
+.source img:hover {
+transform: scale(1.2);
 }
