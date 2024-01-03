@@ -1,19 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
 :root {
-    --primary: #ff1b82;
+    --primary: #650023;
     --secondary: #f4eff0;
-    --ternary: #1327ff;
-    --light: #f7f26c;
-    --dark: #f50414;
+    --ternary: #646571;
+    --light: #71bee4;
+    --dark: #0063ba;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
-    font-family: Ubuntu;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* Scrollbar Css */
@@ -34,8 +33,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #49025f;
+    background: #ffffff;
     font-size: 1.4rem;
+    
 }
 
 html {
@@ -54,7 +54,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: linear-gradient(315deg, var(--primary), var(--light));
 }
 
 .navbar {
@@ -72,11 +71,15 @@ ul {
 }
 
 nav {
+    background: linear-gradient(315deg, #0082ba, var(--light));
+    border-radius: 20px;
+    margin-top: 20px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     box-shadow: 0px 5px 10px 0px var(--ternary);
+    width: 90%;
 }
 
 nav ul {
@@ -85,7 +88,7 @@ nav ul {
 }
 
 nav li {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
     margin-right: 10px;
@@ -100,8 +103,10 @@ nav li:hover {
     font-size: 2.3rem;
     font-weight: 700;
     margin-left: 10px;
-    font-family: Ubuntu;
     color: var(--dark);
+}
+.logo img{
+    filter: drop-shadow(2px 20px 10px rgba(0, 0, 0, 0.57)) hue-rotate(0.64turn);
 }
 .hamburger {
     display: none;
@@ -135,6 +140,7 @@ section {
     flex-direction: column;
     gap: 30px;
     z-index: 200;
+    
 }
 
 .comp-section .compcontainer h1 {
@@ -163,6 +169,21 @@ section {
     transition: transform 0.5s;
 }
 
+.compcontainer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+.headtxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: justify;
+    flex: 0.9;
+}
+
 .comp-section .compcontainer .started:hover {
     transform: scale(1.1);
     border: 5px solid var(--ternary);
@@ -171,10 +192,9 @@ section {
 .paragraph {
     font-size: 2rem;
     width: 70%;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-    color: var(--secondary);
+    text-align: justify;
+    margin: auto 0;
+    color: black;
 }
 
 .comp-section {
@@ -189,10 +209,12 @@ section {
 
 .comp-section h1 {
     font-size: 96px;
+    color: #0082ba !important;
 }
 
 .comp-section h3 {
     font-size: 32px;
+    color: #502629 !important;
 }
 
 .container {
@@ -213,9 +235,9 @@ section {
     margin: 36px 25px;
     transition: transform 0.3s, border 0.3s; /* Adds a smooth transition effect */
     background: var(--secondary);
-    border: 5px solid var(--light);
+    border: 1px solid cyan;
     border-radius: 14px;
-    box-shadow: 2px 2px 4px 2px var(--ternary);
+
     cursor: pointer;
 }
 
@@ -230,19 +252,16 @@ section {
 
 .container .box .content i {
     font-size: 73px;
-    color: var(--dark);
+    color: #0082ba;
 }
 
-.container .box:hover {
-    transform: scale(1.05); /* Make the box 5% larger on hover */
-    border: 5px solid var(--ternary); /* Change border color on hover */
-}
 
 .container .box .content h2 {
     font-size: 23px;
     color: var(--dark);
     margin-top: 25px;
     margin-bottom: 5px;
+    color: rgba(0, 151, 197, 0.542);
 }
 /* Footer Css */
 
@@ -312,6 +331,93 @@ footer p a {
     display: inline-block;
 }
 
+  
+  .btn {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    display: block;
+
+  }
+  
+  .text {
+    padding: 0 50px;
+    visibility: hidden;
+  }
+  
+  .flip-front, 
+  .flip-back {
+      position: absolute;
+      left: 60px;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transform-style: flat;
+      transform-style: flat;
+      -webkit-transition: -webkit-transform .3s ease-out;
+      -o-transition: -o-transform .3s ease-out;
+      transition: transform .3s ease-out;
+  }
+  
+  .flip-front {
+      color: #313131;
+      border: 2px solid #313131;
+      background-color: transparent;
+      -webkit-transform: rotateX(0deg) translateZ(25px);
+      -ms-transform: rotateX(0deg) translateZ(25px);
+      -o-transform: rotateX(0deg) translateZ(25px);
+      transform: rotateX(0deg) translateZ(25px);
+  }
+  
+  .flip-back {
+    color: #fff;
+    background-color: #313131;
+    border: 2px solid #313131;
+    -webkit-transform: rotateX(90deg) translateZ(25px);
+    -ms-transform: rotateX(90deg) translateZ(25px);
+    -o-transform: rotateX(90deg) translateZ(25px);
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  
+  .btn:hover .flip-front {
+      -webkit-transform: rotateX(-90deg) translateZ(25px);
+      -ms-transform: rotateX(-90deg) translateZ(25px);
+      -o-transform: rotateX(-90deg) translateZ(25px);
+      transform: rotateX(-90deg) translateZ(25px);
+  }
+  
+  .btn:hover .flip-back {
+      -webkit-transform: rotateX(0deg) translateZ(25px);
+      -ms-transform: rotateX(0deg) translateZ(25px);
+      -o-transform: rotateX(0deg) translateZ(25px);
+      transform: rotateX(0deg) translateZ(25px);
+  }
+
+  .box {
+    transform:
+      perspective(800px)
+      rotateY(25deg) scale(0.9)
+      rotateX(10deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: 1s ease all;
+    
+    &:hover {
+        transform:
+        perspective(800px)
+        rotateY(-2deg)
+        translateY(-10px)
+        rotateX(2deg)
+        scale(1);
+        filter: blur(0);
+        box-shadow: 40px 30px 50px rgba(0, 0, 0, 0.447);
+      opacity: 1;
+    }
+  }
+
 /* Media Queries */
 
 @media (max-width: 1030px) {
@@ -332,8 +438,14 @@ footer p a {
     }
 
     .compcontainer {
+        flex-direction: column-reverse;
         border: 1px transparent;
         padding-bottom: 10px;
+    }
+    .headtxt{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -377,9 +489,9 @@ footer p a {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 8rem;
         flex-direction: column;
-        background-color: var(--primary);
+        background-color: #0082ba;
         width: 100%;
         border-radius: 10px;
         text-align: center;
