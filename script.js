@@ -14,3 +14,7 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+$(document).ready(function () {
+    $("#year").text(new Date().getFullYear());
+});
