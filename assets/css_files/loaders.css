@@ -33,7 +33,6 @@ html {
     background: rgba(152, 151, 151, 0.883);
 }
 
-
 body {
     justify-content: center;
     align-items: center;
@@ -61,8 +60,8 @@ section {
     text-align: center;
     margin: 50px 0;
     text-shadow: 2px 2px 2px black, 1px 1px 1px white;
-}
 
+}
 
 .contain {
     display: flex;
@@ -100,11 +99,6 @@ h1 {
 .preview img {
     height: 41px;
     width: 41px;
-    transition: transform 0.3s ease; 
-}
-
-.preview img:hover {
-    transform: scale(1.2); 
 }
 
 .source {
@@ -115,9 +109,4 @@ h1 {
 .source img {
     height: 41px;
     width: 41px;
-    transition: transform 0.3s ease;
-}
-
-.source img:hover {
-transform: scale(1.2);
 }

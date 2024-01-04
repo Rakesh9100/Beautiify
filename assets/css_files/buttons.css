@@ -41,13 +41,11 @@ body {
     margin:10%;
     /* background: var(--primary); */
     font-size: 1.4rem;
-
     background-image: url(/assets/images/bg7.png);
     background-repeat: no repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
-
 }
 
 section {
@@ -56,17 +54,14 @@ section {
 }
 
 .heading {
-
     font-size: 4em;
     font-weight: bolder;
     color: white;
     text-align: center;
     margin: 50px 0;
     text-shadow: 2px 2px 2px black, 1px 1px 1px white;
+
 }
-
-
-
 
 .contain {
     display: flex;
@@ -83,7 +78,6 @@ section {
     padding: 20px 40px;
     width: 370px;
     color: black;
- 
     background-color: #f0dee9b5;
 }
 .box:hover {
@@ -95,7 +89,6 @@ h1 {
     text-align: center;
     text-shadow: 1px 1px 1px black, 1px 1px 1px white;
     font-size: 1.8em;
-
 }
 
 .preview {
@@ -106,11 +99,6 @@ h1 {
 .preview img {
     height: 41px;
     width: 41px;
-    transition: transform 0.3s ease; 
-}
-
-.preview img:hover {
-    transform: scale(1.2); 
 }
 
 .source {
@@ -121,9 +109,4 @@ h1 {
 .source img {
     height: 41px;
     width: 41px;
-    transition: transform 0.3s ease;
-}
-
-.source img:hover {
-transform: scale(1.2);
 }

@@ -38,7 +38,7 @@ body {
     align-items: center;
     min-height: 100vh;
     line-height: 1.4;
-    margin:8%;
+    margin:4%;
     /* background: var(--primary); */
     font-size: 1.4rem;
     background-image: url(/assets/images/bg7.png);
@@ -48,13 +48,10 @@ body {
     background-position: 50% 50%;
 }
 
-
 section {
     /* scroll-margin-top: 50px; */
     z-index: 100;
 }
-
-
 
 .heading {
     font-size: 4em;
@@ -63,6 +60,7 @@ section {
     text-align: center;
     margin: 50px 0;
     text-shadow: 2px 2px 2px black, 1px 1px 1px white;
+
 }
 
 .contain {
@@ -70,6 +68,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .box {
     box-sizing: border-box;
     border: 3px solid rgb(255, 255, 255);
@@ -90,7 +89,8 @@ h1 {
     text-align: center;
     text-shadow: 1px 1px 1px black, 1px 1px 1px white;
     font-size: 1.8em;
-  }
+}
+
 .preview {
     margin-top: 45px;
     float: left;
@@ -99,11 +99,6 @@ h1 {
 .preview img {
     height: 41px;
     width: 41px;
-    transition: transform 0.3s ease; 
-}
-
-.preview img:hover {
-    transform: scale(1.2); 
 }
 
 .source {
@@ -114,9 +109,4 @@ h1 {
 .source img {
     height: 41px;
     width: 41px;
-    transition: transform 0.3s ease;
-}
-
-.source img:hover {
-transform: scale(1.2);
 }
