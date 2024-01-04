@@ -15,6 +15,4 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-$(document).ready(function () {
-    $("#year").text(new Date().getFullYear());
-});
+document.getElementById("year").textContent = new Date().getFullYear();
