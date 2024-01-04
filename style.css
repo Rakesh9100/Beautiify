@@ -31,11 +31,13 @@
 
 body {
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #ffffff;
-    font-size: 1.4rem;
-    
+align-items: center;
+min-height: 100vh;
+background-image: url('https://images.unsplash.com/photo-1637167473291-9f8caf792ded?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+background-repeat: no-repeat;
+background-size: cover;
+font-size: 1.4rem;
+
 }
 
 html {
@@ -89,14 +91,26 @@ nav ul {
 
 nav li {
     font-size: 1.8rem;
-    border-bottom: 0.4rem transparent solid;
-    transition: 0.3s ease-in-out;
+    position: relative;
     margin-right: 10px;
+    display: inline-block;
+    color: var(--light); /* Set the text color to the desired contrasting color */
 }
 
-nav li:hover {
-    border-bottom: 0.4rem var(--light) solid;
-    transition: 0.3s ease-in-out;
+nav li::after {
+    content: ""; 
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: pink; /* Set the initial color to the desired contrasting color */
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+nav li:hover::after {
+    width: 100%;
 }
 
 .logo {
@@ -104,10 +118,31 @@ nav li:hover {
     font-weight: 700;
     margin-left: 10px;
     color: var(--dark);
+    
 }
-.logo img{
+.logo img {
     filter: drop-shadow(2px 20px 10px rgba(0, 0, 0, 0.57)) hue-rotate(0.64turn);
+    transition: filter 0.3s ease-in-out, transform 0.1s ease-in-out; 
 }
+
+.logo img:hover {
+    animation: colorChange 2s infinite linear; 
+    transform: scale(1.02); }
+
+@keyframes colorChange {
+    0% {
+        filter: drop-shadow(2px 20px 10px rgba(0, 0, 0, 0.57)) hue-rotate(0.64turn);
+    }
+    50% {
+        filter: drop-shadow(2px 20px 10px rgba(0, 0, 0, 0.8)) hue-rotate(1turn); 
+    }
+    100% {
+        filter: drop-shadow(2px 20px 10px rgba(0, 0, 0, 0.57)) hue-rotate(0.64turn);
+    }
+}
+
+
+
 .hamburger {
     display: none;
 }
@@ -225,20 +260,31 @@ section {
     margin-top: 90px;
     padding: 50px 0;
 }
+.container .box {
+    /* ... your existing styles ... */
+    transform: translateY(0); /* Adjust the initial transform */
+}
 
+.container .box:hover {
+    transform: translateY(-5px); /* Move the box 5px up on hover */
+    /* ... rest of your hover styles ... */
+}
 .container .box {
     position: relative;
     width: 320px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 36px 25px;
-    transition: transform 0.3s, border 0.3s; /* Adds a smooth transition effect */
-    background: var(--secondary);
-    border: 1px solid cyan;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, border-color 0.3s; /* Adds a smooth transition effect */
+    background: #F08080; /* Light Coral */
+    border: 1px solid #FF6347; /* Tomato */
     border-radius: 14px;
-
     cursor: pointer;
+}
+
+.container .box:hover {
+    transform: translateY(-5px); /* Move the box 5px up on hover */
+    box-shadow: 0 15px 30px rgba(255, 105, 97, 0.4); /* Add a shadow for depth - Light Coral shadow */
+    background-color: #FA8072; /* Salmon on hover */
+    border-color: #FA8072; /* Salmon border on hover */
 }
 
 .container .box .content {
@@ -246,26 +292,15 @@ section {
     left: 0;
     padding: 20px 40px;
     text-align: center;
-    transition: 0.5s;
-    color: var(--dark);
+    transition: background-color 0.5s, color 0.5s; /* Add transition for background-color and color */
+    color: white; /* White text by default */
 }
 
-.container .box .content i {
-    font-size: 73px;
-    color: #0082ba;
-}
-.container .box:hover {
-    transform: scale(1.05); /* Make the box 5% larger on hover */
-    border: 5px solid var(--ternary); /* Change border color on hover */
+.container .box:hover .content {
+    color: #951b13;
 }
 
-.container .box .content h2 {
-    font-size: 23px;
-    color: var(--dark);
-    margin-top: 25px;
-    margin-bottom: 5px;
-    color: rgba(0, 151, 197, 0.542);
-}
+
 /* Footer Css */
 
 .footer {
