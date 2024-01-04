@@ -21,7 +21,8 @@ a {
   display: table;
   width: 1100px;
   margin: auto;
-  margin-top: 35px;
+  /* margin-top: 35px; */
+  top: 6.5rem;
   border-radius: 30px;
 }
 .info-wrap {
@@ -157,10 +158,17 @@ a {
   background: #31279d;
 }
 
+/* hover effects */
+.box-wrapper:hover, .info-wrap:hover {
+  transition: 0.4s;
+  filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.4));
+}
+
 /* Responsive css */
 
 @media only screen and (max-width: 767px) {
   .box-wrapper {
+    top: 1.5rem;
     width: 100%;
   }
   .info-wrap,
