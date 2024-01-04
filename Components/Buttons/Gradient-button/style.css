@@ -1,34 +1,26 @@
-body{
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
-    margin:0;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 15vw;
-    margin: 0 auto;
-    min-height: 100vh;
-  }
-  .btn {
-    flex: 1 1 auto;
-    margin: 10px;
-    padding: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
-   }
-  .btn:hover {
-    background-position: right center; 
-  }
- 
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+button {
+  background: linear-gradient(to right, #79b6da, #0a5064);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  height: 8vh;
+  width: 25vh;
+}
+
+button:hover {
+  background: linear-gradient(to right, #c6ece6, #08ae92);
+}
   
