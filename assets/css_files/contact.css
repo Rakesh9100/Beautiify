@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 body {
-  background: #fd517c;
+  /* background: #fd517c; */
+  background-image: url(/assets/images/bg.png);
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 body,
 input,
@@ -19,22 +24,24 @@ a {
 .box-wrapper {
   position: relative;
   display: table;
-  width: 1100px;
+  width: 75vw;
+  height: 85vh;
   margin: auto;
   margin-top: 35px;
   border-radius: 30px;
+  box-shadow: 3px 2px 4px rgb(0, 0, 0), 2px 1px 3px white;
 }
 .info-wrap {
   width: 35%;
-  height: 551px;
+  height: 85vh;
   padding: 40px;
   float: left;
   display: block;
   border-radius: 30px 0px 0px 30px;
   background: linear-gradient(
     144deg,
-    rgba(126, 39, 156, 1) 0%,
-    rgba(49, 39, 157, 1) 49%
+    rgba(126, 39, 156, 0.9) 0%,
+    rgba(49, 39, 157, 0.9) 49%
   );
   color: #fff;
 }
@@ -42,6 +49,7 @@ a {
   text-align: left;
   font-size: 28px;
   letter-spacing: 0.5px;
+  text-shadow: 1px 2px 2px black;
 }
 .info-sub-title {
   font-size: 18px;
@@ -49,6 +57,7 @@ a {
   margin-top: 17px;
   letter-spacing: 0.5px;
   line-height: 26px;
+  text-shadow: 1px 1px 2px black;
 }
 .info-details {
   list-style: none;
@@ -58,12 +67,15 @@ a {
   margin-top: 25px;
   font-size: 18px;
   color: #fff;
+  text-shadow: 1px 1px 2px black;
 }
 .info-details li i {
   background: #49025f;
   padding: 12px;
   border-radius: 50%;
   margin-right: 5px;
+  text-shadow: 1px 2px 2px black;
+  box-shadow: 1px 1px 2px black;
 }
 .info-details li a {
   color: #fff;
@@ -89,6 +101,8 @@ a {
   margin: 0px 5px;
   cursor: pointer;
   transition: all 0.5s;
+  text-shadow: 1px 2px 2px black;
+  box-shadow: 1px 1px 2px black;
 }
 .social-icons li i:hover {
   background: #fff;
@@ -96,16 +110,19 @@ a {
 }
 .form-wrap {
   width: 65%;
+  height: 85vh;
   float: right;
   padding: 40px 25px 35px 25px;
   border-radius: 0px 30px 30px 0px;
   background: #ecf0f3;
 }
 .form-title {
-  text-align: left;
+  font-family:Georgia, 'Times New Roman', Times, serif !important;
+  text-align: center;
   margin-left: 23px;
-  font-size: 28px;
+  font-size: 30px;
   letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px black, 1px 1px 2px white;
 }
 .form-fields {
   display: table;
@@ -139,22 +156,24 @@ a {
 }
 .submit-button {
   width: 96%;
-  height: 60px;
-  margin: 0px 12px;
+  height: 9vh;
+  margin: 20px 12px;
   border-radius: 30px;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
+  text-shadow: 1px 2px 2px black;
   outline: none;
   border: none;
   cursor: pointer;
   color: #fff;
   text-align: center;
   background: #49025f;
-  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
-  transition: 0.5s;
+  box-shadow: 2px 3px 8px #7d7a7a, -3px -3px 8px white;
+  transition: transform 0.5s;
 }
 .submit-button:hover {
   background: #31279d;
+  transform: scale(0.98);
 }
 
 /* Responsive css */
