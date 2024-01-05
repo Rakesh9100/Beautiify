@@ -1,0 +1,76 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.neu-container {
+    background: #f0f0f0;
+    box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 60%;
+}
+
+.neu-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.neu-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.neu-input {
+    background: #f0f0f0;
+    box-shadow: inset 5px 5px 10px #cbced1, inset -5px -5px 10px #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 10px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.neu-input:focus {
+    box-shadow: inset 3px 3px 6px #cbced1, inset -3px -3px 6px #ffffff;
+}
+
+.neu-button {
+    background: #f0f0f0;
+    box-shadow: inset 10px 10px 20px #cbced1, inset -10px -10px 20px #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.neu-button:hover {
+    box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #ffffff;
+}
+
+.neu-card {
+    background: #f0f0f0;
+    box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    width: 60%;
+}
