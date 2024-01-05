@@ -288,6 +288,8 @@ footer {
     position: relative;
     width: 100%;
     /* background: #49025f; */
+    /* background-color: rgba(67, 2, 85, 0.719); */
+    box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
