@@ -1,0 +1,26 @@
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+button {
+  background: linear-gradient(to right, #79b6da, #0a5064);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  height: 8vh;
+  width: 25vh;
+}
+
+button:hover {
+  background: linear-gradient(to right, #c6ece6, #08ae92);
+}
+  
