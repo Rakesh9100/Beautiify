@@ -56,10 +56,15 @@ html {
 }
 
 header {
-    /* position: sticky; */
+    position: sticky;
     top: 0;
     z-index: 100;
     /* background: linear-gradient(315deg, var(--primary), var(--light)); */
+    background-image: url(./assets/images/navbar.png);
+    background-repeat: no repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .navbar {
