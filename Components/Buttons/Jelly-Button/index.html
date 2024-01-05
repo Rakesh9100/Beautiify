@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>
+  </head>
+  <body>
+    <button class="button">
+      <span>Click me</span> 
+    </button>
+  </body>
+  <script type="text/javascript">
+    var $button = document.querySelector('.button');
+    $button.addEventListener('click', function() {
+      var duration = 0.3,
+          delay = 0.05;
+      TweenMax.to($button, duration, {scaleY: 1.2, ease: Expo.easeOut});
+      TweenMax.to($button, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
+      TweenMax.to($button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
+    });
+  </script>
+</html>
