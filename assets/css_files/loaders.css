@@ -41,7 +41,7 @@ body {
     margin:8%;
     /* background: var(--primary); */
     font-size: 1.4rem;
-    background-image: url(/assets/images/bg7.png);
+    background-image: url(../images/bg2.png);
     background-repeat: no repeat;
     background-attachment: fixed;
     background-size: cover;
