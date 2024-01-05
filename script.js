@@ -16,3 +16,14 @@ function closeMenu() {
 }
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+ //logo transform here
+
+ function hoverLogo() {
+    document.getElementById("logo").style.transform = "rotate(5deg) scale(1.1)";
+    document.getElementById("logo").style.transition = "transform 0.3s ease-in-out, width 0.3s ease-in, height 0.3s ease-out";
+}
+
+function unhoverLogo() {
+    document.getElementById("logo").style.transform = "rotate(0) scale(1)";
+}
