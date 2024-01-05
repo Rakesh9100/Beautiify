@@ -22,55 +22,46 @@ html {
 /* Scrollbar */
 
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--light);
+    background: var(white);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--dark);
+    background: rgba(152, 151, 151, 0.883);
 }
-
 
 body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     line-height: 1.4;
-    background: var(--primary);
+    margin:5%;
+    /* background: var(--primary); */
     font-size: 1.4rem;
-    background-image: url('https://images.unsplash.com/photo-1686301170323-6fc146a9bfc7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover; /* Adjust the background size */
-    background-position: center; /* Adjust the background position */
-    background-repeat: no-repeat;
-    overflow: hidden;
+    background-image: url(/assets/images/bg7.png);
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 section {
-    scroll-margin-top: 50px;
+    /* scroll-margin-top: 50px; */
     z-index: 100;
 }
 
 .heading {
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
     font-weight: bolder;
-    color: rgb(189, 180, 180);
+    color: white;
     text-align: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    position: relative;
-    transition: color 0.3s ease;
+    margin: 50px 0;
+    text-shadow: 2px 2px 2px black, 1px 1px 1px white;
+
 }
-
-.heading:hover {
-    color: #fff; /* Change text color on hover */
-}
-
-
-
 
 .contain {
     display: flex;
@@ -80,27 +71,24 @@ section {
 
 .box {
     box-sizing: border-box;
-    border: 3px solid var(--light);
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 14px;
-    box-shadow: 5px 5px 10px 1px var(--dark);
+    box-shadow: 3px 3px 6px 1px white;
     margin: 20px 50px;
     padding: 20px 40px;
     width: 370px;
     color: black;
-    background-color: rgba(255, 255, 255, 0.363);
-    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    background-color: #f0dee9b5;
 }
-
 .box:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-
+    transform: scale(1.05);
+    border: 2px solid white;
 }
-
-
 h1 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
-    text-align:center;
+    text-align: center;
+    text-shadow: 1px 1px 1px black, 1px 1px 1px white;
+    font-size: 1.8em;
 }
 
 .preview {
@@ -111,11 +99,6 @@ h1 {
 .preview img {
     height: 41px;
     width: 41px;
-    transition: transform 0.3s ease; 
-}
-
-.preview img:hover {
-    transform: scale(1.2); 
 }
 
 .source {
@@ -126,9 +109,4 @@ h1 {
 .source img {
     height: 41px;
     width: 41px;
-    transition: transform 0.3s ease;
-}
-
-.source img:hover {
-transform: scale(1.2);
 }
