@@ -1,0 +1,94 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E3F2FD;
+}
+
+.accordion {
+    height: auto;
+    max-width: 730px;
+    width: 100%;
+    background: #FFF;
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.accordion .accordion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 13px;
+    margin: 10px 0;
+    border-radius: 6px;
+    background: #f7d8bd;
+    border: 2px solid #fcbc84;
+    overflow: hidden;
+}
+
+.accordion-content:nth-child(2) {
+    background-color: #9dddfd;
+    border-color: #3ebcfb;
+}
+
+.accordion-content:nth-child(3) {
+    background-color: #eaf998;
+    border-color: #aed733;
+}
+
+.accordion-content:nth-child(4) {
+    background-color: #c4c4fd;
+    border-color: #8686f5;
+}
+
+.accordion-content.open {
+    padding-bottom: 10px;
+}
+
+.accordion-content header {
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s linear;
+}
+
+.accordion-content.open header {
+    min-height: 20px;
+}
+
+.accordion-content header .title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+}
+
+.accordion-content header i {
+    font-size: 25px;
+    color: #333;
+}
+
+.accordion-content .description {
+    height: 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+    padding: 0 15px;
+    transition: all 0.2s linear;
+}
