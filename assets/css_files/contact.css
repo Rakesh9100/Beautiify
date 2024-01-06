@@ -32,27 +32,14 @@ a {
     margin: auto;
     margin-top: 35px;
     border-radius: 30px;
-    filter: drop-shadow(-10px -10px 10px rgb(0, 0, 0,0.4));
+    /* filter: drop-shadow(-5px -5px 5px rgb(0, 0, 0,0.4)); */
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0,0.4));
 }
 
 .box-wrapper:hover{
-    transition: 0.25s;
-    filter: drop-shadow(0px 0px 25px rgb(0, 0, 0,0.9));
+    transition: 0.25s ;
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0,0.7));
 
-}
-
-.black-bg{
-    opacity: 0.3;
-    background-color: black;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    /* z-index: -1; */
-}
-
-.black-bg:hover{
-    transition: 0.35s;
-    opacity: 0;
 }
 
 .info-wrap {
