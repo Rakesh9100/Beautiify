@@ -1,0 +1,374 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 14px;
+	--color-text: #f0f0f0;
+	--color-bg: #000;
+	--color-link: #aaa;
+	--color-link-hover: #fff;
+	--page-padding: 1rem;
+}
+
+html,
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: "area-normal", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Page Loader */
+.js .loading::before,
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 1000;
+}
+
+.js .loading::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js .loading::after {
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	opacity: 0.4;
+	background: var(--color-link);
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.7, 0.7, 1);
+	}
+}
+
+a {
+	text-decoration: underline;
+	color: var(--color-link);
+	outline: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+a:focus {
+	/* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+	outline: none;
+}
+
+a:focus-visible {
+	/* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+	outline: 2px solid red;
+}
+
+.unbutton {
+	background: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	font: inherit;
+	cursor: pointer;
+}
+
+.unbutton:focus {
+	outline: none;
+}
+
+main {
+	padding: var(--page-padding);
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+.frame {
+	position: relative;
+	display: grid;
+	width: 100%;
+	grid-row-gap: 1rem;
+	grid-column-gap: 2rem;
+	pointer-events: none;
+	justify-items: start;
+}
+
+.frame--header {
+	margin-bottom: 10vh;
+	grid-template-columns: auto auto;
+	grid-template-areas: 'title' 'prev' 'back' 'sub' 'sponsor';
+}
+
+.frame--footer {
+	margin-top: 40vh;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+}
+
+.frame #cdawrap {
+	justify-self: start;
+}
+
+.frame a {
+	pointer-events: auto;
+	font-weight: 700;
+}
+
+.frame__title {
+	grid-area: title;
+	font-size: inherit;
+	margin: 0;
+}
+
+.frame__back {
+	grid-area: back;
+	justify-self: start;
+}
+
+.frame__prev {
+	grid-area: prev;
+	justify-self: start;
+}
+
+.frame__sub {
+	grid-area: sub;
+}
+
+.content {
+	display: grid;
+}
+
+.content--full {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+.content p {
+	justify-self: start;
+	margin-bottom: 20vh;
+	font-weight: 600;
+	opacity: 0.5;
+}
+
+.end {
+	justify-content: end;
+	justify-self: end;
+}
+
+.spaced {
+	margin: 20vh auto;
+}
+
+.gtext {
+	line-height: 1;
+	margin: 0;
+	display: grid;
+	font-weight: 400;
+	justify-content: center;
+	white-space: nowrap;
+	--text-width: 100px;
+	--gsplits: 4;
+	--gcolor: #fff;
+	--gsize: 1rem;
+	font-size: var(--gsize);
+	color: var(--gcolor);
+	--offset: calc(var(--text-width) / var(--gsplits));
+	grid-template-columns: repeat(var(--gsplits), var(--offset));
+}
+
+.size-s {
+	--gsize: clamp(2rem, 6vw, 3rem);
+	text-transform: lowercase;
+}
+
+.size-m {
+	--gsize: clamp(3rem, 10vw, 8rem);
+}
+
+.size-xl {
+	--gsize: clamp(5rem, 18vw, 22rem);
+	text-transform: uppercase;
+}
+
+.size-xxl {
+	--gsize: clamp(5rem, 25vw, 22rem);
+	text-transform: uppercase;
+}
+
+.font-1 {
+	font-weight: 400;
+	font-family: "panel-mono", monospace;
+}
+
+.font-2 {
+	font-family: "gabriella", sans-serif;
+	font-weight: 900;
+}
+
+.font-3 {
+	font-family: "cofo-peshka-variable", sans-serif;
+	font-variation-settings: "slnt" 0, "wght" 425, "wdth" 101;
+}
+
+.font-4 {
+	font-family: "gyst-variable", sans-serif;
+	font-variation-settings: "wght" 500;
+}
+
+.font-5 {
+	font-family: "neulis-sans", sans-serif;
+	font-weight: 300;
+}
+
+.font-6 {
+	font-family: "cofo-peshka-variable", sans-serif;
+	font-variation-settings: 'wdth' 50, 'wght' 800, 'slnt' 0;
+}
+
+.font-7 {
+	font-family: "marlide-display-variable", sans-serif;
+	font-variation-settings: "wght" 300;
+}
+
+.font-8 {
+	font-family: "gyst-variable", sans-serif;
+	font-variation-settings: "wght" 200;
+}
+
+.color-1 {
+	--gcolor: #8b1e18;
+}
+
+.color-2 {
+	--gcolor: #be2017;
+}
+
+.blendmode-1 {
+	mix-blend-mode: plus-lighter;
+}
+
+.shadow-1 {
+	text-shadow: 0 0 10px rgba(255 255 255 / 80%);
+}
+
+.shadow-2 {
+	text-shadow: 0 0 10px rgba(139 30 24 / 80%);
+}
+
+.gtext__box {
+	overflow: hidden;
+	position: relative;
+	will-change: transform;
+	margin-right: -0.5px;
+}
+
+.gtext__box-inner {
+	width: max-content;
+	position: relative;
+	display: block;
+	will-change: transform;
+}
+
+.deco {
+	display: grid;
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 10%;
+	z-index: -1;
+	filter: brightness(0.6);
+	pointer-events: none;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(36, 1fr);
+}
+
+.deco__item {
+	grid-column: 3 / span 1;
+	background-size: cover;
+	width: auto;
+	aspect-ratio: 2/3;
+	max-width: 33vw;
+	border-radius: 4px;
+}
+
+.deco__item:nth-child(2n) {
+	max-width: 18vw;
+	grid-column: 1 / span 3;
+}
+
+.deco__item:nth-child(3n) {
+	max-width: 12vw;
+	grid-column: 2 / span 2;
+}
+
+@media screen and (min-width: 53em) {
+	body {
+		--page-padding: 2rem 3rem;
+	}
+
+	.frame--header {
+		grid-template-columns: auto auto auto auto 1fr;
+		grid-template-areas: 'title prev back sub sponsor';
+	}
+
+	.frame #cdawrap {
+		justify-self: end;
+	}
+
+	.deco {
+		grid-template-columns: repeat(5, auto);
+	}
+
+	.deco__item {
+		grid-column: 5 / span 1;
+		max-width: 20vw;
+	}
+
+	.deco__item:nth-child(2n) {
+		max-width: 18vw;
+		grid-column: 1 / span 5;
+	}
+
+	.deco__item:nth-child(3n) {
+		max-width: 7vw;
+		grid-column: 4 / span 2;
+	}
+
+	.deco__item:nth-child(4n) {
+		grid-column: 3 / span 3;
+	}
+
+	.deco__item:nth-child(5n) {
+		max-width: 10vw;
+		grid-column: 2 / span 4;
+	}
+}
