@@ -11,6 +11,8 @@ body, html {
   .liquid-button {
     margin: auto;
     font-weight: bold;
+    justify-self: center;
+    align-self: center;
   }
   .liquid-button path {
     cursor: pointer;
