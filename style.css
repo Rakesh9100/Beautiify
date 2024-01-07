@@ -174,7 +174,7 @@ section {
     margin-top: 50px;
 }
 
-.comp-section .compcontainer .started {
+.started {
     height: 9vh;
     font-size: 25px;
     font-weight: 600;
@@ -224,7 +224,7 @@ section {
     padding: 50px 0;
 }
 
-.container .box {
+.box {
     position: relative;
     width: 320px;
     display: flex;
@@ -395,6 +395,14 @@ footer p a {
         width: auto;
         height: 80vh;
     }
+
+    .started{
+        height: 7vh;
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 19px;
+        padding: 8px 40px;
+    }
 }
 
 @media (max-width: 925px) {
@@ -408,6 +416,14 @@ footer p a {
     .compcontainer {
         border: 1px transparent;
         padding-bottom: 10px;
+    }
+
+    .started{
+        height: 6vh;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 19px;
+        padding: 6px 35px;
     }
 }
 
@@ -428,6 +444,13 @@ footer p a {
         height: 6rem;
         width: 50rem;
     }
+    .started{
+        height: 6vh;
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 15vh;
+        padding: 8px 30px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -446,6 +469,7 @@ footer p a {
         font-size: 1.6rem;
     }
 }
+
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
@@ -477,11 +501,6 @@ footer p a {
         padding-bottom: 40px;
     }
 
-    .compcontainer p {
-        font-size: 120%;
-        text-align: center;
-    }
-
     .nav-menu.active {
         left: 0;
     }
@@ -511,5 +530,25 @@ footer p a {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+@media (max-width: 400px){
+    .paragraph{
+        width: 100%;
+        padding: 2px;
+    }
+
+    .started{
+        height: 5vh;
+        font-size: 20px;
+        font-weight: 100;
+        margin-top: 6vh;
+        padding: 5px 30px;
+    }
+
+    .box{
+        width: 280px;
     }
 }
