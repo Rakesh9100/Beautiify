@@ -1,12 +1,13 @@
-body, html {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    user-select: none;
-    display: grid;
-    background: black;
-  }
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:#000;
+  margin:0;
+  padding:0;
+}
+
   
   .liquid-button {
     margin: auto;
