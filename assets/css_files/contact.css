@@ -148,7 +148,10 @@ a {
 }
 
 .form-fields {
-    display: table;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
     width: 100%;
     padding: 15px 5px 5px 5px;
 }
@@ -240,5 +243,34 @@ a {
 
     .submit-button {
         margin: 10px 0px;
+    }
+}
+
+
+@media (max-width: 600px){
+    .info-wrap {
+        width: 100%;
+        height: 65vh;
+    }
+
+    .submit-button {
+        width: 100%;
+        height: 6vh;
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px){
+    .info-wrap {
+        width: 100%;
+        height: 65vh;
+    }
+
+    .submit-button {
+        width: 100%;
+        height: 6vh;
+        font-weight: 400;
+        font-size: 15px;
     }
 }
