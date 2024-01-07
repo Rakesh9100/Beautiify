@@ -453,12 +453,14 @@ footer p a {
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: var(--primary);
+        background-color: rgba(111, 17, 116, 0.341);
+        backdrop-filter: blur(6.5px);
         width: 100%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        height: 100vh;
     }
 
     .compcontainer {
