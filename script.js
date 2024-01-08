@@ -47,3 +47,16 @@ window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 document.getElementById("year").textContent = new Date().getFullYear();
+function myFunction(x){
+    x.classList.toggle("fa-moon");
+}
+let theme_changer = document.querySelector('#theme_changer');
+theme_changer.addEventListener('click', function() {
+    document.body.classList.toggle('dark');
+});
+
+let nav_dark = document.querySelector('#nav_dark');
+nav_dark.addEventListener('click', function() {
+    nav_dark.classList.toggle('nav-dark'); // Fix: Use nav_dark.classList
+});
+
