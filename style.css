@@ -58,6 +58,7 @@ html {
     position: sticky;
     top: 0;
     z-index: 100;
+    width: 100%;
     /* background: linear-gradient(315deg, var(--primary), var(--light)); */
     background-repeat: no repeat;
     background-image: url(./assets/images/navbar.png);
@@ -69,6 +70,7 @@ html {
     position: sticky;
     top: 0;
     z-index: 100;
+    width:100%;
     /* background: linear-gradient(315deg, var(--primary), var(--light)); */
     background-repeat: no repeat;
     background-image: url(./assets/images/bg3.png);
@@ -77,9 +79,11 @@ html {
     background-position: 50% 50%;
 }
 .header3{
-    position: sticky;
-    top: 0;
+    position:fixed;
+    top:0;
+    right: 0;
     z-index: 100;
+    width: 100%;
     /* background: linear-gradient(315deg, var(--primary), var(--light)); */
     background-repeat: no repeat;
     background-image: url(./assets/images/bg2.png);
