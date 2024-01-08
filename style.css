@@ -55,9 +55,6 @@ html {
 }
 
 .nav-bg1{
-    position: sticky;
-    top: 0;
-    z-index: 100;
     /* background: linear-gradient(315deg, var(--primary), var(--light)); */
     background-image: url(./assets/images/navbar.png);
     background-repeat: no repeat;
@@ -66,9 +63,6 @@ html {
     background-position: 50% 50%;
 }
 .nav-bg2{
-    position: sticky;
-    top: 0;
-    z-index: 100;
     /* background: linear-gradient(315deg, var(--primary), var(--light)); */
     background-image: url(./assets/images/bg3.png);
     background-repeat: no repeat;
@@ -77,9 +71,6 @@ html {
     background-position: 50% 50%;
 }
 .nav-bg3{
-    position: sticky;
-    top: 0;
-    z-index: 100;
     /* background: linear-gradient(315deg, var(--primary), var(--light)); */
     background-image: url(./assets/images/bg2.png);
     background-repeat: no repeat;
@@ -90,7 +81,12 @@ html {
 }
 
 .navbar {
+    position:fixed;
     margin: 0 auto;
+    right:2px;
+    top:0;
+    width:100%;
+    z-index: 100;
 }
 
 a {
@@ -473,17 +469,23 @@ footer p a {
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
-        left: -100%;
+        right:-100%;
         top: 5rem;
-        flex-direction: column;
-        background-color: var(--primary);
-        width: 100%;
+        flex-direction:column;
+        background-color: rgba(255, 255, 255, 0.8);
+        width:25%;
+        z-index: 1000;
         border-radius: 10px;
-        text-align: center;
+        text-align: right;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        align-items: flex-end;
     }
 
+    .nav-menu li a{
+        padding: .5rem 1rem;
+        color:black;
+    }
     .compcontainer {
         padding: 40px;
     }
@@ -504,11 +506,11 @@ footer p a {
     }
 
     .nav-menu.active {
-        left: 0;
+        right: 0;
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: .2rem .5rem;
         font-size: 20px;
     }
 
