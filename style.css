@@ -174,7 +174,7 @@ section {
     margin-top: 50px;
 }
 
-.started {
+.comp-section .compcontainer .started {
     height: 9vh;
     font-size: 25px;
     font-weight: 600;
@@ -224,7 +224,7 @@ section {
     padding: 50px 0;
 }
 
-.box {
+.container .box {
     position: relative;
     width: 320px;
     display: flex;
