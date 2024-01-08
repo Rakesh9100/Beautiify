@@ -54,39 +54,44 @@ html {
     scroll-behavior: smooth;
 }
 
-.nav-bg1{
+.header1{
+    position: sticky;
+    top: 0;
+    z-index: 100;
     /* background: linear-gradient(315deg, var(--primary), var(--light)); */
+    background-repeat: no repeat;
     background-image: url(./assets/images/navbar.png);
-    background-repeat: no repeat;
     /* background-attachment: fixed; */
     background-size: cover;
     background-position: 50% 50%;
 }
-.nav-bg2{
+.header2{
+    position: sticky;
+    top: 0;
+    z-index: 100;
     /* background: linear-gradient(315deg, var(--primary), var(--light)); */
+    background-repeat: no repeat;
     background-image: url(./assets/images/bg3.png);
-    background-repeat: no repeat;
     /* background-attachment: fixed; */
     background-size: cover;
     background-position: 50% 50%;
 }
-.nav-bg3{
+.header3{
+    position: sticky;
+    top: 0;
+    z-index: 100;
     /* background: linear-gradient(315deg, var(--primary), var(--light)); */
-    background-image: url(./assets/images/bg2.png);
     background-repeat: no repeat;
+    background-image: url(./assets/images/bg2.png);
     /* background-attachment: fixed; */
     background-size: cover;
     background-position: 50% 50%;
-
 }
+
 
 .navbar {
-    position:fixed;
     margin: 0 auto;
-    right:2px;
-    top:0;
-    width:100%;
-    z-index: 100;
+    z-index: 1000; 
 }
 
 a {
@@ -493,23 +498,19 @@ footer p a {
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
-        right:-100%;
+        left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.8);
-        width:25%;
-        z-index: 100;
+        background-color: rgba(111, 17, 116, 0.341);
+        backdrop-filter: blur(6.5px);
+        width: 100%;
         border-radius: 10px;
-        text-align: right;
+        text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        align-items: flex-end;
+        height: 100vh;
     }
 
-    .nav-menu li a{
-        padding: .5rem 1rem;
-        color:black;
-    }
     .compcontainer {
         padding: 40px;
     }
@@ -530,11 +531,11 @@ footer p a {
     }
 
     .nav-menu.active {
-        right: 0;
+        left: 0;
     }
 
     .nav-item {
-        margin: .2rem .5rem;
+        margin: 2.5rem 0;
         font-size: 20px;
     }
 
@@ -580,4 +581,3 @@ footer p a {
         width: 280px;
     }
 }
-
