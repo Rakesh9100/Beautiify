@@ -54,20 +54,48 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
+.header1{
     position: sticky;
     top: 0;
     z-index: 100;
+    width: 100%;
     /* background: linear-gradient(315deg, var(--primary), var(--light)); */
-    background-image: url(./assets/images/navbar.png);
     background-repeat: no repeat;
+    background-image: url(./assets/images/navbar.png);
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.header2{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width:100%;
+    /* background: linear-gradient(315deg, var(--primary), var(--light)); */
+    background-repeat: no repeat;
+    background-image: url(./assets/images/bg3.png);
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.header3{
+    position:fixed;
+    top:0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    /* background: linear-gradient(315deg, var(--primary), var(--light)); */
+    background-repeat: no repeat;
+    background-image: url(./assets/images/bg2.png);
     /* background-attachment: fixed; */
     background-size: cover;
     background-position: 50% 50%;
 }
 
+
 .navbar {
     margin: 0 auto;
+    z-index: 1000; 
 }
 
 a {
@@ -102,7 +130,7 @@ nav li {
 }
 
 nav li:hover {
-    border-bottom: 0.1rem var(--secondary) solid;
+    border-bottom: 0.1rem white solid;
     transition: 0.3s ease-in-out;
 }
 
@@ -557,4 +585,3 @@ footer p a {
         width: 280px;
     }
 }
-
