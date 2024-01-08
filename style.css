@@ -54,7 +54,7 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
+.nav-bg1{
     position: sticky;
     top: 0;
     z-index: 100;
@@ -64,6 +64,29 @@ header {
     /* background-attachment: fixed; */
     background-size: cover;
     background-position: 50% 50%;
+}
+.nav-bg2{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* background: linear-gradient(315deg, var(--primary), var(--light)); */
+    background-image: url(./assets/images/bg3.png);
+    background-repeat: no repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.nav-bg3{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* background: linear-gradient(315deg, var(--primary), var(--light)); */
+    background-image: url(./assets/images/bg2.png);
+    background-repeat: no repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: 50% 50%;
+
 }
 
 .navbar {
