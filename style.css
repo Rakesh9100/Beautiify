@@ -130,7 +130,7 @@ nav li {
 }
 
 nav li:hover {
-    border-bottom: 0.1rem var(--secondary) solid;
+    border-bottom: 0.1rem white solid;
     transition: 0.3s ease-in-out;
 }
 
