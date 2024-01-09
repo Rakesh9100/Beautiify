@@ -31,10 +31,9 @@
     height: 100vh;
     background-color: rgb(12, 12, 12);
     text-align: center;
+    /* overflow: hidden; */
 }
-.loader::-webkit-scrollbar {
-    display: none;
-}
+
 .loader .topheading{
     position: absolute;
     top: 5%;
@@ -76,7 +75,9 @@ margin-right: .58vw;
     color: rgb(0, 255, 42);
         background-color:#0e100f;
     }
-
+.reveal {
+        overflow: auto;
+    }
 .reveal .parent {
         /* background-color: red;  */
         display:block; 

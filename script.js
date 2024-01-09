@@ -75,6 +75,10 @@ function preloader(){
         duration: 1,
         transition: "all 0.2s ease",
         ease: Power3.easeInOut,
+        onComplete: function () {
+            document.querySelector(".main").style.display = "block";
+            document.querySelector(".loader").style.overflow = "visible";
+          },
       });
     }
 preloader();
