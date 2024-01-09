@@ -37,7 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    line-height: 0.1em;
+    line-height: 1.4;
     margin:10%;
     /* background: var(--primary); */
     font-size: 1.4rem;
