@@ -52,10 +52,4 @@ body{
       calc(-2.3*var(--basic)) calc(1.7*var(--basic)),0 0
     }
   }
-  h1{
-    font-size: 50px;
-    font-family:cursive;
-    text-align: center;
-      font-weight: 600;
-      text-decoration:underline;}
   
