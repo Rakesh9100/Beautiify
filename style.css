@@ -197,6 +197,9 @@ section {
   transition: transform 0.5s;
   box-shadow: 2px 2px 2px black, 1px 1px 1px white;
   text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(57, 4, 100);
+} 
+.dark-container{
+    background-image: linear-gradient(to left bottom, #000000, #191818, #2a292a, #3d3c3c, #514f4f);
 }
 
 .comp-section .compcontainer .started:hover {
