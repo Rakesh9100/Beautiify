@@ -190,10 +190,10 @@ section {
 
 .paragraph {
     font-size: 2rem;
-    width: 60%;
+    width: 70%;
     text-align: center;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     color: white;
     text-shadow: 1px 1px 2px black, 0.5px 0.5px 1px white;
 }
@@ -224,7 +224,7 @@ section {
 }
 
 .comp-section {
-    height: 70vh;
+    height: 90vh;
     display: grid;
     color: var(--secondary);
     justify-content: center;
@@ -248,17 +248,17 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 90px;
+    /* margin-top: 90px; */
     padding: 50px 0;
 }
 
 .container .box {
     position: relative;
-    width: 320px;
+    width: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 36px 25px;
+    margin: 20px;
     transition: transform 0.3s, border 0.3s; /* Adds a smooth transition effect */
     background: rgba(224, 202, 245, 0.743);
     border: 4px solid rgb(18, 100, 166);
@@ -421,7 +421,7 @@ footer p a {
         flex-direction: column;
         text-align: center;
         width: auto;
-        height: 80vh;
+        height: 90vh;
     }
 
     .started{
@@ -438,7 +438,7 @@ footer p a {
         flex-direction: column;
         text-align: center;
         width: auto;
-        height: 85vh;
+        height: 110vh;
     }
 
     .compcontainer {
@@ -460,7 +460,6 @@ footer p a {
         flex-direction: column;
         text-align: center;
         width: auto;
-        height: 95vh;
     }
 
     .compcontainer {
@@ -484,7 +483,7 @@ footer p a {
 
 @media (max-width: 500px) {
     .comp-section {
-        height: 98vh;
+        height: 130vh;
     }
 
     .compcontainer {
@@ -496,6 +495,9 @@ footer p a {
         height: 5rem;
         width: 30rem;
         font-size: 1.6rem;
+    }
+    .container{
+        margin-top:50px ;
     }
 }
 
@@ -513,11 +515,7 @@ footer p a {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         height: 100vh;
-    }
-
-    .compcontainer {
-        padding: 40px;
-    }
+    }   
 
     .compcontainer h1 {
         font-size: 400%;
