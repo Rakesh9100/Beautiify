@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(29, 28, 28);
+    background: radial-gradient(circle, rgb(241, 243, 242), rgb(1, 86, 138));
 }
 
 .img-carousel {

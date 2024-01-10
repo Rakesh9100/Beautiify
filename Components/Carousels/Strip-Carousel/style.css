@@ -5,12 +5,13 @@ div {
 body {
     font-size: 12px;
     font-family: verdana;
+    background: radial-gradient(circle, rgb(241, 243, 242), rgb(0, 7, 103));
 }
 
 #carouselContainer {
     width: 800px;
     height: 600px;
-    margin: 0 auto 0 auto;
+    margin: 4rem auto 0 auto;
 }
 
 .margin {
