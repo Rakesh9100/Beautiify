@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
+body {
+    background: #FCE4EC;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ------------------------- Separate line ------------------------- */
+
+:root {
+    --breadcrumb-theme-1: #E91E63;
+    /* color | background active */
+    --breadcrumb-theme-2: #FFFFFF;
+    /* background | color active */
+    --breadcrumb-theme-3: linear-gradient(45deg, #E91E63, #111);
+    /* hover */
+    --breadcrumb-theme-4: linear-gradient(45deg, #E91E63, #222);
+    /* arrow */
+}
+
+.breadcrumb {
+
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 5px;
+    counter-reset: flag;
+}
+
+.breadcrumb__step {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: left;
+    font-size: 1rem;
+    line-height: 36px;
+    padding: 0 20px 0 60px;
+    position: relative;
+    background: var(--breadcrumb-theme-2);
+    color: var(--breadcrumb-theme-1);
+    transition: background 0.5s;
+}
+
+.breadcrumb__step:first-child {
+    padding-left: 46px;
+    border-radius: 5px 0 0 5px;
+}
+
+.breadcrumb__step:first-child::before {
+    left: 14px;
+}
+
+.breadcrumb__step:last-child {
+    border-radius: 0 5px 5px 0;
+    padding-right: 20px;
+}
+
+.breadcrumb__step:last-child::after {
+    content: none;
+}
+
+.breadcrumb__step::before {
+    content: counter(flag);
+    counter-increment: flag;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-weight: bold;
+    background: var(--breadcrumb-theme-2);
+    box-shadow: 0 0 0 1px var(--breadcrumb-theme-1);
+}
+
+.breadcrumb__step::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    transform: scale(0.707) rotate(45deg);
+    z-index: 1;
+    border-radius: 0 5px 0 50px;
+    background: var(--breadcrumb-theme-2);
+    transition: background 0.5s;
+    box-shadow: 2px -2px 0 2px var(--breadcrumb-theme-4);
+}
+
+.breadcrumb__step--active {
+    color: var(--breadcrumb-theme-2);
+    background: var(--breadcrumb-theme-1);
+}
+
+.breadcrumb__step--active::before {
+    color: var(--breadcrumb-theme-1);
+}
+
+.breadcrumb__step--active::after {
+    background: var(--breadcrumb-theme-1);
+}
+
+.breadcrumb__step:hover {
+    color: var(--breadcrumb-theme-2);
+    background: var(--breadcrumb-theme-3);
+}
+
+.breadcrumb__step:hover::before {
+    color: var(--breadcrumb-theme-1);
+}
+
+.breadcrumb__step:hover::after {
+    color: var(--breadcrumb-theme-1);
+    background: var(--breadcrumb-theme-3);
+}
