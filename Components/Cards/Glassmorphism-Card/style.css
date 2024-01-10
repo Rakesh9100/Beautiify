@@ -1,7 +1,7 @@
 body {
     display: grid;
     place-items: center;
-    background: #110d17;
+    background: radial-gradient(circle, rgb(51, 51, 51), hsl(0, 0%, 0%));
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
