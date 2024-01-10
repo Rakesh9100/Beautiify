@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: rgb(197, 59, 82);
+    width: 100%;
+}
+
+.cup{
+    height:140px;
+    width: 180px;
+    border: 6px solid black;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    border-radius: 0px 0px 70px 70px;
+    box-shadow: 0px 0px 0px 6px black;
+    background: url(image/liquid.jpeg );
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: 0px 140px;
+    animation: fill 5s infinite;
+    
+
+
+    
+
+}
+.handle{
+    width: 70px;
+    border: 10px solid black;
+    height: 60px;
+    margin-top: 20%;
+    left: 54%;
+    position: relative;
+    border-radius: 0px 15px 70px 0px;
+    box-shadow: 9px solid wheat;
+    
+}
+
+@keyframes fill{
+    0%{
+        background-position: 0px 140px;
+    }
+    20%
+    {
+        background-position: -450px 100px;
+    }
+    40%{
+        background-position: -900px 50px;
+    }
+    80%{
+        background-position: -1000px 0px;
+    }
+    100%{
+        background-position: 0px 140px;;
+    }
+}
