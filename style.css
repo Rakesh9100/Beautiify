@@ -224,7 +224,7 @@ section {
 }
 
 .comp-section {
-    height: 90vh;
+    height: 80vh;
     display: grid;
     color: var(--secondary);
     justify-content: center;
@@ -248,17 +248,17 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* margin-top: 90px; */
+    margin-top: 25px;
     padding: 50px 0;
 }
 
 .container .box {
     position: relative;
-    width: 270px;
+    width: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 25px;
     transition: transform 0.3s, border 0.3s; /* Adds a smooth transition effect */
     background: rgba(224, 202, 245, 0.743);
     border: 4px solid rgb(18, 100, 166);
