@@ -5,7 +5,11 @@ ScrollReveal({
 	delay: 400,
 });
 
-ScrollReveal().reveal(".navbar,.logo,.heading,.sub-head,.paragraph,.started", {
+ScrollReveal().reveal(".navbar,.heading,.box,.paragraph,.started", {
 	delay: 400,
+	origin: "top",
+});
+ScrollReveal().reveal(".started,.logo,#contributor,.sub-head,.footer", {
+	delay: 500,
 	origin: "top",
 });
