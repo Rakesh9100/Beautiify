@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,26 +10,32 @@
     <link rel="stylesheet" type="text/css" href="./assets/css_files/contributor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        // Dynamically load preloader HTML, CSS, and JS files
+        window.onload = function () {
+            var preloaderHTML = document.createElement("link");
+            preloaderHTML.href = "./assets/html_files/preloader.html";
+            preloaderHTML.rel = "import";
+            document.head.appendChild(preloaderHTML);
+
+            var preloaderCSS = document.createElement("link");
+            preloaderCSS.href = "./assets/css_files/preloader.css";
+            preloaderCSS.rel = "stylesheet";
+            document.head.appendChild(preloaderCSS);
+
+            var preloaderJS = document.createElement("script");
+            preloaderJS.src = "./assets/js_files/preloader.js";
+            document.head.appendChild(preloaderJS);
+        };
+    </script>
     <title>Beautiify</title>
 </head>
 
-<body> 
-
-<!-- Preloader code Starts -->
-<div class="loader">
-    <div class="topheading">
-        <h5 class="reveal">Beautiify</h5>
-        <h5 class="reveal">&copy; 2024</h5>
-    </div>
-<h1 class="reveal"><span>Refining</span> <span>UI</span> <span>Magic </span>
-</h1>
-</div>
-<div class="green"></div>
-<!-- Preloader code ends -->
-<div class="main">
-    <header>
-        <nav class="navbar">
-            <a href="./index.html">
+<body>
+    <header class="header1">
+        <nav class="navbar" class="nav-bg1">
+            <a href="index.html">
                 <div class="logo">Beautiify</div>
             </a>
             <ul class="nav-menu">
@@ -59,8 +65,8 @@
             <div class="logo">
                 <img src="./assets/images/logo.png" alt="" />
             </div>
-            <h1>Beautiify</h1>
-            <h3>Every component, on the right place!!</h3>
+            <h1 class="heading">Beautiify</h1>
+            <h3 class="sub-head">Every component, on the right place!!</h3>
             <p class="paragraph">
                 Beautiify comprises a curated selection of beautifully designed
                 components and animations that can be seamlessly incorporated into any
@@ -89,6 +95,15 @@
                     <h2>Backgrounds</h2>
                 </div>
             </div>
+        </a>
+        <a href="./assets/html_files/breadcrumbs.html" target="_blank">
+            <div class="box">
+                <div class="content">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <h2>Breadcrumbs</h2>
+                </div>
+            </div>
+
         </a>
         <a href="./assets/html_files/buttons.html" target="_blank">
             <div class="box">
@@ -152,7 +167,7 @@
 
     <!-- Contributors section -->
     <div class="contributors">
-        <h1>Our Valuable Contributors</h1>
+        <h1 class="heading">Our Valuable Contributors</h1>
         <div id="contributor"></div>
     </div>
 
@@ -166,23 +181,19 @@
                     <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li>
                     <a href="https://github.com/Rakesh9100" target="_blank"><i class="fab fa-github"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i
-                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-facebook"></i></a>
                 </li>
                 <li>
-                    <a href="https://discord.com/users/944144134950748170" target="_blank"><i
-                            class="fab fa-discord"></i></a>
+                    <a href="https://discord.com/users/944144134950748170" target="_blank"><i class="fab fa-discord"></i></a>
                 </li>
             </ul>
             <p>
@@ -192,14 +203,16 @@
             </p>
         </footer>
     </div>
-</div>
+
     <!-- SCROLL TO TOP BUTTON -->
     <div id="progress">
         <span id="progress-value">&#x1F815;</span>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="./script.js"></script>
-    <script src="./assets/js/contributor.js"></script>
+    <script src="../js_files/preloader.js"></script>
+    <script src="./assets/js_files/contributor.js"></script>
+    <script src="./scroll-reveal.js"></script>
 </body>
 
 </html>

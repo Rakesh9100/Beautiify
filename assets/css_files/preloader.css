@@ -1,0 +1,90 @@
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.loader{
+    position: absolute;
+    z-index:999;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(12, 12, 12);
+    text-align: center;
+    /* overflow: hidden; */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.loader .topheading{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.topheading h5{
+    font-family: 'Tektur', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    font-weight: 3vw;
+    font-style: italic;
+    color: #fefbe0;
+}
+
+.loader h1{
+    font-family: 'Tektur', sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.2vw;
+    font-weight: 4vw;
+    font-style: italic;
+    width: 100%;
+    max-width: 100vw;
+    /* background-color: rgb(224, 26, 26); */
+    display: flex;
+    justify-content: center;
+}
+.loader h1 span{
+    font-family: 'Tektur', sans-serif;
+    font-weight: 2.8vw;
+color: #fefbe0;
+margin-right: .58vw;
+}
+.loader h1 span::selection{
+    color: rgb(0, 255, 42);
+        background-color:#0e100f;
+    }
+.reveal {
+        overflow: auto;
+    }
+.reveal .parent {
+        /* background-color: red;  */
+        display:block; 
+        overflow-y: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+}
+.reveal .parent .child{
+    display: block;
+    /* transform: translateY(-70%);  will do this in gsap*/
+}
+.parent .child span{
+    display: inline-block;
+}
+.green{
+    z-index:150;
+    position: absolute;
+    top: 100%;
+    background-color: #0eeda7;
+    width: 100%;
+    height: 0vh;
+    background-image: linear-gradient( #01fdad, #0eeda7,#fefbe0);
+    
+}
+.green::-webkit-scrollbar {
+    display: none;
+}
