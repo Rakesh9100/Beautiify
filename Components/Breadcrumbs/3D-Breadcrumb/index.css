@@ -1,0 +1,87 @@
+body {
+  padding: 0 100px;
+  background-color: #09271b;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  }
+
+  .center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+ul.breadcrumb {
+  margin-left: 50px;
+  display: inline-block;
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+    }
+
+ul.breadcrumb li {
+  float: right;
+  padding: 5px;
+  background-color: #06291a;
+  border-radius: 50px;
+  position: relative;
+  margin-left: -50px;
+  transition: all 0.2s;
+  margin-top: 3px;
+}
+
+ul.breadcrumb li a {
+  overflow : hidden;
+  border-radius: 50px;
+  transition: all 0.2s;
+  text-decoration: none;
+  height: 50px;
+  color: #021d14;
+  background-color: #b5e2ce;
+  text-align: center;
+  min-width: 50px;
+  display: block;
+  line-height: 50px;
+  padding-left: 52px;
+  padding-right: 22px;
+  width: 50px;
+  }
+
+ul.breadcrumb li a .icon {
+  display: inline-block;
+}
+
+ul.breadcrumb li a .text {
+  display: none;
+  opacity: 0;
+}
+
+ul.breadcrumb li a:hover {
+  width: 150px;
+  background-color: #6ebfaa;
+}
+
+ul.breadcrumb li a:hover .text {
+  display: inline-block;
+  opacity: 1;
+}
+
+ul.breadcrumb li:last-child {
+  ul.breadcrumb li a {
+    padding: 0;
+  }
+
+  ul.breadcrumb li:hover {
+    padding: 3px;
+    margin-top: 0;
+    ul.breadcrumb li a {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+}
