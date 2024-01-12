@@ -1,0 +1,43 @@
+name: Style Changing Request 👯‍♂️
+description: Suggest a style design
+title: '[Style]'
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this template!
+  - type: textarea
+    id: style-idea
+    attributes:
+      label: What's the style idea?
+      placeholder: Add descriptions
+      value: 'We need to improve'
+
+  - type: checkboxes
+    id: no-duplicate-issues
+    attributes:
+      label: "Checklist"
+      options:
+        - label: "I have checked the existing issues."
+          required: true
+
+        - label: "I follow [Contributing Guidelines](https://github.com/Rakesh9100/Beautiify/blob/main/.github/CONTRIBUTING_GUIDELINES.md) of this project."
+          required: true
+
+        - label: "I am a IWOC'24 contributor."
+          required: false
+
+        - label: "I am a JWOC'24 contributor."
+          required: false
+
+        - label: "I am a SWOC'24 contributor."
+          required: false
+  
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our "[Code of Conduct](https://github.com/Rakesh9100/Beautiify/blob/main/.github/CODE_OF_CONDUCT.md)"
+      options:
+        - label: I agree to follow this project's "[Code of Conduct](https://github.com/Rakesh9100/Beautiify/blob/main/.github/CODE_OF_CONDUCT.md)".
+          required: true

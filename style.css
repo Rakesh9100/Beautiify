@@ -203,7 +203,7 @@ section {
 }
 
 .comp-section .compcontainer .started {
-    height: 9vh;
+    height: auto;
     font-size: 25px;
     font-weight: 600;
     margin-top: 20px;
@@ -580,6 +580,7 @@ footer p a {
     }
 
     .box{
-        width: 280px;
+        width: 280px !important;
+        margin: 15px !important;
     }
 }
