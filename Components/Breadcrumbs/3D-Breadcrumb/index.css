@@ -29,7 +29,7 @@ body {
   }
   
   ul.breadcrumb li a {
-    overflow: hidden;
+    overflow : hidden;
     border-radius: 50px;
     transition: all 0.2s;
     text-decoration: none;
