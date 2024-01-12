@@ -12,22 +12,21 @@
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        // Dynamically load preloader HTML, CSS, and JS files
         window.onload = function () {
-            var preloaderHTML = document.createElement("link");
-            preloaderHTML.href = "./assets/html_files/preloader.html";
-            preloaderHTML.rel = "import";
-            document.head.appendChild(preloaderHTML);
+var preloaderHTML = document.createElement("link");
+preloaderHTML.href = "./assets/html_files/preloader.html";
+preloaderHTML.rel = "import";
+document.head.appendChild(preloaderHTML);
 
-            var preloaderCSS = document.createElement("link");
-            preloaderCSS.href = "./assets/css_files/preloader.css";
-            preloaderCSS.rel = "stylesheet";
-            document.head.appendChild(preloaderCSS);
+var preloaderCSS = document.createElement("link");
+preloaderCSS.href = "./assets/css_files/preloader.css";
+preloaderCSS.rel = "stylesheet";
+document.head.appendChild(preloaderCSS);
 
-            var preloaderJS = document.createElement("script");
-            preloaderJS.src = "./assets/js_files/preloader.js";
-            document.head.appendChild(preloaderJS);
-        };
+var preloaderJS = document.createElement("script");
+preloaderJS.src = "./assets/js_files/preloader.js";
+document.head.appendChild(preloaderJS);
+};
     </script>
     <title>Beautiify</title>
 </head>
