@@ -21,20 +21,14 @@
 /* Scrollbar Css */
 /* scrollbar-color: auto | color | dark | light | initial | inherit */
 
-::-webkit-scrollbar {
-    width: 8px;
-}
 
-::-webkit-scrollbar-track {
-    background: var(white);
-}
 
 ::-webkit-scrollbar-thumb {
     background: rgba(152, 151, 151, 0.883);
 }
 
 ::-webkit-scrollbar {
-    width: 19px;
+    width: 13px;
   }
   
   ::-webkit-scrollbar-track {
