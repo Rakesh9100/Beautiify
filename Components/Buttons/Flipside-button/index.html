@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipside button</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer> </script>
+</head>
+<body>
+    
+    <div class="btn">
+        <div class="btn-back">
+            <p>Are you sure you want to do that?</p>
+            <button class="yes">Yes</button>
+            <button class="no">No</button>
+        </div>
+        <div class="btn-front">Delete</div>
+    </div>
+
+    <p class="description">Try clicking different sides of the button</p>
+
+    <script src="script.js"></script>
+
+    <!-- Third party scripts and sharing UI -->
+
+    <p class="project-title">Flipside – A button that seamlessly transitions from action to confirmation</p>
+
+   
+    <style type="text/css" media="screen">
+        .project-title {
+            position: absolute;
+            left: 25px;
+            bottom: 8px;
+
+            font-size: 16px;
+            color: #444;
+        }
+
+        .credits {
+            position: absolute;
+            right: 20px;
+            bottom: 25px;
+            font-size: 15px;
+            z-index: 20;
+            color: #444;
+            vertical-align: middle;
+        }
+
+        .credits * + * {
+            margin-left: 15px;
+        }
+
+        .credits a {
+            padding: 8px 10px;
+            color: #444;
+            border: 2px solid #999;
+            text-decoration: none;
+        }
+
+        .credits a:hover {
+            border-color: #555;
+            color: #222;
+        }
+
+        @media screen and (max-width: 1040px) {
+            .project-title {
+                display: none;
+            }
+
+            .credits {
+                width: 100%;
+                left: 0;
+                right: auto;
+                bottom: 0;
+                padding: 30px 0;
+                background: #ddd;
+                text-align: center;
+            }}
+    </style>
+     
+</body>
+</html>

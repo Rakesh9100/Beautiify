@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin-top: 20px;
     color: white;
-    background: #00B8A9;
+    background:radial-gradient(circle, #d3d199, #e78b1b);
 }
 
 .drop_container {
@@ -16,6 +16,7 @@ body {
     padding: 60px;
     border-radius: 0.5em;
     box-shadow: 10px 10px 5px -7px #F8F3D4;
+    box-shadow: rgba(254, 145, 3, 0.788) 5px 5px 1px;
 }
 
 .drop_content {

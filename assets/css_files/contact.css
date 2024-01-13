@@ -85,8 +85,9 @@ a {
 
 .info-details li i {
     background: #49025f;
-    padding: 12px;
+    padding: 9px;
     border-radius: 50%;
+    font-size: 14px;
     margin-right: 5px;
     text-shadow: 1px 2px 2px black;
     box-shadow: 1px 1px 2px black;
@@ -94,6 +95,7 @@ a {
 
 .info-details li a {
     color: #fff;
+    font-size: 16px;
     text-decoration: none;
 }
 

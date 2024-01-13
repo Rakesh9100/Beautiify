@@ -45,9 +45,11 @@
 
 body {
     max-width: 37.5rem;
-    margin: 0 auto;
+    margin: 8.5rem auto;
     padding: 0 1.25rem;
     font-family: 'Lato', sans-serif;
+    background: radial-gradient(circle, rgb(184, 247, 242), rgb(241, 86, 153));
+
 }
 
 * {
