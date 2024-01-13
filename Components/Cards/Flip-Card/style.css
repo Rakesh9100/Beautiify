@@ -1,3 +1,7 @@
+body {
+    background-image: url('background-image.jpg');
+}
+
 .container{
     display: flex;
     align-items: center;
@@ -30,16 +34,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Genos', sans-serif;
+    font-size: 20px;
 }
 
 .card .front{
-    background:linear-gradient(45deg, #1717d7, #df3fdf);
+    background:linear-gradient(45deg, #f2f2f2, #0d0d0d);
     color: white;
 }
 
 .card .back{
-    background:linear-gradient(135deg, #e14c1d, #feea3b);
-    color: white;
+    background:radial-gradient(circle, #cdcccc, #181818);
+    color: #0d0d0d;
     transform: rotateY(180deg);
 }

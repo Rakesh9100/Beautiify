@@ -6,14 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" type="text/css" href="../css_files/contributor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Beautiify | Contact Us</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet" href="../css_files/contact.css" />
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <script src="../js_files/commonnav.js"></script>
 </head>
 
 <body>
+    <header class="header2">
+        <nav class="navbar">
+            <a href="../../index.html">
+                <div class="logo">Beautiify</div>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../index.html#components" class="nav-link">Components</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../index.html#contributor" class="nav-link">Contributors</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        </header>
+
     <section id="section-wrapper">
         <div class="box-wrapper">
             <div class="info-wrap">
@@ -23,19 +55,14 @@
                 </h3>
                 <ul class="info-details">
                     <li>
-                        <i class="fas fa-phone-alt"></i>
-                        <span>Phone:</span>
-                        <a href="tel:+ 1235 2355 98">+ 1235 2355 98</a>
-                    </li>
-                    <li>
                         <i class="fas fa-paper-plane"></i>
                         <span>Email:</span>
-                        <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                        <a href="mailto:roshanrakesh7362@gmail.com">roshanrakesh7362@gmail.com</a>
                     </li>
                     <li>
                         <i class="fas fa-globe"></i>
                         <span>Website:</span>
-                        <a href="#">beautiify.netlify.app/</a>
+                        <a href="https://beautiify.netlify.app/">beautiify.netlify.app</a>
                     </li>
                 </ul>
                 <ul class="social-icons">
@@ -51,26 +78,20 @@
                 </ul>
             </div>
             <div class="form-wrap">
-                <form action="#" method="POST">
+                <form name="Beautiify Contact" autocomplete="off" netlify>
                     <h2 class="form-title">Send us a message :)</h2>
                     <div class="form-fields">
                         <div class="form-group">
-                            <input type="text" class="fname" placeholder="First Name" />
+                            <input type="text" class="fname" name="name" placeholder="Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="lname" placeholder="Last Name" />
+                            <input type="email" class="email" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="email" placeholder="Mail" />
-                        </div>
-                        <div class="form-group">
-                            <input type="number" class="phone" placeholder="Phone" />
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" id="" placeholder="Write your message"></textarea>
+                            <textarea name="message" placeholder="Your Message" required></textarea>
                         </div>
                     </div>
-                    <input type="submit" value="Send Message" class="submit-button" />
+                    <button type="submit" class="submit-button">Send Message</button>
                 </form>
             </div>
         </div>
