@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+
 :root {
     --primary: #ff1b82;
     --secondary: #ffffff;
@@ -14,21 +15,33 @@
     box-sizing: border-box;
     font-family: poppins;
     font-family: Ubuntu;
+    /* scrollbar-color: auto  rgb(202, 74, 95) pink pink initial inherit */
 }
 
 /* Scrollbar Css */
+/* scrollbar-color: auto | color | dark | light | initial | inherit */
 
-::-webkit-scrollbar {
-    width: 8px;
-}
 
-::-webkit-scrollbar-track {
-    background: var(white);
-}
 
 ::-webkit-scrollbar-thumb {
     background: rgba(152, 151, 151, 0.883);
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(228, 53, 82);
+    border-radius: 10px;
+  }
+  
 
 body {
     justify-content: center;
