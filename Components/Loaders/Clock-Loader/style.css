@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(52, 119, 235);
+  }
+
+  .clock{
+      border-radius: 70px;
+      border: 3px solid #fff;
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    display: block;
+    width: 120px;
+    height: 120px;
+  }
+
+  .clock .number {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.clock .number:nth-child(1) {
+    top: 10%;
+    left: 50%;
+}
+
+.clock .number:nth-child(2) {
+    top: 50%;
+    left: 85%;
+}
+
+.clock .number:nth-child(3) {
+    top: 90%;
+    left: 50%;
+}
+
+.clock .number:nth-child(4) {
+    top: 50%;
+    left: 15%;
+}
+
+/* Add similar rules for other numbers */
+
+
+  .clock:after{
+      content: "";
+      position: absolute;
+      background-color: #35ee2b;
+      top: 13px;
+      left: 48%;
+      height: 50px;
+      width: 4px;
+      border-radius: 5px;
+      -webkit-transform-origin: 50% 97%;
+              transform-origin: 50% 97%;
+      -webkit-animation: grdAiguille 5s linear infinite;
+              animation: grdAiguille 2s linear infinite;
+  }
+
+  @-webkit-keyframes grdAiguille{
+      0%{-webkit-transform:rotate(0deg);}
+      100%{-webkit-transform:rotate(360deg);}
+  }
+
+  @keyframes grdAiguille{
+      0%{transform:rotate(0deg);}
+      100%{transform:rotate(360deg);}
+  }
+
+  .clock:before{
+      content: "";
+      position: absolute;
+      background-color: #ea345c;
+      top: 24px;
+      left: 48%;
+      height: 40px;
+      width: 4px;
+      border-radius: 5px;
+      -webkit-transform-origin: 50% 94%;
+              transform-origin: 50% 94%;
+      -webkit-animation: ptAiguille 12s linear infinite;
+              animation: ptAiguille 12s linear infinite;
+  }
+
+  @-webkit-keyframes ptAiguille{
+      0%{-webkit-transform:rotate(0deg);}
+      100%{-webkit-transform:rotate(360deg);}
+  }
+
+  @keyframes ptAiguille{
+      0%{transform:rotate(0deg);}
+      100%{transform:rotate(360deg);}
+  }
