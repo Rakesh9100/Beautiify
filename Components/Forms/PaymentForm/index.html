@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="payment form.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+    <form>
+<h1>PAYMENT FORM</h1>
+        <p>Required fields are followed by *</p>
+        <h2>Contact Information</h2>
+        <p>NAME:*<input type="text" placeholder="username" name="name" required></p>
+            <p>GENDER :
+            Male<input type="radio" name="gender" id="male">
+            female<input type="radio" name="gender" id="female">
+        </p>
+
+        <p>
+            ADDRESS: <textarea name="address" id="address" cols="20"  rows="4" placeholder="Enter Your Address Here"></textarea>
+        </p>
+        <p>EMAIL:*<input type="email" name="email" id="email"required ></p>
+        <p>PINCODE:* <input type="number" name="pincode" id="pincode" required></p>
+
+        <h2>Payment Information</h2>
+        <p>CARD TYPE:*
+            <select name="card_type" id="card_type">
+            <option value="">- - select a card type - -</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="debitcard">DebitCard</option>
+                <option value="creditcard">CreditCard</option>
+                <option value="prepaidcard">PrepaidCard</option>
+            </select>
+        </p>
+        <p>CARD NUMBER:*<input type="number" name="card_number" id="card_number"required ></p>
+        <p>EXPIRATION DATE:* <input type="date" name="exp_date" id="exp_date"required ></p>
+        <p>CVV:*<input type="password" name="cvv" id="cvv"required ></p>
+        <p>
+        <input type="submit" class="button" value="Pay Now">  <input type="reset" class="button" value="Clear">
+        </p>
+    <hr>
+    <footer><a href="#">&copy;2024|created by prithwi hegde</a>
+    </footer>
+    </div>
+</body>
+</html>
