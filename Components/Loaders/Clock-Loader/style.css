@@ -1,7 +1,11 @@
 body {
     background-color: rgb(52, 119, 235);
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 9a285423d8cfb5bc1575d0d99416bc78b3da3b44
   .clock{
       border-radius: 70px;
       border: 3px solid #fff;
@@ -14,7 +18,11 @@ body {
     width: 120px;
     height: 120px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 9a285423d8cfb5bc1575d0d99416bc78b3da3b44
   .clock .number {
     position: absolute;
     font-size: 14px;
@@ -45,7 +53,11 @@ body {
 
 /* Add similar rules for other numbers */
 
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 9a285423d8cfb5bc1575d0d99416bc78b3da3b44
   .clock:after{
       content: "";
       position: absolute;
@@ -60,17 +72,29 @@ body {
       -webkit-animation: grdAiguille 5s linear infinite;
               animation: grdAiguille 2s linear infinite;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 9a285423d8cfb5bc1575d0d99416bc78b3da3b44
   @-webkit-keyframes grdAiguille{
       0%{-webkit-transform:rotate(0deg);}
       100%{-webkit-transform:rotate(360deg);}
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 9a285423d8cfb5bc1575d0d99416bc78b3da3b44
   @keyframes grdAiguille{
       0%{transform:rotate(0deg);}
       100%{transform:rotate(360deg);}
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 9a285423d8cfb5bc1575d0d99416bc78b3da3b44
   .clock:before{
       content: "";
       position: absolute;
@@ -85,12 +109,20 @@ body {
       -webkit-animation: ptAiguille 12s linear infinite;
               animation: ptAiguille 12s linear infinite;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 9a285423d8cfb5bc1575d0d99416bc78b3da3b44
   @-webkit-keyframes ptAiguille{
       0%{-webkit-transform:rotate(0deg);}
       100%{-webkit-transform:rotate(360deg);}
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 9a285423d8cfb5bc1575d0d99416bc78b3da3b44
   @keyframes ptAiguille{
       0%{transform:rotate(0deg);}
       100%{transform:rotate(360deg);}
