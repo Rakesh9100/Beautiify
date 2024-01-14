@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-
 :root {
     --primary: #ff1b82;
     --secondary: #ffffff;
@@ -15,13 +14,9 @@
     box-sizing: border-box;
     font-family: poppins;
     font-family: Ubuntu;
-    /* scrollbar-color: auto  rgb(202, 74, 95) pink pink initial inherit */
 }
 
 /* Scrollbar Css */
-/* scrollbar-color: auto | color | dark | light | initial | inherit */
-
-
 
 ::-webkit-scrollbar-thumb {
     background: rgba(152, 151, 151, 0.883);
@@ -29,19 +24,143 @@
 
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
   
-  ::-webkit-scrollbar-track {
-    
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: rgb(228, 53, 82);
     border-radius: 10px;
-  }
-  
+}
+
+/* Preloader Css */
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    z-index: 99999;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+}
+
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* Preloader Css Ends */
 
 body {
     justify-content: center;
@@ -72,35 +191,31 @@ html {
     top: 0;
     z-index: 100;
     width: 100%;
-    /* background: linear-gradient(315deg, var(--primary), var(--light)); */
     background-repeat: no repeat;
     background-image: url(./assets/images/navbar.png);
-    /* background-attachment: fixed; */
     background-size: cover;
     background-position: 50% 50%;
 }
+
 .header2{
     position: sticky;
     top: 0;
     z-index: 100;
     width:100%;
-    /* background: linear-gradient(315deg, var(--primary), var(--light)); */
     background-repeat: no repeat;
     background-image: url(./assets/images/bg3.png);
-    /* background-attachment: fixed; */
     background-size: cover;
     background-position: 50% 50%;
 }
+
 .header3{
     position:fixed;
     top:0;
     right: 0;
     z-index: 100;
     width: 100%;
-    /* background: linear-gradient(315deg, var(--primary), var(--light)); */
     background-repeat: no repeat;
     background-image: url(./assets/images/bg2.png);
-    /* background-attachment: fixed; */
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -246,14 +361,6 @@ section {
     z-index: 4;
 }
 
-/* .comp-section h1 {
-    font-size: 96px;
-}
-
-.comp-section h3 {
-    font-size: 32px;
-} */
-
 /* Container Section Css */
 
 .container {
@@ -272,12 +379,16 @@ section {
     justify-content: center;
     align-items: center;
     margin: 25px;
-    transition: transform 0.3s, border 0.3s; /* Adds a smooth transition effect */
     background: rgba(224, 202, 245, 0.743);
     border: 4px solid rgb(18, 100, 166);
     border-radius: 14px;
     box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
     cursor: pointer;
+}
+
+.container .zoom-effect:hover {
+    transform: scale(1.08);
+    transition: transform 0.3s ease-in-out;
 }
 
 .container .box .content {
@@ -295,28 +406,16 @@ section {
     text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172) ;
 }
 
-.container .box:hover {
-    transform: scale(1.05); 
-    border: 5px solid rgb(51, 129, 193); 
-}
-
 .container .box .content h2 {
     font-size: 23px;
-    /* color: rgb(57, 4, 100); */
     color: rgb(37, 111, 172);
     margin-top: 25px;
     margin-bottom: 5px;
     text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172) ;
 }
+
 /* Footer Css */
 
-hr.line{
-    border: 1px solid gray;
-    /* width: 90%; */
-    margin-left: 10%;
-    margin-right:10%;
-    
-}
 .footer {
     display: flex;
     justify-content: center;
@@ -327,8 +426,6 @@ hr.line{
 footer {
     position: relative;
     width: 100%;
-    /* background: #49025f; */
-    /* background-color: rgba(67, 2, 85, 0.719); */
     box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
     min-height: 100px;
     padding: 20px 50px;
