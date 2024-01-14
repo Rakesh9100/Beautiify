@@ -4,8 +4,8 @@ const navMenu = document.querySelector(".nav-menu");
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         document.querySelector("body").classList.add("loaded");
-    }, 10)
-  });
+    }, 500)
+});
 
 hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
