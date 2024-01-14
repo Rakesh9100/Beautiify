@@ -1,6 +1,12 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        document.querySelector("body").classList.add("loaded");
+    }, 10)
+  });
+
 hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active");
