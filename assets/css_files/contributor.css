@@ -25,8 +25,8 @@
 }
 
 .contributor-card {
-    width: 65px;
-    height: 65px;
+    width: 105px;
+    height: 105px;
     clip-path: polygon(50% 0%, 91% 25%, 91% 75%, 50% 100%, 9% 75%, 9% 25%);
     margin: 5px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
