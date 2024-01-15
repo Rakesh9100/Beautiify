@@ -48,8 +48,93 @@ window.addEventListener('scroll', function () {
     }
 });
 
+if (body.style.backgroundImage === "" || body.style.backgroundImage === "none") {
+    scrollToTopButton.style.background = "blue"; 
+  } else {
+    scrollToTopButton.style.background = "";
+  };
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+function myFunction(x) {
+    x.classList.toggle("fa-moon");
+    var element = document.body;
+    element.classList.toggle("nav-dark");
+    element.classList.toggle("dark-container");
+  }
+  function changeColor() {
+      var body = document.body;
+      var FootText = document.querySelectorAll(".contributors h1");
+      var start = document.querySelector(".started");
+      var navbar = document.querySelector(".navbar");
+      var containers = document.querySelectorAll(".box");
+      var contentIcons = document.querySelectorAll(".container .box .content i");
+      var boxText = document.querySelectorAll(".container .box .content h2");
+      var progressBar = document.querySelector("#progress-value");
+      var progress = document.querySelector("#progress");
+  
+      if (
+        body.style.backgroundImage === "" ||
+        body.style.backgroundImage === "none"
+      ) {
+        // Set the background color and gradient
+        body.style.backgroundImage =
+          "linear-gradient(to left bottom, #000000, #191818, #2a292a, #3d3c3c, #514f4f)";
+        navbar.style.backgroundImage =
+          "linear-gradient(to left bottom, #000000, #191818, #2a292a, #3d3c3c, #514f4f)";
+  
+        containers.forEach((container) => {
+          container.style.background =
+            "linear-gradient(to right top, #000000, #1a1919, #2d2b29, #403e3b, #52534e)";
+          container.style.border = "4px solid #fff";
+          container.style.boxShadow = "0 0 10px #fff";
+        });
+  
+        contentIcons.forEach((icon) => {
+          icon.style.color = "white";
+        });
+  
+        boxText.forEach((h2) => {
+          h2.style.color = "white";
+        });
+  
+        FootText.forEach((h1) => {
+          h1.style.color = "white";
+        });
+  
+        start.style.backgroundColor = "white";
+  
+        progressBar.style.color = "black";
+        progress.style.background =
+          "linear-gradient(to right, #000000, #1a1919, #2d2b29, #403e3b, #52534e)";
+      } else {
+        // Reset all styles to default
+        body.style.backgroundImage = "";
+        navbar.style.backgroundImage = "";
+  
+        containers.forEach((container) => {
+          container.style.background = "";
+          container.style.border = "";
+          container.style.boxShadow = "";
+        });
+  
+        contentIcons.forEach((icon) => {
+          icon.style.color = "";
+        });
+  
+        boxText.forEach((h2) => {
+          h2.style.color = "";
+        });
+  
+        FootText.forEach((h1) => {
+          h1.style.color = "";
+        });
+  
+        start.style.backgroundColor = "";
+        progressBar.style.color = "";
+        progress.style.background = "";
+      }
+    }

@@ -256,7 +256,17 @@ nav li {
     transition: 0.3s ease-in-out;
     margin-right: 10px;
 }
-
+#light-dark {
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+  }
+  .dark {
+      background-image: linear-gradient(to left bottom, #000000, #191818, #2a292a, #3d3c3c, #514f4f);
+  }
+  .nav-dark{
+      background-image: linear-gradient(to left bottom, #000000, #191818, #2a292a, #3d3c3c, #514f4f);
+  }
 nav li:hover {
     border-bottom: 0.1rem white solid;
     transition: 0.3s ease-in-out;
