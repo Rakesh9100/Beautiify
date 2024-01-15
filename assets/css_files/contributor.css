@@ -55,3 +55,13 @@ body {
 .contributor-card:nth-child(4n+3) {
     margin-top: -4px;
 }
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
