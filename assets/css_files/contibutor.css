@@ -23,15 +23,7 @@ html {
     font-size: 62.5%;
 }
 
-.header1{
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    background-repeat: no repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
+
 
 h1 {
     font-family: Arial, sans-serif;
@@ -79,7 +71,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(../images/bg1.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
