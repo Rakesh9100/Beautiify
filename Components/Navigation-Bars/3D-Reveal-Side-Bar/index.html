@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-D Reveal Side Bar Menu</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="menu-activea">
+        <h1>Menu</h1>
+        <h1>Explore</h1>
+        <h1>Contact</h1>
+    </nav>
+
+    <main>
+        <section>
+            <h1>&larr; Sidebar Menu Thingy</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id
+                est laborum.</p>
+
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        (function () {
+            var nav = $('nav'),
+                menu = $('nav h1'),
+                main = $('main'),
+                open = false,
+                hover = false;
+
+            menu.on('click', function () {
+                open = !open ? true : false;
+                nav.toggleClass('menu-active');
+                main.toggleClass('menu-active');
+                nav.removeClass('menu-hover');
+                main.removeClass('menu-hover');
+                console.log(open);
+            });
+
+            menu.hover(
+                function () {
+                    if (!open) {
+                        nav.addClass('menu-hover');
+                        main.addClass('menu-hover');
+                    }
+                },
+                function () {
+                    nav.removeClass('menu-hover');
+                    main.removeClass('menu-hover');
+                }
+            );
+        })();
+    </script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
