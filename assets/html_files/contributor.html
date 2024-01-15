@@ -14,23 +14,23 @@
 
 <body>
 
-    <header>
+    <header class="header2">
         <nav class="navbar">
-            <a href='../../index.html'>
-                <div class="logo">CalcDiverse</div>
+            <a href="../../index.html">
+                <div class="logo">Beautiify</div>
             </a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../../index.html" class="nav-link">Home</a>
+                    <a href="../../index.html#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../index.html#calculators" class="nav-link">Calculators</a>
+                    <a href="../../index.html#components" class="nav-link">Components</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./contributor.html" class="nav-link">Contributors</a>
+                    <a href="../html_files/contributor.html" class="nav-link">Contributors</a>
                 </li>
                 <li>
-                    <a href="../contact/contact.html" class="nav-link">Contact</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -39,30 +39,51 @@
                 <span class="bar"></span>
             </div>
         </nav>
-    </header>
-    <h1>Faces of Dedication: Our Contributing Heroes</h1>
-    <div id="contributor"></div>
-    <script src="Contibutor.js"></script>
+        </header>
+    <!-- Contributors section -->
+    <div class="contributors">
+        <h1 class="heading">Our Valuable Contributors</h1>
+        <div id="contributor"></div>
+    </div>
 
-
-    <!-------------------------------------Footer Code Starts --------------------------------------------->
-    <div class="footer-basic">
+    <div class="footer" id="about">
         <footer>
-            <div class="social">
-                <a href="https://rakesh9100.bio.link/" target="_blank"><i class="fa-solid fa-user"></i></a>
-                <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.github.com/Rakesh9100" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="../../index.html#home">Home</a></li>
-                <li class="list-inline-item"><a href="../../index.html#calculators">Calculators</a></li>
-                <li class="list-inline-item"><a href="./contributor.html">Contributors</a></li>
-                <li class="list-inline-item"><a href="../contact/contact.html">Contact</a></li>
+            <ul class="social-icon">
+                <li>
+                    <a href="https://rakesh9100.bio.link/" target="_blank"><i class="fas fa-link"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Rakesh9100" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://discord.com/users/944144134950748170" target="_blank"><i class="fab fa-discord"></i></a>
+                </li>
             </ul>
-            <p class="copyright">Created By Rakesh Roshan ❤️ | © <script>document.write(new Date().getFullYear());</script>: All Rights Reserved</p>
+            <p>
+                Created By
+                <a href="https://github.com/Rakesh9100" target="_blank">Rakesh Roshan ❤️</a> | © <span id="year"></span>: All Rights Reserved
+            </p>
         </footer>
+    </div>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
     </div>
 
     <script src="../js_files/contributor.js"></script>
