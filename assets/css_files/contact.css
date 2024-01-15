@@ -27,9 +27,12 @@ a {
     position: relative;
     display: table;
     width: 75vw;
-    height: 85vh;
-    margin: auto;
-    margin-top: 35px;
+    /* height: 75vh; */
+    /* margin: auto; */
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* margin-top: 35px; */
     border-radius: 30px;
     /* filter: drop-shadow(-5px -5px 5px rgb(0, 0, 0,0.4)); */
     filter: drop-shadow(0px 0px 10px rgb(0, 0, 0,0.4));
@@ -208,15 +211,46 @@ a {
 
 /* Responsive css */
 
-@media only screen and (max-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1023px){
     .box-wrapper {
-        width: 100%;
+        width: 85%;
     }
 
-    .info-wrap,
+    .info-wrap {
+        width: 40%;
+        padding: 16px;
+    }
+
+    .form-wrap {
+        width: 60%;
+    }
+
+    .form-group {
+        padding-left: 15px;
+        margin-left: 0px;
+    }
+
+    .submit-button {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box-wrapper {
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        top: 0;
+    }
+
+    .info-wrap{
+        width: 100%;
+        height: 40%;
+        float: none;
+    }
     .form-wrap {
         width: 100%;
-        height: inherit;
+        height: 60%;
         float: none;
     }
 
