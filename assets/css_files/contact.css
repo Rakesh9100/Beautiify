@@ -21,7 +21,6 @@ a {
 
 #section-wrapper {
     width: 100%;
-    padding: 10px;
 }
 
 .box-wrapper {
@@ -44,7 +43,7 @@ a {
 
 .info-wrap {
     width: 35%;
-    height: 85vh;
+    height: 80vh;
     padding: 40px;
     float: left;
     display: block;
@@ -133,7 +132,7 @@ a {
 
 .form-wrap {
     width: 65%;
-    height: 85vh;
+    height: 80vh;
     float: right;
     padding: 40px 25px 35px 25px;
     border-radius: 0px 30px 30px 0px;
