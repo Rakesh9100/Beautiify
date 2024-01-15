@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background : linear-gradient(to right, #093028 , #237A57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.animation-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0rem;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.main-animate{
+    height: auto;
+    width: auto;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    background-color: rgb(244, 240, 8);
+    animation-name: one;
+}
+
+.two{
+    background-color: rgb(11, 244, 85);
+    animation-name: two;
+}
+
+.three{
+    background-color: rgb(241, 0, 40);
+    animation-name: three;
+}
+
+.four{
+    background-color: rgb(48, 206, 206);
+    animation-name: four;
+}
+
+@keyframes one {
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+
+    50%{
+        top: -20px;
+        left: -20px;
+        transform: rotate(90deg);
+    }
+
+    100%{
+        top: 0px;
+        left: 0px;
+        transform: rotate(90deg);
+    }
+}
+@keyframes two {
+    0%{
+        left: 0px;
+        bottom: 0px;
+    }
+
+    50%{
+        left: -20px;
+        bottom: -20px;
+        transform: rotate(90deg);
+    }
+
+    100%{
+        left: 0px;
+        bottom: 0px;
+        transform: rotate(90deg);
+    }
+}
+@keyframes three {
+    0%{
+        left:0px;
+        top: 0px;
+    }
+
+    50%{
+        left: 20px;
+        top: -20px;
+        transform: rotate(90deg);
+    }
+
+    100%{
+        left:0px;
+        top: 0px;
+        transform: rotate(90deg);
+    }
+}
+@keyframes four {
+    0%{
+        bottom: 0px;
+        left:0px;
+    }
+
+    50%{
+        bottom: -20px;
+        left: 20px;
+        transform: rotate(90deg);
+    }
+
+    100%{
+        bottom: 0px;
+        left:0px;
+        transform: rotate(90deg);
+    }
+}
+
+.animation-box-circle {
+    height: 30vh;
+    width: 30vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+span {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -80px;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#first {
+    background-color: white;
+    animation-name: first;
+}
+#second {
+    background-color: white;
+    animation-name: second;
+    animation-delay: 1s;
+}
+#third {
+    background-color: white;
+    animation-name: third;
+    animation-delay: 2s;
+}
+
+@keyframes first {
+    0%{
+        left: -80px;
+        opacity: 0;
+    }
+    20%{
+        left: 50%;
+        opacity: 1;
+    }
+    50%{
+        left: 100%;
+        opacity: 0;
+    }
+    100%{
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes second {
+    0%{
+        left: -80px;
+        opacity: 0;
+    }
+    12%{
+        left: 50%;
+        opacity: 1;
+    }
+    48%{
+        left: 100%;
+        opacity: 0;
+    }
+    100%{
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes third {
+    0%{
+        left: -80px;
+        opacity: 0;
+    }
+    10%{
+        left: 50%;
+        opacity: 1;
+    }
+    46%{
+        left: 100%;
+        opacity: 0;
+    }
+    100%{
+        left: 100%;
+        opacity: 0;
+    }
+}
