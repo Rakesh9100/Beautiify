@@ -1,0 +1,83 @@
+body {
+  background-image: url(./background.jpg);
+  font-family: Verdana;
+  text-align: center;
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Styling the Form (Color, Padding, Shadow) */
+form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 90px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling form-control Class */
+.form-control {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Styling form-control input, 
+select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+  border: 1px solid #777;
+  border-radius: 2px;
+  font-family: inherit;
+  padding: 10px;
+  display: block;
+  width: 95%;
+}
+
+/* Styling form-control Radio 
+button and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+/* Styling Button */
+button {
+  background-color: #f37425;
+  border: 1px solid #777;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 21px;
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  height: 100%;
+  background: #ffddc6;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #162938;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
