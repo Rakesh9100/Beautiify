@@ -384,11 +384,16 @@ section {
     border-radius: 14px;
     box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
     cursor: pointer;
+    /* transition: transform 10s ease-in-out; */
+}
+
+.container .zoom-effect{
+    transition: transform 0.3s ease-in-out;
 }
 
 .container .zoom-effect:hover {
-    transform: scale(1.08);
-    transition: transform 0.3s ease-in-out;
+     transform: scale(1.08);
+    transition: transform 0.3s ease-in-out; 
 }
 
 .container .box .content {
@@ -396,7 +401,7 @@ section {
     left: 0;
     padding: 20px 40px;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.5s ease-in;
     color: var(--dark);
 }
 
