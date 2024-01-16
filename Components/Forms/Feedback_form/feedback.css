@@ -8,7 +8,7 @@ body {
   justify-content: space-around;
   flex-direction: column;
   height: 100vh;
-  background-image: url(/assets/images/bg4.jpeg);
+  background-image: url(./bg4.jpeg);
   font-family: "Poppins", sans-serif;
   background-repeat: no repeat;
   background-attachment: fixed;
