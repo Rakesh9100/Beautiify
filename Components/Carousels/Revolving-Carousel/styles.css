@@ -1,3 +1,9 @@
+
+.head{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
 .gallery {
     --s: 150px; /* the image size */
     
@@ -5,6 +11,7 @@
     transform-style: preserve-3d;
     animation: r 15s linear infinite;
     position: relative;
+    margin-top: 150px;
   }
   @keyframes r {
     0% {transform: perspective(450px) rotateX(-100deg) rotate(0deg)}
