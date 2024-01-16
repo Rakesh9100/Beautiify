@@ -9,7 +9,7 @@ body {
 	justify-content: space-around; 
 	flex-direction: column; 
 	height: 100vh; 
-    background-image: url(/assets/images/background.webp);
+    background-image: url(/assets/images/bg1.png);
 	font-family: 'Poppins', sans-serif; 
     background-repeat: no repeat;
     background-attachment: fixed;
@@ -86,7 +86,7 @@ button:hover {
 } 
 
 h1 { 
-	color: rgb(255, 255, 255); 
+	color: #162938; 
 }
 
 
