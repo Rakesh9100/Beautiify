@@ -386,6 +386,10 @@ section {
     cursor: pointer;
 }
 
+.container .zoom-effect {
+    transition: transform 0.3s ease-in-out;
+}
+
 .container .zoom-effect:hover {
     transform: scale(1.08);
     transition: transform 0.3s ease-in-out;
@@ -396,7 +400,7 @@ section {
     left: 0;
     padding: 20px 40px;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.5s ease-in;
     color: var(--dark);
 }
 
