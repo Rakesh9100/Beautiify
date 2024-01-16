@@ -60,10 +60,13 @@ Beautiify comprises a curated selection of beautifully designed components and a
 
 <h3>Home/Main Page :-</h3>
 
-![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/c98e8194-798d-43fd-9aee-59ae65b25c33)<br><br>
+![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/f07fd337-8503-47e2-807e-b33c9355dd3b)<br><br>
 <h3>Components Page :-</h3>
 
-![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/7f8f4f2d-1d91-4d46-9403-6a497a83cc45)
+![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/70a1a164-626b-47c3-b344-353516ee5910)<br><br>
+<h3>Contact Page :-</h3>
+
+![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/a8b66b02-633e-44bb-8c3d-0bd48e0be5d5)
 <br><br>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -137,6 +140,14 @@ This project and everyone participating in it is governed by the [Code of Conduc
 </td>
 </tr>
 </table>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<h2>Project Contributors🫂</h2>
+
+<a href="https://github.com/rakesh9100/beautiify/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=rakesh9100/beautiify" />
+</a>
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 

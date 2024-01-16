@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frosted Glass Loader</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+<body>
+    <svg id="mainSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+        <defs>
+            <radialGradient id="mainGrad" cx="400" cy="300" fx="400" fy="300" r="100" gradientUnits="userSpaceOnUse">
+                <stop offset=".68" stop-color="#6334fb" />
+                <stop offset=".72" stop-color="#6639fb" />
+                <stop offset=".77" stop-color="#7248fb" />
+                <stop offset=".82" stop-color="#8561fb" />
+                <stop offset=".88" stop-color="#9f83fb" />
+                <stop offset=".93" stop-color="#c2b0fb" />
+                <stop offset=".99" stop-color="#ebe6fb" />
+                <stop offset="1" stop-color="#f1eefb" />
+            </radialGradient>
+        </defs>
+        <circle id="fillDot" cx="400" cy="300" fill="#6334fb" r="100" />
+        <circle id="gradDot" cx="400" cy="300" fill="url(#mainGrad)" r="100" />
+    </svg>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
