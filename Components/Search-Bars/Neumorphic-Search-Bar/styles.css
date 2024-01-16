@@ -57,6 +57,7 @@ form {
   border: none;
   background-color: transparent;
   outline: none;
+  width: 100%;
   font-size: 1.5rem;
   letter-spacing: 0.75px;
 }
