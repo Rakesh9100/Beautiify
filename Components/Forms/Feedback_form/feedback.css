@@ -9,7 +9,7 @@ body {
 	justify-content: space-around; 
 	flex-direction: column; 
 	height: 100vh; 
-    background-image: url(/assets/images/bg1.png);
+    background-image: url(/assets/images/background.webp);
 	font-family: 'Poppins', sans-serif; 
     background-repeat: no repeat;
     background-attachment: fixed;
