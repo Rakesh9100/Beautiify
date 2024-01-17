@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+.header{
+    position: absolute;
+    top: 18rem;
+    width: 100%;
+    background-color:#963cea
+}
+.footer{
+    background-color:#963cea ;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    
+}
+.footer div{
+    background-color: #9f56e2;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 15rem;
+    text-align: left;
+    color: white;
+    padding: 2rem;
+    transition: all .5s;
+    
+}
+.footer div:hover{
+    transform:perspective(300px) rotateX(20deg);
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    display: block;
+    text-align: left;
+    margin:1rem 0rem;
+    transition: all .2s;
+    
+}
+.footer a:hover{
+    color: black;
+    font-size: 1.3rem;
+}
+h2{
+    text-align: center;
+}
