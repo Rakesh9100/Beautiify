@@ -25,7 +25,7 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
-  
+
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
@@ -143,9 +143,10 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -154,6 +155,7 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -186,7 +188,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.header1{
+.header1 {
     position: sticky;
     top: 0;
     z-index: 100;
@@ -197,20 +199,20 @@ html {
     background-position: 50% 50%;
 }
 
-.header2{
+.header2 {
     position: sticky;
     top: 0;
     z-index: 100;
-    width:100%;
+    width: 100%;
     background-repeat: no repeat;
     background-image: url(./assets/images/bg3.png);
     background-size: cover;
     background-position: 50% 50%;
 }
 
-.header3{
-    position:fixed;
-    top:0;
+.header3 {
+    position: fixed;
+    top: 0;
     right: 0;
     z-index: 100;
     width: 100%;
@@ -223,7 +225,7 @@ html {
 
 .navbar {
     margin: 0 auto;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 a {
@@ -270,6 +272,7 @@ nav li:hover {
     color: white;
     text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
 }
+
 .hamburger {
     display: none;
 }
@@ -312,7 +315,7 @@ section {
 .comp-section .compcontainer h3 {
     font-weight: 300;
     font-size: 2.8rem;
-    margin:0.5%;
+    margin: 0.5%;
     text-shadow: 2px 2px 2px black, 0.5px 0.5px 1px white;
 }
 
@@ -386,6 +389,13 @@ section {
     cursor: pointer;
 }
 
+.box:hover {
+
+    background-color: rgb(18, 100, 166);
+    border: 4px solid rgba(224, 202, 245, 0.743);
+    box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
+}
+
 .container .zoom-effect {
     transition: transform 0.3s ease-in-out;
 }
@@ -407,7 +417,7 @@ section {
 .container .box .content i {
     font-size: 73px;
     color: rgb(18, 100, 166);
-    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172) ;
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
 }
 
 .container .box .content h2 {
@@ -415,7 +425,12 @@ section {
     color: rgb(37, 111, 172);
     margin-top: 25px;
     margin-bottom: 5px;
-    text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172) ;
+    text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172);
+}
+
+.box:hover .content i,
+.box:hover .content h2 {
+    color: rgba(224, 202, 245, 0.743);
 }
 
 /* Footer Css */
@@ -497,20 +512,20 @@ footer p a {
     border-radius: 50%;
     transition: opacity 0.3s, background-color 0.3s;
     box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2),
-                inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
-                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
     cursor: pointer;
 }
 
-#progress:hover{
+#progress:hover {
     opacity: 1;
     background-color: #df87ef;
     animation: animate 1s linear infinite;
 }
 
-@keyframes animate{
-    50%{
+@keyframes animate {
+    50% {
         transform: translateY(-8px);
     }
 }
@@ -538,7 +553,7 @@ footer p a {
         height: 90vh;
     }
 
-    .started{
+    .started {
         height: 7vh;
         font-size: 22px;
         font-weight: 500;
@@ -560,7 +575,7 @@ footer p a {
         padding-bottom: 10px;
     }
 
-    .started{
+    .started {
         height: 6vh;
         font-size: 20px;
         font-weight: 400;
@@ -586,7 +601,7 @@ footer p a {
         width: 50rem;
     }
 
-    .started{
+    .started {
         height: 6vh;
         font-size: 20px;
         font-weight: 300;
@@ -610,8 +625,9 @@ footer p a {
         width: 30rem;
         font-size: 1.6rem;
     }
-    .container{
-        margin-top:50px ;
+
+    .container {
+        margin-top: 50px;
     }
 }
 
@@ -629,7 +645,7 @@ footer p a {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         height: 100vh;
-    }   
+    }
 
     .compcontainer h1 {
         font-size: 400%;
@@ -679,13 +695,13 @@ footer p a {
 }
 
 
-@media (max-width: 400px){
-    .paragraph{
+@media (max-width: 400px) {
+    .paragraph {
         width: 100%;
         padding: 2px;
     }
 
-    .started{
+    .started {
         height: 5vh;
         font-size: 20px;
         font-weight: 100;
@@ -693,7 +709,7 @@ footer p a {
         padding: 5px 30px;
     }
 
-    .box{
+    .box {
         width: 280px !important;
         margin: 15px !important;
     }
