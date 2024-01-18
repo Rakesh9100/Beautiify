@@ -332,7 +332,6 @@ section {
 
 .comp-section .compcontainer .started {
     height: auto;
-    height: auto;
     font-size: 25px;
     font-weight: 600;
     margin-top: 20px;
@@ -380,7 +379,6 @@ section {
     justify-content: center;
     align-items: center;
     margin: 25px;
-    transition: transform 0.3s, border 0.3s; /* Adds a smooth transition effect */
     background: rgba(224, 202, 245, 0.743);
     border: 4px solid rgb(18, 100, 166);
     border-radius: 14px;
