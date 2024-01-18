@@ -131,6 +131,25 @@ This project and everyone participating in it is governed by the [Code of Conduc
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
+<h2>This repo has been part of the following Open Source Programs🥳</h2>
+
+<table>
+<tr>
+<td align="center">
+<a href="https://iwoc.codes/"><img src="https://github.com/Rakesh9100/Beautiify/assets/73993775/8ed95409-8fe5-42f5-b60c-51dc9f995df5" height="140px" width="140px" alt="IWOC2024"></a><br><sub><b>IWOC 2k24</b></sub>
+</td>
+<td align="center">
+<a href="https://www.jwoc.tech/"><img src="https://github.com/Rakesh9100/Beautiify/assets/73993775/2a0fcf59-de20-4175-b8bb-67dbc17f3d40" height="140px" width="150px" alt="JWOC2024"></a><br><sub><b>JWOC 2k24</b></sub>
+</td>
+<td align="center">
+<a href="https://www.socialwinterofcode.com/"><img src="https://github.com/Rakesh9100/Beautiify/assets/73993775/9235952f-9062-4352-992d-eb34e4d60283" height="140px" width="180px" alt="SWOC2024"></a><br><sub><b>SWOC 2k24</b></sub>
+</td>
+</tr>
+</table>
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
 <h2>Project Admin⚡</h2>
 
 <table>
