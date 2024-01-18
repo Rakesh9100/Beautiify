@@ -99,6 +99,7 @@ a {
     color: #fff;
     font-size: 16px;
     text-decoration: none;
+    transition: all .4s;
 }
 
 .info-details li a:hover {
@@ -124,13 +125,12 @@ a {
     margin: 0px 5px;
     cursor: pointer;
     transition: all 0.5s;
-    text-shadow: 1px 2px 2px black;
     box-shadow: 1px 1px 2px black;
 }
 
 .social-icons li i:hover {
     background: #fff;
-    color: #000000;
+    color: #49025f;
 }
 
 .form-wrap {
