@@ -25,7 +25,7 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
-
+  
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
@@ -143,10 +143,9 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-
     100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
     }
 }
 
@@ -155,7 +154,6 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -188,7 +186,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.header1 {
+.header1{
     position: sticky;
     top: 0;
     z-index: 100;
@@ -199,20 +197,20 @@ html {
     background-position: 50% 50%;
 }
 
-.header2 {
+.header2{
     position: sticky;
     top: 0;
     z-index: 100;
-    width: 100%;
+    width:100%;
     background-repeat: no repeat;
     background-image: url(./assets/images/bg3.png);
     background-size: cover;
     background-position: 50% 50%;
 }
 
-.header3 {
-    position: fixed;
-    top: 0;
+.header3{
+    position:fixed;
+    top:0;
     right: 0;
     z-index: 100;
     width: 100%;
@@ -225,7 +223,7 @@ html {
 
 .navbar {
     margin: 0 auto;
-    z-index: 1000;
+    z-index: 1000; 
 }
 
 a {
@@ -272,7 +270,6 @@ nav li:hover {
     color: white;
     text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
 }
-
 .hamburger {
     display: none;
 }
@@ -315,7 +312,7 @@ section {
 .comp-section .compcontainer h3 {
     font-weight: 300;
     font-size: 2.8rem;
-    margin: 0.5%;
+    margin:0.5%;
     text-shadow: 2px 2px 2px black, 0.5px 0.5px 1px white;
 }
 
