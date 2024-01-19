@@ -10,11 +10,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: black;
-    height: 100%;
-    width: 100vw;
+    /* height: 100%;
+    width: 100vw; */
     font-family: "Poppins", sans-serif;
-    overflow-y: hidden;
+    /* overflow-y: hidden;  -- Content below is not accessible in small screen*/
 }
+ 
 
 .styling {
     height: 100%;
@@ -46,7 +47,7 @@ body {
     position: absolute;
     rotate: 30deg;
     top: 50%;
-    left: 80%;
+    left: 70%;
     z-index: 2;
 }
 
@@ -54,8 +55,7 @@ body {
     position: absolute;
     top: 0%;
     left: 0%;
-    height: 100%;
-    width: 100%;
+    width: 100vw;
     z-index: 20;
     backdrop-filter: blur(90px);
 }
@@ -94,11 +94,6 @@ body {
     color: white;
 }
 
-.main-form {
-    width: 60%;
-    padding-left: 20px;
-}
-
 .main .title {
     color: white;
     cursor: u;
@@ -110,6 +105,10 @@ body {
     font-weight: 500;
     color: rgb(254, 222, 36);
 }
+.main-form {
+    width: 60%;
+    padding-left: 20px;
+}
 
 .contact-section {
     display: flex;
@@ -120,7 +119,7 @@ body {
 
 .contact-form {
     margin-left: 60px;
-    padding: 60px 100px;
+    padding: 60px 100px
 }
 
 form {
@@ -137,7 +136,6 @@ form {
     position: relative;
     width: 100%;
     height: 44px;
-    line-height: 44px;
     margin-bottom: 50px;
 }
 
@@ -233,7 +231,7 @@ input[type="file"] {
 .contact-form-container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -252,3 +250,57 @@ input[type="file"] {
 .submit-button button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+/* Media Queries for responsivenes */
+@media (max-width: 500px) and (min-width: 300px) {
+    .circle2{
+        left: 20%;
+    }
+    .contact-form-container{
+        flex-direction: column;
+    }
+    .contact-form{
+        padding: 1.5em;
+        margin-left:0;
+    }
+    .main-form{
+        width: 100%;
+        padding-left:0;
+    }
+    .submit-button button{
+        margin-top: 1em;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar .logo{
+        margin: 0;
+    }
+  }
+
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+    .circle2{
+        left: 65%;
+        top: 30%;
+    }   
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+    .circle2{
+        left: 75%;
+        top: 32%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+    .main{
+        height: 100vh;
+    }
+  }
