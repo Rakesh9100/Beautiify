@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://th.bing.com/th/id/R.7e92b105b09f1418a4862a5deb517802?rik=GLopy9vNvziISA&riu=http%3a%2f%2ffc04.deviantart.net%2ffs71%2ff%2f2011%2f079%2fb%2f2%2fanimated_starfield_tile_by_artbit-d3c2ooe.gif&ehk=lNPsBCb4w8VNhqvdYO0p%2f2xQFaXlUBV92Fy8smiJ7Ak%3d&risl=&pid=ImgRaw&r=0);
+  background-size:contain;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  height: 100vh;
+}
+.container {
+  padding: 30px 50px;
+}
+#search-form {
+  width: 30%;
+  margin: 0 auto;
+  position: relative;
+}
+#search-form input {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 5rem;
+}
+#search-form button {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 3rem;
+  text-align: center;
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: #333;
+}
+.info {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 1200px) {
+  #search-form { width: 50%; }
+}
+@media (max-width: 768px) {
+  .container { padding: 30px 35px; }
+  #search-form { width: 100%; }
+  .info { font-size: 0.5rem; }
+}

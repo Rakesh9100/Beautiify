@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.quote-card {
+    max-width: 400px;
+    background: linear-gradient(rgb(159, 216, 216),rgb(232, 180, 243));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.quote-text {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.quote-author {
+    font-weight: bold;
+    color: #555;
+}
