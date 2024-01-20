@@ -1,8 +1,8 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
         document.querySelector("body").classList.add("loaded");
     }, 500)
 });
@@ -53,3 +53,26 @@ window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+const searchInput = document.getElementById('searchInput');
+const components = Array.from(document.querySelectorAll('#components h2'));
+
+searchInput.addEventListener('input', function () {
+    const searchTerm = searchInput.value.toLowerCase();
+
+    const filteredComponents = components.filter(function (component) {
+        return component.textContent.toLowerCase().includes(searchTerm);
+    });
+
+   
+    components.forEach(function (component) {
+        const componentContainer = component.closest('a');
+        if (filteredComponents.includes(component)) {
+            componentContainer.style.display = 'block';
+        } else {
+            componentContainer.style.display = 'none';
+        }
+    });
+});
+
+
