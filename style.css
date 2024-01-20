@@ -447,7 +447,7 @@ footer {
     width: 100%;
     box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
     min-height: 100px;
-    padding: 20px 50px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -486,7 +486,6 @@ footer p {
     color: var(--secondary);
     text-align: center;
     margin-top: 15px;
-    margin-bottom: 10px;
     font-size: 1.1em;
     display: inline-block;
 }
@@ -503,7 +502,7 @@ footer p a {
 
 #progress {
     position: fixed;
-    bottom: 20px;
+    bottom: 14px;
     right: 10px;
     height: 50px;
     width: 50px;
