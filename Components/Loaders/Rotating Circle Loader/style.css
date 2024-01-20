@@ -1,0 +1,100 @@
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("./7317023.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .container2 {
+        height: 40vh;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .text {
+        font-size: 40px;
+        background: -webkit-linear-gradient(#fc1717, #6419e6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation-name: blink;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+      }
+
+      .circle {
+        position: relative;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        border: 3px solid transparent;
+        border-bottom: 3px solid #000;
+        border-top: 3px solid #8506e5;
+        border-radius: 50%;
+        animation: animate 2s linear infinite;
+      }
+
+      .circle:before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        border: 3px solid transparent;
+        border-bottom: 3px solid #f81e16;
+        border-top: 3px solid #f6fa05;
+        border-radius: 50%;
+        animation: animate 2s linear infinite;
+      }
+
+      .circle:after {
+        content: "";
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        bottom: 24px;
+        right: 24px;
+        border: 3px solid transparent;
+        border-bottom: 3px solid #fa02fa;
+        border-top: 3px solid #1e017e;
+        border-radius: 50%;
+        animation: animate 4s linear infinite;
+      }
+
+      @keyframes animate {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
