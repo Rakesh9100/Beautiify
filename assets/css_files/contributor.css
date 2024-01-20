@@ -61,3 +61,12 @@ body {
 .footer {
     margin-top: 1em;
 }
+
+
+@media (min-width: 1000px){
+    .footer{
+        position: fixed;
+        width: 100%;
+        bottom: 0;  
+    }
+}
