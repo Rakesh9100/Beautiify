@@ -1,0 +1,43 @@
+Steps and Guidelines to Modify Chatbot Data - 
+Since this bot is made using botpress so The owner of this bot is the one who has created it with their account on botpress.
+
+Steps for Modification in functionality of bot - 
+1)You have to notify the owner that you want to make modifications in chatbot via email,on github or on discord channel etc.
+2)The owner will ask you for your email id from which you want to work.
+3)Once you have provided the email id, the owner will add you as collaborator for the workspace.Then you can access the workspace.
+4)Now the name of chatbot is beautiify on workspace.
+5)You have to select beautiify on dashboard and click edit.
+6)Then the main page will open where you can do all the modifications in chatbot.
+7)Once done, click on publish and your changes will be reflected in the bot.
+
+Now steps for Modification in styling of bot-
+1)You have to notify the owner that you want to make modifications in chatbot via email,on github or on discord channel etc.
+2)The owner will ask you for your email id from which you want to work.
+3)Once you have provided the email id, the owner will add you as collaborator for the workspace.Then you can access the workspace.
+4)Now the name of chatbot is beautiify on workspace.
+5)Now please visit the link to modify it https://styler.botpress.app/
+6)When you go on the page of styler you'll find 2 options (i)Style your bot  (ii)Advanced styler
+  Using Style your bot you can change basic appearence like background color,icon size etc.
+  For advance styling we can go on Advanced Styler option where we'll get the css file which we can modify according to our specification.
+7)After making all the changes ,click on 'Get Stylesheet URL' and there you'll get an URL.
+8)Copy thta URL and go to dashboard of botpress.
+9)In 'Integrations' option in 'Settings' you'll get an area to pase stylesheet URL .Just paste it over there and click on Save Configuration and your styling will be visible on website in your chatbot.
+
+
+The first 3 steps are must steps for accessing the modification feature of chatbot. 
+Also while emailing please make sure to describe your role like how you wnat to work on the bot.These are the roles available-
+
+Viewer
+Can view chatbots in this workspace but not make any changes.
+
+Billing Manager
+Can view and change billing information of this workspace.
+
+Developer
+Can create, view and update chatbots in this workspace. Can only delete the chatbots they created.
+
+Manager
+Can create, view, update, and delete all chatbots in this workspace, view audit records, and view/change billing information.
+
+Administrator
+Can add/remove workspace collaborators, create and manage all chatbots in this workspace, view audit records, and view/change billing information
