@@ -41,10 +41,15 @@ h1 {
 .inputtext p {
     margin: 0;
     width: 40%; 
+    padding-top: 1.5%;
 }
 
 .inputfield {
     flex: 1;
+}
+.inputtext #gender{
+    padding-top: 4.625px;
+    padding-bottom: 7px;
 }
 
 input[type="text"],
