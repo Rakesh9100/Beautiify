@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background: #1abc9c;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper ul {
+  display: flex;
+}
+
+.wrapper ul li {
+  width: 100px;
+  margin-right: 25px;
+  position: relative;
+}
+
+.wrapper ul li:before {
+  content: ">";
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  right: -15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.wrapper ul li:last-child {
+  margin-right: 0;
+}
+
+.wrapper ul li:last-child:before {
+  display: none;
+}
+
+.wrapper ul li a {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.wrapper ul li a .icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto 12px;
+  font-size: 22px;
+  text-align: center;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px 0px rgba(62, 88, 113, 0.8);
+}
+
+.wrapper ul li.active a .icon {
+  background: #fff;
+  color: #2c3e50;
+}
+
+.wrapper ul li.active a {
+  color: #2c3e50;
+}
