@@ -222,7 +222,6 @@ html {
     background-position: 50% 50%;
 }
 
-
 .navbar {
     margin: 0 auto;
     z-index: 1000;
@@ -262,6 +261,11 @@ nav li {
 nav li:hover {
     border-bottom: 0.1rem white solid;
     transition: 0.3s ease-in-out;
+}
+
+nav li i {
+    font-size:18px;
+    color:white;
 }
 
 .logo {
