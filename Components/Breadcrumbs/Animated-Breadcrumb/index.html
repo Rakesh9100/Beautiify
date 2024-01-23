@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated BreadCrumb</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="perspective">
+        <svg>
+            <defs>
+                <filter id="drop-shadow" width="200%" height="200%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+                    <feOffset dx="0" dy="3" result="offsetblur" />
+                    <feFlood flood-color="hsla(0,0%,0%,0.3)" />
+                    <feComposite in2="offsetblur" operator="in" />
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+        </svg>
+        <div class="breadcrumb-item">
+            <svg>
+                <g transform="translate(30,10)">
+                    <polygon class="breadcrumb-arrow" points="0,0, 20,15, 0,30, 150,30, 170, 15, 150,0"
+                        filter="url(#drop-shadow)" />
+                    <text dx="90" dy="22" text-anchor="middle"> Consectetur </text>
+                </g>
+            </svg>
+        </div>
+
+        <div class="breadcrumb-item">
+            <svg>
+                <g transform="translate(26,10)">
+                    <polygon class="breadcrumb-arrow" points="0,0, 20,15, 0,30, 150,30, 170, 15, 150,0"
+                        filter="url(#drop-shadow)" />
+                    <text dx="90" dy="22" text-anchor="middle"> Amet </text>
+                </g>
+            </svg>
+        </div>
+
+        <div class="breadcrumb-item">
+            <svg>
+                <g transform="translate(22,10)">
+                    <polygon class="breadcrumb-arrow" points="0,0, 20,15, 0,30, 150,30, 170, 15, 150,0"
+                        filter="url(#drop-shadow)" />
+                    <text dx="90" dy="22" text-anchor="middle"> Sit </text>
+                </g>
+            </svg>
+        </div>
+
+        <div class="breadcrumb-item">
+            <svg>
+                <g transform="translate(18,10)">
+                    <polygon class="breadcrumb-arrow" points="0,0, 20,15, 0,30, 150,30, 170, 15, 150,0"
+                        filter="url(#drop-shadow)" />
+                    <text dx="90" dy="22" text-anchor="middle"> Dolor </text>
+                </g>
+            </svg>
+        </div>
+
+        <div class="breadcrumb-item">
+            <svg>
+                <g transform="translate(14,10)">
+                    <polygon class="breadcrumb-arrow" points="0,0, 20,15, 0,30, 150,30, 170, 15, 150,0"
+                        filter="url(#drop-shadow)" />
+                    <text dx="90" dy="22" text-anchor="middle"> Ipsum </text>
+                </g>
+            </svg>
+        </div>
+
+        <div class="breadcrumb-item breadcrumb-active">
+            <svg>
+                <g transform="translate(10,10)">
+                    <polygon class="breadcrumb-arrow" points="0,0, 20,15, 0,30, 150,30, 170, 15, 150,0"
+                        filter="url(#drop-shadow)" />
+                    <text dx="90" dy="22" text-anchor="middle"> Lorem </text>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="slider-scroller">
+            <div class="slide">
+                <div class="next fa fa-chevron-right"></div>
+                <h1> LOREM </h1>
+            </div>
+            <div class="slide">
+                <div class="prev fa fa-chevron-left"> </div>
+                <div class="next fa fa-chevron-right"> </div>
+                <h1> IPSUM </h1>
+            </div>
+            <div class="slide">
+                <div class="prev fa fa-chevron-left"> </div>
+                <div class="next fa fa-chevron-right"> </div>
+                <h1> DOLOR </h1>
+            </div>
+            <div class="slide">
+                <div class="prev fa fa-chevron-left"> </div>
+                <div class="next fa fa-chevron-right"> </div>
+                <h1> SIT </h1>
+            </div>
+            <div class="slide">
+                <div class="prev fa fa-chevron-left"> </div>
+                <div class="next fa fa-chevron-right"> </div>
+                <h1> AMET </h1>
+            </div>
+            <div class="slide">
+                <div class="prev fa fa-chevron-left"> </div>
+                <h1> CONSECTETUR </h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
