@@ -1,130 +1,119 @@
-*{
-    padding: 0px;
-    box-sizing:border-box;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right top, #2273f5, #3c7df3, #4f87f1, #6191ef, #719bec, #6aa8f2, #67b4f6, #69bff8, #52cffe);
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background:linear-gradient(rgba(247, 239, 183, 0.14),rgba(240, 240, 181, 0.28)),  url("https://images.pexels.com/photos/544268/pexels-photo-544268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-size:cover;
-    margin:30px 40px;
-    font-size:17px;
-    padding:8px;
+.container {
+    background-color: #f4f4f4; 
+    border-radius:12px;
+    box-shadow: 10px 10 10px rgba(138, 133, 133, 0.1);
+    padding: 20px; 
+    width: 80%; 
+    max-width: 400px; 
+    margin: 20px auto 20px auto; 
 }
 
-.container{
-    background-color: rgba(234, 73, 14, 0.16);
-    padding:5px 20px 15px 20px;
-    border:2px solid rgba(246, 242, 242, 0.62);
-    border-radius: 16px;
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
 }
 
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number],
-input[type=date],
-select,
-textarea{
-    width:100%;
-    padding:12px;
-    border:1px solid rgb(198, 194, 194);
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.mainheads {
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inputtext {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.inputtext p {
+    margin: 0;
+    width: 40%; 
+    padding-top: 1.5%;
+}
+
+.inputfield {
+    flex: 1;
+}
+.inputtext #gender{
+    padding-top: 4.625px;
+    padding-bottom: 7px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 5px 10px 7px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    background-color:rgba(62, 82, 233, 0.15);
-    margin:10px;
-    color: white;
+}
+
+input[type="radio"] , input[type="date"]{
+    margin-right: 5px;
+    margin-left: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="date"]{
+    padding: 8px;
+    width: 90%;
 }
 
 
-h1{
-    text-align: center;
-    font-weight:900;
-    font-size:300%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgb(9, 66, 146);
-    text-align:centre;
-    text-decoration:solid;
-    text-shadow:3px 2px 1px  rgba(139, 239, 239, 0.851);
+.paymentdiv .inputfield{
+    margin-left: 6px;
 }
 
-h2{
-    font-size:180%;
-    text-align:centre;
-    font-family:arial;
-    text-indent:30px;
-    color: #ef1481cb;
-    text-shadow: 2px 1px 3px #030b00d2;
+/* buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
 }
 
-
-p{
-    font-size:140%;
-    text-decoration-color: azure;
-    text-decoration-style: dotted;
-    text-shadow: 2px 2px 3px rgba(8, 8, 8, 0.99);
-    text-align: centre;
-    font-family:sans-serif;
-    font-weight: bolder;
-    color:rgba(234, 202, 25, 0.72)
-}
-
-h1+p{
-   text-align:center;
-   color:rgb(248, 16, 16);
-   margin-left:auto;
-   font-family:arial;
-   font-size: 120%;;
-}
-
-.button:hover{
-   font-size: 14px;
-}
-
-footer{
-
-    text-align: center;
-    font-size: 100%;
-    font-family: cursive;
-    background-color:rgba(99, 65, 176, 0.22);
-}
-footer a{
-    color:#93c6f3;
-    text-decoration: none;
-    overflow: hidden;
-    }
-footer a:hover{
-    color: fuchsia;
-}
-
-input[type=reset]
-{
-    background-color: rgb(96, 172, 21) ;
+.button {
+    padding: 10px;
+    width: 65%;
     border: none;
-    color:#f7f7f7;
-    padding:15px 30px;
-    text-decoration: none;
-    margin: 4px 2px;
     border-radius: 4px;
-    cursor:progress;
-    width:45%
+    cursor: pointer;
+    margin: 5px 5px;
 }
 
-input[type=submit] {
-background-color: #62529c;
-border: none;
-color: #fff;
-padding: 15px 30px;
-text-decoration: none;
-margin: 4px 2px;
-border-radius: 4px;
-cursor: pointer;
-width:50%;
+#paynow {
+    background-color: #666a66;
+    color: #fff;
 }
 
-@media screen and (min: 7inch){
-    h2{
-        font-size:100%
-    }
-    p{
-    font-size:80%;
-    }
+#paynow:hover{
+    background-color:#4caf50 ;
+
+}
+
+#clear {
+    background-color: #f44336;
+    color: #fff;
+}
+#clear:hover {
+    background-color:#db2d16;
+    color: #fff;
 }
