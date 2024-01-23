@@ -81,13 +81,14 @@
                 </ul>
             </div>
             <div class="form-wrap">
-                <form name="Beautiify Contact" autocomplete="off" netlify>
+                <form name="Beautiify Contact" autocomplete="off" netlify onsubmit="return myfun()">
                     <div>
                         <h2 class="form-title">Send us a message :)</h2>
                     </div> 
                     <div class="form-fields">
                         <div class="form-group">
-                            <input type="text" class="fname" name="name" placeholder="Name" required>
+                            <input id=cform type="text" class="fname" name="name" placeholder="Name" required />
+                            <span id="message"> </span>
                         </div>
                         <div class="form-group">
                             <input type="email" class="email" name="email" placeholder="Email" required>
@@ -97,12 +98,42 @@
                         </div>
                     </div>
                     <div>
-                        <button type="submit" class="submit-button">Send Message</button>
+                        <button type="submit" class="submit-button" >Send Message</button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
+    <!-- FORM VALIDATION -->
+    <script>
+        function myfun(){
+            var correct=/^[A-Za-z]+$/;
+            var a=document.getElementById("cform").value;
+            if(a==" "){
+                document.getElementById("message").innerHTML="**Please fill user name";
+                return false;
+            }
+           
+            else if(a.length<3){
+                document.getElementById("message").innerHTML="**Minimum length should be 3";
+                return false;
+            }
+
+            else if(a.length>20){
+                document.getElementById("message").innerHTML="**Maximum length allowed is 20";
+                return false;
+            }
+
+            else if(a.match(correct)){
+                true;
+            }
+                else{
+               document.getElementById("message").innerHTML="**ONLY ALPHABETS ARE ALLOWED";
+               return false;
+                }
+            }            
+        
+    </script>
 </body>
 
 </html>
