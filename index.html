@@ -30,7 +30,7 @@
                     <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#components" class="nav-link">Components</a>
+                    <a href="#searchInput" class="nav-link" id="component">Components</a>
                 </li>
                 <li class="nav-item">
                     <a href="./assets/html_files/contributor.html" class="nav-link">Contributors</a>
@@ -57,11 +57,16 @@
             <p class="paragraph">
                 Beautiify comprises a curated selection of beautifully designed components and animations that can be seamlessly incorporated into any website, elevating its overall UI experience.
             </p>
-            <a href="#components">
-                <button class="started">Get Components</button>
+            <a href="#searchInput">
+                <button class="started" id="toggleButton">Get Components</button>
             </a>
         </div>
     </section>
+
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search components...">
+    </div>
 
     <div class="container" id="components">
         <a href="./assets/html_files/accordions.html" target="_blank">

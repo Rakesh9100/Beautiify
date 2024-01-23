@@ -53,3 +53,20 @@ window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleButton = document.getElementById('toggleButton');
+    var componentsLink = document.getElementById('component');
+    var hiddenComponent = document.getElementById('searchInput');
+
+    toggleButton.addEventListener('click', function () {
+        // Toggle the visibility of the component
+        hiddenComponent.style.display = (hiddenComponent.style.display === 'none') ? 'block' : 'none';
+    });
+
+    componentsLink.addEventListener('click', function () {
+
+        // Toggle the visibility of the component
+        hiddenComponent.style.display = (hiddenComponent.style.display === 'none') ? 'block' : 'none';
+    });
+});
