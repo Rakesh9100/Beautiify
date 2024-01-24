@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .search-container {
+      position: relative;
+    }
+
+    .search-bar {
+      width: 300px;
+      padding: 10px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      border-radius: 25px;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .search-bar:focus {
+      box-shadow: 0 0 20px rgba(255, 0, 150, 0.8);
+      animation: pulse 1.5s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(255, 0, 150, 0.8);
+      }
+      100% {
+        transform: scale(1.1);
+        box-shadow: 0 0 30px rgba(255, 0, 150, 0);
+      }
+    }
+  </style>
+  <title>Pulse Animated Search Bar</title>
+</head>
+<body>
+
+<div class="search-container">
+  <input type="text" class="search-bar" placeholder="Search...">
+</div>
+
+</body>
+</html>

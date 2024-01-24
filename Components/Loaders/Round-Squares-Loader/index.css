@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f1f5f9;
+}
+
+.loader {
+    --blob-radius: 50%;
+    --color: #f43f5e;
+    --thickness: .5rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+.blob {
+    width: 48px;
+    aspect-ratio: 1;
+    border-radius: 2rem;
+    border: var(--thickness) solid var(--color);
+    transition: 500ms height;
+    animation: load 4s infinite;
+}
+
+
+#blob2 {
+    scale: 1 -1;
+}
+
+#blob3 {
+    scale: -1 1;
+}
+
+#blob4 {
+    scale: -1 -1;
+}
+
+@keyframes load {
+    0% {
+        border-radius: 0 var(--blob-radius) 0 var(--blob-radius);
+    }
+
+    25% {
+        border-radius: var(--blob-radius);
+    }
+
+    50% {
+        border-radius: var(--blob-radius) 0 var(--blob-radius) 0;
+    }
+
+    75%{
+        border-radius: 0;
+    }
+
+    100%{
+        border-radius: 0 var(--blob-radius) 0 var(--blob-radius);
+    }
+}

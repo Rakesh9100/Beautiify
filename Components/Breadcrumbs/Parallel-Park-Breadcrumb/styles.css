@@ -1,0 +1,685 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+input {
+  display: none;
+}
+
+main {
+  position: relative;
+}
+
+header h1 {
+  font-family: Montserrat, "sans-serif";
+  font-size: 45px;
+  text-align: center;
+  color: #34495e;
+}
+header h1 .header-subtitile {
+  font-size: 0.35em;
+  margin-bottom: 5px;
+  position: relative;
+}
+header h1 .header-subtitile:before, header h1 .header-subtitile:after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 2px;
+  top: 50%;
+  margin-top: -1px;
+  background-color: #34495e;
+}
+header h1 .header-subtitile:before {
+  left: -35%;
+}
+header h1 .header-subtitile:after {
+  right: -35%;
+}
+header h1 .header-title {
+  margin-top: 0;
+}
+
+html {
+  padding: 0 20px;
+  background-color: #ecf0f1;
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  width: 985px;
+  display: block;
+  background-color: #e8e3e3;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+.park {
+  background-color: #dcd6d6;
+  padding: 20px;
+  position: relative;
+  border-top: 2px solid #fff;
+  -moz-box-shadow: 0px -20px 0px #c4baba;
+  -webkit-box-shadow: 0px -20px 0px #c4baba;
+  box-shadow: 0px -20px 0px #c4baba;
+  margin-top: 50px;
+}
+.park:before, .park:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-left: 2px dashed #fff;
+  width: 2px;
+  top: 0px;
+}
+.park:before {
+  left: 315px;
+}
+.park:after {
+  left: 650px;
+}
+
+.car:after, .car:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: inherit;
+  right: 80px;
+  position: absolute;
+}
+
+.car .car-front:after, .car .car-front:before {
+  content: "";
+  width: 20px;
+  height: 10px;
+  background-color: yellow;
+  position: absolute;
+  top: 70px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.car .car-middle:before, .car .car-middle:after {
+  content: "";
+  display: block;
+  border-bottom: 10px solid #495d65;
+  border-left: 30px solid transparent;
+  border-right: 40px solid transparent;
+  height: 10px;
+  width: 130px;
+  position: absolute;
+  right: 52px;
+}
+
+.car .car-back:before, .car .car-back:after {
+  content: "";
+  width: 23px;
+  height: 12px;
+  background-color: #D92626;
+  position: absolute;
+  bottom: -62px;
+}
+
+.car-line + .car-line {
+  margin-top: 40px;
+}
+
+.vacancy {
+  width: 285px;
+  height: 125px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 31px;
+  text-align: center;
+  line-height: 1.5;
+  color: #333;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.vacancy:before {
+  content: "You are going to park here!";
+}
+.vacancy:hover:before {
+  content: "Click the button bellow to start.";
+}
+.vacancy + .car {
+  margin-left: 40px;
+}
+
+.car {
+  width: 285px;
+  height: 125px;
+  background: #b6bec3;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-border-radius-topright: 40px 50%;
+  -webkit-border-top-right-radius: 40px 50%;
+  border-top-right-radius: 40px 50%;
+  -moz-border-radius-bottomright: 40px 50%;
+  -webkit-border-bottom-right-radius: 40px 50%;
+  border-bottom-right-radius: 40px 50%;
+  -moz-border-radius-bottomleft: 20px 30px;
+  -webkit-border-bottom-left-radius: 20px 30px;
+  border-bottom-left-radius: 20px 30px;
+  -moz-border-radius-topleft: 20px 30px;
+  -webkit-border-top-left-radius: 20px 30px;
+  border-top-left-radius: 20px 30px;
+}
+.car:after {
+  top: -12px;
+  -moz-border-radius: 3px 100% 0 0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 100% 0 0;
+}
+.car:before {
+  bottom: -12px;
+  -moz-border-radius: 0 0 100% 3px;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 100% 3px;
+}
+.car .car-front {
+  border-bottom: 40px solid #495d65;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: 42px;
+  height: 0;
+  width: 70px;
+  right: 30px;
+  position: absolute;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -moz-box-shadow: 0px 3px 0 #fff;
+  -webkit-box-shadow: 0px 3px 0 #fff;
+  box-shadow: 0px 3px 0 #fff;
+}
+.car .car-front:after {
+  -moz-transform: rotate(22deg);
+  -ms-transform: rotate(22deg);
+  -webkit-transform: rotate(22deg);
+  transform: rotate(22deg);
+  left: -5px;
+}
+.car .car-front:before {
+  -moz-transform: rotate(-22deg);
+  -ms-transform: rotate(-22deg);
+  -webkit-transform: rotate(-22deg);
+  transform: rotate(-22deg);
+  right: -5px;
+}
+.car.car-blue {
+  background-color: #3498db;
+}
+.car.car-red {
+  background-color: #e74c3c;
+}
+.car.car-silver {
+  background-color: silver;
+}
+.car + .car,
+.car + .vacancy {
+  margin-left: 40px;
+}
+.car .car-middle:before {
+  bottom: 8px;
+}
+.car .car-middle:after {
+  top: 8px;
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+.car .car-back {
+  content: "";
+  border-bottom: 35px solid #495d65;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0;
+  top: 44px;
+  width: 60px;
+  left: -5px;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+}
+.car .car-back:before {
+  left: -30px;
+  -moz-border-radius-bottomleft: 40px 22px;
+  -webkit-border-bottom-left-radius: 40px 22px;
+  border-bottom-left-radius: 40px 22px;
+}
+.car .car-back:after {
+  right: -30px;
+  -moz-border-radius-bottomright: 40px 22px;
+  -webkit-border-bottom-right-radius: 40px 22px;
+  border-bottom-right-radius: 40px 22px;
+}
+
+@-moz-keyframes animacao-passo1 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 680px;
+  }
+}
+@-webkit-keyframes animacao-passo1 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 680px;
+  }
+}
+@keyframes animacao-passo1 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 680px;
+  }
+}
+.passo1:checked + .passo2:not(:checked) ~ .car {
+  -moz-animation: animacao-passo1 3s ease-in-out;
+  -webkit-animation: animacao-passo1 3s ease-in-out;
+  animation: animacao-passo1 3s ease-in-out;
+}
+
+.passo1:checked + .passo2 ~ .car {
+  left: 680px;
+}
+
+@-moz-keyframes animacao-passo2 {
+  from {
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+    left: 680px;
+  }
+  to {
+    -moz-transform-origin: top left;
+    transform-origin: top left;
+    -moz-transform: rotate(0.1turn);
+    transform: rotate(0.1turn);
+    left: 660px;
+  }
+}
+@-webkit-keyframes animacao-passo2 {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    left: 680px;
+  }
+  to {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(0.1turn);
+    transform: rotate(0.1turn);
+    left: 660px;
+  }
+}
+@keyframes animacao-passo2 {
+  from {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    left: 680px;
+  }
+  to {
+    -moz-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -moz-transform: rotate(0.1turn);
+    -ms-transform: rotate(0.1turn);
+    -webkit-transform: rotate(0.1turn);
+    transform: rotate(0.1turn);
+    left: 660px;
+  }
+}
+.passo1:checked + .passo2:checked + .passo3:not(:checked) ~ .car {
+  -moz-animation: animacao-passo2 3s;
+  -webkit-animation: animacao-passo2 3s;
+  animation: animacao-passo2 3s;
+}
+
+.passo1:checked + .passo2:checked + .passo3 ~ .car {
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  -moz-transform: rotate(0.1turn);
+  -ms-transform: rotate(0.1turn);
+  -webkit-transform: rotate(0.1turn);
+  transform: rotate(0.1turn);
+  left: 660px;
+}
+
+@-moz-keyframes animacao-passo3 {
+  from {
+    left: 660px;
+    top: 0;
+  }
+  to {
+    left: 470px;
+    top: -183px;
+  }
+}
+@-webkit-keyframes animacao-passo3 {
+  from {
+    left: 660px;
+    top: 0;
+  }
+  to {
+    left: 470px;
+    top: -183px;
+  }
+}
+@keyframes animacao-passo3 {
+  from {
+    left: 660px;
+    top: 0;
+  }
+  to {
+    left: 470px;
+    top: -183px;
+  }
+}
+.passo1:checked + .passo2:checked + .passo3:checked ~ .car {
+  -moz-animation: animacao-passo3 3s ease-out;
+  -webkit-animation: animacao-passo3 3s ease-out;
+  animation: animacao-passo3 3s ease-out;
+  left: 470px;
+  top: -183px;
+}
+
+@-moz-keyframes animacao-passo4 {
+  from {
+    left: 470px;
+    top: -183px;
+    -moz-transform: rotate(0.1turn);
+    transform: rotate(0.1turn);
+  }
+  to {
+    left: 345px;
+    top: -183px;
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes animacao-passo4 {
+  from {
+    left: 470px;
+    top: -183px;
+    -webkit-transform: rotate(0.1turn);
+    transform: rotate(0.1turn);
+  }
+  to {
+    left: 345px;
+    top: -183px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes animacao-passo4 {
+  from {
+    left: 470px;
+    top: -183px;
+    -moz-transform: rotate(0.1turn);
+    -ms-transform: rotate(0.1turn);
+    -webkit-transform: rotate(0.1turn);
+    transform: rotate(0.1turn);
+  }
+  to {
+    left: 345px;
+    top: -183px;
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+.passo2:checked + .passo3:checked + .passo4:checked ~ .car {
+  -moz-animation: animacao-passo4 3s;
+  -webkit-animation: animacao-passo4 3s;
+  animation: animacao-passo4 3s;
+  left: 345px;
+  top: -183px;
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.breadcrumbs {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  border-radius: 5px;
+  counter-reset: flag;
+  position: absolute;
+  bottom: 25px;
+  left: calc(50% - 200px);
+  color: #34495e;
+}
+.breadcrumbs > label {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  float: left;
+  font-size: 12px;
+  line-height: 36px;
+  padding: 0 10px 0 60px;
+  position: relative;
+  cursor: pointer;
+}
+.breadcrumbs > label:first-child {
+  padding-left: 46px;
+  border-radius: 5px 0 0 5px;
+}
+.breadcrumbs > label:first-child:before {
+  left: 14px;
+}
+.breadcrumbs > label:last-child {
+  border-radius: 0 5px 5px 0;
+  padding-right: 20px;
+}
+.breadcrumbs > label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  transform: scale(0.707) rotate(45deg);
+  z-index: 1;
+  box-shadow: 2px -2px 0 2px #e8e3e3;
+  border-radius: 0 5px 0 50px;
+}
+.breadcrumbs > label:last-child:after {
+  content: none;
+}
+.breadcrumbs > label:before {
+  content: counter(flag);
+  counter-increment: flag;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin: 8px 0;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  background: #444;
+  font-weight: bold;
+  text-align: center;
+  color: #495d65;
+}
+.breadcrumbs.breadcrumbs-flat > label {
+  background: white;
+  color: black;
+  transition: all 0.5s;
+}
+.breadcrumbs.breadcrumbs-flat > label:after {
+  background: white;
+  color: black;
+  transition: all 0.5s;
+}
+.breadcrumbs.breadcrumbs-flat > label:before {
+  background: white;
+  box-shadow: 0 0 0 1px #ccc;
+}
+.breadcrumbs.breadcrumbs-flat > label:hover, .breadcrumbs.breadcrumbs-flat > label:hover:after {
+  background-color: #495d65;
+  color: #fff;
+}
+
+.congrats {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  bottom: 140px;
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  color: #34495e;
+}
+.congrats .congrats-title,
+.congrats .congrats-subtitle,
+.congrats .congrats-text {
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+.congrats .congrats-title {
+  font-size: 42px;
+}
+.congrats .congrats-subtitle {
+  font-size: 22px;
+}
+.congrats .congrats-link {
+  color: #3498db;
+  text-decoration: none;
+}
+
+@-moz-keyframes animacao-check-step {
+  0%, 80% {
+    pointer-events: none;
+    opacity: 0.2;
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animacao-check-step {
+  0%, 80% {
+    pointer-events: none;
+    opacity: 0.2;
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+@keyframes animacao-check-step {
+  0%, 80% {
+    pointer-events: none;
+    opacity: 0.2;
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+@-moz-keyframes show-congrats {
+  0%, 50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@-webkit-keyframes show-congrats {
+  0%, 50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes show-congrats {
+  0%, 50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+input.passo1:checked ~ .breadcrumbs > .passo2-label, input.passo1:checked + input.passo2:checked ~ .breadcrumbs > .passo3-label, input.passo1:checked + input.passo2:checked + input.passo3:checked ~ .breadcrumbs > .passo4-label {
+  pointer-events: all;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+input.passo1:checked, input.passo1:checked ~ .breadcrumbs > .passo1-label,
+input.passo1:checked ~ .breadcrumbs > .passo1-label:after, input.passo1:checked + input.passo2:checked ~ .breadcrumbs > .passo2-label,
+input.passo1:checked + input.passo2:checked ~ .breadcrumbs > .passo2-label:after, input.passo1:checked + input.passo2:checked + input.passo3:checked ~ .breadcrumbs > .passo3-label,
+input.passo1:checked + input.passo2:checked + input.passo3:checked ~ .breadcrumbs > .passo3-label:after, input.passo1:checked + input.passo2:checked + input.passo3:checked + input.passo4:checked ~ .breadcrumbs > .passo4-label,
+input.passo1:checked + input.passo2:checked + input.passo3:checked + input.passo4:checked ~ .breadcrumbs > .passo4-label:after {
+  background-color: #495d65;
+  color: #fff;
+}
+
+.passo2-label,
+.passo3-label,
+.passo4-label {
+  pointer-events: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+}
+
+input.passo1:checked ~ .breadcrumbs > .passo2-label {
+  -moz-animation: animacao-check-step 3.2s;
+  -webkit-animation: animacao-check-step 3.2s;
+  animation: animacao-check-step 3.2s;
+}
+input.passo1:checked + input.passo2:checked ~ .breadcrumbs > .passo3-label {
+  -moz-animation: animacao-check-step 3.2s;
+  -webkit-animation: animacao-check-step 3.2s;
+  animation: animacao-check-step 3.2s;
+}
+input.passo1:checked + input.passo2:checked + input.passo3:checked ~ .breadcrumbs > .passo4-label {
+  -moz-animation: animacao-check-step 3.2s;
+  -webkit-animation: animacao-check-step 3.2s;
+  animation: animacao-check-step 3.2s;
+}
+input.passo1:checked + input.passo2:checked + input.passo3:checked + input.passo4:checked ~ .breadcrumbs > .passo4-label,
+input.passo1:checked + input.passo2:checked + input.passo3:checked + input.passo4:checked ~ .breadcrumbs > .passo4-label:after {
+  -moz-animation: animacao-check-step 3.2s;
+  -webkit-animation: animacao-check-step 3.2s;
+  animation: animacao-check-step 3.2s;
+}
+input.passo1:checked + input.passo2:checked + input.passo3:checked + input.passo4:checked ~ .congrats {
+  -moz-animation: show-congrats 4.4s;
+  -webkit-animation: show-congrats 4.4s;
+  animation: show-congrats 4.4s;
+  visibility: visible;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
