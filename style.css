@@ -202,7 +202,7 @@ html {
 .header2 {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 900;
     width: 100%;
     background-repeat: no repeat;
     background-image: url(./assets/images/bg3.png);

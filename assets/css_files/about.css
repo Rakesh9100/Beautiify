@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    background-color: #4158D0;
+    background-image: url(../images/bg3.png);
+    background-repeat: no repeat;
+    align-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+section {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70vh;
+    width: 78vw;
+    margin: 0 auto;
+    margin-top: -50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px
+}
+
+.image {
+    background-color: #000000;
+    display: flex;
+    border-radius: 12px 0 0 12px;
+    width: 110%;
+}
+
+.image img {
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+.content {
+    background-color: #000000;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 12px 12px 0;
+    color: #fff;
+}
+
+.content h4 {
+    font-size: 17px;
+    letter-spacing: 0px;
+    opacity: 0.9;
+    color: #ffecd1;
+}
+
+.content span {
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+}
+
+.content p {
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 150%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #ffffff
+}
+
+.links {
+    margin: 15px 0;
+}
+
+.links li {
+    border: 2px solid #4158D0;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
+    text-align: center;
+}
+
+.links li a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+.links li:hover {
+    border-color: #C850C0;
+}
+
+.vertical-line {
+    height: 30px;
+    width: 3px;
+    background: #C850C0;
+    margin: 0 auto;
+}
+
+.icons {
+    display: flex;
+    padding: 15px 0;
+}
+
+.icons li {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.icons li i {
+    font-size: 26px;
+    opacity: 0.8;
+}
+
+.icons li i:hover {
+    color: #C850C0;
+    cursor: pointer;
+}
+
+@media(max-width: 900px) {
+    section {
+        grid-template-columns: 1fr;
+        width: 100%;
+        border-radius: none;
+    }
+
+    .image {
+        height: 100vh;
+        border-radius: none;
+    }
+
+    .content {
+        height: 80vh;
+        border-radius: none;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .content span {
+        margin: 20px 0;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .links li a {
+        font-size: 14px;
+    }
+
+    .links {
+        margin: 5px 0;
+    }
+
+    .links li {
+        padding: 6px 10px;
+    }
+
+    .icons li i {
+        font-size: 15px;
+    }
+}
+
+.credit {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 22vh;
+}
+
+.credit {
+    position: relative;
+    width:  100vw;
+    box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
+    min-height: 30px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.credit .social-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.credit .social-icon li {
+    list-style: none;
+}
+
+.credit .social-icon li a {
+    font-size: 2em;
+    color: var(--secondary);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.credit-links {
+    transition: transform .2s;
+}
+
+.credit .social-icon li a:hover {
+    transform: translateY(-10px);
+}
+
+.credit p {
+    color: var(--secondary);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+.credit p a {
+    background-color: rgba(239, 230, 230, 0.551);
+    color: var(--secondary);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    display: inline-block;
+}
