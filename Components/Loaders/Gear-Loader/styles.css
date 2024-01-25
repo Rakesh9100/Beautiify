@@ -1,0 +1,112 @@
+body {
+  background: #F6F6F6;
+}
+
+body > h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #F6F6F6;
+  letter-spacing: .12em;
+  border-bottom: 4px solid #fff;
+  display: block;
+  width: auto;
+  max-width: 725px;
+  margin: 0px auto;
+  line-height: 1em;
+  padding-bottom: .25em;
+  margin-top: 1em;
+}
+
+.box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 725px;
+  margin: 0px auto;
+}
+
+.gears {
+  width: 100%;
+  display: inline-block;
+}
+
+.gears-container {
+  width: 150px;
+  height: 150px;
+  font-size: 24px;
+  padding: 9%;
+  position: relative;
+  margin: 0px auto;
+}
+
+.gear-rotate {
+  width: 2em;
+  height: 2em;
+  top: 50%;
+  left: 50%;
+  margin-top: -1em;
+  margin-left: -1em;
+  background: #4a62fc;
+  position: absolute;
+  border-radius: 1em;
+  animation: 1s gear-rotate linear infinite;
+}
+
+.gear-rotate-left {
+  margin-top: -2.2em;
+  top: 50%;
+  width: 2em;
+  height: 2em;
+  background: #4a62fc;
+  position: absolute;
+  border-radius: 1em;
+  animation: 1s gear-rotate-left linear infinite;
+}
+
+.gear-rotate::before, .gear-rotate-left::before {
+  width: 2.8em;
+  height: 2.8em;
+  background: 
+    linear-gradient(0deg, transparent 39%, #4a62fc 39%, #4a62fc 61%, transparent 61%),
+    linear-gradient(60deg, transparent 42%, #4a62fc 42%, #4a62fc 58%, transparent 58%),
+    linear-gradient(120deg, transparent 42%, #4a62fc 42%, #4a62fc 58%, transparent 58%);
+  position: absolute;
+  content: "";
+  top: -.4em;
+  left: -.4em;
+  border-radius: 1.4em;
+}
+
+.gear-rotate::after, .gear-rotate-left::after {
+  width: 1em;
+  height: 1em;
+  background: #F6F6F6;
+  position: absolute;
+  content: "";
+  top: .5em;
+  left: .5em;
+  border-radius: .5em;
+}
+
+@keyframes gear-rotate {
+  0% { 
+    transform: rotate(0deg);
+  }
+  100% { 
+    transform: rotate(-180deg); 
+  }
+}
+
+@keyframes gear-rotate-left {
+  0% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(210deg);
+  }
+}
