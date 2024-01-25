@@ -20,29 +20,31 @@
         <div class="loader-section section-right"></div>
     </div>
 
-    <header class="header1">
+    <header class="header1" id="main-header">
         <nav class="navbar" class="nav-bg1">
             <a href="index.html">
                 <div class="logo">Beautiify</div>
             </a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link-active" id="home-link" style="color: #ff0000; font-weight: bold;">Home</a>
                     <i class="fa-solid fa-house"></i>
                 </li>
+                <!-- Add id attributes to other navigation links -->
                 <li class="nav-item">
-                    <a href="#components" class="nav-link">Components</a>
+                    <a href="#components" class="nav-link-active" id="components-link" >Components</a>
                     <i class="fa-solid fa-icons"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/html_files/contributor.html" class="nav-link">Contributors</a>
+                    <a href="./assets/html_files/contributor.html" class="nav-link-active" id="contributors-link">Contributors</a>
                     <i class="fa-solid fa-user"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/html_files/contact.html" class="nav-link">Contact</a>
+                    <a href="./assets/html_files/contact.html" class="nav-link-active" id="contact-link">Contact</a>
                     <i class="fa-solid fa-phone"></i>
                 </li>
             </ul>
+            
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -236,7 +238,19 @@
     <script src="./script.js"></script>
     <script src="./assets/js_files/contributor.js"></script>
     <script src="./assets/js_files/scroll-reveal.js"></script>
-   
+    <!--<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.nav-menu .nav-link').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    document.querySelectorAll('.nav-menu .nav-link').forEach(function (link) {
+                        link.classList.remove('nav-link-active');
+                    });
+                    this.classList.add('nav-link-active');
+                    this.style.backgroundColor = '#ff0000'; 
+                    this.style.border = '2px solid #fff'; 
+                });
+            });
+        });
+    </script>-->
 </body>
-
 </html>

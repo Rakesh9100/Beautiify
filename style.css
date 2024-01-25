@@ -226,6 +226,11 @@ html {
     margin: 0 auto;
     z-index: 1000;
 }
+/* Add this style to highlight the active link with an underline */
+.nav-link.active-page {
+    text-decoration: underline;
+}
+/* Add this style to color the active link */
 
 a {
     text-decoration: none;
