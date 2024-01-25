@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css_files/contributor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -15,6 +14,12 @@
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
     <header class="header1">
         <nav class="navbar" class="nav-bg1">
             <a href="index.html">
@@ -28,7 +33,7 @@
                     <a href="#components" class="nav-link">Components</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contributor" class="nav-link">Contributors</a>
+                    <a href="./assets/html_files/contributor.html" class="nav-link">Contributors</a>
                 </li>
                 <li class="nav-item">
                     <a href="./assets/html_files/contact.html" class="nav-link">Contact</a>
@@ -50,115 +55,144 @@
             <h1 class="heading">Beautiify</h1>
             <h3 class="sub-head">Every component, on the right place!!</h3>
             <p class="paragraph">
-                Beautiify comprises a curated selection of beautifully designed
-                components and animations that can be seamlessly incorporated into any
-                website, elevating its overall UI experience.
+                Beautiify comprises a curated selection of beautifully designed components and animations that can be seamlessly incorporated into any website, elevating its overall UI experience.
             </p>
             <a href="#components">
                 <button class="started">Get Components</button>
             </a>
         </div>
     </section>
+<section class="search">
+    <label for="">
+        
+        <input type="text" placeholder="Search For Components" id="searchinp">
+        <button id="searchbtn" na>Search </button>
+    </label>
+
+</section>
 
     <div class="container" id="components">
         <a href="./assets/html_files/accordions.html" target="_blank">
-            <div class="box">
-                <div class="content">
-                    <i class="fa-solid fa-square-plus"></i>
-                    <h2>Accordions</h2>
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fa-solid fa-square-plus"></i>
+                        <h2>Accordions</h2>
+                    </div>
                 </div>
             </div>
-
         </a>
         <a href="./assets/html_files/backgrounds.html" target="_blank">
-            <div class="box">
-                <div class="content">
-                    <i class="fas fa-palette"></i>
-                    <h2>Backgrounds</h2>
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-palette"></i>
+                        <h2>Backgrounds</h2>
+                    </div>
                 </div>
             </div>
         </a>
         <a href="./assets/html_files/breadcrumbs.html" target="_blank">
-            <div class="box">
-                <div class="content">
-                    <i class="fa-solid fa-caret-right"></i>
-                    <h2>Breadcrumbs</h2>
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <h2>Breadcrumbs</h2>
+                    </div>
                 </div>
             </div>
-
         </a>
         <a href="./assets/html_files/buttons.html" target="_blank">
-            <div class="box">
-                <div class="content">
-                    <i class="fas fa-bold"></i>
-                    <h2>Buttons</h2>
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-bold"></i>
+                        <h2>Buttons</h2>
+                    </div>
                 </div>
             </div>
         </a>
         <a href="./assets/html_files/cards.html" target="_blank">
-            <div class="box">
-                <div class="content">
-                    <i class="fas fa-id-card"></i>
-                    <h2>Cards</h2>
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-id-card"></i>
+                        <h2>Cards</h2>
+                    </div>
                 </div>
             </div>
         </a>
         <a href="./assets/html_files/carousels.html" target="_blank">
-            <div class="box">
-                <div class="content">
-                    <i class="fas fa-th-large"></i>
-                    <h2>Carousels</h2>
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-th-large"></i>
+                        <h2>Carousels</h2>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="./assets/html_files/footers.html" target="_blank">
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fa-regular fa-window-maximize"></i>
+                        <h2>Footers</h2>
+                    </div>
                 </div>
             </div>
         </a>
         <a href="./assets/html_files/forms.html" target="_blank">
-            <div class="box">
-                <div class="content">
-                    <i class="fas fa-code"></i>
-                    <h2>Forms</h2>
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-code"></i>
+                        <h2>Forms</h2>
+                    </div>
                 </div>
             </div>
         </a>
         <a href="./assets/html_files/loaders.html" target="_blank">
-            <div class="box">
-                <div class="content">
-                    <i class="fas fa-spinner"></i>
-                    <h2>Loaders</h2>
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-spinner"></i>
+                        <h2>Loaders</h2>
+                    </div>
                 </div>
             </div>
         </a>
         <a href="./assets/html_files/navigation-bars.html" target="_blank">
-            <div class="box">
-                <div class="content">
-                    <i class="fas fa-bars"></i>
-                    <h2>Navigation Bars</h2>
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-bars"></i>
+                        <h2>Navigation Bars</h2>
+                    </div>
                 </div>
             </div>
         </a>
         <a href="./assets/html_files/search-bars.html" target="_blank">
-            <div class="box">
-                <div class="content">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <h2>Search Bars</h2>
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h2>Search Bars</h2>
+                    </div>
                 </div>
             </div>
         </a>
         <a href="./assets/html_files/text-animations.html" target="_blank">
-            <div class="box">
-                <div class="content">
-                    <i class="fas fa-font"></i>
-                    <h2>Text Animations</h2>
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fas fa-font"></i>
+                        <h2>Text Animations</h2>
+                    </div>
                 </div>
             </div>
-
         </a>
-    </div>
-    <!-- <hr class="line"> -->
-
-    <!-- Contributors section -->
-    <div class="contributors">
-        <h1 class="heading">Our Valuable Contributors</h1>
-        <div id="contributor"></div>
+        
     </div>
 
     <div class="footer" id="about">
@@ -191,8 +225,7 @@
             </ul>
             <p>
                 Created By
-                <a href="https://github.com/Rakesh9100" target="_blank">Rakesh Roshan ❤️</a>
-                | © <span id="year"></span>: All Rights Reserved
+                <a href="https://github.com/Rakesh9100" target="_blank">Rakesh Roshan ❤️</a> | © <span id="year"></span>: All Rights Reserved
             </p>
         </footer>
     </div>
@@ -204,7 +237,8 @@
 
     <script src="./script.js"></script>
     <script src="./assets/js_files/contributor.js"></script>
-    <script src="./scroll-reveal.js"></script>
+    <script src="./assets/js_files/scroll-reveal.js"></script>
+   
 </body>
 
 </html>
