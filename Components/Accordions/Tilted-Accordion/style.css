@@ -1,3 +1,6 @@
+body{
+    background-color: black;
+}
 article.accordion
 {
 	display: block;
@@ -82,7 +85,4 @@ article.accordion section h2
 	-ms-transition: all 1s ease;
 	-o-transition: all 1s ease;
 	transition: all 1s ease;
-}
-body{
-    background-color: black;
 }
