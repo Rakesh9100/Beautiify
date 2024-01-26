@@ -222,7 +222,6 @@ html {
     background-position: 50% 50%;
 }
 
-
 .navbar {
     margin: 0 auto;
     z-index: 1000;
@@ -233,6 +232,31 @@ a {
     color: white;
     font-weight: 500;
     text-shadow: 1px 1px 2px black, 1px 1px 1px white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: -10px;
+}
+  
+.flex-item-left {
+    background-color:transparent;
+    margin-left: 10px;
+    flex: 5%;
+}
+  
+.flex-item-right {
+    background-color: transparent;
+    padding: 0px;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 2.3rem;
+    color: white;
+    text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
+    font-weight: 700;
+    flex: 10%;
 }
 
 ul {
@@ -268,7 +292,6 @@ nav li:hover {
     font-size: 2.3rem;
     font-weight: 700;
     margin-left: 10px;
-    margin-top: 1%;
     font-family: Ubuntu;
     color: white;
     text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
@@ -714,36 +737,3 @@ footer p a {
         margin: 15px !important;
     }
 }
-* {
-  box-sizing: border-box;
-
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  font-size: 10px;
-  text-align: center;
-}
-
-.flex-item-left {
-  background-color:transparent;
-  margin-left: 10px;
-  padding: 0px;
-  flex: 5%;
-}
-
-.flex-item-right {
-  background-color: transparent;
-  padding: 0px;
-  text-align: center;
-  margin-left: 10px;
-  margin-top: 0%;
-  font-size: 2.3rem;
-  font-family: ubuntu;
-  color: white;
-  text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
-  font-weight: 700;
-  flex: 10%;
-}
-
