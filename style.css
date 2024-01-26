@@ -400,8 +400,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 25px;
-    padding: 50px 0;
+    padding: 32px 0;
 }
 
 .container .box {
@@ -571,6 +570,42 @@ footer p a {
     color: black;
 }
 
+/* Search Bar Css */
+
+#searchBar {
+    text-align: center;
+    border-radius: 14px;
+    margin: 2rem 4rem 0 ;
+    padding: 2rem;
+    color: white;
+    width: 100%;
+}
+
+#searchBar h1 {
+    font-family: Ubuntu;
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px var(--light);
+    margin-top: 16px;
+}
+
+#searchBar input {
+    font-family: 'Poppins',sans-serif;
+    border: 0;
+    padding: 1rem;
+    height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    width: 40rem;
+    transition: all linear .2s;
+    font-weight: 600;
+}
+
+#searchBar input:hover {
+    transform: scale(1.02);
+    box-shadow: -5px -5px 10px #682572;
+}
+
 /* Media Queries */
 
 @media (max-width: 1030px) {
@@ -635,6 +670,12 @@ footer p a {
         font-weight: 300;
         margin-top: 15vh;
         padding: 8px 30px;
+    }
+}
+
+@media (max-width: 550px){
+    #searchBar input{
+        width: 80%;
     }
 }
 
