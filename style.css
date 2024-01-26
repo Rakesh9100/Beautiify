@@ -234,6 +234,31 @@ a {
     text-shadow: 1px 1px 2px black, 1px 1px 1px white;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: -10px;
+}
+  
+.flex-item-left {
+    background-color:transparent;
+    margin-left: 10px;
+    flex: 5%;
+}
+  
+.flex-item-right {
+    background-color: transparent;
+    padding: 0px;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 2.3rem;
+    color: white;
+    text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
+    font-weight: 700;
+    flex: 10%;
+}
+
 ul {
     list-style: none;
 }
