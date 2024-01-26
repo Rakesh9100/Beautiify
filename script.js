@@ -48,26 +48,29 @@ window.addEventListener('scroll', function () {
     }
 });
 
-
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// Function to filter components
+function filterComponents() {
+    var input, filter, components, i;
+    input = document.getElementById('componentSearch');
+    filter = input.value.toUpperCase();
+    components = document.querySelectorAll('.container .box');
+    console.log(filter)
+    console.log(components)
 
-document.addEventListener('DOMContentLoaded', function () {
-    var toggleButton = document.getElementById('toggleButton');
-    var componentsLink = document.getElementById('component');
-    var hiddenComponent = document.getElementById('searchInput');
+    for (i = 0; i < components.length; i++) {
+        var component = components[i];
+        var h2 = component.querySelector('h2');
+        var componentName = h2.textContent || h2.innerText;
 
-    toggleButton.addEventListener('click', function () {
-        // Toggle the visibility of the component
-        hiddenComponent.style.display = (hiddenComponent.style.display === 'none') ? 'block' : 'none';
-    });
-
-    componentsLink.addEventListener('click', function () {
-
-        // Toggle the visibility of the component
-        hiddenComponent.style.display = (hiddenComponent.style.display === 'none') ? 'block' : 'none';
-    });
-});
+        if (componentName.toUpperCase().indexOf(filter) > -1) {
+            component.style.display="flex";
+        } else {
+            component.style.display="none";
+        }
+    }
+}
