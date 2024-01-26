@@ -23,8 +23,12 @@
     <header class="header1" id="main-header">
         <nav class="navbar" class="nav-bg1">
             <a href="index.html">
-                <div class="logo">Beautiify</div>
+                <div class="flex-container">
+                    <div class="flex-item-left"><img src="./assets/images/logo.png" width="37px" height="37px"></div>
+                    <div class="flex-item-right" class="logo">Beautiify</div>
+                </div>
             </a>
+
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#home" class="nav-link-active" id="home-link" style="color: #ff0000; font-weight: bold;">Home</a>
@@ -74,6 +78,12 @@
     </section>
 
     <div class="container" id="components">
+        <!-- Search Bar -->
+        <div id="searchBar">
+            <h1>Search Component</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Component Name" oninput="filterComponents()">
+        </div>
+
         <a href="./assets/html_files/accordions.html" target="_blank">
             <div class="zoom-effect">
                 <div class="box">
@@ -242,6 +252,7 @@
     <script src="./script.js"></script>
     <script src="./assets/js_files/contributor.js"></script>
     <script src="./assets/js_files/scroll-reveal.js"></script>
+
     <!--<script>
         document.addEventListener('DOMContentLoaded', function () {
             document.querySelectorAll('.nav-menu .nav-link').forEach(function (link) {
