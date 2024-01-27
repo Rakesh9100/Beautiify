@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@-webkit-keyframes carousel-animate {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(200%) scale(0.7);
+  }
+  3%, 14.2857142857% {
+    visibility: visible;
+    opacity: 0.8;
+    transform: translateX(100%) scale(0.9);
+  }
+  17.2857142857%, 28.5714285714% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  31.5714285714%, 42.8571428571% {
+    visibility: visible;
+    opacity: 0.8;
+    transform: translateX(-100%) scale(0.9);
+  }
+  45.8571428571% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(-200%) scale(0.9);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-200%) scale(0.7);
+  }
+}
+@keyframes carousel-animate {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(200%) scale(0.7);
+  }
+  3%, 14.2857142857% {
+    visibility: visible;
+    opacity: 0.8;
+    transform: translateX(100%) scale(0.9);
+  }
+  17.2857142857%, 28.5714285714% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  31.5714285714%, 42.8571428571% {
+    visibility: visible;
+    opacity: 0.8;
+    transform: translateX(-100%) scale(0.9);
+  }
+  45.8571428571% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(-200%) scale(0.9);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-200%) scale(0.7);
+  }
+}
+:root {
+  --light: 0;
+  --light: 0;
+  --max-width-post: 420px;
+  --primary: hsl(
+  	calc(64 + 220 * var(--light)),
+  	calc(77% - 7% * var(--light)),
+  	calc(79% - 56% * var(--light))
+  );
+  --bg: hsl(
+  	calc(284 - 220 * var(--light)),
+  	calc(70% + 7% * var(--light)),
+  	calc(23% + 56% * var(--light))
+  );
+  --text-primary: hsl(
+  	calc(60 * var(--light)),
+  	calc(19% * var(--light)),
+  	calc(97% - 89% * var(--light))
+  );
+  --font-size-sm: clamp(0.7rem, 0.91vw + 0.47rem, 1.2rem);
+  --font-size-base: clamp(0.88rem, 1.14vw + 0.59rem, 1.5rem);
+  --font-size-md: clamp(1.09rem, 1.42vw + 0.74rem, 1.88rem);
+  --font-size-lg: clamp(1.37rem, 1.78vw + 0.92rem, 2.34rem);
+  --font-size-xl: clamp(1.71rem, 2.22vw + 1.15rem, 2.93rem);
+  --font-size-xxl: clamp(2.14rem, 2.77vw + 1.44rem, 3.66rem);
+  --font-size-xxxl: clamp(2.67rem, 3.47vw + 1.8rem, 4.58rem);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  width: 100vw;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-primary);
+  overflow: hidden;
+}
+@supports (height: 100dvh) {
+  body {
+    height: 100dvh;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  --container-padding-horizontal: 32px;
+  position: relative;
+  padding-inline: var(--container-padding-horizontal);
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.carousel {
+  pointer-events: none;
+  position: absolute;
+  -webkit-padding-before: 67px;
+          padding-block-start: 67px;
+  -webkit-padding-after: max(24px, calc(29px + var(--font-size-md)));
+          padding-block-end: max(24px, calc(29px + var(--font-size-md)));
+  perspective: 100px;
+  width: 100%;
+}
+@media (max-width: 568px) {
+  .carousel {
+    -webkit-padding-after: 52px;
+            padding-block-end: 52px;
+  }
+}
+.carousel__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 61.2vh;
+}
+.carousel .item {
+  position: absolute;
+  max-width: 418px;
+  height: 100%;
+  margin-inline: var(--container-padding-horizontal);
+  opacity: 0;
+  will-change: transform, opacity;
+  -webkit-animation: carousel-animate 27s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+          animation: carousel-animate 27s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+}
+@media (max-width: 568px) {
+  .carousel .item {
+    margin-inline: calc(var(--container-padding-horizontal) + 1px);
+  }
+}
+.carousel .item:nth-child(1) {
+  -webkit-animation-delay: calc(3.8571428571s * -1);
+          animation-delay: calc(3.8571428571s * -1);
+}
+.carousel .item:nth-child(2) {
+  -webkit-animation-delay: calc(3.8571428571s * 0);
+          animation-delay: calc(3.8571428571s * 0);
+}
+.carousel .item:nth-child(3) {
+  -webkit-animation-delay: calc(3.8571428571s * 1);
+          animation-delay: calc(3.8571428571s * 1);
+}
+.carousel .item:nth-child(4) {
+  -webkit-animation-delay: calc(3.8571428571s * 2);
+          animation-delay: calc(3.8571428571s * 2);
+}
+.carousel .item:nth-child(5) {
+  -webkit-animation-delay: calc(3.8571428571s * 3);
+          animation-delay: calc(3.8571428571s * 3);
+}
+.carousel .item:nth-child(6) {
+  -webkit-animation-delay: calc(3.8571428571s * 4);
+          animation-delay: calc(3.8571428571s * 4);
+}
+.carousel .item:last-child {
+  -webkit-animation-delay: calc(-3.8571428571s * 2);
+          animation-delay: calc(-3.8571428571s * 2);
+}
+.carousel img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.instagram {
+  --pading-horizontal: 16px;
+  --border: 1px solid var(--primary);
+  max-width: var(--max-width-post);
+  width: 100%;
+  border: var(--border);
+  border-radius: 20px;
+}
+.instagram__header {
+  padding-block: 12px;
+  border-bottom: var(--border);
+}
+.instagram__header figure {
+  padding-block: 0;
+  padding-inline: var(--pading-horizontal);
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.instagram__header figure img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: var(--border);
+  -webkit-margin-end: 8px;
+          margin-inline-end: 8px;
+}
+.instagram__media {
+  display: flex;
+  border-bottom: var(--border);
+}
+.instagram__media .img {
+  max-width: 100%;
+  height: 61.2vh;
+}
+.instagram__buttons {
+  padding-block: 12px;
+  padding-inline: var(--pading-horizontal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.instagram__buttons .left {
+  display: flex;
+  align-items: center;
+}
+.instagram__buttons .left svg:nth-of-type(2) {
+  margin-inline: 12px;
+}
+.instagram__icon {
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+  font-size: var(--font-size-md);
+  min-width: 24px;
+  min-height: 24px;
+}
+.instagram__icon:hover {
+  opacity: 0.7;
+}
+.instagram__icon path {
+  stroke: var(--primary);
+  stroke-linejoin: round;
+}
+.instagram__icon--comment path {
+  stroke-width: 2;
+}
+.instagram__icon--message {
+  -webkit-margin-before: 3px;
+          margin-block-start: 3px;
+}
+.instagram__icon--message path {
+  stroke-width: 2;
+}
+.instagram__icon--saved path {
+  stroke-width: 2;
+}

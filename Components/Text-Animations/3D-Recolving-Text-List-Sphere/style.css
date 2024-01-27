@@ -1,0 +1,23 @@
+ /*     Importing Google fonts    */
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+ body {
+   background-color: #000;
+ }
+ 
+  /* Applying CSS to sphere */
+ .tagcloud {
+   display: inline-block;
+   top: 100px;
+   left: 32%;
+   font-weight: bold;
+   letter-spacing: 1px;
+   font-family: 'Bebas Neue', cursive;
+   font-size: 20px;
+ }
+ 
+ /* Change color of each text in sphere on hover   */
+ .tagcloud--item:hover {
+   color: #FFC300 ;
+ }
+      

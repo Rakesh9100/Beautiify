@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+body {
+    background-image: url(../images/bg3.png);
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    
+}
+
 .contributors h1 {
     text-align: center;
     color: skyblue;
@@ -25,8 +34,8 @@
 }
 
 .contributor-card {
-    width: 65px;
-    height: 65px;
+    width: 75px;
+    height: 75px;
     clip-path: polygon(50% 0%, 91% 25%, 91% 75%, 50% 100%, 9% 75%, 9% 25%);
     margin: 5px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -46,4 +55,18 @@
 .contributor-card:nth-child(4n+1),
 .contributor-card:nth-child(4n+3) {
     margin-top: -4px;
+}
+
+
+.footer {
+    margin-top: 1em;
+}
+
+
+@media (min-width: 1400px){
+    .footer{
+        position: fixed;
+        width: 100%;
+        bottom: 0;  
+    }
 }

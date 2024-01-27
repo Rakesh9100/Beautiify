@@ -1,0 +1,85 @@
+* {
+  border: none !important;
+}
+.accordion-button {
+  background-color: #ffffff;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 20px 50px;
+  margin: 14px 0;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.accordion-button:active {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6) inset,
+    -9px -9px 16px rgba(255, 255, 255, 0.5) inset;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #ffffff00;
+  outline: 0;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+.accordion-button:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #ffffff;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6) inset,
+    -9px -9px 16px rgba(255, 255, 255, 0.5) inset;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: none;
+  content: "";
+  height: 30px;
+  width: 30px;
+  transition: none;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: inset 0px -8px 11px -4px rgba(109, 147, 176, 0.38);
+}
+.accordion-button::after {
+  background: none;
+  content: "";
+  height: 30px;
+  width: 30px;
+  transition: none;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+h1 {
+  font-family: "Arial Black", sans-serif;
+  background-color: #bcc2e1;
+  font-size: 5rem;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.9);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.accordion-button {
+  color: #b6bcdb;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #9da2bd;
+}
+
+ul li,
+p {
+  color: #9da2bd;
+}
