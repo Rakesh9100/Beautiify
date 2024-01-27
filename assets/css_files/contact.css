@@ -12,36 +12,25 @@ body {
     background-position: 50% 50%;
 }
 
-body,
-input,
-textarea,
-a {
-    font-family: "Roboto", sans-serif;
-}
-
 #section-wrapper {
     width: 100%;
+    margin-top: 25px;
 }
 
 .box-wrapper {
     position: relative;
     display: table;
     width: 75vw;
-    /* height: 75vh; */
-    /* margin: auto; */
     top: 15px;
     left: 50%;
     transform: translate(-50%, 0);
-    /* margin-top: 35px; */
     border-radius: 30px;
-    /* filter: drop-shadow(-5px -5px 5px rgb(0, 0, 0,0.4)); */
     filter: drop-shadow(0px 0px 10px rgb(0, 0, 0, 0.4));
 }
 
 .box-wrapper:hover {
     transition: 0.25s;
     filter: drop-shadow(0px 0px 10px rgb(0, 0, 0, 0.7));
-
 }
 
 .info-wrap {
@@ -51,9 +40,7 @@ a {
     float: left;
     display: block;
     border-radius: 30px 0px 0px 30px;
-    background: linear-gradient(144deg,
-            rgba(126, 39, 156, 0.9) 0%,
-            rgba(49, 39, 157, 0.9) 49%);
+    background: linear-gradient(144deg, rgba(126, 39, 156, 0.9) 0%, rgba(49, 39, 157, 0.9) 49%);
     color: #fff;
 }
 

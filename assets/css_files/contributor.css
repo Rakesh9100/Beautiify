@@ -14,16 +14,17 @@ body {
 
 .contributors h1 {
     text-align: center;
-    color: skyblue;
+    color: rgb(68, 184, 230);
     font-weight: 600;
     font-size: 4.5rem;
     margin-top: 25px;
     margin-bottom: 4%;
+    transition: color 0.3s ease-in-out;
 }
 
 .contributors h1:hover {
-    text-decoration: underline;
-    color: rgb(68, 184, 230);
+    cursor: pointer;
+    color: rgb(148, 250, 64);
 }
 
 #contributor {

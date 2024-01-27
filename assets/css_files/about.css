@@ -9,12 +9,20 @@
 body {
     font-family: 'Playfair Display', serif;
     display: grid;
-    background-color: #4158D0;
     background-image: url(../images/bg3.png);
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
     background-repeat: no repeat;
     align-content: center;
     min-height: 100vh;
     overflow-x: hidden;
+}
+
+.navbar {
+    width: calc(100% - 9.5px); /* Adjust the value as needed */
+    /* ... your other styles */
 }
 
 section {
