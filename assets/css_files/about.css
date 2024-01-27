@@ -37,8 +37,8 @@ section {
 
 .image img {
     height: 300px;
-    margin-top: 50px;
-    margin-left: 5px;
+    margin-top: 80px;
+    margin-left: 10px;
 }
 
 .content {
@@ -50,9 +50,14 @@ section {
     color: #fff;
 }
 
+.content h1, h3 {
+    text-align: center;
+}
+
 .content h4 {
     font-size: 17px;
     letter-spacing: 0px;
+    padding: 0 25px;
     opacity: 0.9;
     color: #ffecd1;
 }
@@ -126,63 +131,13 @@ section {
     cursor: pointer;
 }
 
-@media(max-width: 900px) {
-    section {
-        grid-template-columns: 1fr;
-        width: 100%;
-        border-radius: none;
-    }
-
-    .image {
-        height: 100vh;
-        border-radius: none;
-    }
-
-    .content {
-        height: 80vh;
-        border-radius: none;
-    }
-
-    .content h2 {
-        font-size: 20px;
-        margin-top: 50px;
-    }
-
-    .content span {
-        margin: 20px 0;
-    }
-
-    .content p {
-        font-size: 14px;
-    }
-
-    .links li a {
-        font-size: 14px;
-    }
-
-    .links {
-        margin: 5px 0;
-    }
-
-    .links li {
-        padding: 6px 10px;
-    }
-
-    .icons li i {
-        font-size: 15px;
-    }
-}
-
 .credit {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     min-height: 22vh;
-}
-
-.credit {
     position: relative;
-    width:  100vw;
+    width: 100vw;
     box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
     min-height: 30px;
     padding: 20px 50px;
@@ -237,4 +192,51 @@ section {
     margin-bottom: 10px;
     font-size: 1.1em;
     display: inline-block;
+}
+
+@media(max-width: 900px) {
+    section {
+        grid-template-columns: 1fr;
+        width: 100%;
+        border-radius: none;
+    }
+
+    .image {
+        height: 100vh;
+        border-radius: none;
+    }
+
+    .content {
+        height: 80vh;
+        border-radius: none;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .content span {
+        margin: 20px 0;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .links li a {
+        font-size: 14px;
+    }
+
+    .links {
+        margin: 5px 0;
+    }
+
+    .links li {
+        padding: 6px 10px;
+    }
+
+    .icons li i {
+        font-size: 15px;
+    }
 }
