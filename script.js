@@ -43,6 +43,11 @@ window.addEventListener('scroll', function () {
 });
 
 
+function toggleMode(){
+    var element = document.body;
+    element.classList.toggle("dark-mode")
+}
+
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
