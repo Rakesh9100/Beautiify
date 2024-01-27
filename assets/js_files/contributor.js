@@ -51,5 +51,3 @@ async function fetchAllContributors() {
 }
 
 fetchAllContributors();
-
-document.getElementById("year").textContent = new Date().getFullYear();
