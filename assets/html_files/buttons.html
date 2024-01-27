@@ -7,29 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="../css_files/buttons.css" />
+    <script src="../../script.js"></script>
     <script src="../js_files/commonnav.js"></script>
-    <title>Beautiify | Components</title>
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <title>Beautiify | Buttons</title>
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
     <header class="header3">
         <nav class="navbar">
             <a href="../../index.html">
-                <div class="logo">Beautiify</div>
+                <div class="flex-container">
+                    <div class="flex-item-left"><img src="../images/logo.png" width="37px" height="37px"></div>
+                    <div class="flex-item-right" class="logo">Beautiify</div>
+                </div>
             </a>
+
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="../../index.html#home" class="nav-link">Home</a>
+                    <i class="fa-solid fa-house"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="../../assets/html_files/about.html" class="nav-link">About</a>
+                    <i class="fa-solid fa-circle-info"></i>
                 </li>
                 <li class="nav-item">
                     <a href="../../index.html#components" class="nav-link">Components</a>
+                    <i class="fa-solid fa-icons"></i>
                 </li>
                 <li class="nav-item">
                     <a href="./contributor.html" class="nav-link">Contributors</a>
+                    <i class="fa-solid fa-user"></i>
                 </li>
                 <li>
                     <a href="contact.html" class="nav-link">Contact</a>
+                    <i class="fa-solid fa-phone"></i>
                 </li>
             </ul>
             <div class="hamburger">
@@ -38,7 +59,8 @@
                 <span class="bar"></span>
             </div>
         </nav>
-        </header>
+    </header>
+
     <section>
         <div class="heading">Buttons</div>
         <div class="contain">
@@ -57,7 +79,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="box">
                 <h1>Neon Button</h1>
                 <div class="preview">
@@ -72,7 +93,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="box">
                 <h1>Toggle Button</h1>
                 <div class="preview">
@@ -95,7 +115,7 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Gradient-button" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -108,7 +128,7 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Glow-button" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -116,12 +136,12 @@
             <div class="box">
                 <h1>Jelly Button</h1>
                 <div class="preview">
-                    <a href="../../Components/Buttons/Jelly-button/index.html" title="Live Preview" target="_blank">
+                    <a href="../../Components/Buttons/Jelly-Button/index.html" title="Live Preview" target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Jelly-Button" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -134,7 +154,7 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Flipside-button" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -154,9 +174,9 @@
                 </div>
             </div>
             <div class="box">
-                <h1>Hover-Shadow Button</h1>
+                <h1>Hover Button</h1>
                 <div class="preview">
-                    <a href="../../Components/Buttons/Hover-button/index.html" title="Live Preview"
+                    <a href="../../Components/Buttons/Hover-Button/index.html" title="Live Preview"
                         target="_blank">
                         <img src="../images/link.png">
                     </a>
@@ -183,11 +203,10 @@
                     </a>
                 </div>
             </div>
-
             <div class="box">
                 <h1>3D Button</h1>
                 <div class="preview">
-                    <a href="../../Components/Buttons/3D-button/index.html" title="Live Preview"
+                    <a href="../../Components/Buttons/3D-Button/index.html" title="Live Preview"
                         target="_blank">
                         <img src="../images/link.png">
                     </a>
@@ -199,7 +218,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="box">
                 <h1>Mask Hover Button</h1>
                 <div class="preview">
@@ -210,6 +228,36 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Mask-Hover-Button"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Delete Animation Button</h1>
+                <div class="preview">
+                    <a href="../../Components/Buttons/Delete-Animation-Button/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Delete-Animation-Button"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Prespective Button</h1>
+                <div class="preview">
+                    <a href="../../Components/Buttons/Perspective-Button/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Perspective-Button"
                         title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
