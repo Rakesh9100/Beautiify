@@ -21,8 +21,7 @@ body {
 }
 
 .navbar {
-    width: calc(100% - 9.5px); /* Adjust the value as needed */
-    /* ... your other styles */
+    width: calc(100% - 9.5px);
 }
 
 section {
