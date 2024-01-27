@@ -4,15 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Neumorphic Accordion</title>
   </head>
   <body>
-    <section id="neumorphism" class="bg-white py-5">
-      <div class="container">
-        <h1 class="text-center mb-5 lead-h-text">Neumorphic Accordion</h1>
+    <section
+      id="neumorphism"
+      class="p-5"
+      style="background: linear-gradient(to right, #19569d, #2ee809) !important"
+    >
+      <div
+        class="container my-3 p-4"
+        style="
+          background: linear-gradient(to right, #708eb1, #85c07a) !important;
+        "
+      >
+        <h1
+          class="text-center mb-5 lead-h-text"
+          style="
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: #ffffff;
+          "
+        >
+          Neumorphic Accordion
+        </h1>
         <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
+          <div class="accordion-item" style="background-color: #e9cdcd">
             <h2 class="accordion-header" id="headingOne">
               <button
                 class="accordion-button"
@@ -39,7 +63,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item" style="background-color: #e9cdcd">
             <h2 class="accordion-header" id="headingTwo">
               <button
                 class="accordion-button collapsed"
@@ -59,7 +83,7 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <p>
+                <p style="color: rgb(3, 3, 105);">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
                   vero alias neque repellendus unde recusandae possimus harum
                   similique nulla? Temporibus laboriosam ea natus asperiores
@@ -68,7 +92,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item" style="background-color: #e9cdcd">
             <h2 class="accordion-header" id="headingThree">
               <button
                 class="accordion-button collapsed"
