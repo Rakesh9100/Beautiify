@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 500)
 });
 
+function modeFn(){
+    var element = document.body;
+    element.classList.toggle("dark-mode")
+}
 hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle("active");

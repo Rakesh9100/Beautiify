@@ -21,7 +21,6 @@
     </div>
 
     <header class="header1">
-
         <nav class="navbar" class="nav-bg1">
             <a href="index.html">
                 <div class="flex-container">
@@ -44,14 +43,15 @@
                     <i class="fa-solid fa-icons"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="#contributor" class="nav-link">Contributors</a>
+                    <a href="./assets/html_files/contributor.html" class="nav-link">Contributors</a>
+                    <i class="fa-solid fa-user"></i>
                 </li>
                 <li class="nav-item">
                     <a href="./assets/html_files/contact.html" class="nav-link">Contact</a>
                     <i class="fa-solid fa-phone"></i>
                 </li>
                 <li>
-                    <button onclick="toggleMode">Dark Mode</button>
+                    <button onclick="modeFn()" style="padding: 8px; border-radius: 15px; ">Dark Mode</button>
                 </li>
             </ul>
             <div class="hamburger">
@@ -77,14 +77,6 @@
             </a>
         </div>
     </section>
-<section class="search">
-    <label for="">
-        
-        <input type="text" placeholder="Search For Components" id="searchinp">
-        <button id="searchbtn" na>Search </button>
-    </label>
-
-</section>
 
     <div class="container" id="components">
         <!-- Search Bar -->
@@ -214,13 +206,6 @@
             </div>
         </a>
     </div>
-    <!-- <hr class="line"> -->
-
-    <!-- Contributors section -->
-    <div class="contributors">
-        <h1 class="heading">Our Valuable Contributors</h1>
-        <div id="contributor"></div>
-    </div>
 
     <div class="footer" id="about">
         <footer>
@@ -252,8 +237,7 @@
             </ul>
             <p>
                 Created By
-                <a href="https://github.com/Rakesh9100" target="_blank">Rakesh Roshan ❤️</a>
-                | © <span id="year"></span>: All Rights Reserved
+                <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | © <span id="year"></span>: All Rights Reserved
             </p>
         </footer>
     </div>
@@ -268,7 +252,16 @@
     <script src="https://mediafiles.botpress.cloud/c49225f4-f243-440f-a8ab-9ef97d82964b/webchat/config.js" defer></script>
     <script src="./script.js"></script>
     <script src="./assets/js_files/contributor.js"></script>
-    <script src="./scroll-reveal.js"></script>
+    <script src="./assets/js_files/scroll-reveal.js"></script>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+
 </body>
 
 </html>
