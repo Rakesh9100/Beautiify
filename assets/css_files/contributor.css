@@ -3,31 +3,43 @@
     padding: 0;
 }
 
+body {
+    background-image: url(../images/bg3.png);
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
 .contributors h1 {
     text-align: center;
-    color: skyblue;
+    color: rgb(68, 184, 230);
     font-weight: 600;
     font-size: 4.5rem;
+    margin-top: 25px;
     margin-bottom: 4%;
+    transition: color 0.3s ease-in-out;
 }
 
 .contributors h1:hover {
-    text-decoration: underline;
-    color: rgb(68, 184, 230);
+    cursor: pointer;
+    color: rgb(148, 250, 64);
 }
 
 #contributor {
     margin: 0;
-    padding: 0;
+    padding: 0 25px;
+    line-height: 10;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .contributor-card {
-    width: 65px;
-    height: 65px;
-    clip-path: polygon(50% 0%, 91% 25%, 91% 75%, 50% 100%, 9% 75%, 9% 25%);
+    width: 95px;
+    height: 95px;
+    clip-path: circle(40%);
     margin: 5px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
@@ -46,4 +58,8 @@
 .contributor-card:nth-child(4n+1),
 .contributor-card:nth-child(4n+3) {
     margin-top: -4px;
+}
+
+.footer {
+    margin-top: 1em;
 }

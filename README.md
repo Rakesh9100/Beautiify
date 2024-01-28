@@ -60,10 +60,13 @@ Beautiify comprises a curated selection of beautifully designed components and a
 
 <h3>Home/Main Page :-</h3>
 
-![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/c98e8194-798d-43fd-9aee-59ae65b25c33)<br><br>
+![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/f07fd337-8503-47e2-807e-b33c9355dd3b)<br><br>
 <h3>Components Page :-</h3>
 
-![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/7f8f4f2d-1d91-4d46-9403-6a497a83cc45)
+![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/70a1a164-626b-47c3-b344-353516ee5910)<br><br>
+<h3>Contact Page :-</h3>
+
+![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/a8b66b02-633e-44bb-8c3d-0bd48e0be5d5)
 <br><br>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -128,6 +131,25 @@ This project and everyone participating in it is governed by the [Code of Conduc
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
+<h2>This repo has been part of the following Open Source Programs🥳</h2>
+
+<table>
+<tr>
+<td align="center">
+<a href="https://iwoc.codes/"><img src="https://github.com/Rakesh9100/Beautiify/assets/73993775/8ed95409-8fe5-42f5-b60c-51dc9f995df5" height="140px" width="140px" alt="IWOC2024"></a><br><sub><b>IWOC 2k24</b></sub>
+</td>
+<td align="center">
+<a href="https://www.jwoc.tech/"><img src="https://github.com/Rakesh9100/Beautiify/assets/73993775/2a0fcf59-de20-4175-b8bb-67dbc17f3d40" height="140px" width="150px" alt="JWOC2024"></a><br><sub><b>JWOC 2k24</b></sub>
+</td>
+<td align="center">
+<a href="https://www.socialwinterofcode.com/"><img src="https://github.com/Rakesh9100/Beautiify/assets/73993775/9235952f-9062-4352-992d-eb34e4d60283" height="140px" width="180px" alt="SWOC2024"></a><br><sub><b>SWOC 2k24</b></sub>
+</td>
+</tr>
+</table>
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
 <h2>Project Admin⚡</h2>
 
 <table>
@@ -137,6 +159,14 @@ This project and everyone participating in it is governed by the [Code of Conduc
 </td>
 </tr>
 </table>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<h2>Project Contributors🫂</h2>
+
+<a href="https://github.com/rakesh9100/beautiify/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=rakesh9100/beautiify" />
+</a>
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 

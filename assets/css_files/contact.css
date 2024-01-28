@@ -12,46 +12,35 @@ body {
     background-position: 50% 50%;
 }
 
-body,
-input,
-textarea,
-a {
-    font-family: "Roboto", sans-serif;
-}
-
 #section-wrapper {
     width: 100%;
-    padding: 10px;
+    margin-top: 25px;
 }
 
 .box-wrapper {
     position: relative;
     display: table;
     width: 75vw;
-    height: 85vh;
-    margin: auto;
-    margin-top: 35px;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
     border-radius: 30px;
-    /* filter: drop-shadow(-5px -5px 5px rgb(0, 0, 0,0.4)); */
-    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0,0.4));
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0, 0.4));
 }
 
-.box-wrapper:hover{
-    transition: 0.25s ;
-    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0,0.7));
-
+.box-wrapper:hover {
+    transition: 0.25s;
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0, 0.7));
 }
 
 .info-wrap {
     width: 35%;
-    height: 85vh;
+    height: 80vh;
     padding: 40px;
     float: left;
     display: block;
     border-radius: 30px 0px 0px 30px;
-    background: linear-gradient(144deg,
-            rgba(126, 39, 156, 0.9) 0%,
-            rgba(49, 39, 157, 0.9) 49%);
+    background: linear-gradient(144deg, rgba(126, 39, 156, 0.9) 0%, rgba(49, 39, 157, 0.9) 49%);
     color: #fff;
 }
 
@@ -97,6 +86,7 @@ a {
     color: #fff;
     font-size: 16px;
     text-decoration: none;
+    transition: all .4s;
 }
 
 .info-details li a:hover {
@@ -122,18 +112,17 @@ a {
     margin: 0px 5px;
     cursor: pointer;
     transition: all 0.5s;
-    text-shadow: 1px 2px 2px black;
     box-shadow: 1px 1px 2px black;
 }
 
 .social-icons li i:hover {
     background: #fff;
-    color: #000000;
+    color: #49025f;
 }
 
 .form-wrap {
     width: 65%;
-    height: 85vh;
+    height: 80vh;
     float: right;
     padding: 40px 25px 35px 25px;
     border-radius: 0px 30px 30px 0px;
@@ -209,15 +198,47 @@ a {
 
 /* Responsive css */
 
-@media only screen and (max-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
     .box-wrapper {
-        width: 100%;
+        width: 85%;
     }
 
-    .info-wrap,
+    .info-wrap {
+        width: 40%;
+        padding: 16px;
+    }
+
+    .form-wrap {
+        width: 60%;
+    }
+
+    .form-group {
+        padding-left: 15px;
+        margin-left: 0px;
+    }
+
+    .submit-button {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box-wrapper {
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        top: 0;
+    }
+
+    .info-wrap {
+        width: 100%;
+        height: 40%;
+        float: none;
+    }
+
     .form-wrap {
         width: 100%;
-        height: inherit;
+        height: 60%;
         float: none;
     }
 

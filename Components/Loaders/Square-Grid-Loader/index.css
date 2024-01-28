@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: #f1f5f9;
+}
+
+.loader {
+    --stroke-width: .5rem;
+    --stroke-color: #f43f5e;
+    --square-size: 3rem;
+    --border-radius: 1rem;
+
+    display: grid;
+    grid-template-columns: var(--square-size) var(--square-size);
+    grid-template-rows: var(--square-size) var(--square-size);
+    gap: .5rem;
+    animation: load 3s infinite cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.square {
+    border: var(--stroke-width) solid var(--stroke-color);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+#square1 {
+    border-radius: var(--border-radius) 0 0 0;
+}
+
+#square2 {
+    border-radius: 0 var(--border-radius) 0 0;
+}
+
+#square3 {
+    border-radius: 0 0 0 var(--border-radius);
+}
+
+#square4 {
+    border-radius: 0 0 var(--border-radius) 0;
+}
+
+@keyframes load {
+    0% {
+        grid-template-columns: var(--square-size) calc(var(--square-size) * 3);
+        grid-template-rows: var(--square-size) calc(var(--square-size) * 3);
+    }
+
+    25% {
+        grid-template-columns: calc(var(--square-size) * 3) var(--square-size);
+        grid-template-rows: var(--square-size) calc(var(--square-size) * 3);
+    }
+
+    50% {
+        grid-template-columns: calc(var(--square-size) * 3) var(--square-size);
+        grid-template-rows: calc(var(--square-size) * 3) var(--square-size);
+    }
+
+    75% {
+        grid-template-columns: var(--square-size) calc(var(--square-size) * 3);
+        grid-template-rows: calc(var(--square-size) * 3) var(--square-size);
+    }
+
+    100% {
+        grid-template-columns: var(--square-size) calc(var(--square-size) * 3);
+        grid-template-rows: var(--square-size) calc(var(--square-size) * 3);
+    }
+}

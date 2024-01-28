@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Survey Form</h1>
+</header>
+
+<form id="surveyForm" action="#" method="post">
+    <!-- Replace the placeholder text with your questions -->
+    <label for="q1">Question 1:</label>
+    <input type="text" id="q1" name="q1" required>
+
+    <label for="q2">Question 2:</label>
+    <input type="text" id="q2" name="q2" required>
+
+    <label for="q3">Question 3:</label>
+    <input type="text" id="q3" name="q3" required>
+
+    <div class="rating">
+        <label for="rating">Rate Us:</label><br>
+        <input type="radio" id="star5" name="rating" value="5" />
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4" />
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3" />
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2" />
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1" />
+        <label for="star1">&#9733;</label>
+    </div>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    // Add interactivity with JavaScript
+    document.getElementById('surveyForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Survey submitted!'); // You can replace this with your own logic for handling the form data
+        resetForm();
+    });
+
+    function resetForm() {
+        // Clear input fields and rating after submission
+        var form = document.getElementById('surveyForm');
+        form.reset();
+        var stars = document.querySelectorAll('.rating input');
+        stars.forEach(function (star) {
+            star.checked = false;
+        });
+    }
+</script>
+
+</body>
+</html>
