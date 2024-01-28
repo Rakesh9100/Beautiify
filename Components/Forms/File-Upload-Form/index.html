@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>File Upload Form</title>
+</head>
+<body>
+    <div class="upload">
+        <div class="upload-files">
+         <header>
+          <p>
+           <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+           <span class="up">Up</span>
+           <span class="load">load</span>
+          </p>
+         </header>
+         <div class="body" id="drop">
+          <i class="fa fa-file-text-o pointer-none" aria-hidden="true"></i>
+          <p class="pointer-none"><b>Drag and drop</b> files here <br /> or <a href="" id="triggerFile">Browse</a> to begin the upload</p>
+                   <input type="file" multiple="multiple" />
+         </div>
+         <footer>
+          <div class="divider">
+           <span><AR>FILES</AR></span>
+          </div>
+          <div class="list-files">
+           <!--   template   -->
+          </div>
+                   <button class="importar">UPDATE FILES</button>
+         </footer>
+        </div>
+       </div>       
+       <script src="script.js"></script>
+</body>
+</html>

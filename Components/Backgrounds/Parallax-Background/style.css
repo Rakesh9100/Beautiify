@@ -22,10 +22,13 @@ body {
 }
 
 #text {
-    position: absolute;
     font-size: 5em;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .parallax img {
@@ -47,8 +50,10 @@ body {
     text-align: center;
     font-size: 3em;
     color: #fff;
-    margin-bottom: 10px;
-    margin-top: 100px;
+    /* margin-bottom: 10px;
+    margin-top: 100px; */
+    top: 50%;
+    left: 50%;
 }
 
 @media (max-width:1000px) {
@@ -57,7 +62,18 @@ body {
         top: 0;
         left: 0;
         height: 100%;
-        width: auto;
+        width: 100%;
+
+    }
+}
+
+@media (max-width:500px) {
+    #text {
+        font-size: 4em;
+    }
+
+    .sec h2 {
+        font-size: 2.5em;
 
     }
 }
