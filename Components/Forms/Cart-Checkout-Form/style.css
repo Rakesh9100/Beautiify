@@ -7,7 +7,7 @@
   }
   
   .card {
-    width: 800px;
+    width: 500px;
     height: 30vh;
     display: flex;
     flex-direction: column;
@@ -99,7 +99,7 @@
   }
   
   .card .small {
-    font-size: 15px;
+    font-size: 20px;
     margin: 0 0 auto auto;
   }
   
