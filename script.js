@@ -57,7 +57,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 function filterComponents() {
     var input, filter, components, i;
     input = document.getElementById('componentSearch');
-    filter = input.value.toUpperCase();
+    filter = input.value.toUpperCase().trim();
     components = document.querySelectorAll('.container .box');
     console.log(filter)
     console.log(components)
