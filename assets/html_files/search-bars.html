@@ -73,7 +73,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Expandable-Search-Bar" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Expandable-Search-Bar"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -87,7 +88,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Glassmorphism-Search-Bar" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Glassmorphism-Search-Bar"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -101,7 +103,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/3D-Search-Bar" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/3D-Search-Bar"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -115,7 +118,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Icon-to-Bar-SearchBar/" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Icon-to-Bar-SearchBar/"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -129,7 +133,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Neumorphic-Search-Bar/" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Neumorphic-Search-Bar/"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -143,7 +148,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Voice-Command-Search-Bar/" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Voice-Command-Search-Bar/"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -157,7 +163,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Pulse-Animated-Search-Bar" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Pulse-Animated-Search-Bar"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -171,13 +178,38 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Simple-Search-Bar" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Simple-Search-Bar"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
             </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var tl = gsap.timeline();
+
+        tl.from(".navbar", {
+            opacity: 0,
+            y: -30,
+            delay: 1,
+            duration: 0.5,
+        })
+        tl.from(".heading", {
+            opacity: 0,
+            scale: 1.04,
+            y: 10
+        })
+        tl.from(".contain", {
+            opacity: 0,
+            y: 10
+        })
+
+
+    </script>
 
 </body>
 

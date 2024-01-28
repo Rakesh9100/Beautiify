@@ -115,7 +115,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Gradient-button" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Gradient-button"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -128,7 +129,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Glow-button" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Glow-button"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -141,7 +143,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Jelly-Button" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Jelly-Button"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -154,7 +157,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Flipside-button" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Flipside-button"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -176,8 +180,7 @@
             <div class="box">
                 <h1>Hover Button</h1>
                 <div class="preview">
-                    <a href="../../Components/Buttons/Hover-Button/index.html" title="Live Preview"
-                        target="_blank">
+                    <a href="../../Components/Buttons/Hover-Button/index.html" title="Live Preview" target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
@@ -206,8 +209,7 @@
             <div class="box">
                 <h1>3D Button</h1>
                 <div class="preview">
-                    <a href="../../Components/Buttons/3D-Button/index.html" title="Live Preview"
-                        target="_blank">
+                    <a href="../../Components/Buttons/3D-Button/index.html" title="Live Preview" target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
@@ -265,6 +267,30 @@
             </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var tl = gsap.timeline();
+
+        tl.from(".navbar", {
+            opacity: 0,
+            y: -30,
+            delay: 1,
+            duration: 0.5,
+        })
+        tl.from(".heading", {
+            opacity: 0,
+            scale: 1.04,
+            y: 10
+        })
+        tl.from(".contain", {
+            opacity: 0,
+            y: 10
+        })
+
+
+    </script>
 
 </body>
 

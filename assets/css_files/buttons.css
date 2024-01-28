@@ -38,7 +38,7 @@ body {
     align-items: center;
     min-height: 100vh;
     line-height: 1.4;
-    margin: 10%;
+    margin: 4%;
     /* background: var(--primary); */
     font-size: 1.4rem;
     background-image: url(../images/bg2.png);
@@ -56,7 +56,6 @@ section {
 .heading {
     font-size: 4em;
     font-weight: bolder;
-    color: white;
     text-align: center;
     margin: 50px 0;
     text-shadow: 2px 2px 2px black, 1px 1px 1px white;
@@ -79,18 +78,21 @@ section {
     width: 370px;
     color: black;
     background-color: #f0dee9b5;
+    transition: all 0.2s ease-in-out;
+    position: relative;
 }
 
 .box:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     border: 2px solid white;
+    transition: all 0.2s ease-in-out;
 }
 
 h1 {
     color: black;
     text-align: center;
     text-shadow: 1px 1px 1px black, 1px 1px 1px white;
-    font-size: 1.8em;
+    font-size: 2em;
 }
 
 .preview {
@@ -101,6 +103,8 @@ h1 {
 .preview img {
     height: 41px;
     width: 41px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
 }
 
 .source {
@@ -111,4 +115,17 @@ h1 {
 .source img {
     height: 41px;
     width: 41px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
 }
+
+.source img:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.preview img:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+

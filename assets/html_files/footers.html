@@ -67,12 +67,14 @@
             <div class="box">
                 <h1>Glassmorphism Footer</h1>
                 <div class="preview">
-                    <a href="../../Components/Footers/Glassmorphism-Footer/index.html" title="Live Preview" target="_blank">
+                    <a href="../../Components/Footers/Glassmorphism-Footer/index.html" title="Live Preview"
+                        target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Glassmorphism-Footer" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Glassmorphism-Footer"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -85,7 +87,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Simple-Footer" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Simple-Footer"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -98,7 +101,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Waves-Footer" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Waves-Footer"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -111,7 +115,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Animated-Footer" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Animated-Footer"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -119,18 +124,43 @@
             <div class="box">
                 <h1>Minimalist Footer</h1>
                 <div class="preview">
-                    <a href="../../Components/Footers/Minimalist-Footer/index.html" title="Live Preview" target="_blank">
+                    <a href="../../Components/Footers/Minimalist-Footer/index.html" title="Live Preview"
+                        target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Minimalist-Footer" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Minimalist-Footer"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
             </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var tl = gsap.timeline();
+
+        tl.from(".navbar", {
+            opacity: 0,
+            y: -30,
+            delay: 1,
+            duration: 0.5,
+        })
+        tl.from(".heading", {
+            opacity: 0,
+            scale: 1.04,
+            y: 10
+        })
+        tl.from(".contain", {
+            opacity: 0,
+            y: 10
+        })
+
+    </script>
 
 </body>
 

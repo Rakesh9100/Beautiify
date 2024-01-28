@@ -97,8 +97,8 @@
             <div class="box">
                 <h1>3D Cylindrically Rotating Text Animation</h1>
                 <div class="preview">
-                    <a href="../../Components/Text-Animations/3D-Cylindrically-Rotating-Text-Animation/index.html" title="Live Preview"
-                        target="_blank">
+                    <a href="../../Components/Text-Animations/3D-Cylindrically-Rotating-Text-Animation/index.html"
+                        title="Live Preview" target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
@@ -155,27 +155,31 @@
                 </div>
             </div>
             <div class="box">
-               <h1>Glowing Text Animation</h1>
-               <div class="preview">
-                   <a href="../../Components/Text-Animations/Glowing-Text-Animation/" title="Live Preview" target="_blank">
-                       <img src="../images/link.png">
-                   </a>
-               </div>
-               <div class="source">
-                   <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Typewriter-Text-Animation" title="Source Code" target="_blank">
-                       <img src="../images/github.png">
-                   </a>
-               </div>
-           </div>
-           <div class="box">
-                <h1>3D Rotating Text Animation</h1>
+                <h1>Glowing Text Animation</h1>
                 <div class="preview">
-                    <a href="../../Components/Text-Animations/3D-Rotating-Text-Animation/index.html" title="Live Preview" target="_blank">
+                    <a href="../../Components/Text-Animations/Glowing-Text-Animation/" title="Live Preview"
+                        target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/3D-Rotating-Text-Animation" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Typewriter-Text-Animation"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>3D Rotating Text Animation</h1>
+                <div class="preview">
+                    <a href="../../Components/Text-Animations/3D-Rotating-Text-Animation/index.html"
+                        title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/3D-Rotating-Text-Animation"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -183,8 +187,8 @@
             <div class="box">
                 <h1>Hovering Spaced Text Animation</h1>
                 <div class="preview">
-                    <a href="../../Components/Text-Animations/Hovering-Spaced-Text-Animation/index.html" title="Live Preview"
-                        target="_blank">
+                    <a href="../../Components/Text-Animations/Hovering-Spaced-Text-Animation/index.html"
+                        title="Live Preview" target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
@@ -198,12 +202,14 @@
             <div class="box">
                 <h1>Flip Text Animation</h1>
                 <div class="preview">
-                    <a href="../../Components/Text-Animations/Flip-Text-Animation/index.html" title="Live Preview" target="_blank">
+                    <a href="../../Components/Text-Animations/Flip-Text-Animation/index.html" title="Live Preview"
+                        target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Flip-Text-Animation" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Flip-Text-Animation"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -211,8 +217,8 @@
             <div class="box">
                 <h1>3D Revolving Text List Sphere Animation</h1>
                 <div class="preview">
-                    <a href="../../Components/Text-Animations/3D-Recolving-Text-List-Sphere/index.html" title="Live Preview"
-                        target="_blank">
+                    <a href="../../Components/Text-Animations/3D-Recolving-Text-List-Sphere/index.html"
+                        title="Live Preview" target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
@@ -270,6 +276,29 @@
             </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var tl = gsap.timeline();
+
+        tl.from(".navbar", {
+            opacity: 0,
+            y: -30,
+            delay: 1,
+            duration: 0.5,
+        })
+        tl.from(".heading", {
+            opacity: 0,
+            scale: 1.04,
+            y: 10
+        })
+        tl.from(".contain", {
+            opacity: 0,
+            y: 10
+        })
+
+    </script>
 
 </body>
 
