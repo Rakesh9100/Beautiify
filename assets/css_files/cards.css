@@ -38,7 +38,7 @@ body {
     align-items: center;
     min-height: 100vh;
     line-height: 1.4;
-    margin:5%;
+    margin: 5%;
     /* background: var(--primary); */
     font-size: 1.4rem;
     background-image: url(../images/bg2.png);
@@ -80,10 +80,12 @@ section {
     color: black;
     background-color: #f0dee9b5;
 }
+
 .box:hover {
     transform: scale(1.05);
     border: 2px solid white;
 }
+
 h1 {
     color: black;
     text-align: center;

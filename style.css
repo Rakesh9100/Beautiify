@@ -271,12 +271,12 @@ button#dark-mode-toggle {
 .navbar {
     margin: 0 auto;
     z-index: 1000;
-    background: linear-gradient(135deg,rgba(255,255,255,0),rgba(255,255,255,0.8));
-     backdrop-filter: blur(20px);
-     -webkit-backdrop-filter: blur(20px);
-     border-radius: 50px;
-     border: 1px solid rgba(255, 255, 255,0.18);
-     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 a {
@@ -292,13 +292,13 @@ a {
     text-align: center;
     margin-bottom: -10px;
 }
-  
+
 .flex-item-left {
-    background-color:transparent;
+    background-color: transparent;
     margin-left: 10px;
     flex: 5%;
 }
-  
+
 .flex-item-right {
     background-color: transparent;
     padding: 0px;
@@ -341,8 +341,8 @@ nav li:hover {
 }
 
 nav li i {
-    font-size:18px;
-    color:white;
+    font-size: 18px;
+    color: white;
 }
 
 .logo {
@@ -659,7 +659,7 @@ footer p a {
 #searchBar {
     text-align: center;
     border-radius: 14px;
-    margin: 2rem 4rem 0 ;
+    margin: 2rem 4rem 0;
     padding: 2rem;
     color: white;
     width: 100%;
@@ -673,7 +673,7 @@ footer p a {
 }
 
 #searchBar input {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     border: 0;
     padding: 1rem;
     height: 4rem;
@@ -757,8 +757,8 @@ footer p a {
     }
 }
 
-@media (max-width: 550px){
-    #searchBar input{
+@media (max-width: 550px) {
+    #searchBar input {
         width: 80%;
     }
 }
