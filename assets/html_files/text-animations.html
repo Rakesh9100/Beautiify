@@ -97,8 +97,8 @@
             <div class="box">
                 <h1>3D Cylindrically Rotating Text Animation</h1>
                 <div class="preview">
-                    <a href="../../Components/Text-Animations/3D-Cylindrically-Rotating-Text-Animation/index.html" title="Live Preview"
-                        target="_blank">
+                    <a href="../../Components/Text-Animations/3D-Cylindrically-Rotating-Text-Animation/index.html"
+                        title="Live Preview" target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
@@ -155,27 +155,31 @@
                 </div>
             </div>
             <div class="box">
-               <h1>Glowing Text Animation</h1>
-               <div class="preview">
-                   <a href="../../Components/Text-Animations/Glowing-Text-Animation/" title="Live Preview" target="_blank">
-                       <img src="../images/link.png">
-                   </a>
-               </div>
-               <div class="source">
-                   <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Typewriter-Text-Animation" title="Source Code" target="_blank">
-                       <img src="../images/github.png">
-                   </a>
-               </div>
-           </div>
-           <div class="box">
-                <h1>3D Rotating Text Animation</h1>
+                <h1>Glowing Text Animation</h1>
                 <div class="preview">
-                    <a href="../../Components/Text-Animations/3D-Rotating-Text-Animation/index.html" title="Live Preview" target="_blank">
+                    <a href="../../Components/Text-Animations/Glowing-Text-Animation/" title="Live Preview"
+                        target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/3D-Rotating-Text-Animation" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Typewriter-Text-Animation"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>3D Rotating Text Animation</h1>
+                <div class="preview">
+                    <a href="../../Components/Text-Animations/3D-Rotating-Text-Animation/index.html"
+                        title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/3D-Rotating-Text-Animation"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -183,8 +187,8 @@
             <div class="box">
                 <h1>Hovering Spaced Text Animation</h1>
                 <div class="preview">
-                    <a href="../../Components/Text-Animations/Hovering-Spaced-Text-Animation/index.html" title="Live Preview"
-                        target="_blank">
+                    <a href="../../Components/Text-Animations/Hovering-Spaced-Text-Animation/index.html"
+                        title="Live Preview" target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
@@ -198,12 +202,14 @@
             <div class="box">
                 <h1>Flip Text Animation</h1>
                 <div class="preview">
-                    <a href="../../Components/Text-Animations/Flip-Text-Animation/index.html" title="Live Preview" target="_blank">
+                    <a href="../../Components/Text-Animations/Flip-Text-Animation/index.html" title="Live Preview"
+                        target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Flip-Text-Animation" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Flip-Text-Animation"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -211,8 +217,8 @@
             <div class="box">
                 <h1>3D Revolving Text List Sphere Animation</h1>
                 <div class="preview">
-                    <a href="../../Components/Text-Animations/3D-Recolving-Text-List-Sphere/index.html" title="Live Preview"
-                        target="_blank">
+                    <a href="../../Components/Text-Animations/3D-Recolving-Text-List-Sphere/index.html"
+                        title="Live Preview" target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
@@ -279,33 +285,18 @@
         tl.from(".navbar", {
             opacity: 0,
             y: -30,
-            delay:1,
-            duration:0.5,
+            delay: 1,
+            duration: 0.5,
         })
         tl.from(".heading", {
             opacity: 0,
             scale: 1.04,
             y: 10
         })
-
-        function reveal() {
-            var reveals = document.querySelectorAll(".box");
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
-                }
-            }
-        }
-
-        window.addEventListener("scroll", reveal);
-        // To check the scroll position on page load
-        reveal();
-
+        tl.from(".contain", {
+            opacity: 0,
+            y: 10
+        })
 
     </script>
 

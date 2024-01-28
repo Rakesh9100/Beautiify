@@ -67,12 +67,14 @@
             <div class="box">
                 <h1>Glassmorphism Footer</h1>
                 <div class="preview">
-                    <a href="../../Components/Footers/Glassmorphism-Footer/index.html" title="Live Preview" target="_blank">
+                    <a href="../../Components/Footers/Glassmorphism-Footer/index.html" title="Live Preview"
+                        target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Glassmorphism-Footer" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Glassmorphism-Footer"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -85,7 +87,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Simple-Footer" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Simple-Footer"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -98,7 +101,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Waves-Footer" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Waves-Footer"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -111,7 +115,8 @@
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Animated-Footer" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Animated-Footer"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -119,12 +124,14 @@
             <div class="box">
                 <h1>Minimalist Footer</h1>
                 <div class="preview">
-                    <a href="../../Components/Footers/Minimalist-Footer/index.html" title="Live Preview" target="_blank">
+                    <a href="../../Components/Footers/Minimalist-Footer/index.html" title="Live Preview"
+                        target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Minimalist-Footer" title="Source Code" target="_blank">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Footers/Minimalist-Footer"
+                        title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -140,33 +147,18 @@
         tl.from(".navbar", {
             opacity: 0,
             y: -30,
-            delay:1,
-            duration:0.5,
+            delay: 1,
+            duration: 0.5,
         })
         tl.from(".heading", {
             opacity: 0,
             scale: 1.04,
             y: 10
         })
-
-        function reveal() {
-            var reveals = document.querySelectorAll(".box");
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
-                }
-            }
-        }
-
-        window.addEventListener("scroll", reveal);
-        // To check the scroll position on page load
-        reveal();
-
+        tl.from(".contain", {
+            opacity: 0,
+            y: 10
+        })
 
     </script>
 

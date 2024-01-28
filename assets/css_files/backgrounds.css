@@ -80,13 +80,10 @@ section {
     background-color: #f0dee9b5;
     transition: all 0.2s ease-in-out;
     position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
 }
 
 .box:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     border: 2px solid white;
     transition: all 0.2s ease-in-out;
 }
@@ -132,13 +129,3 @@ h1 {
     transition: all 0.2s ease-in-out;
 }
 
-.box.active {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.box.active:hover{
-    transform: scale(1.05);
-    border: 2px solid white;
-    transition: transform 0.2s ease-in-out;
-}
