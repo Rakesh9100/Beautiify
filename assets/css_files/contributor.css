@@ -27,6 +27,16 @@ body {
     color: rgb(148, 250, 64);
 }
 
+.dark-mode .contributors h1{
+    color: beige;
+}
+
+.dark-mode header.header2{
+    background-image: none;
+    background-color: black;
+}
+
+
 #contributor {
     margin: 0;
     padding: 0 25px;
