@@ -594,6 +594,26 @@ footer p a {
     margin-top: 16px;
 }
 
+#searchBar button {
+    font-size: 2.5rem;
+    background: transparent;
+    border: 0;
+    color:rgb(57, 4, 100);
+    margin-left: 1rem;
+    background-color: rgba(224, 202, 245, 0.743);
+    padding: .7rem;
+    width: 8rem;
+    border-radius: 5rem;
+    box-shadow: 2px 2px 2px black, 1px 1px 1px white;
+    text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(57, 4, 100);
+}
+
+#searchBar button:hover {
+    transform: scale(1.05);
+    border: 2px solid var(black);
+    background: rgba(255, 255, 255, 0.881);
+}
+
 #searchBar input {
     font-family: 'Poppins', sans-serif;
     border: 0;
@@ -679,9 +699,10 @@ footer p a {
     }
 }
 
-@media (max-width: 550px) {
-    #searchBar input {
-        width: 80%;
+@media (max-width: 650px){
+    #searchBar input{
+        width: 60%;
+        font-size: 1.5rem;
     }
 }
 
