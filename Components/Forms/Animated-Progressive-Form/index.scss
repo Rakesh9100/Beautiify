@@ -1,0 +1,340 @@
+$black: #000000;
+$blue-ribbon: #0069ec;
+$dodger-blue: #25a3ff;
+$mine-shaft: #333333;
+$scorpion: #565656;
+$torch-red: #ff0033;
+$white: #ffffff;
+
+@mixin form-group-visible {
+  visibility: visible;
+  opacity: 1;
+
+  .c-form__border {
+    width: 100%;
+  }
+}
+
+@mixin form-group-hidden {
+  visibility: hidden;
+  opacity: 0;
+
+  .c-form__border {
+    width: 0;
+  }
+}
+
+@mixin input-listener {
+  // hints user for invalid input
+  .c-form__input:not(:placeholder-shown):invalid ~  {
+    .c-form__border,
+    .c-form__next {
+      color: $torch-red;
+    }
+  }
+
+  // allows submit
+  .c-form__input:required:valid ~  {
+    .c-form__next {
+      pointer-events: initial;
+      color: $scorpion;
+    }
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: $dodger-blue;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-checkbox {
+  display: none;
+}
+
+// opens first form
+.c-checkbox:nth-of-type(1):checked ~ .c-formContainer {
+  .c-form__toggle {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  .c-form {
+    width: 382px;
+
+    .c-form__group:nth-child(1) {
+      @include form-group-visible;
+      @include input-listener;
+    }
+  }
+}
+
+// opens second form
+.c-checkbox:nth-of-type(2):checked ~  {
+  .c-form__progress {
+    width: calc(100vw / 3);
+  }
+
+  .c-formContainer .c-form {
+    .c-form__group:nth-child(1) {
+      @include form-group-hidden;
+    }
+
+    .c-form__group:nth-child(2) {
+      @include form-group-visible;
+      @include input-listener;
+    }
+  }
+}
+
+// opens third form
+.c-checkbox:nth-of-type(3):checked ~  {
+  .c-form__progress {
+    width: calc((100vw / 3) + 100vw / 3);
+  }
+
+  .c-formContainer .c-form {
+    .c-form__group:nth-child(2) {
+      @include form-group-hidden;
+    }
+
+    .c-form__group:nth-child(3) {
+      @include form-group-visible;
+      @include input-listener;
+    }
+  }
+}
+
+#finish:checked ~  {
+  .c-form__progress {
+    width: 100vw;
+  }
+
+  .c-formContainer {
+    .c-form {
+      transition: opacity 0.2s 0.1s, transform 0.3s;
+      opacity: 0;
+      transform: translateX(50%) scaleX(0);
+
+      .c-form__group:nth-child(3) {
+        transition: 0s;
+        @include form-group-hidden;
+      }
+    }
+
+    .c-welcome {
+      opacity: 1;
+    }
+  }
+}
+
+.c-formContainer {
+  width: 180px;
+  height: 65px;
+  z-index: 1;
+
+  // sets transition-origin center for .c-form width
+  display: flex;
+  justify-content: center;
+}
+
+.c-welcome {
+  position: absolute;
+  width: max-content;
+  height: inherit;
+
+  font-size: 40px;
+  color: $white;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.c-form {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  background-color: $white;
+  box-shadow: 0 5px 10px -2px rgba($black, 0.2),
+    0 2px 4px -1px rgba($black, 0.3);
+}
+
+.c-form__toggle {
+  width: inherit;
+  height: inherit;
+
+  font-size: 18px;
+  color: $mine-shaft;
+  cursor: pointer;
+  transition: 0.2s;
+
+  // centers text
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-form__toggleIcon {
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+  width: 15px;
+  height: 17px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $scorpion;
+  }
+
+  // head
+  &::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+  }
+
+  // body
+  &::after {
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+    border-radius: 7px 7px 0 0;
+  }
+}
+
+.c-form__group {
+  width: 100%;
+  height: 100%;
+
+  visibility: hidden;
+  opacity: 0;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  transition: 0.2s 0.2s;
+
+  // allows to overlap forms
+  position: absolute;
+}
+
+.c-form__label {
+  position: relative;
+  cursor: pointer;
+
+  // 40px = button size
+  width: calc(100% - 40px);
+  height: 100%;
+
+  // positions .c-form__input and button
+  display: flex;
+  align-items: flex-end;
+}
+
+.c-form__input {
+  font-size: 20px;
+  font-family: inherit;
+
+  width: 100%;
+  height: 90%;
+  border: 0;
+  outline: 0;
+  color: $mine-shaft;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    ~ .c-form__groupLabel {
+      font-size: 10px;
+      top: -4px;
+      transform: translateY(0);
+      color: $mine-shaft;
+    }
+
+    ~ .c-form__border,
+    ~ .c-form__next {
+      transition: 0.3s;
+    }
+  }
+
+  &:focus {
+    cursor: initial;
+  }
+}
+
+.c-form__groupLabel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+}
+
+.c-form__border {
+  position: absolute;
+  width: 0;
+  height: 3px;
+  color: $dodger-blue;
+  background-color: currentColor;
+  transition: 1s 0.2s ease-out;
+}
+
+.c-form__next {
+  color: $dodger-blue;
+  position: absolute;
+  right: -40px;
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+  pointer-events: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.c-form__nextIcon {
+  position: relative;
+  right: 1.5px;
+  width: 20px;
+  height: 3px;
+  background-color: currentColor;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: -1.5px;
+    width: 15px;
+    height: 3px;
+    background-color: inherit;
+  }
+
+  &::before {
+    bottom: -1.5px;
+    transform-origin: top right;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: -1.5px;
+    transform-origin: bottom right;
+    transform: rotate(-45deg);
+  }
+}
+
+.c-form__progress {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: $blue-ribbon;
+  transition: 0.3s;
+}
