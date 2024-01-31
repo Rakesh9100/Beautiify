@@ -3,16 +3,25 @@
 }
 
 body{
-    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-container{
+    width: 60vh;
+    height: 65vh;
     background-image: linear-gradient(45deg, rgb(243, 157, 234),pink);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
+    border-radius: 18px;
+    box-shadow:10px 10px rgb(241, 135, 183);
 }
 
 .card{
     position: relative;
-    height: 70vh;
+    height: 50vh;
     width: 25rem;
 }
 
