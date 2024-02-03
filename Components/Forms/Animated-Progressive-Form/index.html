@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <input class="c-checkbox" type="checkbox" id="start">
+<input class="c-checkbox" type="checkbox" id="progress2">
+<input class="c-checkbox" type="checkbox" id="progress3">
+<input class="c-checkbox" type="checkbox" id="finish">
+<div class="c-form__progress"></div>
+
+<div class="c-formContainer">
+  <div class="c-welcome">Welcome aboard!</div>
+  <form class="c-form" action="">
+    <div class="c-form__group">
+      <label class="c-form__label" for="username">
+                    <input
+                        type="text"
+                        id="username"
+                        class="c-form__input"
+                        placeholder=" "
+                        pattern="[^\s]+"
+                        required>
+
+                    <label class="c-form__next" for="progress2" role="button">
+                        <span class="c-form__nextIcon"></span>
+                    </label>
+
+      <span class="c-form__groupLabel">Create your username.</span>
+      <b class="c-form__border"></b>
+      </label>
+    </div>
+
+    <div class="c-form__group">
+      <label class="c-form__label" for="femail">
+                    <input
+                        type="email"
+                        id="femail"
+                        class="c-form__input"
+                        placeholder=" "
+                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                        required>
+
+                    <label class="c-form__next" for="progress3" role="button">
+                        <span class="c-form__nextIcon"></span>
+                    </label>
+
+      <span class="c-form__groupLabel">What's your email?</span>
+      <b class="c-form__border"></b>
+      </label>
+    </div>
+
+    <div class="c-form__group">
+      <label class="c-form__label" for="fpass">
+                    <input
+                        type="password"
+                        id="fpass"
+                        class="c-form__input"
+                        placeholder=" "
+                        required>
+
+                    <label class="c-form__next" for="finish" role="button">
+                        <span class="c-form__nextIcon"></span>
+                    </label>
+
+      <span class="c-form__groupLabel">Create your password.</span>
+      <b class="c-form__border"></b>
+      </label>
+    </div>
+
+    <label class="c-form__toggle" for="start">Register<span class="c-form__toggleIcon"></span></label>
+  </form>
+</div>
+</body>
+</html>
