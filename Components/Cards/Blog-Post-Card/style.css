@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: #FAFAFA;
+    font-family: "Quicksand", sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 70px;
+}
+
+.card-body{
+    /* padding: 2em; */
+    max-width: 550px;
+    border-radius: 1em;
+    margin: auto;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.21);
+    box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.21);
+    width: 400px;
+    height: 500px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-rows: 6fr 5fr 2fr;
+    
+}
+.img-div{
+    /* background-image: url('barbenheimer.avif'); */
+    background-size: cover;
+    border-radius: 1em 1em 0em 0em;
+}
+.descrip-div{
+    background-color: #fff;
+    padding: 1em;
+}
+
+.user-div{
+    background-color: #fff;
+    border-radius: 0em 0em 1em 1em;
+    padding: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.user-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.details
+{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.read-more{
+    background-color: #fff;
+}
+.user-details{
+    background-color: #fff;
+}
+small, h2{
+    background-color: #fff;
+}
+a{
+    background-color: #fff;
+    color:#4b5956;
+}
