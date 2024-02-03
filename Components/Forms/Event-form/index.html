@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Event Form with CSS Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #c9e8ed; /* Light background color */
+            transition: background-color 0.3s;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #efb7d5; /* White background color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px #e44d26, 0 0 20px #e44d26, 0 0 30px #e44d26, 0 0 40px #e44d26; /* Neon glow effect */
+            animation: slideIn 0.5s ease-in-out;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #e44d26; /* Vibrant border color */
+            border-radius: 5px;
+            font-size: 16px;
+            color: #edc3c3; /* Vibrant text color */
+            background-color: #fff; /* Vibrant background color */
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #e44d26; /* Vibrant button color */
+        }
+
+        button:hover {
+            /* background-color: #ff704d; Brighter color on hover */
+            background-color: #b0406d; 
+        }
+
+        form:hover {
+            background-color: #f5c6c6; /* Lighter background color on hover */
+            box-shadow: 0 0 15px #e44d26, 0 0 25px #e44d26, 0 0 35px #e44d26, 0 0 45px #e44d26; /* Intensify neon glow on hover */
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <label for="eventName">Event Name:</label>
+    <input type="text" id="eventName" name="eventName" required>
+
+    <label for="eventDate">Event Date:</label>
+    <input type="date" id="eventDate" name="eventDate" required>
+
+    <label for="eventLocation">Event Location:</label>
+    <input type="text" id="eventLocation" name="eventLocation" required>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
