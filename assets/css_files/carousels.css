@@ -85,7 +85,7 @@ section {
 
 .box:hover {
     transform: scale(1.05);
-    border: 2px solid white;
+    /* border: 2px solid white; */
     transition: all 0.2s ease-in-out;
 }
 
