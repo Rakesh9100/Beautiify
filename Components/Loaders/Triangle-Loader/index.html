@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Triangle Loader</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body class="demo-1">
+    <div class="container">
+
+        <div class="content">
+            <button class="button button--trigger" onclick="demo.init()">Show Loader</button>
+        </div>
+    </div>
+    <!-- /container -->
+    <script>
+        const SETTINGS = {
+            rebound: {
+                tension: 16,
+                friction: 5
+            },
+            spinner: {
+                id: 'spinner',
+                radius: 90,
+                sides: 3,
+                depth: 4,
+                colors: {
+                    //background: '#231E76',
+                    //stroke: '#231E76',
+                    background: '#f0f0f0',
+                    stroke: '#272633',
+                    base: null,
+                    child: '#272633'
+                },
+                alwaysForward: true, // When false the spring will reverse normally.
+                restAt: 0.5, // A number from 0.1 to 0.9 || null for full rotation
+                renderBase: false
+            }
+        };
+    </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
