@@ -43,7 +43,7 @@ window.onload = (function () {
 	var cda = document.createElement('div');
 	cda.id = 'cdawrap';
 	cda.className = 'cdawrap';
-	cda.innerHTML = '<a href="' + cdaLink + '" class="cda-sponsor-link" target="_blank" rel="nofollow noopener">' + cdaSponsorName + '</a>';
+	cda.innerHTML = '<a href="' + cdaLink + '" class="cda-sponsor-link"   rel="nofollow noopener">' + cdaSponsorName + '</a>';
 	//document.getElementsByClassName('frame')[0].appendChild(cda);
 	//console.log("CDA inserted");
 
