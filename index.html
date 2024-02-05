@@ -11,6 +11,11 @@
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Beautiify</title>
+    <style>
+         .nav-menu .nav-item.active .nav-link {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,7 +36,7 @@
 
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link" style="color: red;">Home</a>
                     <i class="fa-solid fa-house"></i>
                 </li>
                 <li class="nav-item">
@@ -266,6 +271,29 @@
     <script src="./assets/js_files/contributor.js"></script>
     <script src="./assets/js_files/scroll-reveal.js"></script>
 
+
+    <script>
+        // JavaScript to highlight the active section in the navbar
+        document.addEventListener("DOMContentLoaded", function () {
+          const homeLink = document.querySelector('.nav-menu a[href="#home"]');
+          const componentsLink = document.querySelector('.nav-menu a[href="#components"]');
+      
+          const searchBarSection = document.getElementById('searchBar');
+          const searchBarTop = searchBarSection.offsetTop - 50;
+      
+          window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+      
+            if (currentScroll >= searchBarTop) {
+              componentsLink.style.color = 'red';
+              homeLink.style.color = '';
+            } else {
+              componentsLink.style.color = '';
+              homeLink.style.color = 'red'; 
+            }
+          });
+        });
+      </script>
 </body>
 
 </html>
