@@ -822,6 +822,9 @@ footer p a {
         height: 100vh;
     }
 
+    .nav-menu .nav-item.active .nav-link {
+        color: red;
+    }
     .compcontainer h1 {
         font-size: 400%;
         padding-bottom: 40px;
