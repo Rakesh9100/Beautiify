@@ -275,24 +275,35 @@
     <script>
         // JavaScript to highlight the active section in the navbar
         document.addEventListener("DOMContentLoaded", function () {
-          const homeLink = document.querySelector('.nav-menu a[href="#home"]');
-          const componentsLink = document.querySelector('.nav-menu a[href="#components"]');
-      
-          const searchBarSection = document.getElementById('searchBar');
-          const searchBarTop = searchBarSection.offsetTop - 50;
-      
-          window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-      
-            if (currentScroll >= searchBarTop) {
-              componentsLink.style.color = 'red';
-              homeLink.style.color = '';
-            } else {
-              componentsLink.style.color = '';
-              homeLink.style.color = 'red'; 
-            }
-          });
-        });
+    const homeLink = document.querySelector('.nav-menu a[href="#home"]');
+    const componentsLink = document.querySelector('.nav-menu a[href="#components"]');
+
+    const searchBarSection = document.getElementById('searchBar');
+    const componentsSection = document.getElementById('components');
+
+    componentsLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        componentsSection.scrollIntoView({ behavior: 'smooth' });
+        componentsLink.style.color = 'red';
+        homeLink.style.color = '';
+    });
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        // Adjust the offset accordingly
+        const componentsSectionTop = componentsSection.offsetTop - 50;
+
+        if (currentScroll >= componentsSectionTop) {
+            componentsLink.style.color = 'red';
+            homeLink.style.color = '';
+        } else {
+            componentsLink.style.color = '';
+            homeLink.style.color = 'red';
+        }
+    });
+});
+
       </script>
 </body>
 
