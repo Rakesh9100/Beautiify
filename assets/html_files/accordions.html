@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="../css_files/accordions.css" />
+    <link rel="stylesheet" href="../css_files/search.css">
     <script src="../js_files/commonnav.js"></script>
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>Beautiify | Accordions</title>
@@ -59,12 +60,17 @@
             </div>
         </nav>
     </header>
-    
+
     <section>
 
         <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
 
         <div class="heading">Accordions</div>
+        <!-- Search Bar -->
+        <div id="searchBar">
+            <h1>Search Accordion</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Accordion Name" oninput="filtereachComponents()">
+        </div>
         <div class="contain">
             <div class="box">
                 <h1>Modern Accordion</h1>
@@ -173,18 +179,19 @@
             </div>
         </div>
     </section>
-  
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js_files/commonanimation.js"></script>
-  
+
     <script src="../js_files/dark-mode.js"></script>
 
     <!-- SCROLL TO TOP BUTTON -->
     <div id="progress">
         <span id="progress-value">&#x1F815;</span>
     </div>
+    <script src="../js_files/search.js"></script>
     <script src="../../script.js"></script>
 
 
