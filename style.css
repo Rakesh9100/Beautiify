@@ -180,12 +180,12 @@ body {
     background-color: #222;
     color: #eee;
     background-image: none;
-  }
+}
 
-  body .dark-mode{
+body .dark-mode {
     background-image: none;
     background-color: black;
-  }
+}
 
 html {
     font-size: 62.5%;
@@ -201,10 +201,10 @@ html {
 
 button#dark-mode-toggle {
     position: fixed;
-    top: 70px; 
-    right: 20px; 
-    background-color: #333; 
-    color: white; 
+    top: 70px;
+    right: 20px;
+    background-color: #333;
+    color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -216,7 +216,7 @@ button#dark-mode-toggle {
 
 .dark-mode button#dark-mode-toggle {
     background-color: #eee;
-    color: #222;    
+    color: #222;
 }
 
 .header1 {
@@ -230,7 +230,7 @@ button#dark-mode-toggle {
     background-position: 50% 50%;
 }
 
-.dark-mode .header1{
+.dark-mode .header1 {
     background-image: none;
     background-color: black;
 }
@@ -247,8 +247,8 @@ button#dark-mode-toggle {
     background-position: 50% 50%;
 }
 
-.dark-mode .header2{
-    background-image: none ;
+.dark-mode .header2 {
+    background-image: none;
     background-color: black;
 }
 
@@ -264,9 +264,9 @@ button#dark-mode-toggle {
     background-position: 50% 50%;
 }
 
-.dark-mode .header3{
+.dark-mode .header3 {
     background-color: black;
-    background-image:none ;
+    background-image: none;
 }
 
 .navbar {
@@ -436,15 +436,15 @@ section {
     background: rgba(255, 255, 255, 0.881);
 }
 
-.dark-mode .comp-section .compcontainer .started{
+.dark-mode .comp-section .compcontainer .started {
     color: rgb(47, 111, 174);
-    background-color:rgba(251, 251, 251, 0.743); 
+    background-color: rgba(251, 251, 251, 0.743);
     text-shadow: 1px 1px 2px rgb(197, 190, 190), 1px 1px 1px rgb(57, 4, 100);
 }
 
-.dark-mode .comp-section .compcontainer .started:hover{
+.dark-mode .comp-section .compcontainer .started:hover {
     background: #b1c2d4;
-} 
+}
 
 .comp-section {
     height: 80vh;
@@ -475,37 +475,39 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px 5px  black;
+    box-shadow: 0 0 10px 5px black;
     cursor: pointer;
     /* position: absolute; */
     overflow: hidden;
     border-radius: 1rem 0;
     z-index: 1;
     margin: 2rem;
-    
+
 }
-.container .box::before{
+
+.container .box::before {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(-280deg);
-   width: 200%;
-   height: 180%;
-   background-image: conic-gradient(rgb(69, 194, 233) 0deg,rgb(69, 194, 233) 90deg,transparent 130deg,transparent 180deg
-   ,rgb(219, 61, 221) 180deg,rgb(219, 61, 221) 270deg,transparent 310deg,transparent 360deg);
-   transition:transform 1s;
-   border-radius: 1rem 0;
-   z-index: 1;
+    transform: translate(-50%, -50%) rotate(-280deg);
+    width: 200%;
+    height: 180%;
+    background-image: conic-gradient(rgb(69, 194, 233) 0deg, rgb(69, 194, 233) 90deg, transparent 130deg, transparent 180deg, rgb(219, 61, 221) 180deg, rgb(219, 61, 221) 270deg, transparent 310deg, transparent 360deg);
+    transition: transform 1s;
+    border-radius: 1rem 0;
+    z-index: 1;
 }
-.dark-mode .container .box::before{
-   background-image: conic-gradient(rgb(251, 251, 251) 0deg,rgb(249, 249, 250) 90deg,transparent 130deg,transparent 180deg
-   ,rgb(61, 97, 128) 180deg,rgb(61, 97, 128) 270deg,transparent 310deg,transparent 360deg);
+
+.dark-mode .container .box::before {
+    background-image: conic-gradient(rgb(251, 251, 251) 0deg, rgb(249, 249, 250) 90deg, transparent 130deg, transparent 180deg, rgb(61, 97, 128) 180deg, rgb(61, 97, 128) 270deg, transparent 310deg, transparent 360deg);
 }
-.container .box:hover::before{
-    transform: translate(-50%,-50%) rotate(-100deg);
+
+.container .box:hover::before {
+    transform: translate(-50%, -50%) rotate(-100deg);
 }
-.container .box .content{
+
+.container .box .content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -513,8 +515,8 @@ section {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    transform: translate(-50%,-50%);
-    background:url("./assets/images/cardbg1.jpg");
+    transform: translate(-50%, -50%);
+    background: url("./assets/images/cardbg1.jpg");
     background-size: cover;
     width: 290px;
     height: 190px;
@@ -522,8 +524,9 @@ section {
     z-index: 5;
     transition: all linear .5s;
 }
-.dark-mode .container .box .content{
-    background:url("./assets/images/cardbg2.jpg");
+
+.dark-mode .container .box .content {
+    background: url("./assets/images/cardbg2.jpg");
 }
 
 
@@ -553,28 +556,33 @@ section {
     transition: all linear 1s;
 }
 
-.container .box:hover .content i{
+.container .box:hover .content i {
     color: rgb(69, 194, 233);
     text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(69, 194, 233);
 }
+
 .container .box:hover .content h2 {
     color: rgb(219, 61, 221);
     text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(69, 194, 233);
 }
-.dark-mode .container .box .content i{
-    color:white ;
-    text-shadow: 1px 1px 2px rgb(124, 122, 122), 1px 1px 2px rgb(255, 255, 255);
-}
-.dark-mode .container .box .content h2{
-    color:white ;
-    text-shadow: 1px 1px 2px rgb(124, 122, 122), 1px 1px 2px rgb(255, 255, 255);
-}
-.dark-mode .container .box:hover .content h2{
+
+.dark-mode .container .box .content i {
     color: white;
-    text-shadow:  2px 2px 4px rgb(12, 239, 247), 1px 1px 2px rgb(26, 242, 166);
+    text-shadow: 1px 1px 2px rgb(124, 122, 122), 1px 1px 2px rgb(255, 255, 255);
 }
-.dark-mode .container .box:hover .content i{
-    color:rgb(190, 188, 188);
+
+.dark-mode .container .box .content h2 {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(124, 122, 122), 1px 1px 2px rgb(255, 255, 255);
+}
+
+.dark-mode .container .box:hover .content h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgb(12, 239, 247), 1px 1px 2px rgb(26, 242, 166);
+}
+
+.dark-mode .container .box:hover .content i {
+    color: rgb(190, 188, 188);
     text-shadow: 2px 2px 4px rgb(12, 239, 247), 1px 1px 2px rgb(26, 242, 166);
 }
 
@@ -711,7 +719,7 @@ footer p a {
     font-size: 2.5rem;
     background: transparent;
     border: 0;
-    color:rgb(57, 4, 100);
+    color: rgb(57, 4, 100);
     margin-left: 1rem;
     background-color: rgba(224, 202, 245, 0.743);
     padding: .7rem;
@@ -812,8 +820,8 @@ footer p a {
     }
 }
 
-@media (max-width: 650px){
-    #searchBar input{
+@media (max-width: 650px) {
+    #searchBar input {
         width: 60%;
         font-size: 1.5rem;
     }
@@ -902,7 +910,6 @@ footer p a {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-
 
 @media (max-width: 400px) {
     .paragraph {
