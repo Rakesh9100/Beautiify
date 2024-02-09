@@ -199,7 +199,7 @@ html {
     scroll-behavior: smooth;
 }
 
-button#dark-mode-toggle {
+/* button#dark-mode-toggle {
     position: fixed;
     top: 70px; 
     right: 20px; 
@@ -215,6 +215,27 @@ button#dark-mode-toggle {
 }
 
 .dark-mode button#dark-mode-toggle {
+    background-color: #eee;
+    color: #222;    
+} */
+
+/* Add or update the styles for the Dark Mode Toggle Button */
+#dark-mode-toggle {
+    /* position: fixed; */
+    top: 70px; 
+    right: 20px; 
+    background-color: #333; 
+    color: white; 
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.dark-mode #dark-mode-toggle {
     background-color: #eee;
     color: #222;    
 }
