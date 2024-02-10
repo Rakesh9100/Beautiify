@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="../css_files/cards.css"/>
+    <link rel="stylesheet" href="../css_files/search.css">
     <script src="../js_files/commonnav.js"></script>
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>Beautiify | Cards</title>
@@ -65,6 +66,11 @@
         <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
 
         <div class="heading">Cards</div>
+          <!-- Search Bar -->
+          <div id="searchBar">
+            <h1>Search Cards</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Card Name" oninput="filtereachComponents()">
+        </div>
         <div class="contain">
             <div class="box">
                 <h1>Drag & Drop Card</h1>
@@ -196,7 +202,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="box">
                 <h1>Product Card</h1>
                 <div class="preview">
@@ -210,7 +215,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="box">
                 <h1>Qoutes Card</h1>
                 <div class="preview">
@@ -220,6 +224,58 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Quotes-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>3D Popup Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/3D-Popup-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/3D-Popup-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Blog Post Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Blog-Post-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Blog-Post-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Product Preview Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Product-Preview-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Product-Preview-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>User Attention Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/User-Attention-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/User-Attention-Card" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -235,6 +291,7 @@
     <div id="progress">
         <span id="progress-value">&#x1F815;</span>
     </div>
+    <script src="../js_files/search.js"></script>
     <script src="../../script.js"></script>
     
     <script src="../js_files/dark-mode.js"></script>

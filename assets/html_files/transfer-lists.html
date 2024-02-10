@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="../css_files/transfer-lists.css" />
+    <link rel="stylesheet" href="../css_files/search.css">
     <script src="../js_files/commonnav.js"></script>
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>Beautiify | Transfer Lists</title>
@@ -65,6 +66,11 @@
         <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
 
         <div class="heading">Transfer Lists</div>
+          <!-- Search Bar -->
+          <div id="searchBar">
+            <h1>Search Transfer List</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Transfer List Name" oninput="filtereachComponents()">
+        </div>
         <div class="contain">
             <div class="box">
                 <h1>Neumorphic Transfer List</h1>
@@ -93,6 +99,7 @@
     <div id="progress">
         <span id="progress-value">&#x1F815;</span>
     </div>
+    <script src="../js_files/search.js"></script>
     <script src="../../script.js"></script>
 
 </body>

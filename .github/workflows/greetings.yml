@@ -1,0 +1,23 @@
+name: 'Greetings'
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: EddieHubCommunity/gh-action-community/src/welcome@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            Hey @${{ github.actor }}, Welcome to the project Beautiify! 🎊
+            Thanks for opening an issue! 🙌 Please wait for the issue to be assigned. Happy Coding!! ✨
+          pr-message: |
+            Hey @${{ github.actor }}, Welcome to the project Beautiify! 🎊
+            Thanks for your contribution! Your effort makes this project better. Keep it up! 🙌 
+            Please wait for the PR to be reviewed. Happy Coding!! ✨

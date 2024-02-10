@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="../css_files/forms.css"/>
+    <link rel="stylesheet" href="../css_files/search.css">
     <script src="../js_files/commonnav.js"></script>
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>Beautiify | Forms</title>
@@ -64,6 +65,11 @@
         <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
 
         <div class="heading">Forms</div>
+          <!-- Search Bar -->
+          <div id="searchBar">
+            <h1>Search Forms</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Forms Name" oninput="filtereachComponents()">
+        </div>
         <div class="contain">
             <div class="box">
                 <h1>Contact Form</h1>
@@ -221,7 +227,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="box">
                 <h1>Cart Checkout Form</h1>
                 <div class="preview">
@@ -235,7 +240,32 @@
                     </a>
                 </div>
             </div>
-
+            <div class="box">
+                <h1>Animated Progressive Form</h1>
+                <div class="preview">
+                    <a href="../../Components/Forms/Animated-Progressive-Form/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Forms/Animated-Progressive-Form/" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Event Form</h1>
+                <div class="preview">
+                    <a href="../../Components/Forms/Event-Form/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Forms/Event-Form/" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
   
@@ -249,6 +279,7 @@
     <div id="progress">
         <span id="progress-value">&#x1F815;</span>
     </div>
+    <script src="../js_files/search.js"></script>
     <script src="../../script.js"></script>
 
 </body>

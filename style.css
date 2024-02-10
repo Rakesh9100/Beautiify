@@ -458,6 +458,7 @@ section {
 
 /* Container Section Css */
 
+
 .container {
     display: flex;
     justify-content: center;
@@ -467,36 +468,67 @@ section {
 }
 
 .container .box {
-    position: relative;
-    width: 320px;
+    background-color: black;
+    color: wheat;
+    width: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25px;
-    background: rgba(224, 202, 245, 0.743);
-    border: 4px solid rgb(18, 100, 166);
-    border-radius: 14px;
-    box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
+    box-shadow: 0 0 10px 5px black;
     cursor: pointer;
+    /* position: absolute; */
+    overflow: hidden;
+    border-radius: 1rem 0;
+    z-index: 1;
+    margin: 2rem;
+
 }
 
-.container .box:hover {
-    background-color: rgb(18, 100, 166);
-    border: 4px solid rgba(224, 202, 245, 0.743);
-    box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
+.container .box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-280deg);
+    width: 200%;
+    height: 180%;
+    background-image: conic-gradient(rgb(69, 194, 233) 0deg, rgb(69, 194, 233) 90deg, transparent 130deg, transparent 180deg, rgb(219, 61, 221) 180deg, rgb(219, 61, 221) 270deg, transparent 310deg, transparent 360deg);
+    transition: transform 1s;
+    border-radius: 1rem 0;
+    z-index: 1;
 }
 
-.dark-mode .container .box {
-    background: rgba(251, 251, 251, 0.743);
-    border: 4px solid rgb(238, 245, 251);
-    box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
+.dark-mode .container .box::before {
+    background-image: conic-gradient(rgb(251, 251, 251) 0deg, rgb(249, 249, 250) 90deg, transparent 130deg, transparent 180deg, rgb(61, 97, 128) 180deg, rgb(61, 97, 128) 270deg, transparent 310deg, transparent 360deg);
 }
 
-.dark-mode .container .box:hover {
-    background-color: rgb(192, 224, 251);
-    border: 4px solid rgba(234, 223, 244, 0.743);
-    box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
+.container .box:hover::before {
+    transform: translate(-50%, -50%) rotate(-100deg);
 }
+
+.container .box .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    background: url("./assets/images/cardbg1.jpg");
+    background-size: cover;
+    width: 290px;
+    height: 190px;
+    border-radius: 1rem 0;
+    z-index: 5;
+    transition: all linear .5s;
+}
+
+.dark-mode .container .box .content {
+    background: url("./assets/images/cardbg2.jpg");
+}
+
 
 .container .zoom-effect {
     transition: transform 0.3s ease-in-out;
@@ -507,44 +539,54 @@ section {
     transition: transform 0.3s ease-in-out;
 }
 
-.container .box .content {
-    position: relative;
-    left: 0;
-    padding: 20px 40px;
-    text-align: center;
-    transition: 0.5s ease-in;
-    color: var(--dark);
-}
 
 .container .box .content i {
     font-size: 73px;
-    color: rgb(18, 100, 166);
-    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
-}
-
-.dark-mode .container .box .content i {
-    text-shadow: 1px 1px 2px black, 1px 1px 2px #a5b9c5;
+    color: rgb(219, 61, 221);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(69, 194, 233);
+    transition: all linear 1s;
 }
 
 .container .box .content h2 {
     font-size: 23px;
-    color: rgb(37, 111, 172);
+    color: rgb(69, 194, 233);
     margin-top: 25px;
     margin-bottom: 5px;
-    text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172);
+    text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(69, 194, 233);
+    transition: all linear 1s;
 }
 
-.container .box:hover .content i,
+.container .box:hover .content i {
+    color: rgb(69, 194, 233);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(69, 194, 233);
+}
+
 .container .box:hover .content h2 {
-    color: rgba(224, 202, 245, 0.743);
-    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
+    color: rgb(219, 61, 221);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(69, 194, 233);
 }
 
-.dark-mode .container .box:hover .content i,
-.dark-mode .container .box:hover .content h2 {
-    color: rgba(253, 252, 253, 0.743);
-    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(175, 189, 200);
+.dark-mode .container .box .content i {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(124, 122, 122), 1px 1px 2px rgb(255, 255, 255);
 }
+
+.dark-mode .container .box .content h2 {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(124, 122, 122), 1px 1px 2px rgb(255, 255, 255);
+}
+
+.dark-mode .container .box:hover .content h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgb(12, 239, 247), 1px 1px 2px rgb(26, 242, 166);
+}
+
+.dark-mode .container .box:hover .content i {
+    color: rgb(190, 188, 188);
+    text-shadow: 2px 2px 4px rgb(12, 239, 247), 1px 1px 2px rgb(26, 242, 166);
+}
+
+
 
 /* Footer Css */
 
@@ -812,7 +854,7 @@ footer p a {
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: rgba(5, 5, 5, 0.904);
+        background-color: rgba(5, 5, 5, 0.904)
         backdrop-filter: blur(6.5px);
         width: 100%;
         border-radius: 10px;
@@ -822,6 +864,9 @@ footer p a {
         height: 100vh;
     }
 
+    .nav-menu .nav-item.active .nav-link {
+        color: red;
+    }
     .compcontainer h1 {
         font-size: 400%;
         padding-bottom: 40px;
