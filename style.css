@@ -180,12 +180,12 @@ body {
     background-color: #222;
     color: #eee;
     background-image: none;
-  }
+}
 
-  body .dark-mode{
+body .dark-mode {
     background-image: none;
     background-color: black;
-  }
+}
 
 html {
     font-size: 62.5%;
@@ -201,10 +201,10 @@ html {
 
 button#dark-mode-toggle {
     position: fixed;
-    top: 70px; 
-    right: 20px; 
-    background-color: #333; 
-    color: white; 
+    top: 70px;
+    right: 20px;
+    background-color: #333;
+    color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -216,7 +216,7 @@ button#dark-mode-toggle {
 
 .dark-mode button#dark-mode-toggle {
     background-color: #eee;
-    color: #222;    
+    color: #222;
 }
 
 .header1 {
@@ -230,7 +230,7 @@ button#dark-mode-toggle {
     background-position: 50% 50%;
 }
 
-.dark-mode .header1{
+.dark-mode .header1 {
     background-image: none;
     background-color: black;
 }
@@ -247,8 +247,8 @@ button#dark-mode-toggle {
     background-position: 50% 50%;
 }
 
-.dark-mode .header2{
-    background-image: none ;
+.dark-mode .header2 {
+    background-image: none;
     background-color: black;
 }
 
@@ -264,9 +264,9 @@ button#dark-mode-toggle {
     background-position: 50% 50%;
 }
 
-.dark-mode .header3{
+.dark-mode .header3 {
     background-color: black;
-    background-image:none ;
+    background-image: none;
 }
 
 .navbar {
@@ -436,15 +436,15 @@ section {
     background: rgba(255, 255, 255, 0.881);
 }
 
-.dark-mode .comp-section .compcontainer .started{
+.dark-mode .comp-section .compcontainer .started {
     color: rgb(47, 111, 174);
-    background-color:rgba(251, 251, 251, 0.743); 
+    background-color: rgba(251, 251, 251, 0.743);
     text-shadow: 1px 1px 2px rgb(197, 190, 190), 1px 1px 1px rgb(57, 4, 100);
 }
 
-.dark-mode .comp-section .compcontainer .started:hover{
+.dark-mode .comp-section .compcontainer .started:hover {
     background: #b1c2d4;
-} 
+}
 
 .comp-section {
     height: 80vh;
@@ -490,13 +490,13 @@ section {
     background: rgba(251, 251, 251, 0.743);
     border: 4px solid rgb(238, 245, 251);
     box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
-  }
-  
-  .dark-mode .container .box:hover {
+}
+
+.dark-mode .container .box:hover {
     background-color: rgb(192, 224, 251);
     border: 4px solid rgba(234, 223, 244, 0.743);
     box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
-  }
+}
 
 .container .zoom-effect {
     transition: transform 0.3s ease-in-out;
@@ -523,8 +523,8 @@ section {
 }
 
 .dark-mode .container .box .content i {
-    text-shadow: 1px 1px 2px black, 1px 1px 2px #a5b9c5; 
-  }
+    text-shadow: 1px 1px 2px black, 1px 1px 2px #a5b9c5;
+}
 
 .container .box .content h2 {
     font-size: 23px;
@@ -542,8 +542,8 @@ section {
 
 .dark-mode .container .box:hover .content i,
 .dark-mode .container .box:hover .content h2 {
-  color: rgba(253, 252, 253, 0.743);
-  text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(175, 189, 200);
+    color: rgba(253, 252, 253, 0.743);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(175, 189, 200);
 }
 
 /* Footer Css */
@@ -677,7 +677,7 @@ footer p a {
     font-size: 2.5rem;
     background: transparent;
     border: 0;
-    color:rgb(57, 4, 100);
+    color: rgb(57, 4, 100);
     margin-left: 1rem;
     background-color: rgba(224, 202, 245, 0.743);
     padding: .7rem;
@@ -778,8 +778,8 @@ footer p a {
     }
 }
 
-@media (max-width: 650px){
-    #searchBar input{
+@media (max-width: 650px) {
+    #searchBar input {
         width: 60%;
         font-size: 1.5rem;
     }
@@ -807,78 +807,20 @@ footer p a {
 }
 
 @media only screen and (max-width: 768px) {
-    /* .nav-menu {
+    .nav-menu {
         position: fixed;
         left: -100%;
         top: 5rem;
         flex-direction: column;
         background-color: rgba(5, 5, 5, 0.904);
-        backdrop-filter: blur(6.5px); 
+        backdrop-filter: blur(6.5px);
         width: 100%;
+        border-radius: 10px;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         height: 100vh;
-    } */
-
-    @media only screen and (max-width: 768px) {
-        .nav-menu {
-            position: fixed;
-            left: -100%;
-            top: 5rem;
-            flex-direction: column;
-            background-color: rgba(0, 0, 0, 0.905);
-            backdrop-filter: blur(6.5px); 
-            width: 100%;
-            text-align: center;
-            transition: 0.3s;
-            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-            height: 100vh;
-        }
-        .nav-menu.active {
-            left: 0;
-        }
-    
-        .nav-item {
-            margin: 2.5rem 0;
-            font-size: 26px;
-            background-color: #00000000;
-            position: relative;
-        }
-    
-        .nav-link {
-            position: relative;
-            z-index: 1;
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-    
-        .nav-item:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 2px;
-            background-color: transparent;
-            z-index: 0;
-            transition: background-color 0.3s ease;
-        }
-    
-        .nav-item:hover:before {
-            background-color: rgb(227, 60, 230);
-        }
-    
-        .nav-item:hover .nav-link {
-            color: #f166bc; 
-        }
-    
-        nav li:hover {
-            transition: 0.3s ease-in-out;
-        }
     }
-    
 
     .compcontainer h1 {
         font-size: 400%;
@@ -895,23 +837,19 @@ footer p a {
         text-align: center;
     }
 
-    /* .nav-menu.active {
+    .nav-menu.active {
         left: 0;
     }
 
     .nav-item {
         margin: 2.5rem 0;
-        font-size: 26px;
-        background-color: #00000000;
+        font-size: 21px;
     }
 
     nav li:hover {
-        opacity: 0.8;
-        
+        border-bottom: 0.4rem var(--light) solid;
         transition: 0.3s ease-in-out;
-        
-        
-    } */
+    }
 
     .hamburger {
         display: block;
@@ -930,7 +868,6 @@ footer p a {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-
 
 @media (max-width: 400px) {
     .paragraph {
