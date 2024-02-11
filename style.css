@@ -337,8 +337,21 @@ nav li {
 }
 
 nav li:hover {
-    border-bottom: 0.1rem white solid;
+    border: 1px white solid;
+    transform: scale(1.2);
     transition: 0.3s ease-in-out;
+    color: white;
+    background-color: rgb(177, 118, 177);
+    border-radius: 12px;
+}
+
+.dark-mode .nav-item:hover{
+    border: 1px white solid;
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+    color: white;
+    background-color: rgb(26, 24, 26);
+    border-radius: 12px;
 }
 
 nav li i {
