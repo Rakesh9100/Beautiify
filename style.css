@@ -702,8 +702,7 @@ footer p a {
 #searchBar {
     text-align: center;
     border-radius: 14px;
-    margin: 2rem 4rem 0;
-    padding: 2rem;
+    margin: 4rem 4rem 0;
     color: white;
     width: 100%;
 }
@@ -720,7 +719,7 @@ footer p a {
     background: transparent;
     border: 0;
     color: rgb(57, 4, 100);
-    margin-left: 1rem;
+    margin: 1rem;
     background-color: rgba(224, 202, 245, 0.743);
     padding: .7rem;
     width: 8rem;
@@ -746,6 +745,7 @@ footer p a {
     width: 40rem;
     transition: all linear .2s;
     font-weight: 600;
+    padding-right: 0 !important;
 }
 
 #searchBar input:hover {
@@ -822,7 +822,7 @@ footer p a {
 
 @media (max-width: 650px) {
     #searchBar input {
-        width: 60%;
+        width: 100%;
         font-size: 1.5rem;
     }
 }
