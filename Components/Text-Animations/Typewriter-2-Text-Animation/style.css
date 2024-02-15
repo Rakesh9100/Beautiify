@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    margin-bottom: 9rem;
+    font-size: 4rem;
+    font-weight: 600;
+    color:blueviolet;
+    text-decoration: underline;
+}
+.container .text{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.text-container{
+    margin-left: 5rem;
+}
+.container .animated_text{
+    color: darkorchid;
+    position: relative;
+}
+.container .animated_text::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-left: 2px solid darkorchid;
+    animation: typing 4s steps(12) infinite;
+}
+@keyframes typing {
+  40% , 60%{
+    left: 100%;
+  }
+  100%{
+    left: 0;
+  }
+}

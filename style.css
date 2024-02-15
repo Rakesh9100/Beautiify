@@ -176,6 +176,17 @@ body {
     font-size: 1.4rem;
 }
 
+.dark-mode {
+    background-color: #222;
+    color: #eee;
+    background-image: url(./assets/images/dbg4.jpg);
+}
+
+body .dark-mode {
+    background-image: none;
+    background-color: black;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -186,6 +197,26 @@ html {
     font-weight: 300;
     line-height: 1.4;
     scroll-behavior: smooth;
+}
+
+button#dark-mode-toggle {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.dark-mode button#dark-mode-toggle {
+    background-color: #eee;
+    color: #222;
 }
 
 .header1 {
@@ -199,15 +230,26 @@ html {
     background-position: 50% 50%;
 }
 
+.dark-mode .header1 {
+    background-image: none;
+    background-color: black;
+}
+
+
 .header2 {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 900;
     width: 100%;
     background-repeat: no repeat;
     background-image: url(./assets/images/bg3.png);
     background-size: cover;
     background-position: 50% 50%;
+}
+
+.dark-mode .header2 {
+    background-image: none;
+    background-color: black;
 }
 
 .header3 {
@@ -222,9 +264,20 @@ html {
     background-position: 50% 50%;
 }
 
+.dark-mode .header3 {
+    background-color: black;
+    background-image: none;
+}
+
 .navbar {
     margin: 0 auto;
     z-index: 1000;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 a {
@@ -232,6 +285,31 @@ a {
     color: white;
     font-weight: 500;
     text-shadow: 1px 1px 2px black, 1px 1px 1px white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.flex-item-left {
+    background-color: transparent;
+    margin-left: 10px;
+    flex: 5%;
+}
+
+.flex-item-right {
+    background-color: transparent;
+    padding: 0px;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 2.3rem;
+    color: white;
+    text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
+    font-weight: 700;
+    flex: 10%;
 }
 
 ul {
@@ -264,8 +342,8 @@ nav li:hover {
 }
 
 nav li i {
-    font-size:18px;
-    color:white;
+    font-size: 18px;
+    color: white;
 }
 
 .logo {
@@ -358,6 +436,16 @@ section {
     background: rgba(255, 255, 255, 0.881);
 }
 
+.dark-mode .comp-section .compcontainer .started {
+    color: rgb(47, 111, 174);
+    background-color: rgba(251, 251, 251, 0.743);
+    text-shadow: 1px 1px 2px rgb(197, 190, 190), 1px 1px 1px rgb(57, 4, 100);
+}
+
+.dark-mode .comp-section .compcontainer .started:hover {
+    background: #b1c2d4;
+}
+
 .comp-section {
     height: 80vh;
     display: grid;
@@ -370,34 +458,77 @@ section {
 
 /* Container Section Css */
 
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 25px;
-    padding: 50px 0;
+    padding: 32px 0;
 }
 
 .container .box {
-    position: relative;
-    width: 320px;
+    background-color: black;
+    color: wheat;
+    width: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25px;
-    background: rgba(224, 202, 245, 0.743);
-    border: 4px solid rgb(18, 100, 166);
-    border-radius: 14px;
-    box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
+    box-shadow: 0 0 10px 5px black;
     cursor: pointer;
+    /* position: absolute; */
+    overflow: hidden;
+    border-radius: 1rem 0;
+    z-index: 1;
+    margin: 2rem;
+
 }
 
-.container .box:hover {
-    background-color: rgb(18, 100, 166);
-    border: 4px solid rgba(224, 202, 245, 0.743);
-    box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
+.container .box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-280deg);
+    width: 200%;
+    height: 180%;
+    background-image: conic-gradient(rgb(69, 194, 233) 0deg, rgb(69, 194, 233) 90deg, transparent 130deg, transparent 180deg, rgb(219, 61, 221) 180deg, rgb(219, 61, 221) 270deg, transparent 310deg, transparent 360deg);
+    transition: transform 1s;
+    border-radius: 1rem 0;
+    z-index: 1;
 }
+
+.dark-mode .container .box::before {
+    background-image: conic-gradient(rgb(251, 251, 251) 0deg, rgb(249, 249, 250) 90deg, transparent 130deg, transparent 180deg, rgb(61, 97, 128) 180deg, rgb(61, 97, 128) 270deg, transparent 310deg, transparent 360deg);
+}
+
+.container .box:hover::before {
+    transform: translate(-50%, -50%) rotate(-100deg);
+}
+
+.container .box .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    background: url("./assets/images/cardbg1.jpg");
+    background-size: cover;
+    width: 290px;
+    height: 190px;
+    border-radius: 1rem 0;
+    z-index: 5;
+    transition: all linear .5s;
+}
+
+.dark-mode .container .box .content {
+    background: url("./assets/images/cardbg2.jpg");
+}
+
 
 .container .zoom-effect {
     transition: transform 0.3s ease-in-out;
@@ -408,34 +539,54 @@ section {
     transition: transform 0.3s ease-in-out;
 }
 
-.container .box .content {
-    position: relative;
-    left: 0;
-    padding: 20px 40px;
-    text-align: center;
-    transition: 0.5s ease-in;
-    color: var(--dark);
-}
 
 .container .box .content i {
     font-size: 73px;
-    color: rgb(18, 100, 166);
-    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
+    color: rgb(219, 61, 221);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(69, 194, 233);
+    transition: all linear 1s;
 }
 
 .container .box .content h2 {
     font-size: 23px;
-    color: rgb(37, 111, 172);
+    color: rgb(69, 194, 233);
     margin-top: 25px;
     margin-bottom: 5px;
-    text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172);
+    text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(69, 194, 233);
+    transition: all linear 1s;
 }
 
-.container .box:hover .content i,
-.container .box:hover .content h2 {
-    color: rgba(224, 202, 245, 0.743);
-    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
+.container .box:hover .content i {
+    color: rgb(69, 194, 233);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(69, 194, 233);
 }
+
+.container .box:hover .content h2 {
+    color: rgb(219, 61, 221);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(69, 194, 233);
+}
+
+.dark-mode .container .box .content i {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(124, 122, 122), 1px 1px 2px rgb(255, 255, 255);
+}
+
+.dark-mode .container .box .content h2 {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(124, 122, 122), 1px 1px 2px rgb(255, 255, 255);
+}
+
+.dark-mode .container .box:hover .content h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgb(12, 239, 247), 1px 1px 2px rgb(26, 242, 166);
+}
+
+.dark-mode .container .box:hover .content i {
+    color: rgb(190, 188, 188);
+    text-shadow: 2px 2px 4px rgb(12, 239, 247), 1px 1px 2px rgb(26, 242, 166);
+}
+
+
 
 /* Footer Css */
 
@@ -546,6 +697,62 @@ footer p a {
     color: black;
 }
 
+/* Search Bar Css */
+
+#searchBar {
+    text-align: center;
+    border-radius: 14px;
+    margin: 2rem 4rem 0;
+    padding: 2rem;
+    color: white;
+    width: 100%;
+}
+
+#searchBar h1 {
+    font-family: Ubuntu;
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px var(--light);
+    margin-top: 16px;
+}
+
+#searchBar button {
+    font-size: 2.5rem;
+    background: transparent;
+    border: 0;
+    color: rgb(57, 4, 100);
+    margin-left: 1rem;
+    background-color: rgba(224, 202, 245, 0.743);
+    padding: .7rem;
+    width: 8rem;
+    border-radius: 5rem;
+    box-shadow: 2px 2px 2px black, 1px 1px 1px white;
+    text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(57, 4, 100);
+}
+
+#searchBar button:hover {
+    transform: scale(1.05);
+    border: 2px solid var(black);
+    background: rgba(255, 255, 255, 0.881);
+}
+
+#searchBar input {
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    padding: 1rem;
+    height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    width: 40rem;
+    transition: all linear .2s;
+    font-weight: 600;
+}
+
+#searchBar input:hover {
+    transform: scale(1.02);
+    box-shadow: -5px -5px 10px #682572;
+}
+
 /* Media Queries */
 
 @media (max-width: 1030px) {
@@ -613,6 +820,13 @@ footer p a {
     }
 }
 
+@media (max-width: 650px) {
+    #searchBar input {
+        width: 60%;
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 500px) {
     .comp-section {
         height: 130vh;
@@ -640,7 +854,7 @@ footer p a {
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: rgba(111, 17, 116, 0.341);
+        background-color: rgba(5, 5, 5, 0.904);
         backdrop-filter: blur(6.5px);
         width: 100%;
         border-radius: 10px;
@@ -650,6 +864,9 @@ footer p a {
         height: 100vh;
     }
 
+    .nav-menu .nav-item.active .nav-link {
+        color: red;
+    }
     .compcontainer h1 {
         font-size: 400%;
         padding-bottom: 40px;
@@ -671,7 +888,7 @@ footer p a {
 
     .nav-item {
         margin: 2.5rem 0;
-        font-size: 20px;
+        font-size: 21px;
     }
 
     nav li:hover {
@@ -696,7 +913,6 @@ footer p a {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-
 
 @media (max-width: 400px) {
     .paragraph {

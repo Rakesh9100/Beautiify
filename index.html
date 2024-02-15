@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Beautiify</title>
+
 </head>
 
 <body>
@@ -23,12 +24,20 @@
     <header class="header1">
         <nav class="navbar" class="nav-bg1">
             <a href="index.html">
-                <div class="logo">Beautiify</div>
+                <div class="flex-container">
+                    <div class="flex-item-left"><img src="./assets/images/logo.png" width="37px" height="37px"></div>
+                    <div class="flex-item-right" class="logo">Beautiify</div>
+                </div>
             </a>
+
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link" style="color: red;">Home</a>
                     <i class="fa-solid fa-house"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="./assets/html_files/about.html" class="nav-link">About</a>
+                    <i class="fa-solid fa-circle-info"></i>
                 </li>
                 <li class="nav-item">
                     <a href="#components" class="nav-link">Components</a>
@@ -52,6 +61,9 @@
     </header>
 
     <section class="comp-section" id="home">
+        <!-- Dark Mode Toggle -->
+        <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+
         <div class="compcontainer">
             <div class="logo">
                 <img src="./assets/images/logo.png" alt="" />
@@ -68,6 +80,12 @@
     </section>
 
     <div class="container" id="components">
+        <!-- Search Bar -->
+        <div id="searchBar">
+            <h1>Search Component</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Component Name" oninput="filterComponents()">
+        </div>
+
         <a href="./assets/html_files/accordions.html" target="_blank">
             <div class="zoom-effect">
                 <div class="box">
@@ -124,6 +142,16 @@
                     <div class="content">
                         <i class="fas fa-th-large"></i>
                         <h2>Carousels</h2>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="./assets/html_files/dropdowns.html" target="_blank">
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fa-solid fa-square-caret-down"></i>
+                        <h2>Dropdowns</h2>
                     </div>
                 </div>
             </div>
@@ -188,7 +216,19 @@
                 </div>
             </div>
         </a>
+        <a href="./assets/html_files/transfer-lists.html" target="_blank">
+            <div class="zoom-effect">
+                <div class="box">
+                    <div class="content">
+                        <i class="fa-solid fa-table-list"></i>
+                        <h2>Transfer Lists</h2>
+                    </div>
+                </div>
+            </div>
+        </a>
     </div>
+     
+    <script src="./assets/js_files/dark-mode.js"></script>
 
     <div class="footer" id="about">
         <footer>
@@ -236,7 +276,7 @@
     <script src="./script.js"></script>
     <script src="./assets/js_files/contributor.js"></script>
     <script src="./assets/js_files/scroll-reveal.js"></script>
-   
+
 </body>
 
 </html>

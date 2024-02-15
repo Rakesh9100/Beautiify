@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="../css_files/text-animations.css" />
-    <script src="../../script.js"></script>
+    <link rel="stylesheet" href="../css_files/search.css">
     <script src="../js_files/commonnav.js"></script>
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>Beautiify | Text Animations</title>
 </head>
 
@@ -23,20 +25,32 @@
     <header class="header3">
         <nav class="navbar">
             <a href="../../index.html">
-                <div class="logo">Beautiify</div>
+                <div class="flex-container">
+                    <div class="flex-item-left"><img src="../images/logo.png" width="37px" height="37px"></div>
+                    <div class="flex-item-right" class="logo">Beautiify</div>
+                </div>
             </a>
+
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="../../index.html#home" class="nav-link">Home</a>
+                    <i class="fa-solid fa-house"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="../../assets/html_files/about.html" class="nav-link">About</a>
+                    <i class="fa-solid fa-circle-info"></i>
                 </li>
                 <li class="nav-item">
                     <a href="../../index.html#components" class="nav-link">Components</a>
+                    <i class="fa-solid fa-icons"></i>
                 </li>
                 <li class="nav-item">
                     <a href="./contributor.html" class="nav-link">Contributors</a>
+                    <i class="fa-solid fa-user"></i>
                 </li>
                 <li>
                     <a href="contact.html" class="nav-link">Contact</a>
+                    <i class="fa-solid fa-phone"></i>
                 </li>
             </ul>
             <div class="hamburger">
@@ -48,7 +62,15 @@
     </header>
 
     <section>
+
+        <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+
         <div class="heading">Text Animations</div>
+          <!-- Search Bar -->
+          <div id="searchBar">
+            <h1>Search Text Animation</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Text Animation Name" oninput="filtereachComponents()">
+        </div>
         <div class="contain">
             <div class="box">
                 <h1>Shuffle Text Animation</h1>
@@ -96,6 +118,21 @@
                 </div>
             </div>
             <div class="box">
+                <h1>Distortion Text Animation</h1>
+                <div class="preview">
+                    <a href="../../Components/Text-Animations/Distortion-Text-Animation/" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Distortion-Text-Animation"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <h1>Typewriter Text Animation</h1>
                 <div class="preview">
                     <a href="../../Components/Text-Animations/Typewriter-Text-Animation/index.html" title="Live Preview"
@@ -111,15 +148,15 @@
                 </div>
             </div>
             <div class="box">
-                <h1>Distortion Text Animation</h1>
+                <h1>Typewriter-2 Text Animation</h1>
                 <div class="preview">
-                    <a href="../../Components/Text-Animations/Distortion-Text-Animation/" title="Live Preview"
+                    <a href="../../Components/Text-Animations/Typewriter-2-Text-Animation/index.html" title="Live Preview"
                         target="_blank">
                         <img src="../images/link.png">
                     </a>
                 </div>
                 <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Distortion-Text-Animation"
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Typewriter-2-Text-Animation"
                         title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
@@ -182,19 +219,6 @@
                 </div>
             </div>
             <div class="box">
-                <h1>Flip Text Animation</h1>
-                <div class="preview">
-                    <a href="../../Components/Text-Animations/Flip-Text-Animation/index.html" title="Live Preview" target="_blank">
-                        <img src="../images/link.png">
-                    </a>
-                </div>
-                <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Flip-Text-Animation" title="Source Code" target="_blank">
-                        <img src="../images/github.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
                 <h1>3D Revolving Text List Sphere Animation</h1>
                 <div class="preview">
                     <a href="../../Components/Text-Animations/3D-Recolving-Text-List-Sphere/index.html" title="Live Preview"
@@ -204,21 +228,6 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/3D-Recolving-Text-List-Sphere/"
-                        title="Source Code" target="_blank">
-                        <img src="../images/github.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <h1>Flip-2 Text Animation</h1>
-                <div class="preview">
-                    <a href="../../Components/Text-Animations/Flip-2-Text-Animation/index.html" title="Live Preview"
-                        target="_blank">
-                        <img src="../images/link.png">
-                    </a>
-                </div>
-                <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Flip-2-Text-Animation/"
                         title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
@@ -239,8 +248,64 @@
                     </a>
                 </div>
             </div>
+            <div class="box">
+                <h1>Flip Text Animation</h1>
+                <div class="preview">
+                    <a href="../../Components/Text-Animations/Flip-Text-Animation/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Flip-Text-Animation" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Flip-2 Text Animation</h1>
+                <div class="preview">
+                    <a href="../../Components/Text-Animations/Flip-2-Text-Animation/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Flip-2-Text-Animation/"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Shaking Text Animation</h1>
+                <div class="preview">
+                    <a href="../../Components/Text-Animations/Shaking-Text-Animation/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Text-Animations/Shaking-Text-Animation/"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js_files/commonanimation.js"></script>
+    
+    <script src="../js_files/dark-mode.js"></script>
+    <!-- SCROLL TO TOP BUTTON -->
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+    <script src="../js_files/search.js"></script>
+    <script src="../../script.js"></script>
 
 </body>
 

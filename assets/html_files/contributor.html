@@ -11,6 +11,7 @@
     <script src="../../script.js"></script>
     <script src="../js_files/commonnav.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>Beautiify | Contributors</title>
 </head>
 
@@ -24,20 +25,32 @@
     <header class="header2">
         <nav class="navbar">
             <a href="../../index.html">
-                <div class="logo">Beautiify</div>
+                <div class="flex-container">
+                    <div class="flex-item-left"><img src="../images/logo.png" width="37px" height="37px"></div>
+                    <div class="flex-item-right" class="logo">Beautiify</div>
+                </div>
             </a>
+
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="../../index.html#home" class="nav-link">Home</a>
+                    <i class="fa-solid fa-house"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="../../assets/html_files/about.html" class="nav-link">About</a>
+                    <i class="fa-solid fa-circle-info"></i>
                 </li>
                 <li class="nav-item">
                     <a href="../../index.html#components" class="nav-link">Components</a>
+                    <i class="fa-solid fa-icons"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="../html_files/contributor.html" class="nav-link">Contributors</a>
+                    <a href="../html_files/contributor.html" class="nav-link" style="color: red;">Contributors</a>
+                    <i class="fa-solid fa-user"></i>
                 </li>
                 <li>
                     <a href="contact.html" class="nav-link">Contact</a>
+                    <i class="fa-solid fa-phone"></i>
                 </li>
             </ul>
             <div class="hamburger">
@@ -49,6 +62,9 @@
         </header>
     <!-- Contributors section -->
     <div class="contributors">
+
+        <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+
         <h1 class="heading">Our Valuable Contributors</h1>
         <div id="contributor"></div>
     </div>
@@ -83,7 +99,10 @@
             </ul>
             <p>
                 Created By
-                <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | © <span id="year"></span>: All Rights Reserved
+                <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>: All Rights Reserved
             </p>
         </footer>
     </div>
@@ -94,6 +113,8 @@
     </div>
 
     <script src="../js_files/contributor.js"></script>
+     
+    <script src="../js_files/dark-mode.js"></script>
 
 </body>
 
