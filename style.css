@@ -235,7 +235,6 @@ button#dark-mode-toggle {
     background-color: black;
 }
 
-
 .header2 {
     position: sticky;
     top: 0;
@@ -330,20 +329,16 @@ nav ul {
 }
 
 nav li {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
+    font-weight: bolder;
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
     margin-right: 10px;
 }
 
 nav li:hover {
-    border-bottom: 0.1rem white solid;
+    border-bottom: 0.2rem white solid;
     transition: 0.3s ease-in-out;
-}
-
-nav li i {
-    font-size: 18px;
-    color: white;
 }
 
 .logo {
@@ -867,6 +862,7 @@ footer p a {
     .nav-menu .nav-item.active .nav-link {
         color: red;
     }
+
     .compcontainer h1 {
         font-size: 400%;
         padding-bottom: 40px;
