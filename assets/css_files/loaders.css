@@ -49,7 +49,6 @@ body {
 }
 
 section {
-    /* scroll-margin-top: 50px; */
     z-index: 100;
 }
 
@@ -58,15 +57,15 @@ section {
     font-weight: bolder;
     color: white;
     text-align: center;
-    margin: 50px 0;
+    margin: 75px 0 80px;
     text-shadow: 2px 2px 2px black, 1px 1px 1px white;
-
 }
 
 .contain {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 32px;
 }
 
 .box {
