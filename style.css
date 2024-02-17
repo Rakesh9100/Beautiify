@@ -179,13 +179,13 @@ body {
 .dark-mode {
     background-color: #222;
     color: #eee;
-    background-image: none;
-  }
+    background-image: url(./assets/images/dbg4.jpg);
+}
 
-  body .dark-mode{
+body .dark-mode {
     background-image: none;
     background-color: black;
-  }
+}
 
 html {
     font-size: 62.5%;
@@ -201,10 +201,10 @@ html {
 
 /* button#dark-mode-toggle {
     position: fixed;
-    top: 70px; 
-    right: 20px; 
-    background-color: #333; 
-    color: white; 
+    top: 70px;
+    right: 20px;
+    background-color: #333;
+    color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -238,6 +238,7 @@ html {
 .dark-mode #dark-mode-toggle {
     background-color: #eee;
     color: #222;    
+
 }
 
 .header1 {
@@ -251,11 +252,10 @@ html {
     background-position: 50% 50%;
 }
 
-.dark-mode .header1{
+.dark-mode .header1 {
     background-image: none;
     background-color: black;
 }
-
 
 .header2 {
     position: sticky;
@@ -268,8 +268,8 @@ html {
     background-position: 50% 50%;
 }
 
-.dark-mode .header2{
-    background-image: none ;
+.dark-mode .header2 {
+    background-image: none;
     background-color: black;
 }
 
@@ -285,9 +285,9 @@ html {
     background-position: 50% 50%;
 }
 
-.dark-mode .header3{
+.dark-mode .header3 {
     background-color: black;
-    background-image:none ;
+    background-image: none;
 }
 
 .navbar {
@@ -351,20 +351,16 @@ nav ul {
 }
 
 nav li {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
+    font-weight: bolder;
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
     margin-right: 10px;
 }
 
 nav li:hover {
-    border-bottom: 0.1rem white solid;
+    border-bottom: 0.2rem white solid;
     transition: 0.3s ease-in-out;
-}
-
-nav li i {
-    font-size: 18px;
-    color: white;
 }
 
 .logo {
@@ -457,15 +453,15 @@ section {
     background: rgba(255, 255, 255, 0.881);
 }
 
-.dark-mode .comp-section .compcontainer .started{
+.dark-mode .comp-section .compcontainer .started {
     color: rgb(47, 111, 174);
-    background-color:rgba(251, 251, 251, 0.743); 
+    background-color: rgba(251, 251, 251, 0.743);
     text-shadow: 1px 1px 2px rgb(197, 190, 190), 1px 1px 1px rgb(57, 4, 100);
 }
 
-.dark-mode .comp-section .compcontainer .started:hover{
+.dark-mode .comp-section .compcontainer .started:hover {
     background: #b1c2d4;
-} 
+}
 
 .comp-section {
     height: 80vh;
@@ -511,13 +507,13 @@ section {
     background: rgba(251, 251, 251, 0.743);
     border: 4px solid rgb(238, 245, 251);
     box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
-  }
-  
-  .dark-mode .container .box:hover {
+}
+
+.dark-mode .container .box:hover {
     background-color: rgb(192, 224, 251);
     border: 4px solid rgba(234, 223, 244, 0.743);
     box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
-  }
+}
 
 .container .zoom-effect {
     transition: transform 0.3s ease-in-out;
@@ -544,8 +540,8 @@ section {
 }
 
 .dark-mode .container .box .content i {
-    text-shadow: 1px 1px 2px black, 1px 1px 2px #a5b9c5; 
-  }
+    text-shadow: 1px 1px 2px black, 1px 1px 2px #a5b9c5;
+}
 
 .container .box .content h2 {
     font-size: 23px;
@@ -563,8 +559,8 @@ section {
 
 .dark-mode .container .box:hover .content i,
 .dark-mode .container .box:hover .content h2 {
-  color: rgba(253, 252, 253, 0.743);
-  text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(175, 189, 200);
+    color: rgba(253, 252, 253, 0.743);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(175, 189, 200);
 }
 
 /* Footer Css */
@@ -681,8 +677,7 @@ footer p a {
 #searchBar {
     text-align: center;
     border-radius: 14px;
-    margin: 2rem 4rem 0;
-    padding: 2rem;
+    margin: 4rem 4rem 0;
     color: white;
     width: 100%;
 }
@@ -698,8 +693,8 @@ footer p a {
     font-size: 2.5rem;
     background: transparent;
     border: 0;
-    color:rgb(57, 4, 100);
-    margin-left: 1rem;
+    color: rgb(57, 4, 100);
+    margin: 1rem;
     background-color: rgba(224, 202, 245, 0.743);
     padding: .7rem;
     width: 8rem;
@@ -725,6 +720,7 @@ footer p a {
     width: 40rem;
     transition: all linear .2s;
     font-weight: 600;
+    padding-right: 0 !important;
 }
 
 #searchBar input:hover {
@@ -799,9 +795,9 @@ footer p a {
     }
 }
 
-@media (max-width: 650px){
-    #searchBar input{
-        width: 60%;
+@media (max-width: 650px) {
+    #searchBar input {
+        width: 100%;
         font-size: 1.5rem;
     }
 }
@@ -833,7 +829,7 @@ footer p a {
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: rgba(111, 17, 116, 0.341);
+        background-color: rgba(5, 5, 5, 0.904);
         backdrop-filter: blur(6.5px);
         width: 100%;
         border-radius: 10px;
@@ -846,6 +842,7 @@ footer p a {
     .nav-menu .nav-item.active .nav-link {
         color: red;
     }
+
     .compcontainer h1 {
         font-size: 400%;
         padding-bottom: 40px;
@@ -867,7 +864,7 @@ footer p a {
 
     .nav-item {
         margin: 2.5rem 0;
-        font-size: 20px;
+        font-size: 21px;
     }
 
     nav li:hover {
@@ -892,7 +889,6 @@ footer p a {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-
 
 @media (max-width: 400px) {
     .paragraph {
