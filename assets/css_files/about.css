@@ -10,50 +10,48 @@ body {
     font-family: 'Playfair Display', serif;
     display: grid;
     background-image: url(../images/bg3.png);
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
-    background-repeat: no repeat;
     align-content: center;
     min-height: 100vh;
     overflow-x: hidden;
 }
 
 .navbar {
-    width: calc(100% - 9.5px);
+    width: 100%;
 }
 
 section {
     display: flex;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: column;  /* Adjusted for responsiveness */
     min-height: 70vh;
-    width: 78vw;
+    width: 90%;  /* Adjusted for responsiveness */
     margin: 0 auto;
     margin-top: -50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 12px
+    border-radius: 12px;
 }
 
 .image {
     background-color: #000000;
     display: flex;
-    border-radius: 12px 0 0 12px;
-    width: 110%;
+    border-radius: 12px 12px 0 0;  /* Adjusted for responsiveness */
 }
 
 .image img {
-    height: 300px;
-    margin-top: 80px;
-    margin-left: 10px;
+    width: 100%;  /* Adjusted for responsiveness */
+    height: auto;  /* Adjusted for responsiveness */
+    margin-top: 10px;  /* Adjusted for responsiveness */
+    margin-bottom: 10px;  /* Adjusted for responsiveness */
 }
 
 .content {
     background-color: #000000;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    border-radius: 0 12px 12px 0;
+    border-radius: 0 0 12px 12px;  /* Adjusted for responsiveness */
     color: #fff;
 }
 
@@ -200,50 +198,20 @@ section {
     font-size: 1.1em;
     display: inline-block;
 }
-
-@media(max-width: 900px) {
+@media (max-width: 900px) {
     section {
         grid-template-columns: 1fr;
         width: 100%;
-        border-radius: none;
+        border-radius: 0;  /* Adjusted for responsiveness */
     }
 
     .image {
-        height: 100vh;
-        border-radius: none;
+        border-radius: 0;  /* Adjusted for responsiveness */
     }
 
     .content {
-        height: 80vh;
-        border-radius: none;
+        border-radius: 0;  /* Adjusted for responsiveness */
     }
 
-    .content h2 {
-        font-size: 20px;
-        margin-top: 50px;
-    }
 
-    .content span {
-        margin: 20px 0;
-    }
-
-    .content p {
-        font-size: 14px;
-    }
-
-    .links li a {
-        font-size: 14px;
-    }
-
-    .links {
-        margin: 5px 0;
-    }
-
-    .links li {
-        padding: 6px 10px;
-    }
-
-    .icons li i {
-        font-size: 15px;
-    }
-}
+    
