@@ -10,34 +10,36 @@ body {
     font-family: 'Playfair Display', serif;
     display: grid;
     background-image: url(../images/bg3.png);
-    background-repeat: no-repeat;
+    background-repeat: no repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
+    background-repeat: no repeat;
     align-content: center;
     min-height: 100vh;
     overflow-x: hidden;
 }
 
 .navbar {
-    width: 100%;
+    width: calc(100% - 9.5px);
 }
 
 section {
     display: flex;
-    flex-direction: column;  /* Adjusted for responsiveness */
+    grid-template-columns: 1fr 1fr;
     min-height: 70vh;
-    width: 90%;  /* Adjusted for responsiveness */
+    width: 78vw;
     margin: 0 auto;
     margin-top: -50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 12px;
+    border-radius: 12px
 }
 
 .image {
     background-color: #000000;
     display: flex;
-    border-radius: 12px 12px 0 0;  /* Adjusted for responsiveness */
+    border-radius: 12px 0 0 12px;
+    width: 110%;
 }
 
 .image img {
