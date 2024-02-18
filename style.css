@@ -201,8 +201,8 @@ html {
 
 button#dark-mode-toggle {
     position: fixed;
-    top: 70px;
-    right: 20px;
+    top: 5.5px;
+    right: 16px;
     background-color: #333;
     color: white;
     border: none;
@@ -326,6 +326,7 @@ nav {
 nav ul {
     display: flex;
     gap: 3.5rem;
+    margin-right: 61px;
 }
 
 nav li {
