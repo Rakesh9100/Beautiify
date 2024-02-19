@@ -43,10 +43,9 @@ section {
 }
 
 .image img {
-    width: 100%;  /* Adjusted for responsiveness */
-    height: auto;  /* Adjusted for responsiveness */
-    margin-top: 10px;  /* Adjusted for responsiveness */
-    margin-bottom: 10px;  /* Adjusted for responsiveness */
+    height: 300px;
+    margin-top: 80px;
+    margin-left: 10px;
 }
 
 .content {
