@@ -277,6 +277,7 @@ button#dark-mode-toggle {
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
 }
 
 a {
@@ -338,7 +339,9 @@ nav li {
 }
 
 nav li:hover {
-    border-bottom: 0.2rem white solid;
+    border-top: 0.4rem rgb(232, 9, 9) solid;
+    border-radius: 30%;
+    border-bottom: 0.4rem rgb(232, 9, 9) solid;
     transition: 0.3s ease-in-out;
 }
 
