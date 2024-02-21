@@ -174,6 +174,7 @@ body {
     background-size: cover;
     background-position: 50% 50%;
     font-size: 1.4rem;
+    transition: 1s ease-in-out;
 }
 
 .dark-mode {
@@ -201,8 +202,8 @@ html {
 
 button#dark-mode-toggle {
     position: fixed;
-    top: 70px;
-    right: 20px;
+    top: 5.5px;
+    right: 16px;
     background-color: #333;
     color: white;
     border: none;
@@ -212,6 +213,7 @@ button#dark-mode-toggle {
     height: 40px;
     border-radius: 50%;
     z-index: 999;
+    transition: 0.8s ease-in-out;  
 }
 
 .dark-mode button#dark-mode-toggle {
@@ -234,7 +236,6 @@ button#dark-mode-toggle {
     background-image: none;
     background-color: black;
 }
-
 
 .header2 {
     position: sticky;
@@ -277,7 +278,7 @@ button#dark-mode-toggle {
     -webkit-backdrop-filter: blur(20px);
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
 a {
@@ -327,23 +328,20 @@ nav {
 nav ul {
     display: flex;
     gap: 3.5rem;
+    margin-right: 61px;
 }
 
 nav li {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
+    font-weight: bolder;
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
     margin-right: 10px;
 }
 
 nav li:hover {
-    border-bottom: 0.1rem white solid;
+    border-bottom: 0.2rem white solid;
     transition: 0.3s ease-in-out;
-}
-
-nav li i {
-    font-size: 18px;
-    color: white;
 }
 
 .logo {
@@ -458,77 +456,142 @@ section {
 
 /* Container Section Css */
 
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 32px 0;
+    padding: 40px 0;
 }
 
 .container .box {
-    background-color: black;
-    color: wheat;
-    width: 300px;
-    height: 200px;
+    position: relative;
+    width: 320px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px 5px black;
-    cursor: pointer;
-    /* position: absolute; */
-    overflow: hidden;
-    border-radius: 1rem 0;
-    z-index: 1;
-    margin: 2rem;
-
+    margin: 40px 30px;
+    transition: 0.5s;
 }
 
 .container .box::before {
-    content: "";
+    content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-280deg);
-    width: 200%;
-    height: 180%;
-    background-image: conic-gradient(rgb(69, 194, 233) 0deg, rgb(69, 194, 233) 90deg, transparent 130deg, transparent 180deg, rgb(219, 61, 221) 180deg, rgb(219, 61, 221) 270deg, transparent 310deg, transparent 360deg);
-    transition: transform 1s;
-    border-radius: 1rem 0;
-    z-index: 1;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
 }
 
-.dark-mode .container .box::before {
-    background-image: conic-gradient(rgb(251, 251, 251) 0deg, rgb(249, 249, 250) 90deg, transparent 130deg, transparent 180deg, rgb(61, 97, 128) 180deg, rgb(61, 97, 128) 270deg, transparent 310deg, transparent 360deg);
+.container .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+    transition: 0.5s;
 }
 
-.container .box:hover::before {
-    transform: translate(-50%, -50%) rotate(-100deg);
+.container .box:hover::before,
+.container .box:hover::after {
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 90px);
+}
+
+.container .box:nth-child(1)::before,
+.container .box:nth-child(1)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.container .box span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.container .box span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.container .box:hover span::before {
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.container .box span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    animation-delay: -1s;
+}
+
+.container .box:hover span::after {
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
 }
 
 .container .box .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    transform: translate(-50%, -50%);
-    background: url("./assets/images/cardbg1.jpg");
-    background-size: cover;
-    width: 290px;
-    height: 190px;
-    border-radius: 1rem 0;
-    z-index: 5;
-    transition: all linear .5s;
+    position: relative;
+    left: 0;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    transition: 0.5s;
+    color: #fff;
+    margin: auto;
 }
 
-.dark-mode .container .box .content {
-    background: url("./assets/images/cardbg2.jpg");
+.container .box .content i {
+    font-size: 75px;
 }
-
 
 .container .zoom-effect {
     transition: transform 0.3s ease-in-out;
@@ -539,54 +602,135 @@ section {
     transition: transform 0.3s ease-in-out;
 }
 
+@keyframes animate {
+    0%, 100% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.container .box:hover .content {
+    left: -25px;
+    padding: 60px 40px;
+}
+
+.container .box .content h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.container .box .content p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+/* We can also inport or add the neon button here */
+
+.container .box .content a {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+/* 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 32px 0;
+}
+
+.container .box {
+    position: relative;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    background: rgba(224, 202, 245, 0.743);
+    border: 4px solid rgb(18, 100, 166);
+    border-radius: 14px;
+    box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
+    cursor: pointer;
+}
+
+.container .box:hover {
+    background-color: rgb(18, 100, 166);
+    border: 4px solid rgba(224, 202, 245, 0.743);
+    box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
+}
+
+.dark-mode .container .box {
+    background: rgba(251, 251, 251, 0.743);
+    border: 4px solid rgb(238, 245, 251);
+    box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
+}
+
+.dark-mode .container .box:hover {
+    background-color: rgb(192, 224, 251);
+    border: 4px solid rgba(234, 223, 244, 0.743);
+    box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
+}
+
+.container .zoom-effect {
+    transition: transform 0.3s ease-in-out;
+}
+
+.container .zoom-effect:hover {
+    transform: scale(1.08);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container .box .content {
+    position: relative;
+    left: 0;
+    padding: 20px 40px;
+    text-align: center;
+    transition: 0.5s ease-in;
+    color: var(--dark);
+}
 
 .container .box .content i {
     font-size: 73px;
-    color: rgb(219, 61, 221);
-    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(69, 194, 233);
-    transition: all linear 1s;
+    color: rgb(18, 100, 166);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
+}
+
+.dark-mode .container .box .content i {
+    text-shadow: 1px 1px 2px black, 1px 1px 2px #a5b9c5;
 }
 
 .container .box .content h2 {
     font-size: 23px;
-    color: rgb(69, 194, 233);
+    color: rgb(37, 111, 172);
     margin-top: 25px;
     margin-bottom: 5px;
-    text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(69, 194, 233);
-    transition: all linear 1s;
+    text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172);
 }
 
-.container .box:hover .content i {
-    color: rgb(69, 194, 233);
-    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(69, 194, 233);
-}
-
+.container .box:hover .content i,
 .container .box:hover .content h2 {
-    color: rgb(219, 61, 221);
-    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(69, 194, 233);
+    color: rgba(224, 202, 245, 0.743);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
 }
 
-.dark-mode .container .box .content i {
-    color: white;
-    text-shadow: 1px 1px 2px rgb(124, 122, 122), 1px 1px 2px rgb(255, 255, 255);
-}
-
-.dark-mode .container .box .content h2 {
-    color: white;
-    text-shadow: 1px 1px 2px rgb(124, 122, 122), 1px 1px 2px rgb(255, 255, 255);
-}
-
+.dark-mode .container .box:hover .content i,
 .dark-mode .container .box:hover .content h2 {
-    color: white;
-    text-shadow: 2px 2px 4px rgb(12, 239, 247), 1px 1px 2px rgb(26, 242, 166);
-}
-
-.dark-mode .container .box:hover .content i {
-    color: rgb(190, 188, 188);
-    text-shadow: 2px 2px 4px rgb(12, 239, 247), 1px 1px 2px rgb(26, 242, 166);
-}
-
-
+    color: rgba(253, 252, 253, 0.743);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(175, 189, 200);
+} */
 
 /* Footer Css */
 
@@ -607,6 +751,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: #000;
 }
 
 footer .social-icon {
@@ -702,8 +847,7 @@ footer p a {
 #searchBar {
     text-align: center;
     border-radius: 14px;
-    margin: 2rem 4rem 0;
-    padding: 2rem;
+    margin: 4rem 4rem 0;
     color: white;
     width: 100%;
 }
@@ -720,7 +864,7 @@ footer p a {
     background: transparent;
     border: 0;
     color: rgb(57, 4, 100);
-    margin-left: 1rem;
+    margin: 1rem;
     background-color: rgba(224, 202, 245, 0.743);
     padding: .7rem;
     width: 8rem;
@@ -746,6 +890,7 @@ footer p a {
     width: 40rem;
     transition: all linear .2s;
     font-weight: 600;
+    padding-right: 0 !important;
 }
 
 #searchBar input:hover {
@@ -822,7 +967,7 @@ footer p a {
 
 @media (max-width: 650px) {
     #searchBar input {
-        width: 60%;
+        width: 100%;
         font-size: 1.5rem;
     }
 }
@@ -867,6 +1012,7 @@ footer p a {
     .nav-menu .nav-item.active .nav-link {
         color: red;
     }
+
     .compcontainer h1 {
         font-size: 400%;
         padding-bottom: 40px;
