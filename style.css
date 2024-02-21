@@ -339,9 +339,9 @@ nav li {
 }
 
 nav li:hover {
-    border-top: 0.4rem rgb(232, 9, 9) solid;
+    border-top: 0.4rem #4276b2 solid;
     border-radius: 30%;
-    border-bottom: 0.4rem rgb(232, 9, 9) solid;
+    border-bottom: 0.4rem #4276b2 solid;
     transition: 0.3s ease-in-out;
 }
 
