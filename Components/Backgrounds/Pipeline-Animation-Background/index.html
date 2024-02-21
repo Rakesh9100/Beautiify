@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pipeline</title>
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function () {
+			var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+		};
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+
+<body class="demo-5">
+	<main>
+
+		<div class="content content--canvas">
+			<h2 class="content__title">Pipeline</h2>
+		</div>
+	</main>
+	<script src="js/noise.min.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/pipeline.js"></script>
+</body>
+
+</html>

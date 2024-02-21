@@ -7,30 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="../css_files/backgrounds.css" />
+    <link rel="stylesheet" href="../css_files/search.css">
     <script src="../js_files/commonnav.js"></script>
-    <title>Beautiify | Components</title>
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <title>Beautiify | Backgrounds</title>
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
     <header class="header3">
         <nav class="navbar">
             <a href="../../index.html">
-                <div class="logo">Beautiify</div>
+                <div class="flex-container">
+                    <div class="flex-item-left"><img src="../images/logo.png" width="37px" height="37px"></div>
+                    <div class="flex-item-right" class="logo">Beautiify</div>
+                </div>
             </a>
+
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../../index.html#home" class="nav-link">Home</a>
+                    <a href="../../index.html#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../index.html#components" class="nav-link">Components</a>
+                    <a href="../../assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../index.html#contributor" class="nav-link">Contributors</a>
+                    <a href="../../index.html#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i> Contributors</a>
                 </li>
                 <li>
-                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
+                <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -38,10 +55,32 @@
                 <span class="bar"></span>
             </div>
         </nav>
-        </header>
+    </header>
+    
     <section>
+
         <div class="heading">Backgrounds</div>
+          <!-- Search Bar -->
+          <div id="searchBar">
+            <h1>Search Background</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Background Name" oninput="filtereachComponents()">
+        </div>
         <div class="contain">
+            <div class="box">
+                <h1>Animated Colorful Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Animated-Colorful-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Animated-Colorful-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
             <div class="box">
                 <h1>3D Boxes Background</h1>
                 <div class="preview">
@@ -57,7 +96,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="box">
                 <h1>Glassmorphism Background</h1>
                 <div class="preview">
@@ -73,7 +111,21 @@
                     </a>
                 </div>
             </div>
-
+            <div class="box">
+                <h1>Connecting Dots Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Connecting-Dots-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Connecting-Dots-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
             <div class="box">
                 <h1>Parallax Background</h1>
                 <div class="preview">
@@ -89,9 +141,7 @@
                     </a>
                 </div>
             </div>
-          
-          
-          <div class="box">
+            <div class="box">
                 <h1>Neuromorphism Background</h1>
                 <div class="preview">
                     <a href="../../Components/Backgrounds/Neuromorphism-Background/index.html" title="Live Preview"
@@ -121,8 +171,6 @@
                     </a>
                 </div>
             </div>
-
-
             <div class="box">
                 <h1>Swirl Animation Background</h1>
                 <div class="preview">
@@ -198,8 +246,275 @@
                     </a>
                 </div>
             </div>
+            <div class="box">
+                <h1>Bubble Float Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Bubble-Float-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Bubble-Float-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Dynamic Gradient Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Dynamic-Gradient-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Dynamic-Gradient-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Animated Triangles Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Animated-Triangles-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Animated-Triangles-Background"
+                        title="Source Code" target="_blank">
+                         <img src="../images/github.png">
+                    </a>
+                 </div>
+            </div>
+            <div class="box">
+                <h1>Pipeline Animation Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Pipeline-Animation-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Pipeline-Animation-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Particle Animation Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Particle-Animation-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Particle-Animation-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Mouse Responsive Particles Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Mouse-Responsive-tsParticle-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Mouse-Responsive-tsParticle-Background/"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Rounded Square Animation Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Rounded-Square-Animation-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Rounded-Square-Animation-Background/"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Screensaver Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Screensaver-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Screensaver-Background/"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Gliding Diagonals Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Gliding-Diagonals-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Gliding-Diagonals-Background/"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Coalesce Animation Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Coalesce-Animation-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Coalesce-Animation-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Mouse Responsive Web Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Mouse-Responsive-Web-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Mouse-Responsive-Web-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Raindrop Ripple Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Raindrop-Ripple-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Raindrop-Ripple-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Interactive Balls Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Interactive-Balls-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Interactive-Balls-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Interactive Hexagonal Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Interactive-Hexagonal-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Interactive-Hexagonal-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Gradient Waves Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Gradient-Waves-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Gradient-Waves-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Interactive Squares Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Interactive-Squares-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Interactive-Squares-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Abstract Particle Swarm Background</h1>
+                <div class="preview">
+                    <a href="../../Components/Backgrounds/Abstract-Particle-Swarm-Background/index.html" title="Live Preview"
+                        target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Abstract-Particle-Swarm-Background"
+                        title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="../js_files/dark-mode.js"></script>
+    <!-- SCROLL TO TOP BUTTON -->
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+    <script src="../js_files/search.js"></script>
+    <script src="../../script.js"></script>
 
 </body>
 

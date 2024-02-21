@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#box {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+#outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+
+#inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472; 
+    stroke-dashoffset: 472;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#ip{
+    margin-top: 1vmax;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+#ip1{
+    margin-top: 1vmax;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.text{
+    font-size: 20px;
+}

@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .gradient-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: gradientAnimation 20s linear infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0%, 100% {
+      background: radial-gradient(ellipse at bottom, #ff7e5f, #feb47b, #8c4fb6);
+    }
+    25% {
+      background: radial-gradient(ellipse at bottom, #feb47b, #8c4fb6, #3f7fe7);
+    }
+    50% {
+      background: radial-gradient(ellipse at bottom, #8c4fb6, #3f7fe7, #44c2fd);
+    }
+    75% {
+      background: radial-gradient(ellipse at bottom, #3f7fe7, #44c2fd, #4cc2b0);
+    }
+  }
+  

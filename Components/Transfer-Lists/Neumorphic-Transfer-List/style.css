@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f5f5;
+}
+
+::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    transition: box-shadow 0.5s ease;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbced1;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a7abb7;
+}
+
+.glassmorphism-form {
+    background: #f0f0f0;
+    box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    width: 80vw;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.neu-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 110px;
+}
+
+.neu-subheading {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.selection-list {
+    height: 80%;
+    max-width: 75%;
+    overflow: scroll;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
+    border-radius: 20px 8px 8px 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.list-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #393939;
+}
+
+.transfer-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 1vw auto 1vw;
+}
+
+button {
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 50px;
+    border-radius: 18px;
+    background: linear-gradient(45deg, #d6cdcd, #b4adad);
+    box-shadow: 6px -6px 12px #504d4d,
+        -6px 6px 12px #ffffff;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+.list-body {
+    margin-top: 10px;
+}
+
+.item-checkbox {
+    margin-right: 8px;
+}
+
+.list-item {
+    margin-bottom: 2vh;
+}
+
+.checkbox-wrapper-53 input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150vh;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .glassmorphism-form {
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .selection-list {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
