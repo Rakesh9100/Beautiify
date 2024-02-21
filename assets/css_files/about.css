@@ -52,7 +52,7 @@ section {
     background-color: #000000;
     justify-content: center;
     align-items: center;
-    border-radius: 0 0 12px 12px;  /* Adjusted for responsiveness */
+    border-radius: 0 0 12px 12px;
     color: #fff;
 }
 
@@ -199,20 +199,19 @@ section {
     font-size: 1.1em;
     display: inline-block;
 }
+
 @media (max-width: 900px) {
     section {
         grid-template-columns: 1fr;
         width: 100%;
-        border-radius: 0;  /* Adjusted for responsiveness */
+        border-radius: 0;
     }
 
     .image {
-        border-radius: 0;  /* Adjusted for responsiveness */
+        border-radius: 0;
     }
 
     .content {
-        border-radius: 0;  /* Adjusted for responsiveness */
+        border-radius: 0;
     }
-
-
-    
+}
