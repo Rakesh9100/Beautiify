@@ -838,6 +838,7 @@ footer p a {
 
     .nav-menu.active {
         left: 0;
+        gap: 10px;
     }
 
     .nav-item {
