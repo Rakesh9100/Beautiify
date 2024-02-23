@@ -268,6 +268,8 @@ button#dark-mode-toggle {
     background-image: none;
 }
 
+/* New  navbar  start*/
+
 .navbar {
     margin: 0 auto;
     z-index: 1000;
@@ -278,6 +280,104 @@ button#dark-mode-toggle {
     box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
+ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0px 3px 5px rgb(30, 30, 30);
+}
+
+nav ul {
+    display: flex;
+    gap: 3.5rem;
+    margin-right: 61px;
+}
+
+nav li {
+    font-size: 2.1rem;
+    font-weight: bolder;
+    border-bottom: 0.4rem transparent solid;
+    transition: 0.3s ease-in-out;
+    margin-right: 10px;
+}
+
+nav li:hover {
+    border-bottom: 0.2rem rgb(8, 24, 196) solid;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    background-color: #3498db;
+    margin-right: 40px;
+    color: #df87ef;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+.nav-menu .nav-item.active .nav-link {
+    color: red;
+}
+
+.nav-ite:before {
+    content: "   ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 15px;
+    width: 15px;
+    border-left: 3px solid #000;
+    border-bottom: 3px solid #000;
+    transition: linear .3s;
+}
+
+.nav-ite:after {
+    /* content: ""; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-right: 3px solid #000;
+    border-top: 3px solid #000;
+    transition: linear .3s;
+}
+
+.nav-ite:hover:after,
+.nav-ite:hover:before {
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
+}
+
+  
+  
+.logo {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-left: 10px;
+    font-family: Ubuntu;
+    color: white;
+    text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* New navbar end */
 a {
     text-decoration: none;
     color: white;
@@ -310,59 +410,6 @@ a {
     flex: 10%;
 }
 
-ul {
-    list-style: none;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    box-shadow: 0px 3px 5px rgb(30, 30, 30);
-}
-
-nav ul {
-    display: flex;
-    gap: 3.5rem;
-    margin-right: 61px;
-}
-
-nav li {
-    font-size: 2.1rem;
-    font-weight: bolder;
-    border-bottom: 0.4rem transparent solid;
-    transition: 0.3s ease-in-out;
-    margin-right: 10px;
-}
-
-nav li:hover {
-    border-bottom: 0.2rem white solid;
-    transition: 0.3s ease-in-out;
-}
-
-.logo {
-    font-size: 2.3rem;
-    font-weight: 700;
-    margin-left: 10px;
-    font-family: Ubuntu;
-    color: white;
-    text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
-}
-
-.hamburger {
-    display: none;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: white;
-}
 
 /* Components Section Css */
 
