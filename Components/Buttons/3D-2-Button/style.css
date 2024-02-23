@@ -23,9 +23,9 @@ body{
     transform: rotateX(70deg) rotateZ(30deg);
     transform-style: preserve-3d;
     transition: transform 0.5s;
-  }
-  
-  .btn::before {
+}
+
+.btn::before {
     content: "";
     width: 100%;
     height: 15px;
@@ -35,9 +35,9 @@ body{
     right: 0;
     transform: rotateX(90deg);
     transform-origin: bottom;
-  }
-  
-  .btn::after {
+}
+
+.btn::after {
     content: "";
     width: 15px;
     height: 100%;
@@ -47,9 +47,8 @@ body{
     right: 0;
     transform: rotateY(-90deg);
     transform-origin: right;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     transform: rotateX(30deg) rotateZ(0);
-  }
-  
+}
