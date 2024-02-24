@@ -337,8 +337,11 @@ nav li {
 }
 
 nav li:hover {
-    border-bottom: 0.2rem white solid;
+    border-bottom: 0.2rem rgb(8, 24, 196) solid;
+    border-radius: 10px;
     transition: 0.3s ease-in-out;
+    background-color: #3498db;
+    color: #df87ef;
 }
 
 .logo {
