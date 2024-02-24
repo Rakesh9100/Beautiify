@@ -342,11 +342,6 @@ nav li:hover {
     transition: 0.3s ease-in-out;
     background-color: #3498db;
     color: #df87ef;
-
-}
-
-.nav-menu .nav-item.active .nav-link {
-    color: red;
 }
 
 .logo {
