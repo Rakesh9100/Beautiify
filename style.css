@@ -319,36 +319,6 @@ nav li:hover {
     color: red;
 }
 
-.nav-ite:before {
-    content: "   ";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 15px;
-    width: 15px;
-    border-left: 3px solid #000;
-    border-bottom: 3px solid #000;
-    transition: linear .3s;
-}
-
-.nav-ite:after {
-    /* content: ""; */
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 15px;
-    width: 15px;
-    border-right: 3px solid #000;
-    border-top: 3px solid #000;
-    transition: linear .3s;
-}
-
-.nav-ite:hover:after,
-.nav-ite:hover:before {
-    width: calc(100% - 3px);
-    height: calc(100% - 3px);
-}
-
   
   
 .logo {
