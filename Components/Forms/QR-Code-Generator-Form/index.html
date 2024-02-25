@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">  
-    <title>QR Code Generator in JavaScript | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>QR Code Generator</h1>
-        <p>Paste a url or enter text to create QR code</p>
-      </header>
-      <div class="form">
-        <input type="text" spellcheck="false" placeholder="Enter text or url">
-        <button>Generate QR Code</button>
-      </div>
-      <div class="qr-code">
-        <img src="" alt="qr-code">
-      </div>
+    <link rel="stylesheet" href="main.css">
+    <title>QR Code Generator Form</title>
+</head>
+<body>
+    <div class="box">
+        <div class="qr-header">
+            <h1>Generate QR Code</h1>
+            <input type="text" placeholder="Type your text or URL" id="qr-text">
+            <div>
+            <!---THIS LETS THE USER TO SELECT THE SIZES OF THE QR CODES-->
+            <label for="sizes">Select Size:</label>
+            <select id="sizes">
+                <option value="100">100x100</option>
+                <option value="200">200x200</option>
+                <option value="300">300x300</option>
+                <option value="400">400x400</option>
+                <option value="500">500x500</option>
+            </select>
+        </div>
+        </div>
+        <div class="qr-body"></div>
+        <div class="qr-footer">
+            <a href="" id="generateBtn">Generate</a>
+            <a href="" id="downloadBtn" download="QR_Code.png">Download</a>
+        </div>
     </div>
 
-    <script src="main.js"></script>
-
-  </body>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
 </html>

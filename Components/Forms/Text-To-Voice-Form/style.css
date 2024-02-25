@@ -11,18 +11,19 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #5256AD;
+  background: linear-gradient(45deg, #010758, #490d61);
 }
 ::selection{
   color: #fff;
   background: #5256AD;
 }
+
 .wrapper{
   width: 370px;
   padding: 25px 30px;
   border-radius: 7px;
   background: #fff;
-  box-shadow: 7px 7px 20px rgba(0,0,0,0.05);
+  box-shadow: 7px 7px 30px rgba(209, 203, 203, 0.745)
 }
 .wrapper header{
   font-size: 28px;
