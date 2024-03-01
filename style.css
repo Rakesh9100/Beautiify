@@ -841,10 +841,11 @@ footer p a {
 
     .nav-menu.active {
         left: 0;
+        gap: 10px;
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 1.7rem 0;
         font-size: 21px;
     }
 
