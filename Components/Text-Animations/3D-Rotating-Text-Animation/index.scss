@@ -6,56 +6,56 @@ body {
     place-items: center;
     perspective: 500px;
     perspective-origin: 50% calc(50% - 150px);
-  }
-  
-  .scene {
+}
+
+.scene {
     position: relative;
     transform-style: preserve-3d;
-  }
-  
-  .banner {
+}
+
+.banner {
     display: flex;
     transform-style: preserve-3d;
     animation: rotate 24s infinite linear;
-  }
-  
-  @keyframes rotate {
+}
+
+@keyframes rotate {
     to {
-      transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
     }
-  }
-  
-  $width: 50px;
-  .panel {
+}
+
+$width: 50px;
+
+.panel {
     position: absolute;
     transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(190px);
     width: $width;
     height: 120px;
     overflow: hidden;
-  }
-  
-  .panel::before {
+}
+
+.panel::before {
     position: absolute;
     left: var(--left);
     content: "BEAUTIIFY!";
     font-size: 96px;
     width: max-content;
     color: hsl(var(--hue), 75%, 75%);
-  }
-  
-  @for $i from 0 to 24 {
+}
+
+@for $i from 0 to 24 {
     .panel:nth-child(#{$i + 1}) {
-      --left: #{$width * $i * -1};
-      --hue: #{360 / 24 * $i};
-      --angle: #{360deg / 24 * $i};
+        --left: #{$width * $i * -1};
+        --hue: #{360 / 24 * $i};
+        --angle: #{360deg / 24 * $i};
     }
-  }
-  
-  .screen {
+}
+
+.screen {
     position: absolute;
     width: 400px;
     height: 400px;
     background-image: linear-gradient(90deg, #000a, #0004, #000a);
     transform: translate(-50%, -50%);
-  }
-  
+}

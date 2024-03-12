@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -12,7 +11,6 @@ body {
     min-height: 100vh;
     background: #2b2b2b;
     transition: 0.5s;
-
 }
 
 #toggle {
@@ -27,8 +25,6 @@ body {
         inset 0 8px 8px rgba(0, 0, 0, 0.1),
         inset 0 -4px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-
-
 }
 
 #toggle .indicator {
@@ -48,7 +44,6 @@ body {
 
 #toggle.active .indicator {
     left: 160px;
-
 }
 
 body.active {

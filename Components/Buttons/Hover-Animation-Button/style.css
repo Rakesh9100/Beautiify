@@ -1,11 +1,12 @@
-html,body {
+html,
+body {
     background: #333;
     height: 100%;
     overflow: hidden;
     text-align: center;
 }
 
-.svg-wrapper{
+.svg-wrapper {
     height: 60px;
     margin: 0 auto;
     position: relative;
@@ -13,6 +14,7 @@ html,body {
     transform: translateY(-50%);
     cursor: pointer;
 }
+
 .shape {
     fill: transparent;
     stroke-dasharray: 140 540;
@@ -20,6 +22,7 @@ html,body {
     stroke-width: 8px;
     stroke: #19f6e8;
 }
+
 .hover-txt {
     color: #fff;
     font-family: 'Roboto Condensed';
@@ -30,19 +33,21 @@ html,body {
     top: -48px;
 }
 
-@keyframes BorderAnimation{
-    0%{
+@keyframes BorderAnimation {
+    0% {
         stroke-dasharray: 140 540;
         stroke-dashoffset: -474;
         stroke-width: 8px;
     }
-    100%{
+
+    100% {
         stroke-dasharray: 760;
         stroke-dashoffset: 0;
         stroke-width: 2px;
     }
 }
-.svg-wrapper:hover .shape{
+
+.svg-wrapper:hover .shape {
     -webkit-animation: 0.5s BorderAnimation linear forwards;
     animation: 0.5s BorderAnimation linear forwards;
 }

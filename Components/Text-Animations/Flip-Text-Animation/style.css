@@ -2,19 +2,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    background: linear-gradient(to bottom,#54a1f4,#b620f6);
+}
+
+body {
+    background: linear-gradient(to bottom, #54a1f4, #b620f6);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-  }
-  .wave {
+}
+
+.wave {
     position: relative;
-  }
-  .wave span {
+}
+
+.wave span {
     position: relative;
     display: inline-block;
     font-size: 40px;
@@ -22,9 +24,12 @@
     text-transform: uppercase;
     animation: flip 2s infinite;
     animation-delay: calc(.2s * var(--i))
-  }
-  @keyframes flip {
-    0%,80% {
-      transform: rotateY(360deg) 
+}
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
     }
-  }
+}

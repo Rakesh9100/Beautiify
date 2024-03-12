@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-body{
-    background-color:#d9e1f0;
 
+}
+
+body {
+    background-color: #d9e1f0;
     min-height: 100vh;
 }
 
-.load{
+.load {
     position: absolute;
     top: 0;
     left: 0;
@@ -24,7 +24,7 @@ body{
     flex-direction: column;
 }
 
-.loading{
+.loading {
 
     font-size: 2rem;
     font-weight: bolder;
@@ -35,8 +35,8 @@ body{
     top: 5rem;
 }
 
-.loder{
-   
+.loder {
+
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -45,8 +45,9 @@ body{
     width: 7rem;
     height: 7rem;
 }
-.loder span{
-    
+
+.loder span {
+
     z-index: 2;
 
     width: 2rem;
@@ -54,51 +55,63 @@ body{
     background-color: #fff;
     border-radius: 4px;
     animation: load 2s linear infinite;
-    
+
 }
-.loder span:nth-child(1){
+
+.loder span:nth-child(1) {
     animation-delay: 0;
     background: rgb(240, 36, 36);
-    box-shadow: 0 10px 10px rgb(240, 36, 36 , 0.5);
+    box-shadow: 0 10px 10px rgb(240, 36, 36, 0.5);
 }
-.loder span:nth-child(2){
+
+.loder span:nth-child(2) {
     animation-delay: -0.667s;
     background: rgb(240, 209, 36);
-    box-shadow: 0 10px 10px rgb(240, 209, 36 , 0.5);
+    box-shadow: 0 10px 10px rgb(240, 209, 36, 0.5);
 }
-.loder span:nth-child(3){
+
+.loder span:nth-child(3) {
     animation-delay: -1.33s;
     background: rgb(111, 240, 36);
-    box-shadow: 0 10px 10px rgb(111, 240, 36 , 0.5);
+    box-shadow: 0 10px 10px rgb(111, 240, 36, 0.5);
 }
 
 @keyframes load {
-    0%,100%{
+
+    0%,
+    100% {
         position: absolute;
         top: 0;
         left: 0;
     }
-    25%{
+
+    25% {
         position: absolute;
         top: 0;
         left: 3.5rem;
     }
-    50%{
+
+    50% {
         position: absolute;
         top: 3.5rem;
         left: 3.5rem;
     }
-    75%{
+
+    75% {
         position: absolute;
         top: 3.5rem;
         left: 0;
     }
 }
+
 @keyframes loading {
-    0%,100%{
+
+    0%,
+    100% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 0.4;
     }
 }

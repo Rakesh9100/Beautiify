@@ -4,8 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
     font-size: 20px;
-  }
-  body {
+}
+
+body {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -13,23 +14,27 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-  }
-  section.light,
-  section.dark {
+}
+
+section.light,
+section.dark {
     display: flex;
     width: 50vw;
     height: 100vh;
     align-items: center;
     justify-content: space-around;
-  }
-  section.light {
+}
+
+section.light {
     background-color: #e0e5ec;
-  }
-  section.dark {
+}
+
+section.dark {
     background-color: #131419;
-  }
-  div.circle,
-  div.circle_black {
+}
+
+div.circle,
+div.circle_black {
     position: relative;
     display: flex;
     width: 150px;
@@ -37,9 +42,10 @@
     border-radius: 150px;
     align-items: center;
     justify-content: center;
-  }
-  div.circle:before,
-  div.circle_black:before {
+}
+
+div.circle:before,
+div.circle_black:before {
     position: absolute;
     top: 0;
     right: 0;
@@ -53,14 +59,16 @@
     transition: 0.3s ease-out;
     border-radius: 150px;
     filter: blur(7px);
-  }
-  div.circle.long,
-  div.circle_black.long {
+}
+
+div.circle.long,
+div.circle_black.long {
     width: 250px;
     height: 100px;
-  }
-  div.circle.long:before,
-  div.circle_black.long:before {
+}
+
+div.circle.long:before,
+div.circle_black.long:before {
     position: absolute;
     top: 0;
     right: 0;
@@ -68,85 +76,55 @@
     left: 0;
     width: 250px;
     height: 100px;
-  }
-  div.circle:before {
+}
+
+div.circle:before {
     box-shadow: 8px 8px 20px #a9a8b7, -8px -8px 20px #fff;
-  }
-  div.circle_black:before {
+}
+
+div.circle_black:before {
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5),
-      -8px -8px 20px rgba(255, 255, 255, 0.2);
-  }
-  div.circle:hover:before {
+        -8px -8px 20px rgba(255, 255, 255, 0.2);
+}
+
+div.circle:hover:before {
     box-shadow: 8px 8px 20px #a9a8b7, -8px -8px 20px #fff,
-      inset -8px -8px 20px #fff, inset 8px 8px 20px #a9a8b7;
-  }
-  div.circle_black:hover:before {
+        inset -8px -8px 20px #fff, inset 8px 8px 20px #a9a8b7;
+}
+
+div.circle_black:hover:before {
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5),
-      -8px -8px 20px rgba(255, 255, 255, 0.2), inset 8px 8px 20px rgba(0, 0, 0, 1),
-      inset -8px -8px 20px rgba(255, 255, 255, 0.2);
-  }
-  div.circle:hover:before,
-  div.circle_black:hover:before {
+        -8px -8px 20px rgba(255, 255, 255, 0.2), inset 8px 8px 20px rgba(0, 0, 0, 1),
+        inset -8px -8px 20px rgba(255, 255, 255, 0.2);
+}
+
+div.circle:hover:before,
+div.circle_black:hover:before {
     transition: 0.3s ease-in;
     transform: scale(1.05);
-  }
-  div.circle p,
-  div.circle_black p {
+}
+
+div.circle p,
+div.circle_black p {
     position: relative;
     z-index: 5;
     user-select: none;
     cursor: pointer;
-  }
-  div.circle_black {
+}
+
+div.circle_black {
     color: white;
-  }
-  @media (max-width: 700px) {
+}
+
+@media (max-width: 700px) {
     body {
-      height: auto;
-      flex-direction: column;
+        height: auto;
+        flex-direction: column;
     }
+
     section.light,
     section.dark {
-      width: 100vw;
-      height: 100vh;
+        width: 100vw;
+        height: 100vh;
     }
-  }
-  
-  
-  /*
-  CSS FOR JUST ONE BUTTON
-  
-  section.light {
-    background-color: #e0e5ec;
-  }
-  
-  div.circle {
-    position: relative;
-    display: flex;
-    width: 150px;
-    height: 150px;
-    border-radius: 150px;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  div.circle:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 150px;
-    height: 150px;
-    content: " ";
-    cursor: pointer;
-    transition: 0.75s ease-out;
-    border-radius: 150px;
-    filter: blur(7px);
-    box-shadow: 8px 8px 20px #a9a8b7, -8px -8px 20px #fff;
-  }
-  div.circle_black:hover:before {
-    transition: 0.75s ease-in;
-    transform: scale(1.1);
-  }
+}

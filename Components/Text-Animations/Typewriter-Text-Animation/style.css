@@ -67,7 +67,6 @@ body {
     background: var(--title-color);
     animation: typewriter var(--animation-time) steps(var(--typewriter-characters)) var(--animation-delay) forwards, blinker 500ms infinite forwards;
     opacity: 1;
-
 }
 
 @keyframes blinker {

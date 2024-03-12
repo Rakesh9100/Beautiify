@@ -1,64 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Poppins:wght@100;500;600;800;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400&display=swap");
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
-select:focus, input:focus, button:focus {
-  outline: none;
+select:focus,
+input:focus,
+button:focus {
+    outline: none;
 }
 
 /* -------- BODY DISPLAY --------- */
 body {
-  background-color: #222;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+    background-color: #222;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .container .box {
-  transform-style: preserve-3d;
-  animation: animate 7s ease-in-out infinite alternate;
+    transform-style: preserve-3d;
+    animation: animate 7s ease-in-out infinite alternate;
 }
+
 .container .box span {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) 90%, transparent);
-  text-transform: uppercase;
-  line-height: 0.76em;
-  position: absolute;
-  color: #fff;
-  font-size: 3.5em;
-  white-space: nowrap;
-  font-weight: bold;
-  padding: 0px 10px;
-  transform-style: preserve-3d;
-  text-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  transform: translate(-50%, -50%) rotateX(calc(var(--i) * 22.5deg)) translateZ(109px);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) 90%, transparent);
+    text-transform: uppercase;
+    line-height: 0.76em;
+    position: absolute;
+    color: #fff;
+    font-size: 3.5em;
+    white-space: nowrap;
+    font-weight: bold;
+    padding: 0px 10px;
+    transform-style: preserve-3d;
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transform: translate(-50%, -50%) rotateX(calc(var(--i) * 22.5deg)) translateZ(109px);
 }
+
 .container .box span i {
-  font-style: initial;
+    font-style: initial;
 }
+
 .container .box span i:nth-child(1) {
-  color: #5c5fc4;
+    color: #5c5fc4;
 }
+
 .container .box span i:nth-child(2) {
-  color: #c4c15c;
+    color: #c4c15c;
 }
 
 @keyframes animate {
-  0% {
-    transform: perspective(500px) rotateX(0deg) rotate(5deg);
-  }
-  100% {
-    transform: perspective(50px) rotateX(360deg) rotate(5deg);
-  }
-}/*# sourceMappingURL=style.css.map */
+    0% {
+        transform: perspective(500px) rotateX(0deg) rotate(5deg);
+    }
+
+    100% {
+        transform: perspective(50px) rotateX(360deg) rotate(5deg);
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

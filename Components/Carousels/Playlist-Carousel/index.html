@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playlist Carousel</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <input type="radio" name="slider" id="item-1" checked>
         <input type="radio" name="slider" id="item-2">
         <input type="radio" name="slider" id="item-3">
-      <div class="cards">
-        <label class="card" for="item-1" id="song-1">
-          <img src="https://images.unsplash.com/photo-1567878673942-be055fed5d30?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="song">
-        </label>
-        <label class="card" for="item-2" id="song-2">
-          <img src="https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="song">
-        </label>
-        <label class="card" for="item-3" id="song-3">
-          <img src="https://media.istockphoto.com/id/503222789/photo/radha-and-krishna.jpg?s=612x612&w=0&k=20&c=ngxM1FEsMDUNlR40zbIeGfz31-UGGDhYz_uRQY3WWzQ=" alt="song">
-        </label>
-      </div>
-      <div class="player">
-        <div class="upper-part">
-          <div class="play-icon">
-            <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
-              <defs/>
-              <path d="M5 3l14 9-14 9V3z"/>
-            </svg>
-          </div>
-          <div class="info-area" id="test">
-            <label class="song-info" id="song-info-1">
-              <div class="title">Shendur Lal Chadhayo</div>
-              <div class="sub-line">
-                <div class="subtitle">Ravindra Sathe</div>
-                <div class="time">4.05</div>
-              </div>
+        <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+                <img src="https://images.unsplash.com/photo-1567878673942-be055fed5d30?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="song">
             </label>
-            <label class="song-info" id="song-info-2">
-              <div class="title">Keejo Kesari Ke Laal</div>
-              <div class="sub-line">
-                <div class="subtitle">Lakhbir Singh Lakha</div>
-                <div class="time">4.05</div>
-              </div>
+            <label class="card" for="item-2" id="song-2">
+                <img src="https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="song">
             </label>
-            <label class="song-info" id="song-info-3">
-              <div class="title">Radha Rani Lage</div>
-              <div class="sub-line">
-                <div class="subtitle">Suprabha KV</div>
-                <div class="time">4.05</div>
-              </div>
+            <label class="card" for="item-3" id="song-3">
+                <img src="https://media.istockphoto.com/id/503222789/photo/radha-and-krishna.jpg?s=612x612&w=0&k=20&c=ngxM1FEsMDUNlR40zbIeGfz31-UGGDhYz_uRQY3WWzQ="
+                    alt="song">
             </label>
-          </div>
         </div>
-        <div class="progress-bar">
-          <span class="progress"></span>
+        <div class="player">
+            <div class="upper-part">
+                <div class="play-icon">
+                    <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+                        <defs />
+                        <path d="M5 3l14 9-14 9V3z" />
+                    </svg>
+                </div>
+                <div class="info-area" id="test">
+                    <label class="song-info" id="song-info-1">
+                        <div class="title">Shendur Lal Chadhayo</div>
+                        <div class="sub-line">
+                            <div class="subtitle">Ravindra Sathe</div>
+                            <div class="time">4.05</div>
+                        </div>
+                    </label>
+                    <label class="song-info" id="song-info-2">
+                        <div class="title">Keejo Kesari Ke Laal</div>
+                        <div class="sub-line">
+                            <div class="subtitle">Lakhbir Singh Lakha</div>
+                            <div class="time">4.05</div>
+                        </div>
+                    </label>
+                    <label class="song-info" id="song-info-3">
+                        <div class="title">Radha Rani Lage</div>
+                        <div class="sub-line">
+                            <div class="subtitle">Suprabha KV</div>
+                            <div class="time">4.05</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <span class="progress"></span>
+            </div>
         </div>
-      </div>
     </div>
 </body>
 <script src="script.js"></script>
+
 </html>

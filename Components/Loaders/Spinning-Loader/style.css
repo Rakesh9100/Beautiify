@@ -1,15 +1,18 @@
-body{
+body {
     background-color: black;
 }
+
 @keyframes spinner {
     0% {
-      transform: translate3d(-50%, -50%, 0) rotate(0deg);
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
     }
+
     100% {
-      transform: translate3d(-50%, -50%, 0) rotate(360deg);
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
     }
-  }
-  .spin::before {
+}
+
+.spin::before {
     animation: 1.5s linear infinite spinner;
     animation-play-state: inherit;
     border: solid 5px #cfd0d1;
@@ -19,9 +22,8 @@ body{
     height: 40px;
     width: 40px;
     position: absolute;
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate3d(-50%, -50%, 0);
     will-change: transform;
-
-  } 
+}

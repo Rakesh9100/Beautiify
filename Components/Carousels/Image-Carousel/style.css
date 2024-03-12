@@ -36,7 +36,7 @@ body {
     transition: transform 1s;
 }
 
-.img-item > img {
+.img-item>img {
     width: 100%;
     height: 100%;
     object-fit: cover;

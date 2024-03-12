@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,28 +35,34 @@
 
         .nav-item:hover {
             transform: scale(1.2);
-            color: #e44d26; /* Vibrant color 1 */
+            color: #e44d26;
+            /* Vibrant color 1 */
         }
 
         .nav-item.animated:nth-child(2):hover {
-            color: #1abc9c; /* Vibrant color 2 */
+            color: #1abc9c;
+            /* Vibrant color 2 */
         }
 
         .nav-item.animated:nth-child(3):hover {
-            color: #3498db; /* Vibrant color 3 */
+            color: #3498db;
+            /* Vibrant color 3 */
         }
 
         .nav-item.animated:nth-child(4):hover {
-            color: #f39c12; /* Vibrant color 4 */
+            color: #f39c12;
+            /* Vibrant color 4 */
         }
 
         @keyframes pulseAnimation {
             0% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1.2);
             }
+
             100% {
                 transform: scale(1);
             }
@@ -66,14 +73,16 @@
         }
     </style>
 </head>
+
 <body>
 
-<nav>
-    <div class="nav-item animated">Home</div>
-    <div class="nav-item animated">About</div>
-    <div class="nav-item animated">Services</div>
-    <div class="nav-item animated">Contact</div>
-</nav>
+    <nav>
+        <div class="nav-item animated">Home</div>
+        <div class="nav-item animated">About</div>
+        <div class="nav-item animated">Services</div>
+        <div class="nav-item animated">Contact</div>
+    </nav>
 
 </body>
+
 </html>

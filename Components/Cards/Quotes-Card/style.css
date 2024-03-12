@@ -9,7 +9,7 @@ body {
 
 .quote-card {
     max-width: 400px;
-    background: linear-gradient(rgb(159, 216, 216),rgb(232, 180, 243));
+    background: linear-gradient(rgb(159, 216, 216), rgb(232, 180, 243));
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

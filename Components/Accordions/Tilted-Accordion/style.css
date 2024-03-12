@@ -1,19 +1,19 @@
-body{
-    background-color: black;
+body {
+	background-color: black;
 }
-article.accordion
-{
+
+article.accordion {
 	display: block;
 	width: 43em;
 	margin: 9rem auto;
 	background-color: #666;
 	overflow: auto;
 	border-radius: 5px;
-	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 
 }
-article.accordion section
-{
+
+article.accordion section {
 	position: relative;
 	display: block;
 	float: left;
@@ -25,8 +25,8 @@ article.accordion section
 	overflow: hidden;
 	border-radius: 3px;
 }
-article.accordion section h2
-{
+
+article.accordion section h2 {
 	position: absolute;
 	font-size: 1em;
 	font-weight: bold;
@@ -49,8 +49,8 @@ article.accordion section h2
 	-o-transform: rotate(-90deg);
 	transform: rotate(-90deg);
 }
-article.accordion section h2 a
-{
+
+article.accordion section h2 a {
 	display: block;
 	width: 100%;
 	line-height: 2em;
@@ -58,15 +58,15 @@ article.accordion section h2 a
 	color: inherit;
 	outline: 0 none;
 }
-article.accordion section:target
-{
+
+article.accordion section:target {
 	width: 30em;
 	padding: 0 1em;
 	color: #333;
 	background-color: #fff;
 }
-article.accordion section:target h2
-{
+
+article.accordion section:target h2 {
 	position: static;
 	font-size: 1.3em;
 	text-indent: 0;
@@ -77,9 +77,9 @@ article.accordion section:target h2
 	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
 }
+
 article.accordion section,
-article.accordion section h2
-{
+article.accordion section h2 {
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-ms-transition: all 1s ease;

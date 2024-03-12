@@ -1,376 +1,394 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+
 body {
-  margin: 0;
-  padding: 0;
-  background: #93C4D3;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #93C4D3;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
 }
 
 .container {
-  position: relative;
+    position: relative;
 }
 
 .main {
-  position: relative;
-  border: 2px solid #5F8FA4;
-  height: 25px;
-  background: #B1BEC6;
-  width: 190px;
-  border-radius: 50px;
-  padding-left: 31px;
-  padding-right: 11px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  font-size: 13px;
-  color: #555;
+    position: relative;
+    border: 2px solid #5F8FA4;
+    height: 25px;
+    background: #B1BEC6;
+    width: 190px;
+    border-radius: 50px;
+    padding-left: 31px;
+    padding-right: 11px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 13px;
+    color: #555;
 }
+
 .main:focus {
-  outline: none;
+    outline: none;
 }
 
 .searchicon {
-  position: absolute;
-  height: 12px;
-  width: 12px;
-  background: transparent;
-  border: 3px solid #5F8FA4;
-  left: 10px;
-  top: 8px;
-  border-radius: 100%;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background: transparent;
+    border: 3px solid #5F8FA4;
+    left: 10px;
+    top: 8px;
+    border-radius: 100%;
 }
+
 .searchicon:after {
-  content: "";
-  position: absolute;
-  background: #5F8FA4;
-  height: 6px;
-  width: 3px;
-  bottom: -5px;
-  right: -3px;
-  transform: rotate(-45deg);
+    content: "";
+    position: absolute;
+    background: #5F8FA4;
+    height: 6px;
+    width: 3px;
+    bottom: -5px;
+    right: -3px;
+    transform: rotate(-45deg);
 }
 
 .microphone {
-  position: absolute;
-  height: 24px;
-  width: 24px;
-  background: #FF5252;
-  right: 12px;
-  top: 6px;
-  border-radius: 100%;
-  box-shadow: 0px 1px 2px 0px #555;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background: #FF5252;
+    right: 12px;
+    top: 6px;
+    border-radius: 100%;
+    box-shadow: 0px 1px 2px 0px #555;
 }
+
 .microphone:after {
-  content: "";
-  position: absolute;
-  background: #c70000;
-  height: 12px;
-  width: 8px;
-  border-radius: 10px;
-  left: 8px;
-  top: 3px;
+    content: "";
+    position: absolute;
+    background: #c70000;
+    height: 12px;
+    width: 8px;
+    border-radius: 10px;
+    left: 8px;
+    top: 3px;
 }
+
 .microphone:before {
-  content: "";
-  position: absolute;
-  border-bottom: 2px solid #c70000;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  top: 6px;
-  left: 7px;
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #c70000;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    top: 6px;
+    left: 7px;
 }
 
 .mic-stand {
-  position: absolute;
-  height: 4px;
-  width: 2px;
-  background: #c70000;
-  bottom: 3px;
-  left: 11px;
+    position: absolute;
+    height: 4px;
+    width: 2px;
+    background: #c70000;
+    bottom: 3px;
+    left: 11px;
 }
 
 .icon-holder {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 7px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7px;
 }
 
 .icon {
-  position: relative;
-  height: 35px;
-  width: 35px;
-  background: #43b3e7;
-  border-radius: 100%;
-  box-shadow: 0px 1px 2px 0px #555;
-  cursor: pointer;
-  opacity: 0;
-  transition: 0.4s;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background: #43b3e7;
+    border-radius: 100%;
+    box-shadow: 0px 1px 2px 0px #555;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.4s;
 }
+
 .icon:hover {
-  background: #70c5ed;
-  animation-play-state: paused;
+    background: #70c5ed;
+    animation-play-state: paused;
 }
 
 #parking:after {
-  content: "P";
-  font-weight: bold;
-  position: absolute;
-  font-size: 13px;
-  color: #43b3e7;
-  background: white;
-  padding: 1px 3px 1px 4px;
-  border-radius: 100%;
-  left: 10px;
-  top: 9px;
+    content: "P";
+    font-weight: bold;
+    position: absolute;
+    font-size: 13px;
+    color: #43b3e7;
+    background: white;
+    padding: 1px 3px 1px 4px;
+    border-radius: 100%;
+    left: 10px;
+    top: 9px;
 }
 
 #gas:after {
-  content: "";
-  position: absolute;
-  height: 15px;
-  width: 12px;
-  background: white;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-  top: 9px;
-  left: 11px;
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 12px;
+    background: white;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    top: 9px;
+    left: 11px;
 }
 
 #gas:before {
-  content: "";
-  position: absolute;
-  height: 6px;
-  width: 8px;
-  background: #43b3e7;
-  left: 13px;
-  top: 11px;
-  z-index: 1;
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 8px;
+    background: #43b3e7;
+    left: 13px;
+    top: 11px;
+    z-index: 1;
 }
 
 .base {
-  position: absolute;
-  background: white;
-  width: 16px;
-  height: 4px;
-  top: 23px;
-  left: 9px;
-  border-radius: 2px;
+    position: absolute;
+    background: white;
+    width: 16px;
+    height: 4px;
+    top: 23px;
+    left: 9px;
+    border-radius: 2px;
 }
+
 .base:after {
-  content: "";
-  position: absolute;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  border-left: 2px solid white;
-  bottom: 4px;
-  left: -1px;
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    border-left: 2px solid white;
+    bottom: 4px;
+    left: -1px;
 }
 
 #eat:after {
-  content: "";
-  position: absolute;
-  height: 13px;
-  width: 4px;
-  background: white;
-  border-radius: 3px;
-  top: 15px;
-  left: 11px;
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 4px;
+    background: white;
+    border-radius: 3px;
+    top: 15px;
+    left: 11px;
 }
 
 #eat:before {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 8px;
-  border-bottom-left-radius: 100%;
-  border-bottom-right-radius: 100%;
-  background: white;
-  top: 12px;
-  left: 9px;
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 8px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background: white;
+    top: 12px;
+    left: 9px;
 }
 
 .fork {
-  position: absolute;
-  height: 5px;
-  width: 2px;
-  background: white;
-  top: 7px;
-  left: 9px;
+    position: absolute;
+    height: 5px;
+    width: 2px;
+    background: white;
+    top: 7px;
+    left: 9px;
 }
+
 .fork:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 2px;
-  background: white;
-  top: 0px;
-  left: 3px;
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 2px;
+    background: white;
+    top: 0px;
+    left: 3px;
 }
+
 .fork:before {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 2px;
-  background: white;
-  top: 0px;
-  left: 6px;
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 2px;
+    background: white;
+    top: 0px;
+    left: 6px;
 }
 
 .knife {
-  position: absolute;
-  height: 9px;
-  width: 4px;
-  background: white;
-  right: 11px;
-  bottom: 7px;
-  border-radius: 2px;
+    position: absolute;
+    height: 9px;
+    width: 4px;
+    background: white;
+    right: 11px;
+    bottom: 7px;
+    border-radius: 2px;
 }
+
 .knife:after {
-  content: "";
-  position: absolute;
-  height: 13px;
-  width: 6px;
-  background: white;
-  bottom: 8px;
-  border-top-right-radius: 100%;
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 6px;
+    background: white;
+    bottom: 8px;
+    border-top-right-radius: 100%;
 }
 
 .cup {
-  position: absolute;
-  height: 14px;
-  width: 17px;
-  background: white;
-  top: 15px;
-  left: 8px;
-  border-bottom-left-radius: 100%;
-  border-bottom-right-radius: 100%;
+    position: absolute;
+    height: 14px;
+    width: 17px;
+    background: white;
+    top: 15px;
+    left: 8px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
 }
+
 .cup:after {
-  content: "";
-  position: absolute;
-  height: 10px;
-  width: 15px;
-  border-radius: 100%;
-  right: -4px;
-  border-right: 2px solid white;
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 15px;
+    border-radius: 100%;
+    right: -4px;
+    border-right: 2px solid white;
 }
 
 #coffee:after {
-  content: "S";
-  position: absolute;
-  font-style: italic;
-  font-size: 5px;
-  transform: skewY(-40deg);
-  color: white;
-  top: 6px;
-  left: 12px;
+    content: "S";
+    position: absolute;
+    font-style: italic;
+    font-size: 5px;
+    transform: skewY(-40deg);
+    color: white;
+    top: 6px;
+    left: 12px;
 }
 
 #coffee:before {
-  content: "S";
-  position: absolute;
-  font-style: italic;
-  font-size: 5px;
-  transform: skewY(-40deg);
-  color: white;
-  top: 6px;
-  left: 18px;
+    content: "S";
+    position: absolute;
+    font-style: italic;
+    font-size: 5px;
+    transform: skewY(-40deg);
+    color: white;
+    top: 6px;
+    left: 18px;
 }
 
 .dots {
-  position: absolute;
-  height: 5px;
-  width: 5px;
-  background: white;
-  border-radius: 100%;
-  left: 15px;
-  top: 15px;
-}
-.dots:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 5px;
-  background: white;
-  border-radius: 100%;
-  left: 9px;
-}
-.dots:before {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 5px;
-  background: white;
-  border-radius: 100%;
-  left: -9px;
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background: white;
+    border-radius: 100%;
+    left: 15px;
+    top: 15px;
 }
 
-input:focus ~ .icon-holder > .icon {
-  animation: ani 2.2s ease-out infinite;
+.dots:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background: white;
+    border-radius: 100%;
+    left: 9px;
 }
+
+.dots:before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background: white;
+    border-radius: 100%;
+    left: -9px;
+}
+
+input:focus~.icon-holder>.icon {
+    animation: ani 2.2s ease-out infinite;
+}
+
 @keyframes ani {
-  0% {
-    opacity: 1;
-  }
-  10% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  20% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    20% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 #gas {
-  animation-delay: 0.1s;
+    animation-delay: 0.1s;
 }
 
 #eat {
-  animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 
 #coffee {
-  animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
 #misc {
-  animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 .tooltip {
-  opacity: 0;
-  position: absolute;
-  font-size: 12px;
-  color: white;
-  background: #555;
-  padding: 8px;
-  top: 15px;
-  border-radius: 15%;
-  top: 45px;
-}
-.tooltip:after {
-  content: "";
-  position: absolute;
-  background: #555;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  height: 18px;
-  width: 18px;
-  top: -10px;
-  left: 7px;
+    opacity: 0;
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    background: #555;
+    padding: 8px;
+    top: 15px;
+    border-radius: 15%;
+    top: 45px;
 }
 
-.icon:hover > .tooltip {
-  animation: ani 0.4s ease-out forwards;
-  animation-delay: 0.3s;
+.tooltip:after {
+    content: "";
+    position: absolute;
+    background: #555;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    height: 18px;
+    width: 18px;
+    top: -10px;
+    left: 7px;
+}
+
+.icon:hover>.tooltip {
+    animation: ani 0.4s ease-out forwards;
+    animation-delay: 0.3s;
 }

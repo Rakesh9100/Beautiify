@@ -1,8 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -14,7 +14,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 
 #box {
     width: 160px;
@@ -42,28 +41,29 @@ body {
         0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
 
-circle{
+circle {
     fill: none;
     stroke: url(#GradientColor);
     stroke-width: 20px;
-    stroke-dasharray: 472; 
+    stroke-dasharray: 472;
     stroke-dashoffset: 472;
 }
 
-svg{
+svg {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-#ip{
+#ip {
     margin-top: 1vmax;
     height: 40px;
     width: 100px;
     text-align: center;
     font-size: 25px;
 }
-#ip1{
+
+#ip1 {
     margin-top: 1vmax;
     height: 40px;
     width: 80px;
@@ -71,6 +71,6 @@ svg{
     font-size: 25px;
 }
 
-.text{
+.text {
     font-size: 20px;
 }

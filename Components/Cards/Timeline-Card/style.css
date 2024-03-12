@@ -1,19 +1,19 @@
 * {
     box-sizing: border-box;
-  }
+}
 
-  body {
+body {
     background-color: #474e5d;
     font-family: Helvetica, sans-serif;
-  }
+}
 
-  .timeline {
+.timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .timeline::after {
+}
+
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -22,17 +22,17 @@
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
-  
-  .container {
+}
+
+.container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
+}
+
+/* The circles on the timeline */
+.container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -43,16 +43,18 @@
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
-  .left {
+}
+
+.left {
     left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
+}
+
+/* Place the container to the right */
+.right {
     left: 50%;
-  }
-  .left::before {
+}
+
+.left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -63,10 +65,10 @@
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -77,44 +79,46 @@
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
-  }
-  
-  .right::after {
+}
+
+.right::after {
     left: -16px;
-  }
-  .content {
+}
+
+.content {
     padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
-  }
-  
-  @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
     .timeline::after {
-      left: 31px;
-    }
-  
-  /* Full-width containers */
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-    .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
+        left: 31px;
     }
 
-    .left::after, .right::after {
-      left: 15px;
+    /* Full-width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 15px;
     }
 
     .right {
-      left: 0%;
+        left: 0%;
     }
-  }
-  
+}

@@ -4,17 +4,17 @@ body {
     background: #f2f2f2;
     font-family: "Acme";
     background: #000;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 1000px;
     margin: 100px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-  
-  .beautiify {
+}
+
+.beautiify {
     position: relative;
     margin: 20px 0;
     width: 300px;
@@ -23,16 +23,16 @@ body {
     transform-style: preserve-3d;
     transform: perspective(2000px);
     transition: 1s;
-  }
-  
-  .beautiify:hover {
+}
+
+.beautiify:hover {
     z-index: 1111;
     transform: perspective(2000px) rotate(-10deg);
-  
+
     box-shadow: 5px 5px 20px rgb(235, 151, 128);
-  }
-  
-  .beautiify .img-container {
+}
+
+.beautiify .img-container {
     position: relative;
     width: 100%;
     height: 100%;
@@ -41,31 +41,31 @@ body {
     transform-origin: left;
     z-index: 1;
     transition: 1s;
-  }
-  
-  .beautiify .img-container img {
+}
+
+.beautiify .img-container img {
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
-  }
-  
-  .beautiify:hover .img-container {
+}
+
+.beautiify:hover .img-container {
     transform: rotateY(-135deg);
-  }
-  
-  .beautiify .beautiify-details {
+}
+
+.beautiify .beautiify-details {
     position: absolute;
     left: 0;
     top: 0;
     box-sizing: border-box;
     padding: 20px;
     color: #000;
-  }
-  
-  .beautiify .beautiify-details h2 {
+}
+
+.beautiify .beautiify-details h2 {
     margin: 0;
     padding: 0.5em 0;
     text-transform: uppercase;
@@ -74,32 +74,35 @@ body {
     -webkit-text-fill-color: transparent;
     /* -webkit-background-clip: text; */
     animation: untold 3s infinite ease-in-out;
-  }
-  
-  @keyframes untold {
+}
+
+@keyframes untold {
     0% {
-      background: linear-gradient(to right, #f32170, #ff0c08, #710071, #eedd44);
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      animation: untold 0.1s infinite ease-in-out;
+        background: linear-gradient(to right, #f32170, #ff0c08, #710071, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: untold 0.1s infinite ease-in-out;
     }
+
     50% {
-      background: linear-gradient(to right, #2fff00, #1008ff, #ec4705, #a744ee);
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      animation: untold 3s infinite ease-in-out;
+        background: linear-gradient(to right, #2fff00, #1008ff, #ec4705, #a744ee);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: untold 3s infinite ease-in-out;
     }
+
     100% {
-      background: linear-gradient(to right, #f32121, #ff0890, #cdb903, #d122f8);
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      animation: untold 1s infinite ease-in-out;
+        background: linear-gradient(to right, #f32121, #ff0890, #cdb903, #d122f8);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: untold 1s infinite ease-in-out;
     }
-  }
-  .beautiify .beautiify-details p {
+}
+
+.beautiify .beautiify-details p {
     margin: 0;
     padding: 0;
     line-height: 25px;
     font-size: 1.3em;
     font-weight: 900;
-  }
+}

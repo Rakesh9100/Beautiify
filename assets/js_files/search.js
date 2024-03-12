@@ -13,9 +13,9 @@ function filtereachComponents() {
         var componentName = h2.textContent || h2.innerText;
 
         if (componentName.toUpperCase().indexOf(filter) > -1) {
-            component.style.display="block";
+            component.style.display = "block";
         } else {
-            component.style.display="none";
+            component.style.display = "none";
         }
     }
 }

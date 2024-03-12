@@ -22,6 +22,7 @@ form {
     flex-direction: column;
     align-items: center;
 }
+
 form:hover {
     transform: perspective(500px) rotateX(3deg);
 }
@@ -47,7 +48,8 @@ input[type="text"]:focus {
 
 .rating {
     display: flex;
-    flex-direction: row; /* Change to row to display stars horizontally */
+    flex-direction: row;
+    /* Change to row to display stars horizontally */
     align-items: center;
     margin-bottom: 16px;
 }
@@ -70,7 +72,7 @@ input[type="text"]:focus {
     transition: color 0.3s ease-in-out;
 }
 
-.rating input:checked ~ label {
+.rating input:checked~label {
     color: #ffcc00;
 }
 
@@ -85,7 +87,8 @@ input[type="submit"] {
     text-align: center;
     margin-top: 10px;
     width: 80%;
-    transition: background-color 0.3s ease-in-out; /* Added transition property */
+    transition: background-color 0.3s ease-in-out;
+    /* Added transition property */
 }
 
 input[type="submit"]:hover {

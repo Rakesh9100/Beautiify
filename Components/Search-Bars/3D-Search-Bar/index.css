@@ -187,16 +187,19 @@ body {
         -webkit-transform: translateZ(10px);
         transform: translateZ(10px);
     }
+
     to {
         -webkit-transform: translateZ(20px);
         transform: translateZ(20px);
     }
 }
+
 @keyframes hover {
     from {
         -webkit-transform: translateZ(10px);
         transform: translateZ(10px);
     }
+
     to {
         -webkit-transform: translateZ(20px);
         transform: translateZ(20px);
@@ -209,19 +212,21 @@ body {
         -webkit-transform: perspective(500px) rotateY(70deg) rotateZ(-10deg) rotateX(30deg);
         transform: perspective(500px) rotateY(70deg) rotateZ(-10deg) rotateX(30deg);
     }
+
     33% {
         -webkit-transform: perspective(500px) rotateY(20deg) rotateZ(-10deg) rotateX(-30deg);
         transform: perspective(500px) rotateY(20deg) rotateZ(-10deg) rotateX(-30deg);
     }
+
     67% {
         -webkit-transform: perspective(0) rotateY(0deg) rotateZ(0deg) rotateX(0deg);
         transform: perspective(500px) rotateY(-70deg) rotateZ(-10deg) rotateX(-30deg);
     }
+
     100% {
-        -webkit-transform: perspective(500px) rotateY(70deg) rotateZ(-10deg) rotateX(30deg);;
+        -webkit-transform: perspective(500px) rotateY(70deg) rotateZ(-10deg) rotateX(30deg);
+        ;
         transform: perspective(500px) rotateY(-20deg) rotateZ(-10deg) rotateX(30deg);
     }
-    
+
 }
-
-

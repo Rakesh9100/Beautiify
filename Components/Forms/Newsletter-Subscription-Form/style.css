@@ -1,20 +1,19 @@
-
 body {
     font-size: 26px;
-  }
-  
-  body {
+}
+
+body {
     background-color: #fff;
-  }
-  
-  .sign-up-container {
+}
+
+.sign-up-container {
     width: 100%;
     padding-top: 280px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-  }
-  
-  .paper {
+}
+
+.paper {
     width: 85%;
     box-sizing: border-box;
     margin: 0 auto;
@@ -27,18 +26,18 @@ body {
     color: #db4344;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-  }
-  
-  h1 {
+}
+
+h1 {
     margin-bottom: 1rem;
     margin-top: 0;
     text-align: center;
     font-size: 1em;
     font-weight: 300;
-  }
-  
-  .text-input,
-  .button {
+}
+
+.text-input,
+.button {
     box-sizing: border-box;
     padding: 0.8em 0.67em;
     margin-bottom: 0.5rem;
@@ -46,55 +45,62 @@ body {
     border: none;
     border-radius: 2em;
     outline: none;
-  }
-  
-  .button {
+}
+
+.button {
     border: 1px solid #999;
     -webkit-transition: background 0.1s, color 0.1s;
     transition: background 0.1s, color 0.1s;
-  }
-  .button:hover {
+}
+
+.button:hover {
     background: #db4344;
     color: #fef8e1;
-  }
-  
-  .text-input {
+}
+
+.text-input {
     background: #fff;
-      color: #333;
-  }
-  .text-input::-webkit-input-placeholder {
+    color: #333;
+}
+
+.text-input::-webkit-input-placeholder {
     color: inherit;
     font-style: italic;
-  }
-  .text-input::-moz-placeholder {
+}
+
+.text-input::-moz-placeholder {
     color: inherit;
     font-style: italic;
-  }
-  .text-input:-ms-input-placeholder {
+}
+
+.text-input:-ms-input-placeholder {
     color: inherit;
     font-style: italic;
-  }
-  .text-input::placeholder {
+}
+
+.text-input::placeholder {
     color: inherit;
     font-style: italic;
-  }
-  
-  .sign-up-form {
+}
+
+.sign-up-form {
     width: 100%;
-  }
-  .sign-up-form * {
+}
+
+.sign-up-form * {
     width: 100%;
-  }
-  
-  .envelope {
+}
+
+.envelope {
     position: relative;
     width: 400px;
     height: 250px;
     margin: auto;
     background: #fa5b5c;
     border-radius: 24px;
-  }
-  .envelope:before {
+}
+
+.envelope:before {
     content: '';
     display: block;
     position: absolute;
@@ -107,8 +113,9 @@ body {
     border-style: solid;
     border-bottom-color: #fa5b5c;
     border-radius: 24px;
-  }
-  .envelope:after {
+}
+
+.envelope:after {
     content: '';
     display: block;
     position: absolute;
@@ -121,8 +128,9 @@ body {
     border-color: #db4344;
     border-top-color: transparent;
     border-radius: 24px;
-  }
-  .envelope .bottom-flap {
+}
+
+.envelope .bottom-flap {
     width: 400px;
     height: 250px;
     display: block;
@@ -132,8 +140,9 @@ body {
     border-radius: 24px;
     overflow: hidden;
     pointer-events: none;
-  }
-  .envelope .bottom-flap:after {
+}
+
+.envelope .bottom-flap:after {
     content: '';
     display: block;
     position: absolute;
@@ -143,114 +152,126 @@ body {
     border-radius: 24px;
     background: #fa5b5c;
     -webkit-transform: scaleY(0.7) rotate(45deg);
-            transform: scaleY(0.7) rotate(45deg);
+    transform: scaleY(0.7) rotate(45deg);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .thanks-text {
+}
+
+.thanks-text {
     position: absolute;
     width: 100%;
     top: 320px;
     z-index: -1;
     text-align: center;
     font-weight: 500;
-    font-size:30px;
-  }
-  
-  .submitted .paper {
+    font-size: 30px;
+}
+
+.submitted .paper {
     -webkit-animation: paper-in 0.8s ease-out;
-            animation: paper-in 0.8s ease-out;
+    animation: paper-in 0.8s ease-out;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  .submitted.sign-up-container {
+    animation-fill-mode: forwards;
+}
+
+.submitted.sign-up-container {
     overflow: hidden;
-  }
-  .submitted .envelope {
+}
+
+.submitted .envelope {
     -webkit-animation: fly-away 0.5s ease-in;
-            animation: fly-away 0.5s ease-in;
+    animation: fly-away 0.5s ease-in;
     -webkit-animation-delay: 1.3s;
-            animation-delay: 1.3s;
+    animation-delay: 1.3s;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  .submitted .envelope:before {
+    animation-fill-mode: forwards;
+}
+
+.submitted .envelope:before {
     -webkit-animation: fold 0.5s ease-in;
-            animation: fold 0.5s ease-in;
+    animation: fold 0.5s ease-in;
     -webkit-animation-delay: 0.7s;
-            animation-delay: 0.7s;
+    animation-delay: 0.7s;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  
-  @-webkit-keyframes paper-in {
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes paper-in {
     30% {
-      -webkit-transform: translateY(-80px);
-              transform: translateY(-80px);
-      padding-bottom: 125px;
+        -webkit-transform: translateY(-80px);
+        transform: translateY(-80px);
+        padding-bottom: 125px;
     }
+
     to {
-      top: 10px;
-      padding-bottom: 0;
+        top: 10px;
+        padding-bottom: 0;
     }
-  }
-  
-  @keyframes paper-in {
+}
+
+@keyframes paper-in {
     30% {
-      -webkit-transform: translateY(-80px);
-              transform: translateY(-80px);
-      padding-bottom: 125px;
+        -webkit-transform: translateY(-80px);
+        transform: translateY(-80px);
+        padding-bottom: 125px;
     }
+
     to {
-      top: 10px;
-      padding-bottom: 0;
+        top: 10px;
+        padding-bottom: 0;
     }
-  }
-  @-webkit-keyframes fly-away {
+}
+
+@-webkit-keyframes fly-away {
     to {
-      -webkit-transform: translateX(200%) rotate(10deg);
-              transform: translateX(200%) rotate(10deg);
-      opacity: 0;
+        -webkit-transform: translateX(200%) rotate(10deg);
+        transform: translateX(200%) rotate(10deg);
+        opacity: 0;
     }
-  }
-  @keyframes fly-away {
+}
+
+@keyframes fly-away {
     to {
-      -webkit-transform: translateX(200%) rotate(10deg);
-              transform: translateX(200%) rotate(10deg);
-      opacity: 0;
+        -webkit-transform: translateX(200%) rotate(10deg);
+        transform: translateX(200%) rotate(10deg);
+        opacity: 0;
     }
-  }
-  @-webkit-keyframes fold {
+}
+
+@-webkit-keyframes fold {
     from {
-      -webkit-transform-origin: bottom center;
-              transform-origin: bottom center;
-      z-index: 10;
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        z-index: 10;
     }
+
     to {
-      z-index: 10;
-      -webkit-transform-origin: bottom center;
-              transform-origin: bottom center;
-      -webkit-transform: rotateX(-180deg) translateY(10px);
-              transform: rotateX(-180deg) translateY(10px);
-      border-bottom-color: #5eb6e0;
+        z-index: 10;
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        -webkit-transform: rotateX(-180deg) translateY(10px);
+        transform: rotateX(-180deg) translateY(10px);
+        border-bottom-color: #5eb6e0;
     }
-  }
-  @keyframes fold {
+}
+
+@keyframes fold {
     from {
-      -webkit-transform-origin: bottom center;
-              transform-origin: bottom center;
-      z-index: 10;
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        z-index: 10;
     }
+
     to {
-      z-index: 10;
-      -webkit-transform-origin: bottom center;
-              transform-origin: bottom center;
-      -webkit-transform: rotateX(-180deg) translateY(10px);
-              transform: rotateX(-180deg) translateY(10px);
-      border-bottom-color: #fa5b5c;
+        z-index: 10;
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        -webkit-transform: rotateX(-180deg) translateY(10px);
+        transform: rotateX(-180deg) translateY(10px);
+        border-bottom-color: #fa5b5c;
     }
-  }
-  .reset-button {
+}
+
+.reset-button {
     display: block;
     padding: 0.6em 1em;
     margin-top: 50px;
@@ -259,9 +280,9 @@ body {
     font-size: 12px;
     background: transparent;
     border: 1px solid black;
-  }
-  .reset-button:hover {
+}
+
+.reset-button:hover {
     color: white;
     background: black;
-  }
-  
+}

@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,11 +35,11 @@ h1::before {
 }
 
 @keyframes animate {
-    0%{
+    0% {
         width: 0;
     }
 
-    100%{
+    100% {
         width: 100%;
     }
 }

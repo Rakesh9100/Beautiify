@@ -18,7 +18,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('smoke.png'); /* Replace 'smoke.png' with your smoke or fog image */
+    background: url('smoke.png');
     opacity: 0;
     animation: smokeAnimation 4s linear infinite;
 }
@@ -39,18 +39,23 @@ body {
     0% {
         opacity: 0.2;
     }
+
     50% {
         opacity: 0.8;
     }
+
     100% {
         opacity: 0.2;
     }
 }
 
 @keyframes textAnimation {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }

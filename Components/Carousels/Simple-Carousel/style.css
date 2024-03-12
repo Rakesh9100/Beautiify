@@ -2,12 +2,15 @@
     75% {
         left: 0;
     }
+
     95% {
         left: 100%;
     }
+
     98% {
         left: 100%;
     }
+
     99% {
         left: 0;
     }
@@ -17,12 +20,15 @@
     75% {
         left: 0;
     }
+
     95% {
         left: -300%;
     }
+
     98% {
         left: -300%;
     }
+
     99% {
         left: 0;
     }
@@ -32,12 +38,15 @@
     96% {
         scroll-snap-align: center;
     }
+
     97% {
         scroll-snap-align: none;
     }
+
     99% {
         scroll-snap-align: none;
     }
+
     100% {
         scroll-snap-align: center;
     }
@@ -54,7 +63,8 @@ body {
 
 * {
     box-sizing: border-box;
-    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-color: transparent transparent;
+    /* thumb and track color */
     scrollbar-width: 0px;
 }
 
@@ -198,25 +208,25 @@ li {
 }
 
 .carousel__next,
-.carousel__prev{
+.carousel__prev {
     height: 2.2rem;
     width: 2.2rem;
 }
 
-.carousel::before{
+.carousel::before {
     left: -1rem;
 }
 
-.carousel::after{
+.carousel::after {
     right: -1rem;
 }
 
-.carousel__prev{
-    left:-0.1rem;
+.carousel__prev {
+    left: -0.1rem;
 }
 
-.carousel__next{
-    right:-0.1rem;
+.carousel__next {
+    right: -0.1rem;
 }
 
 .carousel::before,

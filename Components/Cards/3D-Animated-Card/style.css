@@ -1,57 +1,59 @@
-body{
+body {
     display: flex;
- justify-content: center;
- align-items: center;
-   height: 100vh;
-   background: #dfc2f2;
-   background-image: linear-gradient(to right, #b3fff9, #dafddd);
-}
-h1{
-   text-align: center;
-   color: black;
-}
-.card{
-   background-image: url(https://www.ultimatecarpage.com/images/car/6801/Porsche-911-GT3-68686.jpg);
-   background-size: cover;
-   display: flex;
-   flex-direction: column;
-   width: 20rem;
-   height: 29rem;
-   border-radius: 1rem;
-   transition: all linear .5s;
-   overflow: hidden;
-   box-shadow: 5px 5px 5px 5px rgba(15, 14, 14, 0.673);
-}
-.cardimage{
-   width: 20rem;
-   height: 40rem;
-   border-radius: 1rem 1rem 0 0;
-   transition: all linear .5s;
-}
-p{
-   transition: all linear .5s;
-}
-.content{
-   backdrop-filter: blur(5px);
-   background-color: rgba(248, 248, 247, 0.222);
-   position: relative;
-   top: 25rem;
-   height: 30rem;
-   padding:.3rem 1.1rem;
-   color: white;
-   
-   transition: all linear .5s;
-   
-}
-.card:hover{
- transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
-   box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
-   .content{
-       top: 5rem;
-   }
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #dfc2f2;
+    background-image: linear-gradient(to right, #b3fff9, #dafddd);
 }
 
+h1 {
+    text-align: center;
+    color: black;
+}
 
+.card {
+    background-image: url(https://www.ultimatecarpage.com/images/car/6801/Porsche-911-GT3-68686.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 29rem;
+    border-radius: 1rem;
+    transition: all linear .5s;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px rgba(15, 14, 14, 0.673);
+}
 
+.cardimage {
+    width: 20rem;
+    height: 40rem;
+    border-radius: 1rem 1rem 0 0;
+    transition: all linear .5s;
+}
 
+p {
+    transition: all linear .5s;
+}
 
+.content {
+    backdrop-filter: blur(5px);
+    background-color: rgba(248, 248, 247, 0.222);
+    position: relative;
+    top: 25rem;
+    height: 30rem;
+    padding: .3rem 1.1rem;
+    color: white;
+
+    transition: all linear .5s;
+
+}
+
+.card:hover {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+
+    .content {
+        top: 5rem;
+    }
+}

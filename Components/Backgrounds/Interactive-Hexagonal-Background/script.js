@@ -13,19 +13,19 @@ let mouse = {
     radius: 170
 }
 
-window.addEventListener('mousemove', function(event) {
+window.addEventListener('mousemove', function (event) {
     mouse.x = event.x;
     mouse.y = event.y;
     mouse.radius = 170;
     console.log(mouse.radius);
 });
 
-document.onmousemove = (function(event) {
-    var onmousestop = function() {
+document.onmousemove = (function (event) {
+    var onmousestop = function () {
         mouse.radius = 0;
     }, thread;
 
-    return function() {
+    return function () {
         clearTimeout(thread);
         thread = setTimeout(onmousestop, 10);
     };
@@ -105,7 +105,7 @@ function connect() {
         for (let j = i; j < particlesArray.length; j++) {
             let distance = ((particlesArray[i].x - particlesArray[j].x) * (particlesArray[i].x - particlesArray[j].x)) + ((particlesArray[i].y - particlesArray[j].y) * (particlesArray[i].y - particlesArray[j].y));
 
-            if (distance < (cvs.width/ 7) * (cvs.height / 7)) {
+            if (distance < (cvs.width / 7) * (cvs.height / 7)) {
                 opacityValue = 1 - (distance / 20000);
                 ctx.strokeStyle = 'rgba(159, 253, 50,' + opacityValue + ')';
                 ctx.lineWidth = 1;
@@ -127,14 +127,14 @@ function animate() {
     connect();
 }
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
     cvs.width = innerWidth;
     cvs.height = this.innerHeight;
     mouse.radius = 170;
     init();
 });
 
-window.addEventListener('mouseout', function() {
+window.addEventListener('mouseout', function () {
     mouse.x = undefined;
     mouse.y = undefined;
 });
@@ -144,71 +144,71 @@ animate();
 
 // HEXAGON GRID
 function hexagonGrid() {
-  const HEXAGON_GRID = document.getElementById("hexagonGrid");
-  const CONTAINER = HEXAGON_GRID.parentNode;
+    const HEXAGON_GRID = document.getElementById("hexagonGrid");
+    const CONTAINER = HEXAGON_GRID.parentNode;
 
-  let wall = {
-    width: CONTAINER.offsetWidth,
-    height: CONTAINER.offsetHeight
-  };
+    let wall = {
+        width: CONTAINER.offsetWidth,
+        height: CONTAINER.offsetHeight
+    };
 
-  let rowsNumber = Math.ceil(wall.height / 80);
-  let columnsNumber = Math.ceil(wall.width / 100) + 1;
+    let rowsNumber = Math.ceil(wall.height / 80);
+    let columnsNumber = Math.ceil(wall.width / 100) + 1;
 
-  HEXAGON_GRID.innerHTML = "";
+    HEXAGON_GRID.innerHTML = "";
 
-  for (let i = 0; i < rowsNumber; i++) {
-    let row = document.createElement("div");
-    row.className = "row";
-    HEXAGON_GRID.appendChild(row);
-  }
-
-  let rows = HEXAGON_GRID.querySelectorAll(".row");
-
-  for (let i = 0; i < rows.length; i++) {
-    for (let j = 0; j < columnsNumber; j++) {
-      let hexagon = document.createElement("div");
-      hexagon.className = "hexagon";
-      rows[i].appendChild(hexagon);
+    for (let i = 0; i < rowsNumber; i++) {
+        let row = document.createElement("div");
+        row.className = "row";
+        HEXAGON_GRID.appendChild(row);
     }
-  }
+
+    let rows = HEXAGON_GRID.querySelectorAll(".row");
+
+    for (let i = 0; i < rows.length; i++) {
+        for (let j = 0; j < columnsNumber; j++) {
+            let hexagon = document.createElement("div");
+            hexagon.className = "hexagon";
+            rows[i].appendChild(hexagon);
+        }
+    }
 }
 
 hexagonGrid();
 
-window.addEventListener('resize', function() {
-  hexagonGrid();
+window.addEventListener('resize', function () {
+    hexagonGrid();
 });
 
 // FPS METER
 (function () {
-  let previousTime = Date.now();
-  let frames = 0;
-  let refreshRate = 1000;
+    let previousTime = Date.now();
+    let frames = 0;
+    let refreshRate = 1000;
 
-  let fpsMeter = document.createElement("div");
-  fpsMeter.id = "fpsMeter";
-  document.body.appendChild(fpsMeter);
+    let fpsMeter = document.createElement("div");
+    fpsMeter.id = "fpsMeter";
+    document.body.appendChild(fpsMeter);
 
-  requestAnimationFrame(function loop() {
-    const TIME = Date.now();
-    frames++;
-    if (TIME > previousTime + refreshRate) {
-      let fps = Math.round((frames * refreshRate) / (TIME - previousTime));
-      previousTime = TIME;
-      frames = 0;
-      fpsMeter.innerHTML = "FPS: " + fps * (1000 / refreshRate);
-    }
-    requestAnimationFrame(loop);
-  });
+    requestAnimationFrame(function loop() {
+        const TIME = Date.now();
+        frames++;
+        if (TIME > previousTime + refreshRate) {
+            let fps = Math.round((frames * refreshRate) / (TIME - previousTime));
+            previousTime = TIME;
+            frames = 0;
+            fpsMeter.innerHTML = "FPS: " + fps * (1000 / refreshRate);
+        }
+        requestAnimationFrame(loop);
+    });
 
-  fpsMeter.style.position = "fixed";
-  fpsMeter.style.top = "25px";
-  fpsMeter.style.right = "25px";
-  fpsMeter.style.background = "rgba(0, 0, 0, 0.5)";
-  fpsMeter.style.padding = "10px";
-  fpsMeter.style.color = "rgba(255, 255, 255, 0.75)";
-  fpsMeter.style.fontFamily = "Monospace";
-  fpsMeter.style.fontSize = "24px";
-  fpsMeter.style.zIndex = "10000";
+    fpsMeter.style.position = "fixed";
+    fpsMeter.style.top = "25px";
+    fpsMeter.style.right = "25px";
+    fpsMeter.style.background = "rgba(0, 0, 0, 0.5)";
+    fpsMeter.style.padding = "10px";
+    fpsMeter.style.color = "rgba(255, 255, 255, 0.75)";
+    fpsMeter.style.fontFamily = "Monospace";
+    fpsMeter.style.fontSize = "24px";
+    fpsMeter.style.zIndex = "10000";
 })();

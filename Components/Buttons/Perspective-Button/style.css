@@ -19,7 +19,7 @@ ul li {
     font-size: 20px;
     border-radius: 0.5em;
     margin: 0.5em;
-    box-shadow: 0 0 1em rgba(0,0,0,0.2);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
     color: white;
     font-family: sans-serif;
     text-transform: capitalize;

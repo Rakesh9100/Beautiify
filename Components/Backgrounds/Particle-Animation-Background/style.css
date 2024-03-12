@@ -3,72 +3,83 @@
     font-style: normal;
     font-weight: 100;
     src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 100;
     src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vu_ROW9.ttf) format('truetype');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 300;
     src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_gPq_ROW9.ttf) format('truetype');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW9.ttf) format('truetype');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 500;
     src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_7Pq_ROW9.ttf) format('truetype');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 700;
     src: url(https://fonts.gstatic.com/s/robotomono/v22/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_Of2_ROW9.ttf) format('truetype');
-  }
-  body {
+}
+
+body {
     margin: 0;
     padding: 0;
     background: #0033FF;
     font-family: 'Roboto', sans-serif;
     -webkit-text-size-adjust: none;
-    -webkit-font-smoothing: antialiased!important;
-    text-rendering: optimizeLegibility!important;
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
     -moz-osx-font-smoothing: grayscale;
-  }
-  .mod {
+}
+
+.mod {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -76,8 +87,9 @@
     height: 100%;
     perspective: 330px;
     background: #225CFF;
-  }
-  .mod .project-name {
+}
+
+.mod .project-name {
     position: absolute;
     width: 420px;
     top: 50%;
@@ -91,8 +103,9 @@
     line-height: 1.5em;
     font-family: 'Roboto Mono';
     font-weight: 300;
-  }
-  .mod .cube {
+}
+
+.mod .cube {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -103,168 +116,203 @@
     transform-style: preserve-3d;
     transform-origin: 105px 105px;
     animation: spinCube 9000ms linear infinite;
-  }
-  .mod .cube .faces {
+}
+
+.mod .cube .faces {
     position: absolute;
     top: 0px;
     left: 0px;
     width: 210px;
     height: 210px;
-  }
-  .mod .cube .faces .dot {
+}
+
+.mod .cube .faces .dot {
     position: absolute;
     background: #ffffff;
     width: 2px;
     height: 2px;
     border-radius: 50%;
-  }
-  .mod .cube .faces .p1 {
+}
+
+.mod .cube .faces .p1 {
     top: -1px;
     margin-left: -1px;
-  }
-  .mod .cube .faces .p2 {
+}
+
+.mod .cube .faces .p2 {
     top: -1px;
     left: 50%;
     margin-left: - 1px;
-  }
-  .mod .cube .faces .p3 {
+}
+
+.mod .cube .faces .p3 {
     top: -1px;
     left: 100%;
     margin-left: -1px;
-  }
-  .mod .cube .faces .p4 {
+}
+
+.mod .cube .faces .p4 {
     top: 50%;
     left: -1px;
     margin-top: -1px;
-  }
-  .mod .cube .faces .p5 {
+}
+
+.mod .cube .faces .p5 {
     top: 50%;
     left: 50%;
     margin-top: -1px;
     margin-left: -1px;
-  }
-  .mod .cube .faces .p6 {
+}
+
+.mod .cube .faces .p6 {
     top: 50%;
     left: 100%;
     margin-top: -1px;
     margin-left: -1px;
-  }
-  .mod .cube .faces .p7 {
+}
+
+.mod .cube .faces .p7 {
     top: 100%;
     left: 0%;
     margin-top: -1px;
     margin-left: -1px;
-  }
-  .mod .cube .faces .p8 {
+}
+
+.mod .cube .faces .p8 {
     top: 100%;
     left: 50%;
     margin-top: -1px;
     margin-left: -1px;
-  }
-  .mod .cube .faces .p9 {
+}
+
+.mod .cube .faces .p9 {
     top: 100%;
     left: 100%;
     margin-top: -1px;
     margin-left: -1px;
-  }
-  .mod .cube .faces .p10 {
+}
+
+.mod .cube .faces .p10 {
     top: 25%;
     left: 25%;
     margin-top: -1px;
     margin-left: -1px;
-  }
-  .mod .cube .faces .p11 {
+}
+
+.mod .cube .faces .p11 {
     top: 25%;
     left: 75%;
     margin-top: -1px;
     margin-left: -1px;
-  }
-  .mod .cube .faces .p12 {
+}
+
+.mod .cube .faces .p12 {
     top: 75%;
     left: 25%;
     margin-top: -1px;
     margin-left: -1px;
-  }
-  .mod .cube .faces .p13 {
+}
+
+.mod .cube .faces .p13 {
     top: 75%;
     left: 75%;
     margin-top: -1px;
     margin-left: -1px;
-  }
-  .mod .cube .f1 {
+}
+
+.mod .cube .f1 {
     transform: translateZ(-105px);
     animation-delay: 0.3s;
-  }
-  .mod .cube .f2 {
+}
+
+.mod .cube .f2 {
     transform: translateZ(-84px);
     animation-delay: 0.6s;
-  }
-  .mod .cube .f3 {
+}
+
+.mod .cube .f3 {
     transform: translateZ(-63px);
     animation-delay: 0.9s;
-  }
-  .mod .cube .f4 {
+}
+
+.mod .cube .f4 {
     transform: translateZ(-42px);
     animation-delay: 1.2s;
-  }
-  .mod .cube .f5 {
+}
+
+.mod .cube .f5 {
     transform: translateZ(-21px);
     animation-delay: 1.5s;
-  }
-  .mod .cube .f6 {
+}
+
+.mod .cube .f6 {
     transform: translateZ(0px);
     animation-delay: 1.8s;
-  }
-  .mod .cube .f7 {
+}
+
+.mod .cube .f7 {
     transform: translateZ(21px);
     animation-delay: 2.1s;
-  }
-  .mod .cube .f8 {
+}
+
+.mod .cube .f8 {
     transform: translateZ(42px);
     animation-delay: 2.4s;
-  }
-  .mod .cube .f9 {
+}
+
+.mod .cube .f9 {
     transform: translateZ(63px);
     animation-delay: 2.7s;
-  }
-  .mod .cube .f10 {
+}
+
+.mod .cube .f10 {
     transform: translateZ(84px);
     animation-delay: 3s;
-  }
-  .mod .cube .f11 {
+}
+
+.mod .cube .f11 {
     transform: translateZ(105px);
     animation-delay: 3.3s;
-  }
- @keyframes spinCube {
+}
+
+@keyframes spinCube {
     0% {
-      -webkit-transform: rotateY(0deg) rotateX(-45deg) rotate(0deg);
+        -webkit-transform: rotateY(0deg) rotateX(-45deg) rotate(0deg);
     }
+
     50% {
-      -webkit-transform: rotateY(180deg) rotateX(135deg) rotate(180deg);
+        -webkit-transform: rotateY(180deg) rotateX(135deg) rotate(180deg);
     }
+
     100% {
-      -webkit-transform: rotateY(360deg) rotateX(315deg) rotate(360deg);
+        -webkit-transform: rotateY(360deg) rotateX(315deg) rotate(360deg);
     }
-  }
-  @keyframes spinDots{
+}
+
+@keyframes spinDots {
     0% {
-      -webkit-transform: rotateX(0deg) rotateY(45deg);
+        -webkit-transform: rotateX(0deg) rotateY(45deg);
     }
+
     50% {
-      -webkit-transform: rotateX(-180deg) rotateY(-135deg);
+        -webkit-transform: rotateX(-180deg) rotateY(-135deg);
     }
+
     100% {
-      -webkit-transform: rotateX(-360deg) rotateY(-315deg);
+        -webkit-transform: rotateX(-360deg) rotateY(-315deg);
     }
-  }
-  @keyframes spinFaces{
+}
+
+@keyframes spinFaces {
     0% {
-      -webkit-transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
     }
+
     50% {
-      -webkit-transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
     }
+
     100% {
-      -webkit-transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
     }
-  }
+}

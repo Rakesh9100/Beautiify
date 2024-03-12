@@ -2,7 +2,7 @@ body {
     background-image: url('background-image.jpg');
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,23 +10,23 @@ body {
     height: 100vh;
 }
 
-.card-container{
+.card-container {
     height: 350px;
     width: 250px;
 }
 
-.card{
+.card {
     width: 100%;
     height: 100%;
     transition: transform 1s ease-in-out;
     transform-style: preserve-3d;
 }
 
-.card-container:hover .card{
+.card-container:hover .card {
     transform: rotateY(180deg);
 }
 
-.card div{
+.card div {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -38,13 +38,13 @@ body {
     font-size: 20px;
 }
 
-.card .front{
-    background:linear-gradient(45deg, #f2f2f2, #0d0d0d);
+.card .front {
+    background: linear-gradient(45deg, #f2f2f2, #0d0d0d);
     color: white;
 }
 
-.card .back{
-    background:radial-gradient(circle, #cdcccc, #181818);
+.card .back {
+    background: radial-gradient(circle, #cdcccc, #181818);
     color: #0d0d0d;
     transform: rotateY(180deg);
 }

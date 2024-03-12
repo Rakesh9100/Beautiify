@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -29,9 +30,11 @@ body, html {
 		transform: translateY(-100px);
 		opacity: 0;
 	}
+
 	50% {
 		opacity: 1;
 	}
+
 	100% {
 		transform: translateY(calc(100vh + 100px));
 		opacity: 0;

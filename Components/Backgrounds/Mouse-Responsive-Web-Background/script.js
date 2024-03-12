@@ -11,17 +11,9 @@ var outputText, outputValue;
             return false;
         }
 
-        /********************
-          Random Number
-        ********************/
-
         function rand(min, max) {
             return Math.floor(Math.random() * (max - min + 1) + min);
         }
-
-        /********************
-          Var
-        ********************/
 
         var ctx = canvas.getContext('2d');
         var X = canvas.width = window.innerWidth;
@@ -214,8 +206,6 @@ var outputText, outputValue;
         });
 
     });
-    // Author
-    console.log('File Name / net.js\nCreated Date / July 11, 2020\nAuthor / Toshiya Marukubo\nTwitter / https://twitter.com/toshiyamarukubo');
 })();
 function validate() {
 

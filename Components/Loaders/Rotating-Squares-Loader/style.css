@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     height: 100vh;
     width: 100vw;
-    background : linear-gradient(to right, #093028 , #237A57);
+    background: linear-gradient(to right, #093028, #237A57);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
     overflow: hidden;
 }
 
-.box{
+.box {
     height: 50px;
     width: 50px;
     position: relative;
@@ -35,7 +35,7 @@
     animation-timing-function: linear;
 }
 
-.main-animate{
+.main-animate {
     height: auto;
     width: auto;
     transform: rotate(45deg);
@@ -43,95 +43,99 @@
     justify-content: center;
     align-items: center;
 }
-.one{
+
+.one {
     background-color: rgb(244, 240, 8);
     animation-name: one;
 }
 
-.two{
+.two {
     background-color: rgb(11, 244, 85);
     animation-name: two;
 }
 
-.three{
+.three {
     background-color: rgb(241, 0, 40);
     animation-name: three;
 }
 
-.four{
+.four {
     background-color: rgb(48, 206, 206);
     animation-name: four;
 }
 
 @keyframes one {
-    0%{
+    0% {
         top: 0px;
         left: 0px;
     }
 
-    50%{
+    50% {
         top: -20px;
         left: -20px;
         transform: rotate(90deg);
     }
 
-    100%{
+    100% {
         top: 0px;
         left: 0px;
         transform: rotate(90deg);
     }
 }
+
 @keyframes two {
-    0%{
+    0% {
         left: 0px;
         bottom: 0px;
     }
 
-    50%{
+    50% {
         left: -20px;
         bottom: -20px;
         transform: rotate(90deg);
     }
 
-    100%{
+    100% {
         left: 0px;
         bottom: 0px;
         transform: rotate(90deg);
     }
 }
+
 @keyframes three {
-    0%{
-        left:0px;
+    0% {
+        left: 0px;
         top: 0px;
     }
 
-    50%{
+    50% {
         left: 20px;
         top: -20px;
         transform: rotate(90deg);
     }
 
-    100%{
-        left:0px;
+    100% {
+        left: 0px;
         top: 0px;
         transform: rotate(90deg);
     }
 }
+
 @keyframes four {
-    0%{
+    0% {
         bottom: 0px;
-        left:0px;
+        left: 0px;
     }
 
-    50%{
+    50% {
         bottom: -20px;
         left: 20px;
         transform: rotate(90deg);
     }
 
-    100%{
+    100% {
         bottom: 0px;
-        left:0px;
+        left: 0px;
         transform: rotate(90deg);
     }
 }
@@ -146,6 +150,7 @@
     position: relative;
     overflow: hidden;
 }
+
 span {
     height: 0.8rem;
     width: 0.8rem;
@@ -156,15 +161,18 @@ span {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+
 #first {
     background-color: white;
     animation-name: first;
 }
+
 #second {
     background-color: white;
     animation-name: second;
     animation-delay: 1s;
 }
+
 #third {
     background-color: white;
     animation-name: third;
@@ -172,57 +180,66 @@ span {
 }
 
 @keyframes first {
-    0%{
+    0% {
         left: -80px;
         opacity: 0;
     }
-    20%{
+
+    20% {
         left: 50%;
         opacity: 1;
     }
-    50%{
+
+    50% {
         left: 100%;
         opacity: 0;
     }
-    100%{
+
+    100% {
         left: 100%;
         opacity: 0;
     }
 }
 
 @keyframes second {
-    0%{
+    0% {
         left: -80px;
         opacity: 0;
     }
-    12%{
+
+    12% {
         left: 50%;
         opacity: 1;
     }
-    48%{
+
+    48% {
         left: 100%;
         opacity: 0;
     }
-    100%{
+
+    100% {
         left: 100%;
         opacity: 0;
     }
 }
 
 @keyframes third {
-    0%{
+    0% {
         left: -80px;
         opacity: 0;
     }
-    10%{
+
+    10% {
         left: 50%;
         opacity: 1;
     }
-    46%{
+
+    46% {
         left: 100%;
         opacity: 0;
     }
-    100%{
+
+    100% {
         left: 100%;
         opacity: 0;
     }

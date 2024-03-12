@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-  background: url(https://i.pinimg.com/originals/c9/8a/63/c98a630219cfe688adbf3ca148012e36.gif);
-  background-size: cover;
+    background: url(https://i.pinimg.com/originals/c9/8a/63/c98a630219cfe688adbf3ca148012e36.gif);
+    background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,45 +9,50 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-  }
+}
 
-  .signup-container {
+.signup-container {
     position: relative;
     animation: borderGlow 2s linear infinite;
     border-radius: 20px;
-  }
+}
 
-  @keyframes borderGlow {
-    0%, 100% {
+@keyframes borderGlow {
+
+    0%,
+    100% {
         box-shadow: 0px -10px 15px -6px rgba(0, 255, 0, 0.8),
-        0px  5px  15px  0px rgba(255, 0, 0, 0.8),
-        5px  0px  15px  0px rgba(0, 0, 255, 0.8),
-       -5px  0px  15px  0px rgba(93, 225, 245, 0.8);
+            0px 5px 15px 0px rgba(255, 0, 0, 0.8),
+            5px 0px 15px 0px rgba(0, 0, 255, 0.8),
+            -5px 0px 15px 0px rgba(93, 225, 245, 0.8);
     }
-    25% {
-        box-shadow:-5px  0px  15px  0px rgba(93, 225, 245, 0.8),
-         0px -10px 15px -6px rgba(0, 255, 0, 0.8),
-        0px  5px  15px  0px rgba(255, 0, 0, 0.8),
-        5px  0px  15px  0px rgba(0, 0, 255, 0.8);
-       
-    }
-    50% {
-        box-shadow:5px  0px  15px  0px rgba(0, 0, 255, 0.8),
-        -5px  0px  15px  0px rgba(93, 225, 245, 0.8),
-         0px -10px 15px -6px rgba(0, 255, 0, 0.8),
-        0px  5px  15px  0px rgba(255, 0, 0, 0.8);
-        
-    }
-    75% {
-        box-shadow:0px  5px  15px  0px rgba(255, 0, 0, 0.8),
-        5px  0px  15px  0px rgba(0, 0, 255, 0.8),
-        -5px  0px  15px  0px rgba(93, 225, 245, 0.8),
-         0px -10px 15px -6px rgba(0, 255, 0, 0.8);
-        
-    }
-  }
 
-  .signup-form {
+    25% {
+        box-shadow: -5px 0px 15px 0px rgba(93, 225, 245, 0.8),
+            0px -10px 15px -6px rgba(0, 255, 0, 0.8),
+            0px 5px 15px 0px rgba(255, 0, 0, 0.8),
+            5px 0px 15px 0px rgba(0, 0, 255, 0.8);
+
+    }
+
+    50% {
+        box-shadow: 5px 0px 15px 0px rgba(0, 0, 255, 0.8),
+            -5px 0px 15px 0px rgba(93, 225, 245, 0.8),
+            0px -10px 15px -6px rgba(0, 255, 0, 0.8),
+            0px 5px 15px 0px rgba(255, 0, 0, 0.8);
+
+    }
+
+    75% {
+        box-shadow: 0px 5px 15px 0px rgba(255, 0, 0, 0.8),
+            5px 0px 15px 0px rgba(0, 0, 255, 0.8),
+            -5px 0px 15px 0px rgba(93, 225, 245, 0.8),
+            0px -10px 15px -6px rgba(0, 255, 0, 0.8);
+
+    }
+}
+
+.signup-form {
     background-color: #0000005f;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
@@ -57,14 +62,14 @@ body {
     text-align: center;
     position: relative;
     z-index: 1;
-  }
+}
 
-  .signup-form h2 {
+.signup-form h2 {
     color: #fff;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-  }
+}
 
-  .signup-form input {
+.signup-form input {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
@@ -74,19 +79,19 @@ body {
     background-color: #2222226b;
     color: #fff;
     outline: none;
-   
-    transition: all linear .2s;
-  }
 
-  .signup-form input:hover {
+    transition: all linear .2s;
+}
+
+.signup-form input:hover {
     border-color: #00f, #f00, #0f0;
     box-shadow: 0px -10px 15px -6px rgba(0, 255, 0, 0.8),
-                0px  5px  15px  0px rgba(255, 0, 0, 0.8),
-                5px  0px  15px  0px rgba(0, 0, 255, 0.8),
-               -5px  0px  15px  0px rgba(93, 225, 245, 0.8);
-  }
+        0px 5px 15px 0px rgba(255, 0, 0, 0.8),
+        5px 0px 15px 0px rgba(0, 0, 255, 0.8),
+        -5px 0px 15px 0px rgba(93, 225, 245, 0.8);
+}
 
-  .signup-form button {
+.signup-form button {
     background-color: #4caf50;
     color: #fff;
     padding: 10px 20px;
@@ -96,9 +101,9 @@ body {
     outline: none;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
+}
 
-  .signup-form button:hover {
+.signup-form button:hover {
     background-color: #45a049;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
-  }
+}

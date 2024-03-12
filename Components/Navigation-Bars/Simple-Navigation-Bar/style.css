@@ -112,7 +112,7 @@ header {
         transition: all 0.4s;
     }
 
-    input:checked ~ .nav {
+    input:checked~.nav {
         transform: translateY(0%);
     }
 

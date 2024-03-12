@@ -22,7 +22,7 @@
 	transition: opacity 0.6s;
 }
 
-.menu.menu--open + .main {
+.menu.menu--open+.main {
 	opacity: 0.3;
 	pointer-events: none;
 }
@@ -181,7 +181,7 @@
 		transform: translate3d(-170px, 0, 0);
 	}
 
-	.menu.menu--open + .main {
+	.menu.menu--open+.main {
 		opacity: 0.05;
 	}
 }

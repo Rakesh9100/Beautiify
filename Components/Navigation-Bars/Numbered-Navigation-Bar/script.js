@@ -24,7 +24,6 @@ function activate(thing) {
     })
 }
 
-
 function minimize(thing) {
     if (!active) return Promise.resolve();
     active.classList.remove('active');

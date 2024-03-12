@@ -46,6 +46,7 @@ body {
 }
 
 @keyframes anim {
+
     0%,
     100% {
         transform: translateY(5px);
@@ -57,6 +58,7 @@ body {
 }
 
 @keyframes anim2 {
+
     0%,
     100% {
         transform: translateY(-10deg);

@@ -1,240 +1,274 @@
 body {
-  height: 100vh;
-  width: 100vw;
-  max-height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Yatra One", cursive;
-  color: #555;
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Yatra One", cursive;
+    color: #555;
 }
+
 body .exit {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: 0.4s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease-in-out;
 }
+
 body .exit .inner {
-  position: absolute;
-  width: 90%;
-  max-width: 500px;
-  left: 50%;
-  top: 50%;
-  background: #fff;
-  padding: 2em;
-  box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.1);
-  transform: translateX(-50%) translateY(350%) scale(0.5);
-  transition: 0.7s ease-out;
-  overflow: scroll;
+    position: absolute;
+    width: 90%;
+    max-width: 500px;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    padding: 2em;
+    box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.1);
+    transform: translateX(-50%) translateY(350%) scale(0.5);
+    transition: 0.7s ease-out;
+    overflow: scroll;
 }
+
 body .exit .inner::-webkit-scrollbar {
-  width: 2px;
-  position: absolute;
-  right: 0;
-  z-index: -1;
+    width: 2px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
 }
+
 body .exit .inner h4 {
-  position: absolute;
-  right: 10px;
-  top: -10px;
-  background: #ff3300;
-  color: #fff;
-  padding: 1em 0.5em;
-  z-index: 2;
-  border-radius: 100%;
-  transition: 0.2s ease-in-out;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    background: #ff3300;
+    color: #fff;
+    padding: 1em 0.5em;
+    z-index: 2;
+    border-radius: 100%;
+    transition: 0.2s ease-in-out;
 }
+
 body .exit .inner h4:hover {
-  transform: rotate(-10deg);
+    transform: rotate(-10deg);
 }
+
 body .exit .inner div {
-  display: block;
-  margin-bottom: 5px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #eee;
+    display: block;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
 }
+
 body .exit .inner a {
-  color: #ff3300;
-  margin-right: 5px;
+    color: #ff3300;
+    margin-right: 5px;
 }
+
 body .exit.dark {
-  background: #00ffe0;
-  transition-delay: 0.25s;
-  z-index: 4;
+    background: #00ffe0;
+    transition-delay: 0.25s;
+    z-index: 4;
 }
+
 body .exit.dark .inner {
-  transform: translateX(-50%) translateY(-50%) scale(1);
-  transition-delay: 0.25s;
-  height: 80%;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    transition-delay: 0.25s;
+    height: 80%;
 }
+
 body .exit.dark .inner h1 {
-  margin-top: 0px;
-  position: relative;
+    margin-top: 0px;
+    position: relative;
 }
+
 body .exit.dark .inner h1:before {
-  content: "";
-  position: absolute;
-  width: 60%;
-  height: 0;
-  bottom: 0;
-  left: 0;
-  border-top: 2px solid #555;
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    border-top: 2px solid #555;
 }
+
 body .wrapper {
-  height: 100px;
-  width: 500px;
-  position: relative;
-  z-index: 2;
+    height: 100px;
+    width: 500px;
+    position: relative;
+    z-index: 2;
 }
+
 body .wrapper:before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: -10px;
-  bottom: 45px;
-  background: #00ffe0;
-  border-radius: 100%;
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -10px;
+    bottom: 45px;
+    background: #00ffe0;
+    border-radius: 100%;
 }
+
 body .wrapper .search {
-  display: block;
-  height: 40px;
-  width: 40px;
-  border-radius: 60%/60% 60% 60% 60%;
-  box-shadow: 0px 0px 0px 2px #555, 0px 0px 0px 5px #fff, 0px 0px 0px 7px #555;
-  float: right;
-  position: relative;
-  z-index: 2;
-  background: #fff;
-  transition: border-radius 0.2s ease-in-out, width 0.3s ease-in-out;
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 60%/60% 60% 60% 60%;
+    box-shadow: 0px 0px 0px 2px #555, 0px 0px 0px 5px #fff, 0px 0px 0px 7px #555;
+    float: right;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    transition: border-radius 0.2s ease-in-out, width 0.3s ease-in-out;
 }
+
 body .wrapper .search.spin {
-  float: none;
-  margin: 0px auto;
-  -webkit-animation-name: spin;
-          animation-name: spin;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  transform: scale(0);
-  background: transparent;
+    float: none;
+    margin: 0px auto;
+    -webkit-animation-name: spin;
+    animation-name: spin;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    transform: scale(0);
+    background: transparent;
 }
+
 @-webkit-keyframes spin {
-  0% {
-    transform: rotate(0deg) scale(1);
-    margin-top: 0px;
-  }
-  100% {
-    transform: rotate(360deg) scale(0);
-    margin-top: 300px;
-  }
+    0% {
+        transform: rotate(0deg) scale(1);
+        margin-top: 0px;
+    }
+
+    100% {
+        transform: rotate(360deg) scale(0);
+        margin-top: 300px;
+    }
 }
+
 @keyframes spin {
-  0% {
-    transform: rotate(0deg) scale(1);
-    margin-top: 0px;
-  }
-  100% {
-    transform: rotate(360deg) scale(0);
-    margin-top: 300px;
-  }
+    0% {
+        transform: rotate(0deg) scale(1);
+        margin-top: 0px;
+    }
+
+    100% {
+        transform: rotate(360deg) scale(0);
+        margin-top: 300px;
+    }
 }
+
 body .wrapper .search .searchbox {
-  transition: 0.3s ease-in-out;
-  width: 0px;
-  height: 0px;
-  cursor: pointer;
-  color: transparent;
-  text-shadow: 0 0 0 #000;
-  opacity: 0;
-  border: 0px solid;
-  overflow: hidden;
+    transition: 0.3s ease-in-out;
+    width: 0px;
+    height: 0px;
+    cursor: pointer;
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    opacity: 0;
+    border: 0px solid;
+    overflow: hidden;
 }
+
 body .wrapper .search .searchbox::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+    opacity: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
+
 body .wrapper .search:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 4px;
-  height: 30px;
-  background: #fff;
-  box-shadow: 0px -4px 0px 0px #fff, 0px 0px 0px 2px #555, inset 0px -20px 0px #555;
-  z-index: -1;
-  bottom: -35px;
-  right: 5px;
-  transform: rotate(-20deg);
-  transition: 0.2s ease-in;
-  transition-delay: 0.15s;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 30px;
+    background: #fff;
+    box-shadow: 0px -4px 0px 0px #fff, 0px 0px 0px 2px #555, inset 0px -20px 0px #555;
+    z-index: -1;
+    bottom: -35px;
+    right: 5px;
+    transform: rotate(-20deg);
+    transition: 0.2s ease-in;
+    transition-delay: 0.15s;
 }
+
 body .wrapper .search.opened {
-  width: 100%;
-  border-radius: 5%/60% 60% 60% 60%;
+    width: 100%;
+    border-radius: 5%/60% 60% 60% 60%;
 }
+
 body .wrapper .search.opened:before {
-  transform: rotate(-90deg);
-  right: -25px;
-  bottom: 5px;
-  transition-delay: 0s;
+    transform: rotate(-90deg);
+    right: -25px;
+    bottom: 5px;
+    transition-delay: 0s;
 }
+
 body .wrapper .search.opened .searchbox {
-  position: absolute;
-  left: 20px;
-  height: 30px;
-  padding-top: 2.5px;
-  top: 2.5px;
-  width: 90%;
-  opacity: 1;
-  border: 0px solid;
-  color: transparent;
-  text-shadow: 0 0 0 #555;
-  font-size: 1.3em;
-  background: transparent;
+    position: absolute;
+    left: 20px;
+    height: 30px;
+    padding-top: 2.5px;
+    top: 2.5px;
+    width: 90%;
+    opacity: 1;
+    border: 0px solid;
+    color: transparent;
+    text-shadow: 0 0 0 #555;
+    font-size: 1.3em;
+    background: transparent;
 }
+
 body .wrapper .search.opened .searchbox::-webkit-input-placeholder {
-  font-size: 1em;
-  opacity: 1;
-  color: #00ffe0;
+    font-size: 1em;
+    opacity: 1;
+    color: #00ffe0;
 }
+
 body .wrapper .search.opened .searchbox:focus {
-  outline: none;
-  background: #fff;
+    outline: none;
+    background: #fff;
 }
+
 body input[type=submit] {
-  display: none;
+    display: none;
 }
+
 body h3 {
-  position: absolute;
-  color: #555;
-  margin: 0px;
-  right: 55px;
-  top: 5px;
-  z-index: -1;
-  transition: 0.2s ease-in-out;
-  transform-origin: 100% 50%;
+    position: absolute;
+    color: #555;
+    margin: 0px;
+    right: 55px;
+    top: 5px;
+    z-index: -1;
+    transition: 0.2s ease-in-out;
+    transform-origin: 100% 50%;
 }
-body h3:after, body h3:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 110%;
-  border-bottom: 2px solid #555;
-}
+
+body h3:after,
 body h3:before {
-  bottom: -12.5px;
-  width: 100%;
-  left: 20px;
-  border-color: #00ffe0;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 110%;
+    border-bottom: 2px solid #555;
 }
+
+body h3:before {
+    bottom: -12.5px;
+    width: 100%;
+    left: 20px;
+    border-color: #00ffe0;
+}
+
 body .shrink:before {
-  opacity: 0;
+    opacity: 0;
 }
+
 body .shrink h3 {
-  transform: scaleX(0);
+    transform: scaleX(0);
 }

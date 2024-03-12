@@ -15,7 +15,7 @@ body {
     font-family: "Poppins", sans-serif;
     /* overflow-y: hidden;  -- Content below is not accessible in small screen*/
 }
- 
+
 
 .styling {
     height: 100%;
@@ -26,13 +26,11 @@ body {
     height: 300px;
     width: 150px;
     border-radius: 50%;
-    background: linear-gradient(
-        90deg,
-        rgba(36, 175, 254, 1) 0%,
-        rgba(111, 141, 251, 1) 40%,
-        rgba(130, 132, 250, 1) 50%,
-        rgba(220, 92, 249, 1) 100%
-    );
+    background: linear-gradient(90deg,
+            rgba(36, 175, 254, 1) 0%,
+            rgba(111, 141, 251, 1) 40%,
+            rgba(130, 132, 250, 1) 50%,
+            rgba(220, 92, 249, 1) 100%);
     position: absolute;
     top: 20%;
     left: -2%;
@@ -105,6 +103,7 @@ body {
     font-weight: 500;
     color: rgb(254, 222, 36);
 }
+
 .main-form {
     width: 60%;
     padding-left: 20px;
@@ -168,8 +167,8 @@ form {
     border-color: white;
 }
 
-.input-field input:focus ~ label,
-.input-field input:hover ~ label {
+.input-field input:focus~label,
+.input-field input:hover~label {
     font-size: 16px;
     top: -24px;
     color: rgb(254, 222, 36);
@@ -253,54 +252,65 @@ input[type="file"] {
 
 /* Media Queries for responsivenes */
 @media (max-width: 500px) and (min-width: 300px) {
-    .circle2{
+    .circle2 {
         left: 20%;
     }
-    .contact-form-container{
+
+    .contact-form-container {
         flex-direction: column;
     }
-    .contact-form{
+
+    .contact-form {
         padding: 1.5em;
-        margin-left:0;
+        margin-left: 0;
     }
-    .main-form{
+
+    .main-form {
         width: 100%;
-        padding-left:0;
+        padding-left: 0;
     }
-    .submit-button button{
+
+    .submit-button button {
         margin-top: 1em;
     }
-    .navbar ul{
+
+    .navbar ul {
         display: none;
     }
-    .navbar .logo{
+
+    .navbar .logo {
         margin: 0;
     }
-  }
+}
 
 @media (min-width: 768px) {
     .container {
-      width: 750px;
+        width: 750px;
     }
-    .circle2{
+
+    .circle2 {
         left: 65%;
         top: 30%;
-    }   
-  }
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
     }
-    .circle2{
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+
+    .circle2 {
         left: 75%;
         top: 32%;
     }
-  }
-  @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
     .container {
-      width: 1170px;
+        width: 1170px;
     }
-    .main{
+
+    .main {
         height: 100vh;
     }
-  }
+}

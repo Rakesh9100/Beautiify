@@ -39,10 +39,12 @@ h1:before {
         -webkit-clip-path: ellipse(120px 120px at -2.54% -9.25%);
         clip-path: ellipse(120px 120px at -2.54% -9.25%);
     }
+
     50% {
         -webkit-clip-path: ellipse(120px 120px at 49.66% 64.36%);
         clip-path: ellipse(120px 120px at 49.66% 64.36%);
     }
+
     100% {
         -webkit-clip-path: ellipse(120px 120px at 102.62% -1.61%);
         clip-path: ellipse(120px 120px at 102.62% -1.61%);

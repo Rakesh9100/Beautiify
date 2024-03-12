@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* background styling */
 body {
     overflow: hidden;
@@ -63,6 +64,7 @@ section .color:nth-child(3) {
     animation: animate 20s linear infinite;
     animation-delay: calc(-1s * var(--i));
 }
+
 /* for box animation */
 @keyframes animate {
 

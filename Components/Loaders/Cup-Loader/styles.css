@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
 }
-body{
+
+body {
     background-color: rgb(197, 59, 82);
     width: 100%;
 }
 
-.cup{
-    height:140px;
+.cup {
+    height: 140px;
     width: 180px;
     border: 6px solid black;
     position: absolute;
@@ -22,13 +22,9 @@ body{
     background-repeat: repeat-x;
     background-position: 0px 140px;
     animation: fill 5s infinite;
-    
-
-
-    
-
 }
-.handle{
+
+.handle {
     width: 70px;
     border: 10px solid black;
     height: 60px;
@@ -37,24 +33,27 @@ body{
     position: relative;
     border-radius: 0px 15px 70px 0px;
     box-shadow: 9px solid wheat;
-    
 }
 
-@keyframes fill{
-    0%{
+@keyframes fill {
+    0% {
         background-position: 0px 140px;
     }
-    20%
-    {
+
+    20% {
         background-position: -450px 100px;
     }
-    40%{
+
+    40% {
         background-position: -900px 50px;
     }
-    80%{
+
+    80% {
         background-position: -1000px 0px;
     }
-    100%{
-        background-position: 0px 140px;;
+
+    100% {
+        background-position: 0px 140px;
+        ;
     }
 }

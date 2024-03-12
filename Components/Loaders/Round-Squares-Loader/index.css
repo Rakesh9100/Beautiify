@@ -11,7 +11,6 @@ body {
     --blob-radius: 50%;
     --color: #f43f5e;
     --thickness: .5rem;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -26,7 +25,6 @@ body {
     transition: 500ms height;
     animation: load 4s infinite;
 }
-
 
 #blob2 {
     scale: 1 -1;
@@ -53,11 +51,11 @@ body {
         border-radius: var(--blob-radius) 0 var(--blob-radius) 0;
     }
 
-    75%{
+    75% {
         border-radius: 0;
     }
 
-    100%{
+    100% {
         border-radius: 0 var(--blob-radius) 0 var(--blob-radius);
     }
 }

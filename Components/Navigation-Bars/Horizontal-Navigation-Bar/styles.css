@@ -4,88 +4,89 @@ body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: skyblue;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     background-color: #f50370;
     overflow: hidden;
     box-shadow: 0px 1px 1px 0px grey;
-  }
-  
-  .navbar ul {  
+}
+
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-end;
+}
 
-  }
-  
-  .navbar a {
+.navbar a {
     display: block;
     color: white;
     text-align: center;
     padding: 18px 25px;
     text-decoration: none;
-  }
-  
-  .navbar a:hover {
+}
+
+.navbar a:hover {
     background-color: #ddd;
     transition: ease-in .5s;
     color: black;
     box-shadow: 0px 0px 2px 0px black;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
+}
 
-  .content{
+.content {
     margin-top: 20%;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     align-items: center;
     text-align: center;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     display: block;
     text-decoration: none;
-  }
-  
-  .dropdown-content a:hover {
+}
+
+.dropdown-content a:hover {
     background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  
-  @media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
+
     /* Make the navigation responsive for smaller screens */
     .navbar ul {
-      flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
+        /* Stack items vertically */
     }
-  
+
     .navbar li {
-      width: 100%;
-      text-align: center;
+        width: 100%;
+        text-align: center;
     }
-  
+
     .dropdown-content {
-      position: static;
-      transform: none;
+        position: static;
+        transform: none;
     }
-  }
+}

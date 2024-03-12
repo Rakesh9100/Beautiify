@@ -147,7 +147,9 @@ section .color:nth-child(3) {
 }
 
 @keyframes animate {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(-40px);
     }
 

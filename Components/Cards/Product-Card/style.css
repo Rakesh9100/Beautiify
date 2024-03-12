@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #ace0f0;
-    background-image:url('Picture1.png');
+    background-image: url('Picture1.png');
 }
 
 .product-card {
@@ -17,15 +17,15 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 300px;
-    text-align:center;
+    text-align: center;
     transition: transform 0.3s ease-in-out;
     border-color: rgb(174, 147, 11);
-    border-radius: 10px rgb(174, 147, 11);;
+    border-radius: 10px rgb(174, 147, 11);
     position: relative;
 }
 
 .product-card:hover {
-    transform: scale(1.05) rotate(5deg); /* Scale up and rotate slightly when hovering */
+    transform: scale(1.05) rotate(5deg);
 }
 
 .product-image {
@@ -38,12 +38,13 @@ body {
 
 
 .product-image:hover {
-    transform: scale(1.1) translateY(-10px);/* Scale up when hovering */
+    transform: scale(1.1) translateY(-10px);
+    /* Scale up when hovering */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 
 }
 
-.product-price{
+.product-price {
     margin-right: 10px;
 }
 
@@ -53,7 +54,7 @@ body {
 
 
 .stats-label.special {
-    color: #6f18bb; 
+    color: #6f18bb;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -68,11 +69,11 @@ body {
     border-radius: 3px;
 }
 
-.deal-label:hover{
+.deal-label:hover {
     transform: scale(1.1);
 }
 
-.brand-label{
+.brand-label {
     position: absolute;
     margin-top: 400px;
     top: 10px;
@@ -80,11 +81,11 @@ body {
     background-color: #2dc14d;
     color: #110505;
     padding: 5px;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 
-.brand-label:hover{
+.brand-label:hover {
     transform: scale(1.1);
 }
 
@@ -106,7 +107,7 @@ body {
 
 .product-description {
     color: #666;
-    text-align:center;
+    text-align: center;
 }
 
 .product-label {

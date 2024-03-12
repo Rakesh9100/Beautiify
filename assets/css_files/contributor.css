@@ -1,8 +1,3 @@
-.contributors {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-image: url(../images/bg3.png);
     background-repeat: no repeat;
@@ -10,6 +5,11 @@ body {
     background-size: cover;
     background-position: 50% 50%;
 
+}
+
+.contributors {
+    margin: 0;
+    padding: 0;
 }
 
 .contributors h1 {
@@ -27,15 +27,14 @@ body {
     color: rgb(148, 250, 64);
 }
 
-.dark-mode .contributors h1{
+.dark-mode .contributors h1 {
     color: beige;
 }
 
-.dark-mode header.header2{
+.dark-mode header.header2 {
     background-image: none;
     background-color: black;
 }
-
 
 #contributor {
     margin: 0;

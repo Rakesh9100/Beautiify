@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: antiquewhite;
     height: 100vh;
     display: flex;
@@ -12,7 +12,7 @@ body{
     align-items: center;
 }
 
-.container{
+.container {
     width: 600px;
     border: 1px solid black;
     padding: 30px;
@@ -38,7 +38,7 @@ body{
     margin-top: 20px;
 }
 
-.code{
+.code {
     height: 100px;
     width: 80px;
     border: 1px solid black;
@@ -53,7 +53,7 @@ body{
     margin: 0;
 }
 
-.code:valid{
+.code:valid {
     border: 1px solid green;
     box-shadow: 0 0 5px green;
 }

@@ -92,8 +92,8 @@ function render() {
     p.textContent = $.text;
     p.appendChild(getRandomColoredString(
         $.prefixP < prefix.length ?
-        Math.min(tail, tail + $.prefixP):
-        Math.min(tail, feature.length - $.featureP)));
+            Math.min(tail, tail + $.prefixP) :
+            Math.min(tail, feature.length - $.featureP)));
     setTimeout(render, timeout);
 }
 setTimeout(render, 500);

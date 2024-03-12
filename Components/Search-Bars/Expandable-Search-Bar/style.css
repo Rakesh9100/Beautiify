@@ -4,22 +4,22 @@
     box-sizing: border-box;
     outline: none;
     font-family: "Signika Negative", sans-serif;
-  }
-  
-  html {
+}
+
+html {
     font-size: 62.5%;
-  }
-  
-  .container {
+}
+
+.container {
     width: 100%;
     height: 100vh;
     background-color: #161a1d;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .search-bar {
+}
+
+.search-bar {
     width: 8rem;
     height: 8rem;
     background-color: #fff;
@@ -28,13 +28,13 @@
     text-align: right;
     position: relative;
     transition: width 0.5s cubic-bezier(0.9, 0, 0.3, 0.9);
-  }
-  
-  .change .search-bar {
+}
+
+.change .search-bar {
     width: 45rem;
-  }
-  
-  .search-bar input {
+}
+
+.search-bar input {
     width: 100%;
     height: 100%;
     border: none;
@@ -44,14 +44,14 @@
     font-size: 2rem;
     opacity: 0;
     transition: opacity 0.5s;
-  }
-  
-  .change .search-bar input {
+}
+
+.change .search-bar input {
     opacity: 1;
     transition: opacity 0.5s 0.3s;
-  }
-  
-  .search-bar i {
+}
+
+.search-bar i {
     position: absolute;
     top: 50%;
     right: 0.5rem;
@@ -67,17 +67,16 @@
     color: #fff;
     cursor: pointer;
     transition: opacity 0.3s 0.3s;
-  }
-  
-  .search-bar i:nth-child(3) {
+}
+
+.search-bar i:nth-child(3) {
     opacity: 0;
-  }
-  
-  .change .search-bar i:nth-child(3) {
+}
+
+.change .search-bar i:nth-child(3) {
     opacity: 1;
-  }
-  
-  .change .search-bar i:nth-child(2) {
+}
+
+.change .search-bar i:nth-child(2) {
     opacity: 0;
-  }
-  
+}

@@ -56,7 +56,8 @@ section {
     color: #fff;
 }
 
-.content h1, h3 {
+.content h1,
+h3 {
     text-align: center;
 }
 

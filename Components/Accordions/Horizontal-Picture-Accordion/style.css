@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
+
 html {
     height: 100vh;
 }
+
 body {
     padding: 0;
     margin: 0;
     font-family: 'Fjalla One', sans-serif;
-    background: linear-gradient( #fff, #fefefe, #eaeaea);
+    background: linear-gradient(#fff, #fefefe, #eaeaea);
 }
+
 .accordion {
     max-width: 990px;
     background: rgba(0, 0, 0, 0.10);
@@ -20,6 +23,7 @@ body {
     cursor: pointer;
     margin-bottom: 100px;
 }
+
 .box {
     position: relative;
     height: 100%;
@@ -29,57 +33,71 @@ body {
     transition: .7s;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
 }
-.box:hover{
+
+.box:hover {
     flex: 7;
     height: 400px;
 }
+
 .a1 {
     background-image: url("https://img.freepik.com/free-vector/cute-boy-cheek-pinching-his-girlfriend-happy-valentine-cartoon-character-illustration_56104-367.jpg");
 }
+
 .a2 {
     background-image: url("https://w0.peakpx.com/wallpaper/853/160/HD-wallpaper-sugar-glider-irresistible-pure-white-adorable-big-eyes-strawberry.jpg")
 }
+
 .a3 {
     background-image: url("https://images.pexels.com/photos/129207/pexels-photo-129207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     color: #fff;
 }
+
 .a4 {
     background-image: url("https://images.pexels.com/photos/240038/pexels-photo-240038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     color: #fff;
 }
+
 .a5 {
-    background-image: url("https://images.pexels.com/photos/220994/pexels-photo-220994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); 
+    background-image: url("https://images.pexels.com/photos/220994/pexels-photo-220994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
+
 p {
     font-weight: normal;
     font-family: 'Exo 2', sans-serif;
 }
+
 .text {
     position: absolute;
     bottom: 0;
     opacity: 0;
     padding: 10px;
 }
-.box:hover .text{
-    opacity:1;
+
+.box:hover .text {
+    opacity: 1;
 }
+
 h1 {
     width: 250px;
     text-align: center;
     margin: 100px auto 20px auto;
 }
-@media screen and (max-width: 800px){
-    body{
+
+@media screen and (max-width: 800px) {
+    body {
         margin: 0;
     }
+
     .accordion {
         flex-direction: column;
         height: 700px;
         box-shadow: none;
     }
+
     .box {
         box-shadow: none;
     }
+
     .box:hover {
         flex: 7;
     }
