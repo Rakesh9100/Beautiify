@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsletter Subscription Form</title>
     <link rel="stylesheet" href="./style.css">
-
-
+    <title>Newsletter Subscription Form</title>
 </head>
 
 <body>
@@ -28,24 +26,8 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('.sign-up-form').on('submit', submit);
-            $('.reset-button').on('click', reset);
-        });
-
-        function submit(e) {
-            $('.sign-up-container').addClass('submitted');
-            e.preventDefault();
-        }
-
-        function reset() {
-            $('.sign-up-container').removeClass('submitted');
-            $('.sign-up-form')[0].reset();
-        }
-
-    </script>
 </body>
 
 </html>

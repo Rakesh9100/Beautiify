@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Feedback Form</title>
+</head>
+
+<body>
+	<h1>Feedback</h1>
+	<div class="textup">Please provide your feedback in the form below</div>
+	<form name="feedback_form" id="feedback_form" method="post">
+		<label>How do you rate your overall experience?</label>
+
+
+		<div class="form-box">
+			<div class="textup">
+				<i class="fa fa-solid fa-clock"></i>
+				It only takes two minutes!!
+			</div>
+			<form>
+				<div class="input-box">
+					<span class="icon">
+						<ion-icon name="lock-closed"></on-icons>
+					</span>
+					<input type="text" required>
+					<label>Name</label>
+				</div>
+
+				<div class="input-box">
+					<span class="icon">
+						<ion-icon name="mail"></ion-icon>
+					</span>
+					<input type="email" required>
+					<label>Email</label>
+				</div>
+
+				<div class="input-box">
+					<span class="icon">
+						<ion-icon name="lock-closed"></on-icons>
+					</span>
+					<input type="phone" required>
+					<label>Phone</label>
+				</div>
+				<label class="textup">
+					<i class="fa-solid fa-face-smile"></i>
+					Do you satisfy with our service?
+				</label>
+
+				<div class="radio-group">
+					<input type="radio" id="yes" name="satisfy" value="yes" checked>
+					<label for="yes">Yes</label>
+
+					<input type="radio" id="no" name="satisfy" value="no">
+					<label for="no">No</label>
+				</div>
+
+				<div class="input-box">
+					<span class="icon">
+						<ion-icon name="lock-closed"></on-icons>
+					</span>
+					<input type="text" required>
+					<label>Write your Suggestions:</label>
+				</div>
+				<button type="submit">
+					Submit
+				</button>
+			</form>
+		</div>
+</body>
+
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Neumorphism Tansfer List</title>
+</head>
+
+<body>
+    <div class="glassmorphism-form">
+        <div id="available-items-list" class="selection-list">
+            <div class="list-header">
+                <h2>Available Items</h2>
+            </div>
+            <div id="available-items" class="list-body"></div>
+        </div>
+
+        <div class="transfer-buttons">
+            <button id="transferAllRight" onclick="transferAllRight()">≫</button>
+            <button id="transferOneRight" onclick="transferCheckedRight()">
+                &gt;
+            </button>
+            <button id="transferOneLeft" onclick="transferCheckedLeft()">
+                &lt;
+            </button>
+            <button id="transferAllLeft" onclick="transferAllLeft()">≪</button>
+        </div>
+
+        <div id="selectedItems" class="selection-list">
+            <div class="list-header">
+                <h2>Selected Items</h2>
+            </div>
+            <div id="selected-items" class="list-body"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

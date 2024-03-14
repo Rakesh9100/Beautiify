@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#left {
+    width: 50%;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#right {
+    width: 50%;
+    height: 100vh;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/* Card 1 Style */
+#one {
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    /* Light card background color */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #c7c7c7, -5px -5px 10px #ffffff;
+    /*--IMP LINE--*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card 2 Style */
+#two {
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    /* Light card background color */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: inset 5px 5px 10px #c7c7c7, inset -5px -5px 10px #ffffff;
+    /*--IMP LINE--*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card 3 Style */
+#three {
+    width: 300px;
+    height: 200px;
+    background-color: #1e1e1e;
+    /* Dark card background color */
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #121212, -5px -5px 10px #242424;
+    /*--IMP LINE--*/
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card 4 Style */
+#four {
+    width: 300px;
+    height: 200px;
+    background-color: #1e1e1e;
+    /* Dark card background color */
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: inset 5px 5px 10px #121212, inset -5px -5px 10px #242424;
+    /*--IMP LINE--*/
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Further code is for responsiveness purpose */
+@media screen and (max-width: 800px) {
+    #left {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #one,
+    #two,
+    #three,
+    #four {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

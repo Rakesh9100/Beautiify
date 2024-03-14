@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3-D Reveal Side Navigation Bar</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+    <title>3D Reveal Side Navigation Bar</title>
 </head>
 
 <body>
@@ -34,41 +33,7 @@
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-        (function () {
-            var nav = $('nav'),
-                menu = $('nav h1'),
-                main = $('main'),
-                open = false,
-                hover = false;
-
-            menu.on('click', function () {
-                open = !open ? true : false;
-                nav.toggleClass('menu-active');
-                main.toggleClass('menu-active');
-                nav.removeClass('menu-hover');
-                main.removeClass('menu-hover');
-                console.log(open);
-            });
-
-            menu.hover(
-                function () {
-                    if (!open) {
-                        nav.addClass('menu-hover');
-                        main.addClass('menu-hover');
-                    }
-                },
-                function () {
-                    nav.removeClass('menu-hover');
-                    main.removeClass('menu-hover');
-                }
-            );
-        })();
-    </script>
-
-</body>
-
-</html>
+    <script src="script.js"></script>
 
 </body>
 

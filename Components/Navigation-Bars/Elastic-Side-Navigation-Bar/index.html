@@ -5,13 +5,12 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Elastic Sidebar menu</title>
-	<link rel="shortcut icon" href="../favicon.ico">
-	<link rel="stylesheet" type="text/css" href="./normalize.css" />
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css" />
 	<script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="./demo.css" />
-	<link rel="stylesheet" type="text/css" href="sidebar.css" />
-	<script src="./snap.svg-min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/sidebar.css" />
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/snap.svg-min.js"></script>
+	<title>Elastic Side Navigation Bar</title>
 </head>
 
 <body class="theme-1">
@@ -34,62 +33,12 @@
 			</div>
 		</nav>
 		<div class="main">
-
 			<h1>Elastic Side Navigation Bar</h1>
-		</div><!-- /main -->
-	</div><!-- /container -->
-	<script src="./script.js"></script>
-	<script>
-		(function () {
+		</div>
+	</div>
 
-			function SVGMenu(el, options) {
-				this.el = el;
-				this.init();
-			}
+	<script src="./js/script.js"></script>
 
-			SVGMenu.prototype.init = function () {
-				this.trigger = this.el.querySelector('button.menu__handle');
-				this.shapeEl = this.el.querySelector('div.morph-shape');
-
-				var s = Snap(this.shapeEl.querySelector('svg'));
-				this.pathEl = s.select('path');
-				this.paths = {
-					reset: this.pathEl.attr('d'),
-					open: this.shapeEl.getAttribute('data-morph-open'),
-					close: this.shapeEl.getAttribute('data-morph-close')
-				};
-
-				this.isOpen = false;
-
-				this.initEvents();
-			};
-
-			SVGMenu.prototype.initEvents = function () {
-				this.trigger.addEventListener('click', this.toggle.bind(this));
-			};
-
-			SVGMenu.prototype.toggle = function () {
-				var self = this;
-
-				if (this.isOpen) {
-					classie.remove(self.el, 'menu--anim');
-					setTimeout(function () { classie.remove(self.el, 'menu--open'); }, 250);
-				}
-				else {
-					classie.add(self.el, 'menu--anim');
-					setTimeout(function () { classie.add(self.el, 'menu--open'); }, 250);
-				}
-				this.pathEl.stop().animate({ 'path': this.isOpen ? this.paths.close : this.paths.open }, 350, mina.easeout, function () {
-					self.pathEl.stop().animate({ 'path': self.paths.reset }, 800, mina.elastic);
-				});
-
-				this.isOpen = !this.isOpen;
-			};
-
-			new SVGMenu(document.getElementById('menu'));
-
-		})();
-	</script>
 </body>
 
 </html>

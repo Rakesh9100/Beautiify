@@ -1,0 +1,1488 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: black;
+    overflow: hidden;
+}
+
+.wrap {
+    position: relative;
+    height: 100%;
+}
+
+.c {
+    position: relative;
+    height: 400px;
+    width: 0.69444%;
+    margin-top: -400px;
+    animation: drop 4s infinite ease-in;
+}
+
+.c:after {
+    content: "";
+    position: absolute;
+    width: 0.9vw;
+    height: 0.9vw;
+    border-radius: 50%;
+    left: 50%;
+    bottom: -0.45vw;
+    margin-left: -0.45vw;
+}
+
+.c:nth-child(1) {
+    left: 0%;
+    background-image: linear-gradient(to bottom, black, hsla(2.0833333333, 100%, 50%, 0.8));
+    animation-delay: -1.8055555556s;
+}
+
+.c:nth-child(1):after {
+    background: hsl(2.0833333333, 100%, 50%);
+}
+
+.c:nth-child(2) {
+    left: 0.69444%;
+    background-image: linear-gradient(to bottom, black, hsla(4.1666666667, 100%, 50%, 0.8));
+    animation-delay: -2.9722222222s;
+}
+
+.c:nth-child(2):after {
+    background: hsl(4.1666666667, 100%, 50%);
+}
+
+.c:nth-child(3) {
+    left: 1.38888%;
+    background-image: linear-gradient(to bottom, black, hsla(6.25, 100%, 50%, 0.8));
+    animation-delay: -3.6944444444s;
+}
+
+.c:nth-child(3):after {
+    background: hsl(6.25, 100%, 50%);
+}
+
+.c:nth-child(4) {
+    left: 2.08332%;
+    background-image: linear-gradient(to bottom, black, hsla(8.3333333333, 100%, 50%, 0.8));
+    animation-delay: -3.0555555556s;
+}
+
+.c:nth-child(4):after {
+    background: hsl(8.3333333333, 100%, 50%);
+}
+
+.c:nth-child(5) {
+    left: 2.77776%;
+    background-image: linear-gradient(to bottom, black, hsla(10.4166666667, 100%, 50%, 0.8));
+    animation-delay: -1.3611111111s;
+}
+
+.c:nth-child(5):after {
+    background: hsl(10.4166666667, 100%, 50%);
+}
+
+.c:nth-child(6) {
+    left: 3.4722%;
+    background-image: linear-gradient(to bottom, black, hsla(12.5, 100%, 50%, 0.8));
+    animation-delay: -3.0555555556s;
+}
+
+.c:nth-child(6):after {
+    background: hsl(12.5, 100%, 50%);
+}
+
+.c:nth-child(7) {
+    left: 4.16664%;
+    background-image: linear-gradient(to bottom, black, hsla(14.5833333333, 100%, 50%, 0.8));
+    animation-delay: -2.1944444444s;
+}
+
+.c:nth-child(7):after {
+    background: hsl(14.5833333333, 100%, 50%);
+}
+
+.c:nth-child(8) {
+    left: 4.86108%;
+    background-image: linear-gradient(to bottom, black, hsla(16.6666666667, 100%, 50%, 0.8));
+    animation-delay: -2.0555555556s;
+}
+
+.c:nth-child(8):after {
+    background: hsl(16.6666666667, 100%, 50%);
+}
+
+.c:nth-child(9) {
+    left: 5.55552%;
+    background-image: linear-gradient(to bottom, black, hsla(18.75, 100%, 50%, 0.8));
+    animation-delay: -1s;
+}
+
+.c:nth-child(9):after {
+    background: hsl(18.75, 100%, 50%);
+}
+
+.c:nth-child(10) {
+    left: 6.24996%;
+    background-image: linear-gradient(to bottom, black, hsla(20.8333333333, 100%, 50%, 0.8));
+    animation-delay: -2.1666666667s;
+}
+
+.c:nth-child(10):after {
+    background: hsl(20.8333333333, 100%, 50%);
+}
+
+.c:nth-child(11) {
+    left: 6.9444%;
+    background-image: linear-gradient(to bottom, black, hsla(22.9166666667, 100%, 50%, 0.8));
+    animation-delay: -0.3333333333s;
+}
+
+.c:nth-child(11):after {
+    background: hsl(22.9166666667, 100%, 50%);
+}
+
+.c:nth-child(12) {
+    left: 7.63884%;
+    background-image: linear-gradient(to bottom, black, hsla(25, 100%, 50%, 0.8));
+    animation-delay: -0.0833333333s;
+}
+
+.c:nth-child(12):after {
+    background: hsl(25, 100%, 50%);
+}
+
+.c:nth-child(13) {
+    left: 8.33328%;
+    background-image: linear-gradient(to bottom, black, hsla(27.0833333333, 100%, 50%, 0.8));
+    animation-delay: -0.4444444444s;
+}
+
+.c:nth-child(13):after {
+    background: hsl(27.0833333333, 100%, 50%);
+}
+
+.c:nth-child(14) {
+    left: 9.02772%;
+    background-image: linear-gradient(to bottom, black, hsla(29.1666666667, 100%, 50%, 0.8));
+    animation-delay: -2.1388888889s;
+}
+
+.c:nth-child(14):after {
+    background: hsl(29.1666666667, 100%, 50%);
+}
+
+.c:nth-child(15) {
+    left: 9.72216%;
+    background-image: linear-gradient(to bottom, black, hsla(31.25, 100%, 50%, 0.8));
+    animation-delay: -1.5555555556s;
+}
+
+.c:nth-child(15):after {
+    background: hsl(31.25, 100%, 50%);
+}
+
+.c:nth-child(16) {
+    left: 10.4166%;
+    background-image: linear-gradient(to bottom, black, hsla(33.3333333333, 100%, 50%, 0.8));
+    animation-delay: -3.9722222222s;
+}
+
+.c:nth-child(16):after {
+    background: hsl(33.3333333333, 100%, 50%);
+}
+
+.c:nth-child(17) {
+    left: 11.11104%;
+    background-image: linear-gradient(to bottom, black, hsla(35.4166666667, 100%, 50%, 0.8));
+    animation-delay: -1.2777777778s;
+}
+
+.c:nth-child(17):after {
+    background: hsl(35.4166666667, 100%, 50%);
+}
+
+.c:nth-child(18) {
+    left: 11.80548%;
+    background-image: linear-gradient(to bottom, black, hsla(37.5, 100%, 50%, 0.8));
+    animation-delay: -1.1666666667s;
+}
+
+.c:nth-child(18):after {
+    background: hsl(37.5, 100%, 50%);
+}
+
+.c:nth-child(19) {
+    left: 12.49992%;
+    background-image: linear-gradient(to bottom, black, hsla(39.5833333333, 100%, 50%, 0.8));
+    animation-delay: -1.8055555556s;
+}
+
+.c:nth-child(19):after {
+    background: hsl(39.5833333333, 100%, 50%);
+}
+
+.c:nth-child(20) {
+    left: 13.19436%;
+    background-image: linear-gradient(to bottom, black, hsla(41.6666666667, 100%, 50%, 0.8));
+    animation-delay: -3.9444444444s;
+}
+
+.c:nth-child(20):after {
+    background: hsl(41.6666666667, 100%, 50%);
+}
+
+.c:nth-child(21) {
+    left: 13.8888%;
+    background-image: linear-gradient(to bottom, black, hsla(43.75, 100%, 50%, 0.8));
+    animation-delay: -1.7222222222s;
+}
+
+.c:nth-child(21):after {
+    background: hsl(43.75, 100%, 50%);
+}
+
+.c:nth-child(22) {
+    left: 14.58324%;
+    background-image: linear-gradient(to bottom, black, hsla(45.8333333333, 100%, 50%, 0.8));
+    animation-delay: -1.8888888889s;
+}
+
+.c:nth-child(22):after {
+    background: hsl(45.8333333333, 100%, 50%);
+}
+
+.c:nth-child(23) {
+    left: 15.27768%;
+    background-image: linear-gradient(to bottom, black, hsla(47.9166666667, 100%, 50%, 0.8));
+    animation-delay: -3.1944444444s;
+}
+
+.c:nth-child(23):after {
+    background: hsl(47.9166666667, 100%, 50%);
+}
+
+.c:nth-child(24) {
+    left: 15.97212%;
+    background-image: linear-gradient(to bottom, black, hsla(50, 100%, 50%, 0.8));
+    animation-delay: -3.8611111111s;
+}
+
+.c:nth-child(24):after {
+    background: hsl(50, 100%, 50%);
+}
+
+.c:nth-child(25) {
+    left: 16.66656%;
+    background-image: linear-gradient(to bottom, black, hsla(52.0833333333, 100%, 50%, 0.8));
+    animation-delay: -0.0555555556s;
+}
+
+.c:nth-child(25):after {
+    background: hsl(52.0833333333, 100%, 50%);
+}
+
+.c:nth-child(26) {
+    left: 17.361%;
+    background-image: linear-gradient(to bottom, black, hsla(54.1666666667, 100%, 50%, 0.8));
+    animation-delay: -3.6388888889s;
+}
+
+.c:nth-child(26):after {
+    background: hsl(54.1666666667, 100%, 50%);
+}
+
+.c:nth-child(27) {
+    left: 18.05544%;
+    background-image: linear-gradient(to bottom, black, hsla(56.25, 100%, 50%, 0.8));
+    animation-delay: -1.5s;
+}
+
+.c:nth-child(27):after {
+    background: hsl(56.25, 100%, 50%);
+}
+
+.c:nth-child(28) {
+    left: 18.74988%;
+    background-image: linear-gradient(to bottom, black, hsla(58.3333333333, 100%, 50%, 0.8));
+    animation-delay: -0.8333333333s;
+}
+
+.c:nth-child(28):after {
+    background: hsl(58.3333333333, 100%, 50%);
+}
+
+.c:nth-child(29) {
+    left: 19.44432%;
+    background-image: linear-gradient(to bottom, black, hsla(60.4166666667, 100%, 50%, 0.8));
+    animation-delay: -2.2222222222s;
+}
+
+.c:nth-child(29):after {
+    background: hsl(60.4166666667, 100%, 50%);
+}
+
+.c:nth-child(30) {
+    left: 20.13876%;
+    background-image: linear-gradient(to bottom, black, hsla(62.5, 100%, 50%, 0.8));
+    animation-delay: -1.2222222222s;
+}
+
+.c:nth-child(30):after {
+    background: hsl(62.5, 100%, 50%);
+}
+
+.c:nth-child(31) {
+    left: 20.8332%;
+    background-image: linear-gradient(to bottom, black, hsla(64.5833333333, 100%, 50%, 0.8));
+    animation-delay: -2.3333333333s;
+}
+
+.c:nth-child(31):after {
+    background: hsl(64.5833333333, 100%, 50%);
+}
+
+.c:nth-child(32) {
+    left: 21.52764%;
+    background-image: linear-gradient(to bottom, black, hsla(66.6666666667, 100%, 50%, 0.8));
+    animation-delay: -0.1666666667s;
+}
+
+.c:nth-child(32):after {
+    background: hsl(66.6666666667, 100%, 50%);
+}
+
+.c:nth-child(33) {
+    left: 22.22208%;
+    background-image: linear-gradient(to bottom, black, hsla(68.75, 100%, 50%, 0.8));
+    animation-delay: -2.1944444444s;
+}
+
+.c:nth-child(33):after {
+    background: hsl(68.75, 100%, 50%);
+}
+
+.c:nth-child(34) {
+    left: 22.91652%;
+    background-image: linear-gradient(to bottom, black, hsla(70.8333333333, 100%, 50%, 0.8));
+    animation-delay: -3.5833333333s;
+}
+
+.c:nth-child(34):after {
+    background: hsl(70.8333333333, 100%, 50%);
+}
+
+.c:nth-child(35) {
+    left: 23.61096%;
+    background-image: linear-gradient(to bottom, black, hsla(72.9166666667, 100%, 50%, 0.8));
+    animation-delay: -3.3888888889s;
+}
+
+.c:nth-child(35):after {
+    background: hsl(72.9166666667, 100%, 50%);
+}
+
+.c:nth-child(36) {
+    left: 24.3054%;
+    background-image: linear-gradient(to bottom, black, hsla(75, 100%, 50%, 0.8));
+    animation-delay: -3.1388888889s;
+}
+
+.c:nth-child(36):after {
+    background: hsl(75, 100%, 50%);
+}
+
+.c:nth-child(37) {
+    left: 24.99984%;
+    background-image: linear-gradient(to bottom, black, hsla(77.0833333333, 100%, 50%, 0.8));
+    animation-delay: -1.6944444444s;
+}
+
+.c:nth-child(37):after {
+    background: hsl(77.0833333333, 100%, 50%);
+}
+
+.c:nth-child(38) {
+    left: 25.69428%;
+    background-image: linear-gradient(to bottom, black, hsla(79.1666666667, 100%, 50%, 0.8));
+    animation-delay: -3.5s;
+}
+
+.c:nth-child(38):after {
+    background: hsl(79.1666666667, 100%, 50%);
+}
+
+.c:nth-child(39) {
+    left: 26.38872%;
+    background-image: linear-gradient(to bottom, black, hsla(81.25, 100%, 50%, 0.8));
+    animation-delay: -3s;
+}
+
+.c:nth-child(39):after {
+    background: hsl(81.25, 100%, 50%);
+}
+
+.c:nth-child(40) {
+    left: 27.08316%;
+    background-image: linear-gradient(to bottom, black, hsla(83.3333333333, 100%, 50%, 0.8));
+    animation-delay: -1.8611111111s;
+}
+
+.c:nth-child(40):after {
+    background: hsl(83.3333333333, 100%, 50%);
+}
+
+.c:nth-child(41) {
+    left: 27.7776%;
+    background-image: linear-gradient(to bottom, black, hsla(85.4166666667, 100%, 50%, 0.8));
+    animation-delay: -1.5833333333s;
+}
+
+.c:nth-child(41):after {
+    background: hsl(85.4166666667, 100%, 50%);
+}
+
+.c:nth-child(42) {
+    left: 28.47204%;
+    background-image: linear-gradient(to bottom, black, hsla(87.5, 100%, 50%, 0.8));
+    animation-delay: -1.9444444444s;
+}
+
+.c:nth-child(42):after {
+    background: hsl(87.5, 100%, 50%);
+}
+
+.c:nth-child(43) {
+    left: 29.16648%;
+    background-image: linear-gradient(to bottom, black, hsla(89.5833333333, 100%, 50%, 0.8));
+    animation-delay: -1.8055555556s;
+}
+
+.c:nth-child(43):after {
+    background: hsl(89.5833333333, 100%, 50%);
+}
+
+.c:nth-child(44) {
+    left: 29.86092%;
+    background-image: linear-gradient(to bottom, black, hsla(91.6666666667, 100%, 50%, 0.8));
+    animation-delay: -1.1944444444s;
+}
+
+.c:nth-child(44):after {
+    background: hsl(91.6666666667, 100%, 50%);
+}
+
+.c:nth-child(45) {
+    left: 30.55536%;
+    background-image: linear-gradient(to bottom, black, hsla(93.75, 100%, 50%, 0.8));
+    animation-delay: -0.6944444444s;
+}
+
+.c:nth-child(45):after {
+    background: hsl(93.75, 100%, 50%);
+}
+
+.c:nth-child(46) {
+    left: 31.2498%;
+    background-image: linear-gradient(to bottom, black, hsla(95.8333333333, 100%, 50%, 0.8));
+    animation-delay: -1.2777777778s;
+}
+
+.c:nth-child(46):after {
+    background: hsl(95.8333333333, 100%, 50%);
+}
+
+.c:nth-child(47) {
+    left: 31.94424%;
+    background-image: linear-gradient(to bottom, black, hsla(97.9166666667, 100%, 50%, 0.8));
+    animation-delay: -3.6944444444s;
+}
+
+.c:nth-child(47):after {
+    background: hsl(97.9166666667, 100%, 50%);
+}
+
+.c:nth-child(48) {
+    left: 32.63868%;
+    background-image: linear-gradient(to bottom, black, hsla(100, 100%, 50%, 0.8));
+    animation-delay: -2.1666666667s;
+}
+
+.c:nth-child(48):after {
+    background: hsl(100, 100%, 50%);
+}
+
+.c:nth-child(49) {
+    left: 33.33312%;
+    background-image: linear-gradient(to bottom, black, hsla(102.0833333333, 100%, 50%, 0.8));
+    animation-delay: -1.0555555556s;
+}
+
+.c:nth-child(49):after {
+    background: hsl(102.0833333333, 100%, 50%);
+}
+
+.c:nth-child(50) {
+    left: 34.02756%;
+    background-image: linear-gradient(to bottom, black, hsla(104.1666666667, 100%, 50%, 0.8));
+    animation-delay: -2.9166666667s;
+}
+
+.c:nth-child(50):after {
+    background: hsl(104.1666666667, 100%, 50%);
+}
+
+.c:nth-child(51) {
+    left: 34.722%;
+    background-image: linear-gradient(to bottom, black, hsla(106.25, 100%, 50%, 0.8));
+    animation-delay: -3.8888888889s;
+}
+
+.c:nth-child(51):after {
+    background: hsl(106.25, 100%, 50%);
+}
+
+.c:nth-child(52) {
+    left: 35.41644%;
+    background-image: linear-gradient(to bottom, black, hsla(108.3333333333, 100%, 50%, 0.8));
+    animation-delay: -0.6388888889s;
+}
+
+.c:nth-child(52):after {
+    background: hsl(108.3333333333, 100%, 50%);
+}
+
+.c:nth-child(53) {
+    left: 36.11088%;
+    background-image: linear-gradient(to bottom, black, hsla(110.4166666667, 100%, 50%, 0.8));
+    animation-delay: -0.2222222222s;
+}
+
+.c:nth-child(53):after {
+    background: hsl(110.4166666667, 100%, 50%);
+}
+
+.c:nth-child(54) {
+    left: 36.80532%;
+    background-image: linear-gradient(to bottom, black, hsla(112.5, 100%, 50%, 0.8));
+    animation-delay: -2.3611111111s;
+}
+
+.c:nth-child(54):after {
+    background: hsl(112.5, 100%, 50%);
+}
+
+.c:nth-child(55) {
+    left: 37.49976%;
+    background-image: linear-gradient(to bottom, black, hsla(114.5833333333, 100%, 50%, 0.8));
+    animation-delay: -0.5555555556s;
+}
+
+.c:nth-child(55):after {
+    background: hsl(114.5833333333, 100%, 50%);
+}
+
+.c:nth-child(56) {
+    left: 38.1942%;
+    background-image: linear-gradient(to bottom, black, hsla(116.6666666667, 100%, 50%, 0.8));
+    animation-delay: -3.5833333333s;
+}
+
+.c:nth-child(56):after {
+    background: hsl(116.6666666667, 100%, 50%);
+}
+
+.c:nth-child(57) {
+    left: 38.88864%;
+    background-image: linear-gradient(to bottom, black, hsla(118.75, 100%, 50%, 0.8));
+    animation-delay: -1.7222222222s;
+}
+
+.c:nth-child(57):after {
+    background: hsl(118.75, 100%, 50%);
+}
+
+.c:nth-child(58) {
+    left: 39.58308%;
+    background-image: linear-gradient(to bottom, black, hsla(120.8333333333, 100%, 50%, 0.8));
+    animation-delay: -0.8055555556s;
+}
+
+.c:nth-child(58):after {
+    background: hsl(120.8333333333, 100%, 50%);
+}
+
+.c:nth-child(59) {
+    left: 40.27752%;
+    background-image: linear-gradient(to bottom, black, hsla(122.9166666667, 100%, 50%, 0.8));
+    animation-delay: -1.1111111111s;
+}
+
+.c:nth-child(59):after {
+    background: hsl(122.9166666667, 100%, 50%);
+}
+
+.c:nth-child(60) {
+    left: 40.97196%;
+    background-image: linear-gradient(to bottom, black, hsla(125, 100%, 50%, 0.8));
+    animation-delay: -2.9444444444s;
+}
+
+.c:nth-child(60):after {
+    background: hsl(125, 100%, 50%);
+}
+
+.c:nth-child(61) {
+    left: 41.6664%;
+    background-image: linear-gradient(to bottom, black, hsla(127.0833333333, 100%, 50%, 0.8));
+    animation-delay: -1.6111111111s;
+}
+
+.c:nth-child(61):after {
+    background: hsl(127.0833333333, 100%, 50%);
+}
+
+.c:nth-child(62) {
+    left: 42.36084%;
+    background-image: linear-gradient(to bottom, black, hsla(129.1666666667, 100%, 50%, 0.8));
+    animation-delay: -3.2777777778s;
+}
+
+.c:nth-child(62):after {
+    background: hsl(129.1666666667, 100%, 50%);
+}
+
+.c:nth-child(63) {
+    left: 43.05528%;
+    background-image: linear-gradient(to bottom, black, hsla(131.25, 100%, 50%, 0.8));
+    animation-delay: -0.75s;
+}
+
+.c:nth-child(63):after {
+    background: hsl(131.25, 100%, 50%);
+}
+
+.c:nth-child(64) {
+    left: 43.74972%;
+    background-image: linear-gradient(to bottom, black, hsla(133.3333333333, 100%, 50%, 0.8));
+    animation-delay: -0.1111111111s;
+}
+
+.c:nth-child(64):after {
+    background: hsl(133.3333333333, 100%, 50%);
+}
+
+.c:nth-child(65) {
+    left: 44.44416%;
+    background-image: linear-gradient(to bottom, black, hsla(135.4166666667, 100%, 50%, 0.8));
+    animation-delay: -2.7777777778s;
+}
+
+.c:nth-child(65):after {
+    background: hsl(135.4166666667, 100%, 50%);
+}
+
+.c:nth-child(66) {
+    left: 45.1386%;
+    background-image: linear-gradient(to bottom, black, hsla(137.5, 100%, 50%, 0.8));
+    animation-delay: -1.6944444444s;
+}
+
+.c:nth-child(66):after {
+    background: hsl(137.5, 100%, 50%);
+}
+
+.c:nth-child(67) {
+    left: 45.83304%;
+    background-image: linear-gradient(to bottom, black, hsla(139.5833333333, 100%, 50%, 0.8));
+    animation-delay: -1.7777777778s;
+}
+
+.c:nth-child(67):after {
+    background: hsl(139.5833333333, 100%, 50%);
+}
+
+.c:nth-child(68) {
+    left: 46.52748%;
+    background-image: linear-gradient(to bottom, black, hsla(141.6666666667, 100%, 50%, 0.8));
+    animation-delay: -1.25s;
+}
+
+.c:nth-child(68):after {
+    background: hsl(141.6666666667, 100%, 50%);
+}
+
+.c:nth-child(69) {
+    left: 47.22192%;
+    background-image: linear-gradient(to bottom, black, hsla(143.75, 100%, 50%, 0.8));
+    animation-delay: -0.5555555556s;
+}
+
+.c:nth-child(69):after {
+    background: hsl(143.75, 100%, 50%);
+}
+
+.c:nth-child(70) {
+    left: 47.91636%;
+    background-image: linear-gradient(to bottom, black, hsla(145.8333333333, 100%, 50%, 0.8));
+    animation-delay: -2.4722222222s;
+}
+
+.c:nth-child(70):after {
+    background: hsl(145.8333333333, 100%, 50%);
+}
+
+.c:nth-child(71) {
+    left: 48.6108%;
+    background-image: linear-gradient(to bottom, black, hsla(147.9166666667, 100%, 50%, 0.8));
+    animation-delay: -0.1944444444s;
+}
+
+.c:nth-child(71):after {
+    background: hsl(147.9166666667, 100%, 50%);
+}
+
+.c:nth-child(72) {
+    left: 49.30524%;
+    background-image: linear-gradient(to bottom, black, hsla(150, 100%, 50%, 0.8));
+    animation-delay: -0.3888888889s;
+}
+
+.c:nth-child(72):after {
+    background: hsl(150, 100%, 50%);
+}
+
+.c:nth-child(73) {
+    left: 49.99968%;
+    background-image: linear-gradient(to bottom, black, hsla(152.0833333333, 100%, 50%, 0.8));
+    animation-delay: -3.8888888889s;
+}
+
+.c:nth-child(73):after {
+    background: hsl(152.0833333333, 100%, 50%);
+}
+
+.c:nth-child(74) {
+    left: 50.69412%;
+    background-image: linear-gradient(to bottom, black, hsla(154.1666666667, 100%, 50%, 0.8));
+    animation-delay: -0.5833333333s;
+}
+
+.c:nth-child(74):after {
+    background: hsl(154.1666666667, 100%, 50%);
+}
+
+.c:nth-child(75) {
+    left: 51.38856%;
+    background-image: linear-gradient(to bottom, black, hsla(156.25, 100%, 50%, 0.8));
+    animation-delay: -3.6388888889s;
+}
+
+.c:nth-child(75):after {
+    background: hsl(156.25, 100%, 50%);
+}
+
+.c:nth-child(76) {
+    left: 52.083%;
+    background-image: linear-gradient(to bottom, black, hsla(158.3333333333, 100%, 50%, 0.8));
+    animation-delay: -2.7777777778s;
+}
+
+.c:nth-child(76):after {
+    background: hsl(158.3333333333, 100%, 50%);
+}
+
+.c:nth-child(77) {
+    left: 52.77744%;
+    background-image: linear-gradient(to bottom, black, hsla(160.4166666667, 100%, 50%, 0.8));
+    animation-delay: -0.5833333333s;
+}
+
+.c:nth-child(77):after {
+    background: hsl(160.4166666667, 100%, 50%);
+}
+
+.c:nth-child(78) {
+    left: 53.47188%;
+    background-image: linear-gradient(to bottom, black, hsla(162.5, 100%, 50%, 0.8));
+    animation-delay: -4s;
+}
+
+.c:nth-child(78):after {
+    background: hsl(162.5, 100%, 50%);
+}
+
+.c:nth-child(79) {
+    left: 54.16632%;
+    background-image: linear-gradient(to bottom, black, hsla(164.5833333333, 100%, 50%, 0.8));
+    animation-delay: -1.8611111111s;
+}
+
+.c:nth-child(79):after {
+    background: hsl(164.5833333333, 100%, 50%);
+}
+
+.c:nth-child(80) {
+    left: 54.86076%;
+    background-image: linear-gradient(to bottom, black, hsla(166.6666666667, 100%, 50%, 0.8));
+    animation-delay: -0.6388888889s;
+}
+
+.c:nth-child(80):after {
+    background: hsl(166.6666666667, 100%, 50%);
+}
+
+.c:nth-child(81) {
+    left: 55.5552%;
+    background-image: linear-gradient(to bottom, black, hsla(168.75, 100%, 50%, 0.8));
+    animation-delay: -2.1388888889s;
+}
+
+.c:nth-child(81):after {
+    background: hsl(168.75, 100%, 50%);
+}
+
+.c:nth-child(82) {
+    left: 56.24964%;
+    background-image: linear-gradient(to bottom, black, hsla(170.8333333333, 100%, 50%, 0.8));
+    animation-delay: -2.9722222222s;
+}
+
+.c:nth-child(82):after {
+    background: hsl(170.8333333333, 100%, 50%);
+}
+
+.c:nth-child(83) {
+    left: 56.94408%;
+    background-image: linear-gradient(to bottom, black, hsla(172.9166666667, 100%, 50%, 0.8));
+    animation-delay: -2.6666666667s;
+}
+
+.c:nth-child(83):after {
+    background: hsl(172.9166666667, 100%, 50%);
+}
+
+.c:nth-child(84) {
+    left: 57.63852%;
+    background-image: linear-gradient(to bottom, black, hsla(175, 100%, 50%, 0.8));
+    animation-delay: -0.9444444444s;
+}
+
+.c:nth-child(84):after {
+    background: hsl(175, 100%, 50%);
+}
+
+.c:nth-child(85) {
+    left: 58.33296%;
+    background-image: linear-gradient(to bottom, black, hsla(177.0833333333, 100%, 50%, 0.8));
+    animation-delay: -0.9166666667s;
+}
+
+.c:nth-child(85):after {
+    background: hsl(177.0833333333, 100%, 50%);
+}
+
+.c:nth-child(86) {
+    left: 59.0274%;
+    background-image: linear-gradient(to bottom, black, hsla(179.1666666667, 100%, 50%, 0.8));
+    animation-delay: -2.8055555556s;
+}
+
+.c:nth-child(86):after {
+    background: hsl(179.1666666667, 100%, 50%);
+}
+
+.c:nth-child(87) {
+    left: 59.72184%;
+    background-image: linear-gradient(to bottom, black, hsla(181.25, 100%, 50%, 0.8));
+    animation-delay: -3.9444444444s;
+}
+
+.c:nth-child(87):after {
+    background: hsl(181.25, 100%, 50%);
+}
+
+.c:nth-child(88) {
+    left: 60.41628%;
+    background-image: linear-gradient(to bottom, black, hsla(183.3333333333, 100%, 50%, 0.8));
+    animation-delay: -0.3888888889s;
+}
+
+.c:nth-child(88):after {
+    background: hsl(183.3333333333, 100%, 50%);
+}
+
+.c:nth-child(89) {
+    left: 61.11072%;
+    background-image: linear-gradient(to bottom, black, hsla(185.4166666667, 100%, 50%, 0.8));
+    animation-delay: -2.8888888889s;
+}
+
+.c:nth-child(89):after {
+    background: hsl(185.4166666667, 100%, 50%);
+}
+
+.c:nth-child(90) {
+    left: 61.80516%;
+    background-image: linear-gradient(to bottom, black, hsla(187.5, 100%, 50%, 0.8));
+    animation-delay: -1.6666666667s;
+}
+
+.c:nth-child(90):after {
+    background: hsl(187.5, 100%, 50%);
+}
+
+.c:nth-child(91) {
+    left: 62.4996%;
+    background-image: linear-gradient(to bottom, black, hsla(189.5833333333, 100%, 50%, 0.8));
+    animation-delay: -2.9444444444s;
+}
+
+.c:nth-child(91):after {
+    background: hsl(189.5833333333, 100%, 50%);
+}
+
+.c:nth-child(92) {
+    left: 63.19404%;
+    background-image: linear-gradient(to bottom, black, hsla(191.6666666667, 100%, 50%, 0.8));
+    animation-delay: -3.3055555556s;
+}
+
+.c:nth-child(92):after {
+    background: hsl(191.6666666667, 100%, 50%);
+}
+
+.c:nth-child(93) {
+    left: 63.88848%;
+    background-image: linear-gradient(to bottom, black, hsla(193.75, 100%, 50%, 0.8));
+    animation-delay: -2.4444444444s;
+}
+
+.c:nth-child(93):after {
+    background: hsl(193.75, 100%, 50%);
+}
+
+.c:nth-child(94) {
+    left: 64.58292%;
+    background-image: linear-gradient(to bottom, black, hsla(195.8333333333, 100%, 50%, 0.8));
+    animation-delay: -1.4166666667s;
+}
+
+.c:nth-child(94):after {
+    background: hsl(195.8333333333, 100%, 50%);
+}
+
+.c:nth-child(95) {
+    left: 65.27736%;
+    background-image: linear-gradient(to bottom, black, hsla(197.9166666667, 100%, 50%, 0.8));
+    animation-delay: -0.3055555556s;
+}
+
+.c:nth-child(95):after {
+    background: hsl(197.9166666667, 100%, 50%);
+}
+
+.c:nth-child(96) {
+    left: 65.9718%;
+    background-image: linear-gradient(to bottom, black, hsla(200, 100%, 50%, 0.8));
+    animation-delay: -0.6666666667s;
+}
+
+.c:nth-child(96):after {
+    background: hsl(200, 100%, 50%);
+}
+
+.c:nth-child(97) {
+    left: 66.66624%;
+    background-image: linear-gradient(to bottom, black, hsla(202.0833333333, 100%, 50%, 0.8));
+    animation-delay: -1.6944444444s;
+}
+
+.c:nth-child(97):after {
+    background: hsl(202.0833333333, 100%, 50%);
+}
+
+.c:nth-child(98) {
+    left: 67.36068%;
+    background-image: linear-gradient(to bottom, black, hsla(204.1666666667, 100%, 50%, 0.8));
+    animation-delay: -0.3055555556s;
+}
+
+.c:nth-child(98):after {
+    background: hsl(204.1666666667, 100%, 50%);
+}
+
+.c:nth-child(99) {
+    left: 68.05512%;
+    background-image: linear-gradient(to bottom, black, hsla(206.25, 100%, 50%, 0.8));
+    animation-delay: -2.3333333333s;
+}
+
+.c:nth-child(99):after {
+    background: hsl(206.25, 100%, 50%);
+}
+
+.c:nth-child(100) {
+    left: 68.74956%;
+    background-image: linear-gradient(to bottom, black, hsla(208.3333333333, 100%, 50%, 0.8));
+    animation-delay: -0.3333333333s;
+}
+
+.c:nth-child(100):after {
+    background: hsl(208.3333333333, 100%, 50%);
+}
+
+.c:nth-child(101) {
+    left: 69.444%;
+    background-image: linear-gradient(to bottom, black, hsla(210.4166666667, 100%, 50%, 0.8));
+    animation-delay: -1.5s;
+}
+
+.c:nth-child(101):after {
+    background: hsl(210.4166666667, 100%, 50%);
+}
+
+.c:nth-child(102) {
+    left: 70.13844%;
+    background-image: linear-gradient(to bottom, black, hsla(212.5, 100%, 50%, 0.8));
+    animation-delay: -1.7222222222s;
+}
+
+.c:nth-child(102):after {
+    background: hsl(212.5, 100%, 50%);
+}
+
+.c:nth-child(103) {
+    left: 70.83288%;
+    background-image: linear-gradient(to bottom, black, hsla(214.5833333333, 100%, 50%, 0.8));
+    animation-delay: -3.0555555556s;
+}
+
+.c:nth-child(103):after {
+    background: hsl(214.5833333333, 100%, 50%);
+}
+
+.c:nth-child(104) {
+    left: 71.52732%;
+    background-image: linear-gradient(to bottom, black, hsla(216.6666666667, 100%, 50%, 0.8));
+    animation-delay: -4s;
+}
+
+.c:nth-child(104):after {
+    background: hsl(216.6666666667, 100%, 50%);
+}
+
+.c:nth-child(105) {
+    left: 72.22176%;
+    background-image: linear-gradient(to bottom, black, hsla(218.75, 100%, 50%, 0.8));
+    animation-delay: -0.5833333333s;
+}
+
+.c:nth-child(105):after {
+    background: hsl(218.75, 100%, 50%);
+}
+
+.c:nth-child(106) {
+    left: 72.9162%;
+    background-image: linear-gradient(to bottom, black, hsla(220.8333333333, 100%, 50%, 0.8));
+    animation-delay: -3.5555555556s;
+}
+
+.c:nth-child(106):after {
+    background: hsl(220.8333333333, 100%, 50%);
+}
+
+.c:nth-child(107) {
+    left: 73.61064%;
+    background-image: linear-gradient(to bottom, black, hsla(222.9166666667, 100%, 50%, 0.8));
+    animation-delay: -3.2222222222s;
+}
+
+.c:nth-child(107):after {
+    background: hsl(222.9166666667, 100%, 50%);
+}
+
+.c:nth-child(108) {
+    left: 74.30508%;
+    background-image: linear-gradient(to bottom, black, hsla(225, 100%, 50%, 0.8));
+    animation-delay: -1.1944444444s;
+}
+
+.c:nth-child(108):after {
+    background: hsl(225, 100%, 50%);
+}
+
+.c:nth-child(109) {
+    left: 74.99952%;
+    background-image: linear-gradient(to bottom, black, hsla(227.0833333333, 100%, 50%, 0.8));
+    animation-delay: -3.0555555556s;
+}
+
+.c:nth-child(109):after {
+    background: hsl(227.0833333333, 100%, 50%);
+}
+
+.c:nth-child(110) {
+    left: 75.69396%;
+    background-image: linear-gradient(to bottom, black, hsla(229.1666666667, 100%, 50%, 0.8));
+    animation-delay: -2.5833333333s;
+}
+
+.c:nth-child(110):after {
+    background: hsl(229.1666666667, 100%, 50%);
+}
+
+.c:nth-child(111) {
+    left: 76.3884%;
+    background-image: linear-gradient(to bottom, black, hsla(231.25, 100%, 50%, 0.8));
+    animation-delay: -2.0555555556s;
+}
+
+.c:nth-child(111):after {
+    background: hsl(231.25, 100%, 50%);
+}
+
+.c:nth-child(112) {
+    left: 77.08284%;
+    background-image: linear-gradient(to bottom, black, hsla(233.3333333333, 100%, 50%, 0.8));
+    animation-delay: -2.4444444444s;
+}
+
+.c:nth-child(112):after {
+    background: hsl(233.3333333333, 100%, 50%);
+}
+
+.c:nth-child(113) {
+    left: 77.77728%;
+    background-image: linear-gradient(to bottom, black, hsla(235.4166666667, 100%, 50%, 0.8));
+    animation-delay: -0.6111111111s;
+}
+
+.c:nth-child(113):after {
+    background: hsl(235.4166666667, 100%, 50%);
+}
+
+.c:nth-child(114) {
+    left: 78.47172%;
+    background-image: linear-gradient(to bottom, black, hsla(237.5, 100%, 50%, 0.8));
+    animation-delay: -1.3055555556s;
+}
+
+.c:nth-child(114):after {
+    background: hsl(237.5, 100%, 50%);
+}
+
+.c:nth-child(115) {
+    left: 79.16616%;
+    background-image: linear-gradient(to bottom, black, hsla(239.5833333333, 100%, 50%, 0.8));
+    animation-delay: -1.8055555556s;
+}
+
+.c:nth-child(115):after {
+    background: hsl(239.5833333333, 100%, 50%);
+}
+
+.c:nth-child(116) {
+    left: 79.8606%;
+    background-image: linear-gradient(to bottom, black, hsla(241.6666666667, 100%, 50%, 0.8));
+    animation-delay: -1.6944444444s;
+}
+
+.c:nth-child(116):after {
+    background: hsl(241.6666666667, 100%, 50%);
+}
+
+.c:nth-child(117) {
+    left: 80.55504%;
+    background-image: linear-gradient(to bottom, black, hsla(243.75, 100%, 50%, 0.8));
+    animation-delay: -1.3611111111s;
+}
+
+.c:nth-child(117):after {
+    background: hsl(243.75, 100%, 50%);
+}
+
+.c:nth-child(118) {
+    left: 81.24948%;
+    background-image: linear-gradient(to bottom, black, hsla(245.8333333333, 100%, 50%, 0.8));
+    animation-delay: -1s;
+}
+
+.c:nth-child(118):after {
+    background: hsl(245.8333333333, 100%, 50%);
+}
+
+.c:nth-child(119) {
+    left: 81.94392%;
+    background-image: linear-gradient(to bottom, black, hsla(247.9166666667, 100%, 50%, 0.8));
+    animation-delay: -2.3611111111s;
+}
+
+.c:nth-child(119):after {
+    background: hsl(247.9166666667, 100%, 50%);
+}
+
+.c:nth-child(120) {
+    left: 82.63836%;
+    background-image: linear-gradient(to bottom, black, hsla(250, 100%, 50%, 0.8));
+    animation-delay: -3.0833333333s;
+}
+
+.c:nth-child(120):after {
+    background: hsl(250, 100%, 50%);
+}
+
+.c:nth-child(121) {
+    left: 83.3328%;
+    background-image: linear-gradient(to bottom, black, hsla(252.0833333333, 100%, 50%, 0.8));
+    animation-delay: -3.7222222222s;
+}
+
+.c:nth-child(121):after {
+    background: hsl(252.0833333333, 100%, 50%);
+}
+
+.c:nth-child(122) {
+    left: 84.02724%;
+    background-image: linear-gradient(to bottom, black, hsla(254.1666666667, 100%, 50%, 0.8));
+    animation-delay: -3.2222222222s;
+}
+
+.c:nth-child(122):after {
+    background: hsl(254.1666666667, 100%, 50%);
+}
+
+.c:nth-child(123) {
+    left: 84.72168%;
+    background-image: linear-gradient(to bottom, black, hsla(256.25, 100%, 50%, 0.8));
+    animation-delay: -2.25s;
+}
+
+.c:nth-child(123):after {
+    background: hsl(256.25, 100%, 50%);
+}
+
+.c:nth-child(124) {
+    left: 85.41612%;
+    background-image: linear-gradient(to bottom, black, hsla(258.3333333333, 100%, 50%, 0.8));
+    animation-delay: -1.6944444444s;
+}
+
+.c:nth-child(124):after {
+    background: hsl(258.3333333333, 100%, 50%);
+}
+
+.c:nth-child(125) {
+    left: 86.11056%;
+    background-image: linear-gradient(to bottom, black, hsla(260.4166666667, 100%, 50%, 0.8));
+    animation-delay: -3.9722222222s;
+}
+
+.c:nth-child(125):after {
+    background: hsl(260.4166666667, 100%, 50%);
+}
+
+.c:nth-child(126) {
+    left: 86.805%;
+    background-image: linear-gradient(to bottom, black, hsla(262.5, 100%, 50%, 0.8));
+    animation-delay: -1.6944444444s;
+}
+
+.c:nth-child(126):after {
+    background: hsl(262.5, 100%, 50%);
+}
+
+.c:nth-child(127) {
+    left: 87.49944%;
+    background-image: linear-gradient(to bottom, black, hsla(264.5833333333, 100%, 50%, 0.8));
+    animation-delay: -1.7777777778s;
+}
+
+.c:nth-child(127):after {
+    background: hsl(264.5833333333, 100%, 50%);
+}
+
+.c:nth-child(128) {
+    left: 88.19388%;
+    background-image: linear-gradient(to bottom, black, hsla(266.6666666667, 100%, 50%, 0.8));
+    animation-delay: -2.3333333333s;
+}
+
+.c:nth-child(128):after {
+    background: hsl(266.6666666667, 100%, 50%);
+}
+
+.c:nth-child(129) {
+    left: 88.88832%;
+    background-image: linear-gradient(to bottom, black, hsla(268.75, 100%, 50%, 0.8));
+    animation-delay: -0.1666666667s;
+}
+
+.c:nth-child(129):after {
+    background: hsl(268.75, 100%, 50%);
+}
+
+.c:nth-child(130) {
+    left: 89.58276%;
+    background-image: linear-gradient(to bottom, black, hsla(270.8333333333, 100%, 50%, 0.8));
+    animation-delay: -2.8611111111s;
+}
+
+.c:nth-child(130):after {
+    background: hsl(270.8333333333, 100%, 50%);
+}
+
+.c:nth-child(131) {
+    left: 90.2772%;
+    background-image: linear-gradient(to bottom, black, hsla(272.9166666667, 100%, 50%, 0.8));
+    animation-delay: -1.75s;
+}
+
+.c:nth-child(131):after {
+    background: hsl(272.9166666667, 100%, 50%);
+}
+
+.c:nth-child(132) {
+    left: 90.97164%;
+    background-image: linear-gradient(to bottom, black, hsla(275, 100%, 50%, 0.8));
+    animation-delay: -0.0833333333s;
+}
+
+.c:nth-child(132):after {
+    background: hsl(275, 100%, 50%);
+}
+
+.c:nth-child(133) {
+    left: 91.66608%;
+    background-image: linear-gradient(to bottom, black, hsla(277.0833333333, 100%, 50%, 0.8));
+    animation-delay: -0.1111111111s;
+}
+
+.c:nth-child(133):after {
+    background: hsl(277.0833333333, 100%, 50%);
+}
+
+.c:nth-child(134) {
+    left: 92.36052%;
+    background-image: linear-gradient(to bottom, black, hsla(279.1666666667, 100%, 50%, 0.8));
+    animation-delay: -2.1666666667s;
+}
+
+.c:nth-child(134):after {
+    background: hsl(279.1666666667, 100%, 50%);
+}
+
+.c:nth-child(135) {
+    left: 93.05496%;
+    background-image: linear-gradient(to bottom, black, hsla(281.25, 100%, 50%, 0.8));
+    animation-delay: -3.4722222222s;
+}
+
+.c:nth-child(135):after {
+    background: hsl(281.25, 100%, 50%);
+}
+
+.c:nth-child(136) {
+    left: 93.7494%;
+    background-image: linear-gradient(to bottom, black, hsla(283.3333333333, 100%, 50%, 0.8));
+    animation-delay: -3.75s;
+}
+
+.c:nth-child(136):after {
+    background: hsl(283.3333333333, 100%, 50%);
+}
+
+.c:nth-child(137) {
+    left: 94.44384%;
+    background-image: linear-gradient(to bottom, black, hsla(285.4166666667, 100%, 50%, 0.8));
+    animation-delay: -1.5833333333s;
+}
+
+.c:nth-child(137):after {
+    background: hsl(285.4166666667, 100%, 50%);
+}
+
+.c:nth-child(138) {
+    left: 95.13828%;
+    background-image: linear-gradient(to bottom, black, hsla(287.5, 100%, 50%, 0.8));
+    animation-delay: -1.6666666667s;
+}
+
+.c:nth-child(138):after {
+    background: hsl(287.5, 100%, 50%);
+}
+
+.c:nth-child(139) {
+    left: 95.83272%;
+    background-image: linear-gradient(to bottom, black, hsla(289.5833333333, 100%, 50%, 0.8));
+    animation-delay: -3.3611111111s;
+}
+
+.c:nth-child(139):after {
+    background: hsl(289.5833333333, 100%, 50%);
+}
+
+.c:nth-child(140) {
+    left: 96.52716%;
+    background-image: linear-gradient(to bottom, black, hsla(291.6666666667, 100%, 50%, 0.8));
+    animation-delay: -0.8888888889s;
+}
+
+.c:nth-child(140):after {
+    background: hsl(291.6666666667, 100%, 50%);
+}
+
+.c:nth-child(141) {
+    left: 97.2216%;
+    background-image: linear-gradient(to bottom, black, hsla(293.75, 100%, 50%, 0.8));
+    animation-delay: -2.5s;
+}
+
+.c:nth-child(141):after {
+    background: hsl(293.75, 100%, 50%);
+}
+
+.c:nth-child(142) {
+    left: 97.91604%;
+    background-image: linear-gradient(to bottom, black, hsla(295.8333333333, 100%, 50%, 0.8));
+    animation-delay: -3.9444444444s;
+}
+
+.c:nth-child(142):after {
+    background: hsl(295.8333333333, 100%, 50%);
+}
+
+.c:nth-child(143) {
+    left: 98.61048%;
+    background-image: linear-gradient(to bottom, black, hsla(297.9166666667, 100%, 50%, 0.8));
+    animation-delay: -0.6388888889s;
+}
+
+.c:nth-child(143):after {
+    background: hsl(297.9166666667, 100%, 50%);
+}
+
+.c:nth-child(144) {
+    left: 99.30492%;
+    background-image: linear-gradient(to bottom, black, hsla(300, 100%, 50%, 0.8));
+    animation-delay: -3.9722222222s;
+}
+
+.c:nth-child(144):after {
+    background: hsl(300, 100%, 50%);
+}
+
+@keyframes drop {
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate3d(0, 150vh, 0);
+        opacity: 0;
+    }
+}

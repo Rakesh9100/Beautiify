@@ -36,7 +36,6 @@ body {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-
 .product-image:hover {
     transform: scale(1.1) translateY(-10px);
     /* Scale up when hovering */
