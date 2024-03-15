@@ -23,7 +23,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -342,6 +342,10 @@ nav li:hover {
     transition: 0.3s ease-in-out;
     background-color: #3498db;
     color: #df87ef;
+}
+
+nav a {
+    font-weight: bolder;
 }
 
 .logo {
@@ -728,6 +732,12 @@ footer p a {
     }
 }
 
+@media (min-width: 901px) and (max-width: 990px) {
+    nav a {
+        font-size: 1.8rem;
+    }
+}
+
 @media (max-width: 925px) {
     .comp-section {
         flex-direction: column;
@@ -747,6 +757,26 @@ footer p a {
         font-weight: 400;
         margin-top: 19px;
         padding: 6px 35px;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 900px) {
+    nav a {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 851px) {
+    nav a {
+        font-size: 1.7rem;
+    }
+
+    nav ul {
+        gap: 1rem;
     }
 }
 
@@ -808,16 +838,16 @@ footer p a {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 5.3rem;
         flex-direction: column;
         background-color: rgba(5, 5, 5, 0.904);
         backdrop-filter: blur(6.5px);
         width: 100%;
-        border-radius: 10px;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         height: 100vh;
+        gap: 50px;
     }
 
     .nav-menu .nav-item.active .nav-link {
@@ -841,7 +871,7 @@ footer p a {
 
     .nav-menu.active {
         left: 0;
-        gap: 10px;
+        gap: 50px;
     }
 
     .nav-item {
