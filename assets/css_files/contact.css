@@ -20,7 +20,7 @@ body {
 .box-wrapper {
     position: relative;
     display: table;
-    width: 75vw;
+    width: 90vw; /*fixed the width for better view */
     top: 15px;
     left: 50%;
     transform: translate(-50%, 0);
