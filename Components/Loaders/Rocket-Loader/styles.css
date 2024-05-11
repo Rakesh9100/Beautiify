@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(#031272,#0228c1,rgb(6, 6, 255),rgb(40, 105, 255));
+}
+
+h3{
+
+}
+.loader {
+    width: 120px;
+    height: 200px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/009/394/204/non_2x/rocket-spaceship-clipart-design-illustration-free-png.png'); /* Replace 'rocket.png' with your rocket image */
+    background-size: cover;
+    animation: rocketAnimation 2s linear infinite;
+    position: relative;
+}
+
+#launching-text {
+    position: absolute;
+    bottom: 200px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px; /* Adjust the font size as needed */
+    color: #fff; /* Text color */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes rocketAnimation {
+    0% {
+        transform: translateY(0) rotateZ(-3deg); 
+    }
+    10% {
+        transform: translateY(0) rotateZ(2deg);
+    }
+    20% {
+        transform: translateY(0) rotateZ(-2deg); 
+    }
+    30% {
+        transform: translateY(0) rotateZ(1deg); 
+    }
+    40% {
+        transform: translateY(0) rotateZ(-1deg); 
+    }
+    50% {
+        transform: translateY(0) rotateZ(.75deg);
+    }
+    60% {
+        transform: translateY(0) rotateZ(.5deg); 
+    }
+    100% {
+        transform: translateY(-100vh) rotateZ(0); 
+    }
+}
