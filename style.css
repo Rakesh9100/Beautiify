@@ -594,7 +594,12 @@ footer .social-icon li a {
 }
 
 footer .social-icon li a:hover {
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
+    border-top: #eee 1px solid;
+    border-bottom: #eee 1px solid;
+    transition: ease-out 0.5ms;
+    
+    color:#df87ef;
 }
 
 footer p {
@@ -614,7 +619,9 @@ footer p a {
     font-size: 1.1em;
     display: inline-block;
 }
-
+.social-icons i:hover{
+    border-top: 1px solid white;
+}
 #progress {
     position: fixed;
     bottom: 14px;
