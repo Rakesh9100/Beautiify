@@ -921,3 +921,182 @@ footer p a {
         margin: 15px !important;
     }
 }
+/* Navbar background color and text color */
+.navbar {
+    background-color: #2c3e50; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding around navbar items */
+    display: flex; /* Make navbar items flex */
+    justify-content: space-between; /* Space between navbar items */
+    align-items: center; /* Center vertically */
+}
+
+/* Navbar logo */
+.logo {
+    font-size: 24px; /* Increase font size */
+}
+
+/* Navbar links */
+.nav-menu {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Make navbar items flex */
+}
+
+.nav-item {
+    margin-right: 20px; /* Spacing between navbar items */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    padding: 10px; /* Padding around navbar links */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: #f39c12; /* Change text color on hover */
+}
+
+/* Hamburger menu icon */
+.hamburger {
+    display: none; /* Hide initially for larger screens */
+    cursor: pointer;
+}
+
+/* Dark mode toggle button */
+#dark-mode-toggle {
+    background-color: transparent;
+    border: none;
+    color: #fff; /* White text color */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Hide navbar items on small screens */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu icon on small screens */
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show navbar items when active (for mobile menu) */
+        flex-direction: column; /* Stack items vertically */
+        background-color: #34495e; /* Dark background color */
+        position: absolute; /* Position absolutely */
+        top: 100%; /* Place below navbar */
+        left: 0; /* Align to left */
+        width: 100%; /* Full width */
+        z-index: 999; /* Ensure it's above other content */
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Spacing between stacked navbar items */
+    }
+}
+/* style.css */
+
+/* Header */
+.header1 {
+    background-color: #34495e; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding around header content */
+}
+
+/* Logo and Heading */
+.logo img {
+    width: 50px; /* Adjust logo width */
+    height: 50px; /* Adjust logo height */
+    margin-bottom: 20px; /* Spacing below logo */
+}
+
+.heading {
+    font-size: 36px; /* Increase heading font size */
+    margin-bottom: 10px; /* Spacing below heading */
+}
+
+.sub-head {
+    font-size: 24px; /* Increase sub-heading font size */
+    margin-bottom: 20px; /* Spacing below sub-heading */
+}
+
+.paragraph {
+    font-size: 18px; /* Increase paragraph font size */
+    margin-bottom: 30px; /* Spacing below paragraph */
+}
+
+/* Call-to-Action Button */
+.started {
+    background-color: #f39c12; /* Orange background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding around button */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded button corners */
+    font-size: 20px; /* Increase button font size */
+    text-decoration: none; /* Remove default link underline */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.started:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+/* Navbar logo */
+.logo {
+    font-size: 24px;
+    color: #f39c12;
+    font-weight: bold; /* Increase font weight */
+}
+
+/* Header */
+.header1 {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Logo and Heading */
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #f39c12;
+    font-weight: bold; /* Increase font weight */
+}
+
+.sub-head {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f39c12;
+    font-weight: bold; /* Increase font weight */
+}
+
+.paragraph {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Call-to-Action Button */
+.started {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold; /* Increase font weight */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.started:hover {
+    background-color: #e67e22;
+}
