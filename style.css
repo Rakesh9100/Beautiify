@@ -32,7 +32,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(228, 53, 82);
+    background: rgb(211, 182, 201);
     border-radius: 10px;
 }
 
@@ -337,11 +337,11 @@ nav li {
 }
 
 nav li:hover {
-    border-bottom: 0.2rem rgb(8, 24, 196) solid;
+    border-bottom: 0.2rem rgb(212, 133, 189) solid;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
-    background-color: #3498db;
-    color: #df87ef;
+    background-color: rgb(206, 50, 159);
+    color: red;
 }
 
 nav a {
