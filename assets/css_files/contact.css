@@ -1,9 +1,7 @@
-* {
+*{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
-
 body {
     background-image: url(../images/bg3.png);
     background-repeat: no repeat;
@@ -26,6 +24,7 @@ body {
     transform: translate(-50%, 0);
     border-radius: 30px;
     filter: drop-shadow(0px 0px 10px rgb(0, 0, 0, 0.4));
+    position: relative;
 }
 
 .box-wrapper:hover {
@@ -96,11 +95,12 @@ body {
 .social-icons {
     list-style: none;
     text-align: center;
-    margin: 20px 0px;
+    margin-top: 100px;
+
 }
 
-.social-icons li {
-    display: inline-block;
+.social-icons li{
+    display: inline-block
 }
 
 .social-icons li i {
@@ -174,9 +174,10 @@ body {
 }
 
 .submit-button {
-    width: 96%;
+    width: 60vh;
     height: 9vh;
     margin: 20px 12px;
+    margin-left: 100px;
     border-radius: 30px;
     font-size: 20px;
     font-weight: 500;
@@ -260,8 +261,10 @@ body {
     .submit-button {
         width: 100%;
     }
-
     .submit-button {
-        margin: 10px 0px;
+        margin: 10px 0px;  
     }
+}
+.whole_form_wrap{
+    margin-bottom: 80px;
 }
