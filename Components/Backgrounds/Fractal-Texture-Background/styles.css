@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #eee;
+    overflow: hidden;
+  }
+  
+  .background::before,
+  .background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background-size: 20px 20px;
+    mix-blend-mode: multiply; /* Creates a more textured look */
+  }
+  
+  .background::before {
+    background-image: linear-gradient(to top left, #3a23c0 0%, #446bbe 30%, #6c90d3 60%, #fff 100%);
+    transform: scale(2.5) rotate(10deg); /* Larger, rotated base texture */
+    animation: move-noise 10s ease-in-out infinite;
+  }
+  
+  .background::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><circle cx='10' cy='10' r='5' fill='none' stroke='#aaa' stroke-width='1' stroke-linecap='round' /></svg>"); /* Adds subtle noise pattern */
+    transform: scale(1.2) rotate(-15deg); 
+    animation: move-slow 20s ease-in-out infinite;
+  }
+  
+  @keyframes move-noise {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 40px 40px;
+    }
+  }
+  
+  @keyframes move-slow {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 5px 5px;
+    }
+  }
+  
