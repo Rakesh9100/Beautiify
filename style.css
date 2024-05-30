@@ -511,6 +511,7 @@ section {
 
 .container .box .content {
     position: relative;
+    width: 320px;
     left: 0;
     padding: 20px 40px;
     text-align: center;
