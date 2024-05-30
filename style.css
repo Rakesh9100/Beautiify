@@ -921,3 +921,31 @@ footer p a {
         margin: 15px !important;
     }
 }
+#searchBar {
+    text-align: center; /* Center the content within the search bar */
+}
+
+.search-container {
+    position: relative;
+    display: inline-block; /* Allow it to resize based on content */
+}
+
+#componentSearch {
+    width: 100%;
+    padding: 10px;
+    padding-left: 35px; /* Adjust the padding to make space for the icon */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure the icon does not block input clicks */
+    color: #888; /* Adjust the color as needed */
+}
+
+.search-icon i {
+    font-size: 16px; /* Adjust the icon size as needed */
+}
