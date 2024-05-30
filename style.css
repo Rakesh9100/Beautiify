@@ -334,20 +334,18 @@ nav li {
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
     margin-right: 10px;
-    padding: 8px;
 }
 
 nav li:hover {
     border-bottom: 0.5rem rgb(116, 42, 113) solid;
     border-radius: 5px;
     transition: 0.3s ease-in-out;
-    background-color: #5f606176;
+    background-color: #5f6176;
     color: #df87ef;
 }
 
 nav a {
     font-weight: bolder;
-   
 }
 
 .logo {
