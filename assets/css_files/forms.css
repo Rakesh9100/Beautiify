@@ -87,12 +87,14 @@ section {
 }
 
 h1 {
-    color: black;
+    color: #282B34;
     text-align: center;
     text-shadow: 1px 1px 1px black, 1px 1px 1px white;
     font-size: 1.8em;
 }
-
+.SearchForm{
+    color: #FFFFFF;
+}
 .preview {
     margin-top: 45px;
     float: left;

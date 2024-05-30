@@ -595,6 +595,7 @@ footer .social-icon li a {
 
 footer .social-icon li a:hover {
     transform: translateY(-10px);
+    color: red;
 }
 
 footer p {
