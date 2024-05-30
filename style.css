@@ -882,6 +882,7 @@ footer p a {
     nav li:hover {
         border-bottom: 0.4rem var(--light) solid;
         transition: 0.3s ease-in-out;
+        border-bottom: 2px solid white;
     }
 
     .hamburger {
