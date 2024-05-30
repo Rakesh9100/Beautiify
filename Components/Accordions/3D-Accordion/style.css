@@ -1,6 +1,6 @@
 .screen .card .details-2,
 .screen .card .details-1 {
-    background-color: rgb(54, 50, 68);
+    background-color: white;
     position: relative;
     height: 70px;
     z-index: -10;
@@ -92,7 +92,7 @@ h1 {
     padding-bottom: 5px;
     top: 55px;
     left: 20px;
-    color: rgb(78, 60, 60);
+    color: white;
     z-index: 20;
     transition: all 0.4s ease-in-out;
 }
