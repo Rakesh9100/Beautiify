@@ -852,6 +852,7 @@ footer p a {
 
     .nav-menu .nav-item.active .nav-link {
         color: red;
+        border-bottom: 2px solid white;
     }
 
     .compcontainer h1 {
