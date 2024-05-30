@@ -1,24 +1,20 @@
 *, *::before, *::after {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-
-
-.card {
-   
+.card {   
     height: 80%;
     aspect-ratio: 3/4;
     cursor: pointer;
-     /* background-color:#7f7a7a;  */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.card::before, .card::after{
+.card::before, .card::after {
     content: "";
     position: absolute;
     left: 0%;
@@ -37,25 +33,22 @@
     transition: 0.5s all ease;
 }
 
-
-.card::before{
+.card::before {
     border-color: #fff;
-    background-image: url(https://us.123rf.com/450wm/federicofoto/federicofoto1812/federicofoto181200416/114146061-eiffel-tower-in-paris-france-with-blue-sky-and-white-clouds.jpg?ver=6);
+    background-image: url(image.jpg);
 }
 
-.card::after{
+.card::after {
     border-color: #fff;
-    background-image: url(eifel-removebg-preview.png);
+    background-image: url(image2.png);
 }
 
-.card:hover::before{
+.card:hover::before {
     --angle: 60deg;
-    --scale:1.2;
-    filter:blur(3px);
+    --scale: 1.2;
+    filter: blur(3px);
 }
  
-.card:hover::after{
-    
-    --scale:1.1;
-    
+.card:hover::after {
+    --scale: 1.1;
 } 
