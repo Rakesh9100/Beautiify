@@ -1,5 +1,4 @@
-
-body{
+body {
     background-color: rgb(111, 111, 168);
 }
 
@@ -7,12 +6,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust this value to center vertically based on your needs */
-    background-color: rgb(111, 111, 168); /* This will apply the background color to the whole page */
+    height: 100vh;
+    /* Adjust this value to center vertically based on your needs */
+    background-color: rgb(111, 111, 168);
+    /* This will apply the background color to the whole page */
 }
 
 .card {
-   
+
     overflow: hidden;
     position: relative;
     text-align: left;
@@ -24,9 +25,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .dismiss {
+}
+
+.dismiss {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -43,19 +44,19 @@ body{
     height: 30px;
     border-radius: 7px;
     transition: .3s ease;
-  }
-  
-  .dismiss:hover {
+}
+
+.dismiss:hover {
     background-color: #ee0d0d;
     border: 2px solid #ee0d0d;
     color: #fff;
-  }
-  
-  .header {
+}
+
+.header {
     padding: 1.25rem 1rem 1rem 1rem;
-  }
-  
-  .image {
+}
+
+.image {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -68,38 +69,38 @@ body{
     border-radius: 9999px;
     animation: animate .6s linear alternate-reverse infinite;
     transition: .6s ease;
-  }
-  
-  .image svg {
+}
+
+.image svg {
     color: #0afa2a;
     width: 2rem;
     height: 2rem;
-  }
-  
-  .content {
+}
+
+.content {
     margin-top: 0.75rem;
     text-align: center;
-  }
-  
-  .title {
+}
+
+.title {
     color: #066e29;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.5rem;
-  }
-  
-  .message {
+}
+
+.message {
     margin-top: 0.8rem;
     color: #595b5f;
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-  
-  .actions {
+}
+
+.actions {
     margin: 0.75rem 1rem;
-  }
-  
-  .history {
+}
+
+.history {
     display: inline-flex;
     padding: 0.5rem 1rem;
     background-color: #1aa06d;
@@ -112,9 +113,9 @@ body{
     border-radius: 0.375rem;
     border: none;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  }
-  
-  .track {
+}
+
+.track {
     display: inline-flex;
     margin-top: 0.75rem;
     padding: 0.5rem 1rem;
@@ -129,24 +130,24 @@ body{
     background-color: #fff;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     cursor: pointer;
-  }
-  
-  .track:hover{
+}
+
+.track:hover {
     background-color: #d4d7dd;
-  }
+}
 
-  @keyframes animate {
+@keyframes animate {
     from {
-      transform: scale(1);
+        transform: scale(1);
     }
-  
+
     to {
-      transform: scale(1.09);
+        transform: scale(1.09);
     }
-  }
+}
 
 
-  .btn {
+.btn {
     --color: #00A97F;
     --color2: rgb(10, 25, 30);
     padding: 0.6em 6.5em;
@@ -163,9 +164,10 @@ body{
     font-family: 'Roboto', 'Segoe UI', sans-serif;
     text-transform: uppercase;
     color: var(--color);
-   }
-   
-   .btn::after, .btn::before {
+}
+
+.btn::after,
+.btn::before {
     content: '';
     display: block;
     height: 100%;
@@ -177,27 +179,27 @@ body{
     z-index: -1;
     transition: .5s ease-out;
     background-color: var(--color);
-   }
-   
-   .btn::before {
+}
+
+.btn::before {
     top: -50%;
     left: -25%;
     transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
-   }
-   
-   .btn:hover::before {
+}
+
+.btn:hover::before {
     transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
-   }
-   
-   .btn:hover::after {
+}
+
+.btn:hover::after {
     transform: skew(45deg) translate(-50%, -50%);
-   }
-   
-   .btn:hover {
+}
+
+.btn:hover {
     color: var(--color2);
-   }
-   
-   .btn:active {
+}
+
+.btn:active {
     filter: brightness(.7);
     transform: scale(.98);
-   }
+}
