@@ -40,7 +40,7 @@
 
 .card::before{
     border-color: #fff;
-    background-image: url(eifel.jpg);
+    background-image: url(https://us.123rf.com/450wm/federicofoto/federicofoto1812/federicofoto181200416/114146061-eiffel-tower-in-paris-france-with-blue-sky-and-white-clouds.jpg?ver=6);
 }
 
 .card::after{
