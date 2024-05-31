@@ -337,10 +337,10 @@ nav li {
 }
 
 nav li:hover {
-    border-bottom: 0.2rem rgb(8, 24, 196) solid;
-    border-radius: 10px;
+    border-bottom: 0.2rem rgb(116, 42, 113) solid;
+    border-radius: 5px;
     transition: 0.3s ease-in-out;
-    background-color: #3498db;
+    background-color: #5f606176;
     color: #df87ef;
 }
 
@@ -511,6 +511,7 @@ section {
 
 .container .box .content {
     position: relative;
+    width: 320px;
     left: 0;
     padding: 20px 40px;
     text-align: center;
@@ -743,7 +744,7 @@ footer p a {
         flex-direction: column;
         text-align: center;
         width: auto;
-        height: 110vh;
+        height: fit-content;
     }
 
     .compcontainer {
@@ -785,6 +786,7 @@ footer p a {
         flex-direction: column;
         text-align: center;
         width: auto;
+        height: fit-content;
     }
 
     .compcontainer {
@@ -815,12 +817,12 @@ footer p a {
 
 @media (max-width: 500px) {
     .comp-section {
-        height: 130vh;
+        height: fit-content;
     }
 
     .compcontainer {
         border: 1px transparent;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     }
 
     #mySearch {
@@ -829,9 +831,9 @@ footer p a {
         font-size: 1.6rem;
     }
 
-    .container {
+    /* .container {
         margin-top: 50px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 768px) {
