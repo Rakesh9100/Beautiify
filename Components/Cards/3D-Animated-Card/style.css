@@ -5,6 +5,10 @@ body {
     height: 100vh;
     background: #dfc2f2;
     background-image: linear-gradient(to right, #b3fff9, #dafddd);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 h1 {

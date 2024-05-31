@@ -5,6 +5,10 @@ body {
     height: 100vh;
     background: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Desktop-Gif-Pictures-HD-768x432.gif);
     background-size: cover;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 input {

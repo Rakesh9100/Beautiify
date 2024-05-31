@@ -2,6 +2,10 @@ body {
     margin: 0;
     background: skyblue;
     font-family: 'Arial', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .overlay-container {

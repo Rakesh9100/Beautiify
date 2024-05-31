@@ -1,4 +1,10 @@
 /* number of images*/
+body{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
 .gallery {
     --d: 10s;
     /* duration */

@@ -7,6 +7,10 @@ body {
     height: 100vh;
     font-family: "Poppins", sans-serif;
     background-color: #f9f5f5;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 ::-webkit-scrollbar {

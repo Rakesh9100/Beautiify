@@ -20,6 +20,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--bcg-color);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .box {

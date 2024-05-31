@@ -4,6 +4,10 @@ body {
     display: flex;
     height: 100vh;
     justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .phone {

@@ -6,6 +6,10 @@ body {
     background-size: cover;
     background-position: 50% 50%;
     background-attachment: fixed;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .container {

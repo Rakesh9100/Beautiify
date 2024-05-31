@@ -17,6 +17,10 @@ body {
     height: 100%;
     background: black;
     font-family: 'Oswald', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .container {

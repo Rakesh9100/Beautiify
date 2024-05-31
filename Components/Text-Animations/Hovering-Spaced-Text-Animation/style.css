@@ -1,5 +1,9 @@
 body {
     background: radial-gradient(#3bbe5c, #53123a);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .container {

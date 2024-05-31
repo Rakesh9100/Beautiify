@@ -3,6 +3,10 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .form {

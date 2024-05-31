@@ -3,6 +3,10 @@ body {
     background-image: linear-gradient(to right top, #2273f5, #3c7df3, #4f87f1, #6191ef, #719bec, #6aa8f2, #67b4f6, #69bff8, #52cffe);
     margin: 0;
     padding: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .container {

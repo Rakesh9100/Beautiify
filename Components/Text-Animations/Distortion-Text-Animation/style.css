@@ -12,6 +12,10 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #000;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 h2 {

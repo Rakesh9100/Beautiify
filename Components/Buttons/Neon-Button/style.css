@@ -12,6 +12,10 @@ body {
     min-height: 100vh;
     gap: 20px;
     background-color: #050801;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 a {

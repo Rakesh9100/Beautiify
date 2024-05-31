@@ -13,6 +13,10 @@ body {
     justify-content: center;
     align-items: center;
     background: radial-gradient(circle, rgb(241, 243, 242), rgb(1, 86, 138));
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .img-carousel {

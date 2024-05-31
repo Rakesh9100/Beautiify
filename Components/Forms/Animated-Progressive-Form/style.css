@@ -7,6 +7,10 @@ body {
     background-color: #25a3ff;
     position: relative;
     overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .c-checkbox {

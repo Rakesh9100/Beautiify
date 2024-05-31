@@ -6,6 +6,10 @@ body {
     place-items: center;
     perspective: 500px;
     perspective-origin: 50% calc(50% - 150px);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .scene {

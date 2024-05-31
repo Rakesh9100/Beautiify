@@ -9,6 +9,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 nav {

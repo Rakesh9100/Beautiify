@@ -16,6 +16,10 @@ body {
     place-items: center;
     overflow: hidden;
     font-family: poppins;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .container {

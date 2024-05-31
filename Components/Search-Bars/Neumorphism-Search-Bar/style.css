@@ -4,6 +4,10 @@ body {
     margin: 0;
     color: #292929;
     background-color: #eaeaea;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .container {

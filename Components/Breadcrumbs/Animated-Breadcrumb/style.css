@@ -5,6 +5,13 @@
     user-select: none;
 }
 
+body{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 h1 {
     position: relative;
     z-index: 1;

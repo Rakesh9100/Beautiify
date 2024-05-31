@@ -14,6 +14,10 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: linear-gradient(45deg, #010758, #490d61);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 ::selection {

@@ -20,6 +20,10 @@ body {
     font-family: 'DM Sans', sans-serif;
     transition: background .4s ease-in;
     background-color: #c394f8;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     &.blue {
         background-color: #428aa6;
     }

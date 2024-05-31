@@ -13,6 +13,10 @@ body {
 		"search" minmax(300px, 50vh) "results" minmax(20%, auto) / 1fr;
 	margin: 0;
 	font: 24px/1.5 system-ui, sans-serif;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
 #search {

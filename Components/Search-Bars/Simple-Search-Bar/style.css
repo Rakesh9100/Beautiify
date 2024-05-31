@@ -3,6 +3,10 @@
 body {
     background: #f2f2f2;
     font-family: 'Open Sans', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .search {

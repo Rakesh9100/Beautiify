@@ -5,6 +5,10 @@ body {
     background-color: #7494EC;
     padding: 30px;
     margin: 0px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 * {

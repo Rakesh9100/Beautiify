@@ -9,6 +9,10 @@ body {
     display: grid;
     place-items: center;
     background: #26272c;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .skeuo__switch {

@@ -7,6 +7,13 @@
     font-family: "Quicksand", sans-serif;
 }
 
+body{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -3,6 +3,10 @@
 body {
     font-family: 'Nunito', sans-serif;
     background-color: skyblue;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .btn {

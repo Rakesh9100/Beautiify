@@ -5,6 +5,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 button {

@@ -8,6 +8,10 @@ body {
     justify-content: center;
     font-family: "Yatra One", cursive;
     color: #555;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 body .exit {

@@ -9,6 +9,10 @@ body {
 	gap: 3rem;
 	margin-top: 6rem;
 	background: #1f2023;
+	user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 span {

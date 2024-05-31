@@ -3,6 +3,10 @@
 
 body {
     background-color: #000;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 /* Applying CSS to sphere */

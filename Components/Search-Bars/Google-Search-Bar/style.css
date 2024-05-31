@@ -7,6 +7,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #eee;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .search-container {

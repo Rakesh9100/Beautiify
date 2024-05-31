@@ -4,6 +4,10 @@ body {
     background: #f2f2f2;
     font-family: "Acme";
     background: #000;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .container {

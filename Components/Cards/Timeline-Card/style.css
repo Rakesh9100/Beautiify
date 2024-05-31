@@ -5,6 +5,10 @@
 body {
     background-color: #474e5d;
     font-family: Helvetica, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .timeline {

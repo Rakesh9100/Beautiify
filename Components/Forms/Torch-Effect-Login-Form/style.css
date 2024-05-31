@@ -15,6 +15,10 @@ body {
     min-height: 100vh;
     background: linear-gradient(45deg, #360033, #0b8793);
     overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
 
 }
 

@@ -13,6 +13,10 @@ body {
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 100vh;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .footer {

@@ -3,6 +3,10 @@ body {
 	color: #444;
 	background: #cecece;
 	font: 300 18px/18px Roboto, sans-serif;
+	user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 *,

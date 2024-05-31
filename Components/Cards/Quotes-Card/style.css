@@ -5,6 +5,10 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .quote-card {

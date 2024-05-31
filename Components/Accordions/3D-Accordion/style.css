@@ -19,6 +19,10 @@ html {
 
 body {
     perspective: 800px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 body * {

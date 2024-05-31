@@ -1,6 +1,10 @@
 body {
     background: #4AA6FB;
     font-family: sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .header {

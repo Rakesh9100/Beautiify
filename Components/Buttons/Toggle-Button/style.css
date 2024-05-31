@@ -11,6 +11,10 @@ body {
     min-height: 100vh;
     background: #2b2b2b;
     transition: 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #toggle {

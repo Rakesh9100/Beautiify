@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 .card {   
     height: 80%;
     aspect-ratio: 3/4;

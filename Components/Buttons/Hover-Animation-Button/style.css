@@ -4,6 +4,10 @@ body {
     height: 100%;
     overflow: hidden;
     text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .svg-wrapper {

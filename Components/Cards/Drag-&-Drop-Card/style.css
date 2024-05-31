@@ -7,6 +7,10 @@ body {
     margin-top: 20px;
     color: white;
     background: radial-gradient(circle, #d3d199, #e78b1b);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .drop_container {

@@ -9,6 +9,10 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Lato', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 /* ------------------------- Separate line ------------------------- */

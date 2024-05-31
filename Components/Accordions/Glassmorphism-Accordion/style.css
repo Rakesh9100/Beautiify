@@ -7,6 +7,10 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 button {

@@ -6,6 +6,10 @@ body {
     font-size: 12px;
     font-family: verdana;
     background: radial-gradient(circle, rgb(241, 243, 242), rgb(0, 7, 103));
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #carouselContainer {

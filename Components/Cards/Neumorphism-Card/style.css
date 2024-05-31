@@ -7,6 +7,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 #container {
     width: 100%;
     height: 100vh;

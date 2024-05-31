@@ -19,6 +19,10 @@ body {
     align-items: center;
     justify-content: center;
     background: var(--bg);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .inner {

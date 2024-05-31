@@ -10,6 +10,10 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     font-family: 'Open Sans Condensed', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 div[class*=box] {

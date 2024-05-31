@@ -4,6 +4,10 @@ body {
     margin: 0px;
     font-family: 'Roboto';
     text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #container {

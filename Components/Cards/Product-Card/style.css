@@ -8,6 +8,10 @@ body {
     height: 100vh;
     background-color: #ace0f0;
     background-image: url('Picture1.png');
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .product-card {

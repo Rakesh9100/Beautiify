@@ -17,6 +17,10 @@ body {
     overflow: hidden;
     background-color: #48dbfb;
     background-image: linear-gradient(315deg, #48dbfb 0%, #d3d3d3 74%);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .search-box {

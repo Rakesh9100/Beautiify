@@ -9,6 +9,10 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .signup-container {

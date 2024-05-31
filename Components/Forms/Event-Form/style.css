@@ -9,6 +9,10 @@ body {
     background-color: #c9e8ed;
     /* Light background color */
     transition: background-color 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 form {

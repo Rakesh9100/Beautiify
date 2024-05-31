@@ -1,5 +1,9 @@
 body {
     background-color: rgb(111, 111, 168);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .container {

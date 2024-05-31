@@ -5,6 +5,10 @@ body {
     align-items: center;
     justify-content: center;
     background: cornsilk;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 ul {

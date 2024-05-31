@@ -13,6 +13,10 @@ body {
     background-image: radial-gradient(circle, #fff 30%, #ccc);
     overflow: hidden;
     font-family: sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .textbox {

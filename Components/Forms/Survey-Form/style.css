@@ -1,6 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 header {

@@ -15,6 +15,10 @@ body {
     background: #111;
     width: 100%;
     overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .ring {

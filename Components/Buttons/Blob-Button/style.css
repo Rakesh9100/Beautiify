@@ -9,6 +9,10 @@
 body {
     background: rgba(0, 0, 0, 0.758);
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .buttons {

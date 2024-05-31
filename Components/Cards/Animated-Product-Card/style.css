@@ -5,6 +5,10 @@ body {
     background-image: linear-gradient(to right, #ffffb3, #ffe6e6);
     background-attachment: fixed;
     background-size: cover;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #container {

@@ -1,3 +1,10 @@
+body{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 .header {
     margin-bottom: 100px;
     text-align: center;

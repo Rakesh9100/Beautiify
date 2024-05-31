@@ -12,6 +12,10 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 form {

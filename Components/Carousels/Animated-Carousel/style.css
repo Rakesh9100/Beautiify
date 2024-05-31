@@ -1,3 +1,10 @@
+body{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 @-webkit-keyframes slidein {
     0% {
         top: -400px;

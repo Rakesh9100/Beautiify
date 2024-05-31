@@ -10,6 +10,10 @@
 body {
     min-height: 100%;
     background-color: #ffffff;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 h1 {
