@@ -759,7 +759,7 @@ footer p a {
         flex-direction: column;
         text-align: center;
         width: auto;
-        height: 110vh;
+        height: fit-content;
     }
 
     .compcontainer {
@@ -801,6 +801,7 @@ footer p a {
         flex-direction: column;
         text-align: center;
         width: auto;
+        height: fit-content;
     }
 
     .compcontainer {
@@ -831,12 +832,12 @@ footer p a {
 
 @media (max-width: 500px) {
     .comp-section {
-        height: 130vh;
+        height: fit-content;
     }
 
     .compcontainer {
         border: 1px transparent;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     }
 
     #mySearch {
@@ -845,9 +846,9 @@ footer p a {
         font-size: 1.6rem;
     }
 
-    .container {
+    /* .container {
         margin-top: 50px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 768px) {
