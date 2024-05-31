@@ -92,9 +92,10 @@ h1 {
     text-shadow: 1px 1px 1px black, 1px 1px 1px white;
     font-size: 1.8em;
 }
-.SearchCarousel{
+body.dark-mode .SearchCarousel {
     color: #FFFFFF;
 }
+
 .preview {
     margin-top: 45px;
     float: left;

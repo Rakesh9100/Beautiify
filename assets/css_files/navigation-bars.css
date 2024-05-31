@@ -92,7 +92,7 @@ h1 {
     text-shadow: 1px 1px 1px black, 1px 1px 1px white;
     font-size: 1.8em;
 }
-.SearchNavigationbar{
+body.dark-mode .SearchNavigationbar {
     color: #FFFFFF;
 }
 
