@@ -15,6 +15,7 @@ body {
 #section-wrapper {
     width: 100%;
     margin-top: 25px;
+    height: 100vh;
 }
 
 .box-wrapper {
@@ -35,7 +36,7 @@ body {
 
 .info-wrap {
     width: 35%;
-    height: 80vh;
+    height: 95vh;
     padding: 40px;
     float: left;
     display: block;
@@ -122,7 +123,7 @@ body {
 
 .form-wrap {
     width: 65%;
-    height: 80vh;
+    height: 95vh;
     float: right;
     padding: 40px 25px 35px 25px;
     border-radius: 0px 30px 30px 0px;
