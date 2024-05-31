@@ -10,3 +10,31 @@
 #searchBar input {
     margin-top: -10px;
 }
+#searchBar {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+#componentSearch {
+    width: 300px;
+    padding: 10px 20px 10px 50px; /* Adjusted to make space for the icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    left: 20px;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #aaa;
+    pointer-events: none;
+}

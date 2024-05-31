@@ -939,7 +939,7 @@ footer p a {
 
 .search-icon {
     position: absolute;
-    left: 10px;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none; /* Ensure the icon does not block input clicks */
@@ -947,5 +947,5 @@ footer p a {
 }
 
 .search-icon i {
-    font-size: 16px; /* Adjust the icon size as needed */
+    font-size: 30px; /* Adjust the icon size as needed */
 }
