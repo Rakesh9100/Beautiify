@@ -744,7 +744,7 @@ footer p a {
         flex-direction: column;
         text-align: center;
         width: auto;
-        height: 110vh;
+        height: fit-content;
     }
 
     .compcontainer {
@@ -786,6 +786,7 @@ footer p a {
         flex-direction: column;
         text-align: center;
         width: auto;
+        height: fit-content;
     }
 
     .compcontainer {
