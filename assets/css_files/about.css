@@ -210,6 +210,9 @@ h3 {
 
     .image {
         border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .content {
