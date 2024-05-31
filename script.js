@@ -36,6 +36,25 @@ window.onload = calcScrollValue;
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+let isSelectionEnabled = true; 
+let preventSelection = function(e) { e.preventDefault(); }; // Define the function once
+
+document.getElementById('toggle-selection').addEventListener('click', () => {
+    isSelectionEnabled = !isSelectionEnabled;
+
+    if (isSelectionEnabled) {
+        // Enable text selection
+        document.removeEventListener('selectstart', preventSelection); // Remove the specific listener
+        document.getElementById('toggle-selection').textContent = 'On';
+        document.getElementById('toggle-selection').classList.remove('off'); 
+    } else {
+        // Disable text selection
+        document.addEventListener('selectstart', preventSelection); // Add the specific listener
+        document.getElementById('toggle-selection').textContent = 'Off';
+        document.getElementById('toggle-selection').classList.add('off'); 
+    }
+});
+
 // Function to filter components
 function filterComponents() {
     var input, filter, components, i;

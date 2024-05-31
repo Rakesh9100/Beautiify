@@ -219,6 +219,31 @@ button#dark-mode-toggle {
     color: #222;
 }
 
+#toggle-selection {
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-left: 15px; 
+    transition: background-color 0.3s ease; 
+}
+
+#toggle-selection.off {
+    background-color: #f44336; 
+}
+
+#toggle-selection:hover {
+    background-color: #3e8e41; 
+}
+
+/* Hover effect for "Off" state */
+#toggle-selection.off:hover {
+    background-color: #d32f2f; 
+}
+
 .header1 {
     position: sticky;
     top: 0;
