@@ -53,11 +53,11 @@ section {
 
 .heading {
     font-size: 4em;
-    font-weight: bolder;
+    font-weight: bold;
     color: white;
     text-align: center;
-    margin: 75px 0 80px;
     text-shadow: 2px 2px 2px black, 1px 1px 1px white;
+    margin: 150px 0 80px;
 }
 
 .contain {

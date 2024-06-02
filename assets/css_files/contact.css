@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -10,11 +12,12 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
+    font-family: Montserrat, sans-serif;
 }
 
 #section-wrapper {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 60px;
 }
 
 .box-wrapper {
@@ -49,6 +52,8 @@ body {
     font-size: 28px;
     letter-spacing: 0.5px;
     text-shadow: 1px 2px 2px black;
+    margin-bottom: 40px;
+
 }
 
 .info-sub-title {
@@ -130,18 +135,21 @@ body {
 }
 
 .form-title {
-    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    /* font-family: Georgia, 'Times New Roman', Times, serif !important; */
     text-align: center;
     margin-left: 23px;
     font-size: 30px;
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 2px black, 1px 1px 2px white;
+    margin-bottom: 40px;
 }
 
 .form-fields {
     display: table;
     width: 100%;
     padding: 15px 5px 5px 5px;
+    margin-bottom: 48px;
+
 }
 
 .form-fields input,
@@ -174,7 +182,7 @@ body {
 }
 
 .submit-button {
-    width: 96%;
+    width: 94%;
     height: 9vh;
     margin: 20px 12px;
     border-radius: 30px;
@@ -189,6 +197,7 @@ body {
     background: #49025f;
     box-shadow: 2px 3px 8px #7d7a7a, -3px -3px 8px white;
     transition: transform 0.5s;
+    
 }
 
 .submit-button:hover {

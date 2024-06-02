@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -7,7 +10,7 @@
 }
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: "Montserrat", sans-serif;
     display: grid;
     background-image: url(../images/bg3.png);
     background-repeat: no repeat;
@@ -52,7 +55,7 @@ section {
     background-color: #000000;
     justify-content: center;
     align-items: center;
-    border-radius: 0 0 12px 12px;
+    border-radius: 12px;
     color: #fff;
 }
 
@@ -67,6 +70,9 @@ h3 {
     padding: 0 25px;
     opacity: 0.9;
     color: #ffecd1;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 1.8;
 }
 
 .content span {
@@ -83,8 +89,9 @@ h3 {
     width: 150%;
     text-align: center;
     margin: 0 auto;
-    line-height: 1.7;
-    color: #ffffff
+    line-height: 2;
+    color: #ffffff;
+
 }
 
 .links {

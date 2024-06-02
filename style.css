@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --primary: #ff1b82;
@@ -12,8 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
-    font-family: Ubuntu;
+    /* font-family: Ubuntu; */
 }
 
 /* Scrollbar Css */
@@ -193,7 +193,7 @@ html {
 
 body,
 html {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     line-height: 1.4;
     scroll-behavior: smooth;
@@ -330,17 +330,18 @@ nav ul {
 
 nav li {
     font-size: 2.1rem;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
     margin-right: 10px;
 }
 
 nav li:hover {
-    border-bottom: 0.2rem rgb(116, 42, 113) solid;
+    transform: scale(1.2);
+    /* border-bottom: 0.2rem rgb(116, 42, 113) solid; */
     border-radius: 5px;
     transition: 0.3s ease-in-out;
-    background-color: #5f606176;
+    /* background-color: #5f606176; */
     color: #df87ef;
 }
 
@@ -475,11 +476,17 @@ section {
     justify-content: center;
     align-items: center;
     margin: 25px;
-    background: rgba(224, 202, 245, 0.743);
+    /* background: rgba(224, 202, 245, 0.743); */
+    /* background: white; */
     border: 4px solid rgb(18, 100, 166);
     border-radius: 14px;
     box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
     cursor: pointer;
+     backdrop-filter: blur(25px) saturate(183%);
+    -webkit-backdrop-filter: blur(25px) saturate(183%);
+    background-color: rgba(255, 255, 255, 0.48);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
 .container .box:hover {
@@ -534,7 +541,7 @@ section {
     color: rgb(37, 111, 172);
     margin-top: 25px;
     margin-bottom: 5px;
-    text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172);
+    /* text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172); */
 }
 
 .container .box:hover .content i,
@@ -666,13 +673,14 @@ footer p a {
     margin: 4rem 4rem 0;
     color: white;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 #searchBar h1 {
-    font-family: Ubuntu;
+    font-family: Montserrat, sans-serif;
     font-size: 4rem;
-    text-shadow: 2px 2px 10px var(--light);
     margin-top: 16px;
+    margin-bottom: 10px;
 }
 
 #searchBar button {
@@ -696,7 +704,7 @@ footer p a {
 }
 
 #searchBar input {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border: 0;
     padding: 1rem;
     height: 4rem;
@@ -705,7 +713,7 @@ footer p a {
     border-radius: 2rem;
     width: 40rem;
     transition: all linear .2s;
-    font-weight: 600;
+    font-weight: 200;
     padding-right: 0 !important;
 }
 

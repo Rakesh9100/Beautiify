@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     background-image: url(../images/bg3.png);
     background-repeat: no repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
+    font-family:  "Montserrat", sans-serif;
 
 }
 
@@ -14,17 +17,18 @@ body {
 
 .contributors h1 {
     text-align: center;
-    color: rgb(68, 184, 230);
-    font-weight: 600;
+    /* color: rgb(68, 184, 230); */
+    color: white;
+    font-weight: 700;
     font-size: 4.5rem;
-    margin-top: 25px;
+    margin-top: 80px;
     margin-bottom: 4%;
     transition: color 0.3s ease-in-out;
 }
 
 .contributors h1:hover {
     cursor: pointer;
-    color: rgb(148, 250, 64);
+    color: rgba(182, 186, 189, 0.671);
 }
 
 .dark-mode .contributors h1 {
