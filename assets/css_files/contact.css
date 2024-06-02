@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
-    font-family: Montserrat, sans-serif;
 }
 
 #section-wrapper {
@@ -149,6 +149,7 @@ body {
     width: 100%;
     padding: 15px 5px 5px 5px;
     margin-bottom: 48px;
+
 
 }
 
