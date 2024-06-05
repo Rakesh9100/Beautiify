@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: clamp(1.5em, 2vw, 2em);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .marquee {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #99f2c8;
+    box-sizing: border-box;
+    width: 100%;
+    height: 90px;
+  }
+  
+  .track {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: marquee 15s linear infinite;
+  }
+  
+  .content-item {
+    margin-top: 30px;
+    text-align: center;
+    color: #1f4037;
+    
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
