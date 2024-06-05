@@ -8,14 +8,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 100px;
+    gap: 100px;
     min-height: 100vh;
     background: linear-gradient(45deg,#0a2ca8,#0aedb0);
+}
+
+.heading {
+    flex: 0.2;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+    text-align: center;
 }
 
 .navbar {
     position: relative;
     width: 320px;
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
