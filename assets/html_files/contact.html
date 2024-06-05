@@ -94,7 +94,7 @@
                 </ul>
             </div>
             <div class="form-wrap">
-                <form name="Beautiify Contact" autocomplete="off" netlify onsubmit="return myfun()">
+                <!-- <form name="Beautiify Contact" autocomplete="off" netlify onsubmit="return myfun()">
                     <div>
                         <h2 class="form-title">Send us a message :)</h2>
                     </div>
@@ -113,12 +113,34 @@
                     <div>
                         <button type="submit" class="submit-button">Send Message</button>
                     </div>
+                </form> -->
+                <form name="Beautiify Contact" autocomplete="off" netlify onsubmit="return validateForm(event)">
+                    <div>
+                        <h2 class="form-title">Send us a message :)</h2>
+                    </div>
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <input id="cform" type="text" class="fname" name="name" placeholder="Name" required />
+                            <span id="message"></span>
+                        </div>
+                        <div class="form-group">
+                            <input id="email" type="email" class="email" name="email" placeholder="Email" required>
+                            <span id="emailError" class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
 
     <script src="../js_files/dark-mode.js"></script>
+    <script src="../js_files/emailval.js"></script>
 
     <div class="footer" id="about">
         <footer>
