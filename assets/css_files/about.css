@@ -1,5 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
+.wrapper1{
+    display: grid;
+    place-content: center;
+    color: white;
+    height: 20vh;
+   
+     font-family: 'Oswald', sans-serif; 
+   
+    font-size: 100px;
+    background-size: 300% auto;
+    font-weight: 500;
+   
+  }
+ 
+  @media (max-width:600px){
+      .wrapper1
+      {
+      font-size:55px ;
+      }
+  }
+  
+  @media (max-width:450px){
+      .wrapper1
+      {
+      font-size:80px ;
+      padding-top: 20%;
+      }
+  }
+  
+  @media (max-width:204px){
+      .wrapper1
+      {
+          font-size:30px ;
+      }
+  }
+  
+  @keyframes move{
+      0%{
+          background-position: 0% 0%;
+      }
+      100%{
+          background-position: 100% 0%;
+      }
+  }
+  
+  
+  .wrapper1 > div{
+      grid-area:1/1/-1/-1;
+  }
+  .top{
+      clip-path: polygon(0% 0%,100% 0%,100% 48%,0% 59%);
+  }
+  .bottom{
+      clip-path: polygon(0% 60%, 100% 50%,100% 100%,0% 100%);
+      background: linear-gradient(177deg,rgba(12, 12, 12, 0.025) 53%,rgba(255, 255, 255, 0.779) 65%);
+      background-clip: text;
+      transform: translateX(-0.02em);
+      color: transparent;
+  }
 * {
     box-sizing: border-box;
     padding: 0;
@@ -24,7 +83,7 @@ body {
     width: calc(100% - 9.5px);
 }
 
-section {
+.mainsec {
     display: flex;
     grid-template-columns: 1fr 1fr;
     min-height: 70vh;

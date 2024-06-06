@@ -1,5 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.oswald{
+    font-family: 'Oswald', sans-serif; 
+}
+.wrapper1{
+    display: grid;
+    place-content: center;
+    color: white;
+    height: 20vh;
+    font-family: "Playfair Display", serif; 
+    background-size: 300% auto;
 
+   
+  }
+ 
+  @media (max-width:600px){
+      .wrapper1
+      {
+      font-size:55px ;
+      }
+  }
+  
+  @media (max-width:450px){
+      .wrapper1
+      {
+      font-size:80px ;
+      padding-top: 20%;
+      }
+  }
+  
+  @media (max-width:204px){
+      .wrapper1
+      {
+          font-size:30px ;
+      }
+  }
+  
+  @keyframes move{
+      0%{
+          background-position: 0% 0%;
+      }
+      100%{
+          background-position: 100% 0%;
+      }
+  }
+  
+  #sec1{
+    font-size: 100px;
+    font-weight: 600;
+  }
+  #sec2{
+    font-size: 60px;
+    font-weight: 500;
+  }
+  .wrapper1 > div{
+      grid-area:1/1/-1/-1;
+  }
+  .top{
+      clip-path: polygon(0% 0%,100% 0%,100% 48%,0% 58%);
+  }
+  .bottom{
+      clip-path: polygon(0% 60%, 100% 50%,100% 100%,0% 100%);
+      background: linear-gradient(177deg,rgba(12, 12, 12, 0.025) 50%,rgba(255, 255, 255, 0.848) 65%);
+      background-clip: text;
+      transform: translateX(-0.02em);
+      color: transparent;
+  }
 :root {
     --primary: #ff1b82;
     --secondary: #ffffff;
