@@ -4,11 +4,11 @@ body {
     padding: 0;
     background-image: url('bg.jpg');
     background-size: cover;
-    color:white;
+    color: white;
 }
 
 header {
-    background-color:black;
+    background-color: black;
     color: #fff;
     padding: 20px;
 }
@@ -17,7 +17,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black; /* Changing navbar text color to black */
+    color: black;
+    /* Changing navbar text color to black */
 }
 
 .container {
@@ -35,7 +36,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-size:1.2rem;
+    font-size: 1.2rem;
 }
 
 nav ul li {
@@ -49,7 +50,8 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: #fff; /* Changing navbar link color to white */
+    color: #fff;
+    /* Changing navbar link color to white */
     text-decoration: none;
     font-weight: bold;
 }
@@ -74,7 +76,8 @@ nav ul li a {
 .contact-form label {
     display: block;
     margin-bottom: 5px;
-    color:white; /* Changing form label color to red */
+    color: white;
+    /* Changing form label color to red */
 }
 
 .contact-form input,
@@ -95,28 +98,27 @@ nav ul li a {
 
 .contact-info {
     width: 45%;
-    font-size:1.2rem;
-
+    font-size: 1.2rem;
 }
 
 .contact-info h2 {
     margin-top: 20px;
-    font-family:'Dancing Script', cursive;
-    color: red; /* Changing contact info heading color to red */
+    font-family: 'Dancing Script', cursive;
+    color: red;
+    /* Changing contact info heading color to red */
 }
 
-h2{
-    font-family:'Dancing Script', cursive;
+h2 {
+    font-family: 'Dancing Script', cursive;
     color: red;
     margin-top: 20px;
-    margin-left:15%;
-    font-size:2.8rem;
-    
+    margin-left: 15%;
+    font-size: 2.8rem;
 }
+
 .contact-info ul {
     list-style-type: none;
     padding: 0;
-
 }
 
 .contact-info ul li {
