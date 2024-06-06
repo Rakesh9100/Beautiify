@@ -617,8 +617,8 @@ footer p a {
 
 #progress {
     position: fixed;
-    bottom: 109px;
-    right: 42px;
+    bottom: 20px;
+    right: 10px;
     height: 50px;
     width: 50px;
     display: none;
