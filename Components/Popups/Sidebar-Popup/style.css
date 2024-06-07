@@ -4,13 +4,14 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: 400;
-
 }
-:root{
+
+:root {
     --main-color: #ef5a28;
 }
+
 main {
-    background-color:var(--main-color);
+    background-color: var(--main-color);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -18,7 +19,8 @@ main {
     gap: 10px;
     height: 100dvh;
 }
-button{
+
+button {
     padding: 10px 0;
     border-radius: 7px;
     border: none;
@@ -30,12 +32,15 @@ button{
     color: var(--main-color);
     letter-spacing: 1px;
 }
-main button:hover{
+
+main button:hover {
     background-color: #ffd1c2;
 }
+
 button:active {
     transform: scale(0.98);
 }
+
 .pop-up-container {
     position: fixed;
     top: 0;
@@ -49,6 +54,7 @@ button:active {
     visibility: hidden;
     transition: 0.1s;
 }
+
 .pop-up-wrapper {
     background-color: white;
     padding: 20px 15px;
@@ -61,13 +67,16 @@ button:active {
     gap: 10px;
     position: relative;
 }
+
 .pop-up-container.active {
     visibility: visible;
 }
-.pop-up-container.active .pop-up-wrapper{
+
+.pop-up-container.active .pop-up-wrapper {
     opacity: 1;
     transform: translateX(0);
 }
+
 .close-btn {
     position: absolute;
     top: 5px;
@@ -87,6 +96,7 @@ button:active {
     background-color: black;
     color: white;
 }
+
 .pop-up-wrapper p {
     padding-top: 25px;
     text-align: center;
