@@ -4,13 +4,14 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: 400;
-
 }
-:root{
+
+:root {
     --main-color: #c41f51;
 }
+
 main {
-    background-color:var(--main-color);
+    background-color: var(--main-color);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -18,7 +19,8 @@ main {
     gap: 10px;
     height: 100dvh;
 }
-button{
+
+button {
     border-radius: 50%;
     border: none;
     outline: none;
@@ -29,19 +31,22 @@ button{
     background-color: #ffeaf0;
     color: var(--main-color);
 }
-main button:hover{
+
+main button:hover {
     background-color: #ffcada;
 }
+
 .tooltip-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
+
 .tooltip-text {
     position: absolute;
-    top:calc(-100% - 15px);
+    top: calc(-100% - 15px);
     background-color: white;
     padding: 10px;
     width: max-content;
@@ -50,6 +55,7 @@ main button:hover{
     font-size: 13px;
     color: var(--main-color);
 }
+
 .tooltip-text:after {
     position: absolute;
     content: '';
@@ -61,6 +67,7 @@ main button:hover{
     border-right: 8px solid transparent;
     border-top: 10px solid white;
 }
+
 .tooltip-wrapper:hover .tooltip-text {
     display: block;
 }
