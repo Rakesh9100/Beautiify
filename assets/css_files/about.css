@@ -180,6 +180,7 @@ h3 {
 
 .credit .social-icon li a:hover {
     transform: translateY(-10px);
+    color: red;
 }
 
 .credit p {
