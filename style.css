@@ -414,7 +414,7 @@ section {
 .comp-section .compcontainer a {
     margin-top: 50px;
 }
-/*----botton get components---*/
+
 .comp-section .compcontainer .started {
     height: auto;
     font-size: 25px;
@@ -425,15 +425,13 @@ section {
     color: rgb(104, 73, 131)
     background: rgba(224, 202, 245, 0.743);
     cursor: pointer;
-    /*transition: transform 0.5s;*/
-    transform: translateY(-3px);
     box-shadow: 2px 2px 2px black, 1px 1px 1px white;
-    text-shadow: 1px 1px 2px rgb(185, 16, 176), 1px 1px 1px rgb(76, 6, 134);
+    text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(57, 4, 100);
 }
 
 .comp-section .compcontainer .started:hover {
-   transform: scale(1.05);
-    border: 2px solid var(rgb(248, 4, 203));
+    transform: scale(1.05);
+    border: 2px solid var(black);
     background: rgba(255, 255, 255, 0.881);
 }
 
