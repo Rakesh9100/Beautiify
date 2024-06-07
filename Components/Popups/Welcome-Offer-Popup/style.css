@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: 400;
-
 }
 
 :root {
@@ -160,9 +159,11 @@ button:active {
     .pop-up-wrapper .right {
         width: 100%;
     }
-    .pop-up-wrapper .left{
+
+    .pop-up-wrapper .left {
         display: none;
     }
+
     .pop-up-wrapper .left img {
         width: 100%;
         height: 50%;
