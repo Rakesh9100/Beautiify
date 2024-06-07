@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css_files/contact.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js_files/contact.js"></script>
     <title>Beautiify</title>
 </head>
 
@@ -176,7 +177,7 @@
                     <div class="content">
                         <i class="fas fa-spinner"></i>
                         <h2>Loaders</h2>
-                    </div>  
+                    </div>
                 </a>
             </div>
         </div>
@@ -221,49 +222,74 @@
             </div>
         </div>
     </div>
-
-    <script src="./assets/js_files/dark-mode.js"></script>
-
     <div class="footer" id="about">
         <footer>
-            <ul class="social-icon">
-                <li>
-                    <a href="https://rakesh9100.bio.link/" target="_blank"><i class="fas fa-link"></i></a>
-                </li>
-                <li>
-                    <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/Rakesh9100" target="_blank"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/rakesh250602/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://discord.com/users/944144134950748170" target="_blank"><i class="fab fa-discord"></i></a>
-                </li>
-            </ul>
+            <div class="footer-container">
+                <div class="contact-form">
+                    <h2 class="contact-us">MESSAGE US</h2>
+                    <form name="Beautiify Contact" autocomplete="off" netlify onsubmit="return myfun()">
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                        <textarea id="enquiry" name="enquiry" placeholder="Your Enquiry"></textarea>
+                        <div>
+                            <button type="submit" class="footer-button">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>CALL US ON</h3>
+                    <p class="company-p">+44 (0)114 430 0145</p>
+                    <ul class="info-detail">
+                        <li>
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Email:</span>
+                            <a href="mailto:roshanrakesh7362@gmail.com">roshanrakesh7362@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <span>Website:</span>
+                            <a href="https://beautiify.netlify.app/">beautiify.netlify.app</a>
+                        </li>
+                    </ul>
+                    <a href="#">FOLLOW US</a>
+                    <ul class="social-icon">
+                        <li>
+                            <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Rakesh9100" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/rakesh250602/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://discord.com/users/944144134950748170" target="_blank"><i class="fab fa-discord"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <p>
                 Created By
                 <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | © <span id="year"></span>: All Rights Reserved
             </p>
         </footer>
     </div>
+    <script src="./assets/js_files/dark-mode.js"></script>
 
     <!-- Scroll To Top Button -->
     <div id="progress">
-        <span id="progress-value" class="bi bi-arrow-up-short"></span>
+        <span id="progress-value">&#x1F815;</span>
     </div>
 
+    <!-- Script Files for Chat Bot-->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/c49225f4-f243-440f-a8ab-9ef97d82964b/webchat/config.js" defer></script>
     <script src="./script.js"></script>
     <script src="./assets/js_files/hamburgerMenu.js"></script>
     <script src="./assets/js_files/contributor.js"></script>
