@@ -4,13 +4,14 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: 400;
-
 }
+
 :root {
     --main-color: #16918b;
 }
+
 main {
-    background-color:var(--main-color);
+    background-color: var(--main-color);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -18,7 +19,8 @@ main {
     gap: 10px;
     height: 100dvh;
 }
-button{
+
+button {
     padding: 10px;
     border-radius: 7px;
     border: none;
@@ -29,12 +31,15 @@ button{
     color: var(--main-color);
     letter-spacing: 1px;
 }
-main button:hover{
+
+main button:hover {
     background-color: #ccfffc;
 }
+
 button:active {
     transform: scale(0.98);
 }
+
 .pop-up-container {
     position: fixed;
     top: 0;
@@ -48,6 +53,7 @@ button:active {
     visibility: hidden;
     transition: 0.1s;
 }
+
 .pop-up-wrapper {
     background-color: white;
     padding: 10px;
@@ -61,37 +67,43 @@ button:active {
     gap: 10px;
     box-shadow: 0 0 10px white;
 }
+
 .pop-up-container.active {
     visibility: visible;
 }
-.pop-up-container.active .pop-up-wrapper{
+
+.pop-up-container.active .pop-up-wrapper {
     transform: scale(1);
     opacity: 1;
     transform: translateY(0);
 }
-.pop-up-wrapper h4{
+
+.pop-up-wrapper h4 {
     font-weight: bold;
-    /* padding-bottom: 5px; */
-    /* border-bottom: 1px solid gray; */
 }
+
 .pop-up-wrapper p {
     margin: 15px 0;
     font-size: 14px;
 }
+
 .btn-wrapper {
     padding: 10px 0;
     text-align: right;
     border-top: 1px solid gray;
 }
-.btn-wrapper button{
+
+.btn-wrapper button {
     font-size: 14px;
     padding: 7px 10px;
     border-radius: 3px;
     color: white;
 }
-.btn-wrapper button:first-of-type{
+
+.btn-wrapper button:first-of-type {
     background-color: rgb(193, 193, 193);
 }
-.btn-wrapper button:last-of-type{
+
+.btn-wrapper button:last-of-type {
     background-color: var(--main-color);
 }
