@@ -35,7 +35,7 @@ body {
 
 .info-wrap {
     width: 35%;
-    height: 80vh;
+    height: 86vh;
     padding: 40px;
     float: left;
     display: block;
@@ -122,7 +122,7 @@ body {
 
 .form-wrap {
     width: 65%;
-    height: 80vh;
+    height: 86vh;
     float: right;
     padding: 40px 25px 35px 25px;
     border-radius: 0px 30px 30px 0px;
