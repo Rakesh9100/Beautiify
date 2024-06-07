@@ -4,13 +4,14 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: 400;
-
 }
-:root{
+
+:root {
     --main-color: #290080;
 }
+
 main {
-    background-color:var(--main-color);
+    background-color: var(--main-color);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -18,7 +19,8 @@ main {
     gap: 10px;
     height: 100dvh;
 }
-button{
+
+button {
     padding: 10px 0;
     border-radius: 7px;
     border: none;
@@ -30,12 +32,15 @@ button{
     color: var(--main-color);
     letter-spacing: 1px;
 }
-main button:hover{
+
+main button:hover {
     background-color: #dfd0ff;
 }
+
 button:active {
     transform: scale(0.98);
 }
+
 .toast-wrapper {
     position: fixed;
     top: 10px;
@@ -46,6 +51,7 @@ button:active {
     background-color: white;
     border-radius: 3px;
 }
+
 .toast-wrapper.active:after {
     position: absolute;
     content: '';
@@ -61,6 +67,7 @@ button:active {
     animation-delay: 0.5s;
     border-radius: 0 0 3px 3px;
 }
+
 .toast-wrapper.active {
     right: 5px;
 }
@@ -69,7 +76,8 @@ button:active {
     0% {
         width: 0;
     }
-    100%{
+
+    100% {
         width: 100%;
     }
 }
