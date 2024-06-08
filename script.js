@@ -34,7 +34,7 @@ window.addEventListener('scroll', function () {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("currentYear").textContent = new Date().getFullYear();
 
 // Function to filter components
 function filterComponents() {
