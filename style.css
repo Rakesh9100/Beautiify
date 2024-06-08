@@ -922,3 +922,18 @@ footer p a {
         margin: 15px !important;
     }
 }
+
+.no-results {
+    display: none;
+    padding-top: 50px;
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.no-results h2 {
+    text-align: center;
+}
