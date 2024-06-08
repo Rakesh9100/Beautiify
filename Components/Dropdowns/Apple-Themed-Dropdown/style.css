@@ -8,6 +8,12 @@
     --dropdown-item-hover-bg: #e5e5e5;
 }
 
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
 body.dark-theme {
     --background-color: #000;
     --text-color: #fff;
@@ -15,12 +21,6 @@ body.dark-theme {
     --button-text-color: #000;
     --dropdown-bg-color: #333;
     --dropdown-item-hover-bg: #555;
-}
-
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-apple {
@@ -34,6 +34,7 @@ body {
 
 .btn-apple:hover {
     background-color: var(--button-bg-color);
+    color: var(--button-text-color);
     transform: scale(1.05);
 }
 
@@ -94,6 +95,10 @@ body {
     margin-right: 10px;
 }
 
+footer {
+    margin-top: 50px;
+}
+
 @media (max-width: 576px) {
     .btn-apple {
         width: 100%;
@@ -105,8 +110,4 @@ body {
         width: 100%;
         border-radius: 0 0 15px 15px;
     }
-}
-
-footer {
-    margin-top: 50px;
 }
