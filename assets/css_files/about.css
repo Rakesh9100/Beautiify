@@ -32,11 +32,14 @@ section {
     margin: 0 auto;
     margin-top: -50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 12px
+    border-radius: 12px;
+    margin-top: 40px;
+    /* background-color: #000000; */
+    backdrop-filter: blur(15px);
 }
 
 .image {
-    background-color: #000000;
+    /* background-color: #000000; */
     display: flex;
     border-radius: 12px 0 0 12px;
     width: 110%;
@@ -49,7 +52,7 @@ section {
 }
 
 .content {
-    background-color: #000000;
+    /* background-color: #000000; */
     justify-content: center;
     align-items: center;
     border-radius: 0 0 12px 12px;
@@ -140,18 +143,17 @@ h3 {
 
 .credit {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    min-height: 22vh;
-    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    /* justify-content: center; */
+    /* align-items: flex-end; */
+    /* min-height: 22vh; */
+    /* position: relative; */
     width: 100vw;
     box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
-    min-height: 30px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    /* min-height: 30px; */
+    /* padding: 20px 50px; */
 }
 
 .credit .social-icon {
