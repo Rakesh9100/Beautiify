@@ -1,0 +1,113 @@
+/* Apple inspired theme */
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --button-bg-color: #000;
+    --button-text-color: #fff;
+    --dropdown-bg-color: #f9f9f9;
+    --dropdown-item-hover-bg: #e5e5e5;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    --background-color: #000;
+    --text-color: #fff;
+    --button-bg-color: #fff;
+    --button-text-color: #000;
+    --dropdown-bg-color: #333;
+    --dropdown-item-hover-bg: #555;
+}
+
+.btn-apple {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-apple:hover {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    transform: scale(1.05);
+}
+
+.btn-theme, .btn-github {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-theme:hover, .btn-github:hover {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+}
+
+.btn-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.dropdown-menu {
+    background-color: var(--dropdown-bg-color);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(-20px);
+    opacity: 0;
+    display: none;
+    max-width: 300px;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+}
+
+.dropdown-item {
+    font-size: 16px;
+    padding: 10px 20px;
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.dropdown-item:hover, .dropdown-item.focused {
+    background-color: var(--dropdown-item-hover-bg);
+    color: var(--text-color);
+}
+
+.dropdown-item i {
+    margin-right: 10px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+@media (max-width: 576px) {
+    .btn-apple {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+    }
+}
