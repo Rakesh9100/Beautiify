@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+.reservation-form {
+    background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.reservation-form h2 {
+    margin-bottom: 20px;
+}
+
+.reservation-form label {
+    font-family: 'Dancing Script', cursive;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.reservation-form input, .reservation-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    font-family: 'Lobster', cursive;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #ff7e5f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #feb47b;
+}
