@@ -27,7 +27,8 @@ body {
 section {
     display: flex;
     grid-template-columns: 1fr 1fr;
-    min-height: 70vh;
+    /* removed the extra space in about us page */
+    min-height: 70;
     width: 78vw;
     margin: 0 auto;
     margin-top: -50px;
