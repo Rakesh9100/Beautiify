@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Cancellation Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Cancellation Form</h1>
+        <form id="cancellationForm">
+            <section>
+                <h2>Customer Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </section>
+
+            <section>
+                <h2>Order Information</h2>
+                <label for="orderNumber">Order Number:</label>
+                <input type="text" id="orderNumber" name="orderNumber" required>
+
+                <label for="orderDate">Order Date:</label>
+                <input type="date" id="orderDate" name="orderDate" required>
+
+                <label for="products">Product(s) Ordered:</label>
+                <textarea id="products" name="products" rows="4" required></textarea>
+
+                <label for="reason">Reason for Cancellation:</label>
+                <select id="reason" name="reason" required>
+                    <option value="mistake">Ordered by mistake</option>
+                    <option value="better-price">Found a better price elsewhere</option>
+                    <option value="delivery-time">Delivery time too long</option>
+                    <option value="changed-mind">Changed mind</option>
+                    <option value="no-longer-needed">Product no longer needed</option>
+                    <option value="other">Other</option>
+                </select>
+            </section>
+
+            <section>
+                <h2>Cancellation Details</h2>
+                <label for="resolution">Preferred Resolution:</label>
+                <select id="resolution" name="resolution" required>
+                    <option value="refund">Refund</option>
+                    <option value="store-credit">Store Credit</option>
+                    <option value="exchange">Exchange</option>
+                </select>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </section>
+
+            <section>
+                <h2>Refund Information</h2>
+                <label for="refundMethod">Preferred Refund Method:</label>
+                <select id="refundMethod" name="refundMethod" required>
+                    <option value="original">Original payment method</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                    <option value="store-credit">Store Credit</option>
+                </select>
+
+                <div id="bankDetails" style="display: none;">
+                    <label for="bankName">Bank Name:</label>
+                    <input type="text" id="bankName" name="bankName">
+
+                    <label for="accountNumber">Account Number:</label>
+                    <input type="text" id="accountNumber" name="accountNumber">
+
+                    <label for="accountHolder">Account Holder Name:</label>
+                    <input type="text" id="accountHolder" name="accountHolder">
+
+                    <label for="swiftCode">Bank Swift Code:</label>
+                    <input type="text" id="swiftCode" name="swiftCode">
+                </div>
+            </section>
+
+            <section>
+                <h2>Customer Agreement</h2>
+                <p>I hereby request the cancellation of the order as specified above. I understand that the processing of this cancellation request will be in accordance with the seller’s cancellation and refund policies.</p>
+
+                <label for="signature">Customer Signature:</label>
+                <input type="text" id="signature" name="signature" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </section>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
