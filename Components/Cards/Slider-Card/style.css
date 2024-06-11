@@ -1,8 +1,6 @@
-body{
-    background-image: 
-        linear-gradient(
-            to top right, #f6ee5c, #EC4899
-        );
+body {
+    background-image:
+        linear-gradient(to top right, #f6ee5c, #EC4899);
     min-height: 100vh;
     margin: 0;
     display: flex;
@@ -10,13 +8,15 @@ body{
     align-items: center;
     font-family: monospace;
 }
-.slider{
+
+.slider {
     position: relative;
     width: 100%;
     height: 370px;
     overflow: hidden;
 }
-.item{
+
+.item {
     position: absolute;
     width: 200px;
     height: 320px;
@@ -28,7 +28,9 @@ body{
     left: calc(50% - 110px);
     top: 0;
 }
-#next, #prev{
+
+#next,
+#prev {
     position: absolute;
     top: 40%;
     color: #fff;
@@ -39,7 +41,8 @@ body{
     font-weight: bold;
     left: 400px;
 }
-#next{
+
+#next {
     left: unset;
     right: 400px;
 }
