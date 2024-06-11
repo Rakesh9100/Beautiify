@@ -1,36 +1,36 @@
 :root {
-	--sp: 2.5s; 
-}		
+    --sp: 2.5s;
+}
 
 body {
-	margin: 0;
-	padding: 0;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: radial-gradient(#222, #101010);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(#222, #101010);
 }
 
 .content {
-	width: 50vmin;
-	height: 50vmin;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transform: scale(0.65);
-	animation: spin-all calc(var(--sp) * 2) linear 0s infinite
+    width: 50vmin;
+    height: 50vmin;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.65);
+    animation: spin-all calc(var(--sp) * 2) linear 0s infinite
 }
 
 .circle {
-	--in: 80%;
-	--ar: #ff9800;
-	--dt: #ffea34;
-	--shadow: drop-shadow(0vmin 0vmin 0.5vmin #000) drop-shadow(0vmin 1vmin 0.5vmin #0004);
-	--cross: linear-gradient(0deg, #fff0 calc(50% - 2px), #000 calc(50% - 1px) calc(50% + 1px), #fff0 calc(50% + 2px)), linear-gradient(90deg, #fff0 calc(50% - 2px), #000 calc(50% - 1px) calc(50% + 1px), #fff0 calc(50% + 2px));
+    --in: 80%;
+    --ar: #ff9800;
+    --dt: #ffea34;
+    --shadow: drop-shadow(0vmin 0vmin 0.5vmin #000) drop-shadow(0vmin 1vmin 0.5vmin #0004);
+    --cross: linear-gradient(0deg, #fff0 calc(50% - 2px), #000 calc(50% - 1px) calc(50% + 1px), #fff0 calc(50% + 2px)), linear-gradient(90deg, #fff0 calc(50% - 2px), #000 calc(50% - 1px) calc(50% + 1px), #fff0 calc(50% + 2px));
     border: 6vmin solid var(--ar);
     width: var(--in);
     height: var(--in);
@@ -43,10 +43,10 @@ body {
     right: -10vmin;
     animation: spin-bot var(--sp) ease 0s infinite;
     background-image: var(--cross), radial-gradient(var(--dt) 5.5vmin, #fff0 calc(5.5vmin + 1px));
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 3vmin 1vmin, 1vmin 3vmin, 100% 100%;
     background-position: center center;
-	filter: var(--shadow);
+    filter: var(--shadow);
 }
 
 .circle:nth-child(2) {
@@ -56,7 +56,7 @@ body {
     transform: rotate(-45deg);
     background-image: var(--cross), radial-gradient(var(--dt) 1.25vmin, #fff0 calc(1.25vmin + 1px));
     right: -4vmin;
-	filter: hue-rotate(10deg) var(--shadow);
+    filter: hue-rotate(10deg) var(--shadow);
     background-size: 1.4vmin 1vmin, 1vmin 1.4vmin, 100% 100%;
 }
 
@@ -67,7 +67,7 @@ body {
     transform: rotate(175deg);
     animation: spin-left var(--sp) ease calc(var(--sp) / 4) infinite;
     background-image: var(--cross), radial-gradient(var(--dt) 9vmin, #fff0 calc(9vmin + 1px));
-	filter: hue-rotate(20deg) var(--shadow);
+    filter: hue-rotate(20deg) var(--shadow);
     background-size: 5vmin 1vmin, 1vmin 5vmin, 100% 100%;
 }
 
@@ -78,33 +78,67 @@ body {
     transform: rotate(-280deg);
     animation: spin-last var(--sp) ease calc(calc(calc(var(--sp) / 4) + var(--sp)) * -1) infinite;
     background-image: var(--cross), radial-gradient(var(--dt) 2.5vmin, #fff0 calc(2.5vmin + 1px));
-	filter: hue-rotate(30deg) var(--shadow);
+    filter: hue-rotate(30deg) var(--shadow);
     background-size: 2vmin 1vmin, 1vmin 2vmin, 100% 100%;
 }
 
 
 @keyframes spin-all {
-	0% { transform: rotate(0deg) scale(0.65); }
-	100% { transform: rotate(360deg) scale(0.65); }
+    0% {
+        transform: rotate(0deg) scale(0.65);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(0.65);
+    }
 }
 
 
 @keyframes spin-top {
-	0% { transform: rotate(-45deg); }
-	100% { transform: rotate(315deg); }
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(315deg);
+    }
 }
 
 @keyframes spin-bot {
-	0%, 35% { transform: rotate(0deg); }
-	80%, 100% { transform: rotate(-360deg); }
+
+    0%,
+    35% {
+        transform: rotate(0deg);
+    }
+
+    80%,
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
 @keyframes spin-left {
-	0%, 35% { transform: rotate(175deg); }
-	80%, 100% { transform: rotate(535deg); }
+
+    0%,
+    35% {
+        transform: rotate(175deg);
+    }
+
+    80%,
+    100% {
+        transform: rotate(535deg);
+    }
 }
 
 @keyframes spin-last {
-	0%, 10% { transform: rotate(-280deg); }
-	90%, 100% { transform: rotate(-640deg); }
+
+    0%,
+    10% {
+        transform: rotate(-280deg);
+    }
+
+    90%,
+    100% {
+        transform: rotate(-640deg);
+    }
 }
