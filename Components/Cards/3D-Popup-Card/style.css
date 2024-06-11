@@ -35,12 +35,12 @@
 
 .card::before {
     border-color: #fff;
-    background-image: url(image.jpg);
+    background-image: url(assets/image.jpg);
 }
 
 .card::after {
     border-color: #fff;
-    background-image: url(image2.png);
+    background-image: url(assets/image2.png);
 }
 
 .card:hover::before {

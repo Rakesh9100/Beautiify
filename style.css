@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    font-family: sans-serif;
+}
+
 :root {
     --primary: #ff1b82;
     --secondary: #ffffff;
     --ternary: #1327ff;
     --light: #f7f26c;
     --dark: #f50414;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: poppins;
-    font-family: Ubuntu;
 }
 
 /* Scrollbar Css */
@@ -193,7 +193,6 @@ html {
 
 body,
 html {
-    font-family: "Poppins", sans-serif;
     font-weight: 300;
     line-height: 1.4;
     scroll-behavior: smooth;
@@ -274,7 +273,6 @@ button#dark-mode-toggle {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
@@ -337,15 +335,15 @@ nav li {
 }
 
 nav li:hover {
-    border-bottom: 0.2rem rgb(8, 24, 196) solid;
-    border-radius: 10px;
+    border-bottom: 0.2rem rgb(116, 42, 113) solid;
+    border-radius: 5px;
     transition: 0.3s ease-in-out;
-    background-color: #3498db;
+    background-color: #5f606176;
     color: #df87ef;
 }
 
 nav a {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .logo {
@@ -424,7 +422,7 @@ section {
     margin-top: 20px;
     padding: 10px 45px;
     border-radius: 30px;
-    color: rgb(57, 4, 100);
+    color: rgb(104, 73, 131);
     background: rgba(224, 202, 245, 0.743);
     cursor: pointer;
     transition: transform 0.5s;
@@ -455,7 +453,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 4;
+    z-index: 2;
 }
 
 /* Container Section Css */
@@ -476,14 +474,14 @@ section {
     align-items: center;
     margin: 25px;
     background: rgba(224, 202, 245, 0.743);
-    border: 4px solid rgb(18, 100, 166);
-    border-radius: 14px;
-    box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
+    border: 4px solid rgb(171, 196, 218);
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px 2px rgb(163, 205, 239);
     cursor: pointer;
 }
 
 .container .box:hover {
-    background-color: rgb(18, 100, 166);
+    background-color: rgb(100, 96, 130);
     border: 4px solid rgba(224, 202, 245, 0.743);
     box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
 }
@@ -491,26 +489,27 @@ section {
 .dark-mode .container .box {
     background: rgba(251, 251, 251, 0.743);
     border: 4px solid rgb(238, 245, 251);
-    box-shadow: 2px 2px 4px 2px rgb(28, 116, 189);
+    box-shadow: 2px 2px 4px 2px rgb(91, 131, 164);
 }
 
 .dark-mode .container .box:hover {
-    background-color: rgb(192, 224, 251);
+    background-color: rgb(79, 97, 112);
     border: 4px solid rgba(234, 223, 244, 0.743);
     box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
 }
 
 .container .zoom-effect {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .container .zoom-effect:hover {
-    transform: scale(1.08);
+    transform: scale(1.04);
     transition: transform 0.3s ease-in-out;
 }
 
 .container .box .content {
     position: relative;
+    width: 320px;
     left: 0;
     padding: 20px 40px;
     text-align: center;
@@ -595,6 +594,7 @@ footer .social-icon li a {
 
 footer .social-icon li a:hover {
     transform: translateY(-10px);
+    color: red;
 }
 
 footer p {
@@ -617,7 +617,7 @@ footer p a {
 
 #progress {
     position: fixed;
-    bottom: 14px;
+    bottom: 20px;
     right: 10px;
     height: 50px;
     width: 50px;
@@ -661,7 +661,7 @@ footer p a {
 
 #searchBar {
     text-align: center;
-    border-radius: 14px;
+    border-radius: 50px;
     margin: 4rem 4rem 0;
     color: white;
     width: 100%;
@@ -677,15 +677,15 @@ footer p a {
 #searchBar button {
     font-size: 2.5rem;
     background: transparent;
-    border: 0;
-    color: rgb(57, 4, 100);
+    border-radius: 50px;
+    color: rgb(22, 11, 31);
     margin: 1rem;
     background-color: rgba(224, 202, 245, 0.743);
     padding: .7rem;
     width: 8rem;
     border-radius: 5rem;
     box-shadow: 2px 2px 2px black, 1px 1px 1px white;
-    text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(57, 4, 100);
+    text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(47, 19, 70);
 }
 
 #searchBar button:hover {
@@ -710,7 +710,7 @@ footer p a {
 
 #searchBar input:hover {
     transform: scale(1.02);
-    box-shadow: -5px -5px 10px #682572;
+    box-shadow: -5px -5px 10px #9961a1;
 }
 
 /* Media Queries */
@@ -743,7 +743,7 @@ footer p a {
         flex-direction: column;
         text-align: center;
         width: auto;
-        height: 110vh;
+        height: fit-content;
     }
 
     .compcontainer {
@@ -785,6 +785,7 @@ footer p a {
         flex-direction: column;
         text-align: center;
         width: auto;
+        height: fit-content;
     }
 
     .compcontainer {
@@ -815,12 +816,12 @@ footer p a {
 
 @media (max-width: 500px) {
     .comp-section {
-        height: 130vh;
+        height: fit-content;
     }
 
     .compcontainer {
         border: 1px transparent;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     }
 
     #mySearch {
@@ -829,9 +830,9 @@ footer p a {
         font-size: 1.6rem;
     }
 
-    .container {
+    /* .container {
         margin-top: 50px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 768px) {

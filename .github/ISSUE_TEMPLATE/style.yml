@@ -24,6 +24,9 @@ body:
         - label: "I follow [Contributing Guidelines](https://github.com/Rakesh9100/Beautiify/blob/main/.github/CONTRIBUTING_GUIDELINES.md) of this project."
           required: true
 
+        - label: "I am a GSSOC'24 contributor."
+          required: true
+          
         - label: "I am a IWOC'24 contributor."
           required: false
 

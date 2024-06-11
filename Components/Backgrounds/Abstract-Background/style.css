@@ -1,0 +1,28 @@
+body {
+    background:
+        /*shape*/
+        linear-gradient(115deg, transparent 89%, #e29eb0 0) -128px -96px,
+        linear-gradient(-115deg, transparent 89%, #fe9e9e 0) 22px -96px,
+        linear-gradient(-115deg, #e83ec6 11%, transparent 0) -128px 54px,
+        linear-gradient(115deg, #771764 11%, transparent 0) 22px 54px,
+
+        /*shape*/
+        linear-gradient(-25deg, #a75797 11%, transparent 0) -128px -22px,
+        linear-gradient(25deg, transparent 89%, #cdb380 0) -128px 128px,
+        linear-gradient(25deg, #a13259 11%, transparent 0) 22px -22px,
+        linear-gradient(-25deg, transparent 89%, #390349 0) 22px 128px,
+        /*shape*/
+        linear-gradient(-25deg, #e8ddcb 11%, transparent 0) -53px -96px,
+        linear-gradient(25deg, transparent 89%, #cdb380 0) -53px 54px,
+        linear-gradient(25deg, #b33f75 11%, transparent 0) 97px -96px,
+        linear-gradient(-25deg, transparent 89%, #aa89a9 0) 97px 54px,
+        /*shape*/
+        linear-gradient(115deg, transparent 89%, #e8ddcb 0) -53px -21px,
+        linear-gradient(-115deg, #9a6ca1 11%, transparent 0) -53px 129px,
+        linear-gradient(-115deg, transparent 89%, #823e7d 0) 97px -21px,
+        linear-gradient(115deg, #7e175c 11%, transparent 0) 97px 129px;
+
+    background-color: #fff;
+    background-size: 150px 150px;
+    background-repeat: repeat;
+}
