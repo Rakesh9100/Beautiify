@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Login/Register Popup</title>
+</head>
+<body>
+    <main>
+
+        <button onclick="togglePopUp()">Login now</button>
+
+    </main>
+
+    <section class="pop-up-container">
+        <div class="pop-up-wrapper">
+            <div class="pop-up-inner">
+                <form class="pop-up-front">
+                    <div class="close-btn" onclick="togglePopUp()">&times;</div>
+                    <h1>Login</h1>
+                    <div class="input-box">
+                        <label>Email</label>
+                        <input type="text" placeholder="john123@gmail.com">
+                    </div>
+                    <div class="input-box">
+                        <label>Password</label>
+                        <input type="password" placeholder="********">
+                    </div>
+                    <a href="#">Forgot password?</a>
+                    <input type="submit" value="Login now">
+                    <p>New member? <span onclick="toggleForm()">Register now</span></p>
+                </form>
+                <form class="pop-up-back">
+                    <div class="close-btn"  onclick="togglePopUp()">&times;</div>
+                    <h1>Register</h1>
+                    <div class="input-box">
+                        <label>Username</label>
+                        <input type="text" placeholder="john123">
+                    </div>
+                    <div class="input-box">
+                        <label>Email</label>
+                        <input type="text" placeholder="john123@gmail.com">
+                    </div>
+                    <div class="input-box">
+                        <label>Password</label>
+                        <input type="password" placeholder="********">
+                    </div>
+                    <div class="input-box">
+                        <label>Confirm password</label>
+                        <input type="password" placeholder="********">
+                    </div>
+                    <input type="submit" value="Register now">
+                    <p>Already a member? <span onclick="toggleForm()">Login now</span></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
