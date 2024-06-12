@@ -11,6 +11,8 @@ $(function () {
         wrapper.removeClass('small');
     }
 
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+    
     windowObj.scroll(function () {
         if ($(this).scrollTop() + $(this).height() > wrapper.outerHeight()) {
             decreaseWrapper();
