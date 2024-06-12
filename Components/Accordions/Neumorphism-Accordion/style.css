@@ -6,10 +6,6 @@ body {
     background: linear-gradient(to right, #19569d, #2ee809);
     font-family: 'Arial', sans-serif;
     color: #394240;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 
 #neumorphism {
