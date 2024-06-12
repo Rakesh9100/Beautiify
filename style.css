@@ -19,7 +19,7 @@
 /* Scrollbar Css */
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(152, 151, 151, 0.883);
+    background: rgba(215, 230, 12, 0.883);
 }
 
 ::-webkit-scrollbar {
@@ -52,7 +52,7 @@
     top: 0;
     width: 51%;
     height: 100%;
-    background: #fff;
+    background: #1a1919;
     z-index: 1000;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -76,7 +76,7 @@
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    border-top-color: #0ae9cb;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
     z-index: 99999;
@@ -91,7 +91,7 @@
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #e74c3c;
+    border-top-color: #0652f8;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
@@ -105,7 +105,7 @@
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #f9c922;
+    border-top-color: #be05ec;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
@@ -168,7 +168,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(./assets/images/bg1.png);
+    background-image: url(https://image.slidesdocs.com/responsive-images/background/nature-elegant-flowers-green-white-flower-powerpoint-background_13f876a9ba__960_540.jpg);
     background-repeat: no repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -203,7 +203,7 @@ button#dark-mode-toggle {
     top: 5.5px;
     right: 16px;
     background-color: #333;
-    color: white;
+    color: rgb(19, 18, 18);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -346,15 +346,6 @@ nav a {
     font-weight: bold;
 }
 
-.logo {
-    font-size: 2.3rem;
-    font-weight: 700;
-    margin-left: 10px;
-    font-family: Ubuntu;
-    color: white;
-    text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
-}
-
 .hamburger {
     display: none;
 }
@@ -366,7 +357,7 @@ nav a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: rgb(255, 255, 248);
 }
 
 /* Components Section Css */
@@ -407,7 +398,7 @@ section {
     text-align: center;
     margin: auto;
     padding: 10px;
-    color: white;
+    color: rgb(241, 16, 204);
     text-shadow: 1px 1px 2px black, 0.5px 0.5px 1px white;
 }
 
@@ -606,7 +597,7 @@ footer p {
 }
 
 footer p a {
-    background-color: rgba(239, 230, 230, 0.551);
+    background-color: rgba(15, 15, 15, 0.551);
     color: var(--secondary);
     text-align: center;
     margin-top: 15px;
@@ -625,16 +616,16 @@ footer p a {
     place-items: center;
     border-radius: 50%;
     transition: opacity 0.3s, background-color 0.3s;
-    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
-        -4px -4px 6px 0 rgba(116, 125, 136, .2),
-        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+    box-shadow: 4px 4px 6px 0 rgba(20, 20, 20, 0.3),
+        -4px -4px 6px 0 rgba(13, 13, 14, 0.2),
+        inset -4px -4px 6px 0 rgba(14, 13, 13, 0.2),
         inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
     cursor: pointer;
 }
 
 #progress:hover {
     opacity: 1;
-    background-color: #df87ef;
+    background-color: #0f0f0f;
     animation: animate 1s linear infinite;
 }
 
