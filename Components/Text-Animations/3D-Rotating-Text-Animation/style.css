@@ -2,7 +2,10 @@ body {
     background-color: #000;
     color: #fff;
     min-height: 100vh;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     place-items: center;
     perspective: 500px;
     perspective-origin: 50% calc(50% - 150px);
@@ -11,14 +14,19 @@ body {
 .scene {
     position: relative;
     transform-style: preserve-3d;
+    /* perspective: 1000px; */
 }
 
 .banner {
     display: flex;
     justify-content: center;/* Center items Horizontally */
     align-items: center;/* Center items Vertically */
+    /* top: 50%;
+    left: 50%; */
     transform-style: preserve-3d;
     animation: rotate 24s infinite linear;
+    /* perspective: 1000px; */
+    /* transform-origin: 50% 100%;  Change the rotation origin to the bottom center */
 }
 
 @keyframes rotate {
@@ -33,6 +41,9 @@ body {
     width: 50px;
     height: 120px;
     overflow: hidden;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 .panel::before {
@@ -190,13 +201,14 @@ body {
 }
 
 .screen {
-    position: absolute;
-    width: 400px;
-    height: 400px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6666666667), rgba(0, 0, 0, 0.2666666667), rgba(0, 0, 0, 0.6666666667));
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0%;
+    left: 0%;
+    /* transform: translate(-50%, -50%); */
+    z-index: -1;
 }
 
 /*# sourceMappingURL=index.css.map */
