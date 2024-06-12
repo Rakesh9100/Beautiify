@@ -7,12 +7,14 @@ body {
     height: 100vh;
     margin: 0;
 }
+
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 2em;
     margin-bottom: 20px;
     color: #333;
 }
+
 .reservation-form {
     background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
     padding: 20px;
@@ -34,7 +36,8 @@ h1 {
     text-align: left;
 }
 
-.reservation-form input, .reservation-form select {
+.reservation-form input,
+.reservation-form select {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
