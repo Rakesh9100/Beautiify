@@ -14,10 +14,6 @@ body {
     align-items: center;
     justify-content: center;
     background: #E3F2FD;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 
 .accordion {
