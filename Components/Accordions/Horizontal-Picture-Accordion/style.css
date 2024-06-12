@@ -10,10 +10,6 @@ body {
     margin: 0;
     font-family: 'Fjalla One', sans-serif;
     background: linear-gradient(#fff, #fefefe, #eaeaea);
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 
 .accordion {
