@@ -1,0 +1,63 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+body {
+    display: grid;
+    place-items: center;
+    perspective: 800px;
+    overflow: hidden;
+
+    *:not(:empty) {
+        transform-style: preserve-3d;
+    }
+}
+
+.scene {
+    position: relative;
+    transform: rotateX(var(--scene-rx, -5deg)) rotateY(var(--scene-ry, -24deg));
+    transition: transform 0.4s ease-out;
+}
+
+#demo {
+    width: 360px;
+    height: 60px;
+    background: none;
+    transform: rotateX(calc(var(--stateAngle, 0deg) + var(--pa, 0deg)));
+    pointer-events: var(--poinerEvents, all);
+    user-select: none;
+    transition: transform 1s;
+    transition-timing-function: var(--ttf, ease-in-out);
+
+    >div {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+        color: var(--blue-6);
+        background-color: var(--blue-0);
+        border: 1px solid var(--blue-1);
+        text-shadow: 0 1px 0 var(--blue-2);
+        box-shadow: 0 0 10px var(--blue-4) inset;
+        transform: rotateX(var(--rx, 0)) translateZ(calc(30px / tan(60deg)));
+        transition: background-color 0.3s;
+
+        &:nth-child(2) {
+            --rx: 240deg;
+        }
+
+        &:nth-child(3) {
+            --rx: 120deg;
+            color: var(--green-6);
+        }
+    }
+
+    &:hover>div {
+        background-color: var(--blue-1);
+    }
+
+    &:active {
+        --pa: -30deg;
+    }
+}
