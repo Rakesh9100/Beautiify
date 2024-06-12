@@ -269,6 +269,6 @@ body {
 
 .form-fields .form-group input::placeholder,
 .form-fields .form-group textarea::placeholder {
-    color: #49025f; /* Change the placeholder color to match vibe of page */
+    color: #49025f;
     opacity: 0.95;
 }
