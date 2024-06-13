@@ -18,6 +18,7 @@ Closes #
 - [ ] Responsiveness (non-breaking change which improves UI/UX on different screen sizes)
 
 # Checklist✅
+<!-- Please delete the options that are not relevant to you. -->
 
 - [ ] I am an Open Source contributor
 - [ ] I have performed a self-review of my code
@@ -26,3 +27,4 @@ Closes #
 
 # Screenshots/GIF📷
 <!-- Please add screenshots or a GIF to demonstrate your changes. -->
+
