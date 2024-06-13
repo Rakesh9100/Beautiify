@@ -124,6 +124,11 @@
             <input type="text" id="componentSearch" placeholder="Enter Component Name" oninput="filterComponents()">
         </div>
 
+        <div class="no-results">
+            <img src="./assets/images/no-results.png" alt="" height="100px" width="100px">
+            <h2>Hmmm, we are not getting any result. <br> Our bad - Please try another search!</h2>
+        </div>
+
         <div class="zoom-effect">
             <div class="box">
                 <a href="./assets/html_files/accordions.html" target="_blank">
@@ -307,8 +312,10 @@
                 </li>
             </ul>
             <p>
-                Created By
-                <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | © <span id="year"></span>: All Rights Reserved
+                Created By <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>: All Rights Reserved
             </p>
         </footer>
     </div>
