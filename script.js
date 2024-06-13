@@ -43,6 +43,7 @@ function filterComponents() {
     console.log(filter)
     console.log(components)
 
+    let selected_components = 0;
     for (i = 0; i < components.length; i++) {
         var component = components[i];
         var h2 = component.querySelector('h2');
@@ -50,9 +51,15 @@ function filterComponents() {
 
         if (componentName.toUpperCase().indexOf(filter) > -1) {
             component.style.display = "flex";
+            selected_components++;
         } else {
             component.style.display = "none";
         }
+    }
+    if (selected_components === 0) {
+        document.querySelector(".no-results").style.display = "flex";
+    } else {
+        document.querySelector(".no-results").style.display = "none";
     }
 }
 
