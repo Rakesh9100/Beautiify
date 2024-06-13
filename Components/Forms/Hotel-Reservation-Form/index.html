@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel Reservation Form</title>
+</head>
+<body>
+    <div class="reservation-form">
+        <h1>Book Your Stay</h1>
+        <form id="bookingForm">
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="roomType">Room Type</label>
+            <select id="roomType" name="roomType" required>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email-Id</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit" class="submit-btn">Book Now</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
