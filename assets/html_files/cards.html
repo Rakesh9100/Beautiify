@@ -1,537 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="../images/favicon.png" type="image/x-icon" />
-		<link rel="stylesheet" type="text/css" href="../../style.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-		/>
-		<link rel="stylesheet" type="text/css" href="../css_files/cards.css" />
-		<link rel="stylesheet" href="../css_files/search.css" />
-		<script src="../js_files/commonnav.js"></script>
-		<script
-			src="https://kit.fontawesome.com/b08b6de27e.js"
-			crossorigin="anonymous"
-		></script>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
-		/>
-		<title>Beautiify | Cards</title>
-	</head>
 
-	<body>
-		<div id="loader-wrapper">
-			<div id="loader"></div>
-			<div class="loader-section section-left"></div>
-			<div class="loader-section section-right"></div>
-		</div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css_files/cards.css" />
+    <link rel="stylesheet" href="../css_files/search.css">
+    <script src="../js_files/commonnav.js"></script>
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <title>Beautiify | Cards</title>
+</head>
 
-		<header class="header3">
-			<nav class="navbar">
-				<a href="../../index.html">
-					<div class="flex-container">
-						<div class="flex-item-left">
-							<img src="../images/logo.png" width="37px" height="37px" />
-						</div>
-						<div class="flex-item-right" class="logo">Beautiify</div>
-					</div>
-				</a>
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
 
-				<ul class="nav-menu">
-					<li class="nav-item">
-						<a href="../../index.html#home" class="nav-link"
-							><i class="fa-solid fa-house"></i> Home</a
-						>
-					</li>
-					<li class="nav-item">
-						<a href="../../assets/html_files/about.html" class="nav-link"
-							><i class="fa-solid fa-circle-info"></i> About</a
-						>
-					</li>
-					<li class="nav-item">
-						<a href="../../index.html#components" class="nav-link"
-							><i class="fa-solid fa-icons"></i> Components</a
-						>
-					</li>
-					<li class="nav-item">
-						<a href="../html_files/contributor.html" class="nav-link"
-							><i class="fa-solid fa-user"></i> Contributors</a
-						>
-					</li>
-					<li class="nav-item">
-						<a href="contact.html" class="nav-link"
-							><i class="fa-solid fa-phone"></i> Contact</a
-						>
-					</li>
-					<button id="dark-mode-toggle">
-						<i class="fa-solid fa-circle-half-stroke"></i>
-					</button>
-				</ul>
-				<div class="hamburger">
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
-				</div>
-			</nav>
-		</header>
+    <header class="header3">
+        <nav class="navbar">
+            <a href="../../index.html">
+                <div class="flex-container">
+                    <div class="flex-item-left"><img src="../images/logo.png" width="37px" height="37px"></div>
+                    <div class="flex-item-right" class="logo">Beautiify</div>
+                </div>
+            </a>
 
-		<section>
-			<div class="heading">Cards</div>
-			<!-- Search Bar -->
-			<div id="searchBar">
-				<h1 class="SearchCard">Search Card</h1>
-				<br />
-				<input
-					type="text"
-					id="componentSearch"
-					placeholder="Enter Card Name"
-					oninput="filtereachComponents()"
-				/>
-			</div>
-			<div class="contain">
-				<div class="box">
-					<h1>3D Animated Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/3D-Animated-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/3D-Animated-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>3D Popup Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/3D-Popup-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/3D-Popup-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Animated Product Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Animated-Product-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Animated-Product-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Blog Post Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Blog-Post-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Blog-Post-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Drag & Drop Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Drag-&-Drop-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Drag-&-Drop-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Flip Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Flip-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Flip-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Glassmorphism Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Glassmorphism-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Glassmorphism-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Glowing Shadow Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Glowing-Shadow-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Glowing-Shadow-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Greeting Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Greeting-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Greeting-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Individual Focus Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Individual-Focus-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Individual-Focus-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Mouse Tracker Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Mouse-Tracker-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Mouse-Tracker-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Neumorphism Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Neumorphism-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Neumorphism-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Product Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Product-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Product-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Product Order Validation Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Product-Order-Validation-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Product-Order-Validation-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Product Preview Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Product-Preview-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Product-Preview-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Profile Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Profile-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Profile-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Quotes Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Quotes-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Quotes-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Slider Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Slider-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Slider-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>Timeline Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/Timeline-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Timeline-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-				<div class="box">
-					<h1>User Attention Card</h1>
-					<div class="preview">
-						<a
-							href="../../Components/Cards/User-Attention-Card/index.html"
-							title="Live Preview"
-							target="_blank"
-						>
-							<img src="../images/link.png" />
-						</a>
-					</div>
-					<div class="source">
-						<a
-							href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/User-Attention-Card"
-							title="Source Code"
-							target="_blank"
-						>
-							<img src="../images/github.png" />
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../index.html#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i> Contributors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
+                </li>
+                <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-			integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
+    <section>
 
-		<!-- Scroll To Top Button -->
-		<div id="progress">
-			<span id="progress-value" class="bi bi-arrow-up-short"></span>
-		</div>
+        <div class="heading">Cards</div>
+        <!-- Search Bar -->
+        <div id="searchBar">
+            <h1 class="SearchCard">Search Card</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Card Name" oninput="filtereachComponents()">
+        </div>
+        <div class="contain">
+            <div class="box">
+                <h1>3D Animated Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/3D-Animated-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/3D-Animated-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>3D Popup Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/3D-Popup-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/3D-Popup-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Animated Product Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Animated-Product-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Animated-Product-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Blog Post Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Blog-Post-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Blog-Post-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Code Snippet Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Code-Snippet-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Code-Snippet-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Drag & Drop Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Drag-&-Drop-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Drag-&-Drop-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Flip Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Flip-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Flip-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Glassmorphism Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Glassmorphism-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Glassmorphism-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Glowing Shadow Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Glowing-Shadow-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Glowing-Shadow-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Greeting Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Greeting-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Greeting-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Individual Focus Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Individual-Focus-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Individual-Focus-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Mouse Tracker Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Mouse-Tracker-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Mouse-Tracker-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Neumorphism Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Neumorphism-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Neumorphism-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Product Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Product-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Product-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Product Order Validation Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Product-Order-Validation-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Product-Order-Validation-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Product Preview Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Product-Preview-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Product-Preview-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Profile Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Profile-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Profile-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Quotes Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Quotes-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Quotes-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Slider Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Slider-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Slider-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Timeline Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/Timeline-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Timeline-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>            
+            <div class="box">
+                <h1>User Attention Card</h1>
+                <div class="preview">
+                    <a href="../../Components/Cards/User-Attention-Card/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/User-Attention-Card" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<script src="../js_files/search.js"></script>
-		<script src="../../script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
 
-		<script src="../js_files/dark-mode.js"></script>
-	</body>
+    <!-- Scroll To Top Button -->
+    <div id="progress">
+        <span id="progress-value" class="bi bi-arrow-up-short"></span>
+    </div>
+
+    <script src="../js_files/search.js"></script>
+    <script src="../../script.js"></script>
+
+    <script src="../js_files/dark-mode.js"></script>
+
+</body>
+
 </html>
