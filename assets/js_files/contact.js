@@ -18,7 +18,7 @@ function myfun() {
         document.getElementById("message").innerHTML = "**Maximum length allowed is 20";
         return false;
     }
-    else if(!a.match(correct)){
+    else if(!a.match(correct)) {
         document.getElementById("message").innerHTML = "**ONLY ALPHABETS ARE ALLOWED";
         return false;
     }
