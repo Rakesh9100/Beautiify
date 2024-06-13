@@ -39,12 +39,20 @@ body {
 }
 
 .close-btn {
-    position: absolute;
+    /* position: absolute;
     top: 20px;
     right: 45px;
     font-size: 30px;
     cursor: pointer;
+    color: #818181; */
+    font-size: 30px;
+    cursor: pointer;
     color: #818181;
+    padding: 10px 20px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    text-decoration: none;
 }
 
 
