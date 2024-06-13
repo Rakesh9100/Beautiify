@@ -153,3 +153,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const searchIcon = document.querySelector('.search-icon');
+    const searchInput = document.getElementById('search-input');
+
+    searchIcon.addEventListener('click', () => {
+        searchInput.focus();
+    });
+});

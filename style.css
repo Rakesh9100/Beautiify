@@ -941,3 +941,33 @@ footer p a {
         margin: 15px !important;
     }
 }
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.search-container {
+    position: relative;
+    width: 300px;
+    margin: 50px auto;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 35px; /* To make space for the icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #888;
+}
