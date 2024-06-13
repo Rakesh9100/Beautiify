@@ -713,6 +713,21 @@ footer p a {
     box-shadow: -5px -5px 10px #9961a1;
 }
 
+.no-results {
+    display: none;
+    padding-top: 50px;
+    color: white;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.no-results h2 {
+    text-align: center;
+}
+
 /* Media Queries */
 
 @media (max-width: 1030px) {
@@ -921,18 +936,4 @@ footer p a {
         width: 280px !important;
         margin: 15px !important;
     }
-}
-
-.no-results {
-    display: none;
-    padding-top: 50px;
-    color: white;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.no-results h2 {
-    text-align: center;
 }
