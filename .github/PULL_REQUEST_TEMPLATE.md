@@ -1,30 +1,28 @@
 # Fixes Issue🛠️
-
-<!-- Example: Closes #31 -->
+<!-- Example: Closes #32 -->
 
 Closes #
 
-# Description👨‍💻 
+# Description👨‍💻
+<!-- Please include a summary of your changes. -->
 
-<!--Please include a summary of the change and which issue is fixed.List any dependencies that are required for this change.-->
 
-# Type of change📄
 
-<!--Please delete options that are not relevant.-->
+# Type of Change📄
+<!-- Please delete the options that are not relevant to you. -->
 
-- [] Bug fix (non-breaking change which fixes an issue)
-- [] New feature (non-breaking change which adds functionality)
+- [ ] Bug fix (non-breaking change which fixes a bug)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Style (non-breaking change which improves website style or formatting)
+- [ ] Documentation (non-breaking change which updates or adds documentation)
+- [ ] Responsiveness (non-breaking change which improves UI/UX on different screen sizes)
 
-# How this has been tested✅
+# Checklist✅
 
-<!--Please describe the tests that you ran to verify your changes.-->
-
-# Checklist✅ 
-
-- [] My code follows the style guidelines of this project
-- [] I have performed a self-review of my own code
-- [] I have commented my code, particularly in hard-to-understand areas
-- [] I have added demonstration in the form of GIF/video file
-- [] I am an Open Source Contributor
+- [ ] I am an Open Source contributor
+- [ ] I have performed a self-review of my code
+- [ ] My code follows the style guidelines of this project
+- [ ] I have commented on my code, particularly in hard-to-understand areas
 
 # Screenshots/GIF📷
+<!-- Please add screenshots or a GIF to demonstrate your changes. -->
