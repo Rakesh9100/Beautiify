@@ -12,9 +12,53 @@
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Beautiify</title>
+    <style>
+        .circle{
+       z-index: 10000;
+       width: 20px;
+       height: 20px;
+       border-radius: 50%;
+       pointer-events: none;
+        animation: colors 5s infinite;
+        position: fixed;
+      transform: translate(-50%,-50%);
+    }
+    .circle::before {
+        content: "";
+        position: fixed;
+      width: 50px;
+      height: 50px;
+      opacity: 0.2;
+      transform: translate(-30%,-30%);
+      border-radius: 50%;
+    }
+    </style>
 </head>
 
 <body>
+    <div class="circle-container">
+        <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
+        <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
+        <div class="circle" style="background-color: rgb(248, 157, 99); left: 504px; top: 59px; scale: 0.9;"></div>
+        <div class="circle" style="background-color: rgb(245, 151, 97); left: 504px; top: 59px; scale: 0.85;"></div>
+        <div class="circle" style="background-color: rgb(239, 134, 94); left: 504px; top: 59px; scale: 0.8;"></div>
+        <div class="circle" style="background-color: rgb(236, 128, 93); left: 504px; top: 59px; scale: 0.75;"></div>
+        <div class="circle" style="background-color: rgb(227, 110, 92); left: 504px; top: 59px; scale: 0.7;"></div>
+        <div class="circle" style="background-color: rgb(223, 104, 92); left: 504px; top: 59px; scale: 0.65;"></div>
+        <div class="circle" style="background-color: rgb(213, 88, 92); left: 504px; top: 59px; scale: 0.6;"></div>
+        <div class="circle" style="background-color: rgb(209, 82, 92); left: 504px; top: 59px; scale: 0.55;"></div>
+        <div class="circle" style="background-color: rgb(197, 65, 93); left: 504px; top: 59px; scale: 0.5;"></div>
+        <div class="circle" style="background-color: rgb(192, 59, 93); left: 504px; top: 59px; scale: 0.45;"></div>
+        <div class="circle" style="background-color: rgb(178, 44, 94); left: 504px; top: 59px; scale: 0.4;"></div>
+        <div class="circle" style="background-color: rgb(172, 38, 94); left: 504px; top: 59px; scale: 0.35;"></div>
+        <div class="circle" style="background-color: rgb(156, 21, 95); left: 504px; top: 59px; scale: 0.3;"></div>
+        <div class="circle" style="background-color: rgb(149, 15, 95); left: 504px; top: 59px; scale: 0.25;"></div>
+        <div class="circle" style="background-color: rgb(131, 0, 96); left: 504px; top: 59px; scale: 0.2;"></div>
+        <div class="circle" style="background-color: rgb(124, 0, 96); left: 504px; top: 59px; scale: 0.15;"></div>
+        <div class="circle" style="background-color: rgb(104, 0, 96); left: 504px; top: 59px; scale: 0.1;"></div>
+        <div class="circle" style="background-color: rgb(96, 0, 95); left: 504px; top: 59px; scale: 0.05;"></div>
+    </div>
+
     <div id="loader-wrapper">
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
@@ -277,7 +321,139 @@
     <script src="./script.js"></script>
     <script src="./assets/js_files/hamburgerMenu.js"></script>
     <script src="./assets/js_files/contributor.js"></script>
+    <script>
 
+        //Custom Cursor
+    
+        const coords = { x: 0, y: 0 };
+        const circles = document.querySelectorAll(".circle");
+    
+        const colors = [
+          "#3A0088",
+          "#5C0099",
+          "#7D0CB3",
+          "#9F49C6",
+          "#C486D9",
+          "#DEC2EB",
+          "#F2E6FF",
+          "#c38aff",
+          "#ffd0e3",
+          "#ffe5e8",
+          
+          "#c5415d",
+          "#c03b5d",
+          "#b22c5e",
+          "#ac265e",
+          "#9c155f",
+          "#950f5f",
+          "#830060",
+          "#7c0060",
+          "#680060",
+          "#60005f",
+          "#48005f",
+          "#3d005e"
+        ];
+    
+        circles.forEach(function (circle, index) {
+          circle.x = 0;
+          circle.y = 0;
+          circle.style.backgroundColor = colors[index % colors.length];
+        });
+    
+        window.addEventListener("mousemove", function (e) {
+          coords.x = e.clientX;
+          coords.y = e.clientY;
+    
+        });
+    
+        function animateCircles() {
+    
+          let x = coords.x;
+          let y = coords.y;
+    
+          circles.forEach(function (circle, index) {
+            circle.style.left = x - 12 + "px";
+            circle.style.top = y - 12 + "px";
+    
+            circle.style.scale = (circles.length - index) / circles.length;
+    
+            circle.x = x;
+            circle.y = y;
+    
+            const nextCircle = circles[index + 1] || circles[0];
+            x += (nextCircle.x - x) * 0.3;
+            y += (nextCircle.y - y) * 0.3;
+          });
+    
+          requestAnimationFrame(animateCircles);
+        }
+    
+        animateCircles();
+    
+    
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+          const isDarkMode = isDarkModePreferred();
+          setDarkModePreference(!isDarkMode);
+          applyDarkModePreference();
+        }
+    
+        // Function to apply dark mode preference
+        function applyDarkModePreference() {
+          const isDarkMode = isDarkModePreferred();
+          if (isDarkMode) {
+            document.body.classList.add('dark-mode');
+            document.getElementById('theme-icon').src = 'assets/images/icons8-sun.svg';
+          } else {
+            document.body.classList.remove('dark-mode');
+            document.getElementById('theme-icon').src = 'assets/images/moon_solid.svg';
+          }
+        }
+    
+        // Function to set dark mode preference
+        document.addEventListener('DOMContentLoaded', () => {
+          const currentTheme = localStorage.getItem('theme');
+          const switchCheckbox = document.getElementById('switch'); // Define switchCheckbox here
+          const starRating = document.querySelector('.star_rating');
+          const thankYouMessage = document.querySelector(".thank_you_message");
+          if (switchCheckbox) { // Check if switchCheckbox is not null
+            function applyDarkModeStyles() {
+              document.body.classList.remove('light-mode');
+              document.body.classList.add('dark-mode');
+              starRating.style.backgroundColor = '#2d2828';
+              thankYouMessage.style.backgroundColor = '#2d2828';
+            }
+    
+            function applyLightModeStyles() {
+              document.body.classList.remove('dark-mode');
+              document.body.classList.add('light-mode');
+              starRating.style.backgroundColor = 'white';
+              thankYouMessage.style.backgroundColor = 'white';
+            }
+    
+            if (currentTheme) {
+              if (currentTheme === 'dark-mode') {
+                applyDarkModeStyles();
+                switchCheckbox.checked = true;
+              } else {
+                applyLightModeStyles();
+              }
+            }
+    
+            switchCheckbox.addEventListener('change', () => {
+              if (switchCheckbox.checked) {
+                applyDarkModeStyles();
+                localStorage.setItem('theme', 'dark-mode');
+              } else {
+                applyLightModeStyles();
+                localStorage.setItem('theme', 'light-mode');
+              }
+            });
+          } else {
+            console.error("Switch checkbox not found!"); // Log an error if switchCheckbox is null
+          }
+        });
+      </script>
 </body>
 
 </html>
