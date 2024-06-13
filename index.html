@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Beautiify</title>
 </head>
 
@@ -75,9 +77,13 @@
 
     <div class="container" id="components">
         <!-- Search Bar -->
+         <!-- <br> -->
+        <h1 style="color: white;">Search Component</h1>
         <div id="searchBar">
-            <h1>Search Component</h1><br>
-            <input type="text" id="componentSearch" placeholder="Enter Component Name" oninput="filterComponents()">
+            <div class="search-wrapper">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="componentSearch" placeholder="Enter Component Name" oninput="filterComponents()">
+            </div>
         </div>
 
         <div class="no-results">

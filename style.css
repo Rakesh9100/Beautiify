@@ -664,19 +664,50 @@ footer p a {
 /* Search Bar Css */
 
 #searchBar {
+    display: flex;
     text-align: center;
     border-radius: 50px;
-    margin: 4rem 4rem 0;
     color: white;
+    margin: 2rem 60rem ;
+    /* margin: auto; */
     width: 100%;
 }
 
-#searchBar h1 {
+.search-icon {
+    color: black;
+    font-size: 1.5rem; /* Adjust icon size as needed */
+    margin-left: 2rem; /* Optional margin for spacing */
+  }
+
+#components h1 {
     font-family: Ubuntu;
     font-size: 4rem;
     text-shadow: 2px 2px 10px var(--light);
     margin-top: 16px;
+    
 }
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem; 
+    height: 4rem;
+    border-radius: 2rem;
+    transition: all linear 0.2s;
+    background-color: white;
+    cursor: pointer; 
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    /* margin-right: 10%; */
+  }
+
+  .search-wrapper:hover {
+    transform: scale(1.02);
+    box-shadow: -5px -5px 10px #9961a1;
+  }
+  
 
 #searchBar button {
     font-size: 2.5rem;
@@ -698,7 +729,23 @@ footer p a {
     background: rgba(255, 255, 255, 0.881);
 }
 
-#searchBar input {
+#componentSearch {
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    outline: none; /* Remove default focus outline */
+
+    padding: 1rem;
+    height: 4rem;
+    font-size: 2rem; /* Adjust font size as needed for consistency */
+    text-align: center;
+    border-radius: 2rem;
+    width: 40rem; /* Fills remaining space in the wrapper */
+    transition: all linear 0.2s;
+    font-weight: 600;
+    padding-right: 0 !important;
+  }
+
+/* #searchBar input {
     font-family: 'Poppins', sans-serif;
     border: 0;
     padding: 1rem;
@@ -710,12 +757,12 @@ footer p a {
     transition: all linear .2s;
     font-weight: 600;
     padding-right: 0 !important;
-}
+} */
 
-#searchBar input:hover {
+/* #searchBar input:hover {
     transform: scale(1.02);
     box-shadow: -5px -5px 10px #9961a1;
-}
+} */
 
 .no-results {
     display: none;
