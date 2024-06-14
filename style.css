@@ -215,6 +215,7 @@ button#dark-mode-toggle {
     height: 40px;
     border-radius: 50%;
     z-index: 999;
+    margin-top: 13px;
 }
 
 .dark-mode button#dark-mode-toggle {
@@ -318,6 +319,7 @@ ul {
 
 nav {
     display: flex;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
