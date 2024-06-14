@@ -5,22 +5,27 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start; /* Changed alignment */
+    min-height: 100vh;
+    padding-top: 20px; /* Added padding to top */
 }
 
 .container {
     max-width: 800px;
-    margin: 30px;
+    margin: 20px; /* Adjusted margin */
     background-color: #fff;
-    padding: 20px;
+    padding: 30px; /* Increased padding for better spacing */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    border-radius: 10px; /* Slightly increased border-radius */
 }
 
 h1 {
     text-align: center;
     color: #333;
+    font-size: 28px;
+    margin-bottom: 20px; /* Added spacing below the heading */
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 section {
@@ -31,12 +36,15 @@ h2 {
     border-bottom: 2px solid #007BFF;
     padding-bottom: 5px;
     color: #007BFF;
+    font-size: 20px;
+    margin-bottom: 10px; /* Added spacing below the section heading */
 }
 
 label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    color: #555; /* Darker label color for better contrast */
 }
 
 input[type="text"],
@@ -51,6 +59,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    background-color: #f9f9f9; /* Slight background color for inputs */
 }
 
 textarea {
@@ -78,6 +87,10 @@ button:hover {
 @media (max-width: 600px) {
     .container {
         padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
     }
 
     h2 {

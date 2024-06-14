@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Order Cancellation Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -38,6 +38,7 @@
 
                 <label for="reason">Reason for Cancellation:</label>
                 <select id="reason" name="reason" required>
+                    <option value="" disabled selected>Select a reason</option>
                     <option value="mistake">Ordered by mistake</option>
                     <option value="better-price">Found a better price elsewhere</option>
                     <option value="delivery-time">Delivery time too long</option>
@@ -51,6 +52,7 @@
                 <h2>Cancellation Details</h2>
                 <label for="resolution">Preferred Resolution:</label>
                 <select id="resolution" name="resolution" required>
+                    <option value="" disabled selected>Select a resolution</option>
                     <option value="refund">Refund</option>
                     <option value="store-credit">Store Credit</option>
                     <option value="exchange">Exchange</option>
@@ -64,6 +66,7 @@
                 <h2>Refund Information</h2>
                 <label for="refundMethod">Preferred Refund Method:</label>
                 <select id="refundMethod" name="refundMethod" required>
+                    <option value="" disabled selected>Select a refund method</option>
                     <option value="original">Original payment method</option>
                     <option value="bank-transfer">Bank Transfer</option>
                     <option value="store-credit">Store Credit</option>
@@ -99,6 +102,6 @@
         </form>
     </div>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
