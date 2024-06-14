@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Error 404 - Beautiify</title>
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <header class="header1">
+        <nav class="navbar" class="nav-bg1">
+            <a href="index.html">
+                <div class="flex-container">
+                    <div class="flex-item-left"><img src="./assets/images/logo.png" width="37px" height="37px"></div>
+                    <div class="flex-item-right" class="logo">Beautiify</div>
+                </div>
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" style="color: red;"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./assets/html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i> Contributors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./assets/html_files/contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
+                </li>
+                <!-- Dark Mode Toggle -->
+                <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="comp-section" id="404">
+        <div class="compcontainer">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Logo">
+            </div>
+            <h1 class="heading">404</h1>
+            <h3 class="sub-head">Page Not Found</h3>
+            <p class="paragraph">
+                Sorry, but the page you were looking for could not be found.
+            </p>
+            <a href="index.html">
+                <button class="started">Go Back Home</button>
+            </a>
+        </div>
+    </section>
+
+    <div class="footer" id="about">
+        <footer>
+            <ul class="social-icon">
+                <li>
+                    <a href="https://rakesh9100.bio.link/" target="_blank"><i class="fas fa-link"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Rakesh9100" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/rakesh250602/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://discord.com/users/944144134950748170" target="_blank"><i class="fab fa-discord"></i></a>
+                </li>
+            </ul>
+            <p>
+                Created By
+                <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | © <span id="year"></span>: All Rights Reserved
+            </p>
+        </footer>
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <div id="progress">
+        <span id="progress-value" class="bi bi-arrow-up-short"></span>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./assets/js_files/hamburgerMenu.js"></script>
+    <script src="./assets/js_files/contributor.js"></script>
+
+</body>
+
+</html>
