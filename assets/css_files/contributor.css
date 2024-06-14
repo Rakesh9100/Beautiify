@@ -1,32 +1,92 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font size for the body */
 body {
+    font-size: 14px;
     background-image: url(../images/bg3.png);
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
-
 }
 
+/* Set container width and center it */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* Styling for the headbox */
+.contributors .heading-box {
+    background-color: pink;
+    border: 2px solid purple;
+    padding: 30px 70px;
+    text-align: center;
+    position: relative;
+}
+
+.contributors .heading-box:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid pink;
+}
+
+/* Styling for the heading */
+.contributors .heading {
+    font-size: 4.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for the heading */
+.contributors .heading:hover {
+    color: purple;
+}
+
+/* Styling for the subheading */
+.contributors .subheading {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+/* Dark mode styling for the heading-box */
+.dark-mode .contributors .heading-box {
+    background-color: grey;
+    border: 2px solid black; /* Changed border color to black */
+}
+
+.dark-mode .contributors .heading-box:after {
+    border-top-color: grey;
+}
+
+/* Dark mode styling for the heading */
+.dark-mode .contributors .heading {
+    color: white;
+}
+
+/* Dark mode hover effect for the heading */
+.dark-mode .contributors .heading:hover {
+    color: lightgrey;
+}
+
+/* Contributors section */
 .contributors {
     margin: 0;
     padding: 0;
 }
 
-.contributors h1 {
-    text-align: center;
-    color: rgb(68, 184, 230);
-    font-weight: 600;
-    font-size: 4.5rem;
-    margin-top: 25px;
-    margin-bottom: 4%;
-    transition: color 0.3s ease-in-out;
-}
-
-.contributors h1:hover {
-    cursor: pointer;
-    color: rgb(148, 250, 64);
-}
-
+/* Dark mode styling for general contributors section */
 .dark-mode .contributors h1 {
     color: beige;
 }
@@ -37,8 +97,8 @@ body {
 }
 
 #contributor {
-    margin: 0;
-    padding: 0 25px;
+    margin: 34px;
+    padding: 0px 25px;
     line-height: 10;
     display: flex;
     flex-wrap: wrap;
