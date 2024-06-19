@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed alignment */
+    min-height: 100vh;
+    padding-top: 20px; /* Added padding to top */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px; /* Adjusted margin */
+    background-color: #fff;
+    padding: 30px; /* Increased padding for better spacing */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Slightly increased border-radius */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px; /* Added spacing below the heading */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    color: #007BFF;
+    font-size: 20px;
+    margin-bottom: 10px; /* Added spacing below the section heading */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555; /* Darker label color for better contrast */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Slight background color for inputs */
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    textarea,
+    select {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
