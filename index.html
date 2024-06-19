@@ -8,8 +8,7 @@
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Beautiify</title>
@@ -36,25 +35,22 @@
                     <a href="#home" class="nav-link" style="color: red;"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i>
-                        About</a>
+                    <a href="./assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
                 </li>
                 <li class="nav-item">
                     <a href="#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i>
-                        Contributors</a>
+                    <a href="./assets/html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i> Contributors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/html_files/contact.html" class="nav-link"><i class="fa-solid fa-phone"></i>
-                        Contact</a>
+                    <a href="./assets/html_files/contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
             </ul>
 
             <!-- Dark Mode Toggle -->
             <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
-            
+
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -71,8 +67,7 @@
             <h1 class="heading">Beautiify</h1>
             <h3 class="sub-head">Every component, on the right place!!</h3>
             <p class="paragraph">
-                Beautiify comprises a curated selection of beautifully designed components and animations that can be
-                seamlessly incorporated into any website, elevating its overall UI experience.
+                Beautiify comprises a curated selection of beautifully designed components and animations that can be seamlessly incorporated into any website, elevating its overall UI experience.
             </p>
             <a href="#components">
                 <button class="started">Get Components</button>
@@ -85,6 +80,11 @@
         <div id="searchBar">
             <h1>Search Component</h1><br>
             <input type="text" id="componentSearch" placeholder="Enter Component Name" oninput="filterComponents()">
+        </div>
+
+        <div class="no-results">
+            <img src="./assets/images/no-results.png" alt="" height="100px" width="100px">
+            <h2>Hmmm, we are not getting any result. <br> Our bad - Please try another search!</h2>
         </div>
 
         <div class="zoom-effect">
@@ -251,32 +251,29 @@
                     <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li>
                     <a href="https://github.com/Rakesh9100" target="_blank"><i class="fab fa-github"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/rakesh250602/" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/rakesh250602/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fab fa-facebook"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.twitter.com/rakeshroshan73" target="_blank"><i
-                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 </li>
                 <li>
-                    <a href="https://discord.com/users/944144134950748170" target="_blank"><i
-                            class="fab fa-discord"></i></a>
+                    <a href="https://discord.com/users/944144134950748170" target="_blank"><i class="fab fa-discord"></i></a>
                 </li>
             </ul>
             <p>
-                Created By
-                <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | © <span
-                    id="year"></span>: All Rights Reserved
+                Created By <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>: All Rights Reserved
             </p>
         </footer>
     </div>
