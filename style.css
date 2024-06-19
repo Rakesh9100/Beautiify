@@ -848,10 +848,6 @@ footer p a {
         width: 30rem;
         font-size: 1.6rem;
     }
-
-    /* .container {
-        margin-top: 50px;
-    } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -936,7 +932,6 @@ footer p a {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-
 
 @media (max-width: 400px) {
     .paragraph {
