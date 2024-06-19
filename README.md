@@ -41,42 +41,41 @@
 
 Beautiify is a comprehensive collection of meticulously crafted components and animations designed to enhance the aesthetic appeal and user experience of any website. Whether you are building a simple landing page or a complex web application, Beautiify provides you with the tools to create visually stunning and highly interactive user interfaces.
 
-<h2>Features</h2>
+<h3>Features💡</h3>
 Beautiify offers a diverse range of components and animations designed to enhance the user interface of any website. Each component is available in multiple designs, providing ample customization options.
 
-<h2>Components</h2>
-1. Accordions- Accordions are expandable sections that reveal or hide content when clicked. Beautiify offers various styles, including: 3D Accordions, Glassmorphism Accordions, Modern Accordions etc.
+<h3>Components🎨</h3>
 
-2. Backgrounds- Beautiify includes a collection of visually appealing backgrounds to enhance the look of your site. Options include: Gradient Backgrounds, abstract Backgrounds, Animated Backgrounds, dot-wave background etc.
+1. **Accordions** -- Accordions are expandable sections that reveal or hide content when clicked. Beautiify offers various styles, including 3D Accordion, Glassmorphism Accordion, Horizontal Picture Accordion, and so on.
 
-3. Buttons- Stylish and functional buttons are available in different shapes and sizes. Designs include: Rounded Buttons, Hover Buttons, Glowing Buttons etc.
+2. **Backgrounds** -- Beautiify includes a collection of visually appealing backgrounds to enhance the look of your site. Options include 3D Boxes Background, Abstract Background, Animated Colorful Background, and so on.
 
-4. Breadcrumbs- Breadcrumbs provide navigational links to enhance user experience. Available designs include: Gaming Breadcrumbs, 3D Breadcrumbs, Titlted Breadcrumbs etc.
+3. **Breadcrumbs** -- Breadcrumbs provide navigational links to enhance user experience. Available designs include 3D Breadcrumb, Animated Breadcrumb, Gaming Breadcrumb, and so on.
 
-5. Cards- Cards are versatile containers for displaying content. Beautiify provides various card designs, such as: 3D Cards, Flip Cards, Glassmorphism Cards etc.
+4. **Buttons** -- Stylish and functional buttons are available in different shapes and sizes. Designs include Blob Button, Glow Button, Hover Button, and so on.
 
-6. Carousels- Carousels are rotating sliders for showcasing images or content. Available types include: Image Carousels, Dragable Carousels, Animated Carousels etc.
+5. **Cards** -- Cards are versatile containers for displaying content. Beautiify provides various card designs, such as 3D Animated Card, Blog Post Card, Flip Card, and so on.
 
-7. Dropdowns- Dropdown menus allow users to select options from a list. Beautiify offers several styles: Apple themed Dropdowns and The more menu dropdown.
+6. **Carousels** -- Carousels are rotating sliders for showcasing images or content. Available types include 3D Image Carousel, Draggable Carousel, Neumorphism Carousel, and so on.
 
-8. Footers- Footers are customizable sections at the bottom of pages. Beautiify includes: Simple Footers, Classic Footers, Waves Footers etc.
+7. **Dropdowns** -- Dropdowns allow users to select options from a list. Beautiify offers several styles which include Apple Themed Dropdown, and The More Menu Dropdown.
 
-9. Forms- Forms are essential for user input. Beautiify provides a range of form designs, including: Contact Form, Black-Red Form, Animated sign-in Form etc.
+8. **Footers** -- Footers are customizable sections at the bottom of pages. Beautiify includes Animated Footer, Classic Footer, Waves Footer, and so on.
 
-10. Loaders- Loaders indicate the loading process. Beautiify features various loader designs: Box Loaders, Bird Loaders, Cup Loaders etc.
+9. **Forms** -- Forms are essential for user input. Beautiify provides a range of form designs, including Animated Login Form, Black Red Signup Form, Contact Form, and so on.
 
-11. Navigation Bars- Navigation bars provide links for site navigation. Beautiify offers: Horizontal Navigation Bars, Vertical Navigation Bars. Simple Navigation Bars etc.
+10. **Loaders** -- Loaders indicate the loading process. Beautiify features various loader designs such as Bird Loader, Clock Loader, Helix Loader, and so on.
 
-12. Text Animations- Text animations add dynamic effects to text. Beautiify includes: Flip Text Animations, Fog Text Animations, Glowing Text Animations etc.
+11. **Navigation Bars** -- Navigation Bars provide links for site navigation. Beautiify offers Circular Navigation Bar, Hamburger Navigation Bar, Overlay Navigation Bar, and so on.
 
-13. Popups- Popups display messages or content overlays. Available designs include: Error Notification Popups, Login confirmation Popups, Notification Popups etc.
+12. **Popups** -- Popups display messages or content overlays. Available designs include Context Menu Popup, Error Notification Popup, Success Notification Popup, and so on.
 
-14. Search Bars- Search bars enable users to search content on your site. Beautiify provides: Simple Search Bars, Icon-integrated Search Bars, 3D Search Bars etc.
+13. **Search Bars** -- Search Bars enable users to search content on your site. Beautiify provides 3D Search Bar, Google Search Bar, Neumorphism Search Bar, and so on.
 
-15. Transfer Lists- Transfer lists allow items to be moved between lists. Available styles are: Neuromorphism transfer list.
+14. **Text Animations** -- Text Animations add dynamic effects to text. Beautiify includes Flip Text Animation, Fog Text Animation, Glowing Text Animation, and so on.
 
+15. **Transfer Lists** -- Transfer Lists allow items to be moved between lists. Available styles are Neuromorphism Transfer List.
 
-This detailed breakdown highlights the variety and customization options available in Beautiify's components, ensuring a comprehensive enhancement of your website's UI.
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <h2>Technology Used🚀</h2>
