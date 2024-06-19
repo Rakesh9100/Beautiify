@@ -46,9 +46,11 @@ section {
     margin-top: 80px;
     margin-left: 10px;
 }
-.bgcolor{
-    background: radial-gradient(circle,#e36b0f,rgb(255, 0, 111),#8004b1);
+
+.bgcolor {
+    background: radial-gradient(circle, #e36b0f, rgb(255, 0, 111), #8004b1);
 }
+
 .content {
     justify-content: center;
     align-items: center;
