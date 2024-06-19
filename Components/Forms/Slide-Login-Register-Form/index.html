@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Slide Login Register Form</title>
 </head>
+
 <body>
-	<label class="theme-switch">
+    <label class="theme-switch">
         <input type="checkbox" class="theme-switch__checkbox">
         <div class="theme-switch__container">
             <div class="theme-switch__clouds"></div>
@@ -27,42 +29,28 @@
             </div>
         </div>
     </label>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="login">
+            <form class="form">
+                <label for="chk" aria-hidden="true">Log in</label>
+                <input class="input" type="email" name="email" placeholder="Email" required="">
+                <input class="input" type="password" name="pswd" placeholder="Password" required="">
+                <button>Log in</button>
+            </form>
+        </div>
+        <div class="register">
+            <form class="form">
+                <label for="chk" aria-hidden="true">Register</label>
+                <input class="input" type="text" name="txt" placeholder="Username" required="">
+                <input class="input" type="email" name="email" placeholder="Email" required="">
+                <input class="input" type="password" name="pswd" placeholder="Password" required="">
+                <button>Register</button>
+            </form>
+        </div>
+    </div>
 
-    <div class="main">  	
-		<input type="checkbox" id="chk" aria-hidden="true">
-
-			<div class="login">
-				<form class="form">
-					<label for="chk" aria-hidden="true">Log in</label>
-					<input class="input" type="email" name="email" placeholder="Email" required="">
-					<input class="input" type="password" name="pswd" placeholder="Password" required="">
-					<button>Log in</button>
-				</form>
-			</div>
-
-      <div class="register">
-				<form class="form">
-					<label for="chk" aria-hidden="true">Register</label>
-					<input class="input" type="text" name="txt" placeholder="Username" required="">
-					<input class="input" type="email" name="email" placeholder="Email" required="">
-					<input class="input" type="password" name="pswd" placeholder="Password" required="">
-					<button>Register</button>
-				</form>
-			</div>
-	</div>
-
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const themeSwitchCheckbox = document.querySelector('.theme-switch__checkbox');
-
-			themeSwitchCheckbox.addEventListener('change', () => {
-				if (themeSwitchCheckbox.checked) {
-					document.body.classList.add('dark-mode');
-				} else {
-					document.body.classList.remove('dark-mode');
-				}
-			});
-		});
-	</script>
+    <script src="script.js"></script>
 </body>
+
 </html>
