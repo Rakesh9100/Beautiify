@@ -1,0 +1,121 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body .btn-bg {
+    width: 100%;
+    height: 100vh;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body .btn-bg.Minecraft {
+    background: #8dadd2;
+}
+
+body .btn-bg.Minecraft .btn-info {
+    color: #020302;
+}
+
+body .btn-bg.Minecraft .btn-group .character button {
+    overflow: hidden;
+    position: relative;
+    color: #a0f78b;
+    border-radius: 5px;
+    border: 5px solid #a0f78b;
+    padding: calc(1rem + 5px) calc(3rem + 2.5px);
+    background: linear-gradient(45deg, #8ff677 7.5px, transparent 5px) 0px 10px,
+        linear-gradient(225deg, #8ff677 7.5px, transparent 5px) 10px 0px,
+        linear-gradient(45deg, #34db0f 7.5px, transparent 5px) 0px 20px,
+        linear-gradient(225deg, #34db0f 7.5px, transparent 5px) 10px 10px,
+        linear-gradient(45deg, #27a709 7.5px, transparent 5px) 0px 30px,
+        linear-gradient(225deg, #27a709 7.5px, transparent 5px) 10px 20px,
+        linear-gradient(90deg, #25c800 10px, transparent 10px),
+        linear-gradient(#27a709 25%, #25c800 25%, #25c800 50%, transparent 50%, transparent 75%, #34db0f 75%, #34db0f);
+    background-color: transparent;
+    background-size: 0px 0px;
+    transition: all 0.35s ease;
+}
+
+body .btn-bg.Minecraft .btn-group .character button .creeper {
+    position: absolute;
+    top: calc(50% - 30.5px);
+    left: calc(50% - 29px);
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.1);
+    transition: all 0.25s ease;
+}
+
+body .btn-bg.Minecraft .btn-group .character button .creeper .eye {
+    height: 20px;
+    position: relative;
+}
+
+body .btn-bg.Minecraft .btn-group .character button .creeper .eye:before,
+body .btn-bg.Minecraft .btn-group .character button .creeper .eye:after {
+    width: 20px;
+    height: 20px;
+    background: #7a5a5d;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+}
+
+body .btn-bg.Minecraft .btn-group .character button .creeper .eye:after {
+    left: inherit;
+    right: 0;
+}
+
+body .btn-bg.Minecraft .btn-group .character button .creeper .mouth {
+    height: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+body .btn-bg.Minecraft .btn-group .character button .creeper .mouth .center {
+    background: #7a5a5d;
+    width: 20px;
+    height: 30px;
+}
+
+body .btn-bg.Minecraft .btn-group .character button .creeper .mouth:before,
+body .btn-bg.Minecraft .btn-group .character button .creeper .mouth:after {
+    width: 10px;
+    height: 30px;
+    background: #7a5a5d;
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 10px;
+}
+
+body .btn-bg.Minecraft .btn-group .character button .creeper .mouth:after {
+    left: inherit;
+    right: 10px;
+}
+
+body .btn-bg.Minecraft .btn-group .character button:hover {
+    color: transparent;
+    border-color: transparent;
+    background-color: #8ff677;
+    background-size: 20px 40px;
+    transition: all 0.35s ease;
+}
+
+body .btn-bg.Minecraft .btn-group .character button:hover .creeper {
+    opacity: 1;
+    transform: scale(0.5);
+    transition: all 0.25s ease;
+}

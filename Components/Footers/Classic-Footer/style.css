@@ -1,0 +1,226 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #252525;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8e30c9;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7627a7;
+}
+
+footer {
+    margin-bottom: -20px;
+    width: 100%;
+    /* Occupy full width */
+    height: 36vh;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    flex-wrap: wrap;
+    box-shadow: -2px -2px 5px black;
+}
+
+/* Container Containing All social media links */
+.social-media {
+    height: 90%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 2.5vw;
+    color: white;
+    text-align: center;
+}
+
+.social-media-links {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.74em;
+}
+
+.linkOfSocialMedia {
+    text-align: center;
+    padding: 4px;
+    border-radius: 20px;
+}
+
+.linkOfSocialMedia:hover {
+    background-color: rgba(0, 0, 0, 0.744);
+}
+
+/* Colors of social media Icons */
+.fa-instagram {
+    color: #d62976;
+}
+
+.fa-youtube {
+    color: #c4302b;
+}
+
+.fa-github,
+.fa-x-twitter {
+    color: #ffffff;
+}
+
+.fa-linkedin {
+    color: #0072b1;
+}
+
+.fa-discord {
+    color: #7289d9;
+}
+
+/* Container Containg Disclosers */
+.rights {
+    height: 75%;
+    width: 40%;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.4vw;
+    color: white;
+    font-weight: 400;
+    text-shadow: 1px 1px 15px rgb(0, 0, 0);
+}
+
+.rights div {
+    height: 50%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rights div span {
+    margin-top: 3px;
+    align-items: center;
+    text-wrap: balance;
+}
+
+.right-reserved {
+    border-top: 2px solid white;
+}
+
+/* Text Colors in Right Reserved Section */
+#footer-contactus {
+    color: #23bf46;
+}
+
+#strongcommunity {
+    color: #8a53ff;
+}
+
+#footer-brc {
+    color: #1babd3;
+}
+
+.phonesized-devlopedby-L,
+.phonesized-devlopedby-S {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    color: white;
+    font-weight: bold;
+}
+
+.phonesized-devlopedby-S {
+    display: none;
+}
+
+.phonesized-devlopedby-L p,
+.phonesized-devlopedby-S p {
+    text-align: center;
+}
+
+.phonesized-devlopedby-L span,
+.phonesized-devlopedby-S span {
+    color: rgb(255, 179, 0);
+    padding-right: 2px;
+    text-wrap: balance;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .phonesized-devlopedby-L {
+        display: none;
+    }
+
+    .phonesized-devlopedby-S {
+        display: flex;
+        height: 50%;
+        width: 50%;
+    }
+
+    .social-media {
+        height: 50%;
+        width: 45%;
+        justify-content: space-evenly;
+    }
+
+    .social-media p {
+        margin-top: 5px;
+        font-size: 1.2em;
+    }
+
+    .social-media a {
+        font-size: 0.8em;
+    }
+
+    .social-media-links {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .rights {
+        height: 50%;
+        width: 100%;
+        border: none;
+        font-size: calc(1.5vw + 7px);
+    }
+}
+
+.social-media img {
+    width: 30px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Add some space between icons */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .social-media img {
+        width: 25px;
+        /* Adjust the width for smaller screens */
+    }
+
+    .phonesized-devlopedby-S,
+    .phonesized-devlopedby-L {
+        font-size: 14px;
+        /* Decrease font size for smaller screens */
+    }
+}
