@@ -3,25 +3,27 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: #e8e8e8;
+	padding: 20px;
 }
 
 .master-container {
 	display: grid;
-	grid-template-columns: auto;
-	gap: 5px;
+	grid-template-columns: 1fr;
+	gap: 15px;
+	width: 100%;
+	max-width: 900px;
 	font-family: Montserrat, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji" !important;
-
 }
 
 .card {
-	width: 500px;
-	height: 25vh;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/* align-items: center; */
 	background: #FFFFFF;
 	box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 .title {
@@ -50,7 +52,7 @@ body {
 
 .cart .products .product {
 	display: grid;
-	grid-template-columns: 60px 1fr 80px 1fr;
+	grid-template-columns: 60px 1fr 80px;
 	align-items: center;
 	gap: 10px;
 }
@@ -116,14 +118,13 @@ body {
 /* coupons */
 .coupons {
 	border-radius: 7px;
-	height: 20vh;
 }
 
 .coupons form {
 	display: grid;
 	grid-template-columns: 1fr 80px;
 	gap: 10px;
-	padding: 33px;
+	padding: 20px;
 }
 
 .input_field {
@@ -166,8 +167,6 @@ body {
 /* Checkout */
 .checkout {
 	border-radius: 9px 9px 19px 19px;
-	height: 35vh;
-
 }
 
 .checkout .details {
@@ -240,4 +239,41 @@ body {
 	font-size: 14px;
 	font-weight: 600;
 	transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+@media (min-width: 768px) {
+	.master-container {
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
+
+		.card {
+			grid-column: span 2;
+	
+		}
+	
+		.coupons {
+			grid-column: span 2;
+		}
+	
+		.checkout {
+			grid-column: span 2;
+		}
+}
+
+@media (min-width: 1024px) {
+	.master-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.card{
+		grid-column: span 3;
+	
+	}
+	.coupons {
+		grid-column: span 3;
+	}
+
+	.checkout {
+		grid-column: span 3;
+	}
 }
