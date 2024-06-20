@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Footer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-container {
+            background-color: #222;
+            padding: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 30px;
+            color: #fff;
+        }
+
+        .footer-section {
+            width: 250px;
+        }
+
+        .footer-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #ff9900; 
+        }
+
+        .social-links li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-links a {
+            color: #fff; /* White icons */
+            font-size: 1.2em;
+        }
+
+        .footer-copyright {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .more-info-button, .scroll-to-top {
+            background-color: #ff9900; 
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .more-info-button:hover, .scroll-to-top:hover {
+            background-color: #ff7f00; 
+        }
+
+        .more-info {
+            display: none; 
+            margin-top: 10px;
+        }
+
+        .more-info.show {
+            display: block;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2 class="section-title">About Us</h2>
+            <div class="section-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Our Products</h2>
+            <div class="section-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                <p>Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-section">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <button class="more-info-button">More Info</button>
+            <div class="more-info">
+                <p>Additional information about our company goes here. This is where you can provide more details about your company's mission, values, history, or any other relevant information.</p>
+                <p>You can also include links to other relevant pages on your website or external resources that might be helpful to your visitors.</p>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Contact Us</h2>
+            <p>Address: Street name,
+                district, India
+            </p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: abc@example.com</p>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2024 All Rights Reserved.</p>
+        </div>
+        <button class="scroll-to-top">Back to Top</button>
+    </footer>
+
+    <script>
+        
+        const moreInfoButton = document.querySelector('.more-info-button');
+        const moreInfoSection = document.querySelector('.more-info');
+
+        moreInfoButton.addEventListener('click', () => {
+          moreInfoSection.classList.toggle('show');
+          if (moreInfoSection.classList.contains('show')) {
+            moreInfoButton.textContent = 'Less Info';
+          } else {
+            moreInfoButton.textContent = 'More Info';
+          }
+        });
+
+        const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+        scrollToTopButton.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+          });
+        });
+    </script>
+</body>
+</html>
