@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Split Footer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+    }
 
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #222; 
+      color: #fff;
+      padding: 30px; 
+    }
+
+    .footer-left, .footer-right {
+      flex: 1;
+      text-align: center;
+    }
+
+    .footer-left p {
+      font-size: 1.2em; 
+      margin-bottom: 10px;
+    }
+
+    .social-links {
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px; 
+      font-size: 1.5em; 
+      transition: all 0.3s ease; 
+    }
+
+    .social-links a:hover {
+      text-decoration: none;
+      color: #ffcc00; 
+      transform: translateY(-2px); 
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Split Footer</h1>
+
+    <div class="content">
+      <h2>Section 1: Example Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nibh vitae fermentum condimentum, libero augue convallis elit, non tempor felis lectus non lacus. Nulla facilisi. Nulla facilisi. Nulla facilisi.</p>
+    </div>
+
+    <div class="content">
+      <h2>Section 2: More Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nibh vitae fermentum condimentum, libero augue convallis elit, non tempor felis lectus non lacus. Nulla facilisi. Nulla facilisi. Nulla facilisi.</p>
+    </div>
+
+    <div class="content">
+        <h2>Section 3: More Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nibh vitae fermentum condimentum, libero augue convallis elit, non tempor felis lectus non lacus. Nulla facilisi. Nulla facilisi. Nulla facilisi.</p>
+      </div>
+
+      <div class="content">
+        <h2>Section 4: More Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nibh vitae fermentum condimentum, libero augue convallis elit, non tempor felis lectus non lacus. Nulla facilisi. Nulla facilisi. Nulla facilisi.</p>
+      </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <p>Copyright © 2024</p>
+    </div>
+    <div class="footer-right">
+      <p>Contact: your@email.com</p>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
