@@ -103,7 +103,7 @@ body {
 }
 
 .contributor-card:hover {
-    transform: scale(1.35);
+    transform: scale(1.22);
     opacity: 0.85;
 }
 

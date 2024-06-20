@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css_files/search.css">
     <script src="../js_files/commonnav.js"></script>
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <title>Beautiify | Breadcrumbs</title>
 </head>
 
@@ -47,8 +48,8 @@
                 <li class="nav-item">
                     <a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
-                <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
             </ul>
+            <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -62,9 +63,15 @@
         <div class="heading">Breadcrumbs</div>
         <!-- Search Bar -->
         <div id="searchBar">
-            <h1>Search Breadcrumb</h1><br>
+            <h1 class="SearchBreadcrumb">Search Breadcrumb</h1><br>
             <input type="text" id="componentSearch" placeholder="Enter breadcrumbs Name" oninput="filtereachComponents()">
         </div>
+
+        <div class="no-results">
+            <img src="../images/no-results.png" alt="" height="100px" width="100px">
+            <h2>Hmmm, we are not getting any result. <br> Our bad - Please try another search!</h2>
+        </div>
+        
         <div class="contain">
             <div class="box">
                 <h1>3D Breadcrumb</h1>
@@ -168,8 +175,8 @@
     <script src="../js_files/dark-mode.js"></script>
 
     <!-- Scroll To Top Button -->
-    <div id="progress">
-        <span id="progress-value">&#x1F815;</span>
+    <div id="">
+        <span id="-value" class="bi bi-arrow-up-short"></span>
     </div>
 
     <script src="../js_files/search.js"></script>

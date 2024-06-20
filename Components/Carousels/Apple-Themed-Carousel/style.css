@@ -1,0 +1,97 @@
+:root {
+    --background-color: rgba(255, 255, 255, 0.8);
+    --text-color: #000;
+    --button-bg-color: rgba(0, 0, 0, 0.7);
+    --button-text-color: #fff;
+    --carousel-bg-color: rgba(255, 255, 255, 0.2);
+    --carousel-border-color: rgba(255, 255, 255, 0.5);
+    --background-gradient: linear-gradient(135deg, rgba(240, 240, 240, 0.8) 25%, rgba(255, 255, 255, 0.8) 100%);
+    --dark-background-gradient: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 25%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+body.dark-theme {
+    --background-color: rgba(0, 0, 0, 0.8);
+    --text-color: #fff;
+    --button-bg-color: rgba(255, 255, 255, 0.7);
+    --button-text-color: #000;
+    --carousel-bg-color: rgba(0, 0, 0, 0.2);
+    --carousel-border-color: rgba(0, 0, 0, 0.5);
+    --background-gradient: var(--dark-background-gradient);
+}
+
+body {
+    background: var(--background-gradient);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-theme, .btn-github {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-theme:hover, .btn-github:hover {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+}
+
+.btn-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.carousel-container {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 20s infinite linear;
+}
+
+.carousel__face {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background: var(--carousel-bg-color);
+    border: 2px solid var(--carousel-border-color);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel__face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.carousel__face:nth-child(1) { transform: rotateY(0deg) translateZ(300px); }
+.carousel__face:nth-child(2) { transform: rotateY(60deg) translateZ(300px); }
+.carousel__face:nth-child(3) { transform: rotateY(120deg) translateZ(300px); }
+.carousel__face:nth-child(4) { transform: rotateY(180deg) translateZ(300px); }
+.carousel__face:nth-child(5) { transform: rotateY(240deg) translateZ(300px); }
+.carousel__face:nth-child(6) { transform: rotateY(300deg) translateZ(300px); }
+
+@keyframes rotate {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
