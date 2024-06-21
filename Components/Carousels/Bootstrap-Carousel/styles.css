@@ -1,0 +1,71 @@
+body {
+    background-color: #0d47a1; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    animation: colorChange 6s infinite alternate; 
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-color: #0d47a1; 
+    }
+    25% {
+      background-color: #1976d2; 
+    }
+    50% {
+      background-color: #0d47a1; 
+    }
+    75% {
+      background-color: #1565c0; 
+    }
+    100% {
+      background-color: #0d47a1; 
+    }
+  }
+  
+.carousel {
+    max-width: 800px; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .carousel .carousel-item img {
+    border-radius: 10px;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%; 
+  }
+  
+  .carousel-control-prev-icon:before,
+  .carousel-control-next-icon:before {
+    color: #fff; 
+  }
+  
+  .carousel-indicators {
+    bottom: 20px; 
+  }
+  
+  .carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0.3); 
+  }
+  
+  .carousel-indicators .active {
+    background-color: #000; 
+  }
+  .carousel-item img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 10px; 
+  }
