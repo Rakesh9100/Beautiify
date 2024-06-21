@@ -336,6 +336,7 @@ nav li {
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
     margin-right: 10px;
+    padding: 8px 10px;
 }
 
 nav li:hover {
@@ -611,7 +612,7 @@ section {
 footer {
     position: relative;
     width: 100%;
-    box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
+    border-top: 1.5px solid rgba(198, 195, 198, 0.743);
     min-height: 100px;
     padding: 10px;
     display: flex;
@@ -753,11 +754,11 @@ footer p a {
     height: 4rem;
     font-size: 2rem;
     text-align: center;
-    border-radius: 2rem;
+    border-radius: 2.5rem;
     width: 40rem;
     transition: all linear .2s;
     font-weight: 600;
-    padding-right: 0 !important;
+    padding: 25px 10px;
 }
 
 #searchBar input:hover {
