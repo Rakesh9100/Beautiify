@@ -1,0 +1,184 @@
+/* @import "normalize.css"; */
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+	font-family:  "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif, system-ui;
+}
+
+button {
+	--border: hsl(240 3.7% 15.9%);
+	--border-width: 1px;
+	--bg: hsl(0 0% 98%);
+	background: var(--bg);
+	display: inline-flex;
+	--text: hsl(240 5.9% 10%);
+	color: var(--text);
+	align-items: center;
+	justify-items: center;
+	white-space: nowrap;
+	border-radius: 6px;
+	--shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px -1px rgba(0,0,0,.1);
+	box-shadow: var(--shadow);
+	font-size: .875rem;
+	padding: 0;
+	scale: 1.2;
+	font-weight: 500;
+	border: 0;
+	transition-property: color, background, border;
+	transition-duration: 0.15s;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	cursor: pointer;
+}
+button:is(:hover, :focus-visible) {
+	--bg: hsl(0 0% 88%);
+}
+button:focus-visible {
+	outline-color: transparent;
+	--shadow: 0 1px 3px 0 hsl(240 5% 64.9%), 0 1px 2px -1px hsl(240 5% 64.9%);
+}
+
+button 
+button[disabled] {
+	pointer-events: none;
+	--text: hsl(240 5.9% 10% / 0.5);
+}
+
+button .icon {
+  width: 16px;
+}
+
+button .text {
+	padding: 0.5rem 1rem;
+	background: var(--bg);
+	z-index: 2;
+	border-radius: 6px;
+	border-color: var(--border);
+	border-style: solid;
+	border-width: var(--border-width);
+	border-top-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button::after {
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 0;
+	pointer-events: none;
+	left: 0;
+	border: var(--border-width) solid var(--border);
+	border-radius: 6px;
+	mask: linear-gradient(90deg, white 51%, transparent 51% calc(100% - 6px), white calc(100% - 6px));
+	width: 100%;
+	z-index: 5;
+}
+
+button::before {
+	content: "";
+	z-index: 3;
+	width: calc(50% - 6px);
+	left: 50%;
+	height: var(--border-width);
+	background: hsl(0 0% 80%);
+	position: absolute;
+	top: 0;
+}
+
+button .hatch {
+	width: calc(50% - 6px);
+	height: 8px;
+	border-top: var(--border-width) solid var(--border);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: 3;
+}
+
+.ejector {
+  pointer-events: none;
+	position: absolute;
+	left: 75%;
+	top: 50%;
+	height: 75%;
+	aspect-ratio: 1;
+/*	background: red;*/
+	display: grid;
+	place-items: center;
+	translate: -50% -50%;
+	z-index: -1;
+}
+
+.ejected {
+	height: 100%;
+	width: 100%;
+/*	background: hsl(210 80% 50% / 0.5);*/
+	display: inline-block;
+	position: relative;
+}
+
+.ejected__chair {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	translate: -50% 0;
+/*	background: purple;*/
+}
+
+.ejected__chute {
+	height: 100%;
+	width: 100%;
+/*	background: pink;*/
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	translate: -50% 0;
+}
+
+svg {
+	width: 100%;
+	overflow: visible !important;
+}
+
+.cap-strap {
+  fill: hsl(var(--hue, 10) 100% 50%);
+}
+
+.eyes {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  animation: blink 6s calc(var(--eye-delay, 0) * -1s) infinite;
+}
+
+@keyframes blink {
+  0%, 46%, 48%, 50%, 100% {
+    scale: 1 1;
+  }
+  47%, 49% {
+    scale: 1 0.01;
+  }
+}
+
+.parachute path:nth-of-type(2) {
+	fill: hsl(var(--hue) 100% 98%);
+}
+
+.parachute path:nth-of-type(3),
+.parachute path:nth-of-type(4),
+.parachute path:nth-of-type(5) {
+	stroke: hsl(var(--hue) 100% 20% / 0.5);
+	fill: hsl(var(--hue) 100% 20% / 0.5);
+/*	fill: hsl(var(--hue) 100% 20%);*/
+}
