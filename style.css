@@ -613,6 +613,7 @@ footer {
     position: relative;
     width: 100%;
     border-top: 1.5px solid rgba(198, 195, 198, 0.743);
+    backdrop-filter: blur(20px);
     min-height: 100px;
     padding: 10px;
     display: flex;
@@ -627,6 +628,7 @@ footer .social-icon {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    top:10px
 }
 
 footer .social-icon li {

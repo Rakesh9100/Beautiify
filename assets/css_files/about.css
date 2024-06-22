@@ -149,7 +149,8 @@ h3 {
     min-height: 22vh;
     position: relative;
     width: 100vw;
-    box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
+    border-top: 1.5px solid rgba(198, 195, 198, 0.743);
+    backdrop-filter: blur(20px);
     min-height: 30px;
     padding: 20px 50px;
     display: flex;
@@ -164,6 +165,7 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    top:10px
 }
 
 .credit .social-icon li {
