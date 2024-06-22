@@ -468,6 +468,8 @@ section {
     align-items: center;
     flex-wrap: wrap;
     padding: 32px 0;
+    overflow: hidden;
+    position: relative
 }
 
 .container .box {
@@ -480,21 +482,20 @@ section {
     background: linear-gradient(to bottom, #b69bff, #eadafb);
     border: 3px solid rgb(108, 155, 202);
     border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    cursor: pointer;
+    box-shadow: 0.5px 0.5px 1px 0.5px rgba(0,0,0,0.743);
+    cursor: pointer;  
 }
 
 .container .box:hover {
     background-color: rgb(181, 176, 222);
     background: linear-gradient(to bottom, hsl(253, 45%, 88%), hsl(0, 0%, 100%)) transparent;
-    border: 4px solid rgba(139, 65, 209, 0.743);
+    border: 3px solid rgba(139, 65, 209, 0.743);
     box-shadow: 0.5px 0.5px 1px 0.5px rgba(224, 202, 245, 0.743);
-    
 }
 
 .dark-mode .container .box {
     background: linear-gradient(to bottom, #9e97e6, #ffffff);
-    border: 4px solid rgb(238, 245, 251);
+    border: 3px solid rgb(238, 245, 251);
     border: 3px solid rgb(108, 155, 202);
     box-shadow: 1px 1px 2px 1px rgb(91, 131, 164);
 }
@@ -502,7 +503,7 @@ section {
 .dark-mode .container .box:hover {
     background-color: rgb(79, 97, 112);
     background: linear-gradient(to bottom, hsl(253, 45%, 88%), hsl(0, 0%, 100%)) transparent;
-    border: 4px solid rgba(38, 0, 69, 0.743);
+    border: 3px solid rgba(38, 0, 69, 0.743);
     box-shadow: 0.5px 0.5px 1px 0.5px rgba(224, 202, 245, 0.743);
 }
 
@@ -511,7 +512,7 @@ section {
 }
 
 .container .zoom-effect:hover {
-    transform: scale(1.04);
+    transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
 
