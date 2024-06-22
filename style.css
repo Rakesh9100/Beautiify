@@ -206,20 +206,22 @@ button#dark-mode-toggle {
     position: fixed;
     top: 5.5px;
     right: 16px;
-    background-color: #333333;
-    color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    background-image: url('./assets/images/dark.png');
     z-index: 999;
+    background-color: transparent;
+    background-size: cover;
 }
 
 .dark-mode button#dark-mode-toggle {
-    background-color: #eee;
-    color: #222;
+    background-image: url('./assets/images/light.png');
+    background-size: cover;
+    background-color: transparent;
 }
 
 .header1 {
@@ -938,8 +940,6 @@ footer p a {
         position: fixed;
         top: 5.5px;
         right: 45px;
-        background-color: #333333;
-        color: white;
         border: none;
         padding: 10px;
         cursor: pointer;
@@ -947,6 +947,14 @@ footer p a {
         height: 40px;
         border-radius: 50%;
         z-index: 999;
+        background-image: url('./assets/images/dark.png'); 
+        background-size: cover;
+        background-color: transparent;
+    }
+    .dark-mode button#dark-mode-toggle {
+        background-image: url('./assets/images/light.png'); 
+        background-size: cover;
+        background-color: transparent;
     }
 
     .hamburger {
