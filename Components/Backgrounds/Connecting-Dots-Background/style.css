@@ -1,4 +1,9 @@
 /* Header */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 .large-header {
 	position: relative;
 	width: 100%;

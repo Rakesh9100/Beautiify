@@ -1,5 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
 .body {
     background: #381f1fc8;
+    height: 100vh;
 }
 
 .imgbackground {
