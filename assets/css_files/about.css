@@ -36,7 +36,6 @@ section {
 }
 
 .image {
-    background-color: #000000;
     display: flex;
     border-radius: 12px 0 0 12px;
     width: 110%;
@@ -48,8 +47,11 @@ section {
     margin-left: 10px;
 }
 
+.bgcolor {
+    background: radial-gradient(circle, #e36b0f, rgb(255, 0, 111), #8004b1);
+}
+
 .content {
-    background-color: #000000;
     justify-content: center;
     align-items: center;
     border-radius: 0 0 12px 12px;
@@ -59,12 +61,14 @@ section {
 .content h1,
 h3 {
     text-align: center;
+    padding-right: 60px;
 }
 
 .content h4 {
     font-size: 17px;
     letter-spacing: 0px;
     padding: 0 25px;
+    padding-right: 120px;
     opacity: 0.9;
     color: #ffecd1;
 }
