@@ -1,11 +1,13 @@
 body {
     font-family: 'Arial', sans-serif;
-    background:  linear-gradient(45deg, #ff6b6b, #f06595);
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px; /* Added padding to ensure body has some space */
+    box-sizing: border-box;
 }
 
 .container {
@@ -15,6 +17,7 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     max-width: 500px;
     width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 h1 {
@@ -36,13 +39,14 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: calc(100% - 12px);
+    width: 100%; /* Changed to 100% */
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     font-family: 'Arial', sans-serif;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 button {
@@ -50,7 +54,7 @@ button {
     padding: 12px;
     border: none;
     border-radius: 4px;
-    background:  linear-gradient(45deg, #ff6b6b, #f06595);
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
     color: white;
     font-size: 16px;
     font-family: 'Dancing Script', cursive;
@@ -59,5 +63,5 @@ button {
 }
 
 button:hover {
-    background:  linear-gradient(45deg, #f06595, #ff6b6b);
+    background: linear-gradient(45deg, #f06595, #ff6b6b);
 }
