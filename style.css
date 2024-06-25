@@ -215,7 +215,7 @@ button#dark-mode-toggle {
     height: 40px;
     border-radius: 50%;
     z-index: 999;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 .dark-mode button#dark-mode-toggle {
