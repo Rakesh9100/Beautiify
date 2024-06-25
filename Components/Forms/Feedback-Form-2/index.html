@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <title>Feedback Form-2</title>
+</head>
+<body>
+    <div id="modal" class="modal-content">
+        <span class="close">&times;</span>
+        <h2>FEEDBACK FORM</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <form id="feedback-form">
+            <div class="form-group">
+                <div class="icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <input type="text" placeholder="Your Name" name="name" required>
+            </div>
+            <div class="form-group">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <input type="email" placeholder="Email Id" name="email" required>
+            </div>
+            <div class="form-group">
+                <textarea cols="30" rows="5" placeholder="Your Feedback" name="feedback" required></textarea>
+            </div>
+            <div class="rating">
+                <h2>Rate us:</h2>
+                <i class="rating__star far fa-star"></i>
+                <i class="rating__star far fa-star"></i>
+                <i class="rating__star far fa-star"></i>
+                <i class="rating__star far fa-star"></i>
+                <i class="rating__star far fa-star"></i>
+            </div>
+            <button type="submit" disabled>Submit</button>
+        </form>
+        <div id="thank-you-message" style="display:none; font-size:20px; color: green; margin-top: 20px;">
+            Thank you for your feedback!
+        </div>
+        <div id="error-message" style="display:none; color: red;font-size:20px; margin-top: 20px;">
+            Please fill in all fields before submitting.
+        </div>
+    </div>
+</body>
+</html>

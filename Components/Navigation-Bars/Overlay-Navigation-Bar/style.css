@@ -39,15 +39,15 @@ body {
 }
 
 .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
     font-size: 30px;
     cursor: pointer;
     color: #818181;
+    padding: 10px 20px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    text-decoration: none;
 }
-
-
 
 .open-btn {
     font-size: 20px;
@@ -58,7 +58,6 @@ body {
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-
     position: fixed;
     top: 20px;
     left: 20px;

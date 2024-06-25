@@ -46,9 +46,11 @@
                 <li class="nav-item">
                     <a href="./assets/html_files/contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
-                <!-- Dark Mode Toggle -->
-                <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
             </ul>
+
+            <!-- Dark Mode Toggle -->
+            <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -78,6 +80,11 @@
         <div id="searchBar">
             <h1>Search Component</h1><br>
             <input type="text" id="componentSearch" placeholder="Enter Component Name" oninput="filterComponents()">
+        </div>
+
+        <div class="no-results">
+            <img src="./assets/images/no-results.png" alt="" height="100px" width="100px">
+            <h2>Hmmm, we are not getting any result. <br> Our bad - Please try another search!</h2>
         </div>
 
         <div class="zoom-effect">
@@ -176,7 +183,7 @@
                     <div class="content">
                         <i class="fas fa-spinner"></i>
                         <h2>Loaders</h2>
-                    </div>  
+                    </div>
                 </a>
             </div>
         </div>
@@ -263,8 +270,10 @@
                 </li>
             </ul>
             <p>
-                Created By
-                <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | © <span id="year"></span>: All Rights Reserved
+                Created By <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>: All Rights Reserved
             </p>
         </footer>
     </div>
