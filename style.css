@@ -219,7 +219,7 @@ button#dark-mode-toggle {
 
 .dark-mode button#dark-mode-toggle {
     background-color: #eee;
-    color: #000000;
+    color: #222;
 }
 
 .header1 {
@@ -274,18 +274,17 @@ button#dark-mode-toggle {
 .navbar {
     margin: 0 auto;
     z-index: 1000;
-    background: linear-gradient(135deg, rgba(70, 3, 194, 0), rgba(69, 18, 103, 0.983),rgba(154, 201, 255, 0.999));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 2px 20px rgb(85, 2, 98);
+    box-shadow: 0 21px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
 a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: 500;
-    text-shadow: 1px 1px 2px rgb(79, 0, 80);
-    /* , 1px 1px 1px white; */
+    text-shadow: 1px 1px 2px black, 1px 1px 1px white;
 }
 
 .flex-container {
@@ -322,7 +321,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    /* box-shadow: 0px 3px 5px rgb(30, 30, 30); */
+    box-shadow: 0px 3px 5px rgb(30, 30, 30);
 }
 
 nav ul {
@@ -332,12 +331,11 @@ nav ul {
 }
 
 nav li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 2.1rem;
     font-weight: bolder;
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
 nav li:hover {
@@ -349,7 +347,7 @@ nav li:hover {
 }
 
 nav a {
-    font-weight: 550;
+    font-weight: bold;
 }
 
 .logo {
@@ -359,11 +357,6 @@ nav a {
     font-family: Ubuntu;
     color: white;
     text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
-}
-
-.flex-item-right:hover {
-    text-shadow: 2px 2px 6px rgb(0, 0, 0);
-    transition: 0.3s ease-in-out;
 }
 
 .hamburger {
@@ -378,16 +371,6 @@ nav a {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
-}
-
-nav li:hover {
-    border-bottom: 0.2rem rgb(255, 255, 255) solid;
-    border-radius: 5px;
-}
-
-.nav-item:hover .nav-link {
-    text-shadow: 2px 2px 4px rgb(85, 1, 106);
-    transition: 0.3s ease-in-out;
 }
 
 /* Components Section Css */
