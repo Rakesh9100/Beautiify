@@ -525,21 +525,22 @@ section {
     justify-content: center;
     align-items: center;
     margin: 25px;
-    background: rgba(224, 202, 245, 0.743);
+    background: rgba(151, 97, 168, 0.777);
     border: 4px solid rgb(171, 196, 218);
     border-radius: 50px;
     box-shadow: 2px 2px 4px 2px rgb(163, 205, 239);
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
     cursor: pointer;
 }
 
 .container .box:hover {
-    background-color: rgb(100, 96, 130);
-    border: 4px solid rgba(224, 202, 245, 0.743);
-    box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
+    background-color: rgba(251, 250, 253, 0.985);
+    border: 4px solid rgba(251, 253, 254, 0.624);
+    box-shadow: rgba(40, 121, 243, 0.807) 0px 20px 60px -12px inset, #1c6fe5cb 0px 18px 2px -18px inset,2px 2px 4px 2px rgba(247, 248, 250, 0.866),rgba(43, 127, 230, 0.156) 0px -50px 76px -18px inset, rgba(225, 225, 230, 0.35) 0px 8px 6px,  rgba(225, 225, 230, 0.439) 0px 4px 6px,  rgba(225, 225, 230, 0.408) 0px 4px 6px;
 }
 
 .dark-mode .container .box {
-    background: rgba(251, 251, 251, 0.743);
+    background: rgba(251, 251, 251, 0.846);
     border: 4px solid rgb(238, 245, 251);
     box-shadow: 2px 2px 4px 2px rgb(91, 131, 164);
 }
@@ -553,6 +554,9 @@ section {
 .container .zoom-effect {
     transition: transform 0.5s ease-in-out;
 }
+/* .container .zoom-effect .box :hover{
+    background-color: rgb(229, 229, 239);
+} */
 
 .container .zoom-effect:hover {
     transform: scale(1.04);
@@ -571,17 +575,17 @@ section {
 
 .container .box .content i {
     font-size: 73px;
-    color: rgb(18, 100, 166);
+    color: rgb(53, 147, 197);
     text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
 }
 
 .dark-mode .container .box .content i {
-    text-shadow: 1px 1px 2px black, 1px 1px 2px #a5b9c5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.784), 1px 1px 2px #a5b9c5;
 }
 
 .container .box .content h2 {
     font-size: 23px;
-    color: rgb(37, 111, 172);
+    color: rgb(53, 147, 197);;
     margin-top: 25px;
     margin-bottom: 5px;
     text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172);
@@ -589,8 +593,9 @@ section {
 
 .container .box:hover .content i,
 .container .box:hover .content h2 {
-    color: rgba(224, 202, 245, 0.743);
-    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
+    /* color:rgba(88, 5, 81, 0.524); */
+    color: rgba(63, 19, 80, 0.711);
+    text-shadow: 1px 1px 2px rgb(97, 96, 96), 1px 1px 2px rgb(37, 111, 172);
 }
 
 .dark-mode .container .box:hover .content i,
