@@ -203,6 +203,9 @@ html {
 }
 
 button#dark-mode-toggle {
+    background-image: url('./assets/images/dark.png');
+    background-color: transparent;
+    background-size: cover;
     position: fixed;
     top: 5.5px;
     right: 16px;
@@ -212,16 +215,14 @@ button#dark-mode-toggle {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-image: url('./assets/images/dark.png');
     z-index: 999;
-    background-color: transparent;
-    background-size: cover;
+    margin-top: 4px;
 }
 
 .dark-mode button#dark-mode-toggle {
     background-image: url('./assets/images/light.png');
-    background-size: cover;
     background-color: transparent;
+    background-size: cover;
 }
 
 .header1 {
@@ -276,10 +277,10 @@ button#dark-mode-toggle {
 .navbar {
     margin: 0 auto;
     z-index: 1000;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 21px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
 a {
@@ -320,6 +321,7 @@ ul {
 
 nav {
     display: flex;
+    height: 60px;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
@@ -937,6 +939,9 @@ footer p a {
     }
 
     button#dark-mode-toggle {
+        background-image: url('./assets/images/dark.png');
+        background-color: transparent;
+        background-size: cover;
         position: fixed;
         top: 5.5px;
         right: 45px;
@@ -947,14 +952,12 @@ footer p a {
         height: 40px;
         border-radius: 50%;
         z-index: 999;
-        background-image: url('./assets/images/dark.png'); 
-        background-size: cover;
-        background-color: transparent;
     }
+
     .dark-mode button#dark-mode-toggle {
-        background-image: url('./assets/images/light.png'); 
-        background-size: cover;
+        background-image: url('./assets/images/light.png');
         background-color: transparent;
+        background-size: cover;
     }
 
     .hamburger {
@@ -1008,3 +1011,4 @@ footer p a {
         margin: 15px !important;
     }
 }
+

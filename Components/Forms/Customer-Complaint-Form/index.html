@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Customer Complaint Form</title>
+</head>
+<body>
+    <div class="container">
+        <form id="complaintForm">
+            <h1>Customer Complaint Form</h1>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email-Id</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="issue">Issue</label>
+            <textarea id="issue" name="issue" rows="10" required></textarea>
+            
+            <label for="resolution">Desired Resolution</label>
+            <textarea id="resolution" name="resolution" rows="4" required></textarea>
+            
+            <button type="submit">Submit Complaint</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
