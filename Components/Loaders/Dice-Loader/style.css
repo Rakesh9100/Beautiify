@@ -1,0 +1,76 @@
+.MyBox {
+    perspective: 1000px;
+}
+
+.cube {
+    font-size: 4em;
+    width: 2em;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(25deg);
+    margin: 200px auto;
+    animation: rotate 6s infinite alternate
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotateY(0deg) translateZ(0em);
+    }
+
+    20% {
+        transform: rotateX(90deg) translateZ(0em);
+    }
+
+    40% {
+        transform: rotateY(90deg) translateZ(0em);
+    }
+
+    60% {
+        transform: rotateY(-90deg) translateZ(0em);
+    }
+
+    80% {
+        transform: rotateX(-90deg) translateZ(0em);
+    }
+
+    100% {
+        transform: rotateY(-180deg) translateZ(0em);
+    }
+
+}
+
+.side {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: rgba(65, 56, 56, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    line-height: 2em;
+
+}
+
+.front {
+    transform: translateZ(1em);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(1em);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(1em);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(1em);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(1em);
+}
+
+.back {
+    transform: rotateY(-180deg) translateZ(1em);
+}
