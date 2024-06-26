@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Multilevel Dropdown</title>
+</head>
+
+<body>
+    <div class="dropdown">
+        <a href="#">Services</a>
+        <ul class="submenu">
+            <li><a href="#">Web Development</a></li>
+            <li class="dropdown">
+                <a href="#">Design</a>
+                <ul class="submenu">
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">UI/UX</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Marketing</a>
+                <ul class="submenu">
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Content Marketing</a></li>
+                    <li class="dropdown">
+                        <a href="#">Social Media</a>
+                        <ul class="submenu">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

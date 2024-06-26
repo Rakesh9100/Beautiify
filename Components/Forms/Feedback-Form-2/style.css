@@ -1,0 +1,116 @@
+.modal-content {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+    margin: 10% auto;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 24px;
+}
+
+.modal-content button[type="submit"] {
+    background: linear-gradient(to right, rgb(75, 179, 75), rgb(42, 228, 42));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal-content button[type="submit"]:hover {
+    background: linear-gradient(to right, rgb(63, 220, 63), rgb(20, 124, 20));
+}
+
+.modal-content button[type="submit"]:focus {
+    outline: none;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: rgb(75, 179, 75);
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 10px 10px 38px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #bbb;
+    padding-left: 8px
+}
+
+.form-group textarea {
+    height: 80px;
+    
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rating h2 {
+    margin: 0;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.rating__star {
+    font-size: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #dabd18b2;
+}
+
+.rating__star:hover,
+.rating__star.active {
+    color: #ffc107;
+}
