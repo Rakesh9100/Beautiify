@@ -203,11 +203,12 @@ html {
 }
 
 button#dark-mode-toggle {
+    background-image: url('./assets/images/dark.png');
+    background-color: transparent;
+    background-size: cover;
     position: fixed;
     top: 5.5px;
     right: 16px;
-    background-color: #333333;
-    color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -219,8 +220,9 @@ button#dark-mode-toggle {
 }
 
 .dark-mode button#dark-mode-toggle {
-    background-color: #eee;
-    color: #222;
+    background-image: url('./assets/images/light.png');
+    background-color: transparent;
+    background-size: cover;
 }
 
 .header1 {
@@ -937,11 +939,12 @@ footer p a {
     }
 
     button#dark-mode-toggle {
+        background-image: url('./assets/images/dark.png');
+        background-color: transparent;
+        background-size: cover;
         position: fixed;
         top: 5.5px;
         right: 45px;
-        background-color: #333333;
-        color: white;
         border: none;
         padding: 10px;
         cursor: pointer;
@@ -949,6 +952,12 @@ footer p a {
         height: 40px;
         border-radius: 50%;
         z-index: 999;
+    }
+
+    .dark-mode button#dark-mode-toggle {
+        background-image: url('./assets/images/light.png');
+        background-color: transparent;
+        background-size: cover;
     }
 
     .hamburger {
