@@ -1,132 +1,149 @@
 const button = document.querySelector('button');
 
 const weightedRandom = (min, max, ease) => {
-  const easeFunc = gsap.parseEase(ease || 'power4.in');
-  const result = gsap.utils.mapRange(0, 1, min, max, easeFunc(Math.random()));
-  return result;
+    const easeFunc = gsap.parseEase(ease || 'power4.in');
+    const result = gsap.utils.mapRange(0, 1, min, max, easeFunc(Math.random()));
+    return result;
 };
 
-const getHatch = ({ onComplete }) => {
-  const newHatch = Object.assign(document.createElement('span'), {
-    className: 'hatch',
-  });
-  gsap.set(newHatch, { xPercent: -100 });
-  button.appendChild(newHatch);
-  gsap.to(newHatch, { xPercent: 0, onComplete });
+const getHatch = ({
+    onComplete
+}) => {
+    const newHatch = Object.assign(document.createElement('span'), {
+        className: 'hatch',
+    });
+    gsap.set(newHatch, {
+        xPercent: -100
+    });
+    button.appendChild(newHatch);
+    gsap.to(newHatch, {
+        xPercent: 0,
+        onComplete
+    });
 };
 
-const deployChute = ({ ejector, timeline }) => {
-  const chair = ejector.querySelector('.ejected__chair');
-  const wrap = ejector.querySelector('.ejected__chute');
-  const chute = ejector.querySelector('.parachute');
-  const bear = ejector.querySelector('.bear');
+const deployChute = ({
+    ejector,
+    timeline
+}) => {
+    const chair = ejector.querySelector('.ejected__chair');
+    const wrap = ejector.querySelector('.ejected__chute');
+    const chute = ejector.querySelector('.parachute');
+    const bear = ejector.querySelector('.bear');
 
-  const x = gsap.utils.random(0, window.innerWidth);
-  const timescale = gsap.utils.random(0.1, 0.3);
-  const chuteScale = gsap.utils.mapRange(0.1, 0.3, 2, 1, timescale);
+    const x = gsap.utils.random(0, window.innerWidth);
+    const timescale = gsap.utils.random(0.1, 0.3);
+    const chuteScale = gsap.utils.mapRange(0.1, 0.3, 2, 1, timescale);
 
-  gsap.timeline({
-    onComplete: () => {
-      gsap.timeline({
-        onComplete: () => {
-          timeline.timeScale(timescale);
-          gsap.to(wrap, {
-            x: x,
-            duration: 30,
-          });
-          const rotate = gsap.utils.random(-15, 15);
-          const duration = gsap.utils.random(0.5, 1.5);
-          gsap.timeline({
-            repeat: -1,
-            yoyo: true,
-          })
-          .set(bear, { transformOrigin: '50% -200%' })
-          .fromTo(bear, {
-            rotate: rotate * -1,
-          }, {
-            rotate,
-            ease: 'none',
-            duration,
-          }).time(duration * 0.5);
-        },
-      })
-      .to(timeline, {
-        time: '-=0.2',
-        duration: 0.2,
-      });
-    },
-  })
-  .to(chair, {
-    yPercent: -150,
-    ease: 'elastic.in',
-    duration: 0.2,
-  })
-  .to(chute, {
-    ease: 'elastic.in',
-    scale: chuteScale,
-    duration: 0.2,
-  });
-};
-
-const launch = ({ ejector, velocity }) => {
-  const distance = gsap.utils.random(
-    window.innerHeight * 0.25,
-    window.innerHeight * 0.5,
-    1
-  );
-  const hatch = ejector
-    .closest('button')
-    .querySelector('.hatch:not(.hatch--flipped)');
-  const angle = gsap.utils.random(-86, -94);
-  const gravity = window.innerHeight * 0.5;
-
-  const physics = calculatePhysics(velocity, angle, gravity);
-
-  const launchTl = gsap
-    .timeline()
-    .to(
-      ejector.firstElementChild,
-      {
-        duration: 8,
-        onStart: () => {
-          console.info('eject');
-          gsap.to(hatch, {
-            onStart: () => {
-              hatch.classList.add('hatch--flipped');
-            },
+    gsap.timeline({
             onComplete: () => {
-              hatch.remove();
+                gsap.timeline({
+                        onComplete: () => {
+                            timeline.timeScale(timescale);
+                            gsap.to(wrap, {
+                                x: x,
+                                duration: 30,
+                            });
+                            const rotate = gsap.utils.random(-15, 15);
+                            const duration = gsap.utils.random(0.5, 1.5);
+                            gsap.timeline({
+                                    repeat: -1,
+                                    yoyo: true,
+                                })
+                                .set(bear, {
+                                    transformOrigin: '50% -200%'
+                                })
+                                .fromTo(bear, {
+                                    rotate: rotate * -1,
+                                }, {
+                                    rotate,
+                                    ease: 'none',
+                                    duration,
+                                }).time(duration * 0.5);
+                        },
+                    })
+                    .to(timeline, {
+                        time: '-=0.2',
+                        duration: 0.2,
+                    });
             },
-            y: -500,
-            duration: 2,
-            rotate: gsap.utils.random(90, 360),
-            transformOrigin: '75% 50%',
-          });
-        },
-        onUpdate: function () {
-          const time = this.time();
-          updatePosition(ejector.firstElementChild, physics, time);
-          if (!this.__deployed && physics.vy < 0) {
-            this.__deployed = true;
-            deployChute({ ejector, timeline: launchTl });
-          }
-        },
-        onComplete: () => {
-          ejector.remove();
-          console.info('done');
-        },
-      },
-      0
-    )
-    .timeScale(3);
+        })
+        .to(chair, {
+            yPercent: -150,
+            ease: 'elastic.in',
+            duration: 0.2,
+        })
+        .to(chute, {
+            ease: 'elastic.in',
+            scale: chuteScale,
+            duration: 0.2,
+        });
+};
+
+const launch = ({
+    ejector,
+    velocity
+}) => {
+    const distance = gsap.utils.random(
+        window.innerHeight * 0.25,
+        window.innerHeight * 0.5,
+        1
+    );
+    const hatch = ejector
+        .closest('button')
+        .querySelector('.hatch:not(.hatch--flipped)');
+    const angle = gsap.utils.random(-86, -94);
+    const gravity = window.innerHeight * 0.5;
+
+    const physics = calculatePhysics(velocity, angle, gravity);
+
+    const launchTl = gsap
+        .timeline()
+        .to(
+            ejector.firstElementChild, {
+                duration: 8,
+                onStart: () => {
+                    console.info('eject');
+                    gsap.to(hatch, {
+                        onStart: () => {
+                            hatch.classList.add('hatch--flipped');
+                        },
+                        onComplete: () => {
+                            hatch.remove();
+                        },
+                        y: -500,
+                        duration: 2,
+                        rotate: gsap.utils.random(90, 360),
+                        transformOrigin: '75% 50%',
+                    });
+                },
+                onUpdate: function () {
+                    const time = this.time();
+                    updatePosition(ejector.firstElementChild, physics, time);
+                    if (!this.__deployed && physics.vy < 0) {
+                        this.__deployed = true;
+                        deployChute({
+                            ejector,
+                            timeline: launchTl
+                        });
+                    }
+                },
+                onComplete: () => {
+                    ejector.remove();
+                    console.info('done');
+                },
+            },
+            0
+        )
+        .timeScale(3);
 };
 
 const eject = () => {
-  button.disabled = true;
-  const ejector = Object.assign(document.createElement('span'), {
-    className: 'ejector',
-    style: `--eye-delay: ${gsap.utils.random(0, 3)}`,
-    innerHTML: `
+    button.disabled = true;
+    const ejector = Object.assign(document.createElement('span'), {
+        className: 'ejector',
+        style: `--eye-delay: ${gsap.utils.random(0, 3)}`,
+        innerHTML: `
       <span class="ejected">
         <span class="ejected__chair">
           <span class="ejected__chute">
@@ -136,30 +153,36 @@ const eject = () => {
         </span>
       </span>
     `,
-  });
-  gsap.set(ejector.querySelector('.parachute'), {
-    scale: 0,
-    transformOrigin: '50% 100%',
-  });
-  button.appendChild(ejector);
-  const duration = gsap.utils.random(0.25, 1, 0.05);
-  const dps =
-    (1 / duration) *
-    gsap.utils.random(window.innerHeight * 0.1, window.innerHeight * 0.25, 1);
-  const velocity = window.innerHeight * 0.5;
+    });
+    gsap.set(ejector.querySelector('.parachute'), {
+        scale: 0,
+        transformOrigin: '50% 100%',
+    });
+    button.appendChild(ejector);
+    const duration = gsap.utils.random(0.25, 1, 0.05);
+    const dps =
+        (1 / duration) *
+        gsap.utils.random(window.innerHeight * 0.1, window.innerHeight * 0.25, 1);
+    const velocity = window.innerHeight * 0.5;
 
-  const unlucky = velocity >= 600 && Math.random() > 0.5;
-  if (unlucky) {
-    yeet({ ejector, dps });
-  } else {
-    launch({ ejector, velocity });
-  }
+    const unlucky = velocity >= 600 && Math.random() > 0.5;
+    if (unlucky) {
+        yeet({
+            ejector,
+            dps
+        });
+    } else {
+        launch({
+            ejector,
+            velocity
+        });
+    }
 };
 
 button.addEventListener('click', eject);
 
 const VARIANTS = {
-  holdingOn: (hue) => `
+    holdingOn: (hue) => `
     <svg ${
       hue ? `style="--hue: ${hue};"` : ''
     } class="bear" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="86 300 246 350">
@@ -189,7 +212,7 @@ const VARIANTS = {
       </g>
     </svg>
   `,
-  singleLeft: (hue) => `
+    singleLeft: (hue) => `
     <svg ${
       hue ? `style="--hue: ${hue};"` : ''
     } class="bear" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="86 300 246 350">
@@ -218,7 +241,7 @@ const VARIANTS = {
       <path fill="#000" d="M261 524a3 3 0 1 0 0-6v6Zm-12 0h12v-6h-12v6ZM261 512a3 3 0 1 0 0-6v6Zm-12 0h12v-6h-12v6Z"/>
     </svg>
   `,
-  singleRight: (hue) => `
+    singleRight: (hue) => `
     <svg ${
       hue ? `style="--hue: ${hue};"` : ''
     } class="bear" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="86 300 246 350">
@@ -249,7 +272,7 @@ const VARIANTS = {
       </g>
     </svg>
   `,
-  doublePump: (hue) => `
+    doublePump: (hue) => `
     <svg ${
       hue ? `style="--hue: ${hue};"` : ''
     } class="bear" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="86 300 246 350">
@@ -283,27 +306,38 @@ const VARIANTS = {
 }
 
 const getBear = (hue, variant) => {
-  if (variant) {
-    return VARIANTS[variant](hue);
-  } else {
-    const variantKey =
-      Object.keys(VARIANTS)[
-        Math.floor(Math.random() * Object.keys(VARIANTS).length)
-      ];
-    return VARIANTS[variantKey](hue);
-  }
+    if (variant) {
+        return VARIANTS[variant](hue);
+    } else {
+        const variantKey =
+            Object.keys(VARIANTS)[
+                Math.floor(Math.random() * Object.keys(VARIANTS).length)
+            ];
+        return VARIANTS[variantKey](hue);
+    }
 };
 
 // Manually calculate physics properties
 const calculatePhysics = (velocity, angle, gravity) => {
-  const radians = (angle * Math.PI) / 180;
-  const vx = velocity * Math.cos(radians);
-  const vy = velocity * Math.sin(radians);
-  return { vx, vy, gravity };
+    const radians = (angle * Math.PI) / 180;
+    const vx = velocity * Math.cos(radians);
+    const vy = velocity * Math.sin(radians);
+    return {
+        vx,
+        vy,
+        gravity
+    };
 };
 
-const updatePosition = (element, { vx, vy, gravity }, time) => {
-  const x = vx * time;
-  const y = vy * time + 0.5 * gravity * Math.pow(time, 2);
-  gsap.set(element, { x, y });
+const updatePosition = (element, {
+    vx,
+    vy,
+    gravity
+}, time) => {
+    const x = vx * time;
+    const y = vy * time + 0.5 * gravity * Math.pow(time, 2);
+    gsap.set(element, {
+        x,
+        y
+    });
 };
