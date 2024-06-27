@@ -35,6 +35,10 @@ html {
     color: white;
 }
 
+.card:hover h3 {
+    color: black;
+}
+
 .quote {
     width: 30px;
     height: 30px;
