@@ -1,7 +1,6 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -50,9 +49,7 @@ p {
     height: 30rem;
     padding: .3rem 1.1rem;
     color: white;
-
     transition: all linear .5s;
-
 }
 
 .card:hover {
