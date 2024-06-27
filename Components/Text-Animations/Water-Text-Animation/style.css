@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.loader {
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    background: var(--bg-color, #000);
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.loader-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+}
+
+.loading {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 70pt;
+    text-align: center;
+    height: 120px;
+    line-height: 110px;
+    display: block;
+}
+
+.wave {
+    background-image: url("https://th.bing.com/th/id/R.9d1db220e8a1f80f30ad15288e513220?rik=OjDVp9imKB7ZRw&riu=http%3a%2f%2fil8.picdn.net%2fshutterstock%2fvideos%2f21678091%2fthumb%2f10.jpg%3fi10c%3dimg.resize(height%3a160)&ehk=sdWi1QtpDJe4JFX%2fLWZYCZRTMf1UKIh8qEHAoxqNjHk%3d&risl=&pid=ImgRaw&r=0");
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: wave-animation 1s infinite linear,
+        loading-animation 3s infinite linear alternate;
+    background-size: 200px 100px;
+    background-repeat: repeat-x;
+    opacity: 1;
+}
+
+@keyframes wave-animation {
+    0% {
+        background-position: 0 bottom;
+    }
+
+    100% {
+        background-position: 200px bottom;
+    }
+}
+
+@keyframes loading-animation {
+    0% {
+        background-size: 200px 0;
+    }
+
+    100% {
+        background-size: 200px 200px;
+    }
+}
