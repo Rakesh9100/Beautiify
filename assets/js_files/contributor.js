@@ -45,8 +45,13 @@ async function fetchAllContributors() {
             loginLink.href = contributor.html_url;
             loginLink.target = '_blank';
             loginLink.appendChild(avatarImg);
+            
+            const nameOverlay = document.createElement('div');
+            nameOverlay.classList.add('name-overlay');
+            nameOverlay.textContent = contributor.login;
 
             contributorCard.appendChild(loginLink);
+            contributorCard.appendChild(nameOverlay);
 
             cont.appendChild(contributorCard);
         });
