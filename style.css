@@ -19,7 +19,7 @@
 /* Scrollbar Css */
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(152, 151, 151, 0.883);
+    background: rgba(235, 227, 227, 0.883);
 }
 
 ::-webkit-scrollbar {
@@ -232,6 +232,7 @@ button#dark-mode-toggle {
     background-image: url(./assets/images/navbar.png);
     background-size: cover;
     background-position: 50% 50%;
+    height: 100px;
 }
 
 .dark-mode .header1 {
@@ -298,7 +299,7 @@ a {
 .flex-item-left {
     background-color: transparent;
     margin-left: 10px;
-    flex: 5%;
+    flex: 10%;
 }
 
 .flex-item-right {
@@ -306,9 +307,9 @@ a {
     padding: 0px;
     text-align: center;
     margin-left: 5px;
-    font-size: 2.3rem;
-    color: white;
-    text-shadow: 1px 1.5px 2px black, 1px 1px 1px white;
+    font-size: 4rem;
+    color: rgb(219, 76, 90);
+    text-shadow: 2px 3px 4px rgb(233, 219, 230), 1px 1px 1px rgb(224, 206, 206);
     font-weight: 700;
     flex: 10%;
 }
@@ -475,13 +476,13 @@ section {
     font-weight: 600;
     margin-top: 20px;
     padding: 10px 45px;
-    border-radius: 30px;
+    border-radius: 50px;
     color: rgb(104, 73, 131);
     background: rgba(224, 202, 245, 0.743);
     cursor: pointer;
     transition: transform 0.5s;
     box-shadow: 2px 2px 2px black, 1px 1px 1px white;
-    text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(57, 4, 100);
+    text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(124, 80, 159);
 }
 
 .comp-section .compcontainer .started:hover {
@@ -558,14 +559,14 @@ section {
 
 .container .zoom-effect:hover {
     transform: scale(1.04);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
 .container .box .content {
     position: relative;
     width: 320px;
     left: 0;
-    padding: 20px 40px;
+    padding: 40px 40px;
     text-align: center;
     transition: 0.5s ease-in;
     color: var(--dark);
@@ -608,6 +609,7 @@ section {
     justify-content: center;
     align-items: flex-end;
     min-height: 25vh;
+    color: #090909;
 }
 
 footer {
@@ -673,22 +675,22 @@ footer p a {
     position: fixed;
     bottom: 20px;
     right: 10px;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     display: none;
     place-items: center;
     border-radius: 50%;
     transition: opacity 0.3s, background-color 0.3s;
-    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+    box-shadow: 4px 4px 6px 0 rgba(115, 38, 38, 0.3),
         -4px -4px 6px 0 rgba(116, 125, 136, .2),
-        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset -4px -4px 6px 0 rgba(232, 228, 228, 0.2),
         inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
     cursor: pointer;
 }
 
 #progress:hover {
     opacity: 1;
-    background-color: #df87ef;
+    background-color: #090909;
     animation: animate 1s linear infinite;
 }
 
@@ -717,24 +719,30 @@ footer p a {
     text-align: center;
     border-radius: 50px;
     margin: 4rem 4rem 0;
-    color: white;
+    color: rgb(213, 194, 194);
     width: 100%;
+    position: relative;
+    left:10px;
+    padding-bottom: 80px;
 }
 
 #searchBar h1 {
     font-family: Ubuntu;
     font-size: 4rem;
     text-shadow: 2px 2px 10px var(--light);
-    margin-top: 16px;
+    margin-top: 17px;
+    
+
 }
 
 #searchBar button {
     font-size: 2.5rem;
     background: transparent;
-    border-radius: 50px;
-    color: rgb(22, 11, 31);
+    border-radius: 60px;
+    height: 40px;
+    color: rgb(19, 19, 20);
     margin: 1rem;
-    background-color: rgba(224, 202, 245, 0.743);
+    background-color: rgba(247, 245, 250, 0.743);
     padding: .7rem;
     width: 8rem;
     border-radius: 5rem;
@@ -745,7 +753,7 @@ footer p a {
 #searchBar button:hover {
     transform: scale(1.05);
     border: 2px solid var(black);
-    background: rgba(255, 255, 255, 0.881);
+    background: rgba(52, 49, 49, 0.881);
 }
 
 #searchBar input {
@@ -913,10 +921,11 @@ footer p a {
         background-color: rgba(5, 5, 5, 0.904); 
         backdrop-filter: blur(6.5px); 
         width: 100%; 
+        height: 10px;
         text-align: center; 
         transition: 0.3s; 
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); 
-        height: 100vh; 
+        height: 300vh; 
         gap: 50px; 
         z-index: 999; 
     }
