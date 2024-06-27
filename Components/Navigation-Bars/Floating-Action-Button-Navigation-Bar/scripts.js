@@ -13,8 +13,7 @@ function toggleFabMenu() {
     fabMenu.classList.toggle('open');
 }
 
-function navigateTo(section, element) {
-    console.log(`Navigating to ${section}`);
+function navigateTo(element) {
     highlightActiveItem(element);
 }
 
@@ -25,4 +24,3 @@ function highlightActiveItem(element) {
     });
     element.classList.add('active');
 }
-
