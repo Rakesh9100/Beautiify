@@ -10,10 +10,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: black;
-    /* height: 100%;
-    width: 100vw; */
     font-family: "Poppins", sans-serif;
-    /* overflow-y: hidden;  -- Content below is not accessible in small screen*/
     overflow-x: hidden;
 }
 
