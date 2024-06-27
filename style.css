@@ -671,6 +671,16 @@ footer p a {
     display: inline-block;
 }
 
+.otherpageForFooter .social-icon li a{
+    color: white;
+}
+.otherpageForFooter p{
+    color: white;
+}
+.otherpageForFooter p a{
+    color: white;
+}
+
 #progress {
     position: fixed;
     bottom: 20px;
