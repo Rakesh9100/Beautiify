@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Aclonica", sans-serif;
+}
+
+:root {
+    --main-color:rgb(170, 0, 255);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 4em;
+    width: 100%;
+    max-width: 950px;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    width: 100%;
+    max-width: 700px;
+    margin: 25px 0;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0.3em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+
+@media all and (max-width: 768px) {
+    .hero-title {
+        font-size: 2.8em;
+    }
+    
+    .hero-subtitle {
+        font-size: 1em;
+    }
+    
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css_files/heroes.css" />
+    <link rel="stylesheet" href="../css_files/search.css">
+    <link rel="stylesheet" href="../css_files/cursor.css">
+    <script src="../js_files/commonnav.js"></script>
+    <script src="../js_files/hamburgerMenu.js"></script>
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <title>Beautiify | Heroes</title>
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <div class="circle-container">
+        <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
+        <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
+        <div class="circle" style="background-color: rgb(248, 157, 99); left: 504px; top: 59px; scale: 0.9;"></div>
+        <div class="circle" style="background-color: rgb(245, 151, 97); left: 504px; top: 59px; scale: 0.85;"></div>
+        <div class="circle" style="background-color: rgb(239, 134, 94); left: 504px; top: 59px; scale: 0.8;"></div>
+        <div class="circle" style="background-color: rgb(236, 128, 93); left: 504px; top: 59px; scale: 0.75;"></div>
+        <div class="circle" style="background-color: rgb(227, 110, 92); left: 504px; top: 59px; scale: 0.7;"></div>
+        <div class="circle" style="background-color: rgb(223, 104, 92); left: 504px; top: 59px; scale: 0.65;"></div>
+        <div class="circle" style="background-color: rgb(213, 88, 92); left: 504px; top: 59px; scale: 0.6;"></div>
+        <div class="circle" style="background-color: rgb(209, 82, 92); left: 504px; top: 59px; scale: 0.55;"></div>
+        <div class="circle" style="background-color: rgb(197, 65, 93); left: 504px; top: 59px; scale: 0.5;"></div>
+        <div class="circle" style="background-color: rgb(192, 59, 93); left: 504px; top: 59px; scale: 0.45;"></div>
+        <div class="circle" style="background-color: rgb(178, 44, 94); left: 504px; top: 59px; scale: 0.4;"></div>
+        <div class="circle" style="background-color: rgb(172, 38, 94); left: 504px; top: 59px; scale: 0.35;"></div>
+        <div class="circle" style="background-color: rgb(156, 21, 95); left: 504px; top: 59px; scale: 0.3;"></div>
+        <div class="circle" style="background-color: rgb(149, 15, 95); left: 504px; top: 59px; scale: 0.25;"></div>
+        <div class="circle" style="background-color: rgb(131, 0, 96); left: 504px; top: 59px; scale: 0.2;"></div>
+        <div class="circle" style="background-color: rgb(124, 0, 96); left: 504px; top: 59px; scale: 0.15;"></div>
+        <div class="circle" style="background-color: rgb(104, 0, 96); left: 504px; top: 59px; scale: 0.1;"></div>
+        <div class="circle" style="background-color: rgb(96, 0, 95); left: 504px; top: 59px; scale: 0.05;"></div>
+    </div>
+
+    <header class="header3">
+        <nav class="navbar">
+            <a href="../../index.html">
+                <div class="flex-container">
+                    <div class="flex-item-left"><img src="../images/logo.png" width="37px" height="37px"></div>
+                    <div class="flex-item-right" class="logo">Beautiify</div>
+                </div>
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../index.html#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i> Contributors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
+                </li>
+                <button id="dark-mode-toggle"></button>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+
+        <div class="heading">Heroes</div>
+        <!-- Search Bar -->
+        <div id="searchBar">
+            <h1 class="SearchHero">Search Heroes</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Hero Name" oninput="filtereachComponents()">
+        </div>
+
+        <div class="no-results">
+            <img src="../images/no-results.png" alt="" height="100px" width="100px">
+            <h2>Hmmm, we are not getting any result. <br> Our bad - Please try another search!</h2>
+        </div>
+
+        <div class="contain">
+            <div class="box">
+                <h1>Carousel Hero</h1>
+                <div class="preview">
+                    <a href="../../Components/Heroes/Carousel-Hero/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Carousel-Hero" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Collage Style Hero</h1>
+                <div class="preview">
+                    <a href="../../Components/Heroes/Collage-Style-Hero/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Collage-Style-Hero" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Full Screen Image Hero</h1>
+                <div class="preview">
+                    <a href="../../Components/Heroes/Full-Screen-Image-Hero/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Full-Screen-Image-Hero" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Full Screen Video Hero</h1>
+                <div class="preview">
+                    <a href="../../Components/Heroes/Full-Screen-Video-Hero/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Full-Screen-Video-Hero" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Split Screen Hero</h1>
+                <div class="preview">
+                    <a href="../../Components/Heroes/Split-Screen-Hero/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Split-Screen-Hero" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Text Only Hero</h1>
+                <div class="preview">
+                    <a href="../../Components/Heroes/Text-Only-Hero/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Text-Only-Hero" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script src="../js_files/dark-mode.js"></script>
+
+    <!-- Scroll To Top Button -->
+    <div id="progress">
+        <span id="progress-value" class="bi bi-arrow-up-short"></span>
+    </div>
+
+    <script src="../js_files/search.js"></script>
+    <script src="../../script.js"></script>
+    <script src="../js_files/cursor.js"></script>
+</body>
+
+</html>
