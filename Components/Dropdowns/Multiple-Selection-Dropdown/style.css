@@ -1,0 +1,116 @@
+* {
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif, Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+    background-color: #016090;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+
+.dropdown-wrapper {
+    width: 100%;
+    max-width: 500px;
+}
+
+.dropdown-control {
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.dropdown-control .left {
+    width: 93%;
+    padding: 13px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.dropdown-control .right {
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #016090;
+}
+
+.dropdown-control .right:hover {
+    color: #9e9e9e;
+}
+
+.selected-item {
+    background-color: transparent;
+    padding: 2px 7px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    border-radius: 5px;
+    border: 2px solid #016090;
+    color: #016090;
+    font-size: 12px;
+
+}
+
+.selected-item:hover {
+    background-color: #e5f6ff;
+}
+
+.dropdown-control input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #016090;
+    flex: 1 1 50px;
+}
+
+.dropdown-list {
+    width: 100%;
+    background-color: whitesmoke;
+    max-height: 220px;
+    overflow-y: scroll;
+}
+
+.dropdown-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.dropdown-list::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.dropdown-list .list-item {
+    padding: 7px 10px;
+    border-bottom: 1px solid #b6e5ff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.dropdown-list .list-item:first-of-type {
+    border-top: 1px solid #b6e5ff;
+}
+
+.dropdown-list .list-item:hover {
+    background-color: #dcdcdc;
+    color: #016090;
+}
