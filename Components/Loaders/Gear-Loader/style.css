@@ -1,5 +1,6 @@
 body {
     background: #F6F6F6;
+    overflow: hidden;
 }
 
 body>h1 {

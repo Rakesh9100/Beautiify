@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+.oswald1 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 475px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card:hover {
+    background-color: black;
+    color: white;
+}
+
+.card:hover h3 {
+    color: black;
+}
+
+.quote {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    padding: 5px;
+    border: white solid 1px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+}
+
+.Logo {
+    width: 100px;
+    height: 100px;
+    border: solid white 7px;
+    border-radius: 300px;
+    position: absolute;
+    top: 230px;
+}
+
+.Logo:hover {
+    cursor: pointer;
+}
+
+h3 {
+    position: absolute;
+    bottom: 300px;
+    font-family: "Oswald", sans-serif;
+    width: 300px;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.Profile {
+    width: 300px;
+    height: 200px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.Profile:hover {
+    cursor: pointer;
+}
+
+.text {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    text-wrap: wrap;
+    margin-bottom: 40px;
+}
