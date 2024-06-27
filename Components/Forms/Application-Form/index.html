@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Application Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    input[type="text"], input[type="email"], input[type="date"], input[type="tel"], textarea, select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="radio"], input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    .submit-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .submit-btn:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Application Form</h1>
+    <form action="/submit-application" method="post">
+        <!-- Personal Information Section -->
+        <h2>Personal Information</h2>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required>
+        
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="gender" value="male" required> Male
+        <input type="radio" id="female" name="gender" value="female" required> Female
+        <input type="radio" id="other" name="gender" value="other" required> Other
+        
+        <h2>Address</h2>
+        <label for="address">Street Address</label>
+        <input type="text" id="address" name="address" required>
+        
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required>
+        
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" required>
+        
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip" name="zip" required>
+        
+        <h2>Education</h2>
+        <label for="education-level">Highest Level of Education</label>
+        <select id="education-level" name="education-level" required>
+            <option value="">Select...</option>
+            <option value="high-school">High School</option>
+            <option value="associate">Associate Degree</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="doctorate">Doctorate</option>
+        </select>
+        
+        <label for="school-name">School Name</label>
+        <input type="text" id="school-name" name="school-name" required>
+        
+        <!-- Work Experience Section -->
+        <h2>Work Experience</h2>
+        <label for="company-name">Company Name</label>
+        <input type="text" id="company-name" name="company-name" required>
+        
+        <label for="job-title">Job Title</label>
+        <input type="text" id="job-title" name="job-title" required>
+        
+        <label for="start-date">Start Date</label>
+        <input type="date" id="start-date" name="start-date" required>
+        
+        <label for="end-date">End Date</label>
+        <input type="date" id="end-date" name="end-date">
+        
+        <label for="job-duties">Job Duties</label>
+        <textarea id="job-duties" name="job-duties" rows="4" required></textarea>
+        
+        <h2>Additional Information</h2>
+        <label for="references">References (Optional)</label>
+        <textarea id="references" name="references" rows="4"></textarea>
+        
+        <label for="comments">Additional Comments</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+        
+        <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>
