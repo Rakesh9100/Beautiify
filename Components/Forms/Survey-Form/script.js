@@ -1,6 +1,21 @@
 document.getElementById('surveyForm').addEventListener('submit', function (event) {
     event.preventDefault();
-    alert('Survey submitted!'); // You can replace this with your own logic for handling the form data
+    
+    //to prevent user from submitting a zero-star rating
+    var ratingInputs = document.querySelectorAll('.rating input');
+    var ratingSelected = false;
+    
+    ratingInputs.forEach(function(input) {
+        if (input.checked) {
+            ratingSelected = true;
+        }
+    });
+    
+    if (!ratingSelected) {
+        alert('Please provide a rating before submission!');
+        return;
+    }
+    alert('Survey submitted!'); // In case of successful submission
     resetForm();
 });
 

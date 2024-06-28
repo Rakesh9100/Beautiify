@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.body {
+    background: #381f1fc8;
+    height: 100vh;
+}
+
+.imgbackground {
+    animation: zoom 25s infinite alternate-reverse;
+    background-image: url("https://images.unsplash.com/photo-1484589065579-248aad0d8b13?q=80&w=1959&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    overflow: hidden;
+    scale: 2;
+}
+
+@keyframes zoom {
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .8;
+        scale: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+}

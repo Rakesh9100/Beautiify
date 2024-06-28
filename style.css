@@ -181,8 +181,8 @@ body {
 }
 
 .dark-mode {
-    background-color: #222;
-    color: #eee;
+    background-color: #222222;
+    color: #eeeeee;
     background-image: url(./assets/images/dbg.jpg);
 }
 
@@ -203,11 +203,12 @@ html {
 }
 
 button#dark-mode-toggle {
+    background-image: url('./assets/images/dark.png');
+    background-color: transparent;
+    background-size: cover;
     position: fixed;
     top: 5.5px;
     right: 16px;
-    background-color: #333;
-    color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -215,11 +216,13 @@ button#dark-mode-toggle {
     height: 40px;
     border-radius: 50%;
     z-index: 999;
+    margin-top: 4px;
 }
 
 .dark-mode button#dark-mode-toggle {
-    background-color: #eee;
-    color: #222;
+    background-image: url('./assets/images/light.png');
+    background-color: transparent;
+    background-size: cover;
 }
 
 .header1 {
@@ -274,10 +277,10 @@ button#dark-mode-toggle {
 .navbar {
     margin: 0 auto;
     z-index: 1000;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 21px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
 a {
@@ -318,6 +321,7 @@ ul {
 
 nav {
     display: flex;
+    height: 60px;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
@@ -342,7 +346,7 @@ nav li:hover {
     border-bottom: 0.2rem rgb(116, 42, 113) solid;
     border-radius: 5px;
     transition: 0.3s ease-in-out;
-    background-color: #5f606176;
+    background-color: #909192;
     color: #df87ef;
 }
 
@@ -396,6 +400,54 @@ section {
 .comp-section .compcontainer h1 {
     font-size: 7rem;
     text-shadow: 2px 2px 3px black, 1px 1px 2px white;
+    animation: lights 5s 750ms linear infinite;
+}
+
+@keyframes lights {
+    0% {
+        color: hsl(230, 40%, 80%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+
+    30% {
+        color: hsl(230, 80%, 90%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    40% {
+        color: hsl(230, 100%, 95%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 90%, 0.5),
+            -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+            0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+
+    70% {
+        color: hsl(230, 80%, 90%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    100% {
+        color: hsl(230, 40%, 80%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
 }
 
 .comp-section .compcontainer h3 {
@@ -717,6 +769,21 @@ footer p a {
     box-shadow: -5px -5px 10px #9961a1;
 }
 
+.no-results {
+    display: none;
+    padding-top: 50px;
+    color: white;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.no-results h2 {
+    text-align: center;
+}
+
 /* Media Queries */
 
 @media (max-width: 1030px) {
@@ -833,45 +900,27 @@ footer p a {
         width: 30rem;
         font-size: 1.6rem;
     }
-
-    /* .container {
-        margin-top: 50px;
-    } */
 }
 
 @media only screen and (max-width: 768px) {
+    .navbar {
+        position: relative; 
+    }
+
     .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5.3rem;
-        flex-direction: column;
-        background-color: rgba(5, 5, 5, 0.904);
-        backdrop-filter: blur(6.5px);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        height: 100vh;
-        gap: 50px;
-    }
-
-    .nav-menu .nav-item.active .nav-link {
-        color: red;
-    }
-
-    .compcontainer h1 {
-        font-size: 400%;
-        padding-bottom: 40px;
-    }
-
-    .compcontainer h3 {
-        font-size: 200%;
-        padding-bottom: 40px;
-    }
-
-    .compcontainer p {
-        font-size: 120%;
-        text-align: center;
+        position: fixed; 
+        left: -100%; 
+        top: 5.3rem; 
+        flex-direction: column; 
+        background-color: rgba(5, 5, 5, 0.904); 
+        backdrop-filter: blur(6.5px); 
+        width: 100%; 
+        text-align: center; 
+        transition: 0.3s; 
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); 
+        height: 100vh; 
+        gap: 50px; 
+        z-index: 999; 
     }
 
     .nav-menu.active {
@@ -889,9 +938,45 @@ footer p a {
         transition: 0.3s ease-in-out;
     }
 
+    button#dark-mode-toggle {
+        background-image: url('./assets/images/dark.png');
+        background-color: transparent;
+        background-size: cover;
+        position: fixed;
+        top: 5.5px;
+        right: 45px;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: 999;
+    }
+
+    .dark-mode button#dark-mode-toggle {
+        background-image: url('./assets/images/light.png');
+        background-color: transparent;
+        background-size: cover;
+    }
+
     .hamburger {
         display: block;
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
         cursor: pointer;
+        z-index: 1000; /* Ensure it's above other content */
+    }
+
+    .hamburger .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -926,3 +1011,4 @@ footer p a {
         margin: 15px !important;
     }
 }
+
