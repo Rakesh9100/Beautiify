@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangrine:wght@400;700&display=swap");
 
 * {
     margin: 0;
@@ -183,7 +184,7 @@ body {
 .dark-mode {
     background-color: #222222;
     color: #eeeeee;
-    background-image: url(./assets/images/dbg.jpg);
+    background-image: url(./assets/images/dbgTRY2.jpg);
 }
 
 body .dark-mode {
@@ -275,17 +276,17 @@ button#dark-mode-toggle {
 .navbar {
     margin: 0 auto;
     z-index: 1000;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(226, 196, 210, 0.6), rgba(255, 255, 255, 0.4));
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 21px 16px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
 a {
     text-decoration: none;
     color: white;
-    font-weight: 500;
-    text-shadow: 1px 1px 2px black, 1px 1px 1px white;
+    font-weight: 700;
+    text-shadow: 1.5px 1.5px 2px rgb(31, 2, 15);
 }
 
 .flex-container {
@@ -334,22 +335,41 @@ nav ul {
 
 nav li {
     font-size: 2.1rem;
-    font-weight: bolder;
+    font-weight: 800;
     border-bottom: 0.4rem transparent solid;
     transition: 0.3s ease-in-out;
     margin-right: 10px;
+    transform: scale(1);
+    position: relative;
+}
+
+nav li::before {
+    content: '';
+    position: absolute;
+    left: -10px; /* Adjust to make the highlight wider on the left */
+    right: -10px; /* Adjust to make the highlight wider on the right */
+    top: 0;
+    bottom: 0;
+    background-color: rgba(56, 56, 56, 0.447);
+    border-radius: 5px;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: scaleX(0); /* Initial state: collapsed */
+    opacity: 0;
+}
+
+nav li:hover::before {
+    transform: scaleX(1); /* Expanded state: full width */
+    opacity: 1;
 }
 
 nav li:hover {
-    border-bottom: 0.2rem rgb(116, 42, 113) solid;
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
-    background-color: #909192;
     color: #df87ef;
+    transform: scale(1.1);
 }
 
 nav a {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .logo {
@@ -383,6 +403,7 @@ section {
 }
 
 .comp-section .compcontainer .logo img {
+    margin-top: 20px;
     width: 250px;
     margin-bottom: -25px;
 }
@@ -396,7 +417,9 @@ section {
 }
 
 .comp-section .compcontainer h1 {
-    font-size: 7rem;
+    margin-top: 40px;
+    font-family: 'Tangerine', serif;
+    font-size: 8.7rem;
     text-shadow: 2px 2px 3px black, 1px 1px 2px white;
     animation: lights 5s 750ms linear infinite;
 }
@@ -476,24 +499,24 @@ section {
     margin-top: 20px;
     padding: 10px 45px;
     border-radius: 30px;
-    color: rgb(104, 73, 131);
-    background: rgba(224, 202, 245, 0.743);
+    color: rgb(106, 54, 151);
+    background: rgba(244, 233, 255, 0.607);
     cursor: pointer;
     transition: transform 0.5s;
     box-shadow: 2px 2px 2px black, 1px 1px 1px white;
-    text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(57, 4, 100);
+    text-shadow: 1px 1px 1.5px black, 1px 1px 1px white;
 }
 
 .comp-section .compcontainer .started:hover {
     transform: scale(1.05);
-    border: 2px solid var(black);
+    border: 2.8px solid var(black);
     background: rgba(255, 255, 255, 0.881);
 }
 
 .dark-mode .comp-section .compcontainer .started {
-    color: rgb(47, 111, 174);
-    background-color: rgba(251, 251, 251, 0.743);
-    text-shadow: 1px 1px 2px rgb(197, 190, 190), 1px 1px 1px rgb(57, 4, 100);
+    color: rgb(23, 23, 23);
+    background-color: rgba(255, 192, 203, 0.901);
+    text-shadow: 0.5px 0.5px 0.5px black, 1px 1px 1px white;
 }
 
 .dark-mode .comp-section .compcontainer .started:hover {
@@ -522,14 +545,15 @@ section {
 
 .container .box {
     position: relative;
-    width: 320px;
+    width: 220px;
+    height: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 25px;
     background: rgba(224, 202, 245, 0.743);
     border: 4px solid rgb(171, 196, 218);
-    border-radius: 50px;
+    border-radius: 110px;
     box-shadow: 2px 2px 4px 2px rgb(163, 205, 239);
     cursor: pointer;
 }
@@ -541,15 +565,15 @@ section {
 }
 
 .dark-mode .container .box {
-    background: rgba(251, 251, 251, 0.743);
-    border: 4px solid rgb(238, 245, 251);
-    box-shadow: 2px 2px 4px 2px rgb(91, 131, 164);
+    background: #ffffcfc1;
+    border: 2px solid #e7e7a1;
+    box-shadow: 2px 2px 4px 2px rgb(155, 171, 205), 2px 2px 4px 2px black;
 }
 
 .dark-mode .container .box:hover {
-    background-color: rgb(79, 97, 112);
-    border: 4px solid rgba(234, 223, 244, 0.743);
-    box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
+    background-color: #4bb5df;
+    border: 2px solid rgba(54, 136, 204, 0.836);
+    box-shadow: 2px 2px 4px 2px rgba(248, 173, 205, 0.851), 2px 2px 4px 2px black;
 }
 
 .container .zoom-effect {
@@ -577,27 +601,30 @@ section {
     text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
 }
 
-.dark-mode .container .box .content i {
-    text-shadow: 1px 1px 2px black, 1px 1px 2px #a5b9c5;
-}
-
 .container .box .content h2 {
     font-size: 23px;
+    font-weight: 550;
     color: rgb(37, 111, 172);
     margin-top: 25px;
     margin-bottom: 5px;
-    text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172);
+    text-shadow: 1px 1px 1px black, 1px 1px 2px rgba(42, 125, 193, 0.906);
+}
+
+.dark-mode .container .box .content i,
+.dark-mode .container .box .content h2 {
+    color: #014e8d;
+    text-shadow: 1px 1px 2px #003a6a;
 }
 
 .container .box:hover .content i,
 .container .box:hover .content h2 {
     color: rgba(224, 202, 245, 0.743);
-    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(0, 140, 255);
 }
 
 .dark-mode .container .box:hover .content i,
 .dark-mode .container .box:hover .content h2 {
-    color: rgba(253, 252, 253, 0.743);
+    color: #D2649A;
     text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(175, 189, 200);
 }
 
@@ -648,7 +675,7 @@ footer .social-icon li a {
 
 footer .social-icon li a:hover {
     transform: translateY(-10px);
-    color: red;
+    color: rgb(196, 36, 135);
 }
 
 footer p {
@@ -722,9 +749,9 @@ footer p a {
 }
 
 #searchBar h1 {
-    font-family: Ubuntu;
-    font-size: 4rem;
-    text-shadow: 2px 2px 10px var(--light);
+    font-family: 'Tangerine', serif;
+    font-size: 6rem;
+    text-shadow: 1px 1.5px 2px #fffdbd;
     margin-top: 16px;
 }
 
@@ -732,9 +759,9 @@ footer p a {
     font-size: 2.5rem;
     background: transparent;
     border-radius: 50px;
-    color: rgb(22, 11, 31);
+    color: #fffdbd;
     margin: 1rem;
-    background-color: rgba(224, 202, 245, 0.743);
+    background-color: rgba(255, 255, 255, 0.743);
     padding: .7rem;
     width: 8rem;
     border-radius: 5rem;
@@ -764,7 +791,7 @@ footer p a {
 
 #searchBar input:hover {
     transform: scale(1.02);
-    box-shadow: -5px -5px 10px #9961a1;
+    box-shadow: -5px -5px 5px #53514c;
 }
 
 .no-results {
@@ -921,6 +948,10 @@ footer p a {
         z-index: 999; 
     }
 
+    .nav-menu .nav-item.active .nav-link {
+        color: mediumvioletred;
+    }
+    
     .nav-menu.active {
         left: 0;
         gap: 50px;
