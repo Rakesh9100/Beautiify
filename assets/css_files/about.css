@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:wght@100;300;400;500;700;900;&display=swap');
 
 * {
@@ -16,9 +16,9 @@ body {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no repeat;
-    align-items: center;
-    min-height: 100vh;
     align-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -29,18 +29,19 @@ section {
     display: flex;
     grid-template-columns: 1fr 1fr;
     width: 85vw;
-    height: 38vw;
+    height: 37vw;
     margin: 0 auto;
-    margin-top: -70px;
-    border-radius: 12px;
+    margin-top: -60px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
 }
 
 .image {
+    height: 37vw;
+    background-color: black;
     display: flex;
     border-radius: 12px 12px 12px 12px;
-    width: 110%;
-    background-color: black;
+    width: 100%;
 }
 
 .image img {
@@ -50,9 +51,10 @@ section {
 }
 
 .content {
+    height: 37vw;
+    background-color: #22a7b0;
     justify-content: center;
     align-items: center;
-    background-color: #22a7b0;
     border-radius: 0px 12px 12px 0px;
     color: #000000;
 }
@@ -86,23 +88,6 @@ h4 {
 
 .content h4{
     text-align: justify;
-}
-
-.content span {
-    height: 0.5px;
-    width: 80px;
-    background: #777;
-    margin: 30px 0;
-}
-
-.content p {
-    padding-bottom: 15px;
-    font-weight: 300;
-    opacity: 0.7;
-    width: 150%;
-    margin: 0 auto;
-    line-height: 1.7;
-    color: #ffffff
 }
 
 .links {
@@ -158,15 +143,14 @@ h4 {
 
 .credit {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    min-height: 22vh;
-    width: 100vh;
+    align-items: center;
+    min-height: 20vh;
     position: relative;
     width: 100vw;
     box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
     padding: 20px 50px;
+    flex-direction: column;
 }
 
 .credit .social-icon {
