@@ -14,7 +14,7 @@ body {
 
 body.dark-mode {
     background-image: url(../images/dbgTRY.png); /* A different background image for dark mode */
-    background-color: #121212; /* A dark background color as a fallback */
+    background-color: black; /* A dark background color as a fallback */
 }
 
 #section-wrapper {
