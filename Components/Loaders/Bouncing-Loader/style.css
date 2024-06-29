@@ -1,0 +1,68 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center loader in the middle of the screen */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #66a9cc;
+}
+
+/* Styles for the Google loader */
+.bouncing-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.bouncing-loader > div {    
+    width: 35px;
+    height: 35px;
+    background-color: #370248;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: google-bounce 0.8s infinite ease-in-out alternate;
+}
+
+/* Animation keyframes */
+@keyframes google-bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+/* Adjustments for individual dots */
+.bouncing-loader > div:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.bouncing-loader > div:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+
+.bouncing-loader > div:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.flex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+.flex-item-left {
+            margin-bottom: 20px; /* Adjust spacing between logo and loader */
+        }
