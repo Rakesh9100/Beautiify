@@ -213,8 +213,8 @@ button#dark-mode-toggle {
     border: none;
     padding: 10px;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     z-index: 999;
     margin-top: 4px;
