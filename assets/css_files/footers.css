@@ -52,7 +52,7 @@ section {
 }
 
 .heading {
-    font-family: 'Tangerine', serif; 
+    font-family: 'Tangerine', serif !important; 
     font-size: 6em;
     font-weight: bolder;
     color: white;
