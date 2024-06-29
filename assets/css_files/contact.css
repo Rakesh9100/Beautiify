@@ -12,6 +12,11 @@ body {
     background-position: 50% 50%;
 }
 
+body.dark-mode {
+    background-image: url(../images/dbgTRY.png); /* A different background image for dark mode */
+    background-color: #121212; /* A dark background color as a fallback */
+}
+
 #section-wrapper {
     width: 100%;
     margin-top: 25px;
@@ -20,7 +25,8 @@ body {
 .box-wrapper {
     position: relative;
     display: table;
-    width: 75vw;
+    width: 70vw;
+    margin-top: 45px;
     top: 15px;
     left: 50%;
     transform: translate(-50%, 0);
@@ -31,6 +37,20 @@ body {
 .box-wrapper:hover {
     transition: 0.25s;
     filter: drop-shadow(0px 0px 10px rgb(0, 0, 0, 0.7));
+}
+
+.box-wrapper:hover {
+    transition: 0.25s;
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0, 0.7));
+}
+
+body.dark-mode .box-wrapper {
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.4));
+}
+
+body.dark-mode .box-wrapper:hover {
+    transition: 0.25s;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.7));
 }
 
 .info-wrap {
@@ -44,7 +64,13 @@ body {
     color: #fff;
 }
 
+body.dark-mode .info-wrap {
+    background: linear-gradient(144deg, rgba(50, 50, 50, 0.9) 0%, rgba(20, 20, 20, 0.9) 49%);
+    color: #ddd;
+}
+
 .info-title {
+    margin-top: 10px;
     text-align: left;
     font-size: 28px;
     letter-spacing: 0.5px;
@@ -52,9 +78,9 @@ body {
 }
 
 .info-sub-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
-    margin-top: 17px;
+    margin-top: 30px;
     letter-spacing: 0.5px;
     line-height: 26px;
     text-shadow: 1px 1px 2px black;
@@ -67,7 +93,7 @@ body {
 
 .info-details li {
     margin-top: 25px;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     text-shadow: 1px 1px 2px black;
 }
@@ -76,7 +102,7 @@ body {
     background: #49025f;
     padding: 9px;
     border-radius: 50%;
-    font-size: 14px;
+    font-size: 13px;
     margin-right: 5px;
     text-shadow: 1px 2px 2px black;
     box-shadow: 1px 1px 2px black;
@@ -84,13 +110,27 @@ body {
 
 .info-details li a {
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
     transition: all .4s;
 }
 
 .info-details li a:hover {
     color: #f44770;
+}
+
+body.dark-mode .info-details li a:hover {
+    color: #8f37d3;
+}
+
+body.dark-mode .info-title,
+body.dark-mode .info-sub-title,
+body.dark-mode .info-details li,
+body.dark-mode .info-details li i,
+body.dark-mode .info-details li a,
+body.dark-mode .social-icons li i {
+    color: #ddd;
+    text-shadow: 1px 2px 2px black;
 }
 
 .social-icons {
@@ -120,6 +160,15 @@ body {
     color: #49025f;
 }
 
+body.dark-mode .social-icons li i {
+    background: #333;
+}
+
+body.dark-mode .social-icons li i:hover {
+    background: #ddd;
+    color: #333;
+}
+
 .form-wrap {
     width: 65%;
     height: 86vh;
@@ -127,6 +176,10 @@ body {
     padding: 40px 25px 35px 25px;
     border-radius: 0px 30px 30px 0px;
     background: #ecf0f3;
+}
+
+body.dark-mode .form-wrap {
+    background: linear-gradient(144deg, rgba(126, 39, 156, 0.9) 2%, rgba(99, 39, 156, 0.9) 10%, rgba(72, 39, 156, 0.9) 20%, rgba(18, 11, 96, 0.9) 79%);
 }
 
 .form-title {
@@ -137,6 +190,11 @@ body {
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 2px #49025f, 1px 1px 2px white;
     color: #49025f;
+}
+
+body.dark-mode .form-title {
+    color: beige;
+    text-shadow: 1px 1px 2px black, 1px 1px 2p white;
 }
 
 .form-fields {
@@ -156,6 +214,11 @@ body {
     width: 100%;
 }
 
+body.dark-mode .form-fields input,
+body.dark-mode .form-fields textarea {
+    color: #eba6a6;
+}
+
 .form-fields textarea {
     height: 150px;
     resize: none;
@@ -171,8 +234,16 @@ body {
     border-bottom: 4px solid #49025f;
 }
 
+body.dark-mode .form-group {
+    box-shadow: inset 6px 6px 6px #00264b, inset -3.7px -3.7px 3.7px #cbced1;
+}
+
 .form-fields .form-group:last-child {
     width: 96%;
+}
+
+.info-wrap, .form-wrap {
+    height: 75vh; /* Adjust this value to your preference */
 }
 
 .submit-button {
@@ -193,9 +264,22 @@ body {
     transition: transform 0.5s;
 }
 
+body.dark-mode .submit-button {
+    height: 8vh;
+    background: #d2bcdde4;
+    color: #000000;
+    text-shadow: none;
+    font-weight: 700;
+    box-shadow: 2px 3px 8px #333, -3px -3px 8px black;
+}
+
 .submit-button:hover {
     background: #31279d;
     transform: scale(0.98);
+}
+
+body.dark-mode .submit-button:hover {
+    background: #e991ff;
 }
 
 /* Responsive css */
