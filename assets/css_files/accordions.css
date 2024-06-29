@@ -77,9 +77,9 @@ section {
 
 .box {
     box-sizing: border-box;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 252, 205);
     border-radius: 14px;
-    box-shadow: 3px 3px 6px 2px rgb(135, 135, 113);
+    box-shadow: 4px 4px 6px 2px rgb(135, 135, 113);
     margin: 20px 50px;
     padding: 20px 40px;
     height: 200px;
