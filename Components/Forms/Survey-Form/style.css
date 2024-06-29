@@ -46,10 +46,14 @@ input[type="text"]:focus {
 
 .rating {
     display: flex;
-    flex-direction: row;
-    /* Change to row to display stars horizontally */
+    flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 16px;
+}
+
+.rating label[for="rating"] {
+    order: 2; /*to place "rate us" to left of the stars*/
+    margin-right: 10px; 
 }
 
 .rating label {

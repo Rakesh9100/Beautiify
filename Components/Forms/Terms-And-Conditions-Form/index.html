@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Terms And Conditions Form</title>
+</head>
+<body>
+    <div class="container">
+        <form id="termsForm">
+            <h1>Terms & Conditions</h1>
+            <button type="button" id="openModalBtn">View Terms and Conditions</button>
+            <div class="form-group">
+                <input type="checkbox" id="acceptTerms" name="acceptTerms">
+                <label for="acceptTerms">I agree to the Terms and Conditions</label>
+            </div>
+            <button type="submit" id="submitBtn" disabled>Submit</button>
+        </form>
+    </div>
+
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="terms-content">
+                <div class="section">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to our website. By accessing or using our website, you agree to be bound by these terms and conditions.</p>
+                </div>
+                <div class="section">
+                    <h2>2. Intellectual Property Rights</h2>
+                    <p>All content, including text, graphics, images, and software, is the property of the website owner.</p>
+                </div>
+                <div class="section">
+                    <h2>3. User Obligations</h2>
+                    <p>Users agree to use the website in accordance with all applicable laws and regulations.</p>
+                </div>
+                <div class="section">
+                    <h2>4. Limitation of Liability</h2>
+                    <p>The website owner is not liable for any damages arising from the use of the website.</p>
+                </div>
+                <div class="section">
+                    <h2>5. Changes to Terms</h2>
+                    <p>We reserve the right to change these terms at any time, and your continued use of the website signifies your acceptance of any changes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
