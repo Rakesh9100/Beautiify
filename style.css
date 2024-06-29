@@ -420,7 +420,7 @@ section {
 
 .comp-section .compcontainer h1 {
     margin-top: 40px;
-    font-family: 'Tangerine', serif;
+    font-family: 'Tangerine', serif !important;
     font-size: 8.7rem;
     text-shadow: 2px 2px 3px black, 1px 1px 2px white;
     animation: lights 5s 750ms linear infinite;
