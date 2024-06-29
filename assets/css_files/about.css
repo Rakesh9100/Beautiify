@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:wght@100;300;400;500;700;900;&display=swap');
 
 * {
     box-sizing: border-box;
@@ -41,15 +42,15 @@ section {
     align-items: center;
     justify-content: center;
     padding-left: 2vw;
+    border-radius: 12px 12px 12px 12px;
+    width: 110%;
+    background-color: black;
 }
 
 .image img {
-    height: 400px;
-}
-
-.bgcolor {
-    background-color: rgba(123, 4, 123, 0.815);
-    backdrop-filter: 20px;
+    height: 300px;
+    margin-top: 120px;
+    margin-left: 10px;
 }
 
 .content {
@@ -57,19 +58,45 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #22a7b0;
     padding: 0px 6vw;
-    color: #fff;
+    border-radius: 0px 12px 12px 0px;
+    color: #000000;
     margin-bottom: 5vh;
 }
 
-.content h4 {
-    font-size: 17px;
-    letter-spacing: 0px;
+.content h1,
+h3 {
+    text-align: center;
+}
+
+.content h3, h4{
+    color: rgb(36, 36, 36);
+}
+
+.content h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100px; 
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    padding: 0 25px;
     opacity: 0.9;
-    color: #ffecd1;
+}
+
+.content h4{
+    text-align: justify;
+}
+
+.content span {
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
 }
 
 .content p {
+    padding-bottom: 15px;
     font-weight: 300;
     opacity: 0.7;
     width: 150%;
@@ -169,7 +196,7 @@ section {
 
 .credit .social-icon li a:hover {
     transform: translateY(-10px);
-    color: red;
+    color: rgb(196, 36, 135);
 }
 
 .credit p {
