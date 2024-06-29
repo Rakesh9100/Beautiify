@@ -62,7 +62,7 @@ section {
 }
 
 .SearchTextanimation {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif !important; 
     font-weight: 200;
     font-size: 25px !important;
     text-shadow: 2px 2px 2px black;
