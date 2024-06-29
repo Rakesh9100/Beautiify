@@ -52,12 +52,20 @@ section {
 }
 
 .heading {
-    font-size: 4em;
+    font-family: 'Tangerine', serif; 
+    font-size: 6em;
     font-weight: bolder;
     color: white;
     text-align: center;
-    margin: 75px 0 80px;
+    margin: 75px 0 60px;
     text-shadow: 2px 2px 2px black, 1px 1px 1px white;
+}
+
+.SearchNavigationbar{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 200;
+    font-size: 25px !important;
+    text-shadow: 2px 2px 2px black;
 }
 
 .contain {
@@ -69,14 +77,15 @@ section {
 
 .box {
     box-sizing: border-box;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 252, 205);
     border-radius: 14px;
-    box-shadow: 3px 3px 6px 1px white;
+    box-shadow: 4px 4px 6px 2px rgb(135, 135, 113);
     margin: 20px 50px;
     padding: 20px 40px;
-    width: 370px;
+    height: 200px;
+    width: 280px;
     color: black;
-    background-color: #f0dee9b5;
+    background-color: #fffde5d6;
     transition: all 0.2s ease-in-out;
     position: relative;
 }
@@ -86,11 +95,13 @@ section {
     transition: all 0.2s ease-in-out;
 }
 
-h1 {
+.box h1 {
+    font-family: 'Poppins' !important;
+    font-weight: 400;
     color: black;
     text-align: center;
     text-shadow: 1px 1px 1px black, 1px 1px 1px white;
-    font-size: 1.8em;
+    font-size: 1.40em;
 }
 
 body.dark-mode .SearchNavigationbar {
