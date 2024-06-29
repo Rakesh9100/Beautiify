@@ -9,17 +9,15 @@
 
 body {
     font-family: 'Playfair Display', serif;
-    max-width: 100vw;
     display: grid;
     background-image: url(../images/bg3.png);
     background-repeat: no repeat;
     background-attachment: fixed;
-    background-position: center;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no repeat;
     align-items: center;
-    justify-content: center;
+    align-content: center;
 }
 
 .navbar {
@@ -42,9 +40,6 @@ section {
 
 .image {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 2vw;
     border-radius: 12px 12px 12px 12px;
     width: 110%;
     background-color: black;
@@ -57,15 +52,11 @@ section {
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #22a7b0;
-    padding: 0px 6vw;
     border-radius: 0px 12px 12px 0px;
     color: #000000;
-    margin-bottom: 5vh;
 }
 
 .content h1 {
@@ -220,7 +211,6 @@ h4 {
 }
 
 .credit p a {
-    background-color: rgba(239, 230, 230, 0.551);
     color: var(--secondary);
     text-align: center;
     margin-top: 15px;
