@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
     componentsLink.addEventListener('click', (event) => {
         event.preventDefault();
         componentsSection.scrollIntoView({ behavior: 'smooth' });
-        componentsLink.style.color = 'red';
+        componentsLink.style.color = 'PaleVioletRed';
         homeLink.style.color = '';
     });
 
@@ -145,11 +145,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const componentsSectionTop = componentsSection.offsetTop - 50;
 
         if (currentScroll >= componentsSectionTop) {
-            componentsLink.style.color = 'red';
+            componentsLink.style.color = 'PaleVioletRed';
             homeLink.style.color = '';
         } else {
             componentsLink.style.color = '';
-            homeLink.style.color = 'red';
+            homeLink.style.color = 'PaleVioletRed';
         }
     });
 });
