@@ -357,3 +357,10 @@ body.dark-mode .submit-button:hover {
     color: #49025f;
     opacity: 0.95;
 }
+
+body.dark-mode .form-fields .form-group input::placeholder,
+body.dark-mode .form-fields .form-group textarea::placeholder {
+    color: beige;
+    opacity: 0.95;
+}
+
