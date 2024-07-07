@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -57,7 +56,7 @@ main {
 .footer-section h2 {
     font-size: 1.5em;
     margin-bottom: 15px;
-    color: #ff9900; 
+    color: #ff9900;
 }
 
 .social-links li {
@@ -66,7 +65,8 @@ main {
 }
 
 .social-links a {
-    color: #fff; /* White icons */
+    color: #fff;
+    /* White icons */
     font-size: 1.2em;
 }
 
@@ -75,8 +75,9 @@ main {
     margin-top: 30px;
 }
 
-.more-info-button, .scroll-to-top {
-    background-color: #ff9900; 
+.more-info-button,
+.scroll-to-top {
+    background-color: #ff9900;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -90,12 +91,13 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.more-info-button:hover, .scroll-to-top:hover {
-    background-color: #ff7f00; 
+.more-info-button:hover,
+.scroll-to-top:hover {
+    background-color: #ff7f00;
 }
 
 .more-info {
-    display: none; 
+    display: none;
     margin-top: 10px;
 }
 
