@@ -14,76 +14,75 @@ button {
     font-weight: 900;
     color: rgb(134, 124, 124);
     font-family: monospace;
-    transition: transform 400ms cubic-bezier(0.68, -0.55, 0.27, 2.5),
-      border-color 400ms ease-in-out, background-color 400ms ease-in-out;
+    transition: transform 400ms cubic-bezier(0.68, -0.55, 0.27, 2.5), border-color 400ms ease-in-out, background-color 400ms ease-in-out;
     word-spacing: -2px;
-  }
-  
-  @keyframes movingBorders {
+}
+
+@keyframes movingBorders {
     0% {
-      border-color: #fce4e4;
+        border-color: #fce4e4;
     }
-  
+
     50% {
-      border-color: #ffd8d8;
+        border-color: #ffd8d8;
     }
-  
+
     90% {
-      border-color: #fce4e4;
+        border-color: #fce4e4;
     }
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #eee;
     transform: scale(105%);
     animation: movingBorders 3s infinite;
-  }
-  
-  button svg {
+}
+
+button svg {
     margin-right: 11px;
     fill: rgb(255, 110, 110);
     transition: opacity 100ms ease-in-out;
-  }
-  
-  .filled {
+}
+
+.filled {
     position: absolute;
     opacity: 0;
     top: 20px;
     left: 22px;
-  }
-  
-  @keyframes beatingHeart {
+}
+
+@keyframes beatingHeart {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  
+
     15% {
-      transform: scale(1.15);
+        transform: scale(1.15);
     }
-  
+
     30% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  
+
     45% {
-      transform: scale(1.15);
+        transform: scale(1.15);
     }
-  
+
     60% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
-  button:hover .empty {
+}
+
+button:hover .empty {
     opacity: 0;
-  }
-  
-  button:hover .filled {
+}
+
+button:hover .filled {
     opacity: 1;
     animation: beatingHeart 1.2s infinite;
-  }
+}
 
-  body {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
