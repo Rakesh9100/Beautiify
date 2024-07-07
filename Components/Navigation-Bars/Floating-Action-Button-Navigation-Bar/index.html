@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Floating Action Button Navigation Bar</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="fab" id="fab" onclick="toggleFabMenu()">
+            <i class="fas fa-plus">+</i>
+        </div>
+        <div class="nav-items" id="nav-items">
+            <div class="nav-item" onclick="navigateTo('Dashboard', this)">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </div>
+            <div class="nav-item" onclick="navigateTo('Contact', this)">
+                <i class="fas fa-address-book"></i>
+                <span>Contact</span>
+            </div>
+            <div class="nav-item" onclick="navigateTo('Services', this)">
+                <i class="fas fa-concierge-bell"></i>
+                <span>Services</span>
+            </div>
+            <div class="nav-item" onclick="navigateTo('Main', this)">
+                <i class="fas fa-home"></i>
+                <span>Main</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
