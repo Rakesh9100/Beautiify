@@ -3,21 +3,18 @@
 :root {
     --color-bg: #fc6c81;
     --color-title: #0E1C4E;
-
     --color-summary-1: #fdead9;
     --color-summary-1-highlight: #FFC48B;
     --color-summary-2: #e4e4ff;
     --color-summary-2-highlight: #B4B3FF;
     --color-summary-3: #fcd4dc;
     --color-summary-3-highlight: #fba4c7;
-
     --font-ibm-plex-sans: 'IBM Plex Sans', sans-serif;
 }
 
 html,
 body {
-    overflow: auto;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background: var(--color-bg);
     display: flex;

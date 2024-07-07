@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="../css_files/loaders.css" />
     <link rel="stylesheet" href="../css_files/search.css">
+    <link rel="stylesheet" href="../css_files/cursor.css">
     <script src="../js_files/commonnav.js"></script>
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <title>Beautiify | Loaders</title>
 </head>
 
@@ -20,6 +22,28 @@
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
+    </div>
+    <div class="circle-container">
+        <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
+        <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
+        <div class="circle" style="background-color: rgb(248, 157, 99); left: 504px; top: 59px; scale: 0.9;"></div>
+        <div class="circle" style="background-color: rgb(245, 151, 97); left: 504px; top: 59px; scale: 0.85;"></div>
+        <div class="circle" style="background-color: rgb(239, 134, 94); left: 504px; top: 59px; scale: 0.8;"></div>
+        <div class="circle" style="background-color: rgb(236, 128, 93); left: 504px; top: 59px; scale: 0.75;"></div>
+        <div class="circle" style="background-color: rgb(227, 110, 92); left: 504px; top: 59px; scale: 0.7;"></div>
+        <div class="circle" style="background-color: rgb(223, 104, 92); left: 504px; top: 59px; scale: 0.65;"></div>
+        <div class="circle" style="background-color: rgb(213, 88, 92); left: 504px; top: 59px; scale: 0.6;"></div>
+        <div class="circle" style="background-color: rgb(209, 82, 92); left: 504px; top: 59px; scale: 0.55;"></div>
+        <div class="circle" style="background-color: rgb(197, 65, 93); left: 504px; top: 59px; scale: 0.5;"></div>
+        <div class="circle" style="background-color: rgb(192, 59, 93); left: 504px; top: 59px; scale: 0.45;"></div>
+        <div class="circle" style="background-color: rgb(178, 44, 94); left: 504px; top: 59px; scale: 0.4;"></div>
+        <div class="circle" style="background-color: rgb(172, 38, 94); left: 504px; top: 59px; scale: 0.35;"></div>
+        <div class="circle" style="background-color: rgb(156, 21, 95); left: 504px; top: 59px; scale: 0.3;"></div>
+        <div class="circle" style="background-color: rgb(149, 15, 95); left: 504px; top: 59px; scale: 0.25;"></div>
+        <div class="circle" style="background-color: rgb(131, 0, 96); left: 504px; top: 59px; scale: 0.2;"></div>
+        <div class="circle" style="background-color: rgb(124, 0, 96); left: 504px; top: 59px; scale: 0.15;"></div>
+        <div class="circle" style="background-color: rgb(104, 0, 96); left: 504px; top: 59px; scale: 0.1;"></div>
+        <div class="circle" style="background-color: rgb(96, 0, 95); left: 504px; top: 59px; scale: 0.05;"></div>
     </div>
 
     <header class="header3">
@@ -47,8 +71,8 @@
                 <li class="nav-item">
                     <a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
-                <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
             </ul>
+            <button id="dark-mode-toggle"></button>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -62,9 +86,15 @@
         <div class="heading">Loaders</div>
         <!-- Search Bar -->
         <div id="searchBar">
-            <h1>Search Loader</h1><br>
+            <h1 class="SearchLoader">Search Loader</h1><br>
             <input type="text" id="componentSearch" placeholder="Enter Loader Name" oninput="filtereachComponents()">
         </div>
+
+        <div class="no-results">
+            <img src="../images/no-results.png" alt="" height="100px" width="100px">
+            <h2>Hmmm, we are not getting any result. <br> Our bad - Please try another search!</h2>
+        </div>
+        
         <div class="contain">
             <div class="box">
                 <h1>Bird Loader</h1>
@@ -106,6 +136,45 @@
                 </div>
             </div>
             <div class="box">
+                <h1>Colour Changing Loader</h1>
+                <div class="preview">
+                    <a href="../../Components/Loaders/Colour-Changing-Loader/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png" />
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Loaders/Colour-Changing-Loader" title="Source Code" target="_blank">
+                        <img src="../images/github.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Crazy Arch Loader</h1>
+                <div class="preview">
+                    <a href="../../Components/Loaders/Crazy-Arch-Loader/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Loaders/Crazy-Arch-Loader" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Cuboid Loader</h1>
+                <div class="preview">
+                    <a href="../../Components/Loaders/Cuboid-Loader/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Loaders/Cuboid-Loader" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <h1>Cup Loader</h1>
                 <div class="preview">
                     <a href="../../Components/Loaders/Cup-Loader/index.html" title="Live Preview" target="_blank">
@@ -127,6 +196,19 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Loaders/Customizable-Percentage-Loader" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Dice Loader</h1>
+                <div class="preview">
+                    <a href="../../Components/Loaders/Dice-Loader/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Loaders/Dice-Loader" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -197,6 +279,19 @@
                 </div>
             </div>
             <div class="box">
+                <h1>Heart Beat Loader</h1>
+                <div class="preview">
+                    <a href="../../Components/Loaders/Heart-Beat-Loader/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Loaders/Heart-Beat-Loader" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <h1>Helix Loader</h1>
                 <div class="preview">
                     <a href="../../Components/Loaders/Helix-Loader/index.html" title="Live Preview" target="_blank">
@@ -257,6 +352,19 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Loaders/Maze-Loader" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Mesmerizing Loader</h1>
+                <div class="preview">
+                    <a href="../../Components/Loaders/Mesmerizing-Loader/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Loaders/Mesmerizing-Loader" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -418,6 +526,19 @@
                 </div>
             </div>
             <div class="box">
+                <h1>Terminal Loader</h1>
+                <div class="preview">
+                    <a href="../../Components/Loaders/Terminal-Loader/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Loaders/Terminal-Loader" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <h1>Triangle Loader</h1>
                 <div class="preview">
                     <a href="../../Components/Loaders/Triangle-Loader/index.html" title="Live Preview" target="_blank">
@@ -426,6 +547,19 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Loaders/Triangle-Loader" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Truck Delivery Loader</h1>
+                <div class="preview">
+                    <a href="../../Components/Loaders/Truck-Delivery-Loader/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Loaders/Truck-Delivery-Loader" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -455,10 +589,11 @@
 
     <!-- Scroll To Top Button -->
     <div id="progress">
-        <span id="progress-value">&#x1F815;</span>
+        <span id="progress-value" class="bi bi-arrow-up-short"></span>
     </div>
 
     <script src="../js_files/search.js"></script>
+    <script src="../js_files/cursor.js"></script>
     <script src="../../script.js"></script>
 
 </body>

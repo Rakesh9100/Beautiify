@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #431c5d, #2c0756);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 25px);
+    grid-template-rows: repeat(auto-fill, 25px);
+    gap: 5px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color:aqua;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.dot.hovered {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.dot.bulge {
+    transform: scale(2);
+}
+
+.dot.bulge-nearby {
+    transform: scale(1.5);
+}
+
+.dot.bulge-far {
+    transform: scale(1.2);
+}
