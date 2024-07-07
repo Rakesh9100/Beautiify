@@ -1,9 +1,11 @@
-body,html{
+body,
+html {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 button {
     border: none;
     position: relative;
@@ -17,9 +19,9 @@ button {
     cursor: pointer;
     background-color: transparent;
     transform: translateY(8px)
-   }
-   
-   button:after {
+}
+
+button:after {
     content: '';
     position: absolute;
     left: 0;
@@ -27,13 +29,13 @@ button {
     bottom: 0;
     box-shadow: 0px 0 0 0 white;
     transition: all 2s ease;
-   }
-   
-   button:hover:after {
+}
+
+button:hover:after {
     box-shadow: 0px -13px 56px 12px #ffffffa6;
-   }
-   
-   button span {
+}
+
+button span {
     position: absolute;
     width: 100%;
     font-size: 15px;
@@ -42,16 +44,16 @@ button {
     top: 39%;
     letter-spacing: 3px;
     text-align: center;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: black;
     transition: all 2s ease;
-   }
-   
-   button:hover span {
+}
+
+button:hover span {
     color: white;
-   }
-   
-   button:before {
+}
+
+button:before {
     content: '';
     position: absolute;
     width: 0;
@@ -61,10 +63,8 @@ button {
     top: 50%;
     transform: translate(-50%, -50%);
     transition: all 1s ease;
-   }
-   
-   button:hover:before {
+}
+
+button:hover:before {
     width: 100%;
-   }
-   
-   
+}
