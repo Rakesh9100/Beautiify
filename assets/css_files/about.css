@@ -8,84 +8,71 @@
 
 body {
     font-family: 'Playfair Display', serif;
-    display: grid;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
     background-image: url(../images/bg3.png);
     background-repeat: no repeat;
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
-    background-position: 50% 50%;
     background-repeat: no repeat;
-    align-content: center;
-    min-height: 100vh;
-    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar {
-    width: calc(100% - 9.5px);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 section {
     display: flex;
     grid-template-columns: 1fr 1fr;
-    min-height: 70;
-    width: 78vw;
-    margin: 0 auto;
-    margin-top: -50px;
+    max-width: 80vw;
+    margin-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 12px
 }
 
 .image {
     display: flex;
-    border-radius: 12px 0 0 12px;
-    width: 110%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2vw;
 }
 
 .image img {
-    height: 300px;
-    margin-top: 80px;
-    margin-left: 10px;
+    height: 400px;
 }
 
 .bgcolor {
-    background: radial-gradient(circle, #e36b0f, rgb(255, 0, 111), #8004b1);
+    background-color: rgba(123, 4, 123, 0.815);
+    backdrop-filter: 20px;
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 0 0 12px 12px;
+    padding: 0px 6vw;
     color: #fff;
-}
-
-.content h1,
-h3 {
-    text-align: center;
-    padding-right: 60px;
+    margin-bottom: 5vh;
 }
 
 .content h4 {
     font-size: 17px;
     letter-spacing: 0px;
-    padding: 0 25px;
-    padding-right: 120px;
     opacity: 0.9;
     color: #ffecd1;
 }
 
-.content span {
-    height: 0.5px;
-    width: 80px;
-    background: #777;
-    margin: 30px 0;
-}
-
 .content p {
-    padding-bottom: 15px;
     font-weight: 300;
     opacity: 0.7;
     width: 150%;
-    text-align: center;
     margin: 0 auto;
     line-height: 1.7;
     color: #ffffff
@@ -144,18 +131,16 @@ h3 {
 
 .credit {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    min-height: 22vh;
-    position: relative;
-    width: 100vw;
-    box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
-    min-height: 30px;
-    padding: 20px 50px;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    min-height: 20vh;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
+    padding: 20px 50px;
 }
 
 .credit .social-icon {
@@ -210,6 +195,10 @@ h3 {
     section {
         grid-template-columns: 1fr;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         border-radius: 0;
     }
 

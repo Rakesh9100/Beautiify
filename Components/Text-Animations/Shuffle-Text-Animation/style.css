@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    overflow: hidden
 }
 
 @import url("//fonts.googleapis.com/css?family=Inconsolata:700");
