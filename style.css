@@ -609,7 +609,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    min-height: 25vh;
+    /*min-height: 25vh;*/
+    background-color: #43114f;
 }
 
 footer {
