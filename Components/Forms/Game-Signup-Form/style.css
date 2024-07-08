@@ -1,0 +1,238 @@
+/*
+    1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bgv {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+
+img {
+    max-height: 7rem;
+}
+
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('assets/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#head {
+    font-family: 'Norse Bold', sans-serif;
+    font-size: 6.5rem;
+    color: white;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    height: 100%;
+    width: clamp(400px, 50%, 600px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    animation: borderColorChange 3s infinite;
+}
+
+@keyframes borderColorChange {
+
+    0%,
+    100% {
+        border-color: #fac834;
+        /* Starting color */
+    }
+
+    50% {
+        border-color: #ed5dfc;
+        /* Middle color */
+    }
+}
+
+.Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    gap: 1rem;
+}
+
+.wrapper>h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 3vh;
+    font-size: 2.5rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 1.5rem;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 1rem;
+    gap: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 3rem;
+}
+
+.login>a {
+    text-decoration: none;
+    color: rgb(0, 170, 249);
+}
+
+.login>a:hover {
+    color: aquamarine;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: max(65%, 300px);
+    border-radius: 12px;
+    border: 1px solid crimson;
+    box-shadow: 0 0 8px rgb(251, 104, 104);
+}
+
+input:hover {
+    box-shadow: 0 0 25px #feddc4;
+    border: 1px solid #f5c097;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type='password']:invalid {
+    border: 2px solid #ff0000;
+    /* Red border for invalid input */
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+    /* Optional: add a red box shadow */
+}
+
+.password:hover input[type='password']:invalid {
+    /* Styles applied to password input when parent .formgroup is hovered and input is invalid */
+    box-shadow: 0 0 25px rgb(255, 0, 0);
+}
+
+form>.Signin>input[type="submit"] {
+    width: 25%;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #e95560;
+    color: aliceblue;
+
+}
+
+form>.Signin>input[type="submit"]:hover {
+    background-color: #ed969c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Example box shadow */
+    color: #2d1113;
+    border: 1px solid crimson;
+}
