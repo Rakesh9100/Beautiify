@@ -2,6 +2,7 @@ body {
     background-image: url(https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .icons {
