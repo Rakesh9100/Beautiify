@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .particle-hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  #particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content .btn {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .hero-content .btn:hover {
+    background-color: #e91e63;
+  }
+  
+  #about {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
