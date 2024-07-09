@@ -1,9 +1,10 @@
-.tck{
+.tck {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
 }
+
 .expk {
     margin-top: -70px;
 }
@@ -33,8 +34,6 @@
     display: block;
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
-    /* margin-top: 60px; */
 }
 
 .detailek {

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up Form</title>
+</head>
+<body class="bg-gradient-to-r from-[#F28383] from-10% via-[#9D6CD2] via-30% to-[#481EDC] to-90% text-center">
+    <div class="login-container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-[980px]">
+            <div class="bg-blue-950 bg-opacity-50 shadow-xl p-10 rounded-2xl">
+                <h1 class="text-4xl font-bold text-white mb-6">Sign Up</h1>
+                <form action="" method="post" class="space-y-6 text-black">
+                    <div class="relative">
+                        <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <input
+                            type="text" name="username" placeholder="username"
+                            class="w-full bg-white-light py-2 px-12 rounded-full focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-lg"/>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <input
+                            type="text" name="fullName" placeholder="Full Name"
+                            class="w-full bg-white-light py-2 px-12 rounded-full focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-lg"/>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
+                            <i class="ri-mail-line"></i>
+                        </div>
+                        <input
+                            type="text" name="company" placeholder="Company"
+                            class="w-full bg-white-light py-2 px-12 rounded-full focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-lg"/>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
+                            <i class="ri-building-4-line"></i>
+                        </div>
+                        <input
+                            type="number" name="contact" placeholder="Contact"
+                            class="w-full bg-white-light py-2 px-12 rounded-full focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-lg"/>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
+                            <i class="ri-lock-line"></i>
+                        </div>
+                        <input
+                            type="email" name="email" placeholder="Email"
+                            class="w-full bg-white-light py-2 px-12 rounded-full focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-lg"/>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
+                            <i class="ri-lock-line"></i>
+                        </div>
+                        <input
+                            type="password" name="password" placeholder="Password"
+                            class="w-full bg-white-light py-2 px-12 rounded-full focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-lg"/>
+                    </div>
+                    <input
+                        class="bg-gradient-to-r from-blue-400 to-cyan-200 w-full font-semibold rounded-full py-2 text-white"
+                        type="submit" value="Sign Up"/>
+                </form>
+            </div>
+            <div class="bg-violet-950 bg-opacity-50 shadow-xl p-10 rounded-2xl">
+                <h2 class="text-3xl font-semibold text-white mb-5">Why Sign Up?</h2>
+                <p class="text-white text-lg mb-4">Calling all agricultural sellers! Be part of a community dedicated to supporting farmers with diverse products essential for crop cultivation, health, and protection. Together, let's innovate, elevate farming practices, and safeguard crops against diseases, ensuring food security and sustainable agriculture for generations to come.</p>
+                <p class="text-white text-lg">Join Us and Grow!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
