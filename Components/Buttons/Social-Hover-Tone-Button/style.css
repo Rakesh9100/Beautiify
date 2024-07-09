@@ -1,0 +1,101 @@
+body {
+    background-image: url(https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.icons i {
+    color: black;
+}
+
+.icons .icon i {
+    font-size: 3rem; /* Set the default font size for icons */
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+.icons .icon:hover i {
+    transform: scale(1.2); /* Scale the icon on hover */
+}
+
+.icons .icon:hover .fab.fa-facebook {
+    color: #3B5998; /* Change to Facebook color on hover */
+}
+
+.icons .icon:hover .fa-brands.fa-x-twitter {
+    color: #090e11; /* Change to Twitter color on hover */
+}
+
+.icons .icon:hover .fa-brands.fa-github {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.icons .icon:hover .fa-brands.fa-discord {
+    color: #5865F2;
+}
+
+.icons .icon:hover .fab.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    border-radius: 20%;
+    transform: scale(1.5);
+    color: transparent; /* Change to Instagram color on hover */
+}
+
+.icons .icon:hover .fab.fa-youtube {
+    color: #C31A1E; /* Change to YouTube color on hover */
+}
+
+.icons .icon:hover .fab.fa-github {
+    color: #333;
+}
+
+.icons .icon:hover .fab.fa-linkedin {
+    color: #0077B5;
+}
+
+/* Social-Hovertone-Heading CSS */
+
+.social-hovertone-heading {
+    font-family: 'Arial', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 2rem 0;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-hovertone-heading::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    transition: all 0.75s;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.social-hovertone-heading span {
+    position: relative;
+    z-index: 1;
+}

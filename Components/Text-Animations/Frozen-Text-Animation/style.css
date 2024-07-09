@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(to bottom, #000428, #004e92), url("assets/background.jpg");
+    background-blend-mode: saturation;
+    background-size: cover;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+h1 {
+    transform: translate(0, -40%);
+    font-size: calc(20vw + 0.5rem);
+    font-family: "frozen", serif;
+    background-image: url("assets/ice.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: contain;
+    position: relative;
+    -webkit-text-stroke: 1px #4f90ab;
+}
+
+@keyframes shine {
+    0% {
+        background-position: -120%;
+    }
+
+    10% {
+        background-position: 120%;
+    }
+
+    100% {
+        background-position: 120%;
+    }
+}
