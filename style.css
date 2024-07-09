@@ -203,11 +203,12 @@ html {
 }
 
 button#dark-mode-toggle {
+    background-image: url('./assets/images/dark.png');
+    background-color: transparent;
+    background-size: cover;
     position: fixed;
     top: 5.5px;
     right: 16px;
-    background-color: #333333;
-    color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -215,11 +216,13 @@ button#dark-mode-toggle {
     height: 40px;
     border-radius: 50%;
     z-index: 999;
+    margin-top: 4px;
 }
 
 .dark-mode button#dark-mode-toggle {
-    background-color: #eee;
-    color: #222;
+    background-image: url('./assets/images/light.png');
+    background-color: transparent;
+    background-size: cover;
 }
 
 .header1 {
@@ -274,10 +277,10 @@ button#dark-mode-toggle {
 .navbar {
     margin: 0 auto;
     z-index: 1000;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 21px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
 a {
@@ -318,6 +321,7 @@ ul {
 
 nav {
     display: flex;
+    height: 60px;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
@@ -525,7 +529,7 @@ section {
     justify-content: center;
     align-items: center;
     margin: 25px;
-    background: rgba(224, 202, 245, 0.743);
+    background: rgba(224, 202, 245, 0.777);
     border: 4px solid rgb(171, 196, 218);
     border-radius: 50px;
     box-shadow: 2px 2px 4px 2px rgb(163, 205, 239);
@@ -533,13 +537,13 @@ section {
 }
 
 .container .box:hover {
-    background-color: rgb(100, 96, 130);
-    border: 4px solid rgba(224, 202, 245, 0.743);
+    background-color: rgb(100, 96, 131);
+    border: 4px solid rgba(224, 202, 245, 0.745);
     box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
 }
 
 .dark-mode .container .box {
-    background: rgba(251, 251, 251, 0.743);
+    background: rgba(251, 251, 251, 0.846);
     border: 4px solid rgb(238, 245, 251);
     box-shadow: 2px 2px 4px 2px rgb(91, 131, 164);
 }
@@ -589,7 +593,7 @@ section {
 
 .container .box:hover .content i,
 .container .box:hover .content h2 {
-    color: rgba(224, 202, 245, 0.743);
+    color: rgba(224, 202, 245, 0.746);
     text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
 }
 
@@ -935,11 +939,12 @@ footer p a {
     }
 
     button#dark-mode-toggle {
+        background-image: url('./assets/images/dark.png');
+        background-color: transparent;
+        background-size: cover;
         position: fixed;
         top: 5.5px;
         right: 45px;
-        background-color: #333333;
-        color: white;
         border: none;
         padding: 10px;
         cursor: pointer;
@@ -947,6 +952,12 @@ footer p a {
         height: 40px;
         border-radius: 50%;
         z-index: 999;
+    }
+
+    .dark-mode button#dark-mode-toggle {
+        background-image: url('./assets/images/light.png');
+        background-color: transparent;
+        background-size: cover;
     }
 
     .hamburger {
@@ -1000,3 +1011,4 @@ footer p a {
         margin: 15px !important;
     }
 }
+
