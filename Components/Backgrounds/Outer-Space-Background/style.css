@@ -1,6 +1,3 @@
-@import "susy";
-@import "compass/reset";
-
 .stars, .twinkling, .clouds {
 	position:absolute;
 	display:block;
