@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const availableItems = document.getElementById('available-items');
     const selectedItems = document.getElementById('selected-items');
@@ -52,6 +50,5 @@ document.addEventListener('DOMContentLoaded', () => {
         transferSelectedItems(selectedItems, availableItems);
     });
 
-    // Initial population of available items
     populateList(availableItems, menuItems);
 });
