@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Aclonica", sans-serif;
+}
+
+:root {
+    --main-color: rgb(255, 0, 212);
+}
+
+.home {
+    height: 100dvh;
+}
+
+.home-slider {
+    height: 100%;
+}
+
+.home-slider .swiper-slide {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-position: center;
+    text-align: center;
+}
+
+.home-slider .slide::before {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.home-slider .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.hero-title {
+    text-align: center;
+    font-size: 4em;
+    width: 100%;
+    max-width: 950px;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    width: 100%;
+    max-width: 700px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0.3em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 8px;
+    color: white;
+    font-size: 2.5rem;
+    transition: 0.3s;
+
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: white !important;
+    height: 10px;
+    width: 10px;
+}
+
+@media all and (max-width: 768px) {
+    .hero-title {
+        font-size: 2.8em;
+    }
+
+    .hero-subtitle {
+        font-size: 1em;
+    }
+
+}

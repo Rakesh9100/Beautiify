@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <title>Login Form</title>
+</head>
+<body class="bg-gradient-to-r from-[#F28383] from-10% via-[#9D6CD2] via-30% to-[#481EDC] to-90% flex items-center justify-center h-screen">
+    <div class="bg-blue-950 bg-opacity-50 shadow-xl max-w-[960px] grid grid-cols-2 items-center gap-20 p-5 rounded-2xl object-cover">
+        <div class="ml-6">
+            <img src="assets/image.jpg" alt="" class="rounded-xl"/>
+        </div>
+
+        <div class="max-w-80 grid gap-5">
+            <h1 class="text-5xl font-bold text-white">Login</h1>
+
+            <div class="flex items-center justify-center space-x-4 mt-4">
+                
+                <a href="#" class="flex items-center justify-center w-40 h-10 bg-gradient-to-r from-blue-400 to-cyan-200  font-semibold rounded-full py-2 ">
+                    <i class="ri-google-line text-blue-800"></i> 
+                </a>
+                
+                <a href="#" class="flex items-center justify-center w-40 h-10 bg-gradient-to-r from-blue-400 to-cyan-200 font-semibold rounded-full py-2">
+                    <i class="ri-facebook-box-fill text-blue-800"></i>
+                </a>
+            </div>
+            
+                <form action="" class="space-y-6 text-white">
+                    <div class="relative">
+                        <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <input type="text" placeholder="Username" class="w-80 bg-white-light py-2 px-12 rounded-full focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-lg"/>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute top-1 left-1 bg-white-medium rounded-full p-2 flex items-center justify-center text-blue-300">
+                            <i class="ri-lock-line"></i> 
+                        </div>
+                        <input type="password" placeholder="Password" class="w-80 bg-white-light py-2 px-12 rounded-full focus:bg-black-dark focus:outline-none focus:ring-1 focus:ring-neon-blue focus:drop-shadow-lg"/>
+                    </div>
+                    <button class="bg-gradient-to-r from-blue-400 to-cyan-200 w-80 font-semibold rounded-full py-2">Sign in</button>
+                </form>
+            
+            <div class="text-dull-white border-t border-white-light pt-4 space-y-4 text-sm">
+                <p>Don't have an account? <a href="#" class="text-blue-200 font-semibold cursor-pointer">Sign up</a></p>
+                <p>Forgot password? <a href="#" class="text-blue-200 font-semibold cursor-pointer">Reset password</a></p>
+                <p>Don't have a password yet? <a href="#" class="text-blue-200 font-semibold cursor-pointer">Set password</a></p>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
