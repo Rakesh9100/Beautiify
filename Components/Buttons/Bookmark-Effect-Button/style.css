@@ -1,11 +1,13 @@
-body, html {
+body,
+html {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
-    background-color: #000; /* Optional: Add a background color */
+    background-color: #000;
 }
+
 .bookmarkBtn {
     width: 100px;
     height: 40px;
@@ -18,9 +20,9 @@ body, html {
     cursor: pointer;
     transition-duration: 0.3s;
     overflow: hidden;
-  }
-  
-  .IconContainer {
+}
+
+.IconContainer {
     width: 30px;
     height: 30px;
     background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
@@ -31,13 +33,13 @@ body, html {
     overflow: hidden;
     z-index: 2;
     transition-duration: 0.3s;
-  }
-  
-  .icon {
+}
+
+.icon {
     border-radius: 1px;
-  }
-  
-  .text {
+}
+
+.text {
     height: 100%;
     width: 60px;
     display: flex;
@@ -47,22 +49,21 @@ body, html {
     z-index: 1;
     transition-duration: 0.3s;
     font-size: 1.04em;
-  }
-  
-  .bookmarkBtn:hover .IconContainer {
+}
+
+.bookmarkBtn:hover .IconContainer {
     width: 90px;
     transition-duration: 0.3s;
-  }
-  
-  .bookmarkBtn:hover .text {
+}
+
+.bookmarkBtn:hover .text {
     transform: translate(10px);
     width: 0;
     font-size: 0;
     transition-duration: 0.3s;
-  }
-  
-  .bookmarkBtn:active {
+}
+
+.bookmarkBtn:active {
     transform: scale(0.95);
     transition-duration: 0.3s;
-  }
-  
+}
