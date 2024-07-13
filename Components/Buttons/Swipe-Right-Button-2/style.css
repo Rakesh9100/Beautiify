@@ -6,6 +6,7 @@ body {
     justify-content: center;
     background-color: black;
 }
+
 .button {
     margin: 0;
     height: auto;
@@ -13,12 +14,11 @@ body {
     padding: 0;
     border: none;
     cursor: pointer;
-  }
-  
+}
 
-  .button {
+.button {
     --border-right: 6px;
-    --text-stroke-color: rgba(255,255,255,0.6);
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
     --animation-color: #37FF8B;
     --fs-size: 2em;
     letter-spacing: 3px;
@@ -29,9 +29,9 @@ body {
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color);
-  }
-  /* this is the text, when you hover on button */
-  .hover-text {
+}
+
+.hover-text {
     position: absolute;
     box-sizing: border-box;
     content: attr(data-text);
@@ -42,9 +42,9 @@ body {
     overflow: hidden;
     transition: 0.5s;
     -webkit-text-stroke: 1px var(--animation-color);
-  }
-  /* hover */
-  .button:hover .hover-text {
+}
+
+.button:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
-  }
+}
