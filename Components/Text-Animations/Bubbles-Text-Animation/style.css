@@ -2,13 +2,15 @@ body {
     margin: 0;
     overflow: hidden;
     font-size: 0;
-  }
-  canvas {
+}
+
+canvas {
     background: black;
     width: 100vw;
     height: 100vh;
-  }
-  input {
+}
+
+input {
     width: 250px;
     height: 40px;
     line-height: 40px;
@@ -22,8 +24,9 @@ body {
     text-align: center;
     border: 1px solid white;
     background: rgba(255, 255, 255, 0.2);
-  }
-  p {
+}
+
+p {
     position: fixed;
     left: 0;
     bottom: 5px;
@@ -35,5 +38,4 @@ body {
     width: 100%;
     text-align: center;
     margin: 0;
-  }
-  
+}
