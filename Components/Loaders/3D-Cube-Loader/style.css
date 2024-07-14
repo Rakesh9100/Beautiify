@@ -4,7 +4,6 @@ body {
     align-items: center;
     height: 100vh;
     background: #212121;
-
 }
 
 .loader {
@@ -18,12 +17,6 @@ body {
     transform-style: preserve-3d;
 }
 
-@media (max-width: 480px) {
-    .loader {
-        zoom: 0.44;
-    }
-}
-
 .loader:before,
 .loader:after {
     --r: 20.5deg;
@@ -33,7 +26,6 @@ body {
     position: absolute;
     right: 32%;
     bottom: -11px;
-    /* change the back groung color on switching from light to dark mood */
     background: #212121;
     transform: translateZ(200px) rotate(var(--r));
     -webkit-animation: mask var(--duration) linear forwards infinite;
@@ -768,7 +760,6 @@ body {
 }
 
 @-webkit-keyframes ground {
-
     0%,
     65% {
         transform: rotateX(90deg) rotateY(0deg) translate(-48px, -120px) translateZ(100px) scale(0);
@@ -785,7 +776,6 @@ body {
 }
 
 @keyframes ground {
-
     0%,
     65% {
         transform: rotateX(90deg) rotateY(0deg) translate(-48px, -120px) translateZ(100px) scale(0);
@@ -802,7 +792,6 @@ body {
 }
 
 @-webkit-keyframes ground-shine {
-
     0%,
     70% {
         opacity: 0;
@@ -819,7 +808,6 @@ body {
 }
 
 @keyframes ground-shine {
-
     0%,
     70% {
         opacity: 0;
@@ -836,7 +824,6 @@ body {
 }
 
 @-webkit-keyframes mask {
-
     0%,
     65% {
         opacity: 0;
@@ -849,7 +836,6 @@ body {
 }
 
 @keyframes mask {
-
     0%,
     65% {
         opacity: 0;
@@ -858,5 +844,11 @@ body {
     66%,
     100% {
         opacity: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .loader {
+        zoom: 0.44;
     }
 }
