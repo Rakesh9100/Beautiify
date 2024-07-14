@@ -5,6 +5,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #E8E8E8;
+    overflow: hidden;
 }
 
 .wrapper {

@@ -1,0 +1,55 @@
+.tck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.expk {
+    margin-top: -70px;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.picturek {
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+}
+
+.swiper-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.detailek {
+    padding: 25px 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.switext1k {
+    margin: 0;
+    font-size: 20px;
+    color: #000;
+}
+
+.switext2k {
+    display: block;
+    font-size: 16px;
+    color: #0c0c0c;
+}
