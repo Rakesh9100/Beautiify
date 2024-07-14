@@ -1,5 +1,6 @@
 /* Center the button in the middle of the page */
-body, html {
+body,
+html {
     height: 100%;
     display: flex;
     align-items: center;
@@ -8,7 +9,8 @@ body, html {
     background-color: #000; /* Optional: Add a background color */
 }
 
-button, button::after {
+button,
+button::after {
     padding: 10px 50px;
     font-size: 20px;
     border: none;
