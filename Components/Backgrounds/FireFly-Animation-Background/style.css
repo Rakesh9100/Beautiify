@@ -1,17 +1,19 @@
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
     overflow: hidden;
     background: black;
-  }
-  
-  .firefly {
+}
+
+.firefly {
     position: relative;
     width: 100%;
     height: 100%;
-  }
-  
-  .firefly::before, .firefly::after {
+}
+
+.firefly::before,
+.firefly::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -22,24 +24,28 @@ body, html {
     border-radius: 50%;
     box-shadow: 0 0 15px yellow, 0 0 30px yellow, 0 0 45px yellow;
     animation: fly 5s linear infinite;
-  }
-  
-  .firefly::after {
+}
+
+.firefly::after {
     animation-delay: -2.5s;
-  }
-  
-  @keyframes fly {
-    0%, 100% {
-      transform: translate(-50%, -50%) translate(0, 0);
+}
+
+@keyframes fly {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) translate(0, 0);
     }
+
     25% {
-      transform: translate(-50%, -50%) translate(100px, -100px);
+        transform: translate(-50%, -50%) translate(100px, -100px);
     }
+
     50% {
-      transform: translate(-50%, -50%) translate(-100px, 100px);
+        transform: translate(-50%, -50%) translate(-100px, 100px);
     }
+
     75% {
-      transform: translate(-50%, -50%) translate(100px, 100px);
+        transform: translate(-50%, -50%) translate(100px, 100px);
     }
-  }
-  
+}
