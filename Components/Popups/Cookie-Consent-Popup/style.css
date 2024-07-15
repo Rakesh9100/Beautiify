@@ -24,7 +24,7 @@ body{
     border-radius: 20px;
 }
 
-.cookies{
+.cookies{  /* styling the cookie img */
     width: 150px;
     margin-bottom: 20px;
 }
@@ -48,7 +48,7 @@ body{
    transform: scale(1.01);
 }
 
-.close{
+.close{ /* styling the close icon */
     width: 25px;
     height: 25px;
     position: absolute;
