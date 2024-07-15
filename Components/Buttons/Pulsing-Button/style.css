@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.pulse-button {
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(97, 218, 251, 0.7);
+    animation: pulse 2s infinite;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.pulse-button:hover {
+    background-color: #52c1e0;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(97, 218, 251, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 20px 20px rgba(97, 218, 251, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(97, 218, 251, 0);
+    }
+}

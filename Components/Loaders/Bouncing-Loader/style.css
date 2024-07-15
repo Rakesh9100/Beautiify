@@ -1,0 +1,52 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgb(231, 181, 88), rgb(81, 81, 172), rgb(235, 106, 106))
+}
+
+.loader-container {
+    text-align: center;
+}
+
+.bouncing-loader {
+    display: flex;
+    justify-content: center;
+}
+
+.bouncing-loader div {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(247, 250, 83), rgb(243, 125, 46));
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: bouncing-animation 1.4s infinite ease-in-out;
+    animation-delay: calc(var(--delay) * 0.2s);
+}
+
+@keyframes bouncing-animation {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.bouncing-loader div:nth-child(2) {
+    --delay: 1;
+}
+
+.bouncing-loader div:nth-child(3) {
+    --delay: 2;
+}
+
+.bouncing-loader div:nth-child(4) {
+    --delay: 3;
+}

@@ -8,9 +8,10 @@
     <link rel="icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css_files/navigation-bars.css" />
+    <link rel="stylesheet" type="text/css" href="../css_files/commoncss.css">
     <link rel="stylesheet" href="../css_files/search.css">
-    <script src="../js_files/commonnav.js"></script>
+    <link rel="stylesheet" href="../css_files/cursor.css">
+    <script src="../js_files/hamburgerMenu.js"></script>
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <title>Beautiify | Navigation Bars</title>
@@ -21,6 +22,28 @@
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
+    </div>
+    <div class="circle-container">
+        <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
+        <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
+        <div class="circle" style="background-color: rgb(248, 157, 99); left: 504px; top: 59px; scale: 0.9;"></div>
+        <div class="circle" style="background-color: rgb(245, 151, 97); left: 504px; top: 59px; scale: 0.85;"></div>
+        <div class="circle" style="background-color: rgb(239, 134, 94); left: 504px; top: 59px; scale: 0.8;"></div>
+        <div class="circle" style="background-color: rgb(236, 128, 93); left: 504px; top: 59px; scale: 0.75;"></div>
+        <div class="circle" style="background-color: rgb(227, 110, 92); left: 504px; top: 59px; scale: 0.7;"></div>
+        <div class="circle" style="background-color: rgb(223, 104, 92); left: 504px; top: 59px; scale: 0.65;"></div>
+        <div class="circle" style="background-color: rgb(213, 88, 92); left: 504px; top: 59px; scale: 0.6;"></div>
+        <div class="circle" style="background-color: rgb(209, 82, 92); left: 504px; top: 59px; scale: 0.55;"></div>
+        <div class="circle" style="background-color: rgb(197, 65, 93); left: 504px; top: 59px; scale: 0.5;"></div>
+        <div class="circle" style="background-color: rgb(192, 59, 93); left: 504px; top: 59px; scale: 0.45;"></div>
+        <div class="circle" style="background-color: rgb(178, 44, 94); left: 504px; top: 59px; scale: 0.4;"></div>
+        <div class="circle" style="background-color: rgb(172, 38, 94); left: 504px; top: 59px; scale: 0.35;"></div>
+        <div class="circle" style="background-color: rgb(156, 21, 95); left: 504px; top: 59px; scale: 0.3;"></div>
+        <div class="circle" style="background-color: rgb(149, 15, 95); left: 504px; top: 59px; scale: 0.25;"></div>
+        <div class="circle" style="background-color: rgb(131, 0, 96); left: 504px; top: 59px; scale: 0.2;"></div>
+        <div class="circle" style="background-color: rgb(124, 0, 96); left: 504px; top: 59px; scale: 0.15;"></div>
+        <div class="circle" style="background-color: rgb(104, 0, 96); left: 504px; top: 59px; scale: 0.1;"></div>
+        <div class="circle" style="background-color: rgb(96, 0, 95); left: 504px; top: 59px; scale: 0.05;"></div>
     </div>
 
     <header class="header3">
@@ -49,7 +72,7 @@
                     <a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
             </ul>
-            <button id="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+            <button id="dark-mode-toggle"></button>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -63,8 +86,8 @@
         <div class="heading">Navigation Bars</div>
         <!-- Search Bar -->
         <div id="searchBar">
-            <h1 class="SearchNavigationbar">Search Navigation Bar</h1><br>
-            <input type="text" id="componentSearch" placeholder="Enter NavBar Name" oninput="filtereachComponents()">
+            <h1 class="SearchDarkMode">Search Navigation Bar</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Navigation Bar Name" oninput="filtereachComponents()">
         </div>
 
         <div class="no-results">
@@ -87,6 +110,19 @@
                 </div>
             </div>
             <div class="box">
+                <h1>Bootstrap Navigation Bar</h1>
+                <div class="preview">
+                    <a href="../../Components/Navigation-Bars/Bootstrap-Navigation-Bar/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Navigation-Bars/Bootstrap-Navigation-Bar" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <h1>Circular Navigation Bar</h1>
                 <div class="preview">
                     <a href="../../Components/Navigation-Bars/Circular-Navigation-Bar/index.html" title="Live Preview" target="_blank">
@@ -100,6 +136,19 @@
                 </div>
             </div>
             <div class="box">
+                <h1>Collapsible Navigation Bar</h1>
+                <div class="preview">
+                    <a href="../../Components/Navigation-Bars/Collapsible-Navigation-Bar/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Navigation-Bars/Collapsible-Navigation-Bar" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <h1>Elastic Side Navigation Bar</h1>
                 <div class="preview">
                     <a href="../../Components/Navigation-Bars/Elastic-Side-Navigation-Bar/index.html" title="Live Preview" target="_blank">
@@ -108,6 +157,19 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Navigation-Bars/Elastic-Side-Navigation-Bar" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Floating Action Button Navigation Bar</h1>
+                <div class="preview">
+                    <a href="../../Components/Navigation-Bars/Floating-Action-Button-Navigation-Bar/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Navigation-Bars/Floating-Action-Button-Navigation-Bar" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -258,20 +320,16 @@
         </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="../js_files/dark-mode.js"></script>
-
     <!-- Scroll To Top Button -->
     <div id="progress">
         <span id="progress-value" class="bi bi-arrow-up-short"></span>
     </div>
 
-    <script src="../js_files/search.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../script.js"></script>
-
+    <script src="../js_files/cursor.js"></script>
+    <script src="../js_files/search.js"></script>
+    <script src="../js_files/dark-mode.js"></script>
 </body>
 
 </html>
