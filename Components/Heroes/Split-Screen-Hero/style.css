@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Aclonica", sans-serif;
+}
+
+:root {
+    --main-color:rgb(0, 87, 46);
+}
+
+.split-screen {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-side, .right-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side {
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px;
+}
+
+.right-side {
+    overflow: hidden;
+}
+
+.right-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3em;
+    margin: 0.5em 0;
+    width: 100%;
+    max-width: 650px;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    width: 100%;
+    max-width: 650px;
+}
+
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0.3em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+
+@media all and (max-width: 768px) {
+    .hero-title {
+        font-size: 2em;
+    }
+    
+    .hero-subtitle {
+        font-size: 1em;
+    }
+    .split-screen {
+       flex-direction: column;
+    }
+    
+    
+}

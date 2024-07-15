@@ -1,0 +1,83 @@
+* {
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif, Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+:root {
+    --main-color: #290080;
+}
+
+main {
+    background-color: var(--main-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100dvh;
+}
+
+button {
+    padding: 10px 0;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    width: 110px;
+    font-size: 15px;
+    background-color: #f3edff;
+    color: var(--main-color);
+    letter-spacing: 1px;
+}
+
+main button:hover {
+    background-color: #dfd0ff;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.toast-wrapper {
+    position: fixed;
+    top: 10px;
+    right: -100%;
+    transition: 0.5s;
+    width: fit-content;
+    padding: 10px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.toast-wrapper.active:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    background-color: hotpink;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    animation-name: load;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    border-radius: 0 0 3px 3px;
+}
+
+.toast-wrapper.active {
+    right: 5px;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

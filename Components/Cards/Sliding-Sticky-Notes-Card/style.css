@@ -1,0 +1,21 @@
+body {
+    margin-inline: max(0px, ((100% - 260px) / 2));
+    font: 90%/1.4 system-ui;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    flex: 1 0 calc(25% - 20px); /* Adjust card width here */
+    margin-bottom: 20px; /* Adjust spacing between cards */
+}

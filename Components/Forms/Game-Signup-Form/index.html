@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Game Signup Form</title>
+</head>
+
+<body>
+    <video id="bgv" src="assets/background-video.mp4" autoplay muted loop></video>
+    <div class="container">
+        <div class="Logo">
+            <h1 id="head">GAME NAME</h1>
+        </div>
+        <div class="wrapper">
+            <h2>Welcome</h2>
+            <form action="" method="post">
+                <div class="formgroup">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required maxlength="20"/>
+                </div>
+                <div class="formgroup">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" required maxlength="20"/>
+                </div>
+                <div class="formgroup">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required/>
+                </div>
+                <div class="formgroup">
+                    <label for="usrname">User Name</label>
+                    <input type="text" id="usrname" name="usrname" required/>
+                </div>
+                <div class="formgroup password">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Must contain at least one uppercase letter, one lowercase letter, one number, and one special character, and be at least 8 characters long"/>
+                </div>
+                <div class="formgroup password">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="Must contain at least one uppercase letter, one lowercase letter, one number, and one special character, and be at least 8 characters long"/>
+                </div>
+                <div class="Signin">
+                    <input type="Submit"/>
+                </div>
+            </form>
+            <div class="login">
+                <span>Already Have an account?</span>
+                <a href="">Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
