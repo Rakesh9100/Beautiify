@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(222, 79, 79);
+}
+
+#modalbox{
+    display:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 450px;
+    text-align: center;
+    padding: 40px 40px;
+    font-weight: 500;
+    background: white;
+    border-radius: 20px;
+}
+
+.cookies{
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+#modalbox button{
+    background: rgb(222, 79, 79);
+    color: white;
+    padding: 10px 0;
+    border-radius: 4px;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all ease-in-out;
+}
+
+#modalbox button:hover{
+   box-shadow: rgba(1, 1, 4, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   transform: scale(1.01);
+}
+
+.close{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
