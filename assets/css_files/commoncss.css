@@ -93,7 +93,7 @@ h1 {
     font-size: 1.8em;
 }
 
-body.dark-mode .SearchNavigationbar {
+body.dark-mode .SearchDarkMode {
     color: #FFFFFF;
 }
 
