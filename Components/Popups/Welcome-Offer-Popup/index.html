@@ -12,22 +12,22 @@
         <h1>Hello world!</h1>
     </main>
 
-    <section class="pop-up-container">
-        <div class="pop-up-wrapper">
-            <button class="close-btn">&times;</button>
-            <div class="left">
-                <img src="assets/welcome.webp" alt="">
-            </div>
-            <div class="right">
-                <h1>Get 15% Off</h1>
-                <h1>Your first order.</h1>
-                <p>+ Free shipping & returns!</p>
-                <input type="text" placeholder="Enter your email">
-                <button>Get My 15% Off</button>
-                <a href="#">Terms & Conditions</a>
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup" id="popup">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <div class="popup-content">
+                <img src="assets/welcome-new.webp" alt="Welcome" class="popup-image">
+                <div class="popup-text">
+                    <h2>Welcome!</h2>
+                    <h3>Get 20% Off Your First Order</h3>
+                    <p>Subscribe to our newsletter to get the latest updates and offers.</p>
+                    <input type="email" placeholder="Enter your email" class="popup-input">
+                    <button class="popup-btn">Subscribe Now</button>
+                    <p class="popup-terms"><a href="#">Terms & Conditions</a></p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <script src="./script.js"></script>
 </body>
