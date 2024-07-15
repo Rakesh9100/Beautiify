@@ -12,6 +12,105 @@
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Error 404 - Beautiify</title>
+    <style>
+        .image-container {
+  position: relative;
+}
+img{
+    border-radius: 40%;
+    /* filter: sepia(100%) hue-rotate(30deg); */
+    /* filter: sepia(100%) hue-rotate(0deg); */
+}
+.text-overlay {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.heading{
+    margin-top: 20px;
+    font-size: 7rem;
+    text-shadow: 2px 2px 3px black, 1px 1px 2px white;
+    animation: lights 5s 750ms linear infinite;
+}
+
+@keyframes lights {
+    0% {
+        color: hsl(230, 40%, 80%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+
+    30% {
+        color: hsl(230, 80%, 90%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    40% {
+        color: hsl(230, 100%, 95%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 90%, 0.5),
+            -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+            0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+
+    70% {
+        color: hsl(230, 80%, 90%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    100% {
+        color: hsl(230, 40%, 80%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+}
+.sub-head {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 150px;
+}
+
+.paragraph {
+  font-size: 13px;
+  margin-bottom: 150px;
+  text-shadow: none;
+  color: black;
+}
+.started{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    background: rgba(224, 202, 245, 0.743);
+    color: rgb(104, 73, 131);
+    transition: transform 0.5s;   box-shadow: 2px 2px 2px black, 1px 1px 1px white;
+    text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(57, 4, 100);
+}
+    </style>
 </head>
 
 <body>
@@ -58,11 +157,13 @@
     </header>
 
     <section class="comp-section" id="404">
-        <div class="compcontainer">
-            <div class="logo">
-                <img src="./assets/images/logo.png" alt="Logo">
-            </div>
-            <h1 class="heading">404</h1>
+        <!-- <img src="404.gif" alt="" width="300px" height="300px" > -->
+        <!-- <div class="compcontainer">
+            <div class="image-container">
+                <img src="404.gif" alt="Image" width="700px" height="300px">
+                <div class="text-overlay">Write anything on image!</div>
+              </div>
+              <h1 class="heading">404</h1>
             <h3 class="sub-head">Page Not Found</h3>
             <p class="paragraph">
                 Sorry, but the page you were looking for could not be found.
@@ -70,7 +171,17 @@
             <a href="index.html">
                 <button class="started">Go Back Home</button>
             </a>
-        </div>
+        </div> -->
+        <h1 class="heading">404</h1>
+        <div class="image-container">
+            <img src="404.gif" alt="Image"width="700px" height="500px" >
+            <div class="text-overlay">
+              <h3 class="sub-head">Page Not Found !! 😔</h3>
+            </div>
+            <a href="index.html">
+                <button class="started">Go Back Home</button>
+              </a>
+          </div>
     </section>
 
     <div class="footer" id="about">
