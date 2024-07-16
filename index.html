@@ -5,23 +5,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css_files/cursor.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css_files/cursor.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./assets/js_files/hamburgerMenu.js"></script>
     <title>Beautiify</title>
 </head>
 
 <body>
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
     <div class="circle-container">
         <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
         <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
@@ -45,6 +41,12 @@
         <div class="circle" style="background-color: rgb(96, 0, 95); left: 504px; top: 59px; scale: 0.05;"></div>
     </div>
 
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
     <header class="header1">
         <nav class="navbar" class="nav-bg1">
             <a href="index.html">
@@ -59,19 +61,25 @@
                     <a href="#home" class="nav-link" style="color: red;"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
+                    <a href="./assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i>
+                        About</a>
                 </li>
                 <li class="nav-item">
                     <a href="#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i> Contributors</a>
+                    <a href="./assets/html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i>
+                        Contributors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/html_files/contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
+                    <a href="./assets/html_files/contact.html" class="nav-link"><i class="fa-solid fa-phone"></i>
+                        Contact</a>
                 </li>
             </ul>
+
+            <!-- Dark Mode Toggle -->
             <button id="dark-mode-toggle"></button>
+
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -86,9 +94,10 @@
                 <img src="./assets/images/logo.png" alt="Logo">
             </div>
             <h1 class="heading">Beautiify</h1>
-            <h3 class="sub-head">Every component, in one place!!</h3>
+            <h3 class="sub-head">Every component, on the right place!!</h3>
             <p class="paragraph">
-                Beautiify comprises a curated selection of beautifully designed components and animations that can be seamlessly incorporated into any website, elevating its overall UI experience.
+                Beautiify comprises a curated selection of beautifully designed components and animations that can be
+                seamlessly incorporated into any website, elevating its overall UI experience.
             </p>
             <a href="#components">
                 <button class="started">Get Components</button>
@@ -107,234 +116,738 @@
             <img src="./assets/images/no-results.png" alt="" height="100px" width="100px">
             <h2>Hmmm, we are not getting any result. <br> Our bad - Please try another search!</h2>
         </div>
+        <div class="row">
+            <div class="column">
+                <div class="container1 noselect">
+                    <a href="./assets/html_files/accordions.html" target="_blank">
+                        <div class="canvas">
+                            <div class="tracker tr-1"></div>
+                            <div class="tracker tr-2"></div>
+                            <div class="tracker tr-3"></div>
+                            <div class="tracker tr-4"></div>
+                            <div class="tracker tr-5"></div>
+                            <div class="tracker tr-6"></div>
+                            <div class="tracker tr-7"></div>
+                            <div class="tracker tr-8"></div>
+                            <div class="tracker tr-9"></div>
+                            <div class="tracker tr-10"></div>
+                            <div class="tracker tr-11"></div>
+                            <div class="tracker tr-12"></div>
+                            <div class="tracker tr-13"></div>
+                            <div class="tracker tr-14"></div>
+                            <div class="tracker tr-15"></div>
+                            <div class="tracker tr-16"></div>
+                            <div class="tracker tr-17"></div>
+                            <div class="tracker tr-18"></div>
+                            <div class="tracker tr-19"></div>
+                            <div class="tracker tr-20"></div>
+                            <div class="tracker tr-21"></div>
+                            <div class="tracker tr-22"></div>
+                            <div class="tracker tr-23"></div>
+                            <div class="tracker tr-24"></div>
+                            <div class="tracker tr-25"></div>
+                            <div id="card">
+                                <p id="prompt">Accordion</p>
+                                <div class="title"><i class="fa-solid fa-square-plus"></i></div>
+                            </div>
+                        </div>
+                </div>
+            </div>
 
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/accordions.html" target="_blank">
-                    <div class="content">
-                        <i class="fa-solid fa-square-plus"></i>
-                        <h2>Accordions</h2>
-                    </div>
-                </a>
+            <div class="column">
+                <div class="container2 noselect">
+                    <a href="./assets/html_files/backgrounds.html" target="_blank">
+                        <div class="canvas">
+                            <div class="tracker tr-1"></div>
+                            <div class="tracker tr-2"></div>
+                            <div class="tracker tr-3"></div>
+                            <div class="tracker tr-4"></div>
+                            <div class="tracker tr-5"></div>
+                            <div class="tracker tr-6"></div>
+                            <div class="tracker tr-7"></div>
+                            <div class="tracker tr-8"></div>
+                            <div class="tracker tr-9"></div>
+                            <div class="tracker tr-10"></div>
+                            <div class="tracker tr-11"></div>
+                            <div class="tracker tr-12"></div>
+                            <div class="tracker tr-13"></div>
+                            <div class="tracker tr-14"></div>
+                            <div class="tracker tr-15"></div>
+                            <div class="tracker tr-16"></div>
+                            <div class="tracker tr-17"></div>
+                            <div class="tracker tr-18"></div>
+                            <div class="tracker tr-19"></div>
+                            <div class="tracker tr-20"></div>
+                            <div class="tracker tr-21"></div>
+                            <div class="tracker tr-22"></div>
+                            <div class="tracker tr-23"></div>
+                            <div class="tracker tr-24"></div>
+                            <div class="tracker tr-25"></div>
+                            <div id="card">
+                                <p id="prompt">Backgrounds</p>
+                                <div class="title"><i class="fas fa-palette"></i></div>
+                            </div>
+                        </div>
+                </div>
             </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/backgrounds.html" target="_blank">
-                    <div class="content">
-                        <i class="fas fa-palette"></i>
-                        <h2>Backgrounds</h2>
-                    </div>
-                </a>
+            <div class="column">
+                <div class="container3 noselect">
+                    <a href="./assets/html_files/breadcrumbs.html" target="_blank">
+                        <div class="canvas">
+                            <div class="tracker tr-1"></div>
+                            <div class="tracker tr-2"></div>
+                            <div class="tracker tr-3"></div>
+                            <div class="tracker tr-4"></div>
+                            <div class="tracker tr-5"></div>
+                            <div class="tracker tr-6"></div>
+                            <div class="tracker tr-7"></div>
+                            <div class="tracker tr-8"></div>
+                            <div class="tracker tr-9"></div>
+                            <div class="tracker tr-10"></div>
+                            <div class="tracker tr-11"></div>
+                            <div class="tracker tr-12"></div>
+                            <div class="tracker tr-13"></div>
+                            <div class="tracker tr-14"></div>
+                            <div class="tracker tr-15"></div>
+                            <div class="tracker tr-16"></div>
+                            <div class="tracker tr-17"></div>
+                            <div class="tracker tr-18"></div>
+                            <div class="tracker tr-19"></div>
+                            <div class="tracker tr-20"></div>
+                            <div class="tracker tr-21"></div>
+                            <div class="tracker tr-22"></div>
+                            <div class="tracker tr-23"></div>
+                            <div class="tracker tr-24"></div>
+                            <div class="tracker tr-25"></div>
+                            <div id="card">
+                                <p id="prompt">Breadcrumbs</p>
+                                <div class="title"><i class="fa-solid fa-caret-right"></i></div>
+                            </div>
+                        </div>
+                </div>
             </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/breadcrumbs.html" target="_blank">
-                    <div class="content">
-                        <i class="fa-solid fa-caret-right"></i>
-                        <h2>Breadcrumbs</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/buttons.html" target="_blank">
-                    <div class="content">
-                        <i class="fas fa-bold"></i>
-                        <h2>Buttons</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/cards.html" target="_blank">
-                    <div class="content">
-                        <i class="fas fa-id-card"></i>
-                        <h2>Cards</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/carousels.html" target="_blank">
-                    <div class="content">
-                        <i class="fas fa-th-large"></i>
-                        <h2>Carousels</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/dropdowns.html" target="_blank">
-                    <div class="content">
-                        <i class="fa-solid fa-square-caret-down"></i>
-                        <h2>Dropdowns</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/footers.html" target="_blank">
-                    <div class="content">
-                        <i class="fa-regular fa-window-maximize"></i>
-                        <h2>Footers</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/forms.html" target="_blank">
-                    <div class="content">
-                        <i class="fas fa-code"></i>
-                        <h2>Forms</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/heroes.html" target="_blank">
-                    <div class="content">
-                        <i class="fa fa-television" aria-hidden="true"></i>
-                        <h2>Heroes</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/loaders.html" target="_blank">
-                    <div class="content">
-                        <i class="fas fa-spinner"></i>
-                        <h2>Loaders</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/navigation-bars.html" target="_blank">
-                    <div class="content">
-                        <i class="fas fa-bars"></i>
-                        <h2>Navigation Bars</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/popups.html" target="_blank">
-                    <div class="content">
-                        <i class="fa fa-info-circle"></i>
-                        <h2>Popups</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/search-bars.html" target="_blank">
-                    <div class="content">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <h2>Search Bars</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/text-animations.html" target="_blank">
-                    <div class="content">
-                        <i class="fas fa-font"></i>
-                        <h2>Text Animations</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/toggle-switches.html" target="_blank">
-                    <div class="content">
-                        <i class="fa-solid fa-sliders"></i>
-                        <h2>Toggle Switches</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/tooltips.html" target="_blank">
-                    <div class="content">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                        <h2>Tooltips</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="zoom-effect">
-            <div class="box">
-                <a href="./assets/html_files/transfer-lists.html" target="_blank">
-                    <div class="content">
-                        <i class="fa-solid fa-table-list"></i>
-                        <h2>Transfer Lists</h2>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
 
-    <div class="footer" id="about">
-        <footer>
-            <ul class="social-icon">
-                <li>
-                    <a href="https://rakesh9100.bio.link/" target="_blank"><i class="fas fa-link"></i></a>
-                </li>
-                <li>
-                    <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/Rakesh9100" target="_blank"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/rakesh250602/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://discord.com/users/944144134950748170" target="_blank"><i class="fab fa-discord"></i></a>
-                </li>
-            </ul>
-            <p>
-                Created By <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | ©
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>: All Rights Reserved
-            </p>
-        </footer>
-    </div>
+            <div class="column">
+                <div class="container3 noselect">
+                    <a href="./assets/html_files/buttons.html" target="_blank">
+                        <div class="canvas">
+                            <div class="tracker tr-1"></div>
+                            <div class="tracker tr-2"></div>
+                            <div class="tracker tr-3"></div>
+                            <div class="tracker tr-4"></div>
+                            <div class="tracker tr-5"></div>
+                            <div class="tracker tr-6"></div>
+                            <div class="tracker tr-7"></div>
+                            <div class="tracker tr-8"></div>
+                            <div class="tracker tr-9"></div>
+                            <div class="tracker tr-10"></div>
+                            <div class="tracker tr-11"></div>
+                            <div class="tracker tr-12"></div>
+                            <div class="tracker tr-13"></div>
+                            <div class="tracker tr-14"></div>
+                            <div class="tracker tr-15"></div>
+                            <div class="tracker tr-16"></div>
+                            <div class="tracker tr-17"></div>
+                            <div class="tracker tr-18"></div>
+                            <div class="tracker tr-19"></div>
+                            <div class="tracker tr-20"></div>
+                            <div class="tracker tr-21"></div>
+                            <div class="tracker tr-22"></div>
+                            <div class="tracker tr-23"></div>
+                            <div class="tracker tr-24"></div>
+                            <div class="tracker tr-25"></div>
+                            <div id="card">
+                                <p id="prompt">Buttons</p>
+                                <div class="title"><i class="fas fa-bold"></i></div>
+                            </div>
+                        </div>
+                </div>
+            </div>
 
-    <!-- Scroll To Top Button -->
-    <div id="progress">
-        <span id="progress-value" class="bi bi-arrow-up-short"></span>
-    </div>
 
-    <script src="./script.js"></script>
-    <script src="./assets/js_files/cursor.js"></script>
-    <script src="./assets/js_files/dark-mode.js"></script>
+        </div>
+
+        <div class="row2">
+            <div class="column2">
+                <div class="container1 noselect">
+                    <a href="./assets/html_files/cards.html" target="_blank">
+                        <div class="canvas">
+                            <div class="tracker tr-1"></div>
+                            <div class="tracker tr-2"></div>
+                            <div class="tracker tr-3"></div>
+                            <div class="tracker tr-4"></div>
+                            <div class="tracker tr-5"></div>
+                            <div class="tracker tr-6"></div>
+                            <div class="tracker tr-7"></div>
+                            <div class="tracker tr-8"></div>
+                            <div class="tracker tr-9"></div>
+                            <div class="tracker tr-10"></div>
+                            <div class="tracker tr-11"></div>
+                            <div class="tracker tr-12"></div>
+                            <div class="tracker tr-13"></div>
+                            <div class="tracker tr-14"></div>
+                            <div class="tracker tr-15"></div>
+                            <div class="tracker tr-16"></div>
+                            <div class="tracker tr-17"></div>
+                            <div class="tracker tr-18"></div>
+                            <div class="tracker tr-19"></div>
+                            <div class="tracker tr-20"></div>
+                            <div class="tracker tr-21"></div>
+                            <div class="tracker tr-22"></div>
+                            <div class="tracker tr-23"></div>
+                            <div class="tracker tr-24"></div>
+                            <div class="tracker tr-25"></div>
+                            <div id="card">
+                                <p id="prompt">Cards</p>
+                                <div class="title"><i class="fas fa-id-card"></i></div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="container2 noselect">
+                    <a href="./assets/html_files/accordions.html" target="_blank">
+                        <div class="canvas">
+                            <div class="tracker tr-1"></div>
+                            <div class="tracker tr-2"></div>
+                            <div class="tracker tr-3"></div>
+                            <div class="tracker tr-4"></div>
+                            <div class="tracker tr-5"></div>
+                            <div class="tracker tr-6"></div>
+                            <div class="tracker tr-7"></div>
+                            <div class="tracker tr-8"></div>
+                            <div class="tracker tr-9"></div>
+                            <div class="tracker tr-10"></div>
+                            <div class="tracker tr-11"></div>
+                            <div class="tracker tr-12"></div>
+                            <div class="tracker tr-13"></div>
+                            <div class="tracker tr-14"></div>
+                            <div class="tracker tr-15"></div>
+                            <div class="tracker tr-16"></div>
+                            <div class="tracker tr-17"></div>
+                            <div class="tracker tr-18"></div>
+                            <div class="tracker tr-19"></div>
+                            <div class="tracker tr-20"></div>
+                            <div class="tracker tr-21"></div>
+                            <div class="tracker tr-22"></div>
+                            <div class="tracker tr-23"></div>
+                            <div class="tracker tr-24"></div>
+                            <div class="tracker tr-25"></div>
+                            <div id="card">
+                                <p id="prompt">Carousels</p>
+                                <div class="title"><i class="fa-solid fa-square-plus"></i></div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="column2">
+                <div class="container2 noselect">
+                    <a href="./assets/html_files/dropdowns.html" target="_blank">
+                        <div class="canvas">
+                            <div class="tracker tr-1"></div>
+                            <div class="tracker tr-2"></div>
+                            <div class="tracker tr-3"></div>
+                            <div class="tracker tr-4"></div>
+                            <div class="tracker tr-5"></div>
+                            <div class="tracker tr-6"></div>
+                            <div class="tracker tr-7"></div>
+                            <div class="tracker tr-8"></div>
+                            <div class="tracker tr-9"></div>
+                            <div class="tracker tr-10"></div>
+                            <div class="tracker tr-11"></div>
+                            <div class="tracker tr-12"></div>
+                            <div class="tracker tr-13"></div>
+                            <div class="tracker tr-14"></div>
+                            <div class="tracker tr-15"></div>
+                            <div class="tracker tr-16"></div>
+                            <div class="tracker tr-17"></div>
+                            <div class="tracker tr-18"></div>
+                            <div class="tracker tr-19"></div>
+                            <div class="tracker tr-20"></div>
+                            <div class="tracker tr-21"></div>
+                            <div class="tracker tr-22"></div>
+                            <div class="tracker tr-23"></div>
+                            <div class="tracker tr-24"></div>
+                            <div class="tracker tr-25"></div>
+                            <div id="card">
+                                <p id="prompt">Dropdowns</p>
+                                <div class="title"><i class="fa-solid fa-square-caret-down"></i></div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="container3 noselect">
+                    <a href="./assets/html_files/footers.html" target="_blank">
+                        <div class="canvas">
+                            <div class="tracker tr-1"></div>
+                            <div class="tracker tr-2"></div>
+                            <div class="tracker tr-3"></div>
+                            <div class="tracker tr-4"></div>
+                            <div class="tracker tr-5"></div>
+                            <div class="tracker tr-6"></div>
+                            <div class="tracker tr-7"></div>
+                            <div class="tracker tr-8"></div>
+                            <div class="tracker tr-9"></div>
+                            <div class="tracker tr-10"></div>
+                            <div class="tracker tr-11"></div>
+                            <div class="tracker tr-12"></div>
+                            <div class="tracker tr-13"></div>
+                            <div class="tracker tr-14"></div>
+                            <div class="tracker tr-15"></div>
+                            <div class="tracker tr-16"></div>
+                            <div class="tracker tr-17"></div>
+                            <div class="tracker tr-18"></div>
+                            <div class="tracker tr-19"></div>
+                            <div class="tracker tr-20"></div>
+                            <div class="tracker tr-21"></div>
+                            <div class="tracker tr-22"></div>
+                            <div class="tracker tr-23"></div>
+                            <div class="tracker tr-24"></div>
+                            <div class="tracker tr-25"></div>
+                            <div id="card">
+                                <p id="prompt">Footers</p>
+                                <div class="title"><i class="fa-regular fa-window-maximize"></i></div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="row3">
+                <div class="column3">
+                    <div class="container1 noselect">
+                        <a href="./assets/html_files/forms.html" target="_blank">
+                            <div class="canvas">
+                                <div class="tracker tr-1"></div>
+                                <div class="tracker tr-2"></div>
+                                <div class="tracker tr-3"></div>
+                                <div class="tracker tr-4"></div>
+                                <div class="tracker tr-5"></div>
+                                <div class="tracker tr-6"></div>
+                                <div class="tracker tr-7"></div>
+                                <div class="tracker tr-8"></div>
+                                <div class="tracker tr-9"></div>
+                                <div class="tracker tr-10"></div>
+                                <div class="tracker tr-11"></div>
+                                <div class="tracker tr-12"></div>
+                                <div class="tracker tr-13"></div>
+                                <div class="tracker tr-14"></div>
+                                <div class="tracker tr-15"></div>
+                                <div class="tracker tr-16"></div>
+                                <div class="tracker tr-17"></div>
+                                <div class="tracker tr-18"></div>
+                                <div class="tracker tr-19"></div>
+                                <div class="tracker tr-20"></div>
+                                <div class="tracker tr-21"></div>
+                                <div class="tracker tr-22"></div>
+                                <div class="tracker tr-23"></div>
+                                <div class="tracker tr-24"></div>
+                                <div class="tracker tr-25"></div>
+                                <div id="card">
+                                    <p id="prompt">Forms</p>
+                                    <div class="title"><i class="fas fa-code"></i></div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="column3">
+                    <div class="container2 noselect">
+                        <a href="./assets/html_files/heroes.html" target="_blank">
+                            <div class="canvas">
+                                <div class="tracker tr-1"></div>
+                                <div class="tracker tr-2"></div>
+                                <div class="tracker tr-3"></div>
+                                <div class="tracker tr-4"></div>
+                                <div class="tracker tr-5"></div>
+                                <div class="tracker tr-6"></div>
+                                <div class="tracker tr-7"></div>
+                                <div class="tracker tr-8"></div>
+                                <div class="tracker tr-9"></div>
+                                <div class="tracker tr-10"></div>
+                                <div class="tracker tr-11"></div>
+                                <div class="tracker tr-12"></div>
+                                <div class="tracker tr-13"></div>
+                                <div class="tracker tr-14"></div>
+                                <div class="tracker tr-15"></div>
+                                <div class="tracker tr-16"></div>
+                                <div class="tracker tr-17"></div>
+                                <div class="tracker tr-18"></div>
+                                <div class="tracker tr-19"></div>
+                                <div class="tracker tr-20"></div>
+                                <div class="tracker tr-21"></div>
+                                <div class="tracker tr-22"></div>
+                                <div class="tracker tr-23"></div>
+                                <div class="tracker tr-24"></div>
+                                <div class="tracker tr-25"></div>
+                                <div id="card">
+                                    <p id="prompt">Heroes</p>
+                                    <div class="title"><i class="fa fa-television"></i></div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="column3">
+                    <div class="container2 noselect">
+                        <a href="./assets/html_files/navigation-bars.html" target="_blank">
+                            <div class="canvas">
+                                <div class="tracker tr-1"></div>
+                                <div class="tracker tr-2"></div>
+                                <div class="tracker tr-3"></div>
+                                <div class="tracker tr-4"></div>
+                                <div class="tracker tr-5"></div>
+                                <div class="tracker tr-6"></div>
+                                <div class="tracker tr-7"></div>
+                                <div class="tracker tr-8"></div>
+                                <div class="tracker tr-9"></div>
+                                <div class="tracker tr-10"></div>
+                                <div class="tracker tr-11"></div>
+                                <div class="tracker tr-12"></div>
+                                <div class="tracker tr-13"></div>
+                                <div class="tracker tr-14"></div>
+                                <div class="tracker tr-15"></div>
+                                <div class="tracker tr-16"></div>
+                                <div class="tracker tr-17"></div>
+                                <div class="tracker tr-18"></div>
+                                <div class="tracker tr-19"></div>
+                                <div class="tracker tr-20"></div>
+                                <div class="tracker tr-21"></div>
+                                <div class="tracker tr-22"></div>
+                                <div class="tracker tr-23"></div>
+                                <div class="tracker tr-24"></div>
+                                <div class="tracker tr-25"></div>
+                                <div id="card">
+                                    <p id="prompt">Navigation Bars</p>
+                                    <div class="title"><i class="fas fa-bars"></i></div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="column3">
+                    <div class="container3 noselect">
+                        <a href="./assets/html_files/loaders.html" target="_blank">
+                            <div class="canvas">
+                                <div class="tracker tr-1"></div>
+                                <div class="tracker tr-2"></div>
+                                <div class="tracker tr-3"></div>
+                                <div class="tracker tr-4"></div>
+                                <div class="tracker tr-5"></div>
+                                <div class="tracker tr-6"></div>
+                                <div class="tracker tr-7"></div>
+                                <div class="tracker tr-8"></div>
+                                <div class="tracker tr-9"></div>
+                                <div class="tracker tr-10"></div>
+                                <div class="tracker tr-11"></div>
+                                <div class="tracker tr-12"></div>
+                                <div class="tracker tr-13"></div>
+                                <div class="tracker tr-14"></div>
+                                <div class="tracker tr-15"></div>
+                                <div class="tracker tr-16"></div>
+                                <div class="tracker tr-17"></div>
+                                <div class="tracker tr-18"></div>
+                                <div class="tracker tr-19"></div>
+                                <div class="tracker tr-20"></div>
+                                <div class="tracker tr-21"></div>
+                                <div class="tracker tr-22"></div>
+                                <div class="tracker tr-23"></div>
+                                <div class="tracker tr-24"></div>
+                                <div class="tracker tr-25"></div>
+                                <div id="card">
+                                    <p id="prompt">Loaders</p>
+                                    <div class="title"><i class="fas fa-spinner"></i></div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!--ff  -->
+
+
+                <div class="row4">
+                    <div class="column4">
+                        <div class="container1 noselect">
+                            <a href="./assets/html_files/popups.html" target="_blank">
+                                <div class="canvas">
+                                    <div class="tracker tr-1"></div>
+                                    <div class="tracker tr-2"></div>
+                                    <div class="tracker tr-3"></div>
+                                    <div class="tracker tr-4"></div>
+                                    <div class="tracker tr-5"></div>
+                                    <div class="tracker tr-6"></div>
+                                    <div class="tracker tr-7"></div>
+                                    <div class="tracker tr-8"></div>
+                                    <div class="tracker tr-9"></div>
+                                    <div class="tracker tr-10"></div>
+                                    <div class="tracker tr-11"></div>
+                                    <div class="tracker tr-12"></div>
+                                    <div class="tracker tr-13"></div>
+                                    <div class="tracker tr-14"></div>
+                                    <div class="tracker tr-15"></div>
+                                    <div class="tracker tr-16"></div>
+                                    <div class="tracker tr-17"></div>
+                                    <div class="tracker tr-18"></div>
+                                    <div class="tracker tr-19"></div>
+                                    <div class="tracker tr-20"></div>
+                                    <div class="tracker tr-21"></div>
+                                    <div class="tracker tr-22"></div>
+                                    <div class="tracker tr-23"></div>
+                                    <div class="tracker tr-24"></div>
+                                    <div class="tracker tr-25"></div>
+                                    <div id="card">
+                                        <p id="prompt">Popups</p>
+                                        <div class="title"><i class="fa fa-info-circle"></i></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="column3">
+                        <div class="container2 noselect">
+                            <a href="./assets/html_files/search-bars.html" target="_blank">
+                                <div class="canvas">
+                                    <div class="tracker tr-1"></div>
+                                    <div class="tracker tr-2"></div>
+                                    <div class="tracker tr-3"></div>
+                                    <div class="tracker tr-4"></div>
+                                    <div class="tracker tr-5"></div>
+                                    <div class="tracker tr-6"></div>
+                                    <div class="tracker tr-7"></div>
+                                    <div class="tracker tr-8"></div>
+                                    <div class="tracker tr-9"></div>
+                                    <div class="tracker tr-10"></div>
+                                    <div class="tracker tr-11"></div>
+                                    <div class="tracker tr-12"></div>
+                                    <div class="tracker tr-13"></div>
+                                    <div class="tracker tr-14"></div>
+                                    <div class="tracker tr-15"></div>
+                                    <div class="tracker tr-16"></div>
+                                    <div class="tracker tr-17"></div>
+                                    <div class="tracker tr-18"></div>
+                                    <div class="tracker tr-19"></div>
+                                    <div class="tracker tr-20"></div>
+                                    <div class="tracker tr-21"></div>
+                                    <div class="tracker tr-22"></div>
+                                    <div class="tracker tr-23"></div>
+                                    <div class="tracker tr-24"></div>
+                                    <div class="tracker tr-25"></div>
+                                    <div id="card">
+                                        <p id="prompt">Search Bars</p>
+                                        <div class="title"><i class="fa-solid fa-magnifying-glass"></i></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="column3">
+                        <div class="container2 noselect">
+                            <a href="./assets/html_files/text-animations.html" target="_blank">
+                                <div class="canvas">
+                                    <div class="tracker tr-1"></div>
+                                    <div class="tracker tr-2"></div>
+                                    <div class="tracker tr-3"></div>
+                                    <div class="tracker tr-4"></div>
+                                    <div class="tracker tr-5"></div>
+                                    <div class="tracker tr-6"></div>
+                                    <div class="tracker tr-7"></div>
+                                    <div class="tracker tr-8"></div>
+                                    <div class="tracker tr-9"></div>
+                                    <div class="tracker tr-10"></div>
+                                    <div class="tracker tr-11"></div>
+                                    <div class="tracker tr-12"></div>
+                                    <div class="tracker tr-13"></div>
+                                    <div class="tracker tr-14"></div>
+                                    <div class="tracker tr-15"></div>
+                                    <div class="tracker tr-16"></div>
+                                    <div class="tracker tr-17"></div>
+                                    <div class="tracker tr-18"></div>
+                                    <div class="tracker tr-19"></div>
+                                    <div class="tracker tr-20"></div>
+                                    <div class="tracker tr-21"></div>
+                                    <div class="tracker tr-22"></div>
+                                    <div class="tracker tr-23"></div>
+                                    <div class="tracker tr-24"></div>
+                                    <div class="tracker tr-25"></div>
+                                    <div id="card">
+                                        <p id="prompt">Text Animations</p>
+                                        <div class="title"><i class="fas fa-font"></i></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="column3">
+                        <div class="container3 noselect">
+                            <a href="./assets/html_files/transfer-lists.html" target="_blank">
+                                <div class="canvas">
+                                    <div class="tracker tr-1"></div>
+                                    <div class="tracker tr-2"></div>
+                                    <div class="tracker tr-3"></div>
+                                    <div class="tracker tr-4"></div>
+                                    <div class="tracker tr-5"></div>
+                                    <div class="tracker tr-6"></div>
+                                    <div class="tracker tr-7"></div>
+                                    <div class="tracker tr-8"></div>
+                                    <div class="tracker tr-9"></div>
+                                    <div class="tracker tr-10"></div>
+                                    <div class="tracker tr-11"></div>
+                                    <div class="tracker tr-12"></div>
+                                    <div class="tracker tr-13"></div>
+                                    <div class="tracker tr-14"></div>
+                                    <div class="tracker tr-15"></div>
+                                    <div class="tracker tr-16"></div>
+                                    <div class="tracker tr-17"></div>
+                                    <div class="tracker tr-18"></div>
+                                    <div class="tracker tr-19"></div>
+                                    <div class="tracker tr-20"></div>
+                                    <div class="tracker tr-21"></div>
+                                    <div class="tracker tr-22"></div>
+                                    <div class="tracker tr-23"></div>
+                                    <div class="tracker tr-24"></div>
+                                    <div class="tracker tr-25"></div>
+                                    <div id="card">
+                                        <p id="prompt">Transfer-lists</p>
+                                        <div class="title"><i class="fa-solid fa-table-list"></i></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+<div class="row5">
+                    <div class="column5">
+                        <div class="container2 noselect">
+                            <a href="./assets/html_files/toggle-switches.html" target="_blank">
+                                <div class="canvas">
+                                    <div class="tracker tr-1"></div>
+                                    <div class="tracker tr-2"></div>
+                                    <div class="tracker tr-3"></div>
+                                    <div class="tracker tr-4"></div>
+                                    <div class="tracker tr-5"></div>
+                                    <div class="tracker tr-6"></div>
+                                    <div class="tracker tr-7"></div>
+                                    <div class="tracker tr-8"></div>
+                                    <div class="tracker tr-9"></div>
+                                    <div class="tracker tr-10"></div>
+                                    <div class="tracker tr-11"></div>
+                                    <div class="tracker tr-12"></div>
+                                    <div class="tracker tr-13"></div>
+                                    <div class="tracker tr-14"></div>
+                                    <div class="tracker tr-15"></div>
+                                    <div class="tracker tr-16"></div>
+                                    <div class="tracker tr-17"></div>
+                                    <div class="tracker tr-18"></div>
+                                    <div class="tracker tr-19"></div>
+                                    <div class="tracker tr-20"></div>
+                                    <div class="tracker tr-21"></div>
+                                    <div class="tracker tr-22"></div>
+                                    <div class="tracker tr-23"></div>
+                                    <div class="tracker tr-24"></div>
+                                    <div class="tracker tr-25"></div>
+                                    <div id="card">
+                                        <p id="prompt">Toggle Switches</p>
+                                        <div class="title"><i class="fa-solid fa-sliders"></i></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="column5">
+                        <div class="container2 noselect">
+                            <a href="./assets/html_files/tooltips.html" target="_blank">
+                                <div class="canvas">
+                                    <div class="tracker tr-1"></div>
+                                    <div class="tracker tr-2"></div>
+                                    <div class="tracker tr-3"></div>
+                                    <div class="tracker tr-4"></div>
+                                    <div class="tracker tr-5"></div>
+                                    <div class="tracker tr-6"></div>
+                                    <div class="tracker tr-7"></div>
+                                    <div class="tracker tr-8"></div>
+                                    <div class="tracker tr-9"></div>
+                                    <div class="tracker tr-10"></div>
+                                    <div class="tracker tr-11"></div>
+                                    <div class="tracker tr-12"></div>
+                                    <div class="tracker tr-13"></div>
+                                    <div class="tracker tr-14"></div>
+                                    <div class="tracker tr-15"></div>
+                                    <div class="tracker tr-16"></div>
+                                    <div class="tracker tr-17"></div>
+                                    <div class="tracker tr-18"></div>
+                                    <div class="tracker tr-19"></div>
+                                    <div class="tracker tr-20"></div>
+                                    <div class="tracker tr-21"></div>
+                                    <div class="tracker tr-22"></div>
+                                    <div class="tracker tr-23"></div>
+                                    <div class="tracker tr-24"></div>
+                                    <div class="tracker tr-25"></div>
+                                    <div id="card">
+                                        <p id="prompt">Tooltips</p>
+                                        <div class="title"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <script src="./assets/js_files/dark-mode.js"></script>
+
+
+                <div class="footer" id="about">
+                    <footer>
+                        <ul class="social-icon">
+                            <li>
+                                <a href="https://rakesh9100.bio.link/" target="_blank"><i class="fas fa-link"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i
+                                        class="fas fa-envelope"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Rakesh9100" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/rakesh250602/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/rakesh6203/" target="_blank"><i
+                                        class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/rakeshroshan73" target="_blank"><i
+                                        class="fa-brands fa-x-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://discord.com/users/944144134950748170" target="_blank"><i
+                                        class="fab fa-discord"></i></a>
+                            </li>
+                        </ul>
+                        <p>
+                            Created By <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a>
+                            | ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>: All Rights Reserved
+                        </p>
+                    </footer>
+                </div>
+
+                <!-- Scroll To Top Button -->
+                <div id="progress">
+                    <span id="progress-value" class="bi bi-arrow-up-short"></span>
+                </div>
+
+                <script src="./script.js"></script>
+                <script src="./assets/js_files/hamburgerMenu.js"></script>
+                <script src="./assets/js_files/contributor.js"></script>
+                <script src="./assets/js_files/cursor.js"></script>
 </body>
 
 </html>
