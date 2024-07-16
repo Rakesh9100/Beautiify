@@ -608,11 +608,16 @@ section {
 
 .footer {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    min-height: 25vh;
+    min-height: 45vh;
+    position: relative;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
+    padding: 30px 20px;
+    justify-content: space-between;
+    display: flex;
+    padding-bottom: 30px; 
 }
-
+/*
 footer {
     position: relative;
     width: 100%;
@@ -622,19 +627,49 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     flex-direction: column;
 }
+*/
+.footer h3 {
+  width: 250px;
+  height: auto;
+  margin-right: 10px;
+  margin-top: -15px;
+  font-size: 35px;
+  color: white; /* Example color */
+  margin-bottom: 0px;
+}
 
+.footer p {
+    font-size: 14px;
+    text-align: left;
+    color: white; /* Example color */
+    line-height: 1.5;
+}
+
+.footer-left {
+    float: left;
+    width: 33.33%; /* Adjust width as needed */
+    padding: 0px;
+    text-align: left;
+    box-sizing: content-box;
+}
 footer .social-icon {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+    text-align: inherit; /* Center align the social icons */
+    margin-bottom: 20px; /* Bottom margin for social icons */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
 }
 
 footer .social-icon li {
     list-style: none;
+    display: inline-block; /* Display social icons inline */
+    margin: 4 1px; /* Margin between social icons */
+    vertical-align: middle; /* Align icons vertically */
 }
 
 footer .social-icon li a {
@@ -653,7 +688,59 @@ footer .social-icon li a:hover {
     transform: translateY(-10px);
     color: red;
 }
+/* Add styles for the newsletter form */
+.newsletter-form {
+    position: absolute; /* Absolute positioning for newsletter form */
+    top: 30px; /* Align to the top */
+    right: 20px; /* Adjust the right position as needed */
+    text-align: center; /* Center align content */
+    width: 20.33%; /* Width of the newsletter form */
+}
 
+.newsletter-form h3 {
+    font-size: 18px; /* Newsletter heading font size */
+    margin-bottom: 10px; /* Bottom margin for newsletter heading */
+}
+
+.newsletter-form form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center align form elements */
+}
+
+.newsletter-form input[type="email"] {
+    width: 250px; /* Input field width */
+    padding: 10px; /* Padding inside the input field */
+    font-size: 16px; /* Input field font size */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Border radius */
+    margin-bottom: 10px; /* Bottom margin for input field */
+}
+
+.newsletter-form button {
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Button font size */
+    border: none; /* Remove border */
+    background-color: #ff3131; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer; /* Cursor style */
+}
+.newsletter-form button:hover {
+    background-color: #d62121; /* Button background color on hover */
+}
+
+.footer-bottom {
+    position: absolute; /* Fixed positioning for bottom footer */
+    bottom: 0; /* Align to the bottom of the viewport */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    text-align: center; /* Center align the copyright notice */
+    padding: 10px 0; /* Padding top and bottom */
+    font-size: 14px; /* Font size for footer bottom text */
+    color: #ccc; /* Text color for footer bottom */
+    width: 100%; /* Full width */
+}
 footer p {
     color: var(--secondary);
     text-align: center;
@@ -671,7 +758,6 @@ footer p a {
     font-size: 1.1em;
     display: inline-block;
 }
-
 #progress {
     position: fixed;
     bottom: 20px;
