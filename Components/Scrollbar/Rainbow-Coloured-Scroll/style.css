@@ -1,0 +1,103 @@
+body {
+    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    font-family: 'Playfair Display', serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+    
+  
+  }
+  button{
+    outline: none;
+    border:none;
+    font-size: 25px;
+    background-color: black;
+    color:white;
+    font-family:'Playfair Display', serif;
+    border-radius: 15%;
+    padding: 15px;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color:grey;
+  }
+  .dark-mode button{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+
+
+  }
+  .dark-mode button:hover{
+    background-color:grey;
+  }
+
+  body{
+    background-color: whitesmoke;
+  }
+  
+  .dark-mode{
+    background-color: black;
+  }
+  img{
+    width:50%;
+    height:50%;
+    margin:50px;
+  }
+
+::-webkit-scrollbar-track {
+    background:black;
+    background: linear-gradient(180deg, rgba(148,1,1,1) 0%, rgba(196,171,3,1) 20%, rgba(44,179,2,1) 40%, rgba(7,200,136,1) 60%, rgba(31,5,148,1) 80%, rgba(255,0,0,1) 100%);
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color:black;
+    opacity:0.7; /* Semi-transparent thumb */
+   
+    border-radius: 3px;
+    
+  }
+  .dark-mode::-webkit-scrollbar-track {
+    background:white;
+    background: linear-gradient(180deg, rgba(148,1,1,1) 0%, rgba(196,171,3,1) 20%, rgba(44,179,2,1) 40%, rgba(7,200,136,1) 60%, rgba(31,5,148,1) 80%, rgba(255,0,0,1) 100%);
+  }
+  
+  .dark-mode::-webkit-scrollbar-thumb {
+    background-color: white;
+    opacity:0.7; /* Semi-transparent thumb */
+   
+    border-radius: 3px;
+    
+  }
+  /* Custom Scrollbar Styles */
+  ::-webkit-scrollbar {
+    margin-top: 100px;
+    margin-bottom:100px;
+  
+   
+   
+  }
+  
+  ::-webkit-scrollbar-track {
+    background:black;
+    background: linear-gradient(180deg, rgba(148,1,1,1) 0%, rgba(196,171,3,1) 20%, rgba(44,179,2,1) 40%, rgba(7,200,136,1) 60%, rgba(31,5,148,1) 80%, rgba(255,0,0,1) 100%);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: black;
+    opacity:0.7; /* Semi-transparent thumb */
+   
+    border-radius: 3px;
+    
+  }
+  
