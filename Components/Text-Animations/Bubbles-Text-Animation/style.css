@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-size: 0;
+}
+
+canvas {
+    background: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    bottom: 35px;
+    left: calc(50% - 125px);
+    background: none;
+    color: white;
+    font-size: 30px;
+    font-family: arial;
+    text-align: center;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+p {
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    color: #fff;
+    z-index: 10;
+    font-size: 16px;
+    font-family: Helvetica, Verdana, sans-serif;
+    opacity: 0.5;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
