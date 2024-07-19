@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Form</h1>
+        <form id="medical-form">
+            <fieldset>
+                <legend>Patient Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Medical History</legend>
+                <label for="allergies">Allergies:</label>
+                <textarea id="allergies" name="allergies" rows="4"></textarea>
+
+                <label for="medications">Current Medications:</label>
+                <textarea id="medications" name="medications" rows="4"></textarea>
+
+                <label for="conditions">Pre-existing Conditions:</label>
+                <textarea id="conditions" name="conditions" rows="4"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Consent</legend>
+                <label for="consent">I consent to the processing of my personal data:</label>
+                <input type="checkbox" id="consent" name="consent" required>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
