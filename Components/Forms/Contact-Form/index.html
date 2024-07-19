@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Contact Form</title>
+    <style>
+       
+        .error-message {
+            color: red;
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,23 +43,24 @@
                         Decide The Program
                     </div>
                 </div>
-                <form class="contact-section">
+                <form class="contact-section" id="contactForm">
                     <div class="contact-form-container">
                         <div class="form main-form">
                             <div class="input-field">
-                                <input type="text" id="name" autocomplete="off" />
+                                <input type="text" id="name" autocomplete="off" required />
                                 <label for="name">Name</label>
                             </div>
                             <div class="input-field">
-                                <input type="email" id="email" autocomplete="off" />
+                                <input type="email" id="email" autocomplete="off" required />
                                 <label for="email">Email</label>
                             </div>
                             <div class="input-field">
-                                <input type="number" id="pNo" autocomplete="off" />
-                                <label for="pNo">Phone Number</label>
+                                <input type="text" id="pNo" autocomplete="off" />
+                                <label for="pNo">Phone Number (Format: xxx-xxx-xxxx)</label>
+                                <div id="pNoError" class="error-message"></div> 
                             </div>
                             <div class="input-field">
-                                <input type="text" id="message" autocomplete="off" />
+                                <input type="text" id="message" autocomplete="off" required />
                                 <label for="message">Message</label>
                             </div>
                         </div>
@@ -67,9 +76,43 @@
                         <button type="submit">Submit</button>
                     </div>
                 </form>
+                
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var form = document.getElementById('contactForm');
+            var phoneInput = document.getElementById('pNo');
+            var phoneError = document.getElementById('pNoError');
+
+            
+            function validatePhoneNumber() {
+                var phoneNumber = phoneInput.value.trim();
+                if (!(/^\d{3}\d{3}\d{4}$/.test(phoneNumber))) {
+                    phoneError.textContent = 'Please enter a valid phone number in the format xxx-xxx-xxxx.';
+                    return false;
+                } else {
+                    phoneError.textContent = '';
+                    return true;
+                }
+            }
+            form.addEventListener('submit', function(event) {
+                if (validatePhoneNumber()) {
+                    
+                    setTimeout(function() {
+                        form.reset();
+                        
+                        window.location.reload();
+                    }, 2000);
+                } else {
+                    event.preventDefault(); 
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
