@@ -161,6 +161,7 @@
     transition: 200ms;
         margin-left: 20px;
         z-index: 20;
+        
   }
   
   .container1:active {
@@ -543,7 +544,7 @@
 .fa-caret-right,.fa-code{
     font-size: 70px;
 }
-.fa-id-card,.fa-bars,.fa-television{
+.fa-id-card,.fa-bars,.fa-television,.fa-bold{
     font-size: 70px;
 }
 .fa-square-caret-down,.fa-font,.fa-table-list,.fa-screwdriver-wrench{
