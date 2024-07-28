@@ -1,0 +1,102 @@
+/* Container for the toggle switch */
+.toggle-switch {
+    cursor: pointer;
+    position: relative;
+    height: 3em;
+    width: 6em;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 7%);
+    box-shadow: 0px 2px 4px 0px rgba(18, 18, 18, 0.25), 0px 4px 8px 0px rgba(18, 18, 18, 0.35);
+}
+
+/* Background span inside the switch */
+.toggle-switch-background {
+    position: absolute;
+    inset: 0.1em;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 25%);
+}
+
+/* Slider div inside the switch */
+.toggle-switch-slider {
+    position: absolute;
+    left: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2em;
+    width: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: inset 0px 2px 2px 0px hsl(0, 0%, 85%);
+}
+
+/* Knob inside the slider */
+.toggle-switch-knob {
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 7%);
+    box-shadow: 0px 2px 2px 0px hsl(0, 0%, 85%);
+}
+
+/* Indicator on the right side of the switch */
+.toggle-switch-indicator {
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 0.25em;
+    width: 1.5em;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 50%);
+    box-shadow: inset 0px 2px 1px 0px hsl(0, 0%, 40%);
+}
+
+/* Hidden checkbox */
+.toggle-switch-input {
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    opacity: 0;
+}
+
+/* Handle for the toggle switch */
+.toggle-switch-handle {
+    position: absolute;
+    left: 0.25em;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    background-color: rgb(26, 26, 26);
+    box-shadow: inset 4px 4px 4px 0px rgba(64, 64, 64, 0.25), inset -4px -4px 4px 0px rgba(16, 16, 16, 0.5);
+    transition: left 0.3s;
+}
+
+/* Inner handle span */
+.toggle-switch-handle-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Border inside the handle */
+.toggle-switch-handle-border {
+    position: absolute;
+    inset: 0.1em;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 50%);
+}
+
+/* Handle movement on checkbox check */
+.toggle-switch-input:checked + .toggle-switch-handle {
+    left: calc(100% - 2.75em);
+}
