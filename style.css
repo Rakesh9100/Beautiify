@@ -906,23 +906,23 @@ footer p a {
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        position: relative; 
+        position: relative;
     }
 
     .nav-menu {
-        position: fixed; 
-        left: -100%; 
-        top: 5.3rem; 
-        flex-direction: column; 
-        background-color: rgba(5, 5, 5, 0.904); 
-        backdrop-filter: blur(6.5px); 
-        width: 100%; 
-        text-align: center; 
-        transition: 0.3s; 
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); 
-        height: 100vh; 
-        gap: 50px; 
-        z-index: 999; 
+        position: fixed;
+        left: -100%;
+        top: 5.3rem;
+        flex-direction: column;
+        background-color: rgba(5, 5, 5, 0.904);
+        backdrop-filter: blur(6.5px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        height: 100vh;
+        gap: 50px;
+        z-index: 999;
     }
 
     .nav-menu.active {
@@ -969,7 +969,7 @@ footer p a {
         right: 1rem;
         transform: translateY(-50%);
         cursor: pointer;
-        z-index: 1000; /* Ensure it's above other content */
+        z-index: 1000;
     }
 
     .hamburger .bar {
@@ -1013,4 +1013,3 @@ footer p a {
         margin: 15px !important;
     }
 }
-
