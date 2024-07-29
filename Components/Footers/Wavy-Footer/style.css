@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: "Euclid Circular A", "Poppins";
+    color: #ddfdfd;
+    background: #050808;
+  }
+  
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 50px;
+    padding: 0 80px;
+    text-align: center;
+    height: 100vh;
+    background: #050808;
+  }
+  
+  .banner > img {
+    width: 60vw;
+    transition: 0.1s linear;
+  }
+  
+  .banner h2 {
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0 0 10px;
+  }
+  
+  .banner p {
+    margin: 0;
+    line-height: 1.65;
+    font-size: 17px;
+    opacity: 0.7;
+  }
+  
+  @media (width >= 420px) {
+    .banner > img {
+      width: 40vw;
+    }
+  }
+  
+  @media (width >= 648px) {
+    .banner {
+      text-align: left;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .banner > img {
+      width: 10vw;
+      left: 100px;
+    }
+  }
+  
+  .waves > use {
+    animation: move-forever 2s -2s linear infinite;
+  }
+  
+  .waves > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 6s;
+  }
+  .waves > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 3s;
+  }
+  
+  @keyframes move-forever {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30vw;
+    max-height: 200px;
+  }
