@@ -13,6 +13,8 @@ body {
     width: 44px;
     height: 44px;
     position: relative;
+    display: inline-block;
+    margin: 0 16px;
 }
 
 .loader:before {
@@ -153,9 +155,4 @@ body {
     100% {
         stroke-dashoffset: 275;
     }
-}
-
-.loader {
-    display: inline-block;
-    margin: 0 16px;
 }
