@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  .content{
+}
+
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,15 +14,15 @@
     text-transform: uppercase;
     color: #fff;
     background-color: darkslateblue;
-  }
-  
-  .slider{
+}
+
+.slider {
     margin-left: 8px;
     height: 50px;
     overflow: hidden;
-  }
-  
-  .slide{
+}
+
+.slide {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,30 +30,50 @@
     text-align: center;
     height: 50px;
     margin-bottom: 50px;
-  }
-  
-  .slide-anim{
+}
+
+.slide-anim {
     animation: slide 5s linear infinite;
-  }
-  
-  .slide1 {
+}
+
+.slide1 {
     background-color: lightgreen;
-  }
-  
-  .slide2 {
+}
+
+.slide2 {
     background-color: skyblue;
-  }
-  
-  .slide3 {
+}
+
+.slide3 {
     background-color: lightcoral;
-  }
-  
-  @keyframes slide {
-    0% { transform: translateY(-300px); }
-    5% { transform: translateY(-300px); }
-    33% { transform: translateY(-200px); }
-    38% { transform: translateY(-200px); }
-    66% { transform: translateY(-100px); }
-    71% { transform: translateY(-100px); }
-    100% { transform: translateY(0px); }
-  }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-300px);
+    }
+
+    5% {
+        transform: translateY(-300px);
+    }
+
+    33% {
+        transform: translateY(-200px);
+    }
+
+    38% {
+        transform: translateY(-200px);
+    }
+
+    66% {
+        transform: translateY(-100px);
+    }
+
+    71% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
