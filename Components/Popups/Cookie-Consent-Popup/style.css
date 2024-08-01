@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: rgb(222, 79, 79);
 }
 
-#modalbox{
-    display:none;
+#modalbox {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -24,12 +24,13 @@ body{
     border-radius: 20px;
 }
 
-.cookies{  /* styling the cookie img */
+.cookies {
+    /* styling the cookie img */
     width: 150px;
     margin-bottom: 20px;
 }
 
-#modalbox button{
+#modalbox button {
     background: rgb(222, 79, 79);
     color: white;
     padding: 10px 0;
@@ -43,12 +44,13 @@ body{
     transition: all ease-in-out;
 }
 
-#modalbox button:hover{
-   box-shadow: rgba(1, 1, 4, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-   transform: scale(1.01);
+#modalbox button:hover {
+    box-shadow: rgba(1, 1, 4, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transform: scale(1.01);
 }
 
-.close{ /* styling the close icon */
+.close {
+    /* styling the close icon */
     width: 25px;
     height: 25px;
     position: absolute;
