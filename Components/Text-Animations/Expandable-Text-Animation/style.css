@@ -8,8 +8,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  
+}
+
 #hide {
     display: inline-block;
     max-width: 0%;
@@ -17,14 +17,13 @@ body {
     overflow: hidden;
     white-space: nowrap;
     transition: max-width 1s ease-in-out;
-  }
-  
-  h1 {
+}
+
+h1 {
     cursor: default;
     font-size: 5vw;
-  }
-  
-  h1:hover #hide {
+}
+
+h1:hover #hide {
     max-width: 100%;
-  }
-  
+}
