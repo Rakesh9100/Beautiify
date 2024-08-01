@@ -1,12 +1,14 @@
-html, body {
-     height: 100%;
-     margin: 0;
-     padding: 0;
-     background-color: black;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
- .group:hover .bg-green-400 {
-     width: 184px;
- }
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group:hover .bg-green-400 {
+    width: 184px;
+}
