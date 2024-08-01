@@ -1,35 +1,37 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #111;
-  }
-  
-  .hero {
+}
+
+.hero {
     position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-  }
-  
-  .background {
+}
+
+.background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('waterfall.jpg'); /* Replace with your image */
+    background-image: url('waterfall.jpg');
+    /* Replace with your image */
     background-size: cover;
     background-position: center;
     filter: blur(5px);
     z-index: -1;
     opacity: 0.8;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,33 +39,34 @@ body, html {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
-  }
-  
-  .content {
+}
+
+.content {
     text-align: center;
     z-index: 1;
     color: #fff;
     position: relative;
-  }
-  
-  .content h1 {
+}
+
+.content h1 {
     font-size: 4rem;
     margin-bottom: 20px;
     font-weight: 700;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .content p {
+}
+
+.content p {
     font-size: 1.8rem;
     max-width: 600px;
     margin: 0 auto 30px;
     line-height: 1.6;
-  }
-  
-  .button {
+}
+
+.button {
     padding: 15px 30px;
-    background-color: #FF00FF; /* Neon pink */
+    background-color: #FF00FF;
+    /* Neon pink */
     color: #fff;
     border: none;
     cursor: pointer;
@@ -73,21 +76,22 @@ body, html {
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
     transform-origin: center;
-  }
-  
-  .button:hover {
-    background-color: #FF33FF; /* Lighter pink */
+}
+
+.button:hover {
+    background-color: #FF33FF;
+    /* Lighter pink */
     transform: scale(1.05);
-  }
-  
-  .neon {
+}
+
+.neon {
     position: absolute;
     width: 100%;
     height: 100%;
     pointer-events: none;
-  }
-  
-  .neon:before {
+}
+
+.neon:before {
     content: '';
     position: absolute;
     width: 200%;
@@ -97,15 +101,16 @@ body, html {
     left: -50%;
     z-index: 1;
     animation: animateNeon 10s linear infinite;
-  }
-  
-  @keyframes animateNeon {
+}
+
+@keyframes animateNeon {
     0% {
-      transform: rotate(0deg) scale(1);
-      opacity: 0.8;
+        transform: rotate(0deg) scale(1);
+        opacity: 0.8;
     }
+
     100% {
-      transform: rotate(360deg) scale(1.2);
-      opacity: 0;
+        transform: rotate(360deg) scale(1.2);
+        opacity: 0;
     }
-  }
+}
