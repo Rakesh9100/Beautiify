@@ -17,42 +17,41 @@ button {
     position: relative;
     overflow: hidden;
     transition: all 0.5s ease;
-  }
-  
-  button:active {
+}
+
+button:active {
     transform: scale(0.9);
     transition: all 100ms ease;
-  }
-  
-  button svg {
+}
+
+button svg {
     transition: all 0.5s ease;
     z-index: 2;
-  }
-  
-  .play {
+}
+
+.play {
     transition: all 0.5s ease;
     transition-delay: 300ms;
-  }
-  
-  button:hover svg {
+}
+
+button:hover svg {
     transform: scale(3) translate(50%);
-  }
-  
-  .now {
+}
+
+.now {
     position: absolute;
     left: 0;
     transform: translateX(-100%);
     transition: all 0.5s ease;
     z-index: 2;
-  }
-  
-  button:hover .now {
+}
+
+button:hover .now {
     transform: translateX(10px);
     transition-delay: 300ms;
-  }
-  
-  button:hover .play {
+}
+
+button:hover .play {
     transform: translateX(200%);
     transition-delay: 300ms;
-  }
-  
+}
