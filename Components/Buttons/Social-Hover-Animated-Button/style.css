@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .up {
