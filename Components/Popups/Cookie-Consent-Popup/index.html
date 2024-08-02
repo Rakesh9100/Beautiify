@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cookie Consent Popup</title>
+</head>
+<body onload="show_modal()">
+    <h1 style="font-size: 16px; color: white; font-weight: 100;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">This page demonstrates the cookie constent popup.</h1>
+    <div id="modalbox">
+        <img src="images/cookie.png" class="cookies">
+        <p>We use cookies! By using our website, you agree to the use of cookies.</p>
+        <button type="button" onclick="close_modal()">Accept</button>
+        <button type="button" style="background: white; color: #ff5945; border: 2px solid #ff5945;" onclick="close_modal()">Decline</button>
+        <img src="images/close.png" class="close" onclick="close_modal()">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
