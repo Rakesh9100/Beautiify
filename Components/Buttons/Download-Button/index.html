@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Download Button</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <a class="dl-button" href="">
+        <div>
+            <div class="icon">
+                <div>
+                    <svg class="arrow" viewBox="0 0 20 18" fill="currentColor">
+                        <polygon points="8 0 12 0 12 9 15 9 10 14 5 9 8 9"></polygon>
+                    </svg>
+                    <svg class="shape" viewBox="0 0 20 18" fill="currentColor">
+                        <path d="M4.82668561,0 L15.1733144,0 C16.0590479,0 16.8392841,0.582583769 17.0909106,1.43182334 L19.7391982,10.369794 C19.9108349,10.9490677 19.9490212,11.5596963 19.8508905,12.1558403 L19.1646343,16.3248465 C19.0055906,17.2910371 18.1703851,18 17.191192,18 L2.80880804,18 C1.82961488,18 0.994409401,17.2910371 0.835365676,16.3248465 L0.149109507,12.1558403 C0.0509788145,11.5596963 0.0891651114,10.9490677 0.260801785,10.369794 L2.90908938,1.43182334 C3.16071592,0.582583769 3.94095214,0 4.82668561,0 Z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="label">
+                <div class="show default">&#68;ownload</div>
+                <div class="state">
+                    <div class="counter">
+                        <ul>
+                            <li></li>
+                            <li>1</li>
+                        </ul>
+                        <ul>
+                            <li>0</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>0</li>
+                        </ul>
+                        <ul>
+                            <li>0</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>0</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>0</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>0</li>
+                        </ul>
+                        <span>%</span>
+                    </div>
+                    <span>Done</span>
+                </div>
+            </div>
+            <div class="progress"></div>
+        </div>
+    </a>
+
+    <a href="" class="restart">
+        <svg viewBox="0 0 16 16" fill="currentColor">
+            <path d="M4.5,4.5c1.9-1.9,5.1-1.9,7,0c0.7,0.7,1.2,1.7,1.4,2.7l2-0.3C14.7,5.4,14,4.1,13,3.1c-2.7-2.7-7.1-2.7-9.9,0 L0.9,0.9L0.2,7.3l6.4-0.7L4.5,4.5z"></path>
+            <path d="M15.8,8.7L9.4,9.4l2.1,2.1c-1.9,1.9-5.1,1.9-7,0c-0.7-0.7-1.2-1.7-1.4-2.7l-2,0.3C1.3,10.6,2,11.9,3,12.9 c1.4,1.4,3.1,2,4.9,2c1.8,0,3.6-0.7,4.9-2l2.2,2.2L15.8,8.7z"></path>
+        </svg>
+        Restart
+    </a>
+</body>
+<script>
+$('.dl-button').on('click', e => {
+
+    let btn = $(e.currentTarget),
+        label = btn.find('.label'),
+        counter = label.find('.counter');
+
+    if(!btn.hasClass('active') && !btn.hasClass('done')) {
+
+        btn.addClass('active');
+
+        setLabel(label, label.find('.default'), label.find('.state'));
+
+        setTimeout(() => {
+            counter.addClass('hide');
+            counter.animate({
+                width: 0
+            }, 400, function() {
+                label.width(label.find('.state > span').width());
+                counter.removeAttr('style');
+            });
+            btn.removeClass('active').addClass('done');
+        }, getComputedStyle(btn[0]).getPropertyValue('--duration'));
+
+    }
+
+    return false;
+
+});
+
+$('.restart').on('click', e => {
+
+    let btn = $('.dl-button'),
+        label = btn.find('.label'),
+        counter = label.find('.counter');
+
+    setLabel(label, label.find('.state'), label.find('.default'), function() {
+        counter.removeClass('hide');
+        btn.removeClass('done');
+    });
+
+    return false;
+
+});
+
+function setLabel(div, oldD, newD, callback) {
+    oldD.addClass('hide');
+    div.animate({
+        width: newD.outerWidth()
+    }, 200, function() {
+        oldD.removeClass('show hide');
+        newD.addClass('show');
+        div.removeAttr('style');
+        if(typeof callback === 'function') {
+            callback();
+        }
+    });
+}
+</script>
+
+</html>
