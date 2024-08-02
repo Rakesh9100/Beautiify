@@ -10,29 +10,28 @@ async function fetchContributors(pageNumber) {
     if (!response.ok) {
         throw new Error(`Failed to fetch contributors data. Status code: ${response.status}`);
     }
-
     const contributorsData = await response.json();
     return contributorsData;
 }
 
-// Function to fetch all contributors
 async function fetchAllContributors() {
-    let allContributors = [];
-    let pageNumber = 1;
-
     try {
-        while (true) {
-            const contributorsData = await fetchContributors(pageNumber);
-            if (contributorsData.length === 0) {
-                break;
-            }
+        let pageNumber = 1;
+        let allContributors = [];
+        let contributorsData;
+
+        do {
+            contributorsData = await fetchContributors(pageNumber);
             allContributors = allContributors.concat(contributorsData);
             pageNumber++;
-        }
-        allContributors.forEach((contributor) => {
-            if (contributor.login === owner) {
-                return;
+        } while (contributorsData.length > 0);
+
+        for (const contributor of allContributors) {
+            if(contributor.login === owner){
+                continue;
             }
+            const userDetailsResponse = await fetch(contributor.url);
+            const userDetails = await userDetailsResponse.json();
 
             const contributorCard = document.createElement('div');
             contributorCard.classList.add('contributor-card');
@@ -46,10 +45,15 @@ async function fetchAllContributors() {
             loginLink.target = '_blank';
             loginLink.appendChild(avatarImg);
 
+            const nameOverlay = document.createElement('div');
+            nameOverlay.classList.add('name-overlay');
+            nameOverlay.textContent = userDetails.name || contributor.login;
+
             contributorCard.appendChild(loginLink);
+            contributorCard.appendChild(nameOverlay);
 
             cont.appendChild(contributorCard);
-        });
+        }
     } catch (error) {
         console.error(error);
     }

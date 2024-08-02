@@ -95,9 +95,9 @@ body {
 }
 
 .contributor-card {
+    position: relative;
     width: 95px;
     height: 95px;
-    clip-path: circle(40%);
     margin: 5px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
@@ -111,6 +111,27 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    clip-path: circle(40%);
+}
+
+.contributor-card .name-overlay {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    padding: 2px 5px; 
+    line-height: 1.2; 
+    font-size: 12px; 
+}
+
+.contributor-card:hover .name-overlay {
+    display: block; /* Show on hover */
 }
 
 .contributor-card:nth-child(4n+1),
