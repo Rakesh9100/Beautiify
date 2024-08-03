@@ -6,8 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #c9e8ed;
-    /* Light background color */
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
     transition: background-color 0.3s;
 }
 
@@ -15,48 +14,54 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: #efb7d5;
-    /* White background color */
-    border-radius: 10px;
-    box-shadow: 0 0 10px #e44d26, 0 0 20px #e44d26, 0 0 30px #e44d26, 0 0 40px #e44d26;
-    /* Neon glow effect */
+    padding: 30px;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     animation: slideIn 0.5s ease-in-out;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    max-width: 400px;
+    width: 100%;
 }
 
 input,
 button {
-    margin: 10px;
-    padding: 10px;
-    width: 200px;
-    border: 1px solid #e44d26;
-    /* Vibrant border color */
-    border-radius: 5px;
+    margin: 15px;
+    padding: 12px 15px;
+    width: 240px;
+    border: 2px solid #fd7e14;
+    border-radius: 10px;
     font-size: 16px;
-    color: #edc3c3;
-    /* Vibrant text color */
+    color: #0e71d5;
     background-color: #fff;
-    /* Vibrant background color */
-    transition: background-color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff9f43;
+    box-shadow: 0 0 10px rgba(255, 159, 67, 0.5);
+    transform: scale(1.05);
 }
 
 button {
     cursor: pointer;
-    background-color: #e44d26;
-    /* Vibrant button color */
+    background-color: #fd7e14;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 button:hover {
-    /* background-color: #ff704d; Brighter color on hover */
-    background-color: #b0406d;
+    background-color: #ff9f43;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 159, 67, 0.5);
 }
 
 form:hover {
-    background-color: #f5c6c6;
-    /* Lighter background color on hover */
-    box-shadow: 0 0 15px #e44d26, 0 0 25px #e44d26, 0 0 35px #e44d26, 0 0 45px #e44d26;
-    /* Intensify neon glow on hover */
+    background: linear-gradient(135deg, #fda085, #f6d365);
+    box-shadow: 0 0 15px rgba(253, 126, 20, 0.5), 0 0 25px rgba(253, 126, 20, 0.4), 0 0 35px rgba(253, 126, 20, 0.3), 0 0 45px rgba(253, 126, 20, 0.2);
+    transform: scale(1.02);
 }
 
 @keyframes slideIn {
@@ -64,9 +69,40 @@ form:hover {
         opacity: 0;
         transform: translateY(-20px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    padding-left: 40px;
+    background: url('icon-placeholder.png') no-repeat 10px center;
+    background-size: 20px 20px;
+}
+
+input::placeholder,
+input[type="date"]::placeholder {
+    color: #adb5bd;
+    font-style: italic;
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+    form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    input,
+    button {
+        width: 100%;
+        margin: 10px 0;
     }
 }

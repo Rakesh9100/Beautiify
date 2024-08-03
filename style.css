@@ -479,7 +479,7 @@ section {
     padding: 10px 45px;
     border-radius: 30px;
     color: rgb(104, 73, 131);
-    background: rgba(224, 202, 245, 0.743);
+    background: linear-gradient(to bottom, #b69bff, #eadafb);
     cursor: pointer;
     transition: transform 0.5s;
     box-shadow: 2px 2px 2px black, 1px 1px 1px white;
@@ -493,8 +493,8 @@ section {
 }
 
 .dark-mode .comp-section .compcontainer .started {
-    color: rgb(47, 111, 174);
-    background-color: rgba(251, 251, 251, 0.743);
+    color: rgb(58, 6, 90);
+    background: linear-gradient(to bottom, #9e97e6, #ffffff);
     text-shadow: 1px 1px 2px rgb(197, 190, 190), 1px 1px 1px rgb(57, 4, 100);
 }
 
@@ -529,29 +529,29 @@ section {
     justify-content: center;
     align-items: center;
     margin: 25px;
-    background: rgba(224, 202, 245, 0.743);
-    border: 4px solid rgb(171, 196, 218);
+    background: linear-gradient(to bottom, #b69bff, #eadafb);
+    border: 3px solid rgb(35, 143, 237);
     border-radius: 50px;
-    box-shadow: 2px 2px 4px 2px rgb(163, 205, 239);
+    box-shadow: 1px 1px 2px 1px rgb(165, 176, 184);
     cursor: pointer;
 }
 
 .container .box:hover {
-    background-color: rgb(100, 96, 130);
-    border: 4px solid rgba(224, 202, 245, 0.743);
-    box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
+    background: linear-gradient(to bottom, hsl(253, 45%, 88%), hsl(0, 0%, 100%)) transparent;
+    border: 3px solid rgba(139, 65, 209, 0.743);
+    box-shadow: 1px 1px 2px 1px rgba(224, 202, 245, 0.743);
 }
 
 .dark-mode .container .box {
-    background: rgba(251, 251, 251, 0.743);
-    border: 4px solid rgb(238, 245, 251);
-    box-shadow: 2px 2px 4px 2px rgb(91, 131, 164);
+    background: linear-gradient(to bottom, #9e97e6, #ffffff);
+    border: 3px solid rgb(108, 155, 202);
+    box-shadow: 1px 1px 2px 1px rgb(91, 131, 164);
 }
 
 .dark-mode .container .box:hover {
-    background-color: rgb(79, 97, 112);
-    border: 4px solid rgba(234, 223, 244, 0.743);
-    box-shadow: 2px 2px 4px 2px rgba(224, 202, 245, 0.743);
+    background: rgb(79, 97, 112);
+    border: 3px solid rgba(234, 223, 244, 0.743);
+    box-shadow: 1px 1px 2px 1px rgba(224, 202, 245, 0.743);
 }
 
 .container .zoom-effect {
@@ -585,15 +585,16 @@ section {
 
 .container .box .content h2 {
     font-size: 23px;
+    font-weight: 500px;
     color: rgb(37, 111, 172);
     margin-top: 25px;
     margin-bottom: 5px;
-    text-shadow: 1px 1px 1px black, 1px 1px 2px rgb(37, 111, 172);
+    text-shadow: 0.5px 0.5px 0.5px black, 0.5px 0.5px 1px rgb(37, 111, 172);
 }
 
 .container .box:hover .content i,
 .container .box:hover .content h2 {
-    color: rgba(224, 202, 245, 0.743);
+    color: rgb(114, 9, 149);
     text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(37, 111, 172);
 }
 
@@ -622,6 +623,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 40px;
 }
 
 footer .social-icon {
@@ -734,20 +736,20 @@ footer p a {
     font-size: 2.5rem;
     background: transparent;
     border-radius: 50px;
-    color: rgb(22, 11, 31);
+    color: rgb(60, 9, 92);
     margin: 1rem;
-    background-color: rgba(224, 202, 245, 0.743);
+    background-color: rgb(248, 238, 254);
     padding: .7rem;
     width: 8rem;
     border-radius: 5rem;
     box-shadow: 2px 2px 2px black, 1px 1px 1px white;
-    text-shadow: 1px 1px 2px black, 1px 1px 1px rgb(47, 19, 70);
 }
 
 #searchBar button:hover {
     transform: scale(1.05);
     border: 2px solid var(black);
-    background: rgba(255, 255, 255, 0.881);
+    background: rgba(243, 231, 249, 0.881);
+    box-shadow: 1px 1px 2px 1px rgba(15, 14, 17, 0.743);
 }
 
 #searchBar input {
@@ -762,11 +764,12 @@ footer p a {
     transition: all linear .2s;
     font-weight: 600;
     padding-right: 0 !important;
+    box-shadow: 2px 2px 2px black, 1px 1px 1px white;
 }
 
 #searchBar input:hover {
     transform: scale(1.02);
-    box-shadow: -5px -5px 10px #9961a1;
+    box-shadow: 1px 1px 2px 1px rgba(15, 14, 17, 0.743);
 }
 
 .no-results {
@@ -904,23 +907,23 @@ footer p a {
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        position: relative; 
+        position: relative;
     }
 
     .nav-menu {
-        position: fixed; 
-        left: -100%; 
-        top: 5.3rem; 
-        flex-direction: column; 
-        background-color: rgba(5, 5, 5, 0.904); 
-        backdrop-filter: blur(6.5px); 
-        width: 100%; 
-        text-align: center; 
-        transition: 0.3s; 
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); 
-        height: 100vh; 
-        gap: 50px; 
-        z-index: 999; 
+        position: fixed;
+        left: -100%;
+        top: 5.3rem;
+        flex-direction: column;
+        background-color: rgba(5, 5, 5, 0.904);
+        backdrop-filter: blur(6.5px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        height: 100vh;
+        gap: 50px;
+        z-index: 999;
     }
 
     .nav-menu.active {
@@ -967,7 +970,7 @@ footer p a {
         right: 1rem;
         transform: translateY(-50%);
         cursor: pointer;
-        z-index: 1000; /* Ensure it's above other content */
+        z-index: 1000;
     }
 
     .hamburger .bar {
@@ -1011,4 +1014,3 @@ footer p a {
         margin: 15px !important;
     }
 }
-

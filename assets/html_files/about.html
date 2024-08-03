@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css_files/about.css" />
-    <link rel="stylesheet" type="text/css" href="../css_files/cursor.css" />
+    <link rel="stylesheet" type="text/css" href="../css_files/about.css">
+    <link rel="stylesheet" type="text/css" href="../css_files/cursor.css">
+    <link rel="stylesheet" type="text/css" href="../css_files/progressbar.css">
     <script src="../../script.js"></script>
-    <script src="../js_files/commonnav.js"></script>
+    <script src="../js_files/hamburgerMenu.js"></script>
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <title>Beautiify | About</title>
@@ -23,6 +24,11 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
     <div class="circle-container">
         <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
         <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
@@ -45,6 +51,7 @@
         <div class="circle" style="background-color: rgb(104, 0, 96); left: 504px; top: 59px; scale: 0.1;"></div>
         <div class="circle" style="background-color: rgb(96, 0, 95); left: 504px; top: 59px; scale: 0.05;"></div>
     </div>
+
     <header class="header2">
         <nav class="navbar">
             <a href="../../index.html">
@@ -79,39 +86,41 @@
             </div>
         </nav>
     </header>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <section>
-        <div class="bgcolor">
-            <div class="image">
-                <img src="https://cdn.pixabay.com/photo/2017/08/26/23/37/business-2684758__340.png" />
-                <div class="content">
-                    <br>
-                    <h1>ABOUT US</h1>
-                    <br>
-                    <h4>Introduction: Welcome to Beautiify! Your source for beautifully crafted web components and
+        <div class="image">
+            <img src="https://cdn.pixabay.com/photo/2017/08/26/23/37/business-2684758__340.png" />
+            <div class="content">
+                <br />
+                <h1 align="center">ABOUT US</h1>
+                <br>
+                <h4><u>Introduction</u>: Welcome to Beautiify! Your source for beautifully crafted web components and
                     animations. Beautiify enhances your website's appeal and user experience, providing curated tools for
                     developers and designers.</h4>
-                    <br>
-                    <br>
-                    <h4>Background: The site is made by Rakesh, the mind behind Beautiify with a background in front end, I
+                <br>
+                <br>
+                <h4><u>Background</u>: The site is made by Rakesh, the mind behind Beautiify with a background in front-end, I
                     have honed my skills to create stunning and functional web components. My journey in the digital
-                    realm has been fueled by a desire to make the web a more visually appealing and user-friendly space.</h4>
-                    <br>
-                    <br>
-                    <h4>Explore Our Collection: Discover elegant buttons, stylish sliders, and captivating animations to
-                    elevate your website. Beautiify transforms your web presence with minimal effort and maximum impact.</h4>
-                    <br>
-                    <br>
-                    <h4>Connect with Us: We are always open to connecting with like-minded individuals who share a passion
+                    realm has been fueled by a desire to make the web a more visually appealing and user-friendly space.
+                </h4>
+                <br>
+                <br>
+                <h4><u>Explore Our Collection</u>: Discover elegant buttons, stylish sliders, and captivating animations to
+                    elevate your website. Beautiify transforms your web presence with minimal effort and maximum impact.
+                </h4>
+                <br>
+                <br>
+                <h4><u>Connect with Us</u>: We are always open to connecting with like-minded individuals who share a passion
                     for web development and design. Whether you want to discuss the latest trends, collaborate on
-                    projects, or simply share ideas, feel free to reach out. Let's create something amazing together!</h4>
-                    <br>
-                    <h3 style="color: #ffecd1;">Thank You for Visiting Beautiify!</h3>
-                </div>
+                    projects, or simply share ideas, feel free to reach out. Let's create something amazing together!
+                </h4>
+                <br>
+                <h3 align="center" style="color: #ffecd1;">Thank You for Visiting Beautiify!</h3>
+                <br>
             </div>
         </div>
     </section>
@@ -152,12 +161,14 @@
         </p>
     </div>
 
-    <script src="../js_files/dark-mode.js"></script>
-    <script src="../js_files/cursor.js"></script>
     <!-- Scroll To Top Button -->
     <div id="progress">
         <span id="progress-value" class="bi bi-arrow-up-short"></span>
     </div>
+
+    <script src="../js_files/cursor.js"></script>
+    <script src="../js_files/dark-mode.js"></script>
+    <script src="../js_files/progressBar.js"></script>
 </body>
 
 </html>
