@@ -1,0 +1,101 @@
+/* Basic styling for body and background */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2C3E50 0%, #4CA1AF 100%);
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the circular container and menu button */
+.circle-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.menu-button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FF6F61;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #E55A4F;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.circle-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    border-radius: 50%;
+    display: none;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu-item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #FF6F61;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+    background-color: #E55A4F;
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Positioning each menu item in a circular pattern */
+.circle-menu .menu-item:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.circle-menu .menu-item:nth-child(2) {
+    top: 25%;
+    right: 0;
+    transform: translate(100%, -50%);
+}
+
+.circle-menu .menu-item:nth-child(3) {
+    bottom: 12%;
+    right: 35px;
+    transform: translate(100%, 50%);
+}
+
+.circle-menu .menu-item:nth-child(4) {
+    bottom: 40px;
+    left: 15%;
+    transform: translate(-50%, 100%);
+}
+
+.circle-menu .menu-item:nth-child(5) {
+    bottom: 70%;
+    left: 0;
+    transform: translate(-100%, 50%);
+}
