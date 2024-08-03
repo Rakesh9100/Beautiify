@@ -650,9 +650,37 @@ footer .social-icon li a {
     transition: transform .2s;
 }
 
-footer .social-icon li a:hover {
+footer .social-icon li #linkd:hover {
     transform: translateY(-10px);
-    color: red;
+    color:#0077B5;
+}
+footer .social-icon li #fb:hover {
+    transform: translateY(-10px);
+    color:#1877F2;
+}
+footer .social-icon li #insta:hover {
+    transform: translateY(-10px);
+    color:#C13584;
+}
+footer .social-icon li #disc:hover {
+    transform: translateY(-10px);
+    color:#7289DA;
+}
+footer .social-icon li #git:hover {
+    transform: translateY(-10px);
+    color:#181717;    
+}
+footer .social-icon li #twit:hover {
+    transform: translateY(-10px);
+    color:#000000;
+}
+footer .social-icon li #enve:hover {
+    transform: translateY(-10px);
+    color:#E53935;
+}
+footer .social-icon li #bioa:hover {
+    transform: translateY(-10px);
+    color:#87CEEB;
 }
 
 footer p {
