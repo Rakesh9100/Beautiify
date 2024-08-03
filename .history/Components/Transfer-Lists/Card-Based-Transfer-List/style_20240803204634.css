@@ -1,0 +1,101 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 3em;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-container {
+    flex: 1;
+    margin: 0 20px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: #fff;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1.2em;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    background: #e0f7fa;
+}
+
+.card.selected {
+    background: #26a69a;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    background: #26a69a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #1e8e7d;
+    transform: scale(1.05);
+}
