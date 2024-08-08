@@ -63,18 +63,24 @@ Beautiify offers a diverse range of components and animations designed to enhanc
 8. **Footers** -- Footers are customizable sections at the bottom of pages. Beautiify includes Animated Footer, Classic Footer, Waves Footer, and so on.
 
 9. **Forms** -- Forms are essential for user input. Beautiify provides a range of form designs, including Animated Login Form, Black Red Signup Form, Contact Form, and so on.
+    
+10. **Heroes** -- Heroes are a large, attention-grabbing picture with text typically shown in the above-the-fold area of the webpage. Beautiify provides various hero designs such as Carousel Hero, Collage-Style-Hero and so on.
 
-10. **Loaders** -- Loaders indicate the loading process. Beautiify features various loader designs such as Bird Loader, Clock Loader, Helix Loader, and so on.
+11. **Loaders** -- Loaders indicate the loading process. Beautiify features various loader designs such as Bird Loader, Clock Loader, Helix Loader, and so on.
 
-11. **Navigation Bars** -- Navigation Bars provide links for site navigation. Beautiify offers Circular Navigation Bar, Hamburger Navigation Bar, Overlay Navigation Bar, and so on.
+12. **Navigation Bars** -- Navigation Bars provide links for site navigation. Beautiify offers Circular Navigation Bar, Hamburger Navigation Bar, Overlay Navigation Bar, and so on.
 
-12. **Popups** -- Popups display messages or content overlays. Available designs include Context Menu Popup, Error Notification Popup, Success Notification Popup, and so on.
+13. **Popups** -- Popups display messages or content overlays. Available designs include Context Menu Popup, Error Notification Popup, Success Notification Popup, and so on.
 
-13. **Search Bars** -- Search Bars enable users to search content on your site. Beautiify provides 3D Search Bar, Google Search Bar, Neumorphism Search Bar, and so on.
+14. **Search Bars** -- Search Bars enable users to search content on your site. Beautiify provides 3D Search Bar, Google Search Bar, Neumorphism Search Bar, and so on.
 
-14. **Text Animations** -- Text Animations add dynamic effects to text. Beautiify includes Flip Text Animation, Fog Text Animation, Glowing Text Animation, and so on.
+15. **Text Animations** -- Text Animations add dynamic effects to text. Beautiify includes Flip Text Animation, Fog Text Animation, Glowing Text Animation, and so on.
+    
+16. **Toggle Switches** -- Toggle switches are digital on/off switches. They prompt users to choose between two mutually exclusive options and always have a default value. Available designs are Robo Toggle Switch, Light Toggle Switch, and so on.
+    
+17. **Tooltips** -- A tooltip is a brief, informative message that appears when a user interacts with an element. Beautiify provides various designs like Animated Tooltip, Shopping Cart Tooltip, and so on.
 
-15. **Transfer Lists** -- Transfer Lists allow items to be moved between lists. Available styles are Neuromorphism Transfer List.
+18. **Transfer Lists** -- Transfer Lists allow items to be moved between lists. Available styles are Neuromorphism Transfer List.
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
