@@ -64,7 +64,7 @@ Beautiify offers a diverse range of components and animations designed to enhanc
 
 9. **Forms** -- Forms are essential for user input. Beautiify provides a range of form designs, including Animated Login Form, Black Red Signup Form, Contact Form, and so on.
     
-10. **Heroes** -- Heroes are a large, attention-grabbing picture with text typically shown in the above-the-fold area of the webpage. Beautiify provides various hero designs such as Carousel Hero, Collage-Style-Hero and so on.
+10. **Heroes** -- Heroes are a large, attention-grabbing picture with text typically shown in the above-the-fold area. Beautiify provides various hero designs such as Carousel Hero, Collage-Style-Hero and so on.
 
 11. **Loaders** -- Loaders indicate the loading process. Beautiify features various loader designs such as Bird Loader, Clock Loader, Helix Loader, and so on.
 
@@ -76,7 +76,7 @@ Beautiify offers a diverse range of components and animations designed to enhanc
 
 15. **Text Animations** -- Text Animations add dynamic effects to text. Beautiify includes Flip Text Animation, Fog Text Animation, Glowing Text Animation, and so on.
     
-16. **Toggle Switches** -- Toggle switches are digital on/off switches. They prompt users to choose between two mutually exclusive options and always have a default value. Available designs are Robo Toggle Switch, Light Toggle Switch, and so on.
+16. **Toggle Switches** -- Toggle switches prompt users to choose between two mutually exclusive options and always have a default value. Available designs are Robo Toggle Switch, Light Toggle Switch, and so on.
     
 17. **Tooltips** -- A tooltip is a brief, informative message that appears when a user interacts with an element. Beautiify provides various designs like Animated Tooltip, Shopping Cart Tooltip, and so on.
 
