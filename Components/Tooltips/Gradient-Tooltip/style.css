@@ -12,16 +12,14 @@ body {
 .tooltip-container {
 	position: relative;
 	background-color: #ff3cac;
-	background-image: linear-gradient(
-	  225deg,
-	  #ff3cac 0%,
-	  #784ba0 50%,
-	  #2b86c5 100%
-	);
+	background-image: linear-gradient(225deg,
+			#ff3cac 0%,
+			#784ba0 50%,
+			#2b86c5 100%);
 	cursor: pointer;
 	transition: all 0.2s;
 	font-size: 17px;
-	
+
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -43,7 +41,7 @@ body {
 	border-radius: 50%;
 	box-shadow: none;
 }
-  
+
 .tooltip-container .icon {
 	width: 50px;
 	height: 50px;
@@ -53,22 +51,18 @@ body {
 	justify-content: center;
 	z-index: 10;
 	background-color: #ff3cac;
-	background-image: linear-gradient(
-	  225deg,
-	  #ff3cac 0%,
-	  #784ba0 50%,
-	  #2b86c5 100%
-	);
+	background-image: linear-gradient(225deg,
+			#ff3cac 0%,
+			#784ba0 50%,
+			#2b86c5 100%);
 	cursor: pointer;
 }
-  
+
 .tooltip {
 	position: absolute;
 	top: -2;
-	left: -45px; 
-	transform: translateX(
-	  -32%
-	); 
+	left: -45px;
+	transform: translateX(-32%);
 	width: 160px;
 	height: 52px;
 	opacity: 0;
@@ -76,12 +70,10 @@ body {
 	transition: all 0.6s;
 	border-radius: 50px;
 	background-color: #ff3cac;
-	background-image: linear-gradient(
-	  225deg,
-	  #ff3cac 0%,
-	  #784ba0 50%,
-	  #2b86c5 100%
-	);
+	background-image: linear-gradient(225deg,
+			#ff3cac 0%,
+			#784ba0 50%,
+			#2b86c5 100%);
 	display: flex;
 	align-items: center;
 	justify-content: right;
@@ -91,20 +83,20 @@ body {
 	font-family: sans-serif;
 	font-weight: 800px;
 }
-  
+
 .tooltip::before {
 	position: absolute;
 	content: "";
 	height: 0.6em;
 	width: 0.6em;
-	right: -0.2em; 
-	top: 50%; 
-	transform: translateY(-50%) rotate(45deg); 
+	right: -0.2em;
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
 	background: var(--background);
 }
-  
+
 .tooltip-container:hover .tooltip {
-	left: 100%; 
+	left: 100%;
 	opacity: 1;
 	visibility: visible;
 	pointer-events: auto;
@@ -115,4 +107,3 @@ body {
 	transform: translateX(-50px);
 	transition: 0.5s linear;
 }
-  

@@ -7,6 +7,7 @@ body {
 	margin: 0;
 	font-family: "Poppins", sans-serif;
 }
+
 .brick {
 	height: 2px;
 	width: 2px;
@@ -94,9 +95,11 @@ body {
 		22px 32px 0px #000, 24px 32px 0px #000, 26px 32px 0px #000,
 		28px 32px 0px #000, 30px 32px 0px #000, 32px 32px 0px #000;
 }
+
 .brick.one {
 	transform: translateX(-60px);
 }
+
 .mush {
 	height: 2px;
 	width: 2px;
@@ -163,6 +166,7 @@ body {
 	z-index: -1;
 	opacity: 0;
 }
+
 .box {
 	position: absolute;
 	background-color: rgba(46, 37, 37, 0);
@@ -170,21 +174,26 @@ body {
 	width: 34px;
 	height: 34px;
 }
-.box:hover + .mush {
+
+.box:hover+.mush {
 	animation: mush 0.5s linear forwards;
 	opacity: 1;
 }
+
 @keyframes mush {
 	0% {
 		transform: scale(0.8) translate(-0px, -0px);
 	}
+
 	50% {
 		transform: scale(1.1) translate(-0px, -80px);
 	}
+
 	100% {
 		transform: scale(1.1) translate(-0px, -35px);
 	}
 }
+
 .tooltip-mario-container {
 	height: 2px;
 	width: 2px;
