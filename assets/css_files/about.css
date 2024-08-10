@@ -37,6 +37,7 @@ section {
 }
 
 .image {
+    background-color: rgba(127, 106, 106, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,20 +54,18 @@ section {
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
     justify-content: center;
+    padding: 20px;
     align-items: center;
-    padding: 0px 6vw;
     color: #fff;
-    margin-bottom: 5vh;
 }
 
 .content h4 {
     font-size: 17px;
     letter-spacing: 0px;
     opacity: 0.9;
-    color: #ffecd1;
+    color: #070707;
 }
 
 .content p {

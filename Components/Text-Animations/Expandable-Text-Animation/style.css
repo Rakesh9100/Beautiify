@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #121212;
+    color: #fafafa;
+    font-family: "Calibri", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hide {
+    display: inline-block;
+    max-width: 0%;
+    vertical-align: bottom;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: max-width 1s ease-in-out;
+}
+
+h1 {
+    cursor: default;
+    font-size: 5vw;
+}
+
+h1:hover #hide {
+    max-width: 100%;
+}

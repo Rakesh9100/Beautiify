@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css_files/cursor.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css_files/progressbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
@@ -22,6 +23,11 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
     <div class="circle-container">
         <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
         <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
@@ -170,6 +176,16 @@
         </div>
         <div class="zoom-effect">
             <div class="box">
+                <a href="./assets/html_files/cursors.html" target="_blank">
+                    <div class="content">
+                        <i class="fas fa-mouse-pointer"></i>
+                        <h2>Cursors</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="zoom-effect">
+            <div class="box">
                 <a href="./assets/html_files/dropdowns.html" target="_blank">
                     <div class="content">
                         <i class="fa-solid fa-square-caret-down"></i>
@@ -234,6 +250,16 @@
                     <div class="content">
                         <i class="fa fa-info-circle"></i>
                         <h2>Popups</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="zoom-effect">
+            <div class="box">
+                <a href="./assets/html_files/scrollbars.html" target="_blank">
+                    <div class="content">
+                        <i class="fa-solid fa-arrows-v"></i>
+                        <h2>Scrollbars</h2>
                     </div>
                 </a>
             </div>
@@ -351,6 +377,7 @@
     <script src="./script.js"></script>
     <script src="./assets/js_files/cursor.js"></script>
     <script src="./assets/js_files/dark-mode.js"></script>
+    <script src="./assets/js_files/progressBar.js"></script>
 </body>
 
 </html>
