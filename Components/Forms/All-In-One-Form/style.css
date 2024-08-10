@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #86e3ce, #ff6b6b, #feca57);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Ensure full viewport height */
+}
+@keyframes gradientShift {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.title-heading {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(71, 45, 167, 0.6);
+    text-align: center;
+}
+.all-in-one-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px  rgba(71, 45, 167, 0.6);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2px;
+    margin-bottom: 20px; 
+    transition: box-shadow 0.3s ease;
+}
+.all-in-one-form:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.all-in-one-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
