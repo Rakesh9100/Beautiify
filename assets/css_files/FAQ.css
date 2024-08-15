@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-{
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins" , sans-serif;
 }
 
-boy{
+body{
     
     align-items: center;
     justify-content: center;
@@ -17,14 +18,14 @@ boy{
   
 .acc{
     display: flex;
-    ax-width: 1010px;
+    max-width: 1010px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     background: #efe3ec;
     border-radius: 25px;
     margin-top: 55px;
-    magin-bottom: -18px;
+    margin-bottom: -18px;
     padding: 45px 90px 45px 60px;
     
 }
@@ -107,6 +108,79 @@ boy{
 .acc-text li.showAnswer p{
     display: block;
 }
+/* Footer Styles */
+.footer {
+    background: #7d2ae8; /* Background color */
+    color: white; /* Text color */
+    padding: 30px 60px; /* Padding for spacing */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    text-align: center; /* Center-align text */
+    margin-top: 30px; /* Space above the footer */
+}
+
+.footer ul.social-icon {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center the icons */
+    gap: 15px; /* Space between icons */
+}
+
+.footer ul.social-icon li {
+    display: inline-block; /* Inline-block for horizontal alignment */
+}
+
+.footer ul.social-icon a {
+    color: white; /* Icon color */
+    font-size: 24px; /* Icon size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer ul.social-icon a:hover {
+    color: #ffe600; /* Hover color */
+}
+
+.footer p {
+    margin-top: 20px; /* Space above text */
+    font-size: 16px; /* Font size */
+}
+
+.footer p a {
+    color: #ffe600; /* Color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+@media (max-width: 994px) {
+    .footer {
+        padding: 20px 30px; /* Adjust padding for smaller screens */
+    }
+
+    .footer ul.social-icon {
+        flex-direction: column; /* Stack icons vertically */
+        gap: 10px; /* Adjust gap */
+    }
+
+    .footer ul.social-icon a {
+        font-size: 20px; /* Smaller icon size */
+    }
+}
+
+@media (max-width: 538px) {
+    .footer {
+        padding: 15px 20px; /* Adjust padding for very small screens */
+    }
+
+    .footer p {
+        font-size: 14px; /* Smaller text size */
+    }
+}
+
 
 @media (max-width: 994px) {
     body{
