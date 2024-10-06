@@ -1,82 +1,139 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(to right, #ece9e6, #ffffff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
 
-.container {
-    background: #f0f0f0;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    width: 90%;
-    max-width: 1200px;
+header {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-family: 'Lobster', cursive;
-    color: #333;
-    margin-bottom: 40px;
-    font-size: 3em;
+    font-family: 'Roboto', sans-serif; /* Beautiful font */
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #6a1b9a; /* Purple color */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-.lists {
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    padding: 20px;
+    max-width: 1200px; /* Max width to limit the overall width */
+    width: 100%;
 }
 
 .list-container {
-    flex: 1;
-    margin: 0 20px;
-    background: #fff;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
     padding: 20px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Allow containers to grow and shrink as needed */
+    min-width: 300px; /* Minimum width to prevent cramming */
+    max-width: 100%; /* Ensure it does not exceed the container width */
 }
 
-.card-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    max-height: 400px;
+.list {
+    width: 100%;
+    min-height: 250px;
+    border: 2px dashed #6a1b9a; /* Purple border */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
     overflow-y: auto;
-    background: #fff;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
 }
 
 .card {
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 20px;
-    width: 150px;
-    text-align: center;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
-    font-size: 1.2em;
-    font-weight: 600;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    user-select: none;
-    /* Prevent text selection during drag */
+    background-color: #c465ff; /* Purple background */
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: move;
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    transition: transform 0.2s, background-color 0.2s;
+    overflow: hidden; /* Ensure text fits well inside */
 }
 
 .card:hover {
-    background: #e0f7fa;
+    background-color: #a94cff; /* Slightly darker purple on hover */
+    transform: scale(1.05);
 }
 
-.card.dragging {
-    opacity: 0.5;
+.card.selected {
+    background-color: #fdaee4; /* Keep selected color as is */
 }
 
-.card-list.drop-zone {
-    background: #e0f7fa;
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #6a1b9a; /* Purple background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #4a148c; /* Darker purple on hover */
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #3d1a6b; /* Even darker purple on active */
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #6a1b9a; /* Purple border on focus */
+}
+
+.list-container div {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #555;
 }

@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Card Transfer List</title>
     <link rel="stylesheet" href="style.css">
-    <title>Card Based Transfer List</title>
 </head>
-
 <body>
+    <header>
+        <h1>Card-Based Transfer List</h1>
+    </header>
     <div class="container">
-        <h1>Card Based Transfer List</h1>
-        <div class="lists">
-            <div class="list-container" id="available-list-container">
-                <h2>Available Projects</h2>
-                <div id="available-items" class="card-list">
-                    <!-- Projects will be added here dynamically -->
-                </div>
-            </div>
-            <div class="list-container" id="selected-list-container">
-                <h2>Assigned Projects</h2>
-                <div id="selected-items" class="card-list">
-                    <!-- Assigned projects will be added here dynamically -->
-                </div>
-            </div>
+        <div class="list-container">
+            <input type="text" id="searchAvailable" placeholder="Search Available Projects">
+            <div id="availableProjects" class="list"></div>
+            <div>Available Projects: <span id="countAvailable">0</span></div>
+        </div>
+        <div class="buttons-container">
+            <button id="moveToAssigned">→</button>
+            <button id="moveToAvailable">←</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="list-container">
+            <input type="text" id="searchAssigned" placeholder="Search Assigned Projects">
+            <div id="assignedProjects" class="list"></div>
+            <div>Assigned Projects: <span id="countAssigned">0</span></div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
