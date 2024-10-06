@@ -14,49 +14,173 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./assets/js_files/hamburgerMenu.js"></script>
     <title>Beautiify | Error 404</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            color: #333;
+        }
+
+        #loader-wrapper {
+            display: none; /* Hide loader initially */
+        }
+
+        nav {
+            width: 100%;
+            background-color: #3A0088;
+            padding: 20px 0;
+            position: absolute;
+            top: 0;
+            animation: slideDown 0.5s ease-in-out;
+        }
+
+        .nav__logo a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-item .nav-link {
+            color: white;
+            text-decoration: none;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+            margin-top: 80px; /* Add margin to avoid overlap with navbar */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .header h1 {
+            font-size: 80px;
+            margin: 0;
+            color: #ff4d4d;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .header h3 {
+            color: #3A0088;
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #3A0088;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #5b2d99;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            animation: slideUp 0.5s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
-    <div class="circle-container">
-        <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
-        <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
-        <div class="circle" style="background-color: rgb(248, 157, 99); left: 504px; top: 59px; scale: 0.9;"></div>
-        <div class="circle" style="background-color: rgb(245, 151, 97); left: 504px; top: 59px; scale: 0.85;"></div>
-        <div class="circle" style="background-color: rgb(239, 134, 94); left: 504px; top: 59px; scale: 0.8;"></div>
-        <div class="circle" style="background-color: rgb(236, 128, 93); left: 504px; top: 59px; scale: 0.75;"></div>
-        <div class="circle" style="background-color: rgb(227, 110, 92); left: 504px; top: 59px; scale: 0.7;"></div>
-        <div class="circle" style="background-color: rgb(223, 104, 92); left: 504px; top: 59px; scale: 0.65;"></div>
-        <div class="circle" style="background-color: rgb(213, 88, 92); left: 504px; top: 59px; scale: 0.6;"></div>
-        <div class="circle" style="background-color: rgb(209, 82, 92); left: 504px; top: 59px; scale: 0.55;"></div>
-        <div class="circle" style="background-color: rgb(197, 65, 93); left: 504px; top: 59px; scale: 0.5;"></div>
-        <div class="circle" style="background-color: rgb(192, 59, 93); left: 504px; top: 59px; scale: 0.45;"></div>
-        <div class="circle" style="background-color: rgb(178, 44, 94); left: 504px; top: 59px; scale: 0.4;"></div>
-        <div class="circle" style="background-color: rgb(172, 38, 94); left: 504px; top: 59px; scale: 0.35;"></div>
-        <div class="circle" style="background-color: rgb(156, 21, 95); left: 504px; top: 59px; scale: 0.3;"></div>
-        <div class="circle" style="background-color: rgb(149, 15, 95); left: 504px; top: 59px; scale: 0.25;"></div>
-        <div class="circle" style="background-color: rgb(131, 0, 96); left: 504px; top: 59px; scale: 0.2;"></div>
-        <div class="circle" style="background-color: rgb(124, 0, 96); left: 504px; top: 59px; scale: 0.15;"></div>
-        <div class="circle" style="background-color: rgb(104, 0, 96); left: 504px; top: 59px; scale: 0.1;"></div>
-        <div class="circle" style="background-color: rgb(96, 0, 95); left: 504px; top: 59px; scale: 0.05;"></div>
-    </div>
 
-    <header class="header1">
-        <nav class="navbar" class="nav-bg1">
+
+  
+        <nav class="navbar nav-bg1">
             <a href="index.html">
                 <div class="flex-container">
-                    <div class="flex-item-left"><img src="./assets/images/logo.png" width="37px" height="37px"></div>
-                    <div class="flex-item-right" class="logo">Beautiify</div>
+                    <div class="flex-item-left">
+                        <img src="./assets/images/logo.png" width="37px" height="37px">
+                    </div>
+                    <div class="flex-item-right logo">Beautiify</div>
                 </div>
             </a>
-
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link" style="color: red;"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="#home" class="nav-link" style="color: red;"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="./assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
@@ -70,6 +194,9 @@
                 <li class="nav-item">
                     <a href="./assets/html_files/contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a href="./assets/html_files/FAQ.html" class="nav-link"><i class="fa-solid fa-phone"></i> FAQ</a>
+                </li>
             </ul>
             <button id="dark-mode-toggle"></button>
             <div class="hamburger">
@@ -78,69 +205,21 @@
                 <span class="bar"></span>
             </div>
         </nav>
-    </header>
 
-    <section class="comp-section" id="404">
-        <div class="compcontainer">
-            <div class="logo">
-                <img src="./assets/images/logo.png" alt="Logo">
-            </div>
-            <h1 class="heading">404</h1>
-            <h3 class="sub-head">Page Not Found</h3>
-            <p class="paragraph">
-                Sorry, but the page you were looking for could not be found.
-            </p>
-            <a href="index.html">
-                <button class="started">Go Back Home</button>
-            </a>
+
+    <div class="container">
+        <div class="header">
+            <h1>404</h1>
+            <h3>Page Not Found!</h3>
         </div>
-    </section>
-
-    <div class="footer" id="about">
-        <footer>
-            <ul class="social-icon">
-                <li>
-                    <a href="https://rakesh9100.bio.link/" target="_blank"><i class="fas fa-link"></i></a>
-                </li>
-                <li>
-                    <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/Rakesh9100" target="_blank"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/rakesh250602/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://discord.com/users/944144134950748170" target="_blank"><i class="fab fa-discord"></i></a>
-                </li>
-            </ul>
-            <p>
-                Created By <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | ©
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>: All Rights Reserved
+        <img src="https://media.tenor.com/KrcYIJHHzOIAAAAi/error-404.gif" alt="404 GIF" style="max-width: 100%; height: auto;" />
+        <div class="footer">
+            <p style="color: #f4f4f4;">
+                We're sorry, the page you requested could not be found. Please go back to the homepage!
             </p>
-        </footer>
+            <a href="index.html"><button>GO HOME</button></a>
+        </div>
     </div>
-
-    <!-- Scroll To Top Button -->
-    <div id="progress">
-        <span id="progress-value" class="bi bi-arrow-up-short"></span>
-    </div>
-
-    <script src="./script.js"></script>
-    <script src="./assets/js_files/cursor.js"></script>
-    <script src="./assets/js_files/dark-mode.js"></script>
 </body>
 
 </html>
