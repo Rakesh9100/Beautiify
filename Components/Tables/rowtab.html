@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Row Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            position: relative;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .details {
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h2>Expandable Row Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr onclick="toggleDetails(this)">
+                <td>John Doe</td>
+                <td>30</td>
+                <td>New York</td>
+            </tr>
+            <tr class="details">
+                <td colspan="3">More about John: Loves coding, enjoys long walks.</td>
+            </tr>
+            <tr onclick="toggleDetails(this)">
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+            </tr>
+            <tr class="details">
+                <td colspan="3">More about Jane: Enjoys hiking and outdoor activities.</td>
+            </tr>
+            <tr onclick="toggleDetails(this)">
+                <td>Sam Brown</td>
+                <td>35</td>
+                <td>Chicago</td>
+            </tr>
+            <tr class="details">
+                <td colspan="3">More about Sam: Loves photography and traveling.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function toggleDetails(row) {
+            const nextRow = row.nextElementSibling;
+            if (nextRow.classList.contains('details')) {
+                nextRow.style.display = nextRow.style.display === 'table-row' ? 'none' : 'table-row';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Flip Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .table {
+            display: grid;
+            grid-template-columns: repeat(3, 220px);
+            gap: 15px;
+            border: 2px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .card {
+            width: 200px;
+            height: 120px;
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: white;
+            border-radius: 4px; /* Rounded corners for cells */
+        }
+
+        .card-front {
+            background-color: #4CAF50;
+        }
+
+        .card-back {
+            background-color: #2196F3;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h2>Interactive Flip Table</h2>
+    <div class="table">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">John Doe<br><small>30 years</small></div>
+                <div class="card-back">New York<br><small>Likes coding</small></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">Jane Smith<br><small>25 years</small></div>
+                <div class="card-back">Los Angeles<br><small>Enjoys hiking</small></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">Sam Brown<br><small>35 years</small></div>
+                <div class="card-back">Chicago<br><small>Loves photography</small></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">Emily Davis<br><small>28 years</small></div>
+                <div class="card-back">Miami<br><small>Enjoys painting</small></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">Michael Johnson<br><small>40 years</small></div>
+                <div class="card-back">Houston<br><small>Plays guitar</small></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">Sarah Wilson<br><small>32 years</small></div>
+                <div class="card-back">Phoenix<br><small>Likes cooking</small></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
