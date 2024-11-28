@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -41,9 +42,11 @@ body, html {
     0% {
         transform: translateX(-10%) translateY(-10%) rotate(0deg);
     }
+
     50% {
         transform: translateX(10%) translateY(10%) rotate(180deg);
     }
+
     100% {
         transform: translateX(-10%) translateY(-10%) rotate(360deg);
     }
@@ -53,6 +56,7 @@ body, html {
     0% {
         filter: hue-rotate(0deg);
     }
+
     100% {
         filter: hue-rotate(360deg);
     }

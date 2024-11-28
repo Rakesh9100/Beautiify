@@ -17,9 +17,10 @@ body {
     width: 200px;
     height: 140px;
     position: relative;
-  }
-  
-  .loader:before, .loader:after {
+}
+
+.loader:before,
+.loader:after {
     --r: -6deg;
     content: "";
     position: absolute;
@@ -28,18 +29,18 @@ body {
     top: 80%;
     box-shadow: 0 16px 12px var(--shadow);
     transform: rotate(var(--r));
-  }
-  
-  .loader:before {
+}
+
+.loader:before {
     left: 4px;
-  }
-  
-  .loader:after {
+}
+
+.loader:after {
     --r: 6deg;
     right: 4px;
-  }
-  
-  .loader div {
+}
+
+.loader div {
     width: 100%;
     height: 100%;
     border-radius: 13px;
@@ -48,16 +49,16 @@ body {
     perspective: 600px;
     box-shadow: 0 4px 6px var(--shadow);
     background-image: var(--background);
-  }
-  
-  .loader div ul {
+}
+
+.loader div ul {
     margin: 0;
     padding: 0;
     list-style: none;
     position: relative;
-  }
-  
-  .loader div ul li {
+}
+
+.loader div ul li {
     --r: 180deg;
     --o: 0;
     --c: var(--page);
@@ -70,48 +71,48 @@ body {
     transform: rotateY(var(--r));
     -webkit-animation: var(--duration) ease infinite;
     animation: var(--duration) ease infinite;
-  }
-  
-  .loader div ul li:nth-child(2) {
+}
+
+.loader div ul li:nth-child(2) {
     --c: var(--page-fold);
     -webkit-animation-name: page-2;
     animation-name: page-2;
-  }
-  
-  .loader div ul li:nth-child(3) {
+}
+
+.loader div ul li:nth-child(3) {
     --c: var(--page-fold);
     -webkit-animation-name: page-3;
     animation-name: page-3;
-  }
-  
-  .loader div ul li:nth-child(4) {
+}
+
+.loader div ul li:nth-child(4) {
     --c: var(--page-fold);
     -webkit-animation-name: page-4;
     animation-name: page-4;
-  }
-  
-  .loader div ul li:nth-child(5) {
+}
+
+.loader div ul li:nth-child(5) {
     --c: var(--page-fold);
     -webkit-animation-name: page-5;
     animation-name: page-5;
-  }
-  
-  .loader div ul li svg {
+}
+
+.loader div ul li svg {
     width: 90px;
     height: 120px;
     display: block;
-  }
-  
-  .loader div ul li:first-child {
+}
+
+.loader div ul li:first-child {
     --r: 0deg;
     --o: 1;
-  }
-  
-  .loader div ul li:last-child {
+}
+
+.loader div ul li:last-child {
     --o: 1;
-  }
-  
-  .loader span {
+}
+
+.loader span {
     display: block;
     left: 0;
     right: 0;
@@ -119,81 +120,88 @@ body {
     margin-top: 20px;
     text-align: center;
     color: var(--text);
-  }
-  
-  @keyframes page-2 {
+}
+
+@keyframes page-2 {
     0% {
-      transform: rotateY(180deg);
-      opacity: 0;
+        transform: rotateY(180deg);
+        opacity: 0;
     }
-  
+
     20% {
-      opacity: 1;
+        opacity: 1;
     }
-  
-    35%, 100% {
-      opacity: 0;
+
+    35%,
+    100% {
+        opacity: 0;
     }
-  
-    50%, 100% {
-      transform: rotateY(0deg);
+
+    50%,
+    100% {
+        transform: rotateY(0deg);
     }
-  }
-  
-  @keyframes page-3 {
+}
+
+@keyframes page-3 {
     15% {
-      transform: rotateY(180deg);
-      opacity: 0;
+        transform: rotateY(180deg);
+        opacity: 0;
     }
-  
+
     35% {
-      opacity: 1;
+        opacity: 1;
     }
-  
-    50%, 100% {
-      opacity: 0;
+
+    50%,
+    100% {
+        opacity: 0;
     }
-  
-    65%, 100% {
-      transform: rotateY(0deg);
+
+    65%,
+    100% {
+        transform: rotateY(0deg);
     }
-  }
-  
-  @keyframes page-4 {
+}
+
+@keyframes page-4 {
     30% {
-      transform: rotateY(180deg);
-      opacity: 0;
+        transform: rotateY(180deg);
+        opacity: 0;
     }
-  
+
     50% {
-      opacity: 1;
+        opacity: 1;
     }
-  
-    65%, 100% {
-      opacity: 0;
+
+    65%,
+    100% {
+        opacity: 0;
     }
-  
-    80%, 100% {
-      transform: rotateY(0deg);
+
+    80%,
+    100% {
+        transform: rotateY(0deg);
     }
-  }
-  
-  @keyframes page-5 {
+}
+
+@keyframes page-5 {
     45% {
-      transform: rotateY(180deg);
-      opacity: 0;
+        transform: rotateY(180deg);
+        opacity: 0;
     }
-  
+
     65% {
-      opacity: 1;
+        opacity: 1;
     }
-  
-    80%, 100% {
-      opacity: 0;
+
+    80%,
+    100% {
+        opacity: 0;
     }
-  
-    95%, 100% {
-      transform: rotateY(0deg);
+
+    95%,
+    100% {
+        transform: rotateY(0deg);
     }
-  }
-  
+}

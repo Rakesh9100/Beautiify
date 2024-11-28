@@ -1,110 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: rgb(214, 30, 214);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     font-family: 'Arial', sans-serif;
-  }
-  
-  .lineup-card {
-    width: 700px;
-    height:max-content;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #333;
-  }
-  .card-header{
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .card-header h2 {
-    font-size: 1.5em;
-    color: #004085;
-    margin-bottom: 5px;
-  }
-  
-  .card-header p {
-    font-size: 0.9em;
-    color: #777;
-    margin-bottom: 20px;
-  }
-  
-  .days-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    width:700px;
-  }
-  
-  .day-column {
-    background-color: #e9ecef;
-    border-radius: 8px;
-    padding: 10px;
+}
+
+/* Lineup Card Styles */
+.lineup-card {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.card-header {
     text-align: center;
-  }
-  
-  .day-column h3 {
-    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    font-size: 2rem;
+    color: #004085;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Days Grid */
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.day-column {
+    background: #f0f4f8;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.day-column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.day-column h3 {
+    font-size: 1.4rem;
     margin-bottom: 10px;
     color: #004085;
-  }
-  
-  .time-slot {
-    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.time-slot {
+    font-size: 0.9rem;
     margin-bottom: 5px;
     color: #495057;
-  }
-  
-  .task {
+}
+
+.task {
     font-weight: bold;
     color: #007bff;
-  }
-  
-  .card-footer {
+}
+
+.card-footer {
     margin-top: 20px;
-  }
-  
-  .goals-section,
-  .notes-section,
-  .inspiration-section {
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.goals-section,
+.notes-section,
+.inspiration-section {
     margin-bottom: 15px;
-  }
-  
-  .goals-section h4,
-  .notes-section h4 {
-    font-size: 1em;
+}
+
+.goals-section h4,
+.notes-section h4 {
+    font-size: 1.1rem;
     color: #004085;
     margin-bottom: 10px;
-  }
-  
-  .goals-section ul {
-    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.goals-section ul {
+    list-style: none;
     padding: 0;
-  }
-  
-  .goals-section ul li {
-    margin-bottom: 5px;
-  }
-  
-  .notes-section p {
-    font-size: 0.9em;
+}
+
+.goals-section ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.goals-section input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.notes-section p {
+    font-size: 0.9rem;
     color: #495057;
-    padding: 5px;
-    background-color: #e9ecef;
-    border-radius: 5px;
-  }
-  
-  .inspiration-section p {
-    font-size: 0.8em;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.inspiration-section p {
+    font-size: 0.9rem;
     color: #6c757d;
     font-style: italic;
     text-align: center;
-  }
-  
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lineup-card {
+        padding: 15px;
+    }
+
+    .card-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .day-column h3 {
+        font-size: 1.2rem;
+    }
+}

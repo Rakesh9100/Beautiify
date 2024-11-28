@@ -1,5 +1,3 @@
-
-// Your JavaScript code here
 $("#nav-btn").on("click", function () {
     $('#takeover-nav').toggleClass("shown");
     $('.sticky-nav').toggleClass("difference");

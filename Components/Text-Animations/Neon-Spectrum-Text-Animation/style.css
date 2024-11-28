@@ -12,7 +12,7 @@ body {
     margin-top: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* White text shadow */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 .text-container {
@@ -27,7 +27,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: transparent;
-    background: linear-gradient(90deg, #ff00ff, #00ffff, #ff0000, #ffff00); /* Neon colors */
+    background: linear-gradient(90deg, #ff00ff, #00ffff, #ff0000, #ffff00);
     background-size: 400%;
     -webkit-background-clip: text;
     background-clip: text;
