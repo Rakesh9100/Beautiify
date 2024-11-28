@@ -609,8 +609,8 @@ section {
 
 footer {
     font-family: 'Montserrat', sans-serif;
-    background-color:  rgb(85, 7, 111);
-    color:#ccc;
+    background-color: rgb(85, 7, 111);
+    color: #ccc;
     padding: 20px 0;
     width: 100%;
     box-sizing: border-box;
@@ -693,7 +693,7 @@ footer {
     margin-bottom: 20px;
     background: #00F260;
     background: -webkit-linear-gradient(to right, #f50414, #CCC);
-    background: linear-gradient(to right,#f50414, #CCC);
+    background: linear-gradient(to right, #f50414, #CCC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -726,9 +726,9 @@ footer {
 
 .send-message button {
     height: 50px;
-    background: -webkit-linear-gradient(to right, #f50414, #CCC); 
-    background: linear-gradient(to right,#f50414, #CCC); 
-    color: white; 
+    background: -webkit-linear-gradient(to right, #f50414, #ccc);
+    background: linear-gradient(to right, #f50414, #ccc);
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -738,8 +738,8 @@ footer {
 }
 
 .footer-ul {
-    justify-items: start;
-    align-items: start;
+    justify-items: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -784,8 +784,6 @@ footer {
 .social a.github:hover {
     color: #4af3b5;
 }
-
-
 
 #progress {
     position: fixed;
@@ -1107,6 +1105,7 @@ footer {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
     .social {
         font-size: 2.5rem;
         text-decoration: none;
@@ -1117,15 +1116,17 @@ footer {
         justify-content: center;
         gap: 1.5rem;
     }
-            .footer-container {
-                margin: 2px 3px;
-            }
-            .company-info,
+
+    .footer-container {
+        margin: 2px 3px;
+    }
+
+    .company-info,
     .quick-links,
     .send-message {
-    margin-top:8px;
-    text-align: center;
-    flex-basis: 100%;
+        margin-top: 8px;
+        text-align: center;
+        flex-basis: 100%;
     }
 }
 
