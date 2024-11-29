@@ -1,35 +1,52 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .modal-content {
     background-color: #ffffff;
-    padding: 50px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 15px;
     width: 90%;
     max-width: 500px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     position: relative;
     text-align: center;
-    margin: 10% auto;
 }
 
 .modal-content h2 {
     margin-top: 0;
-    margin-bottom: 10px;
-    color: black;
-    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 26px;
+}
+
+.modal-content p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
 
 .modal-content button[type="submit"] {
-    background: linear-gradient(to right, rgb(75, 179, 75), rgb(42, 228, 42));
+    background: linear-gradient(to right, #4BB34B, #2AE42A);
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     cursor: pointer;
     width: 100%;
+    transition: background 0.3s ease;
 }
 
 .modal-content button[type="submit"]:hover {
-    background: linear-gradient(to right, rgb(63, 220, 63), rgb(20, 124, 20));
+    background: linear-gradient(to right, #3FDC3F, #1C7C14);
 }
 
 .modal-content button[type="submit"]:focus {
@@ -38,9 +55,11 @@
 
 .close {
     color: #aaa;
-    float: right;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
 }
 
@@ -57,13 +76,13 @@
 .form-group .icon {
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 12px;
     transform: translateY(-50%);
-    background-color: rgb(75, 179, 75);
+    background-color: #4BB34B;
     color: white;
     border-radius: 50%;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,22 +91,21 @@
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 10px 10px 10px 38px;
+    padding: 12px 12px 12px 45px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     box-sizing: border-box;
+    margin-top: 5px;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
     color: #bbb;
-    padding-left: 8px
 }
 
 .form-group textarea {
-    height: 80px;
-    
+    height: 120px;
 }
 
 .rating {
@@ -99,18 +117,34 @@
 
 .rating h2 {
     margin: 0;
-    margin-right: 10px;
-    font-size: 18px;
+    margin-right: 12px;
+    font-size: 20px;
+    color: #555;
 }
 
 .rating__star {
-    font-size: 24px;
-    margin: 0 5px;
+    font-size: 30px;
+    margin: 0 7px;
     cursor: pointer;
-    color: #dabd18b2;
+    color: #DABF18;
 }
 
 .rating__star:hover,
 .rating__star.active {
-    color: #ffc107;
+    color: #FFC107;
+}
+
+#thank-you-message,
+#error-message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#thank-you-message {
+    color: #28a745;
+}
+
+#error-message {
+    color: #dc3545;
 }

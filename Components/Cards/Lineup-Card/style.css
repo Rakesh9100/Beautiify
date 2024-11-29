@@ -8,22 +8,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh;
     background: linear-gradient(135deg, #6a11cb, #2575fc);
     font-family: 'Arial', sans-serif;
     color: #333;
+    padding: 10px;
+    overflow-y: auto;
 }
 
 /* Lineup Card Styles */
 .lineup-card {
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 900px;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
     padding: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .card-header {
@@ -34,7 +36,6 @@ body {
 .card-header h2 {
     font-size: 2rem;
     color: #004085;
-    margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -42,33 +43,32 @@ body {
 /* Days Grid */
 .days-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-bottom: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .day-column {
-    background: #f0f4f8;
+    background: #f9f9f9;
     border-radius: 10px;
     padding: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .day-column:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .day-column h3 {
     font-size: 1.4rem;
     margin-bottom: 10px;
-    color: #004085;
-    text-transform: uppercase;
+    color: #0056b3;
 }
 
 .time-slot {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 5px;
     color: #495057;
 }
@@ -92,10 +92,9 @@ body {
 
 .goals-section h4,
 .notes-section h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #004085;
     margin-bottom: 10px;
-    text-transform: uppercase;
 }
 
 .goals-section ul {
@@ -104,7 +103,7 @@ body {
 }
 
 .goals-section ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
@@ -114,7 +113,7 @@ body {
 }
 
 .notes-section p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #495057;
     padding: 10px;
     background-color: #f8f9fa;
@@ -122,14 +121,14 @@ body {
 }
 
 .inspiration-section p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #6c757d;
     font-style: italic;
     text-align: center;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .lineup-card {
         padding: 15px;
     }

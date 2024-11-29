@@ -285,7 +285,6 @@ label {
 .register {
     background: #eee;
     border-radius: 60% / 10%;
-    transform: translateY(4%);
     transition: .8s ease-in-out;
 }
 

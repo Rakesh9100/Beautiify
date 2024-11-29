@@ -6,20 +6,11 @@ body {
     padding: 0;
 }
 
-.heading {
-    text-align: center;
-    font-size: 3em;
-    margin-top: 50px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
-
 .text-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
 }
 
 .animated-text {
