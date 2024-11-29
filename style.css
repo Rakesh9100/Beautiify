@@ -605,12 +605,11 @@ section {
 }
 
 /* Footer Css */
-/* Footer Css */
 
 footer {
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(85, 7, 111);
-    color: #ccc;
+    background-color: #2b0038;
+    font-weight: 900;
+    color: #fefefe;
     padding: 20px 0;
     width: 100%;
     box-sizing: border-box;
@@ -632,7 +631,6 @@ footer {
 }
 
 .quick-links {
-    font-weight: 600;
     flex: 1 1 30%;
 }
 
@@ -671,7 +669,6 @@ footer {
 .quick-links a,
 .send-message button {
     text-decoration: none;
-    color: #ccc;
 }
 
 .send-message input[type="email"] {
