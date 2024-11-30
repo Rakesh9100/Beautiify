@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css_files/forms.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css_files/commoncss.css">
     <link rel="stylesheet" href="../css_files/search.css">
     <link rel="stylesheet" href="../css_files/cursor.css">
-    <script src="../js_files/commonnav.js"></script>
+    <link rel="stylesheet" href="../css_files/progressbar.css">
+    <script src="../js_files/hamburgerMenu.js"></script>
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <title>Beautiify | Forms</title>
@@ -23,6 +24,11 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
     <div class="circle-container">
         <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
         <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
@@ -57,19 +63,22 @@
 
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../../index.html#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="../../index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
+                    <a href="./about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
                 </li>
                 <li class="nav-item">
                     <a href="../../index.html#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i> Contributors</a>
+                    <a href="./contributor.html" class="nav-link"><i class="fa-solid fa-users"></i> Contributors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
+                    <a href="./faq.html" class="nav-link"><i class="fa-solid fa-question-circle"></i> FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
             </ul>
             <button id="dark-mode-toggle"></button>
@@ -86,16 +95,29 @@
         <div class="heading">Forms</div>
         <!-- Search Bar -->
         <div id="searchBar">
-            <h1 class="SearchForm">Search Form</h1><br>
-            <input type="text" id="componentSearch" placeholder="Enter Forms Name" oninput="filtereachComponents()">
+            <h1 class="SearchDarkMode">Search Form</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Form Name" oninput="filtereachComponents()">
         </div>
 
         <div class="no-results">
             <img src="../images/no-results.png" alt="" height="100px" width="100px">
             <h2>Hmmm, we are not getting any result. <br> Our bad - Please try another search!</h2>
         </div>
-        
+
         <div class="contain">
+            <div class="box">
+                <h1>All In One Form</h1>
+                <div class="preview">
+                    <a href="../../Components/Forms/All-In-One-Form/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Forms/All-In-One-Form" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
             <div class="box">
                 <h1>Animated Border Login Form</h1>
                 <div class="preview">
@@ -170,6 +192,19 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Forms/Animated-SignIn-Form" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Application Form</h1>
+                <div class="preview">
+                    <a href="../../Components/Forms/Application-Form/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Forms/Application-Form" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -292,6 +327,19 @@
                 </div>
             </div>
             <div class="box">
+                <h1>File Upload Form-2</h1>
+                <div class="preview">
+                    <a href="../../Components/Forms/File-Upload-Form-2/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Forms/File-Upload-Form-2" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <h1>Game Signup Form</h1>
                 <div class="preview">
                     <a href="../../Components/Forms/Game-Signup-Form/index.html" title="Live Preview" target="_blank">
@@ -352,6 +400,19 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Forms/Login-Form" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Medical Form</h1>
+                <div class="preview">
+                    <a href="../../Components/Forms/Medical-Form/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Forms/Medical-Form" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -488,6 +549,19 @@
                 </div>
             </div>
             <div class="box">
+                <h1>Reset Password Form</h1>
+                <div class="preview">
+                    <a href="../../Components/Forms/Reset-Password-Form/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Forms/Reset-Password-Form" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <h1>Sign Up Form</h1>
                 <div class="preview">
                     <a href="../../Components/Forms/Sign-Up-Form/index.html" title="Live Preview" target="_blank">
@@ -594,22 +668,17 @@
         </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
-
-    <script src="../js_files/dark-mode.js"></script>
-
     <!-- Scroll To Top Button -->
     <div id="progress">
         <span id="progress-value" class="bi bi-arrow-up-short"></span>
     </div>
 
-    <script src="../js_files/search.js"></script>
-    <script src="../js_files/cursor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../script.js"></script>
-
+    <script src="../js_files/cursor.js"></script>
+    <script src="../js_files/search.js"></script>
+    <script src="../js_files/dark-mode.js"></script>
+    <script src="../js_files/progressBar.js"></script>
 </body>
 
 </html>

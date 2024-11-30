@@ -1,0 +1,133 @@
+body {
+    background: #2e394d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    content: "";
+    position: absolute;
+}
+
+input {
+    height: 40px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 500;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-45px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.toggle-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background: #de8797;
+    margin: 0 auto;
+    width: 220px;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+}
+
+label.toggle-item {
+    width: 7em;
+    background: #2e394d;
+    height: 3em;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 40px;
+    position: relative;
+    transition: all 0.3s ease;
+    transform-origin: 20% center;
+    cursor: pointer;
+}
+
+label.toggle-item:before {
+    display: block;
+    transition: all 0.2s ease;
+    width: 2.3em;
+    height: 2.3em;
+    top: 0.25em;
+    left: 0.25em;
+    border-radius: 2em;
+    border: 2px solid #88cf8f;
+    transition: 0.3s ease;
+}
+
+.transparent label {
+    background: transparent;
+    border: 3px solid #fff;
+    height: 3.35em;
+}
+
+.transparent label:before {
+    border: 3px solid #fff;
+    width: 2em;
+    height: 2em;
+    top: 0.3em;
+    left: 0.3em;
+    background: #fff;
+}
+
+#transparent:checked+label:before {
+    transform: translateX(59px);
+}
+
+@media (max-width: 960px) {
+    .toggle-wrapper {
+        flex: 1 1 calc(100% / 2);
+    }
+
+    .title {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 700px) {
+    .toggle-wrapper {
+        flex: 1 1 100%;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+}

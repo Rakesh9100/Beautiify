@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Include GSAP and jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Difference Dot Cursor</title>
+</head>
+
+<body>    
+    <header>
+        <div class="sticky-nav">
+            <div class="logo">MyLogo</div>
+            <div id="nav-btn">
+                <!-- Example SVG icon for the menu button -->
+                <svg id="nav-btn-icon" width="30" height="30" viewBox="0 0 100 100"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line id="top-line-1" x1="10" y1="25" x2="90" y2="25" stroke="#fff" stroke-width="5" />
+                    <line id="middle-line-1" x1="10" y1="50" x2="90" y2="50" stroke="#fff" stroke-width="5" />
+                    <line id="bottom-line-1" x1="10" y1="75" x2="90" y2="75" stroke="#fff" stroke-width="5" />
+                </svg>
+            </div>
+        </div>
+        <div id="takeover-nav">
+            <div class="nav-col">
+                <a href="#section1">Section 1</a>
+                <a href="#section2">Section 2</a>
+                <a href="#section3">Section 3</a>
+                <a href="#section4">Section 4</a>
+            </div>
+            <div class="nav-contact">
+                <div class="content">
+                    <h2 class="nav-title">Contact</h2>
+                    <div class="contact-items">
+                        <a href="mailto:example@example.com">Email</a>
+                        <a href="tel:+123456789">Phone</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sections -->
+    <section id="section1" class="hero">
+        <h1 class="hero-title">Welcome</h1>
+        <p>This is the hero section with some introductory content.</p>
+        <button class="interactive-btn">Click Me!</button>
+    </section>
+    <section id="section2" class="two">
+        <h2>Section Two</h2>
+        <p>This section contains a form you can interact with:</p>
+        <form class="interactive-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="section3" class="three">
+        <h2>Section Three</h2>
+        <p>Try clicking the elements below:</p>
+        <div class="interactive-box btn" onclick="boxClicked()">Click Me!</div>
+        <p id="box-message"></p>
+    </section>
+    <section id="section4" class="four">
+        <h2>Section Four</h2>
+        <p>Here is a simple image carousel:</p>
+        <div class="carousel">
+            <img src="https://via.placeholder.com/300x200?text=Slide+1" alt="Slide 1">
+            <img src="https://via.placeholder.com/300x200?text=Slide+2" alt="Slide 2" style="display: none;">
+            <img src="https://via.placeholder.com/300x200?text=Slide+3" alt="Slide 3" style="display: none;">
+            <button class="carousel-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

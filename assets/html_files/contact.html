@@ -5,20 +5,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css" />
-    <link rel="stylesheet" type="text/css" href="../css_files/contributor.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <title>Beautiify | Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    <link rel="stylesheet" href="../css_files/contact.css" />
-    <link rel="stylesheet" href="../css_files/cursor.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="../css_files/contact.css">
+    <link rel="stylesheet" href="../css_files/cursor.css">
+    <link rel="stylesheet" href="../css_files/progressbar.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <script src="../../script.js"></script>
     <script src="../js_files/contact.js"></script>
-    <script src="../js_files/commonnav.js"></script>
+    <script src="../js_files/hamburgerMenu.js"></script>
+    <title>Beautiify | Contact Us</title>
 </head>
 
 <body>
@@ -27,6 +27,11 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
     <div class="circle-container">
         <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
         <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
@@ -61,19 +66,22 @@
 
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../../index.html#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="../../index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
+                    <a href="./about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
                 </li>
                 <li class="nav-item">
                     <a href="../../index.html#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i> Contributors</a>
+                    <a href="./contributor.html" class="nav-link"><i class="fa-solid fa-users"></i> Contributors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link" style="color: red;"><i class="fa-solid fa-phone"></i> Contact</a>
+                    <a href="./faq.html" class="nav-link"><i class="fa-solid fa-question-circle"></i> FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="color: red;"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
             </ul>
             <button id="dark-mode-toggle"></button>
@@ -123,15 +131,15 @@
                         <h2 class="form-title">Send us a message :)</h2>
                     </div>
                     <div class="form-fields">
-                        <div class="form-group">
+                        <div class="form-group1">
                             <input id=cform type="text" class="fname" name="name" placeholder="Name" required />
                             <span id="message"> </span>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group1">
                             <input id=cmail type="email" class="email" name="email" placeholder="Email" required>
                             <span id="mailmessage"> </span>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group1">
                             <textarea name="message" placeholder="Your Message" required></textarea>
                         </div>
                     </div>
@@ -143,43 +151,64 @@
         </div>
     </section>
 
-    <script src="../js_files/dark-mode.js"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="company-info">
+                <h1 class="company-name heading">Beautiify</h1>
+                <p>
+                    Beautiify comprises a curated selection of beautifully designed components and animations that can be seamlessly incorporated into any website, elevating its overall UI experience. Discover elegant buttons, stylish sliders, and captivating animations to elevate your website.
+                </p>
+            </div>
+            <div class="quick-links">
+                <h1 class="heading">Quick Links</h1>
+                <ul class="footer-ul">
+                    <li><a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="./about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                    <li><a href="../../index.html#components"><i class="fa-solid fa-icons"></i> Components</a></li>
+                    <li><a href="./contributor.html"><i class="fa-solid fa-users"></i> Contributors</a></li>
+                    <li><a href="./faq.html"><i class="fa-solid fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="send-message">
+                <h1 class="heading">Keep In Touch</h1>
+                <form action="#">
+                    <div class="form-group group1">
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group group1">
+                        <textarea id="message" name="message" placeholder="Leave your message"></textarea>
+                        <button type="submit">SEND</button>
+                    </div>
+                </form>
+                <div class="social">
+                    <a class="user" href="https://rakesh9100.bio.link/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <a class="message" href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="github" href="https://www.github.com/Rakesh9100" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a class="instagram" href="https://www.instagram.com/rakesh250602/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="facebook" href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a class="twitter" href="https://twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a class="discord" href="https://discord.com/users/944144134950748170" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Created By Rakesh Roshan ❤️ | ©
+            <script>
+                document.write(new Date().getFullYear());
+            </script>: All Rights Reserved
+        </p>
+    </footer>
 
-    <div class="footer" id="about">
-        <footer>
-            <ul class="social-icon">
-                <li>
-                    <a href="https://rakesh9100.bio.link/" target="_blank"><i class="fas fa-link"></i></a>
-                </li>
-                <li>
-                    <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/Rakesh9100" target="_blank"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/rakesh250602/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://discord.com/users/944144134950748170" target="_blank"><i class="fab fa-discord"></i></a>
-                </li>
-            </ul>
-            <p>
-                Created By
-                <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | © <span id="year"></span>: All Rights Reserved
-            </p>
-        </footer>
+    <!-- Scroll To Top Button -->
+    <div id="progress">
+        <span id="progress-value" class="bi bi-arrow-up-short"></span>
     </div>
-    <script src="../../assets/js_files/cursor.js"></script>
+
+    <script src="../js_files/cursor.js"></script>
+    <script src="../js_files/dark-mode.js"></script>
+    <script src="../js_files/progressBar.js"></script>
 </body>
 
 </html>

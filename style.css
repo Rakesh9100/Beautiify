@@ -606,70 +606,196 @@ section {
 
 /* Footer Css */
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    min-height: 25vh;
-}
-
 footer {
-    position: relative;
+    background-color: #2b0038;
+    font-weight: 900;
+    color: #fefefe;
+    padding: 20px 0;
     width: 100%;
-    box-shadow: 0px -2.5px 6px rgb(30, 30, 30);
-    min-height: 100px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    box-sizing: border-box;
 }
 
-footer .social-icon {
-    position: relative;
+.footer-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 20px;
 }
 
-footer .social-icon li {
-    list-style: none;
+.company-info {
+    font-weight: 600;
+    flex: 1 1 30%;
 }
 
-footer .social-icon li a {
-    font-size: 2em;
-    color: var(--secondary);
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
+.quick-links {
+    flex: 1 1 30%;
 }
 
-.footer-links {
-    transition: transform .2s;
+.send-message {
+    flex: 1 1 30%;
 }
 
-footer .social-icon li a:hover {
-    transform: translateY(-10px);
-    color: red;
-}
-
-footer p {
-    color: var(--secondary);
-    text-align: center;
-    margin-top: 15px;
-    font-size: 1.1em;
-    display: inline-block;
-}
-
-footer p a {
-    background-color: rgba(239, 230, 230, 0.551);
-    color: var(--secondary);
-    text-align: center;
-    margin-top: 15px;
+.company-name {
+    font-size: 24px;
     margin-bottom: 10px;
-    font-size: 1.1em;
-    display: inline-block;
+}
+
+.company-info p {
+    line-height: 1.8;
+    text-align: center;
+}
+
+.quick-links h2,
+.send-message h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quick-links ul,
+.send-message form {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li,
+.send-message button {
+    margin-bottom: 10px;
+}
+
+.quick-links a,
+.send-message button {
+    text-decoration: none;
+}
+
+.send-message input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.copyright {
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 20px;
+    color: #ccc;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background: #00F260;
+    background: -webkit-linear-gradient(to right, #f50414, #CCC);
+    background: linear-gradient(to right, #f50414, #CCC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.group1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.send-message input,
+.send-message textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.send-message textarea {
+    height: 50px;
+    color: #f7f26c;
+}
+
+.send-message button {
+    height: 50px;
+    background: -webkit-linear-gradient(to right, #f50414, #ccc);
+    background: linear-gradient(to right, #f50414, #ccc);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-ul {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social {
+    font-size: 3.5rem;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social a i {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Pop up effect */
+
+.social a:hover i {
+    transform: translateY(-8px);
+}
+
+.social a {
+    color: var(--secondary);
+}
+
+.social a.user:hover {
+    color: #4af3b5;
+}
+
+.social a.message:hover {
+    color: #D44638;
+}
+
+.social a.linkedin:hover {
+    color: #0A66C2;
+}
+
+.social a.github:hover {
+    color: #181717;
+}
+
+.social a.instagram:hover {
+    color: #E1306C;
+}
+
+.social a.facebook:hover {
+    color: #1877F2;
+}
+
+.social a.twitter:hover {
+    color: #1DA1F2;
+}
+
+.social a.discord:hover {
+    color: #5865F2;
 }
 
 #progress {
@@ -906,23 +1032,23 @@ footer p a {
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        position: relative; 
+        position: relative;
     }
 
     .nav-menu {
-        position: fixed; 
-        left: -100%; 
-        top: 5.3rem; 
-        flex-direction: column; 
-        background-color: rgba(5, 5, 5, 0.904); 
-        backdrop-filter: blur(6.5px); 
-        width: 100%; 
-        text-align: center; 
-        transition: 0.3s; 
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); 
-        height: 100vh; 
-        gap: 50px; 
-        z-index: 999; 
+        position: fixed;
+        left: -100%;
+        top: 5.3rem;
+        flex-direction: column;
+        background-color: rgba(5, 5, 5, 0.904);
+        backdrop-filter: blur(6.5px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        height: 100vh;
+        gap: 50px;
+        z-index: 999;
     }
 
     .nav-menu.active {
@@ -969,7 +1095,7 @@ footer p a {
         right: 1rem;
         transform: translateY(-50%);
         cursor: pointer;
-        z-index: 1000; /* Ensure it's above other content */
+        z-index: 1000;
     }
 
     .hamburger .bar {
@@ -992,6 +1118,29 @@ footer p a {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    .social {
+        font-size: 2.5rem;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .footer-container {
+        margin: 2px 3px;
+    }
+
+    .company-info,
+    .quick-links,
+    .send-message {
+        margin-top: 8px;
+        text-align: center;
+        flex-basis: 100%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1013,4 +1162,3 @@ footer p a {
         margin: 15px !important;
     }
 }
-

@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css_files/toggle-switches.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css_files/commoncss.css">
     <link rel="stylesheet" href="../css_files/search.css">
     <link rel="stylesheet" href="../css_files/cursor.css">
-    <script src="../js_files/commonnav.js"></script>
+    <link rel="stylesheet" href="../css_files/progressbar.css">
     <script src="../js_files/hamburgerMenu.js"></script>
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
@@ -24,6 +24,11 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
     <div class="circle-container">
         <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
         <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
@@ -58,19 +63,22 @@
 
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../../index.html#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="../../index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
+                    <a href="./about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
                 </li>
                 <li class="nav-item">
                     <a href="../../index.html#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i> Contributors</a>
+                    <a href="./contributor.html" class="nav-link"><i class="fa-solid fa-users"></i> Contributors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
+                    <a href="./faq.html" class="nav-link"><i class="fa-solid fa-question-circle"></i> FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
             </ul>
             <button id="dark-mode-toggle"></button>
@@ -87,9 +95,8 @@
         <div class="heading">Toggle Switches</div>
         <!-- Search Bar -->
         <div id="searchBar">
-            <h1 class="SearchToggleswitch">Search Toggle Switches</h1><br>
-            <input type="text" id="componentSearch" placeholder="Enter Toggle Switch Name"
-                oninput="filtereachComponents()">
+            <h1 class="SearchDarkMode">Search Toggle Switch</h1><br>
+            <input type="text" id="componentSearch" placeholder="Enter Toggle Switch Name" oninput="filtereachComponents()">
         </div>
 
         <div class="no-results">
@@ -99,6 +106,32 @@
 
         <div class="contain">
             <div class="box">
+                <h1>Basketball Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/Basketball-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Basketball-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Beer Pong Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/Beer-Pong-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Beer-Pong-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <h1>Dark Mode Toggle Switch</h1>
                 <div class="preview">
                     <a href="../../Components/Toggle-Switches/Dark-Mode-Toggle-Switch/index.html" title="Live Preview" target="_blank">
@@ -107,6 +140,32 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Dark-Mode-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Dog Animation Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/Dog-Animation-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Dog-Animation-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Gravity Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/Gravity-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Gravity-Toggle-Switch" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -124,25 +183,150 @@
                     </a>
                 </div>
             </div>
+            <div class="box">
+                <h1>Minimalist Dark Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/Minimalist-Dark-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Minimalist-Dark-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Neumorphism Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/Neumorphism-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Neumorphism-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>On/Off Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/On-Off-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/On-Off-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>On/Off Toggle Switch-2</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/On-Off-Toggle-Switch-2/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/On-Off-Toggle-Switch-2" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Pancake Stack Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/Pancake-Stack-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Pancake-Stack-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Robo Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/Robo-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Robo-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Simple Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/Simple-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Simple-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Sun/Moon Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/Sun-Moon-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Sun-Moon-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Transparent Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/Transparent-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Transparent-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Yes/No Toggle Switch</h1>
+                <div class="preview">
+                    <a href="../../Components/Toggle-Switches/Yes-No-Toggle-Switch/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Toggle-Switches/Yes-No-Toggle-Switch" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
-
-    <script src="../js_files/dark-mode.js"></script>
 
     <!-- Scroll To Top Button -->
     <div id="progress">
         <span id="progress-value" class="bi bi-arrow-up-short"></span>
     </div>
 
-    <script src="../js_files/search.js"></script>
-    <script src="../js_files/cursor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../script.js"></script>
-
+    <script src="../js_files/cursor.js"></script>
+    <script src="../js_files/search.js"></script>
+    <script src="../js_files/dark-mode.js"></script>
+    <script src="../js_files/progressBar.js"></script>
 </body>
 
 </html>

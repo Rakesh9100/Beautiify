@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Bluish background */
+    font-family: 'Arial', sans-serif;
+}
+
+#openPopup {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#openPopup:hover {
+    background-color: #f0f0f0;
+}
+
+#popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#popupContainer.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#curtainLeft, #curtainRight {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(135deg, #111, #333);
+    transition: transform 0.7s ease;
+    z-index: 1;
+}
+
+#curtainLeft {
+    left: 0;
+    transform: translateX(0);
+}
+
+#curtainRight {
+    right: 0;
+    transform: translateX(0);
+}
+
+#popupContainer.visible #curtainLeft {
+    transform: translateX(-100%);
+}
+
+#popupContainer.visible #curtainRight {
+    transform: translateX(100%);
+}
+
+#popupContent {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding: 20px 40px; /* Added padding to fit text properly */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #ff7d1f; /* Orangish box shadow */
+    transform: scale(0.5);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease 0.7s;
+}
+
+#popupContainer.visible #popupContent {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#popupTitle {
+    margin: 0;
+    color: #0072ff; /* Bluish text color */
+    font-family: 'Georgia', serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+#popupContainer.visible #popupTitle {
+    opacity: 1;
+    transform: scale(1.2); /* Adjust scale effect if desired */
+}
+
+#closePopup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 3;
+    transition: color 0.3s ease;
+}
+
+#closePopup:hover {
+    color: #0072ff; /* Matching hover color */
+}

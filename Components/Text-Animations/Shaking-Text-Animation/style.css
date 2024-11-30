@@ -9,7 +9,7 @@ body {
     font-size: 4em;
 }
 
-#shake-text:hover {
+#shake-text {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }

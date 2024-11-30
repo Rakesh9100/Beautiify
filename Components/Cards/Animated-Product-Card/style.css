@@ -5,6 +5,12 @@ body {
     background-image: linear-gradient(to right, #ffffb3, #ffe6e6);
     background-attachment: fixed;
     background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
 }
 
 #container {
@@ -139,13 +145,11 @@ body {
 
 .product-image {
     transition: all 0.3s ease-out;
-    display: inline-block;
     position: relative;
     overflow: hidden;
     height: 100%;
     float: right;
     width: 45%;
-    display: inline-block;
 }
 
 #container img {

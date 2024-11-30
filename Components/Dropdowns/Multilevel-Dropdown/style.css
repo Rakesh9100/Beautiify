@@ -10,6 +10,9 @@ body {
     background-color: #900165;
     display: flex;
     padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
 }
 
 .dropdown:first-of-type {

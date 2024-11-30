@@ -25,6 +25,7 @@ html {
     border-radius: 10px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, .3);
     display: flex;
+    margin-top: 90px;
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
@@ -55,7 +56,7 @@ html {
     border: solid white 7px;
     border-radius: 300px;
     position: absolute;
-    top: 230px;
+    top: 340px;
 }
 
 .Logo:hover {
@@ -64,11 +65,12 @@ html {
 
 h3 {
     position: absolute;
-    bottom: 300px;
+    bottom: 200px;
     font-family: "Oswald", sans-serif;
     width: 300px;
     text-align: center;
     align-self: flex-end;
+    margin-top: 90px;
 }
 
 .Profile {

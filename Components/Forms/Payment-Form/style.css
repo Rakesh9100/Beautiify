@@ -1,18 +1,24 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to right top, #2273f5, #3c7df3, #4f87f1, #6191ef, #719bec, #6aa8f2, #67b4f6, #69bff8, #52cffe);
+    background: linear-gradient(to right top, #3498db, #8e44ad, #f39c12);
     margin: 0;
     padding: 0;
 }
 
 .container {
-    background-color: #f4f4f4;
+    background-color: #fff;
     border-radius: 12px;
-    box-shadow: 10px 10 10px rgba(138, 133, 133, 0.1);
-    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     width: 80%;
-    max-width: 400px;
-    margin: 20px auto 20px auto;
+    max-width: 450px;
+    margin: 50px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 form {
@@ -25,18 +31,21 @@ form {
 h1 {
     color: #333;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .mainheads {
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
     margin-top: 20px;
+    color: #3498db;
 }
 
 .inputtext {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 .inputtext p {
@@ -61,19 +70,25 @@ input[type="password"],
 select,
 textarea {
     width: 100%;
-    padding: 8px;
-    margin: 5px 5px 10px 7px;
+    padding: 10px;
+    margin: 5px 5px 15px 7px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
 }
 
 input[type="radio"],
 input[type="date"] {
     margin-right: 5px;
     margin-left: 7px;
-    border: 1px solid #ccc;
+    border: 2px solid #3498db;
     border-radius: 4px;
+}
+
+input[type="radio"]:checked {
+    background-color: #3498db;
 }
 
 input[type="date"] {
@@ -81,42 +96,63 @@ input[type="date"] {
     width: 90%;
 }
 
-
-.paymentdiv .inputfield {
-    margin-left: 6px;
+/* Hover effects */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+select:hover,
+textarea:hover {
+    border-color: #2980b9;
 }
 
-/* buttons */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+/* Buttons */
 .buttons {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .button {
-    padding: 10px;
-    width: 65%;
+    padding: 12px 20px;
+    width: 48%;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    margin: 5px 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
 
 #paynow {
-    background-color: #666a66;
-    color: #fff;
+    background-color: #2ecc71;
+    color: white;
 }
 
 #paynow:hover {
-    background-color: #4caf50;
-
+    background-color: #27ae60;
+    transform: scale(1.05);
 }
 
 #clear {
-    background-color: #f44336;
-    color: #fff;
+    background-color: #e74c3c;
+    color: white;
 }
 
 #clear:hover {
-    background-color: #db2d16;
-    color: #fff;
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
 }

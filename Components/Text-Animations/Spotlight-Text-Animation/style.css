@@ -25,6 +25,7 @@ h1:before {
     content: attr(data-text);
     position: absolute;
     background: linear-gradient(#f70000, #f89200, #f8f501, #038f00, #0168f8, #a200f7);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-size: 100% 90%;

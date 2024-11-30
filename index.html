@@ -5,17 +5,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css_files/cursor.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css_files/cursor.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css_files/progressbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js_files/hamburgerMenu.js"></script>
     <title>Beautiify</title>
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
     <div class="circle-container">
         <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
         <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
@@ -39,12 +51,6 @@
         <div class="circle" style="background-color: rgb(96, 0, 95); left: 504px; top: 59px; scale: 0.05;"></div>
     </div>
 
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
-
     <header class="header1">
         <nav class="navbar" class="nav-bg1">
             <a href="index.html">
@@ -65,16 +71,16 @@
                     <a href="#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i> Contributors</a>
+                    <a href="./assets/html_files/contributor.html" class="nav-link"><i class="fa-solid fa-users"></i> Contributors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./assets/html_files/faq.html" class="nav-link"><i class="fa-solid fa-question-circle"></i> FAQ</a>
                 </li>
                 <li class="nav-item">
                     <a href="./assets/html_files/contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
             </ul>
-
-            <!-- Dark Mode Toggle -->
             <button id="dark-mode-toggle"></button>
-
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -173,6 +179,16 @@
         </div>
         <div class="zoom-effect">
             <div class="box">
+                <a href="./assets/html_files/cursors.html" target="_blank">
+                    <div class="content">
+                        <i class="fas fa-mouse-pointer"></i>
+                        <h2>Cursors</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="zoom-effect">
+            <div class="box">
                 <a href="./assets/html_files/dropdowns.html" target="_blank">
                     <div class="content">
                         <i class="fa-solid fa-square-caret-down"></i>
@@ -205,7 +221,7 @@
             <div class="box">
                 <a href="./assets/html_files/heroes.html" target="_blank">
                     <div class="content">
-                        <i class="fa fa-television" aria-hidden="true"></i>
+                        <i class="fa fa-television"></i>
                         <h2>Heroes</h2>
                     </div>
                 </a>
@@ -243,6 +259,16 @@
         </div>
         <div class="zoom-effect">
             <div class="box">
+                <a href="./assets/html_files/scrollbars.html" target="_blank">
+                    <div class="content">
+                        <i class="fa-solid fa-arrows-v"></i>
+                        <h2>Scrollbars</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="zoom-effect">
+            <div class="box">
                 <a href="./assets/html_files/search-bars.html" target="_blank">
                     <div class="content">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -273,6 +299,16 @@
         </div>
         <div class="zoom-effect">
             <div class="box">
+                <a href="./assets/html_files/tooltips.html" target="_blank">
+                    <div class="content">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <h2>Tooltips</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="zoom-effect">
+            <div class="box">
                 <a href="./assets/html_files/transfer-lists.html" target="_blank">
                     <div class="content">
                         <i class="fa-solid fa-table-list"></i>
@@ -283,44 +319,55 @@
         </div>
     </div>
 
-    <script src="./assets/js_files/dark-mode.js"></script>
-
-    <div class="footer" id="about">
-        <footer>
-            <ul class="social-icon">
-                <li>
-                    <a href="https://rakesh9100.bio.link/" target="_blank"><i class="fas fa-link"></i></a>
-                </li>
-                <li>
-                    <a href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/Rakesh9100" target="_blank"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/rakesh250602/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://discord.com/users/944144134950748170" target="_blank"><i class="fab fa-discord"></i></a>
-                </li>
-            </ul>
-            <p>
-                Created By <a href="https://rakeshroshan.netlify.app/" target="_blank">Rakesh Roshan ❤️</a> | ©
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>: All Rights Reserved
-            </p>
-        </footer>
-    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="company-info">
+                <h1 class="company-name heading">Beautiify</h1>
+                <p>
+                    Beautiify comprises a curated selection of beautifully designed components and animations that can be seamlessly incorporated into any website, elevating its overall UI experience. Discover elegant buttons, stylish sliders, and captivating animations to elevate your website.
+                </p>
+            </div>
+            <div class="quick-links">
+                <h1 class="heading">Quick Links</h1>
+                <ul class="footer-ul">
+                    <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="./assets/html_files/about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                    <li><a href="#components"><i class="fa-solid fa-icons"></i> Components</a></li>
+                    <li><a href="./assets/html_files/contributor.html"><i class="fa-solid fa-users"></i> Contributors</a></li>
+                    <li><a href="./assets/html_files/faq.html"><i class="fa-solid fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="./assets/html_files/contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="send-message">
+                <h1 class="heading">Keep In Touch</h1>
+                <form action="#">
+                    <div class="form-group group1">
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group group1">
+                        <textarea id="message" name="message" placeholder="Leave your message"></textarea>
+                        <button type="submit">SEND</button>
+                    </div>
+                </form>
+                <div class="social">
+                    <a class="user" href="https://rakesh9100.bio.link/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <a class="message" href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="github" href="https://www.github.com/Rakesh9100" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a class="instagram" href="https://www.instagram.com/rakesh250602/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="facebook" href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a class="twitter" href="https://twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a class="discord" href="https://discord.com/users/944144134950748170" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Created By Rakesh Roshan ❤️ | ©
+            <script>
+                document.write(new Date().getFullYear());
+            </script>: All Rights Reserved
+        </p>
+    </footer>
 
     <!-- Scroll To Top Button -->
     <div id="progress">
@@ -328,9 +375,9 @@
     </div>
 
     <script src="./script.js"></script>
-    <script src="./assets/js_files/hamburgerMenu.js"></script>
-    <script src="./assets/js_files/contributor.js"></script>
     <script src="./assets/js_files/cursor.js"></script>
+    <script src="./assets/js_files/dark-mode.js"></script>
+    <script src="./assets/js_files/progressBar.js"></script>
 </body>
 
 </html>

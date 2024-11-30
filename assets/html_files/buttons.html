@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css_files/buttons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css_files/commoncss.css">
     <link rel="stylesheet" href="../css_files/search.css">
     <link rel="stylesheet" href="../css_files/cursor.css">
-    <script src="../js_files/commonnav.js"></script>
+    <link rel="stylesheet" href="../css_files/progressbar.css">
+    <script src="../js_files/hamburgerMenu.js"></script>
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <title>Beautiify | Buttons</title>
@@ -23,6 +24,11 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
     <div class="circle-container">
         <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
         <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
@@ -57,19 +63,22 @@
 
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="../../index.html#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="../../index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
+                    <a href="./about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
                 </li>
                 <li class="nav-item">
                     <a href="../../index.html#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i> Contributors</a>
+                    <a href="./contributor.html" class="nav-link"><i class="fa-solid fa-users"></i> Contributors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
+                    <a href="./faq.html" class="nav-link"><i class="fa-solid fa-question-circle"></i> FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
             </ul>
             <button id="dark-mode-toggle"></button>
@@ -86,7 +95,7 @@
         <div class="heading">Buttons</div>
         <!-- Search Bar -->
         <div id="searchBar">
-            <h1 class="SearchButton">Search Button</h1><br>
+            <h1 class="SearchDarkMode">Search Button</h1><br>
             <input type="text" id="componentSearch" placeholder="Enter Button Name" oninput="filtereachComponents()">
         </div>
 
@@ -94,7 +103,7 @@
             <img src="../images/no-results.png" alt="" height="100px" width="100px">
             <h2>Hmmm, we are not getting any result. <br> Our bad - Please try another search!</h2>
         </div>
-        
+
         <div class="contain">
             <div class="box">
                 <h1>3D Button</h1>
@@ -162,6 +171,19 @@
                 </div>
             </div>
             <div class="box">
+                <h1>Celebration Button</h1>
+                <div class="preview">
+                    <a href="../../Components/Buttons/Celebration-Button/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Celebration-Button" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <h1>Delete Animation Button</h1>
                 <div class="preview">
                     <a href="../../Components/Buttons/Delete-Animation-Button/index.html" title="Live Preview" target="_blank">
@@ -170,6 +192,32 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Delete-Animation-Button" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Download Button</h1>
+                <div class="preview">
+                    <a href="../../Components/Buttons/Download-Button/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Download-Button" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Dynamic Hover Button</h1>
+                <div class="preview">
+                    <a href="../../Components/Buttons/Dynamic-Hover-Button/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Dynamic-Hover-Button" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -196,6 +244,19 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Flower-Effect-Button" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Gaming Theme Button</h1>
+                <div class="preview">
+                    <a href="../../Components/Buttons/Gaming-Theme-Button/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Gaming-Theme-Button" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -248,6 +309,19 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Glow-Up-Button" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Go Back Button</h1>
+                <div class="preview">
+                    <a href="../../Components/Buttons/Go-Back-Button/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Go-Back-Button" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -396,6 +470,19 @@
                 </div>
             </div>
             <div class="box">
+                <h1>Nature Button</h1>
+                <div class="preview">
+                    <a href="../../Components/Buttons/Nature-Button/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Nature-Button" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <h1>Naughty Submit Button</h1>
                 <div class="preview">
                     <a href="../../Components/Buttons/Naughty-Submit-Button/index.html" title="Live Preview" target="_blank">
@@ -435,19 +522,6 @@
                 </div>
             </div>
             <div class="box">
-                <h1>On/Off Button</h1>
-                <div class="preview">
-                    <a href="../../Components/Buttons/On-Off-Button/index.html" title="Live Preview" target="_blank">
-                        <img src="../images/link.png">
-                    </a>
-                </div>
-                <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/On-Off-Button" title="Source Code" target="_blank">
-                        <img src="../images/github.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
                 <h1>Perspective Button</h1>
                 <div class="preview">
                     <a href="../../Components/Buttons/Perspective-Button/index.html" title="Live Preview" target="_blank">
@@ -456,6 +530,32 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Perspective-Button" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Pikachu Effect Hover Button</h1>
+                <div class="preview">
+                    <a href="../../Components/Buttons/Pikachu-Effect-Hover-Button/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Pikachu-Effect-Hover-Button" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Play Now Button</h1>
+                <div class="preview">
+                    <a href="../../Components/Buttons/Play-Now-Button/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Play-Now-Button" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -487,6 +587,19 @@
                 </div>
             </div>
             <div class="box">
+                <h1>Send Message Button</h1>
+                <div class="preview">
+                    <a href="../../Components/Buttons/Send-Message-Button/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Send-Message-Button" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
                 <h1>Skeuomorphism Button</h1>
                 <div class="preview">
                     <a href="../../Components/Buttons/Skeuomorphism-Button/index.html" title="Live Preview" target="_blank">
@@ -495,6 +608,19 @@
                 </div>
                 <div class="source">
                     <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Skeuomorphism-Button" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Social Hover Animated Button</h1>
+                <div class="preview">
+                    <a href="../../Components/Buttons/Social-Hover-Animated-Button/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Social-Hover-Animated-Button" title="Source Code" target="_blank">
                         <img src="../images/github.png">
                     </a>
                 </div>
@@ -565,45 +691,6 @@
                 </div>
             </div>
             <div class="box">
-                <h1>Toggle Animated Button</h1>
-                <div class="preview">
-                    <a href="../../Components/Buttons/Toggle-Animated-Button/index.html" title="Live Preview" target="_blank">
-                        <img src="../images/link.png">
-                    </a>
-                </div>
-                <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Toggle-Animated-Button" title="Source Code" target="_blank">
-                        <img src="../images/github.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <h1>Toggle Button</h1>
-                <div class="preview">
-                    <a href="../../Components/Buttons/Toggle-Button/index.html" title="Live Preview" target="_blank">
-                        <img src="../images/link.png">
-                    </a>
-                </div>
-                <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Toggle-Button" title="Source Code" target="_blank">
-                        <img src="../images/github.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <h1>Toggle Button-2</h1>
-                <div class="preview">
-                    <a href="../../Components/Buttons/Toggle-Button-2/index.html" title="Live Preview" target="_blank">
-                        <img src="../images/link.png">
-                    </a>
-                </div>
-                <div class="source">
-                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Toggle-Button-2" title="Source Code" target="_blank">
-                        <img src="../images/github.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
                 <h1>Wiggle Button</h1>
                 <div class="preview">
                     <a href="../../Components/Buttons/Wiggle-Button/index.html" title="Live Preview" target="_blank">
@@ -619,22 +706,17 @@
         </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
-
-    <script src="../js_files/dark-mode.js"></script>
-
     <!-- Scroll To Top Button -->
     <div id="progress">
         <span id="progress-value" class="bi bi-arrow-up-short"></span>
     </div>
 
-    <script src="../js_files/search.js"></script>
-    <script src="../js_files/cursor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../script.js"></script>
-
+    <script src="../js_files/cursor.js"></script>
+    <script src="../js_files/search.js"></script>
+    <script src="../js_files/dark-mode.js"></script>
+    <script src="../js_files/progressBar.js"></script>
 </body>
 
 </html>

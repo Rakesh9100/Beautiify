@@ -1,0 +1,216 @@
+body {
+    background: #2e394d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    content: "";
+    position: absolute;
+}
+
+input {
+    height: 40px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 500;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-45px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.toggle-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background: #c487de;
+    margin: 0 auto;
+    width: 220px;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+}
+
+label.toggle-item {
+    width: 7em;
+    background: #2e394d;
+    height: 3em;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 40px;
+    position: relative;
+    transition: all 0.3s ease;
+    transform-origin: 20% center;
+    cursor: pointer;
+}
+
+label.toggle-item:before {
+    display: block;
+    transition: all 0.2s ease;
+    width: 2.3em;
+    height: 2.3em;
+    top: 0.25em;
+    left: 0.25em;
+    border-radius: 2em;
+    border: 2px solid #88cf8f;
+    transition: 0.3s ease;
+}
+
+.dog-rollover label:before {
+    content: none;
+}
+
+.dog-rollover label .dog {
+    display: inline-block;
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    top: 0.25em;
+    left: 0.2em;
+    transition: 0.6s ease;
+}
+
+.dog-rollover label .eyes {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #222;
+    border-radius: 50%;
+    transform: translate(8px, 14px);
+    box-shadow: 16px 0 0 #222, 22px -4px 0 12px #e4ac04;
+}
+
+.dog-rollover label .ear {
+    width: 18px;
+    height: 20px;
+    position: absolute;
+    left: -4px;
+    bottom: 80%;
+    background: #f9bb00;
+    margin-bottom: -5px;
+    border-radius: 50% 50% 0 0/100% 100% 0 0;
+    box-shadow: inset 4px 0 0 0px #ffffff, inset -4px 0 0 0px #ffffff;
+    transform: rotate(-40deg);
+}
+
+.dog-rollover label .ear.right {
+    transform: rotate(60deg) scaleX(-1);
+    left: auto;
+    transform-origin: center bottom;
+    transition: 0.4s ease-in-out;
+    right: 0px;
+}
+
+.dog-rollover label .face {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    position: absolute;
+    background: #fff;
+    z-index: 8;
+}
+
+.dog-rollover label .mouth {
+    position: absolute;
+    background: #222;
+    width: 14px;
+    height: 7px;
+    left: 50%;
+    margin-left: -7px;
+    bottom: 12px;
+    border-radius: 2px 2px 20px 20px;
+    bottom: 8px;
+    transform: scale(0);
+    transition: 0.1s ease;
+}
+
+.dog-rollover label .mouth:before {
+    width: 8px;
+    height: 8px;
+    background: #ec788d;
+    border-radius: 0 0 50% 50%;
+    transform: translate(3px, 5px);
+    left: 0;
+}
+
+.dog-rollover label:before {
+    border-color: white;
+    background: white;
+}
+
+#doggo:checked~.cup {
+    animation: 0.2s linear cup 1s forwards;
+}
+
+#doggo:checked+label .dog {
+    left: 68px;
+    transform: rotate(360deg);
+}
+
+#doggo:checked+label .mouth {
+    transform: scale(1);
+    transition-delay: 0.7s;
+}
+
+#doggo:checked+label .ear.right {
+    transform: scaleX(-1) rotate(-35deg);
+    transition-delay: 0.6s;
+}
+
+@media (max-width: 960px) {
+    .toggle-wrapper {
+        flex: 1 1 calc(100% / 2);
+    }
+
+    .title {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 700px) {
+    .toggle-wrapper {
+        flex: 1 1 100%;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+}
