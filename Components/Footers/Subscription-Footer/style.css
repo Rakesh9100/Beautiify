@@ -1,0 +1,142 @@
+.container {
+    font-family: Arial, sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(247, 250, 250);
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 20px;
+}
+
+.footer .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.footer .column h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer .column a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.footer .subscribe {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.footer .subscribe h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer .subscribe p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer .subscribe input[type="email"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.footer .subscribe button {
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-top: 1px solid #000;
+}
+
+.footer-terms {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #000;
+    margin-top: 15px;
+}
+
+.footer-bottom .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .logo,
+    .footer .column,
+    .footer .subscribe {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .column {
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-terms {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-terms a {
+        margin-top: 5px;
+    }
+
+    .footer-bottom .social-icons {
+        margin-top: 10px;
+    }
+}
