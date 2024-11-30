@@ -771,15 +771,31 @@ footer {
 }
 
 .social a.message:hover {
-    color: #73408a;
+    color: #D44638;
 }
 
-.social a.phone:hover {
-    color: #00f7ff;
+.social a.linkedin:hover {
+    color: #0A66C2;
 }
 
 .social a.github:hover {
-    color: #4af3b5;
+    color: #181717;
+}
+
+.social a.instagram:hover {
+    color: #E1306C;
+}
+
+.social a.facebook:hover {
+    color: #1877F2;
+}
+
+.social a.twitter:hover {
+    color: #1DA1F2;
+}
+
+.social a.discord:hover {
+    color: #5865F2;
 }
 
 #progress {
