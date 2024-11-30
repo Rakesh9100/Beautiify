@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.animated-text {
+    font-size: 5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(90deg, #ff00ff, #00ffff, #ff0000, #ffff00);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: relative;
+    animation: gradientAnimation 8s infinite linear;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: -100% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}

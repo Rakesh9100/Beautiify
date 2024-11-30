@@ -1,90 +1,89 @@
-.container {
-    margin: auto;
-    width: 500px;
-    background-color: #2d2d2d;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+body {
+    background-color: #ddd8d8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.status-bar {
-    background-color: #333;
+.terminal-container {
+    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 5px;
+    flex-direction: column;
+}
+
+.terminal-box {
+    width: 100%;
+    max-width: 500px;
+    background-color: #222;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    background-color: #333;
     color: white;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+    align-items: center;
 }
 
-.status-indicators {
-    position: absolute;
-    left: 10px;
+.header .status-indicators {
+    display: flex;
+    gap: 6px;
 }
 
-.indicator {
-    height: 7px;
-    width: 7px;
+.status-indicators span {
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    margin-right: 5px;
 }
 
-.indicator-red {
-    background-color: #ff605c;
-}
-
-.indicator-yellow {
-    background-color: #ffbd44;
-}
-
-.indicator-green {
-    background-color: #00ca4e;
-}
-
-.status-text {
-    flex: 1;
+.header .title {
+    flex-grow: 1;
     text-align: center;
 }
 
 .loading-text {
-    padding: 10px;
+    padding: 20px;
     color: #0f0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    font-weight: bold;
 }
 
-.loading {
-    margin-right: 5px;
+.loading-text span {
+    animation: ping-animation 1.5s ease-in-out infinite;
 }
 
-.dot {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    margin: 0 2px;
-    animation: ping 1.5s infinite ease-in-out;
-}
-
-.dot-1 {
+.loading-text span:nth-child(1) {
     animation-delay: 0.5s;
 }
 
-.dot-2 {
+.loading-text span:nth-child(2) {
     animation-delay: 0.7s;
 }
 
-.dot-3 {
+.loading-text span:nth-child(3) {
     animation-delay: 0.9s;
 }
 
-@keyframes ping {
+/* Keyframe for the "ping" effect */
+@keyframes ping-animation {
     0% {
-        opacity: 0;
-    }
-
-    50% {
+        transform: scale(1);
         opacity: 1;
     }
-
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
     100% {
-        opacity: 0;
+        transform: scale(1);
+        opacity: 1;
     }
 }

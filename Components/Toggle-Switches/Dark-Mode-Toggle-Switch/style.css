@@ -6,7 +6,7 @@ body {
 }
 
 .theme-switch {
-    --toggle-size: 30px; /* The size is adjusted using font-size, this is not a transform scale, so you can choose any size */
+    --toggle-size: 30px;
     --container-width: 5.625em;
     --container-height: 2.5em;
     --container-radius: 6.25em;

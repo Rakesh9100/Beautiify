@@ -1,4 +1,3 @@
-/* The switch - the box around the slider */
 body {
     background-color: #23232c;
     display: flex;
@@ -35,17 +34,14 @@ body {
     transition-duration: 0.25s;
 }
 
-/* night sky background */
 #toggle:checked+svg #container {
     fill: #2b4360;
 }
 
-/* move button to right when checked */
 #toggle:checked+svg #button {
     transform: translate(28px, 2.333px);
 }
 
-/* show/hide sun and moon based on checkbox state */
 #sun {
     opacity: 1;
 }
@@ -62,7 +58,6 @@ body {
     opacity: 1;
 }
 
-/* show or hide background items on checkbox state */
 #cloud {
     opacity: 1;
 }
