@@ -4,52 +4,15 @@
     height: 25px;
     border-radius: 50%;
     pointer-events: none;
-    animation: colors 4s ease-in-out infinite, pulse 2s infinite;
+    animation: colors 5s infinite;
     position: fixed;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(circle, #FF6B6B, #3A0088);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(58, 0, 136, 0.5);
-    transition: transform 0.15s ease-out, background-color 0.3s;
 }
 
 .circle::before {
     content: "";
     position: fixed;
-    width: 70px;
-    height: 70px;
-    opacity: 0.15;
-    transform: translate(-30%, -30%);
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
     border-radius: 50%;
-    background: radial-gradient(circle, #FF6B6B, #3A0088);
-    filter: blur(10px);
-    transition: width 0.15s ease-out, height 0.15s ease-out, background-color 0.3s;
-}
-
-/* Animation for changing colors */
-@keyframes colors {
-    0% {
-        background-color: #FF6B6B;
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(58, 0, 136, 0.5);
-    }
-    50% {
-        background-color: #3A0088;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(58, 0, 136, 0.8);
-    }
-    100% {
-        background-color: #FF6B6B;
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(58, 0, 136, 0.5);
-    }
-}
-
-/* Pulse animation for smoother interactions */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
 }
