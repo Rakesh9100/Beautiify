@@ -1,125 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enhanced Confetti Button</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #282c34;
-      margin: 0;
-      overflow: hidden;
-    }
-
-    .confetti-button {
-      font-size: 20px;
-      color: #fff;
-      background-color: #00b4d8;
-      border: none;
-      padding: 15px 30px;
-      border-radius: 50px;
-      cursor: pointer;
-      position: relative;
-      z-index: 2;
-      box-shadow: 0 8px 25px rgba(0, 180, 216, 0.5);
-      transition: background-color 0.3s ease;
-    }
-
-    .confetti-button:hover {
-      background-color: #90e0ef;
-    }
-
-    .confetti-button:active {
-      background-color: #0077b6;
-    }
-
-    .confetti {
-      position: absolute;
-      width: 10px;
-      height: 20px;
-      border-radius: 2px;
-      pointer-events: none;
-      animation: fly 2.5s ease-out forwards;
-      z-index: 1;
-      opacity: 1;
-      transform-origin: center center;
-    }
-
-    /* Rotation and motion animation */
-    @keyframes fly {
-      0% {
-        opacity: 1;
-        transform: translateY(0) translateX(0) rotate(0deg) scale(1);
-      }
-      50% {
-        transform: translateY(calc(400px * var(--y-direction))) translateX(calc(400px * var(--x-direction))) rotate(360deg) scale(1.2);
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(calc(600px * var(--gravity))) translateX(calc(800px * var(--x-direction))) rotate(720deg) scale(0.8);
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Confetti Button</title>
 </head>
+
 <body>
-  <button class="confetti-button">Celebrate!</button>
+    <button class="confetti-button">Celebrate!</button>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-  <script>
-    const confettiButton = document.querySelector('.confetti-button');
-
-    confettiButton.addEventListener('click', () => {
-      const confettiCount = 80;
-      const buttonRect = confettiButton.getBoundingClientRect();
-
-      for (let i = 0; i < confettiCount; i++) {
-        const confetti = document.createElement('div');
-        confetti.classList.add('confetti');
-
-        // Assign random shapes and sizes for variety
-        const shapes = ['circle', 'square', 'triangle'];
-        const shape = shapes[Math.floor(Math.random() * shapes.length)];
-
-        if (shape === 'circle') {
-          confetti.style.width = confetti.style.height = '12px';
-          confetti.style.borderRadius = '50%';
-        } else if (shape === 'square') {
-          confetti.style.width = confetti.style.height = '10px';
-        } else if (shape === 'triangle') {
-          confetti.style.width = 0;
-          confetti.style.height = 0;
-          confetti.style.borderLeft = '5px solid transparent';
-          confetti.style.borderRight = '5px solid transparent';
-          confetti.style.borderBottom = `10px solid hsl(${Math.random() * 360}, 100%, 50%)`;
-        }
-
-        confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`; // Random confetti colors
-        confetti.style.left = `${buttonRect.left + buttonRect.width / 2}px`; // Start from center of button
-        confetti.style.top = `${buttonRect.top + buttonRect.height / 2}px`;  // Start from center of button
-
-        // Random direction for X and Y
-        confetti.style.setProperty('--x-direction', Math.random() - 0.5); // Horizontal spread
-        confetti.style.setProperty('--y-direction', Math.random() - 0.5); // Initial upward/downward motion
-        confetti.style.setProperty('--gravity', Math.random() * 1.2 + 0.4); // Simulate gravity to pull downward
-
-        document.body.appendChild(confetti);
-
-        // Confetti motion using GSAP
-        gsap.to(confetti, {
-          x: (Math.random() - 0.5) * 1200,  // Spread horizontally
-          y: (Math.random() - 0.5) * 1200,  // Spread vertically
-          rotation: Math.random() * 1440,   // Spin confetti with more rotations
-          duration: 2 + Math.random(),      // Randomized duration for each piece
-          opacity: 0,
-          scale: Math.random() * 1.5 + 0.5, // Randomize size slightly
-          onComplete: () => confetti.remove(), // Remove confetti after animation
-        });
-      }
-    });
-  </script>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 </body>
 </html>
