@@ -118,5 +118,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     resetBtn.addEventListener("click", resetLists);
 
-    resetLists(); 
+    resetLists();
 });
