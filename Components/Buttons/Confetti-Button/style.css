@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
+    overflow: hidden;
+}
+
+.confetti-button {
+    font-size: 20px;
+    color: #fff;
+    background-color: #00b4d8;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 8px 25px rgba(0, 180, 216, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.confetti-button:hover {
+    background-color: #90e0ef;
+}
+
+.confetti-button:active {
+    background-color: #0077b6;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    border-radius: 2px;
+    pointer-events: none;
+    animation: fly 2.5s ease-out forwards;
+    z-index: 1;
+    opacity: 1;
+    transform-origin: center center;
+}
+
+/* Rotation and motion animation */
+@keyframes fly {
+    0% {
+        opacity: 1;
+        transform: translateY(0) translateX(0) rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: translateY(calc(400px * var(--y-direction))) translateX(calc(400px * var(--x-direction))) rotate(360deg) scale(1.2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(calc(600px * var(--gravity))) translateX(calc(800px * var(--x-direction))) rotate(720deg) scale(0.8);
+    }
+}

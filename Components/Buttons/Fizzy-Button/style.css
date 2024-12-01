@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2b2d42;
+    margin: 0;
+    overflow: hidden;
+}
+
+.fizzy-button {
+    font-size: 20px;
+    color: #fff;
+    background-color: #f72585;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 8px 25px rgba(247, 37, 133, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.fizzy-button:hover {
+    background-color: #ff4d6d;
+}
+
+.fizzy-button:active {
+    background-color: #b5179e;
+}
+
+.particle {
+    position: absolute;
+    background-color: #ff5722;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fizz 2s ease-out forwards;
+    z-index: 1;
+}
+
+@keyframes fizz {
+    from {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
