@@ -605,12 +605,11 @@ section {
 }
 
 /* Footer Css */
-/* Footer Css */
 
 footer {
-    font-family: 'Montserrat', sans-serif;
-    background-color:  rgb(85, 7, 111);
-    color:#ccc;
+    background-color: #2b0038;
+    font-weight: 900;
+    color: #fefefe;
     padding: 20px 0;
     width: 100%;
     box-sizing: border-box;
@@ -632,7 +631,6 @@ footer {
 }
 
 .quick-links {
-    font-weight: 600;
     flex: 1 1 30%;
 }
 
@@ -671,7 +669,6 @@ footer {
 .quick-links a,
 .send-message button {
     text-decoration: none;
-    color: #ccc;
 }
 
 .send-message input[type="email"] {
@@ -693,7 +690,7 @@ footer {
     margin-bottom: 20px;
     background: #00F260;
     background: -webkit-linear-gradient(to right, #f50414, #CCC);
-    background: linear-gradient(to right,#f50414, #CCC);
+    background: linear-gradient(to right, #f50414, #CCC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -726,9 +723,9 @@ footer {
 
 .send-message button {
     height: 50px;
-    background: -webkit-linear-gradient(to right, #f50414, #CCC); 
-    background: linear-gradient(to right,#f50414, #CCC); 
-    color: white; 
+    background: -webkit-linear-gradient(to right, #f50414, #ccc);
+    background: linear-gradient(to right, #f50414, #ccc);
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -738,8 +735,8 @@ footer {
 }
 
 .footer-ul {
-    justify-items: start;
-    align-items: start;
+    justify-items: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -774,18 +771,32 @@ footer {
 }
 
 .social a.message:hover {
-    color: #73408a;
+    color: #D44638;
 }
 
-.social a.phone:hover {
-    color: #00f7ff;
+.social a.linkedin:hover {
+    color: #0A66C2;
 }
 
 .social a.github:hover {
-    color: #4af3b5;
+    color: #181717;
 }
 
+.social a.instagram:hover {
+    color: #E1306C;
+}
 
+.social a.facebook:hover {
+    color: #1877F2;
+}
+
+.social a.twitter:hover {
+    color: #1DA1F2;
+}
+
+.social a.discord:hover {
+    color: #5865F2;
+}
 
 #progress {
     position: fixed;
@@ -1126,6 +1137,7 @@ footer {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
     .social {
         font-size: 2.5rem;
         text-decoration: none;
@@ -1136,15 +1148,17 @@ footer {
         justify-content: center;
         gap: 1.5rem;
     }
-            .footer-container {
-                margin: 2px 3px;
-            }
-            .company-info,
+
+    .footer-container {
+        margin: 2px 3px;
+    }
+
+    .company-info,
     .quick-links,
     .send-message {
-    margin-top:8px;
-    text-align: center;
-    flex-basis: 100%;
+        margin-top: 8px;
+        text-align: center;
+        flex-basis: 100%;
     }
 }
 

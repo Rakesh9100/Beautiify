@@ -1,4 +1,4 @@
-body{
+body {
     background: #212121;
     display: flex;
     justify-content: center;
@@ -12,8 +12,6 @@ body{
     align-items: baseline;
     justify-content: center;
     border: none;
-
-    /* overflow: hidden; */
     border-radius: 7px;
     cursor: pointer;
     transition: all 0.3s;

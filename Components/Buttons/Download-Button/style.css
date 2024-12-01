@@ -157,6 +157,7 @@
                         list-style: none;
                         width: 10px;
                         height: 18px;
+                        backface-visibility: hidden;
                         -webkit-backface-visibility: hidden;
                         transform: translateY(var(--y)) translateZ(0);
 

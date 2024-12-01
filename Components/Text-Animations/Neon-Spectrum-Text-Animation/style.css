@@ -6,20 +6,11 @@ body {
     padding: 0;
 }
 
-.heading {
-    text-align: center;
-    font-size: 3em;
-    margin-top: 50px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* White text shadow */
-}
-
 .text-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
 }
 
 .animated-text {
@@ -27,7 +18,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: transparent;
-    background: linear-gradient(90deg, #ff00ff, #00ffff, #ff0000, #ffff00); /* Neon colors */
+    background: linear-gradient(90deg, #ff00ff, #00ffff, #ff0000, #ffff00);
     background-size: 400%;
     -webkit-background-clip: text;
     background-clip: text;

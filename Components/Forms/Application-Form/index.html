@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Application Form</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Application Form</h1>
         <form action="/submit-application" method="post">
-            <!-- Personal Information Section -->
             <h2>Personal Information</h2>
             <label for="first-name">First Name</label>
             <input type="text" id="first-name" name="first-name" required>
@@ -26,6 +27,7 @@
             <input type="radio" id="male" name="gender" value="male" required> Male
             <input type="radio" id="female" name="gender" value="female" required> Female
             <input type="radio" id="other" name="gender" value="other" required> Other
+
             <h2>Address</h2>
             <label for="address">Street Address</label>
             <input type="text" id="address" name="address" required>
@@ -35,6 +37,7 @@
             <input type="text" id="state" name="state" required>
             <label for="zip">Zip Code</label>
             <input type="text" id="zip" name="zip" required>
+
             <h2>Education</h2>
             <label for="education-level">Highest Level of Education</label>
             <select id="education-level" name="education-level" required>
@@ -47,7 +50,7 @@
             </select>
             <label for="school-name">School Name</label>
             <input type="text" id="school-name" name="school-name" required>
-            <!-- Work Experience Section -->
+
             <h2>Work Experience</h2>
             <label for="company-name">Company Name</label>
             <input type="text" id="company-name" name="company-name" required>
@@ -59,13 +62,16 @@
             <input type="date" id="end-date" name="end-date">
             <label for="job-duties">Job Duties</label>
             <textarea id="job-duties" name="job-duties" rows="4" required></textarea>
+
             <h2>Additional Information</h2>
             <label for="references">References (Optional)</label>
             <textarea id="references" name="references" rows="4"></textarea>
             <label for="comments">Additional Comments</label>
             <textarea id="comments" name="comments" rows="4"></textarea>
+
             <button type="submit" class="submit-btn">Submit Application</button>
         </form>
     </div>
 </body>
+
 </html>

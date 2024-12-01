@@ -8,194 +8,70 @@
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css_files/cursor.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./assets/js_files/hamburgerMenu.js"></script>
     <title>Beautiify | Error 404</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-            color: #333;
-        }
-
-        #loader-wrapper {
-            display: none; /* Hide loader initially */
-        }
-
-        nav {
-            width: 100%;
-            background-color: #3A0088;
-            padding: 20px 0;
-            position: absolute;
-            top: 0;
-            animation: slideDown 0.5s ease-in-out;
-        }
-
-        .nav__logo a {
-            color: white;
-            font-size: 24px;
-            text-decoration: none;
-        }
-
-        .nav-menu {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .nav-item .nav-link {
-            color: white;
-            text-decoration: none;
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .container {
-            background-color: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            animation: fadeIn 1s ease-in-out;
-            margin-top: 80px; /* Add margin to avoid overlap with navbar */
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        .header h1 {
-            font-size: 80px;
-            margin: 0;
-            color: #ff4d4d;
-            animation: bounce 1s infinite;
-        }
-
-        @keyframes bounce {
-            0%,
-            20%,
-            50%,
-            80%,
-            100% {
-                transform: translateY(0);
-            }
-
-            40% {
-                transform: translateY(-20px);
-            }
-
-            60% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .header h3 {
-            color: #3A0088;
-        }
-
-        .footer {
-            margin-top: 20px;
-        }
-
-        .footer p {
-            margin: 10px 0;
-        }
-
-        button {
-            background-color: #3A0088;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #5b2d99;
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-            animation: slideUp 0.5s ease-in-out;
-        }
-
-        @keyframes slideUp {
-            from {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-    </style>
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <div class="circle-container">
+        <div class="circle" style="background-color: #3A0088; left: 504px; top: 59px; scale: 1;"></div>
+        <div class="circle" style="background-color: rgb(253, 175, 105); left: 504px; top: 59px; scale: 0.95;"></div>
+        <div class="circle" style="background-color: rgb(248, 157, 99); left: 504px; top: 59px; scale: 0.9;"></div>
+        <div class="circle" style="background-color: rgb(245, 151, 97); left: 504px; top: 59px; scale: 0.85;"></div>
+        <div class="circle" style="background-color: rgb(239, 134, 94); left: 504px; top: 59px; scale: 0.8;"></div>
+        <div class="circle" style="background-color: rgb(236, 128, 93); left: 504px; top: 59px; scale: 0.75;"></div>
+        <div class="circle" style="background-color: rgb(227, 110, 92); left: 504px; top: 59px; scale: 0.7;"></div>
+        <div class="circle" style="background-color: rgb(223, 104, 92); left: 504px; top: 59px; scale: 0.65;"></div>
+        <div class="circle" style="background-color: rgb(213, 88, 92); left: 504px; top: 59px; scale: 0.6;"></div>
+        <div class="circle" style="background-color: rgb(209, 82, 92); left: 504px; top: 59px; scale: 0.55;"></div>
+        <div class="circle" style="background-color: rgb(197, 65, 93); left: 504px; top: 59px; scale: 0.5;"></div>
+        <div class="circle" style="background-color: rgb(192, 59, 93); left: 504px; top: 59px; scale: 0.45;"></div>
+        <div class="circle" style="background-color: rgb(178, 44, 94); left: 504px; top: 59px; scale: 0.4;"></div>
+        <div class="circle" style="background-color: rgb(172, 38, 94); left: 504px; top: 59px; scale: 0.35;"></div>
+        <div class="circle" style="background-color: rgb(156, 21, 95); left: 504px; top: 59px; scale: 0.3;"></div>
+        <div class="circle" style="background-color: rgb(149, 15, 95); left: 504px; top: 59px; scale: 0.25;"></div>
+        <div class="circle" style="background-color: rgb(131, 0, 96); left: 504px; top: 59px; scale: 0.2;"></div>
+        <div class="circle" style="background-color: rgb(124, 0, 96); left: 504px; top: 59px; scale: 0.15;"></div>
+        <div class="circle" style="background-color: rgb(104, 0, 96); left: 504px; top: 59px; scale: 0.1;"></div>
+        <div class="circle" style="background-color: rgb(96, 0, 95); left: 504px; top: 59px; scale: 0.05;"></div>
+    </div>
 
-
-  
-        <nav class="navbar nav-bg1">
+    <header class="header1">
+        <nav class="navbar" class="nav-bg1">
             <a href="index.html">
                 <div class="flex-container">
-                    <div class="flex-item-left">
-                        <img src="./assets/images/logo.png" width="37px" height="37px">
-                    </div>
-                    <div class="flex-item-right logo">Beautiify</div>
+                    <div class="flex-item-left"><img src="./assets/images/logo.png" width="37px" height="37px"></div>
+                    <div class="flex-item-right" class="logo">Beautiify</div>
                 </div>
             </a>
+
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link" style="color: red;"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="./index.html" class="nav-link" style="color: red;"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="./assets/html_files/about.html" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
+                    <a href="./index.html#components" class="nav-link"><i class="fa-solid fa-icons"></i> Components</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./assets/html_files/contributor.html" class="nav-link"><i class="fa-solid fa-user"></i> Contributors</a>
+                    <a href="./assets/html_files/contributor.html" class="nav-link"><i class="fa-solid fa-users"></i> Contributors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./assets/html_files/faq.html" class="nav-link"><i class="fa-solid fa-question-circle"></i> FAQ</a>
                 </li>
                 <li class="nav-item">
                     <a href="./assets/html_files/contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./assets/html_files/FAQ.html" class="nav-link"><i class="fa-solid fa-phone"></i> FAQ</a>
                 </li>
             </ul>
             <button id="dark-mode-toggle"></button>
@@ -205,21 +81,77 @@
                 <span class="bar"></span>
             </div>
         </nav>
+    </header>
 
+    <section class="comp-section" id="404">
+        <div class="compcontainer">
+            <div class="logo">
+                <img src="./assets/images/404.gif" alt="Logo" style="width: 640px !important; height: 450px !important; object-fit: cover; border-radius: 25px;">
+            </div>
+            <a href="index.html">
+                <button class="started" style="margin-top: 32px;">Go Back Home</button>
+            </a>
+        </div>
+    </section>
 
-    <div class="container">
-        <div class="header">
-            <h1>404</h1>
-            <h3>Page Not Found!</h3>
+    <footer>
+        <div class="footer-container">
+            <div class="company-info">
+                <h1 class="company-name heading">Beautiify</h1>
+                <p>
+                    Beautiify comprises a curated selection of beautifully designed components and animations that can be seamlessly incorporated into any website, elevating its overall UI experience. Discover elegant buttons, stylish sliders, and captivating animations to elevate your website.
+                </p>
+            </div>
+            <div class="quick-links">
+                <h1 class="heading">Quick Links</h1>
+                <ul class="footer-ul">
+                    <li><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="./assets/html_files/about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                    <li><a href="./index.html#components"><i class="fa-solid fa-icons"></i> Components</a></li>
+                    <li><a href="./assets/html_files/contributor.html"><i class="fa-solid fa-users"></i> Contributors</a></li>
+                    <li><a href="./assets/html_files/faq.html"><i class="fa-solid fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="./assets/html_files/contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="send-message">
+                <h1 class="heading">Keep In Touch</h1>
+                <form action="#">
+                    <div class="form-group group1">
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group group1">
+                        <textarea id="message" name="message" placeholder="Leave your message"></textarea>
+                        <button type="submit">SEND</button>
+                    </div>
+                </form>
+                <div class="social">
+                    <a class="user" href="https://rakesh9100.bio.link/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <a class="message" href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="github" href="https://www.github.com/Rakesh9100" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a class="instagram" href="https://www.instagram.com/rakesh250602/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="facebook" href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a class="twitter" href="https://twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a class="discord" href="https://discord.com/users/944144134950748170" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
         </div>
-        <img src="https://media.tenor.com/KrcYIJHHzOIAAAAi/error-404.gif" alt="404 GIF" style="max-width: 100%; height: auto;" />
-        <div class="footer">
-            <p style="color: #f4f4f4;">
-                We're sorry, the page you requested could not be found. Please go back to the homepage!
-            </p>
-            <a href="index.html"><button>GO HOME</button></a>
-        </div>
+        <p class="copyright">Created By Rakesh Roshan ❤️ | ©
+            <script>
+                document.write(new Date().getFullYear());
+            </script>: All Rights Reserved
+        </p>
+    </footer>
+
+    <!-- Scroll To Top Button -->
+    <div id="progress">
+        <span id="progress-value" class="bi bi-arrow-up-short"></span>
     </div>
+
+    <script src="./script.js"></script>
+    <script src="./assets/js_files/cursor.js"></script>
+    <script src="./assets/js_files/dark-mode.js"></script>
 </body>
 
 </html>
