@@ -1,6 +1,6 @@
 name: Other 🤔
 description: Use this for any other issues. PLEASE do not create blank issues
-title: "[Other]"
+title: "[Other] <write a small description here>"
 body:
   - type: markdown
     attributes:

@@ -1,6 +1,6 @@
 name: Style Changing Request 👯‍♂️
 description: Suggest a style design
-title: '[Style]'
+title: "[Style] <write a small description here>"
 body:
   - type: markdown
     attributes:
@@ -11,7 +11,7 @@ body:
     attributes:
       label: What's the style idea?
       placeholder: Add descriptions
-      value: 'We need to improve'
+      value: "We need to improve"
 
   - type: checkboxes
     id: no-duplicate-issues
