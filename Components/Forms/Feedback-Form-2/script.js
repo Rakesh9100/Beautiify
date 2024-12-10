@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const feedbackForm = document.getElementById('feedback-form');
     const submitButton = document.querySelector("#feedback-form button[type='submit']");
     const thankYouMessage = document.getElementById('thank-you-message');
@@ -24,12 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
         return false;
     }
 
-    feedbackForm.addEventListener('submit', function(event) {
+    feedbackForm.addEventListener('submit', function (event) {
         event.preventDefault();
         if (allFieldsFilled() && ratingSelected()) {
             thankYouMessage.style.display = 'block';
             errorMessage.style.display = 'none';
-            setTimeout(function() {
+            setTimeout(function () {
                 thankYouMessage.style.display = 'none';
             }, 3000);
             feedbackForm.reset();
@@ -40,13 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             thankYouMessage.style.display = 'none';
             errorMessage.style.display = 'block';
-            setTimeout(function() {
+            setTimeout(function () {
                 errorMessage.style.display = 'none';
             }, 3000);
         }
     });
 
-    feedbackForm.addEventListener("input", function() {
+    feedbackForm.addEventListener("input", function () {
         if (allFieldsFilled()) {
             submitButton.removeAttribute("disabled");
         } else {
@@ -68,11 +68,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     executeRating(ratingStars);
 
-    document.querySelector('.close').addEventListener('click', function() {
+    document.querySelector('.close').addEventListener('click', function () {
         document.getElementById('modal').style.display = 'none';
     });
 
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         if (event.target == document.getElementById('modal')) {
             document.getElementById('modal').style.display = 'none';
         }
