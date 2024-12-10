@@ -10,6 +10,7 @@ body {
     min-height: 100vh;
     box-sizing: border-box;
 }
+
 .navbar {
     width: 100%;
     background-color: white;
@@ -20,45 +21,53 @@ body {
     left: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .navbar h1 {
-    font-size: 26px;
+    font-size: 22px;
     color: #C9FF00;
     font-family: 'Climate Crisis', cursive;
     margin: 0;
     font-weight: 400;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 600px;
-    margin-top: 100px;
+    margin-top: 120px; /* Adjust margin for fixed navbar */
     padding: 20px;
+    box-sizing: border-box;
 }
+
 .form-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
+    gap: 20px;
 }
+
 .form-group {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    gap: 20px; /* Equal spacing between inputs */
+    gap: 15px;
 }
+
 .form-group input {
     padding: 12px;
     font-size: 16px;
     border: 2px solid #C9FF00;
     outline: none;
     box-shadow: 3px 3px 0 #000000;
+    border-radius: 5px;
 }
+
 .form-group label {
     font-size: 14px;
     color: black;
 }
+
 .submit-btn {
     background-color: black;
     color: white;
@@ -70,24 +79,31 @@ body {
     margin-bottom: 20px;
     text-transform: uppercase;
     border-radius: 5px;
+    width: 100%;
 }
+
 .submit-btn.active {
     background-color: #C9FF00;
     color: black;
 }
+
 .submission-message {
     font-size: 18px;
     color: green;
     margin-top: 20px;
     display: none; /* Initially hidden */
+    text-align: center;
 }
+
 @media (max-width: 768px) {
     .container {
         padding: 15px;
     }
+
     .navbar h1 {
-        font-size: 22px;
+        font-size: 18px;
     }
+
     .submit-btn {
         font-size: 14px;
         padding: 10px 20px;
