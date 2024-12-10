@@ -29,9 +29,10 @@ async function fetchAllContributors() {
             allContributors = allContributors.concat(contributorsData);
             pageNumber++;
         }
-        allContributors.forEach((contributor) => {
+
+        for (let contributor of allContributors) {
             if (contributor.login === owner) {
-                return;
+                continue;
             }
 
             const contributorCard = document.createElement('div');
@@ -46,10 +47,20 @@ async function fetchAllContributors() {
             loginLink.target = '_blank';
             loginLink.appendChild(avatarImg);
 
+            // Fetch detailed info for the name
+            const contributorDetails = await fetch(contributor.url);
+            const contributorData = await contributorDetails.json();
+            const displayName = contributorData.name || contributor.login;
+
+            const nameDiv = document.createElement('div');
+            nameDiv.classList.add('contributor-name');
+            nameDiv.textContent = displayName;
+
             contributorCard.appendChild(loginLink);
+            contributorCard.appendChild(nameDiv);
 
             cont.appendChild(contributorCard);
-        });
+        }
     } catch (error) {
         console.error(error);
     }

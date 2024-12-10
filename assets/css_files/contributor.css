@@ -85,39 +85,35 @@ body {
 }
 
 #contributor {
-    margin: 34px;
-    padding: 0px 25px;
-    line-height: 10;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px; /* Add some space between the cards */
     justify-content: center;
     align-items: center;
 }
 
 .contributor-card {
-    width: 95px;
-    height: 95px;
-    clip-path: circle(40%);
-    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px; /* Adjust as necessary */
+    margin: 10px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.contributor-card:hover {
-    transform: scale(1.22);
-    opacity: 0.85;
+    text-align: center;
 }
 
 .contributor-card img {
-    width: 100%;
-    height: 100%;
+    width: 95px;
+    height: 95px;
+    clip-path: circle(50%); /* True circle */
     object-fit: cover;
+    display: block;
+    margin-bottom: 10px; /* Add some space below the image */
 }
 
-.contributor-card:nth-child(4n+1),
-.contributor-card:nth-child(4n+3) {
-    margin-top: -4px;
-}
-
-.footer {
-    margin-top: 1em;
+.contributor-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #c9d1d9; /* Ensure visibility */
 }
