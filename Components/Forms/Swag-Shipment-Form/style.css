@@ -1,0 +1,95 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.navbar {
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar h1 {
+    font-size: 26px;
+    color: #C9FF00;
+    font-family: 'Climate Crisis', cursive;
+    margin: 0;
+    font-weight: 400;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 100px;
+    padding: 20px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px; /* Equal spacing between inputs */
+}
+.form-group input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #C9FF00;
+    outline: none;
+    box-shadow: 3px 3px 0 #000000;
+}
+.form-group label {
+    font-size: 14px;
+    color: black;
+}
+.submit-btn {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.submit-btn.active {
+    background-color: #C9FF00;
+    color: black;
+}
+.submission-message {
+    font-size: 18px;
+    color: green;
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .navbar h1 {
+        font-size: 22px;
+    }
+    .submit-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
