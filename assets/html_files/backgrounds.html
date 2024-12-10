@@ -94,10 +94,18 @@
 
         <div class="heading">Backgrounds</div>
         <!-- Search Bar -->
-        <div id="searchBar">
+        <div id="searchBar" style="position: relative;">
+            <!-- Main heading for the search Background -->
             <h1 class="SearchDarkMode">Search Background</h1><br>
-            <input type="text" id="componentSearch" placeholder="Enter Background Name" oninput="filtereachComponents()">
+            <!-- Container for the search input and icon -->
+            <div style="position: relative; display: inline-block;">
+                <!-- Search input field for entering the Background name -->
+                <input type="text" id="componentSearch" placeholder="Enter Background Name" oninput="filtereachComponents()" style="padding-left: 20px;">   
+                <!-- Search icon positioned inside the input field -->
+                <i class="fa fa-search" style="position: absolute; top: 35%; left: 12px; transform: translateY(-50%); color: gray; font-size: 20px;"></i>
+            </div>
         </div>
+        
 
         <div class="no-results">
             <img src="../images/no-results.png" alt="" height="100px" width="100px">
