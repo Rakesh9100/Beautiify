@@ -45,16 +45,10 @@ body {
     color: #fff;
 }
 
-/* .info-title {
-    text-align: left;
-    font-size: 28px;
-    letter-spacing: 0.5px;
-    text-shadow: 1px 2px 2px black;
-} */
 .info-title {
-    font-size:  28px;
-    color: #333;
     text-align: center;
+    font-size: 28px;
+    color: #fff9f9;
     transition: all 0.3s ease-in-out;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -87,6 +81,7 @@ body {
 }
 
 .info-details li i {
+    display: inline-block;
     background: #49025f;
     padding: 9px;
     border-radius: 50%;
@@ -94,6 +89,13 @@ body {
     margin-right: 5px;
     text-shadow: 1px 2px 2px black;
     box-shadow: 1px 1px 2px black;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.info-details li i:hover {
+    transform: translateY(-5px) rotate(10deg);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(255, 255, 255, 0.6);
 }
 
 .info-details li a {
@@ -106,27 +108,6 @@ body {
 .info-details li a:hover {
     color: #f44770;
 }
-
- 
-.socia-ico {
-    display: inline-block;
-    font-size: 14px;
-    color: #e4dee6;
-    background: #0695a5;
-    padding: 11px;
-    border-radius: 50%;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3), -3px -3px 8px rgba(255, 255, 255, 0.5);
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
-}
-
-.socia-ico:hover {
-    transform: translateY(-5px) rotate(10deg);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(255, 255, 255, 0.6);
-    color: #fff;
-    background: #49025f;
-}
-
 
 .social-icons {
     list-style: none;
@@ -156,9 +137,6 @@ body {
     box-shadow: 0 4px 15px rgba(73, 2, 95, 0.8), 0 0 10px rgba(73, 2, 95, 0.5);
     transform: scale(1.1);
 }
-
- 
-
 
 .form-wrap {
     width: 65%;
