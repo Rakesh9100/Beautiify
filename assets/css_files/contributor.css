@@ -87,7 +87,7 @@ body {
 #contributor {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Add some space between the cards */
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -96,24 +96,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px; /* Adjust as necessary */
+    width: 120px; 
     margin: 10px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     text-align: center;
 }
 
+.contributor-card:hover {
+    transform: scale(1.22);
+    opacity: 0.85;
+
 .contributor-card img {
     width: 95px;
     height: 95px;
-    clip-path: circle(50%); /* True circle */
+    clip-path: circle(50%); 
     object-fit: cover;
     display: block;
-    margin-bottom: 10px; /* Add some space below the image */
+    margin-bottom: 10px; 
 }
 
 .contributor-name {
     font-size: 14px;
     font-weight: bold;
     margin-top: 5px;
-    color: #c9d1d9; /* Ensure visibility */
+    color: #c9d1d9;
 }

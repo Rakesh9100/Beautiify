@@ -15,7 +15,6 @@ async function fetchContributors(pageNumber) {
     return contributorsData;
 }
 
-// Function to fetch all contributors
 async function fetchAllContributors() {
     let allContributors = [];
     let pageNumber = 1;
