@@ -1233,47 +1233,28 @@ footer {
 .footer-ul li a:hover::after {
     width: 100%; /* Fully expand the underline */
 }
+
  
 .company-name {
-   
     font-weight: bold;
-    color: #49025f; /* Default color */
-    position: relative;
-    
+    color: #49025f;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     animation: gradientColor 6s infinite alternate;
-    transition: all 0.4s ease-in-out;
-    margin-left: -115px; /* Inline style from the HTML */
-    perspective: 1000px; /* Adds depth for 3D effect */
+    transition: transform 0.4s, text-shadow 0.4s;
+    margin-left: -115px;
+    perspective: 1000px;
 }
 
 .company-name:hover {
     transform: rotateY(15deg) rotateX(5deg) scale(1.2);
-    text-shadow: 5px 5px 15px rgba(73, 2, 95, 0.8), 
-                 0 0 20px rgba(255, 99, 71, 0.6), 
+    text-shadow: 5px 5px 15px rgba(73, 2, 95, 0.8),
+                 0 0 20px rgba(255, 99, 71, 0.6),
                  -5px -5px 15px rgba(0, 255, 255, 0.5);
 }
 
-/* Keyframe animation for a gradient color change */
 @keyframes gradientColor {
-    0% {
-        color: #ff5733;
-        text-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
-    }
-    25% {
-        color: #33ff57;
-        text-shadow: 0 0 10px rgba(51, 255, 87, 0.5);
-    }
-    50% {
-        color: #3357ff;
-        text-shadow: 0 0 15px rgba(51, 87, 255, 0.5);
-    }
-    75% {
-        color: #ff33a1;
-        text-shadow: 0 0 20px rgba(255, 51, 161, 0.5);
-    }
-    100% {
-        color: #ffde33;
-        text-shadow: 0 0 25px rgba(255, 222, 51, 0.5);
-    }
+    0%, 100% { color: #ff5733; text-shadow: 0 0 5px rgba(255, 87, 51, 0.5); }
+    25% { color: #33ff57; text-shadow: 0 0 10px rgba(51, 255, 87, 0.5); }
+    50% { color: #3357ff; text-shadow: 0 0 15px rgba(51, 87, 255, 0.5); }
+    75% { color: #ff33a1; text-shadow: 0 0 20px rgba(255, 51, 161, 0.5); }
 }
