@@ -742,7 +742,9 @@ footer {
 
 .send-message textarea {
     height: 50px;
-    color: #f7f26c;
+    /* Ensured the inputted text color matches the desired style for consistency */
+    /*changed color to black*/
+    color: black;
 }
 
 .send-message button {
