@@ -740,11 +740,8 @@ footer {
     font-size: 16px;
 }
 
-.send-message textarea 
-{
+.send-message textarea {
     height: 50px;
-    /* Ensured the inputted text color matches the desired style for consistency */
-    /*changed color to black*/
     color: black;
 }
 
