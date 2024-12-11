@@ -881,6 +881,11 @@ footer {
     margin-top: 16px;
 }
 
+#searchBar #search-container {
+    position: relative;
+    display: inline-block;
+}
+
 #searchBar button {
     font-size: 2.5rem;
     background: transparent;
@@ -904,7 +909,7 @@ footer {
 #searchBar input {
     font-family: 'Poppins', sans-serif;
     border: 0;
-    padding: 1rem;
+    padding-left: 25px;
     height: 4rem;
     font-size: 2rem;
     text-align: center;
@@ -919,6 +924,17 @@ footer {
 #searchBar input:hover {
     transform: scale(1.02);
     box-shadow: 1px 1px 2px 1px rgba(15, 14, 17, 0.743);
+}
+
+#searchBar .fa-search {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 21px;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .no-results {
