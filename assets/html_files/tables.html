@@ -91,18 +91,15 @@
     </header>
 
     <section>
-
         <div class="heading">Tables</div>
         <!-- Search Bar -->
-        <div id="searchBar" style="position: relative;">
-            <!-- Main heading for the search Tables -->
-            <h1 class="SearchDarkMode">Search Tables</h1><br>
-            <!-- Container for the search input and icon -->
-            <div style="position: relative; display: inline-block;">
-                <!-- Search input field for entering the Tabel name -->
-                <input type="text" id="componentSearch" placeholder="Enter Tabel Name" oninput="filtereachComponents()" style="padding-left: 20px;">
+        <div id="searchBar">
+            <h1 class="SearchDarkMode">Search Table</h1><br>
+            <!-- Search input container -->
+            <div id="search-container">
+                <input type="text" id="componentSearch" placeholder="Enter Table Name" oninput="filtereachComponents()">
                 <!-- Search icon positioned inside the input field -->
-                <i class="fa fa-search" style="position: absolute; top: 35%; left: 12px; transform: translateY(-50%); color: gray; font-size: 20px;"></i>
+                <i class="fa fa-search" style="top: 35%; color: gray;"></i>
             </div>
         </div>
 

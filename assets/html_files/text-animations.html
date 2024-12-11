@@ -91,18 +91,15 @@
     </header>
 
     <section>
-
         <div class="heading">Text Animations</div>
         <!-- Search Bar -->
-        <div id="searchBar" style="position: relative;">
-            <!-- Main heading for the search Text Animation -->
+        <div id="searchBar">
             <h1 class="SearchDarkMode">Search Text Animation</h1><br>
-            <!-- Container for the search input and icon -->
-            <div style="position: relative; display: inline-block;">
-                <!-- Search input field for entering the Text Animation name -->
-                <input type="text" id="componentSearch" placeholder="Enter Text Animation Name" oninput="filtereachComponents()" style="padding-left: 20px;">
+            <!-- Search input container -->
+            <div id="search-container">
+                <input type="text" id="componentSearch" placeholder="Enter Text Animation Name" oninput="filtereachComponents()">
                 <!-- Search icon positioned inside the input field -->
-                <i class="fa fa-search" style="position: absolute; top: 35%; left: 12px; transform: translateY(-50%); color: gray; font-size: 20px;"></i>
+                <i class="fa fa-search" style="top: 35%; color: gray;"></i>
             </div>
         </div>
 
