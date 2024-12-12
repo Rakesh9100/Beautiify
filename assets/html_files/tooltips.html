@@ -95,7 +95,12 @@
         <!-- Search Bar -->
         <div id="searchBar">
             <h1 class="SearchDarkMode">Search Tooltip</h1><br>
-            <input type="text" id="componentSearch" placeholder="Enter Tooltip Name" oninput="filtereachComponents()">
+            <!-- Search input container -->
+            <div id="search-container">
+                <input type="text" id="componentSearch" placeholder="Enter Tooltip Name" oninput="filtereachComponents()">
+                <!-- Search icon positioned inside the input field -->
+                <i class="fa fa-search" style="top: 35%; color: gray;"></i>
+            </div>
         </div>
 
         <div class="no-results">

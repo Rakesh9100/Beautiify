@@ -113,7 +113,12 @@
         <!-- Search Bar -->
         <div id="searchBar">
             <h1>Search Component</h1><br>
-            <input type="text" id="componentSearch" placeholder="Enter Component Name" oninput="filterComponents()">
+            <!-- Search input container -->
+            <div id="search-container">
+                <input type="text" id="componentSearch" placeholder="Enter Component Name" oninput="filterComponents()">
+                <!-- Search icon positioned inside the input field -->
+                <i class="fa fa-search" onmouseover="this.style.color='#007BFF'" onmouseout="this.style.color='#555'"></i>
+            </div>
         </div>
 
         <div class="no-results">

@@ -91,12 +91,16 @@
     </header>
 
     <section>
-
         <div class="heading">Popups</div>
         <!-- Search Bar -->
         <div id="searchBar">
-            <h1 class="SearchDarkMode">Search Popups</h1><br>
-            <input type="text" id="componentSearch" placeholder="Enter Popup Name" oninput="filtereachComponents()">
+            <h1 class="SearchDarkMode">Search Popup</h1><br>
+            <!-- Search input container -->
+            <div id="search-container">
+                <input type="text" id="componentSearch" placeholder="Enter Popup Name" oninput="filtereachComponents()">
+                <!-- Search icon positioned inside the input field -->
+                <i class="fa fa-search" style="top: 35%; color: gray;"></i>
+            </div>
         </div>
 
         <div class="no-results">

@@ -91,13 +91,17 @@
     </header>
 
     <section>
-
         <div class="heading">Backgrounds</div>
         <!-- Search Bar -->
         <div id="searchBar">
             <h1 class="SearchDarkMode">Search Background</h1><br>
-            <input type="text" id="componentSearch" placeholder="Enter Background Name" oninput="filtereachComponents()">
-        </div>
+            <!-- Search input container -->
+            <div id="search-container">
+                <input type="text" id="componentSearch" placeholder="Enter Background Name" oninput="filtereachComponents()">
+                <!-- Search icon positioned inside the input field -->
+                <i class="fa fa-search" style="top: 35%; color: gray;"></i>
+            </div>
+        </div>        
 
         <div class="no-results">
             <img src="../images/no-results.png" alt="" height="100px" width="100px">
