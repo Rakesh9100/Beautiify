@@ -85,9 +85,10 @@ body {
 }
 
 #contributor {
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px; /* Add some space between the cards */
     justify-content: center;
     align-items: center;
 }
@@ -104,20 +105,21 @@ body {
 
 .contributor-card:hover {
     transform: scale(1.22);
-    opacity: 0.85;
+    opacity: 10;
+}
 
 .contributor-card img {
     width: 95px;
     height: 95px;
-    clip-path: circle(50%); 
+    clip-path: circle(50%); /* True circle */
     object-fit: cover;
     display: block;
-    margin-bottom: 10px; 
+    margin-bottom: 10px; /* Add some space below the image */
 }
 
 .contributor-name {
     font-size: 14px;
     font-weight: bold;
     margin-top: 5px;
-    color: #c9d1d9;
+    color: #c9d1d9; /* Ensure visibility */
 }
