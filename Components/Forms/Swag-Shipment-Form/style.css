@@ -1,124 +1,106 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    box-sizing: border-box;
+    color: #fff;
+    flex-direction: column;
 }
 
-.navbar {
-    width: 100%;
-    background-color: #282c34;
-    padding: 15px;
-    text-align: left;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar h1 {
-    font-size: 24px;
-    color: #C9FF00;
-    font-family: 'Climate Crisis', cursive;
-    margin: 0;
+h1 {
+    font-size: 36px;
+    color: #ffe77b;
+    margin-bottom: 20px;
     font-weight: 600;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 25px;
     width: 100%;
     max-width: 600px;
-    margin-top: 140px;
-    padding: 25px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
 }
 
-.form-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.form-group input {
-    padding: 15px;
-    font-size: 16px;
-    border: 2px solid #C9FF00;
-    outline: none;
-    border-radius: 5px;
-    transition: 0.3s;
-    box-shadow: 3px 3px 0px #000; /* Adds the 3D shadow effect */
-}
-
-.form-group input:focus {
-    border-color: #4CAF50;
-    box-shadow: 3px 3px 0px #000, 0 0 10px rgba(76, 175, 80, 0.2); /* Keeps the 3D effect and adds a glow on focus */
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .form-group label {
-    font-size: 18px;
-    color: #333;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.5);
 }
 
 .submit-btn {
-    background-color: #282c34;
-    color: white;
-    padding: 15px 30px;
-    font-size: 16px;
+    background: #2575fc;
+    color: #fff;
+    padding: 15px 20px;
     border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
     border-radius: 5px;
     width: 100%;
-    transition: background-color 0.3s;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .submit-btn:hover {
-    background-color: #4CAF50;
+    background: #6a11cb;
 }
 
-.submit-btn.active {
-    background-color: #C9FF00;
-    color: black;
+.submit-btn:active {
+    transform: scale(0.98);
 }
 
 .submission-message {
-    font-size: 18px;
-    color: #4CAF50;
-    margin-top: 20px;
     display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4caf50;
     text-align: center;
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 15px;
+        padding: 20px;
     }
 
-    .navbar h1 {
-        font-size: 20px;
+    h1 {
+        font-size: 28px;
     }
 
     .submit-btn {
-        font-size: 14px;
-        padding: 10px 20px;
+        font-size: 16px;
+        padding: 12px;
     }
 }

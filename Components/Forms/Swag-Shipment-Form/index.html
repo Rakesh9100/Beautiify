@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Forms</title>
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Swag Shipment Form</title>
 </head>
+
 <body>
-    <div class="navbar">
-        <h1>Open Forms</h1>
-    </div>
+    <h1>Swag Shipment Form</h1>
     <div class="container">
-        <div class="form-container">
+        <form id="shipment-form">
             <div class="form-group">
-                <label for="name">NAME</label>
-                <input id="name" name="name" type="text" />
-                <label for="phone">PHONE NUMBER</label>
-                <input id="phone" name="phone" type="text" />
-                <label for="email">EMAIL</label>
-                <input id="email" name="email" type="text" />
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required />
             </div>
             <div class="form-group">
-                <label for="street-address">STREET ADDRESS</label>
-                <input id="street-address" name="street-address" type="text" />
-                <label for="apartment">APARTMENT/COLONY</label>
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="text" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-group">
+                <label for="street-address">Street Address</label>
+                <input id="street-address" name="street-address" type="text" required />
+            </div>
+            <div class="form-group">
+                <label for="apartment">Apartment/Colony</label>
                 <input id="apartment" name="apartment" type="text" />
-                <label for="city">CITY</label>
-                <input id="city" name="city" type="text" />
-                <label for="state">STATE/PROVINCE/REGION</label>
-                <input id="state" name="state" type="text" />
-                <label for="postal">POSTAL/ZIP</label>
-                <input id="postal" name="postal" type="text" />
-                <label for="country">COUNTRY</label>
-                <input id="country" name="country" type="text" />
-                <label for="landmark">NEAREST LANDMARK</label>
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input id="city" name="city" type="text" required />
+            </div>
+            <div class="form-group">
+                <label for="state">State/Province/Region</label>
+                <input id="state" name="state" type="text" required />
+            </div>
+            <div class="form-group">
+                <label for="postal">Postal/ZIP</label>
+                <input id="postal" name="postal" type="text" required />
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input id="country" name="country" type="text" required />
+            </div>
+            <div class="form-group">
+                <label for="landmark">Nearest Landmark</label>
                 <input id="landmark" name="landmark" type="text" />
             </div>
-        </div>
-        <button class="submit-btn" id="submit-btn">Send Form</button>
+            <button type="submit" class="submit-btn">Send Form</button>
+        </form>
         <div class="submission-message" id="submission-message">Your form has been submitted!</div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
