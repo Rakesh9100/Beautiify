@@ -85,12 +85,16 @@
     </header>
 
     <section>
-
         <div class="heading">Cursors</div>
         <!-- Search Bar -->
         <div id="searchBar">
             <h1 class="SearchDarkMode">Search Cursor</h1><br>
-            <input type="text" id="componentSearch" placeholder="Enter Cursor Name" oninput="filtereachComponents()">
+            <!-- Search input container -->
+            <div id="search-container">
+                <input type="text" id="componentSearch" placeholder="Enter Cursor Name" oninput="filtereachComponents()">
+                <!-- Search icon positioned inside the input field -->
+                <i class="fa fa-search" style="top: 35%; color: gray;"></i>
+            </div>
         </div>
 
         <div class="no-results">

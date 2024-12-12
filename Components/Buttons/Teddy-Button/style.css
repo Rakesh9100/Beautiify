@@ -111,7 +111,6 @@ button .hatch {
     top: 50%;
     height: 75%;
     aspect-ratio: 1;
-    /*	background: red;*/
     display: grid;
     place-items: center;
     translate: -50% -50%;
@@ -121,7 +120,6 @@ button .hatch {
 .ejected {
     height: 100%;
     width: 100%;
-    /*	background: hsl(210 80% 50% / 0.5);*/
     display: inline-block;
     position: relative;
 }

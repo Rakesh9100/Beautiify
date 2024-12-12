@@ -649,6 +649,34 @@ footer {
     padding: 0 20px;
 }
 
+.footer-ul li a {
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+.footer-ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #d31313; /* Color of the underline */
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-ul li a:hover {
+    color: #ec685c; /* Color of the text on hover */
+}
+
+.footer-ul li a:hover::after {
+    width: 100%; /* Fully expand the underline */
+}
+
 .company-info {
     font-weight: 600;
     flex: 1 1 30%;
@@ -665,6 +693,14 @@ footer {
 .company-name {
     font-size: 24px;
     margin-bottom: 10px;
+    align-items: center;
+}
+
+.company-name img {
+    width: 36px;
+    width: 36px;
+    vertical-align: middle;
+    margin-top: -5px;
 }
 
 .company-info p {
@@ -742,7 +778,7 @@ footer {
 
 .send-message textarea {
     height: 50px;
-    color: #f7f26c;
+    color: black;
 }
 
 .send-message button {
@@ -881,6 +917,11 @@ footer {
     margin-top: 16px;
 }
 
+#searchBar #search-container {
+    position: relative;
+    display: inline-block;
+}
+
 #searchBar button {
     font-size: 2.5rem;
     background: transparent;
@@ -904,7 +945,7 @@ footer {
 #searchBar input {
     font-family: 'Poppins', sans-serif;
     border: 0;
-    padding: 1rem;
+    padding-left: 25px;
     height: 4rem;
     font-size: 2rem;
     text-align: center;
@@ -919,6 +960,17 @@ footer {
 #searchBar input:hover {
     transform: scale(1.02);
     box-shadow: 1px 1px 2px 1px rgba(15, 14, 17, 0.743);
+}
+
+#searchBar .fa-search {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 21px;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .no-results {

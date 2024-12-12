@@ -113,7 +113,12 @@
         <!-- Search Bar -->
         <div id="searchBar">
             <h1>Search Component</h1><br>
-            <input type="text" id="componentSearch" placeholder="Enter Component Name" oninput="filterComponents()">
+            <!-- Search input container -->
+            <div id="search-container">
+                <input type="text" id="componentSearch" placeholder="Enter Component Name" oninput="filterComponents()">
+                <!-- Search icon positioned inside the input field -->
+                <i class="fa fa-search" onmouseover="this.style.color='#007BFF'" onmouseout="this.style.color='#555'"></i>
+            </div>
         </div>
 
         <div class="no-results">
@@ -336,7 +341,7 @@
     <footer>
         <div class="footer-container">
             <div class="company-info">
-                <h1 class="company-name heading">Beautiify</h1>
+                <h1 class="company-name heading"><img src="./assets/images/logo.png">Beautiify</h1>
                 <p>
                     Beautiify comprises a curated selection of beautifully designed components and animations that can be seamlessly incorporated into any website, elevating its overall UI experience. Discover elegant buttons, stylish sliders, and captivating animations to elevate your website.
                 </p>
