@@ -65,7 +65,7 @@ function filterComponents() {
 
 // Voice command in search bar feature
 const searchBar = document.querySelector("#searchBar");
-const searchBarInput = searchBar.querySelector("input");
+const searchBarInput = searchBar ? searchBar.querySelector("input") : null;
 
 // The speech recognition interface lives on the browser’s window object
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -76,49 +76,53 @@ if (SpeechRecognition) {
     const recognition = new SpeechRecognition();
     recognition.continuous = true;
 
-    searchBar.insertAdjacentHTML("beforeend", '<button type="button"><i class="fas fa-microphone"></i></button>');
-    searchBarInput.style.paddingRight = "50px";
+    if (searchBar && searchBarInput) {
+        searchBar.insertAdjacentHTML("beforeend", '<button type="button"><i class="fas fa-microphone"></i></button>');
+        searchBarInput.style.paddingRight = "50px";
 
-    const micBtn = searchBar.querySelector("button");
-    const micIcon = micBtn.firstElementChild;
+        const micBtn = searchBar.querySelector("button");
+        const micIcon = micBtn.firstElementChild;
 
-    micBtn.addEventListener("click", micBtnClick);
-    function micBtnClick() {
-        if (micIcon.classList.contains("fa-microphone")) { // Start Voice Recognition
-            recognition.start(); // First time you have to allow access to mic!
+        micBtn.addEventListener("click", micBtnClick);
+
+        function micBtnClick() {
+            if (micIcon.classList.contains("fa-microphone")) { // Start Voice Recognition
+                recognition.start(); // First time you have to allow access to mic!
+            } else {
+                recognition.stop();
+            }
         }
-        else {
-            recognition.stop();
+
+        recognition.addEventListener("start", startSpeechRecognition);
+
+        function startSpeechRecognition() {
+            micIcon.classList.remove("fa-microphone");
+            micIcon.classList.add("fa-microphone-slash");
+            searchBarInput.focus();
+            console.log("Voice activated, SPEAK");
+        }
+
+        recognition.addEventListener("end", endSpeechRecognition);
+
+        function endSpeechRecognition() {
+            micIcon.classList.remove("fa-microphone-slash");
+            micIcon.classList.add("fa-microphone");
+            searchBarInput.focus();
+            console.log("Speech recognition service disconnected");
+        }
+
+        recognition.addEventListener("result", resultOfSpeechRecognition);
+
+        function resultOfSpeechRecognition(event) {
+            const current = event.resultIndex;
+            const transcript = event.results[current][0].transcript;
+            newtranscript = transcript.endsWith('.') ? transcript.slice(0, -1) : transcript;
+            console.log(newtranscript)
+            searchBarInput.value = newtranscript;
+            filterComponents();
         }
     }
-
-    recognition.addEventListener("start", startSpeechRecognition);
-    function startSpeechRecognition() {
-        micIcon.classList.remove("fa-microphone");
-        micIcon.classList.add("fa-microphone-slash");
-        searchFormInput.focus();
-        console.log("Voice activated, SPEAK");
-    }
-
-    recognition.addEventListener("end", endSpeechRecognition);
-    function endSpeechRecognition() {
-        micIcon.classList.remove("fa-microphone-slash");
-        micIcon.classList.add("fa-microphone");
-        searchBarInput.focus();
-        console.log("Speech recognition service disconnected");
-    }
-
-    recognition.addEventListener("result", resultOfSpeechRecognition);
-    function resultOfSpeechRecognition(event) {
-        const current = event.resultIndex;
-        const transcript = event.results[current][0].transcript;
-        newtranscript = transcript.endsWith('.') ? transcript.slice(0, -1) : transcript;
-        console.log(newtranscript)
-        searchBarInput.value = newtranscript;
-        filterComponents();
-    }
-}
-else {
+} else {
     console.log("Your Browser does not support speech Recognition");
     info.textContent = "Your Browser does not support Speech Recognition";
 }
@@ -128,28 +132,38 @@ document.addEventListener("DOMContentLoaded", function () {
     const homeLink = document.querySelector('.nav-menu a[href="#home"]');
     const componentsLink = document.querySelector('.nav-menu a[href="#components"]');
 
+    // Check if elements exist before adding event listeners
     const searchBarSection = document.getElementById('searchBar');
     const componentsSection = document.getElementById('components');
 
-    componentsLink.addEventListener('click', (event) => {
-        event.preventDefault();
-        componentsSection.scrollIntoView({ behavior: 'smooth' });
-        componentsLink.style.color = 'red';
-        homeLink.style.color = '';
-    });
-
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-
-        // Adjust the offset accordingly
-        const componentsSectionTop = componentsSection.offsetTop - 50;
-
-        if (currentScroll >= componentsSectionTop) {
+    if (homeLink && componentsLink && componentsSection) {
+        componentsLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            componentsSection.scrollIntoView({
+                behavior: 'smooth'
+            });
             componentsLink.style.color = 'red';
             homeLink.style.color = '';
-        } else {
-            componentsLink.style.color = '';
-            homeLink.style.color = 'red';
-        }
-    });
+        });
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            // Adjust the offset accordingly
+            const componentsSectionTop = componentsSection.offsetTop - 50;
+
+            if (currentScroll >= componentsSectionTop) {
+                componentsLink.style.color = 'red';
+                homeLink.style.color = '';
+            } else {
+                componentsLink.style.color = '';
+                homeLink.style.color = 'red';
+            }
+        });
+    } else {
+        // If any of the navbar elements are missing, log a warning but don't stop the script
+        if (!homeLink) console.warn("Home link not found");
+        if (!componentsLink) console.warn("Components link not found");
+        if (!componentsSection) console.warn("Components section not found");
+    }
 });
