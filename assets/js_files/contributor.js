@@ -1,39 +1,43 @@
 const cont = document.getElementById('contributor');
-const owner = 'Rakesh9100';
-const repoName = 'Beautiify';
 
 async function fetchContributors(pageNumber) {
     const perPage = 100;
-    const url = `https://api.github.com/repos/${owner}/${repoName}/contributors?page=${pageNumber}&per_page=${perPage}`;
+    const apiUrl = '/.netlify/functions/contributors'; // Netlify serverless function path
 
-    const response = await fetch(url);
+    const response = await fetch(`${apiUrl}?page=${pageNumber}&per_page=${perPage}`);
+    
     if (!response.ok) {
-        throw new Error(`Failed to fetch contributors data. Status code: ${response.status}`);
+        throw new Error(`Failed to fetch the contributors data. Status code: ${response.status}`);
     }
 
     const contributorsData = await response.json();
     return contributorsData;
 }
 
-// Function to fetch all contributors
 async function fetchAllContributors() {
     let allContributors = [];
     let pageNumber = 1;
+    const maxPages = 10;  // Limiting the number of pages to avoid overload (can be adjusted)
 
     try {
-        while (true) {
-            const contributorsData = await fetchContributors(pageNumber);
-            if (contributorsData.length === 0) {
-                break;
-            }
-            allContributors = allContributors.concat(contributorsData);
-            pageNumber++;
+        // Fetch all contributors in parallel using Promise.all()
+        const fetchPromises = [];
+
+        // Fetch data for multiple pages concurrently
+        for (let i = 1; i <= maxPages; i++) {
+            fetchPromises.push(fetchContributors(i));
         }
 
-        for (let contributor of allContributors) {
-            if (contributor.login === owner) {
-                continue;
-            }
+        const contributorsArray = await Promise.all(fetchPromises);
+
+        // Combine all the results
+        contributorsArray.forEach(contributorsData => {
+            allContributors = allContributors.concat(contributorsData);
+        });
+
+        // Display contributor cards
+        allContributors.forEach((contributor) => {
+            if (contributor.login === 'Rakesh9100') return;  // Skip owner
 
             const contributorCard = document.createElement('div');
             contributorCard.classList.add('contributor-card');
@@ -48,21 +52,24 @@ async function fetchAllContributors() {
             loginLink.appendChild(avatarImg);
 
             // Fetch detailed info for the name
-            const contributorDetails = await fetch(contributor.url);
-            const contributorData = await contributorDetails.json();
-            const displayName = contributorData.name || contributor.login;
+            fetch(contributor.url)
+                .then(contributorDetails => contributorDetails.json())
+                .then(contributorData => {
+                    const displayName = contributorData.name || contributor.login;
 
-            const nameDiv = document.createElement('div');
-            nameDiv.classList.add('contributor-name');
-            nameDiv.textContent = displayName;
+                    const nameDiv = document.createElement('div');
+                    nameDiv.classList.add('contributor-name');
+                    nameDiv.textContent = displayName;
 
-            contributorCard.appendChild(loginLink);
-            contributorCard.appendChild(nameDiv);
+                    contributorCard.appendChild(loginLink);
+                    contributorCard.appendChild(nameDiv);
 
-            cont.appendChild(contributorCard);
-        }
+                    cont.appendChild(contributorCard);
+                })
+                .catch(error => console.error('Error fetching the contributor details:', error));
+        });
     } catch (error) {
-        console.error(error);
+        console.error('Error fetching the contributors:', error);
     }
 }
 

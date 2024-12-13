@@ -1,0 +1,15 @@
+{
+  "name": "beautiify",
+  "version": "1.0.0",
+  "description": "Fetch and display GitHub contributors.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["github", "contributors", "fetch"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
