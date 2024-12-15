@@ -10,6 +10,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
+    overflow-x: hidden;
 }
 
 #section-wrapper {
@@ -159,7 +160,7 @@ body {
 
 .form-fields {
     display: table;
-    width: 100%;
+    width: 800px;
     padding: 15px 5px 5px 5px;
 }
 
@@ -180,7 +181,17 @@ body {
 }
 
 .form-group1 {
-    width: 46%;
+    width: 32%;
+    float: left;
+    padding: 0px 30px;
+    margin: 14px 12px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+    border-bottom: 4px solid #49025f;
+}
+.form-group2{
+    width: 67%;
+    height: 200px;
     float: left;
     padding: 0px 30px;
     margin: 14px 12px;
@@ -248,6 +259,7 @@ body {
         margin-top: 5%;
         margin-bottom: 5%;
         top: 0;
+
     }
 
     .info-wrap {
@@ -283,6 +295,69 @@ body {
 
     .submit-button {
         margin: 10px 0px;
+    }
+}
+/* Responsive adjustments for box-wrapper on smaller screens */
+@media screen and (max-width: 480px) {
+    .box-wrapper {
+        width: 95%; /* Almost full width */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 20px; /* Slightly smaller border radius */
+    }
+
+    .info-wrap, 
+    .form-wrap {
+        width: 100%;
+        height: auto; /* Allow natural height */
+        float: none;
+        padding: 20px; /* Reduced padding */
+    }
+
+    .info-wrap {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .form-wrap {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .form-fields {
+        width: 100%; /* Full width */
+        padding: 10px 5px;
+    }
+
+    .form-group1, 
+    .form-group2 {
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+        padding: 0 15px;
+    }
+}
+
+/* For very small screens */
+@media screen and (max-width: 320px) {
+    .box-wrapper {
+        width: 98%; /* Even more full width */
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .info-wrap, 
+    .form-wrap {
+        padding: 15px;
+    }
+
+    .info-title {
+        font-size: 24px;
+    }
+
+    .form-title {
+        font-size: 26px;
     }
 }
 
