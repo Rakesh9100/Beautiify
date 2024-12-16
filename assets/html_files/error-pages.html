@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <link rel="stylesheet" type="text/css" href="../../style.css">
-    <link rel="stylesheet" type="text/css" href="../css_files/faq.css">
     <link rel="stylesheet" type="text/css" href="../css_files/cursor.css">
+    <link rel="stylesheet" type="text/css" href="../css_files/search.css">
+    <link rel="stylesheet" type="text/css" href="../css_files/commonstyle.css">
     <link rel="stylesheet" type="text/css" href="../css_files/progressbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
-    <title>Beautiify | FAQ</title>
+    <title>Beautiify | Error Pages</title>
 </head>
 
 <body>
@@ -50,7 +51,7 @@
         <div class="circle" style="background-color: rgb(96, 0, 95); left: 504px; top: 59px; scale: 0.05;"></div>
     </div>
 
-    <header class="header2">
+    <header class="header3">
         <nav class="navbar">
             <a href="../../index.html">
                 <div class="flex-container">
@@ -73,7 +74,7 @@
                     <a href="./contributor.html" class="nav-link"><i class="fa-solid fa-users"></i> Contributors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" style="color: red;"><i class="fa-solid fa-question-circle"></i> FAQ</a>
+                    <a href="./faq.html" class="nav-link"><i class="fa-solid fa-question-circle"></i> FAQ</a>
                 </li>
                 <li class="nav-item">
                     <a href="./contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
@@ -88,73 +89,50 @@
         </nav>
     </header>
 
-    <!-- FAQ Main -->
-    <main class="faqWrapper">
-        <div class="faqHeading">Frequently Asked Questions</div>
-        <div class="faqs">
-            <div class="faqs_container"></div>
-            <div class="faqs_container"></div>
+    <section>
+        <div class="heading">Error Pages</div>
+        <!-- Search Bar -->
+        <div id="searchBar">
+            <h1 class="SearchDarkMode">Search Error Page</h1><br>
+            <!-- Search input container -->
+            <div id="search-container">
+                <input type="text" id="componentSearch" placeholder="Enter Error Page Name" oninput="filtereachComponents()">
+                <!-- Search icon positioned inside the input field -->
+                <i class="fa fa-search" style="top: 35%; color: gray;"></i>
+            </div>
         </div>
-    </main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="company-info">
-                <h1 class="company-name heading"><img src="../images/logo.png">Beautiify</h1>
-                <p>
-                    Beautiify comprises a curated selection of beautifully designed components and animations that can be seamlessly incorporated into any website, elevating its overall UI experience. Discover elegant buttons, stylish sliders, and captivating animations to elevate your website.
-                </p>
-            </div>
-            <div class="quick-links">
-                <h1 class="heading">Quick Links</h1>
-                <ul class="footer-ul">
-                    <li><a href="../../index.html#home"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="./about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
-                    <li><a href="../../index.html#components"><i class="fa-solid fa-icons"></i> Components</a></li>
-                    <li><a href="./contributor.html"><i class="fa-solid fa-users"></i> Contributors</a></li>
-                    <li><a href="#"><i class="fa-solid fa-question-circle"></i> FAQ</a></li>
-                    <li><a href="./contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
-                </ul>
-            </div>
-            <div class="send-message">
-                <h1 class="heading">Keep In Touch</h1>
-                <form id="contact-form" name="Beautiify Contact" autocomplete="off" netlify>
-                    <div class="form-group group1">
-                        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required oninput="validateName('name')">
-                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required oninput="validateEmail('email')">
-                    </div>
-                    <div class="form-group group1">
-                        <textarea id="message" name="message" placeholder="Leave your message" required></textarea>
-                        <button type="submit">SEND</button>
-                    </div>
-                </form>
-                <div class="social">
-                    <a class="user" href="https://rakesh9100.bio.link/" target="_blank"><i class="fa-solid fa-link"></i></a>
-                    <a class="message" href="mailto:roshanrakesh7362@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                    <a class="linkedin" href="https://www.linkedin.com/in/rakesh-roshan-9100/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a class="github" href="https://www.github.com/Rakesh9100" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                    <a class="instagram" href="https://www.instagram.com/rakesh250602/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="facebook" href="https://www.facebook.com/rakesh6203/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a class="twitter" href="https://twitter.com/rakeshroshan73" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a class="discord" href="https://discord.com/users/944144134950748170" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        <div class="no-results">
+            <img src="../images/no-results.png" alt="" height="100px" width="100px">
+            <h2>Hmmm, we are not getting any result. <br> Our bad - Please try another search!</h2>
+        </div>
+
+        <div class="contain">
+            <div class="box">
+                <h1>404 Error Page</h1>
+                <div class="preview">
+                    <a href="../../Components/Error-Pages/404-Error-Page/index.html" title="Live Preview" target="_blank">
+                        <img src="../images/link.png">
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/Rakesh9100/Beautiify/tree/main/Components/Error-Pages/404-Error-Page" title="Source Code" target="_blank">
+                        <img src="../images/github.png">
+                    </a>
                 </div>
             </div>
         </div>
-        <p class="copyright">Created By Rakesh Roshan ❤️ | ©
-            <script>
-                document.write(new Date().getFullYear());
-            </script>: All Rights Reserved
-        </p>
-    </footer>
+    </section>
 
     <!-- Scroll To Top Button -->
     <div id="progress">
         <span id="progress-value" class="bi bi-arrow-up-short"></span>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../script.js"></script>
-    <script src="../js_files/faq.js"></script>
     <script src="../js_files/cursor.js"></script>
+    <script src="../js_files/search.js"></script>
     <script src="../js_files/commonscript.js"></script>
 </body>
 
