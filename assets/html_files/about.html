@@ -2,19 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../../style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
     <link rel="stylesheet" type="text/css" href="../css_files/about.css">
     <link rel="stylesheet" type="text/css" href="../css_files/cursor.css">
     <link rel="stylesheet" type="text/css" href="../css_files/progressbar.css">
-    <script src="../../script.js"></script>
-    <script src="../js_files/hamburgerMenu.js"></script>
-    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="../../script.js"></script>
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>Beautiify | About</title>
 </head>
 
@@ -96,9 +95,9 @@
     <br>
     <section>
         <div class="image">
-            <img src="../images/about.png" />
+            <img src="../images/about.png">
             <div class="content">
-                <br />
+                <br>
                 <h1 align="center">ABOUT US</h1>
                 <br>
                 <h4><u>Introduction</u>: Welcome to Beautiify! Your source for beautifully crafted web components and
@@ -150,13 +149,13 @@
             </div>
             <div class="send-message">
                 <h1 class="heading">Keep In Touch</h1>
-                <form action="#">
+                <form id="contact-form" name="Beautiify Contact" autocomplete="off" netlify>
                     <div class="form-group group1">
-                        <input type="text" id="name" name="name" placeholder="Enter your name">
-                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required oninput="validateName('name')">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required oninput="validateEmail('email')">
                     </div>
                     <div class="form-group group1">
-                        <textarea id="message" name="message" placeholder="Leave your message"></textarea>
+                        <textarea id="message" name="message" placeholder="Leave your message" required></textarea>
                         <button type="submit">SEND</button>
                     </div>
                 </form>
@@ -185,8 +184,7 @@
     </div>
 
     <script src="../js_files/cursor.js"></script>
-    <script src="../js_files/dark-mode.js"></script>
-    <script src="../js_files/progressBar.js"></script>
+    <script src="../js_files/commonscript.js"></script>
 </body>
 
 </html>
