@@ -1,5 +1,3 @@
-//Custom Cursor
-
 const coords = {
     x: 0,
     y: 0
@@ -7,28 +5,10 @@ const coords = {
 const circles = document.querySelectorAll(".circle");
 
 const colors = [
-    "#3A0088",
-    "#5C0099",
-    "#7D0CB3",
-    "#9F49C6",
-    "#C486D9",
-    "#DEC2EB",
-    "#F2E6FF",
-    "#c38aff",
-    "#ffd0e3",
-    "#ffe5e8",
-    "#c5415d",
-    "#c03b5d",
-    "#b22c5e",
-    "#ac265e",
-    "#9c155f",
-    "#950f5f",
-    "#830060",
-    "#7c0060",
-    "#680060",
-    "#60005f",
-    "#48005f",
-    "#3d005e"
+    "#3A0088", "#5C0099", "#7D0CB3", "#9F49C6", "#C486D9",
+    "#DEC2EB", "#F2E6FF", "#c38aff", "#ffd0e3", "#ffe5e8",
+    "#c5415d", "#c03b5d", "#b22c5e", "#ac265e", "#9c155f",
+    "#950f5f", "#830060", "#7c0060", "#680060", "#60005f"
 ];
 
 circles.forEach(function (circle, index) {
@@ -37,9 +17,23 @@ circles.forEach(function (circle, index) {
     circle.style.backgroundColor = colors[index % colors.length];
 });
 
+function updateCursorPosition(x, y) {
+    coords.x = x;
+    coords.y = y;
+}
+
 window.addEventListener("mousemove", function (e) {
-    coords.x = e.clientX;
-    coords.y = e.clientY;
+    updateCursorPosition(e.clientX, e.clientY);
+});
+
+window.addEventListener("touchstart", function (e) {
+    const touch = e.touches[0];
+    updateCursorPosition(touch.clientX, touch.clientY);
+});
+
+window.addEventListener("touchmove", function (e) {
+    const touch = e.touches[0];
+    updateCursorPosition(touch.clientX, touch.clientY);
 });
 
 function animateCircles() {
@@ -64,22 +58,3 @@ function animateCircles() {
 }
 
 animateCircles();
-
-// Function to toggle dark mode
-function toggleDarkMode() {
-    const isDarkMode = isDarkModePreferred();
-    setDarkModePreference(!isDarkMode);
-    applyDarkModePreference();
-}
-
-// Function to apply dark mode preference
-function applyDarkModePreference() {
-    const isDarkMode = isDarkModePreferred();
-    if (isDarkMode) {
-        document.body.classList.add('dark-mode');
-        document.getElementById('theme-icon').src = 'assets/images/icons8-sun.svg';
-    } else {
-        document.body.classList.remove('dark-mode');
-        document.getElementById('theme-icon').src = 'assets/images/moon_solid.svg';
-    }
-}
