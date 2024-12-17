@@ -48,61 +48,49 @@ const faq = [
     },
 ];
 
-/**
- *
- * @param {MouseEvent} e
- */
+// Create the accordion
+const faqContainer = document.querySelector(".faqs_container");
 
-// The Function to toggle the FAQ Content
-function toggleContent(e) {
-    const content = e.currentTarget.faqContent;
-    content.show = !content.show;
+faq.forEach((item) => {
+    // Create the FAQ item
+    const faqItem = document.createElement("div");
+    faqItem.classList.add("faq");
 
-    content.style.height = content.show
-        ? content.scrollHeight + 20 + `px`
-        : `0px`;
-    content.style.padding = content.show ? `10px 0` : `0`;
-
-    const plus = e.currentTarget.plus;
-    plus.style.transform = content.show ? `rotate(45deg)` : `none`;
-}
-
-// The Template Function for the FAQ
-faq.forEach(function (item, index) {
-    const faqItem = document.createElement(`div`);
-    faqItem.classList.add(`faq`);
+    // Create the title and toggle button
     faqItem.innerHTML = `
-            <div class="faq_title">
-                <span>${item.question}</span>
-                <div class="plusBtn">
-                  <svg
-                  class="plus"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#ff1b82"
-                  viewBox="0 0 16 16"
-                  stroke-width="2"
-                  stroke="#ff1b82"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8 0a.75.75 0 01.75.75v6.5h6.5a.75.75 0 010 1.5h-6.5v6.5a.75.75 0 01-1.5 0v-6.5H.75a.75.75 0 010-1.5h6.5V.75A.75.75 0 018 0z"
-                    />
-                  </svg>
-                <div>
+        <div class="faq_title">
+            <span>${item.question}</span>
+            <div class="plusBtn">
+                <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff1b82" viewBox="0 0 16 16" stroke-width="2" stroke="#ff1b82">
+                    <path fill-rule="evenodd" d="M8 0a.75.75 0 01.75.75v6.5h6.5a.75.75 0 010 1.5h-6.5v6.5a.75.75 0 01-1.5 0v-6.5H.75a.75.75 0 010-1.5h6.5V.75A.75.75 0 018 0z"/>
+                </svg>
             </div>
-        `;
+        </div>
+    `;
 
-    faqItem.plus = faqItem.querySelector(`.plus`);
-
-    const faqContent = document.createElement(`div`);
-    faqContent.classList.add(`faq_content`);
+    // Create the content section
+    const faqContent = document.createElement("div");
+    faqContent.classList.add("faq_content");
     faqContent.innerHTML = item.answer;
+    faqContent.style.height = "0px"; // Start collapsed
     faqItem.appendChild(faqContent);
 
-    faqItem.faqContent = faqContent;
+    // Append to the container
+    faqContainer.appendChild(faqItem);
 
-    faqItem.addEventListener(`click`, toggleContent);
-    document.querySelectorAll(`.faqs_container`)[index % 2].appendChild(faqItem);
+    // Toggle content
+    faqItem.querySelector(".faq_title").addEventListener("click", () => {
+        const allFaqs = document.querySelectorAll(".faq_content");
+        allFaqs.forEach((content) => {
+            if (content !== faqContent) {
+                content.style.height = "0px"; // Collapse others
+                content.parentNode.querySelector(".plus").style.transform = "none"; // Reset plus icon
+            }
+        });
+
+        // Toggle current FAQ
+        const isOpen = faqContent.style.height !== "0px";
+        faqContent.style.height = isOpen ? "0px" : `${faqContent.scrollHeight}px`;
+        faqItem.querySelector(".plus").style.transform = isOpen ? "none" : "rotate(45deg)";
+    });
 });

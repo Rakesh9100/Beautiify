@@ -1285,6 +1285,50 @@ footer {
     }
 }
 
+@media (max-width: 500px) {
+    .company-info {
+        flex: 1 1 100%; /* Make company info take full width */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Split the quick-links into two columns */
+    .footer-ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .send-message {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .group1 {
+        flex-direction: column;
+    }
+
+    .group1 input {
+        margin-bottom: 5px;
+    }
+
+    .send-message input,
+    .send-message textarea {
+        width: 100%;
+        resize: vertical;
+    }
+
+    .social {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .social a {
+        font-size: 2.5rem;
+    }
+}
+
 @media (max-width: 400px) {
     .paragraph {
         width: 100%;

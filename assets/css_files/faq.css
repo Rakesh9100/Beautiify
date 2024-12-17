@@ -49,7 +49,8 @@ body {
 
 .faqs_container {
     height: 100%;
-    width: 100%;
+    width: 80%;
+    padding-left: 20%;
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
