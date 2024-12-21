@@ -1,8 +1,9 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+let canvasRect = canvas.getBoundingClientRect();
+canvas.width = canvasRect.width;
+canvas.height = canvasRect.height;
 
 const colors = ['#FF5733', '#FFBD33', '#33FF57', '#33C5FF', '#7A33FF', '#FF33E9', '#FFE233'];
 
@@ -55,3 +56,9 @@ function animate() {
 }
 
 animate();
+
+window.addEventListener('resize', function() {
+    canvasRect = canvas.getBoundingClientRect();
+    canvas.width = canvasRect.width;
+    canvas.height = canvasRect.height;    
+});
