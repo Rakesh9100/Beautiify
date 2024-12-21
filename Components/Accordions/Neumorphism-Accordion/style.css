@@ -6,6 +6,7 @@ body {
     background: linear-gradient(to right, #19569d, #2ee809);
     font-family: 'Arial', sans-serif;
     color: #394240;
+    font-size: 16px;
 }
 
 #neumorphism {
@@ -17,7 +18,7 @@ body {
 h1 {
     font-family: "Arial Black", sans-serif;
     background: linear-gradient(to right, #7289da, #4e5d94);
-    font-size: 5rem;
+    font-size: 3rem;
     color: #ffffff;
     text-shadow: 2px 2px 3px rgba(232, 212, 212, 0.3);
     -webkit-background-clip: text;
@@ -99,7 +100,6 @@ ul li,
 p {
     color: rgb(14, 14, 138);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
 }
 
 /* Customize the accordion header font and color */
@@ -128,12 +128,15 @@ p {
 /* Customize the accordion body font and color */
 .accordion-body {
     color: #333;
-    font-size: 1rem;
     line-height: 1.5;
     padding: 1rem;
     border: none;
     border-radius: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body p {
+    font-size: 1rem;
 }
 
 /* Customize the accordion item background color */
@@ -143,4 +146,22 @@ p {
     border-radius: 0.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    section#neumorphism {
+        padding: 30px !important;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
+
+    .accordion-body {
+        font-size: 1rem;
+    }
 }
