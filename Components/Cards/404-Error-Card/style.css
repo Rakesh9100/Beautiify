@@ -1,7 +1,11 @@
 body {
-    margin: 100px;
-    padding-left: 415px;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
     background-color: #1679AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main_wrapper {
@@ -494,4 +498,11 @@ body {
 .btnn:active::after {
     transition: 0s;
     transform: translate(0, 5%);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    body {
+        padding: 50px; /* Add padding only for mobile */
+    }
 }
