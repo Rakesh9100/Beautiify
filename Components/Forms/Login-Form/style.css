@@ -1,0 +1,200 @@
+body {
+    background: linear-gradient(to right, #F28383 10%, #9D6CD2 30%, #481EDC 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.login-image {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-button.google {
+    background: linear-gradient(to right, #4285F4, #34A853);
+}
+
+.social-button.facebook {
+    background: linear-gradient(to right, #3b5998, #8b9dc3);
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    color: #0072ff;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+}
+
+.submit-button {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.additional-links {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.additional-links a {
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .social-button {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+
+    .input-field {
+        padding: 8px 8px 8px 35px;
+        font-size: 0.9rem;
+    }
+
+    .submit-button {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .additional-links {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .social-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .input-field {
+        padding: 6px 6px 6px 30px;
+        font-size: 0.8rem;
+    }
+
+    .submit-button {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    .additional-links {
+        font-size: 0.8rem;
+    }
+}

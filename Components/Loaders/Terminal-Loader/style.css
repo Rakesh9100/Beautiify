@@ -1,6 +1,9 @@
 body {
     background-color: #ddd8d8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .terminal-container {
@@ -30,15 +33,27 @@ body {
     align-items: center;
 }
 
-.header .status-indicators {
+.status-indicators {
     display: flex;
     gap: 6px;
 }
 
-.status-indicators span {
+.status-indicators .indicator {
     width: 10px;
     height: 10px;
     border-radius: 50%;
+}
+
+.status-indicators .red {
+    background-color: #ff605c;
+}
+
+.status-indicators .yellow {
+    background-color: #ffbd44;
+}
+
+.status-indicators .green {
+    background-color: #00ca4e;
 }
 
 .header .title {
@@ -85,5 +100,21 @@ body {
     100% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .terminal-box {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .header {
+        font-size: 12px;
+    }
+
+    .loading-text {
+        font-size: 14px;
     }
 }

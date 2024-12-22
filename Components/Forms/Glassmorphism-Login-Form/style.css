@@ -6,6 +6,7 @@
 
 body {
     overflow: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 section {
@@ -13,7 +14,8 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+    position: relative;
 }
 
 section .color {
@@ -62,6 +64,7 @@ section .color:nth-child(3) {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px;
 }
 
 .form {
@@ -147,7 +150,6 @@ section .color:nth-child(3) {
 }
 
 @keyframes animate {
-
     0%,
     100% {
         transform: translateY(-40px);
@@ -193,4 +195,69 @@ section .color:nth-child(3) {
     left: 140px;
     width: 60px;
     height: 60px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    .form h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .form .inputbox input {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .form .inputbox input[type="submit"] {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .forget {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form {
+        padding: 15px;
+    }
+
+    .form h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .form .inputbox input {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .form .inputbox input[type="submit"] {
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .forget {
+        font-size: 12px;
+    }
 }

@@ -20,7 +20,7 @@ nav {
 .nav-item {
     padding: 10px;
     margin: 10px;
-    font-size: 18px;
+    font-size: 1.8vw;
     cursor: pointer;
     transition: transform 0.3s, color 0.3s;
 }
@@ -28,22 +28,18 @@ nav {
 .nav-item:hover {
     transform: scale(1.2);
     color: #e44d26;
-    /* Vibrant color 1 */
 }
 
 .nav-item.animated:nth-child(2):hover {
     color: #1abc9c;
-    /* Vibrant color 2 */
 }
 
 .nav-item.animated:nth-child(3):hover {
     color: #3498db;
-    /* Vibrant color 3 */
 }
 
 .nav-item.animated:nth-child(4):hover {
     color: #f39c12;
-    /* Vibrant color 4 */
 }
 
 @keyframes pulseAnimation {
@@ -62,4 +58,10 @@ nav {
 
 .animated {
     animation: pulseAnimation 1.5s infinite;
+}
+
+@media  (max-width: 768px) {
+    .nav-item {
+        font-size: 3vw;
+    }    
 }

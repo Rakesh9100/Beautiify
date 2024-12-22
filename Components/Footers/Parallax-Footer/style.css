@@ -25,3 +25,9 @@ footer {
     font-size: 100px;
     color: #a22b2f;
 }
+
+@media (max-width: 550px) {
+    footer {
+        font-size: 70px;
+    }
+}

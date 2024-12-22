@@ -1,12 +1,8 @@
 .theme-switch {
     --toggle-size: 15px;
-    /* the size is adjusted using font-size,
-        this is not transform scale,
-        so you can choose any size */
     --container-width: 5.625em;
     --container-height: 2.5em;
     --container-radius: 6.25em;
-    /* radius 0 - minecraft mode :) */
     --container-light-bg: #3D7EAE;
     --container-night-bg: #1D1F2C;
     --circle-container-diameter: 3.375em;
@@ -175,8 +171,6 @@
     transition: var(--transition);
 }
 
-/* actions */
-
 .theme-switch__checkbox:checked+.theme-switch__container {
     background-color: var(--container-night-bg);
 }
@@ -244,12 +238,10 @@
     padding: 24px;
 }
 
-/*checkbox to switch from sign up to login*/
 #chk {
     display: none;
 }
 
-/*Login*/
 .login {
     position: relative;
     width: 100%;
@@ -281,7 +273,6 @@ label {
     border-radius: 4px;
 }
 
-/*Register*/
 .register {
     background: #eee;
     border-radius: 60% / 10%;
@@ -307,7 +298,6 @@ label {
     margin: 5% 0 5%;
 }
 
-/*Button*/
 .form button {
     width: 85%;
     height: 40px;

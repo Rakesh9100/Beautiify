@@ -1,16 +1,25 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../Hover-Button/background.jpeg);
+    background-image: url('assets/background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center;
     background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     text-align: center;
-    margin-top: 360px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn {
@@ -18,12 +27,14 @@ body {
     background: none;
     padding: 10px 20px;
     font-size: 20px;
-    font-family: "montserrat";
+    font-family: "Montserrat", sans-serif;
     cursor: pointer;
     margin: 10px;
     transition: 0.8s;
     position: relative;
     overflow: hidden;
+    display: inline-block;
+    min-width: 200px;
 }
 
 .btn1,
@@ -82,4 +93,20 @@ body {
 .btn3:hover::before,
 .btn4:hover::before {
     height: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
 }

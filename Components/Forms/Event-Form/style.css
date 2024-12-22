@@ -80,7 +80,7 @@ input[type="email"],
 input[type="password"],
 input[type="date"] {
     padding-left: 40px;
-    background: url('icon-placeholder.png') no-repeat 10px center;
+    background: no-repeat 10px center;
     background-size: 20px 20px;
 }
 

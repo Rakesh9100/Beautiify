@@ -14,7 +14,7 @@ body {
 }
 
 .animated-text {
-    font-size: 5em;
+    font-size: clamp(3rem, 10vw, 6rem);
     font-weight: bold;
     text-transform: uppercase;
     color: transparent;

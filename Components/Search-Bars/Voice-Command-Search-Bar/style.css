@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(https://th.bing.com/th/id/R.7e92b105b09f1418a4862a5deb517802?rik=GLopy9vNvziISA&riu=http%3a%2f%2ffc04.deviantart.net%2ffs71%2ff%2f2011%2f079%2fb%2f2%2fanimated_starfield_tile_by_artbit-d3c2ooe.gif&ehk=lNPsBCb4w8VNhqvdYO0p%2f2xQFaXlUBV92Fy8smiJ7Ak%3d&risl=&pid=ImgRaw&r=0);
+    background-image: url('assets/background.gif');
     background-size: contain;
     font-family: 'Montserrat', sans-serif;
     color: #fff;

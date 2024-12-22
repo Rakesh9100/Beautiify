@@ -11,6 +11,8 @@ body {
     font-size: 20px;
     color: white;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .gallery {
@@ -19,16 +21,15 @@ body {
     transform-style: preserve-3d;
     animation: r 15s linear infinite;
     position: relative;
-    margin-top: 150px;
 }
 
 @keyframes r {
     0% {
-        transform: perspective(450px) rotateX(-100deg) rotate(0deg)
+        transform: perspective(450px) rotateX(-100deg) rotate(0deg);
     }
 
     to {
-        transform: perspective(450px) rotateX(-100deg) rotate(-360deg)
+        transform: perspective(450px) rotateX(-100deg) rotate(-360deg);
     }
 }
 
@@ -42,27 +43,27 @@ body {
 }
 
 .gallery>img:nth-child(1) {
-    --_a: 0deg
+    --_a: 0deg;
 }
 
 .gallery>img:nth-child(2) {
-    --_a: 60deg
+    --_a: 60deg;
 }
 
 .gallery>img:nth-child(3) {
-    --_a: 120deg
+    --_a: 120deg;
 }
 
 .gallery>img:nth-child(4) {
-    --_a: 180deg
+    --_a: 180deg;
 }
 
 .gallery>img:nth-child(5) {
-    --_a: 240deg
+    --_a: 240deg;
 }
 
 .gallery>img:nth-child(6) {
-    --_a: 300deg
+    --_a: 300deg;
 }
 
 .gallery::before {
@@ -72,4 +73,25 @@ body {
     clip-path: polygon(50% 0, calc(50% + .866*50%) 25%, calc(50% + .866*50%) 75%, 50% 100%, calc(50% - .866*50%) 75%, calc(50% - .866*50%) 25%);
     background: #99B2B7;
     transform: translateZ(calc(var(--s)/2)) rotate(90deg);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .gallery {
+        --s: 120px;
+    }
+
+    .head {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        --s: 100px;
+    }
+
+    .head {
+        font-size: 16px;
+    }
 }

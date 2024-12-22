@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: skyblue;
 }
 
@@ -20,6 +20,10 @@ body {
     justify-content: flex-end;
 }
 
+.navbar li {
+    position: relative;
+}
+
 .navbar a {
     display: block;
     color: white;
@@ -30,7 +34,7 @@ body {
 
 .navbar a:hover {
     background-color: #ddd;
-    transition: ease-in .5s;
+    transition: ease-in 0.5s;
     color: black;
     box-shadow: 0px 0px 2px 0px black;
 }
@@ -48,15 +52,6 @@ body {
     z-index: 1;
 }
 
-.content {
-    margin-top: 20%;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    align-items: center;
-    text-align: center;
-}
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -72,12 +67,20 @@ body {
     display: block;
 }
 
-@media screen and (max-width: 600px) {
+.content {
+    margin-top: 20%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    text-align: center;
+}
 
-    /* Make the navigation responsive for smaller screens */
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
-        /* Stack items vertically */
+        align-items: center;
     }
 
     .navbar li {
@@ -88,5 +91,17 @@ body {
     .dropdown-content {
         position: static;
         transform: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar a {
+        padding: 14px 20px;
+    }
+
+    .content {
+        margin-top: 30%;
+        font-size: 24px;
     }
 }

@@ -9,6 +9,45 @@ body {
     align-items: center;
 }
 
-.group:hover .bg-green-400 {
+.go-back-button {
+    background-color: white;
+    text-align: center;
+    width: 192px;
+    height: 56px;
+    border-radius: 16px;
+    position: relative;
+    font-family: sans-serif;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 600;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container {
+    background-color: #63f831;
+    border-radius: 16px;
+    height: 56px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    z-index: 10;
+    transition: width 0.5s;
+}
+
+.go-back-button:hover .icon-container {
     width: 184px;
+}
+
+.button-text {
+    transform: translateX(8px);
+    z-index: 5;
 }

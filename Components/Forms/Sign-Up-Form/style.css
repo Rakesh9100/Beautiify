@@ -1,14 +1,149 @@
-html,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    min-height: 100vh;
+    overflow: auto;
+}
+
 body {
     height: 100%;
-    display: flex;
-    justify-content: center;
+    min-height: 100vh;
     align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #F28383 10%, #9D6CD2 30%, #481EDC 90%);
+    color: white;
+    display: flex;
 }
 
 .login-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 90%;
+    width: 100%;
+    max-width: 980px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: visible;
+    height: auto;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.form, .info {
+    background: rgba(0, 0, 50, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form h1, .info h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 30px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.input-group input:focus {
+    background-color: #333;
+    color: white;
+    outline: none;
+    border-color: #00BFFF;
+}
+
+.input-group .icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #00BFFF;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #00BFFF, #00CED1);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #00CED1, #00BFFF);
+}
+
+.info p {
+    font-size: 21px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .form-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        margin-top: 450px;
+    }
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    .form, .info {
+        padding: 20px;
+    }
+
+    .input-group input {
+        padding-left: 35px;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 300px) {
+    .form-container {
+        margin-top: 550px;
+    }
 }

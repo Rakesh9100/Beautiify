@@ -13,7 +13,6 @@ button:focus {
     outline: none;
 }
 
-/* -------- BODY DISPLAY --------- */
 body {
     background-color: #222;
     overflow: hidden;
@@ -68,5 +67,20 @@ body {
 
     100% {
         transform: perspective(50px) rotateX(360deg) rotate(5deg);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container .box span {
+        font-size: 2.5em;
+        transform: translate(-50%, -50%) rotateX(calc(var(--i) * 22.5deg)) translateZ(80px);
+    }
+}
+
+@media (max-width: 480px) {
+    .container .box span {
+        font-size: 1.5em;
+        transform: translate(-50%, -50%) rotateX(calc(var(--i) * 22.5deg)) translateZ(60px);
     }
 }
