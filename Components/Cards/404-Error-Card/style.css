@@ -8,13 +8,6 @@ body {
     align-items: center;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    body {
-        padding: 50px; /* Add padding only for mobile */
-    }
-}
-
 .main_wrapper {
     display: flex;
     align-items: center;
@@ -35,7 +28,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 5em;
-}   
+}
 
 .antenna {
     width: 5em;
@@ -505,4 +498,11 @@ body {
 .btnn:active::after {
     transition: 0s;
     transform: translate(0, 5%);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    body {
+        padding: 50px; /* Add padding only for mobile */
+    }
 }
