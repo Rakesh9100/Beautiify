@@ -11,7 +11,6 @@
         main.toggleClass('menu-active');
         nav.removeClass('menu-hover');
         main.removeClass('menu-hover');
-        console.log(open);
     });
 
     menu.hover(

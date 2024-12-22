@@ -19,6 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     background: var(--bg);
+    overflow: auto;
 }
 
 .inner {
@@ -121,4 +122,22 @@ body {
 
 .outer:not(.active) .text {
     visibility: hidden;
+}
+
+.message {
+    display: none;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 700px) {
+    #container {
+        display: none;
+    }
+
+    .message {
+        display: block;
+    }
 }

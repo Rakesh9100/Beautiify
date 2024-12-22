@@ -1,5 +1,5 @@
 var canvas = document.querySelector("#scene"),
-    ctx = canvas.getContext("2d"),
+    ctx = canvas.getContext("2d", { willReadFrequently: true }),
     particles = [],
     amount = 0,
     mouse = {

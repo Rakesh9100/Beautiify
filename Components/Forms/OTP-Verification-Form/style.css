@@ -10,10 +10,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, sans-serif;
 }
 
 .container {
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
     border: 1px solid black;
     padding: 30px;
     text-align: center;
@@ -36,15 +38,17 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .code {
-    height: 100px;
-    width: 80px;
+    height: 60px;
+    width: 50px;
     border: 1px solid black;
     margin: 5px;
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
+    border-radius: 10px;
 }
 
 .code::-webkit-outer-spin-button,
@@ -56,4 +60,45 @@ body {
 .code:valid {
     border: 1px solid green;
     box-shadow: 0 0 5px green;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .code {
+        height: 50px;
+        width: 40px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container h2 {
+        font-size: 1.2rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+
+    .code {
+        height: 40px;
+        width: 30px;
+        font-size: 1.2rem;
+    }
 }

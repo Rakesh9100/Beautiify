@@ -1,8 +1,12 @@
 body {
     background-color: #f5f5f5;
     padding: 0;
-    margin: 0;
+    margin: 100px 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .circle {
@@ -10,11 +14,7 @@ body {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 200px;
+    position: relative;
     animation: glowC 5s infinite;
 }
 
@@ -110,5 +110,99 @@ body {
 
     100% {
         border-top-color: #3cba54;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .circle {
+        height: 40px;
+        width: 40px;
+    }
+
+    .wifi {
+        height: 120px;
+        width: 120px;
+        border-width: 40px;
+        top: -80px;
+        left: -80px;
+    }
+
+    .wifi:before {
+        height: 260px;
+        width: 260px;
+        border-width: 40px;
+        right: -110px;
+        top: -120px;
+    }
+
+    .wifi:after {
+        height: 410px;
+        width: 410px;
+        border-width: 40px;
+        right: -185px;
+        top: -200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .circle {
+        height: 30px;
+        width: 30px;
+    }
+
+    .wifi {
+        height: 90px;
+        width: 90px;
+        border-width: 30px;
+        top: -60px;
+        left: -60px;
+    }
+
+    .wifi:before {
+        height: 200px;
+        width: 200px;
+        border-width: 30px;
+        right: -85px;
+        top: -90px;
+    }
+
+    .wifi:after {
+        height: 310px;
+        width: 310px;
+        border-width: 30px;
+        right: -140px;
+        top: -150px;
+    }
+}
+
+@media (max-width: 360px) {
+    .circle {
+        height: 20px;
+        width: 20px;
+    }
+
+    .wifi {
+        height: 60px;
+        width: 60px;
+        border-width: 20px;
+        top: -40px;
+        left: -40px;
+    }
+
+    .wifi:before {
+        height: 140px;
+        width: 140px;
+        border-width: 20px;
+        right: -60px;
+        top: -60px;
+    }
+
+    .wifi:after {
+        height: 210px;
+        width: 210px;
+        border-width: 20px;
+        right: -95px;
+        top: -100px;
     }
 }

@@ -1,7 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     font-family: Arial, sans-serif;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
     overflow-x: hidden;
     background-color: rgb(247, 250, 250);

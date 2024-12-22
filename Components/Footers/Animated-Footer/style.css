@@ -25,7 +25,7 @@ body {
     background-position: 50%;
     -webkit-background-size: cover;
     background-size: cover;
-    background-image: url(https://i.imgur.com/YCSYk8J.jpg);
+    background-image: url('assets/image.jpeg');
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
@@ -63,7 +63,6 @@ body {
     background-color: white;
     margin: 10px;
     border-radius: 50%;
-
 }
 
 .socialIcons a i {
@@ -75,7 +74,6 @@ body {
 .socialIcons a:hover {
     background-color: black;
     transition: 0.5s;
-
 }
 
 .socialIcons a:hover i {
@@ -103,7 +101,6 @@ body {
 
 .footerNav ul li a:hover {
     opacity: 1;
-
 }
 
 .footerBottom {
@@ -114,7 +111,6 @@ body {
 
 .footerBottom p {
     color: white;
-
 }
 
 .design {
@@ -123,5 +119,4 @@ body {
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0px 5px'
-
 }

@@ -8,10 +8,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px;
-    gap: 100px;
+    padding: 50px;
+    gap: 50px;
     min-height: 100vh;
-    background: linear-gradient(45deg,#0a2ca8,#0aedb0);
+    background: linear-gradient(45deg, #0a2ca8, #0aedb0);
 }
 
 .heading {
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar.active li {
-    transform: rotate(calc(360deg/ 8 * var(--i)));
+    transform: rotate(calc(360deg / 8 * var(--i)));
 }
 
 .navbar li a {
@@ -53,10 +53,10 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    transform: rotate(calc(360deg/ -8 * var(--i)));
-    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    transform: rotate(calc(360deg / -8 * var(--i)));
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
     color: #111;
-    transform: 0.5s;
+    transition: 0.5s;
 }
 
 .navbar li a:hover {
@@ -76,11 +76,76 @@ body {
     z-index: 10000;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
     font-size: 2em;
     transition: 1.25s;
 }
 
 .navbar.active .toggle {
     transform: rotate(315deg);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        width: 250px;
+        height: 250px;
+    }
+
+    .navbar li {
+        transform-origin: 150px;
+        transform: rotate(0deg) translateX(100px);
+    }
+
+    .navbar li a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .toggle {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .heading {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        width: 200px;
+        height: 200px;
+    }
+
+    .navbar li {
+        transform-origin: 100px;
+        transform: rotate(0deg) translateX(80px);
+    }
+
+    .navbar li a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .toggle {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2em;
+    }
 }

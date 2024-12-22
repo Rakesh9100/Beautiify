@@ -99,3 +99,46 @@ body {
 .nav-items.open .nav-item span {
     display: inline;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .fab {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .nav-item {
+        width: 100px;
+        height: 50px;
+    }
+
+    .nav-item i {
+        font-size: 20px;
+    }
+
+    .nav-item span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fab {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .nav-item {
+        width: 80px;
+        height: 40px;
+    }
+
+    .nav-item i {
+        font-size: 18px;
+    }
+
+    .nav-item span {
+        font-size: 10px;
+    }
+}

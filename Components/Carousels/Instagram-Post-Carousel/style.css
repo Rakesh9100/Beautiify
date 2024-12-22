@@ -84,7 +84,6 @@
 
 :root {
     --light: 0;
-    --light: 0;
     --max-width-post: 420px;
     --primary: hsl(calc(64 + 220 * var(--light)),
             calc(77% - 7% * var(--light)),
@@ -117,6 +116,10 @@ body {
     font-family: "Montserrat", sans-serif;
     color: var(--text-primary);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 @supports (height: 100dvh) {
@@ -141,14 +144,13 @@ h6 {
     display: grid;
     place-items: center;
     height: 100%;
+    width: 100%;
 }
 
 .carousel {
     pointer-events: none;
     position: absolute;
-    -webkit-padding-before: 67px;
     padding-block-start: 67px;
-    -webkit-padding-after: max(24px, calc(29px + var(--font-size-md)));
     padding-block-end: max(24px, calc(29px + var(--font-size-md)));
     perspective: 100px;
     width: 100%;
@@ -156,7 +158,6 @@ h6 {
 
 @media (max-width: 568px) {
     .carousel {
-        -webkit-padding-after: 52px;
         padding-block-end: 52px;
     }
 }
@@ -217,23 +218,23 @@ h6 {
 
 .carousel .item:last-child {
     -webkit-animation-delay: calc(-3.8571428571s * 2);
-    animation-delay: calc(-3.8571428571s * 2);
+    animation-delay: calc(-3.8571428571s * -2);
 }
 
 .carousel img {
     max-width: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
     height: 100%;
 }
 
 .instagram {
-    --pading-horizontal: 16px;
+    --padding-horizontal: 16px;
     --border: 1px solid var(--primary);
     max-width: var(--max-width-post);
     width: 100%;
     border: var(--border);
     border-radius: 20px;
+    background-color: var(--bg);
 }
 
 .instagram__header {
@@ -243,7 +244,7 @@ h6 {
 
 .instagram__header figure {
     padding-block: 0;
-    padding-inline: var(--pading-horizontal);
+    padding-inline: var(--padding-horizontal);
     margin: 0;
     display: flex;
     align-items: center;
@@ -251,10 +252,8 @@ h6 {
 
 .instagram__header figure img {
     border-radius: 50%;
-    -o-object-fit: cover;
     object-fit: cover;
     border: var(--border);
-    -webkit-margin-end: 8px;
     margin-inline-end: 8px;
 }
 
@@ -270,7 +269,7 @@ h6 {
 
 .instagram__buttons {
     padding-block: 12px;
-    padding-inline: var(--pading-horizontal);
+    padding-inline: var(--padding-horizontal);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -308,7 +307,6 @@ h6 {
 }
 
 .instagram__icon--message {
-    -webkit-margin-before: 3px;
     margin-block-start: 3px;
 }
 
@@ -318,4 +316,43 @@ h6 {
 
 .instagram__icon--saved path {
     stroke-width: 2;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .carousel__wrapper {
+        height: 50vh;
+    }
+
+    .instagram__media .img {
+        height: 50vh;
+    }
+
+    .instagram__header figure img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .instagram__icon {
+        font-size: var(--font-size-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel__wrapper {
+        height: 40vh;
+    }
+
+    .instagram__media .img {
+        height: 40vh;
+    }
+
+    .instagram__header figure img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .instagram__icon {
+        font-size: var(--font-size-sm);
+    }
 }

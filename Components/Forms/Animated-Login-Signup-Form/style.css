@@ -427,6 +427,5 @@ form .form-field input:valid~i {
 }
 
 .main-container.animated_signup .form_container.Login {
-    /* transform: rotate(7deg); */
     animation: rotatecard 0.7s ease-in-out forwards;
 }

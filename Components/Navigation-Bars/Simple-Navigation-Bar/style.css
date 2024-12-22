@@ -7,13 +7,19 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    background-color: #f8f8f8;
+}
+
 header {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background: #f8f8f8;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 1em;
+    position: relative;
 }
 
 .Logo {
@@ -24,6 +30,7 @@ header {
 .nav {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 .nav ol {
@@ -32,7 +39,7 @@ header {
 }
 
 .nav ol li {
-    margin: 1em;
+    margin: 0 1em;
 }
 
 .nav ol li a {
@@ -69,61 +76,134 @@ header {
     color: white;
 }
 
-.btn {
-    width: 25px;
-    position: relative;
-    height: 25px;
-    -webkit-appearance: none;
-    appearance: none;
-    cursor: pointer;
+input[type="checkbox"] {
     display: none;
 }
 
-.btn::before {
-    content: "\f0c9";
+.btn {
+    display: none;
+}
+
+/* Hamburger Icon */
+.btn-icon {
+    display: none;
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+}
+
+.btn-icon::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 5px;
     position: absolute;
     top: 0;
     left: 0;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 700;
-    font-size: 2em;
+    transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 1200px) {
+.btn-icon::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Change the hamburger to close (X) icon when checked */
+#toggle-menu:checked + .btn-icon::before {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+#toggle-menu:checked + .btn-icon::after {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+.nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    transform: translateY(-100%);
+    transition: all 0.4s;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle-menu:checked ~ .nav {
+    transform: translateY(0);
+}
+
+.nav ol {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ol li {
+    margin: 1em 0;
+}
+
+.nav ol li a {
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+@media (max-width: 768px) {
     .btn {
-        display: flex;
-        z-index: 100;
+        display: block;
     }
 
-    header {
-        justify-content: space-between;
-        padding: 0 2em;
+    .btn-icon {
+        display: block;
+    }
+
+    .Logo {
+        font-size: 1.2em;
     }
 
     .nav {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
+        display: none;
+    }
+
+    #toggle-menu:checked ~ .nav {
         display: flex;
-        justify-content: center;
-        background: #f8f8f8;
-        transform: translateY(-110%);
-        transition: all 0.4s;
-    }
-
-    input:checked~.nav {
-        transform: translateY(0%);
-    }
-
-    input:checked::before {
-        content: "\f00d";
     }
 }
 
-@media (max-width: 700px) {
+@media (min-width: 768px) {
+    .nav {
+        position: static;
+        transform: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .nav ol {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+    }
+
+    .btn-icon {
+        display: none;
     }
 }

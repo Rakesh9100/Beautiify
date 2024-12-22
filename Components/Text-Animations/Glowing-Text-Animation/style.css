@@ -1,9 +1,5 @@
-@font-face {
-    font-family: Clip;
-    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
-}
-
 body {
+    font-family: "Arial", sans-serif;
     background-color: #141114;
     background-image: linear-gradient(335deg, black 23px, transparent 23px),
         linear-gradient(155deg, black 23px, transparent 23px),
@@ -29,7 +25,7 @@ body {
     top: 50%;
     font-family: "Clip";
     text-transform: uppercase;
-    font-size: 6em;
+    font-size: clamp(3rem, 10vw, 6rem);
     color: #ffe6ff;
     text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
         -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,

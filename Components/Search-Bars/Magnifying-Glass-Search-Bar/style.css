@@ -17,26 +17,6 @@ body .exit {
     transition: 0.4s ease-in-out;
 }
 
-body .exit .inner {
-    position: absolute;
-    width: 90%;
-    max-width: 500px;
-    left: 50%;
-    top: 50%;
-    background: #fff;
-    padding: 2em;
-    box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.1);
-    transform: translateX(-50%) translateY(350%) scale(0.5);
-    transition: 0.7s ease-out;
-    overflow: scroll;
-}
-
-body .exit .inner::-webkit-scrollbar {
-    width: 2px;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-}
 
 body .exit .inner h4 {
     position: absolute;
@@ -48,6 +28,7 @@ body .exit .inner h4 {
     z-index: 2;
     border-radius: 100%;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 body .exit .inner h4:hover {
