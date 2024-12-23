@@ -58,10 +58,6 @@ async function fetchContributors(pageNumber) {
 
         const contributorsData = await response.json();
 
-        /* Dummy data: for testing only, not for production */
-        // const response = await fetch("../dummy/dummyContributors.json");
-        // const contributorsData = await response.json();
-
         // Check if we have more data to load
         hasMore = contributorsData.length === perPage;
         
