@@ -15,12 +15,12 @@ body {
 .spin::before {
     animation: 1.5s linear infinite spinner;
     animation-play-state: inherit;
-    border: solid 5px #cfd0d1;
+    border: solid 10px #cfd0d1;
     border-bottom-color: #1c87c9;
     border-radius: 50%;
     content: "";
-    height: 40px;
-    width: 40px;
+    height: 250px;
+    width: 250px;
     position: absolute;
     top: 50%;
     left: 50%;

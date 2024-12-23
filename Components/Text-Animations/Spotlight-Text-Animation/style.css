@@ -1,11 +1,14 @@
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background: linear-gradient(#f70000, #f89200, #f8f501, #038f00, #0168f8, #a200f7);
 }
 
 h1 {
     font-family: 'Teko', sans-serif;
     text-transform: uppercase;
-    font-size: 10rem;
+    font-size: 10vw;
     text-align: center;
     display: -webkit-flex;
     display: flex;

@@ -12,7 +12,9 @@
 
 html,
 body {
-    height: 99%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 * {
@@ -54,11 +56,8 @@ nav.menu-hover {
 nav h1 {
     z-index: 100;
     display: block;
-    /* position: absolute;
-    top: 0; */
     right: calc(-var(--menuItemHeight));
     height: var(--menuItemHeight);
-    /* width: var(--menuItemHeight); */
     line-height: var(--menuItemHeight);
     font-size: .8em;
     font-weight: 800;
@@ -165,4 +164,35 @@ section h1 {
 section p {
     display: inline-block;
     margin: 16px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    :root {
+        --menuWidth: 12em;
+        --menuItemHeight: 50px;
+    }
+
+    nav h1 {
+        font-size: 0.7em;
+    }
+
+    main section {
+        padding: 1em 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --menuWidth: 10em;
+        --menuItemHeight: 40px;
+    }
+
+    nav h1 {
+        font-size: 0.6em;
+    }
+
+    main section {
+        padding: 1em;
+    }
 }

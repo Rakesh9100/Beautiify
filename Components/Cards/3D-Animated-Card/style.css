@@ -13,7 +13,7 @@ h1 {
 }
 
 .card {
-    background-image: url(https://www.ultimatecarpage.com/images/car/6801/Porsche-911-GT3-68686.jpg);
+    background-image: url('assets/background.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;

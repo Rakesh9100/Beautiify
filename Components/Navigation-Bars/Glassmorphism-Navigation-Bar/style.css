@@ -9,7 +9,7 @@
 
 body {
     min-height: 100vh;
-    background: url("https://img.freepik.com/free-photo/snowy-mountain-peak-starry-galaxy-majesty-generative-ai_188544-9650.jpg?w=826&t=st=1705520065~exp=1705520665~hmac=5dff9c4c1a84cc04fbb44ed2ccb94c989ed021dbbd6a39424c17febe9e797460") no-repeat;
+    background: url("assets/background.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }

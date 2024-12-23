@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+.custom-button {
+    position: relative;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-button i {
+    font-size: 2vw;
+    color: #333;
+}
+
+.custom-button .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.custom-button:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.custom-button:hover {
+    transform: scale(1.1);
+}
+
+.github:hover {
+    background-color: #f2f2f2;
+}
+
+.linkedin:hover {
+    background-color: #0077b5;
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.twitter:hover {
+    background-color: #050709;
+}
+
+.twitter:hover i {
+    color: white;
+}
+
+.instagram:hover {
+    background-color: #c13584;
+}
+
+.youtube:hover {
+    background-color: #cd201f;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .custom-button i {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .custom-button i {
+        font-size: 5vw;
+    }
+}

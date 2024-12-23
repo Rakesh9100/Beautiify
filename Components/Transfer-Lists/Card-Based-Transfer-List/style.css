@@ -9,10 +9,12 @@ body {
     background-color: #f4f4f9;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     margin: 0;
+    overflow-y: auto;
 }
 
 header {
@@ -21,12 +23,12 @@ header {
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif; /* Beautiful font */
+    font-family: 'Roboto', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #6a1b9a; /* Purple color */
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    color: #6a1b9a;
+    margin: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -34,10 +36,11 @@ h1 {
     flex-direction: row;
     gap: 20px;
     align-items: flex-start;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    flex-wrap: wrap;
     padding: 20px;
-    max-width: 1200px; /* Max width to limit the overall width */
+    max-width: 1200px;
     width: 100%;
+    overflow: hidden;
 }
 
 .list-container {
@@ -48,15 +51,15 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Allow containers to grow and shrink as needed */
-    min-width: 300px; /* Minimum width to prevent cramming */
-    max-width: 100%; /* Ensure it does not exceed the container width */
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
 }
 
 .list {
     width: 100%;
     min-height: 250px;
-    border: 2px dashed #6a1b9a; /* Purple border */
+    border: 2px dashed #6a1b9a;
     padding: 10px;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -65,6 +68,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 10px;
+    max-height: 400px;
 }
 
 .card {
@@ -74,21 +78,21 @@ h1 {
     padding: 10px;
     border-radius: 8px;
     cursor: move;
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
     display: flex;
-    align-items: center; /* Center the text vertically */
-    justify-content: center; /* Center the text horizontally */
+    align-items: center;
+    justify-content: center;
     transition: transform 0.2s, background-color 0.2s;
-    overflow: hidden; /* Ensure text fits well inside */
+    overflow: hidden;
 }
 
 .card:hover {
-    background-color: #a94cff; /* Slightly darker purple on hover */
+    background-color: #a94cff;
     transform: scale(1.05);
 }
 
 .card.selected {
-    background-color: #fdaee4; /* Keep selected color as is */
+    background-color: #fdaee4;
 }
 
 .buttons-container {
@@ -109,12 +113,12 @@ button {
 }
 
 button:hover {
-    background-color: #4a148c; /* Darker purple on hover */
+    background-color: #4a148c;
     transform: scale(1.05);
 }
 
 button:active {
-    background-color: #3d1a6b; /* Even darker purple on active */
+    background-color: #3d1a6b;
 }
 
 input[type="text"] {
@@ -128,7 +132,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
     outline: none;
-    border-color: #6a1b9a; /* Purple border on focus */
+    border-color: #6a1b9a;
 }
 
 .list-container div {

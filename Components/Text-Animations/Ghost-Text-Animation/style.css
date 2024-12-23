@@ -13,7 +13,7 @@ body {
     --bkg: #5eb3fd;
     --white: #e7e6e6;
     background-color: var(--white);
-    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    background-image: url("assets/background.png");
 }
 
 .container {
@@ -42,7 +42,7 @@ body {
     width: 8vmin;
     height: 12vmin;
     background-color: var(--white);
-    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    background-image: url("assets/background.png");
     background-image: radial-gradient(ellipse at 35% 40%, #000 8%, transparent 0%),
         radial-gradient(ellipse at 65% 40%, #000 8%, transparent 0%),
         radial-gradient(ellipse at 50% 60%, #000 8%, transparent 0%);
@@ -68,7 +68,7 @@ body {
     position: absolute;
     width: 20%;
     background-color: var(--white);
-    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    background-image: url("assets/background.png");
 }
 
 .ghost div:nth-of-type(1) {

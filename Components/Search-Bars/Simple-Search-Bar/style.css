@@ -1,48 +1,96 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
 body {
-    background: #f2f2f2;
+    background: linear-gradient(135deg, #f06, #4a90e2);
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrap {
+    width: 80%;
+    max-width: 600px;
+    position: relative;
 }
 
 .search {
     width: 100%;
     position: relative;
     display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .searchTerm {
     width: 100%;
     border: 3px solid #00B4CC;
     border-right: none;
-    padding: 5px;
-    height: 20px;
+    padding: 10px;
+    height: 40px;
     border-radius: 5px 0 0 5px;
     outline: none;
     color: #9DBFAF;
+    font-size: 25px;
+    transition: all 0.3s ease;
 }
 
 .searchTerm:focus {
     color: #00B4CC;
+    border-color: #00B4CC;
+    box-shadow: 0 0 5px rgba(0, 180, 204, 0.5);
 }
 
 .searchButton {
-    width: 40px;
-    height: 36px;
-    border: 1px solid #00B4CC;
+    width: 50px;
+    height: 65px;
+    border: 3px solid #00B4CC;
     background: #00B4CC;
     text-align: center;
     color: white;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
+    transition: all 0.3s ease;
 }
 
-/*Resize the wrap to see the search bar change!*/
-.wrap {
-    width: 30%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.searchButton:hover {
+    background: #009bb0;
+    border-color: #009bb0;
+}
+
+@media (max-width: 768px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .searchTerm {
+        font-size: 14px;
+        padding: 8px;
+        height: 36px;
+    }
+
+    .searchButton {
+        width: 45px;
+        height: 56px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrap {
+        width: 95%;
+    }
+
+    .searchTerm {
+        font-size: 12px;
+        padding: 6px;
+        height: 32px;
+    }
+
+    .searchButton {
+        width: 40px;
+        height: 50px;
+        font-size: 16px;
+    }
 }

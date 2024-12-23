@@ -1,78 +1,139 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #363636;
 }
 
 .container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .container .circle {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
 }
 
 .container .circle::before {
-  content: "";
-  position: absolute;
-  inset: 5px;
-  border-radius: 50%;
-  background: #222;
-  opacity: 0.8;
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: #222;
+    opacity: 0.8;
 }
 
 .container .circle::after {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  background: #333;
-  border: 15px solid #4d4c51;
-  border-radius: 50%;
-  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.75), 0 -2px 2px rgba(255, 255, 255, 0.5), inset 0 4px 2px rgba(0, 0, 0, 0.25), inset 0 -2px 2px rgba(255, 255, 255, 0.5);
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #333;
+    border: 15px solid #4d4c51;
+    border-radius: 50%;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.75), 0 -2px 2px rgba(255, 255, 255, 0.5), inset 0 4px 2px rgba(0, 0, 0, 0.25), inset 0 -2px 2px rgba(255, 255, 255, 0.5);
 }
 
 .container .circle .number {
-  position: relative;
-  color: #fff;
-  z-index: 10;
-  line-height: 1em;
-  font-size: 2em;
+    position: relative;
+    color: #fff;
+    z-index: 10;
+    line-height: 1em;
+    font-size: 2em;
 }
 
 .container .circle .number span {
-  font-size: 0.5em;
-  font-weight: 500;
+    font-size: 0.5em;
+    font-weight: 500;
 }
 
 .container .circle h4 {
-  position: relative;
-  color: #fff;
-  z-index: 10;
-  font-weight: 500;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  line-height: 0.6em;
+    position: relative;
+    color: #fff;
+    z-index: 10;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    line-height: 0.6em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        gap: 20px;
+    }
+
+    .container .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container .circle::after {
+        width: 90px;
+        height: 90px;
+        border: 10px solid #4d4c51;
+    }
+
+    .container .circle .number {
+        font-size: 1.5em;
+    }
+
+    .container .circle .number span {
+        font-size: 0.4em;
+    }
+
+    .container .circle h4 {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        gap: 10px;
+    }
+
+    .container .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container .circle::after {
+        width: 70px;
+        height: 70px;
+        border: 8px solid #4d4c51;
+    }
+
+    .container .circle .number {
+        font-size: 1.2em;
+    }
+
+    .container .circle .number span {
+        font-size: 0.3em;
+    }
+
+    .container .circle h4 {
+        font-size: 0.6em;
+    }
 }

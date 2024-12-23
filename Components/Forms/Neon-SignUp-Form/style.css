@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: url(https://i.pinimg.com/originals/c9/8a/63/c98a630219cfe688adbf3ca148012e36.gif);
+    background: url('assets/background.gif');
     background-size: cover;
     margin: 0;
     padding: 0;

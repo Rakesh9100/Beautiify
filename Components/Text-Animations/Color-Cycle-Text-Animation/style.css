@@ -1,3 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.color-cycle-text {
+    font-size: 4vw;
+    animation: colorCycle 3s linear infinite;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
 @keyframes colorCycle {
     0% {
         color: red;
@@ -26,11 +43,4 @@
     100% {
         color: violet;
     }
-}
-
-.color-cycle-text {
-    font-size: 2em;
-    animation: colorCycle 3s linear infinite;
-    text-align: center;
-    margin-top: 20%;
 }

@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg);
+    background-image: url('assets/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -18,20 +18,20 @@ body {
 }
 
 .icons .icon i {
-    font-size: 3rem; /* Set the default font size for icons */
-    transition: all 0.3s ease; /* Add transition for smooth animation */
+    font-size: 3rem;
+    transition: all 0.3s ease;
 }
 
 .icons .icon:hover i {
-    transform: scale(1.2); /* Scale the icon on hover */
+    transform: scale(1.2);
 }
 
 .icons .icon:hover .fab.fa-facebook {
-    color: #3B5998; /* Change to Facebook color on hover */
+    color: #3B5998;
 }
 
 .icons .icon:hover .fa-brands.fa-x-twitter {
-    color: #090e11; /* Change to Twitter color on hover */
+    color: #090e11;
 }
 
 .icons .icon:hover .fa-brands.fa-github {
@@ -49,11 +49,11 @@ body {
     background-clip: text;
     border-radius: 20%;
     transform: scale(1.5);
-    color: transparent; /* Change to Instagram color on hover */
+    color: transparent;
 }
 
 .icons .icon:hover .fab.fa-youtube {
-    color: #C31A1E; /* Change to YouTube color on hover */
+    color: #C31A1E;
 }
 
 .icons .icon:hover .fab.fa-github {
@@ -63,8 +63,6 @@ body {
 .icons .icon:hover .fab.fa-linkedin {
     color: #0077B5;
 }
-
-/* Social-Hovertone-Heading CSS */
 
 .social-hovertone-heading {
     font-family: 'Arial', sans-serif;

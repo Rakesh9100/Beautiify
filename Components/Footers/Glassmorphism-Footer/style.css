@@ -4,11 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-/* background styling */
 body {
     overflow: hidden;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
 }
 
 section {
@@ -16,7 +22,9 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 section .color {
@@ -51,7 +59,6 @@ section .color:nth-child(3) {
     position: relative;
 }
 
-
 .box .square {
     position: absolute;
     backdrop-filter: blur(5px);
@@ -65,16 +72,15 @@ section .color:nth-child(3) {
     animation-delay: calc(-1s * var(--i));
 }
 
-/* for box animation */
+/* Box animation */
 @keyframes animate {
-
     0%,
     100% {
-        transform: translatex(-800px);
+        transform: translateX(-800px);
     }
 
     50% {
-        transform: translatex(800px);
+        transform: translateX(800px);
     }
 }
 
@@ -115,13 +121,12 @@ section .color:nth-child(3) {
     height: 60px;
 }
 
-/* footer styling */
+/* Footer styling */
 .footer {
-    position: absolute;
+    position: relative;
     z-index: 10;
-    bottom: 0;
+    top: 230px;
     width: 100%;
-    min-height: 100px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
@@ -130,7 +135,7 @@ section .color:nth-child(3) {
     backdrop-filter: blur(4px) saturate(200%);
     -webkit-backdrop-filter: blur(4px) saturate(200%);
     background-color: rgba(17, 25, 40, 0.25);
-    border: 2px solid rgba(247, 247, 247, 0.558)
+    border: 2px solid rgba(247, 247, 247, 0.558);
 }
 
 .social-icon,
@@ -181,4 +186,48 @@ section .color:nth-child(3) {
     margin: 15px 0 10px 0;
     font-size: 1rem;
     font-weight: 300;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .social-icon__link {
+        font-size: 1.5rem;
+        margin: 0 8px;
+    }
+
+    .menu__link {
+        font-size: 1rem;
+        margin: 0 8px;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icon__link {
+        font-size: 1.2rem;
+        margin: 0 5px;
+    }
+
+    .menu__link {
+        font-size: 0.9rem;
+        margin: 0 5px;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
 }

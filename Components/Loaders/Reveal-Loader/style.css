@@ -14,12 +14,13 @@ body {
 
 h1 {
     position: relative;
-    font-size: 8em;
+    font-size: 9vw;
     color: #222;
     text-transform: uppercase;
     border-bottom: 16px solid #222;
     letter-spacing: 0.05em;
     line-height: 1.2em;
+    text-align: center;
 }
 
 h1::before {

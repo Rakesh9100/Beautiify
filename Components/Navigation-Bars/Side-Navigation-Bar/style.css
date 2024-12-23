@@ -19,7 +19,7 @@ section {
 
 section h2 {
     color: #fff;
-    font-size: 100px;
+    font-size: 9vw;
     letter-spacing: 5px;
     font-family: 'Francois One', sans-serif;
 }
@@ -54,7 +54,7 @@ section h2 {
 .nav-link {
     color: #fff;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2vw;
 }
 
 .nav-link i {
@@ -87,4 +87,16 @@ section h2 {
 
 .nav-item:hover .title {
     transform: translateX(0);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-link {
+        font-size: 4vw;
+    }  
+}
+
+@media screen and (max-width: 550px) {
+    .nav-link {
+        font-size: 6vw;
+    }  
 }

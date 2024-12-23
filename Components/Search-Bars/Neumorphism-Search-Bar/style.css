@@ -4,24 +4,33 @@ body {
     margin: 0;
     color: #292929;
     background-color: #eaeaea;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .container {
     text-align: center;
     color: #2c3e50;
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 form {
     transition: all 0.5s;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 .finder {
@@ -30,14 +39,16 @@ form {
     border-radius: 15px;
     padding: 8px;
     box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    width: 100%;
 }
 
 .finder__outer {
     display: flex;
-    width: 600px;
-    padding: 1.5rem 2rem;
+    width: 100%;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #ffffff;
+    box-sizing: border-box;
 }
 
 .finder__inner {
@@ -47,25 +58,22 @@ form {
     flex: 1;
 }
 
-.finder__form {
-    flex: 1;
-    height: calc(100% + 3rem);
-}
-
 .finder__input {
-    height: calc(100% + 3rem);
+    height: 100%;
     border: none;
     background-color: transparent;
     outline: none;
     width: 100%;
-    font-size: 1.5rem;
-    letter-spacing: 0.75px;
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+    padding: 0.5rem;
+    box-sizing: border-box;
 }
 
 .finder__icon {
     width: 40px;
     height: 40px;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     transition: all 0.2s;
     box-shadow: inset 0 0 0 20px #292929;
     border-radius: 50%;
@@ -81,10 +89,10 @@ form {
 }
 
 .finder__icon:after {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: #292929;
-    border: 3px solid #f6f5f0;
+    border: 2px solid #f6f5f0;
     top: 50%;
     position: absolute;
     transform: translateY(-50%);
@@ -94,44 +102,55 @@ form {
     border-radius: 50%;
 }
 
-.active .finder__icon:after {
-    border-width: 10px;
-    background-color: #f6f5f0;
-}
-
 .finder__icon:before {
-    width: 4px;
-    height: 13px;
+    width: 3px;
+    height: 10px;
     background-color: #f6f5f0;
     top: 50%;
-    left: 20px;
+    left: 15px;
     transform: rotateZ(45deg) translate(-50%, 0);
     transform-origin: 0 0;
     border-radius: 4px;
 }
 
-.active .finder__icon:before {
-    background-color: #292929;
-    width: 6px;
-    transform: rotateZ(45deg) translate(-50%, 25px);
-}
-
-.processing .finder__icon {
-    transform-origin: 50%;
-    animation: spinner 0.3s linear infinite;
-    animation-delay: 0.5s;
-}
-
-.active .finder__icon {
-    transform: translateY(-5px);
-}
-
-@keyframes spinner {
-    0% {
-        transform: rotateZ(45deg);
+@media (max-width: 768px) {
+    .finder__outer {
+        padding: 1rem;
     }
 
-    100% {
-        transform: rotateZ(405deg);
+    .finder__input {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .finder__outer {
+        padding: 0.75rem;
+    }
+
+    .finder__input {
+        font-size: 1rem;
+    }
+
+    .finder__icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .finder__icon:after {
+        width: 8px;
+        height: 8px;
+        border: 2px solid #f6f5f0;
+    }
+
+    .finder__icon:before {
+        width: 3px;
+        height: 10px;
+        left: 15px;
+    }
+
+    .active .finder__icon:before {
+        width: 4px;
+        transform: rotateZ(45deg) translate(-50%, 20px);
     }
 }

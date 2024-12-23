@@ -169,3 +169,76 @@ body {
         fill: none;
     }
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .loader_center {
+        width: 30px;
+        height: 30px;
+    }
+
+    .wave {
+        width: 15px;
+        height: 15px;
+    }
+
+    @keyframes outside_grow {
+        from {
+            width: 15px;
+            height: 15px;
+        }
+
+        to {
+            width: 600px;
+            height: 600px;
+        }
+    }
+
+    @keyframes inside_grow {
+        from {
+            width: 0px;
+            height: 0px;
+        }
+
+        to {
+            width: 580px;
+            height: 580px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .loader_center {
+        width: 20px;
+        height: 20px;
+    }
+
+    .wave {
+        width: 10px;
+        height: 10px;
+    }
+
+    @keyframes outside_grow {
+        from {
+            width: 10px;
+            height: 10px;
+        }
+
+        to {
+            width: 400px;
+            height: 400px;
+        }
+    }
+
+    @keyframes inside_grow {
+        from {
+            width: 0px;
+            height: 0px;
+        }
+
+        to {
+            width: 380px;
+            height: 380px;
+        }
+    }
+}

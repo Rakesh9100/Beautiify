@@ -506,3 +506,10 @@ body {
     transition: 0s;
     transform: translate(0, 5%);
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    body {
+        padding: 50px; /* Add padding only for mobile */
+    }
+}

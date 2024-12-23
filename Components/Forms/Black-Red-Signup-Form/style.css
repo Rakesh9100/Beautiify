@@ -15,10 +15,8 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    color: black;
-    /* Changing navbar text color to black */
 }
 
 .container {
@@ -37,12 +35,13 @@ nav ul {
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 200px;
-
+    margin: 0 15px;
 }
 
 nav ul li:last-child {
@@ -51,22 +50,24 @@ nav ul li:last-child {
 
 nav ul li a {
     color: #fff;
-    /* Changing navbar link color to white */
     text-decoration: none;
     font-weight: bold;
 }
 
 .main-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
 }
 
-.contact-form {
-    width: 45%;
+.contact-form,
+.contact-info {
+    width: 100%;
+    max-width: 45%;
+    margin: 10px auto;
 }
-
 
 .contact-form form {
     max-width: 300px;
@@ -77,7 +78,6 @@ nav ul li a {
     display: block;
     margin-bottom: 5px;
     color: white;
-    /* Changing form label color to red */
 }
 
 .contact-form input,
@@ -97,7 +97,6 @@ nav ul li a {
 }
 
 .contact-info {
-    width: 45%;
     font-size: 1.2rem;
 }
 
@@ -105,14 +104,13 @@ nav ul li a {
     margin-top: 20px;
     font-family: 'Dancing Script', cursive;
     color: red;
-    /* Changing contact info heading color to red */
 }
 
 h2 {
     font-family: 'Dancing Script', cursive;
     color: red;
     margin-top: 20px;
-    margin-left: 15%;
+    text-align: center;
     font-size: 2.8rem;
 }
 
@@ -123,4 +121,48 @@ h2 {
 
 .contact-info ul li {
     margin-bottom: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form,
+    .contact-info {
+        max-width: 90%;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form form {
+        max-width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 6px;
+    }
+
+    .contact-form input[type="submit"] {
+        padding: 10px;
+    }
+
+    .contact-info {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
 }

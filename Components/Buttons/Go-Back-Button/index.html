@@ -1,20 +1,23 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Go Back Button</title>
 </head>
+
 <body>
-    <button type="button" class="bg-white text-center w-48 rounded-2xl h-14 relative font-sans text-black text-xl font-semibold group overflow-hidden">
-        <div class="bg-green-400 rounded-xl h-14 w-1/4 flex items-center justify-center absolute left-1 top-0 group-hover:w-[184px] z-10 duration-500">
+    <button type="button" class="go-back-button">
+        <div class="icon-container">
             <svg width="20px" height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#000000" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path>
                 <path fill="#000000" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path>
             </svg>
         </div>
-        <p class="translate-x-2">Go Back</p>
+        <p class="button-text">Go Back</p>
     </button>
 </body>
+
 </html>
