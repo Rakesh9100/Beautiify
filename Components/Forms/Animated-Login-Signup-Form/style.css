@@ -1,201 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Slab', serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
 }
 
 body {
-    background: linear-gradient(109.6deg, rgb(96, 158, 155) 11.2%, rgb(72, 81, 160) 91.1%);
-    min-height: 100vh;
-    display: grid;
-    place-content: center;
-    overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    109.6deg,
+    rgb(96, 158, 155) 11.2%,
+    rgb(72, 81, 160) 91.1%
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .main-container .circle1 {
-    display: flex;
-    background-color: rgba(245, 245, 245, 0.53);
-    border-radius: 50%;
-    height: 10rem;
-    width: 10rem;
-    position: relative;
-    right: 70%;
-    top: 5%;
+  position: absolute;
+  left: -15%;
+  top: 10%;
+  width: 8rem;
+  height: 8rem;
+  background-color: rgba(245, 245, 245, 0.53);
+  border-radius: 50%;
 }
 
 .circle1_child1 {
-    height: 4rem;
-    width: 4rem;
-    background-color: rgba(245, 245, 245, 0.53);
-    border-radius: 50%;
-    position: relative;
-    left: 120%;
-    top: 1%;
+  position: absolute;
+  left: 110%;
+  top: -10%;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(245, 245, 245, 0.53);
+  border-radius: 50%;
 }
 
 .circle1_child2 {
-    height: 6rem;
-    width: 6rem;
-    background-color: rgba(245, 245, 245, 0.53);
-    border-radius: 50%;
-    position: relative;
-    left: 30%;
-    top: 100%;
+  position: absolute;
+  left: 80%;
+  top: 90%;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(245, 245, 245, 0.53);
+  border-radius: 50%;
 }
 
 .circle1_child3 {
-    height: 2.3rem;
-    width: 2.3rem;
-    background-color: rgba(245, 245, 245, 0.53);
-    border-radius: 50%;
-    position: absolute;
-    left: -65%;
-    top: 38%;
+  position: absolute;
+  left: -20%;
+  top: 40%;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(245, 245, 245, 0.53);
+  border-radius: 50%;
 }
 
 .main-container .circle2 {
-    display: flex;
-    background-color: rgba(245, 245, 245, 0.53);
-    border-radius: 50%;
-    height: 10rem;
-    width: 10rem;
-    position: relative;
-    left: 135%;
-    top: 35%;
+  position: absolute;
+  right: -15%;
+  bottom: 10%;
+  width: 8rem;
+  height: 8rem;
+  background-color: rgba(245, 245, 245, 0.53);
+  border-radius: 50%;
 }
 
 .circle2_child1 {
-    height: 4rem;
-    width: 4rem;
-    background-color: rgba(245, 245, 245, 0.53);
-    border-radius: 50%;
-    position: relative;
-    right: 62%;
-    bottom: 19%;
+  position: absolute;
+  right: 110%;
+  bottom: -10%;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(245, 245, 245, 0.53);
+  border-radius: 50%;
 }
 
 .circle2_child2 {
-    height: 6rem;
-    width: 6rem;
-    background-color: rgba(245, 245, 245, 0.53);
-    border-radius: 50%;
-    position: relative;
-    right: 98%;
-    bottom: -71%;
+  position: absolute;
+  right: 80%;
+  bottom: 90%;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(245, 245, 245, 0.53);
+  border-radius: 50%;
 }
 
 .circle2_child3 {
-    height: 2.3rem;
-    width: 2.3rem;
-    background-color: rgba(245, 245, 245, 0.53);
-    border-radius: 50%;
-    position: absolute;
-    right: -55%;
-    bottom: -3%;
+  position: absolute;
+  right: -20%;
+  bottom: 40%;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(245, 245, 245, 0.53);
+  border-radius: 50%;
 }
 
 .OR {
-    position: absolute;
-    top: 51%;
-    left: 45%;
-    font-size: 1.7rem;
-    font-weight: 600;
+  position: absolute;
+  top: 51%;
+  left: 45%;
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
 .google {
-    height: 3rem;
-    width: 25rem;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 3rem;
+  width: 25rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .google .content-photo1 {
-    z-index: 20;
-    position: relative;
-    display: inline-block;
+  z-index: 20;
+  position: relative;
+  display: inline-block;
 }
 
 .content-photo1 img {
-    height: 2rem;
-    width: 2rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .google .content-photo2 {
-    z-index: -1;
-    display: none;
-    height: 100%;
-    width: 100%;
-    background: black;
+  z-index: -1;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: black;
 }
 
 .content-photo2 img {
-    height: 2rem;
-    width: 2rem;
-    margin-top: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  margin-top: 0.5rem;
 }
 
 .google .content-photo2 span {
-    color: white;
-    margin-left: 1rem;
-    font-size: 1.4rem;
-    position: relative;
-    bottom: 15%;
+  color: white;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  position: relative;
+  bottom: 15%;
 }
 
 .google:hover .content-photo1 {
-    display: none;
-    z-index: -1;
+  display: none;
+  z-index: -1;
 }
 
 .google:hover .content-photo2 {
-    display: block;
-    z-index: 1;
+  display: block;
+  z-index: 1;
 }
 
 .content-photo2-facebook {
-    z-index: -1;
-    display: none;
-    height: 100%;
-    width: 100%;
-    background: rgb(51, 51, 197);
+  z-index: -1;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: rgb(51, 51, 197);
 }
 
 .content-photo2-facebook img {
-    height: 2rem;
-    width: 2rem;
-    margin-top: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  margin-top: 0.5rem;
 }
 
 .content-photo2-facebook span {
-    color: white;
-    margin-left: 1rem;
-    font-size: 1.4rem;
-    position: relative;
-    bottom: 15%;
+  color: white;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  position: relative;
+  bottom: 15%;
 }
 
 .google:hover .content-photo1 {
-    display: none;
-    z-index: -1;
+  display: none;
+  z-index: -1;
 }
 
 .google:hover .content-photo2-facebook {
-    display: block;
-    z-index: 1;
+  display: block;
+  z-index: 1;
 }
 
 .main-container {
-    position: relative;
-    width: 30rem;
-    height: 36rem;
-    text-align: center;
+  position: relative;
+  width: min(90%, 30rem);
+  height: 36rem;
+  perspective: 1000px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* @media(min-width:540px){
@@ -204,228 +214,233 @@ body {
     }
 } */
 .main-container .Login {
-    overflow: auto;
+  overflow: auto;
 }
 
 .main-container .Sign_Up {
-    overflow: auto;
+  overflow: auto;
 }
 
 .main-container .Sign_Up form h2 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 2.1rem;
-    color: rgba(0, 0, 0, 0.811);
-    margin-top: 3rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2.1rem;
+  color: rgba(0, 0, 0, 0.811);
+  margin-top: 3rem;
 }
 
 .OR2 {
-    position: absolute;
-    top: 61%;
-    left: 45%;
-    font-size: 1.7rem;
-    font-weight: 600;
-    height: 2rem;
-    width: 2rem;
-    padding-bottom: 2rem;
+  position: absolute;
+  top: 61%;
+  left: 45%;
+  font-size: 1.7rem;
+  font-weight: 600;
+  height: 2rem;
+  width: 2rem;
+  padding-bottom: 2rem;
 }
 
 .main-container .form_container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: whitesmoke;
-    box-shadow: 0 0 65px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  box-shadow: 0 0 65px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
 }
 
 .main-container .form_container form h2 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 2.1rem;
-    color: rgba(0, 0, 0, 0.811);
-    margin-top: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2.1rem;
+  color: rgba(0, 0, 0, 0.811);
+  margin-top: 2rem;
 }
 
 .main-container .form_container form .form-field {
-    position: relative;
-    width: 25rem;
-    margin: 3rem 0;
-    border-bottom: 1px solid black;
+  position: relative;
+  width: 25rem;
+  margin: 3rem 0;
+  border-bottom: 1px solid black;
 
-
-    /* position: relative;
+  /* position: relative;
     width: 40rem;*/
-    /* left: 25%;
+  /* left: 25%;
     height: 4rem; */
 }
 
 .main-container .form_container form .form-field i,
 .main-container .form_container form .form-field label {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0.9rem;
-    text-transform: capitalize;
-    padding: 0 .5rem;
-    pointer-events: none;
-    transition: all .5s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  padding: 0 0.5rem;
+  pointer-events: none;
+  transition: all 0.5s ease;
 }
 
 .main-container .form_container form .form-field i {
-    left: 0.1rem;
-    font-size: 15px;
+  left: 0.1rem;
+  font-size: 15px;
 }
 
 .main-container .form_container form .form-field label {
-    left: 1.3rem;
+  left: 1.3rem;
 }
 
 .main-container .form_container form .form-field input {
-    width: 100%;
-    height: 2.2rem;
-    padding: 0 1rem;
-    border-radius: 0.5rem;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    background: transparent;
+  width: 100%;
+  height: 2.2rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
 }
 
-form .form-field input:focus~label,
-form .form-field input:valid~label,
-form .form-field input:focus~i,
-form .form-field input:valid~i {
-    top: 0 !important;
-    font-size: 0.7rem !important;
+form .form-field input:focus ~ label,
+form .form-field input:valid ~ label,
+form .form-field input:focus ~ i,
+form .form-field input:valid ~ i {
+  top: 0 !important;
+  font-size: 0.7rem !important;
 }
 
 .main-container .form_container form .form-forget {
-    margin: -1.5rem 0 1.5rem;
-    margin-top: 2.5rem;
-
+  margin: -1.5rem 0 1.5rem;
+  margin-top: 2.5rem;
 }
 
 .main-container .form_container form .form-forget a {
-    text-decoration: none;
-    color: black;
-    opacity: 0.9;
-    text-transform: capitalize;
-    transform: all .5s ease;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+  text-transform: capitalize;
+  transform: all 0.5s ease;
 }
 
 .main-container .form_container form .form-forget a:hover {
-    color: rgb(128, 63, 188);
+  color: rgb(128, 63, 188);
 }
 
 .main-container .form_container form .Login_button {
-    width: 100%;
-    height: 3rem;
-    background: linear-gradient(109.6deg, rgb(95, 186, 181) 11.2%, rgb(72, 81, 160) 91.1%);
-    /* background: linear-gradient(to right,rgb(102, 179, 209) 30% , rgb(198, 40, 198) 70%); */
-    border: none;
-    font-size: 1.3rem;
-    font-weight: 500;
-    border-radius: 1rem;
-    cursor: pointer;
-    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 3rem;
+  background: linear-gradient(
+    109.6deg,
+    rgb(95, 186, 181) 11.2%,
+    rgb(72, 81, 160) 91.1%
+  );
+  /* background: linear-gradient(to right,rgb(102, 179, 209) 30% , rgb(198, 40, 198) 70%); */
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.4);
 }
 
 .main-container .form_container form .Login_button:hover {
-    background: linear-gradient(109.6deg, rgb(68, 142, 137) 11.2%, rgb(62, 70, 148) 91.1%);
+  background: linear-gradient(
+    109.6deg,
+    rgb(68, 142, 137) 11.2%,
+    rgb(62, 70, 148) 91.1%
+  );
 }
 
 .main-container .form_container form .signup-link {
-    margin: 2rem 0;
-    color: cadetblue;
+  margin: 2rem 0;
+  color: cadetblue;
 }
 
 .main-container .form_container form .signup-link a {
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: capitalize;
-    transition: all .5s ease;
-    color: darkmagenta;
-
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  color: darkmagenta;
 }
 
 .main-container .form_container form .signup-link a:hover {
-    color: darkorchid;
+  color: darkorchid;
 }
 
 #check:checked {
-    color: blue;
+  color: blue;
 }
 
 .show_password {
-    position: relative;
-    right: 30%;
-    bottom: 50%;
-    margin-bottom: 5rem;
-    opacity: 0.8;
+  position: relative;
+  right: 30%;
+  bottom: 50%;
+  margin-bottom: 5rem;
+  opacity: 0.8;
 }
 
 .main-container .Sign_Up {
-    transform: rotate(7deg);
+  transform: rotate(7deg);
 }
 
 .main-container.animated_signin .form_container.Login {
-    animation: signin 0.5s ease-in-out forwards;
+  animation: signin 0.5s ease-in-out forwards;
 }
 
 @keyframes signin {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    50% {
-        transform: translateX(-50rem);
-    }
+  50% {
+    transform: translateX(-50rem);
+  }
 
-    100% {
-        transform: translateX(0) rotate(7deg);
-    }
+  100% {
+    transform: translateX(0) rotate(7deg);
+  }
 }
 
 .main-container.animated_signin .form_container.Sign_Up {
-    animation: rotatecard 0.7s ease-in-out forwards;
+  animation: rotatecard 0.7s ease-in-out forwards;
 }
 
 @keyframes rotatecard {
-    0% {
-        transform: rotate(7deg);
-    }
+  0% {
+    transform: rotate(7deg);
+  }
 
-    100% {
-        transform: rotate(0);
-        z-index: 1;
-    }
+  100% {
+    transform: rotate(0);
+    z-index: 1;
+  }
 }
 
 .main-container.animated_signup .form_container.Sign_Up {
-    animation: signup 0.5s ease-in-out forwards;
+  animation: signup 0.5s ease-in-out forwards;
 }
 
 @keyframes signup {
-    0% {
-        transform: translateX(0);
-        z-index: 1;
-    }
+  0% {
+    transform: translateX(0);
+    z-index: 1;
+  }
 
-    50% {
-        transform: translateX(50rem);
-    }
+  50% {
+    transform: translateX(50rem);
+  }
 
-    100% {
-        transform: translateX(0) rotate(7deg);
-    }
+  100% {
+    transform: translateX(0) rotate(7deg);
+  }
 }
 
 .main-container.animated_signup .form_container.Login {
-    animation: rotatecard 0.7s ease-in-out forwards;
+  animation: rotatecard 0.7s ease-in-out forwards;
 }
