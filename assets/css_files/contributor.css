@@ -101,6 +101,8 @@ body {
     margin: 10px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     text-align: center;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
 }
 
 .contributor-card:hover {
@@ -122,4 +124,45 @@ body {
     font-weight: bold;
     margin-top: 5px;
     color: #c9d1d9; /* Ensure visibility */
+}
+
+.lazy {
+    filter: blur(5px);
+    transition: filter 0.3s;
+}
+
+.lazy.loaded {
+    filter: blur(0);
+}
+
+#loading-spinner {
+    text-align: center;
+    padding: 20px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#error-message {
+    color: red;
+    text-align: center;
+    padding: 20px;
+    display: none;
 }
