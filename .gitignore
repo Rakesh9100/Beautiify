@@ -20,3 +20,6 @@ yarn-error.log*
 # Linux/Mac temporary files
 *.swp
 *.swo
+
+# testing files
+dummy/
