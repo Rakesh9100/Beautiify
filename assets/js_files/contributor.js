@@ -102,23 +102,23 @@ async function displayContributors(contributors) {
         loginLink.target = '_blank';
         loginLink.appendChild(avatarImg);
 
-        try {
-            // Fetch detailed info for the name
-            const displayName = contributor.login;
+        const displayName = contributor.login;
 
-            const nameDiv = document.createElement('div');
-            nameDiv.classList.add('contributor-name');
-            nameDiv.textContent = displayName;
+        const nameDiv = document.createElement('div');
+        nameDiv.classList.add('contributor-name');
+        nameDiv.textContent = displayName;
 
-            contributorCard.appendChild(loginLink);
-            contributorCard.appendChild(nameDiv);
-            fragment.appendChild(contributorCard);
+        const contributionsCountBubbleDiv = document.createElement('div');
+        contributionsCountBubbleDiv.classList.add('contributions-count-bubble');
+        contributionsCountBubbleDiv.textContent = contributor.contributions;
 
-            // Observe the image for lazy loading
-            lazyLoadObserver.observe(avatarImg);
-        } catch (error) {
-            console.error('Error fetching contributor details:', error);
-        }
+        contributorCard.appendChild(loginLink);
+        contributorCard.appendChild(nameDiv);
+        contributorCard.appendChild(contributionsCountBubbleDiv);
+        fragment.appendChild(contributorCard);
+
+        // Observe the image for lazy loading
+        lazyLoadObserver.observe(avatarImg);
     }
 
     cont.appendChild(fragment);

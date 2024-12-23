@@ -126,6 +126,22 @@ body {
     color: #c9d1d9; /* Ensure visibility */
 }
 
+.contributions-count-bubble {
+    font-size: 12px;
+    color: #c9d1d9;
+    background-color: #3A0088;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -130px;
+    right: -40px;
+}
+
 .lazy {
     filter: blur(5px);
     transition: filter 0.3s;
