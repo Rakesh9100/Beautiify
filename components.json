@@ -1,0 +1,112 @@
+[
+    {
+        "href": "./assets/html_files/accordions.html",
+        "icon": "fas fa-square-plus",
+        "title": "Accordions"
+    },
+    {
+        "href": "./assets/html_files/backgrounds.html",
+        "icon": "fas fa-palette",
+        "title": "Backgrounds"
+    },
+    {
+        "href": "./assets/html_files/breadcrumbs.html",
+        "icon": "fas fa-caret-right",
+        "title": "Breadcrumbs"
+    },
+    {
+        "href": "./assets/html_files/buttons.html",
+        "icon": "fas fa-bold",
+        "title": "Buttons"
+    },
+    {
+        "href": "./assets/html_files/cards.html",
+        "icon": "fas fa-id-card",
+        "title": "Cards"
+    },
+    {
+        "href": "./assets/html_files/carousels.html",
+        "icon": "fas fa-th-large",
+        "title": "Carousels"
+    },
+    {
+        "href": "./assets/html_files/cursors.html",
+        "icon": "fas fa-mouse-pointer",
+        "title": "Cursors"
+    },
+    {
+        "href": "./assets/html_files/dropdowns.html",
+        "icon": "fas fa-square-caret-down",
+        "title": "Dropdowns"
+    },
+    {
+        "href": "./assets/html_files/error-pages.html",
+        "icon": "fas fa-exclamation-triangle",
+        "title": "Error Pages"
+    },
+    {
+        "href": "./assets/html_files/footers.html",
+        "icon": "fa fa-window-maximize",
+        "title": "Footers"
+    },
+    {
+        "href": "./assets/html_files/forms.html",
+        "icon": "fas fa-code",
+        "title": "Forms"
+    },
+    {
+        "href": "./assets/html_files/heroes.html",
+        "icon": "fa fa-television",
+        "title": "Heroes"
+    },
+    {
+        "href": "./assets/html_files/loaders.html",
+        "icon": "fas fa-spinner",
+        "title": "Loaders"
+    },
+    {
+        "href": "./assets/html_files/navigation-bars.html",
+        "icon": "fas fa-bars",
+        "title": "Navigation Bars"
+    },
+    {
+        "href": "./assets/html_files/popups.html",
+        "icon": "fa fa-info-circle",
+        "title": "Popups"
+    },
+    {
+        "href": "./assets/html_files/scrollbars.html",
+        "icon": "fas fa-arrows-v",
+        "title": "Scrollbars"
+    },
+    {
+        "href": "./assets/html_files/search-bars.html",
+        "icon": "fas fa-magnifying-glass",
+        "title": "Search Bars"
+    },
+    {
+        "href": "./assets/html_files/tables.html",
+        "icon": "fas fa-table",
+        "title": "Tables"
+    },
+    {
+        "href": "./assets/html_files/text-animations.html",
+        "icon": "fas fa-font",
+        "title": "Text Animations"
+    },
+    {
+        "href": "./assets/html_files/toggle-switches.html",
+        "icon": "fas fa-sliders",
+        "title": "Toggle Switches"
+    },
+    {
+        "href": "./assets/html_files/tooltips.html",
+        "icon": "fas fa-screwdriver-wrench",
+        "title": "Tooltips"
+    },
+    {
+        "href": "./assets/html_files/transfer-lists.html",
+        "icon": "fas fa-table-list",
+        "title": "Transfer Lists"
+    }
+]

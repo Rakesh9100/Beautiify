@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Confirmation Dialog Popup",
+        "previewLink": "../../Components/Popups/Confirmation-Dialog-Popup/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Popups/Confirmation-Dialog-Popup"
+    },
+    {
+        "title": "Context Menu Popup",
+        "previewLink": "../../Components/Popups/Context-Menu-Popup/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Popups/Context-Menu-Popup"
+    },
+    {
+        "title": "Cookie Consent Popup",
+        "previewLink": "../../Components/Popups/Cookie-Consent-Popup/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Popups/Cookie-Consent-Popup"
+    },
+    {
+        "title": "Error Notification Popup",
+        "previewLink": "../../Components/Popups/Error-Notification-Popup/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Popups/Error-Notification-Popup"
+    },
+    {
+        "title": "Login/Register Popup",
+        "previewLink": "../../Components/Popups/Login-Register-Popup/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Popups/Login-Register-Popup"
+    },
+    {
+        "title": "Sidebar Popup",
+        "previewLink": "../../Components/Popups/Sidebar-Popup/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Popups/Sidebar-Popup"
+    },
+    {
+        "title": "Slide Reveal Popup",
+        "previewLink": "../../Components/Popups/Slide-Reveal-Popup/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Popups/Slide-Reveal-Popup"
+    },
+    {
+        "title": "Subscribe Popup",
+        "previewLink": "../../Components/Popups/Subscribe-Popup/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Popups/Subscribe-Popup"
+    },
+    {
+        "title": "Success Notification Popup",
+        "previewLink": "../../Components/Popups/Success-Notification-Popup/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Popups/Success-Notification-Popup"
+    },
+    {
+        "title": "Toast Message Popup",
+        "previewLink": "../../Components/Popups/Toast-Message-Popup/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Popups/Toast-Message-Popup"
+    },
+    {
+        "title": "Warning Notification Popup",
+        "previewLink": "../../Components/Popups/Warning-Notification-Popup/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Popups/Warning-Notification-Popup"
+    },
+    {
+        "title": "Welcome Offer Popup",
+        "previewLink": "../../Components/Popups/Welcome-Offer-Popup/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Popups/Welcome-Offer-Popup"
+    }
+]
