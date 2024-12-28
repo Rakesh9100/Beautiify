@@ -11,31 +11,30 @@
 
 <body>
     <div class="main-container" id="main">
-        <span class="circle1"><span class="circle1_child1"></span><span class="circle1_child2"></span></span>
+        <span class="circle1"><span class="circle1_child1"></span>
+        <span class="circle1_child2"></span></span>
         <div class="circle1_child3"></div>
-
         <div class="form_container Sign_Up">
             <form action="#">
                 <h2>Sign Up</h2>
                 <div class="form-field">
                     <input type="email" id="emailid2" required>
                     <i class="fa-solid fa-envelope"></i>
-                    <label for="emailid" class="email_label">Email</label>
+                    <label for="emailid2" class="email_label">Email</label>
                 </div>
                 <div class="form-field">
                     <input type="password" class="password" required>
                     <i class="fa-solid fa-lock"></i>
-                    <label for="password">Password</label>
+                    <label for="password1">Password</label>
                 </div>
                 <div class="form-field">
                     <input type="password" class="password" required>
                     <i class="fa-solid fa-lock"></i>
-                    <label for="password"> Confirm Password</label>
+                    <label for="password2">Confirm Password</label>
                 </div>
-
                 <button type="submit" class="Login_button">Sign Up</button>
                 <div class="signup-link">
-                    <p> Already have an account ? <a href="#" class="Signinlink">Sign In</a></p>
+                    <p>Already have an account? <a href="#" class="Signinlink">Sign In</a></p>
                 </div>
             </form>
         </div>
@@ -43,38 +42,36 @@
             <form action="#">
                 <h2>Login</h2>
                 <div class="form-field">
-                    <input type="email" required>
+                    <input type="email" id="emailid1" required>
                     <i class="fa-solid fa-envelope"></i>
-                    <label for="emailid" class="email_label">Email</label>
+                    <label for="emailid1" class="email_label">Email</label>
                 </div>
                 <div class="form-field">
                     <input type="password" id="password" required>
                     <i class="fa-solid fa-lock"></i>
                     <label for="password">Password</label>
                 </div>
-                <div class="show_password">
-                    <input type="checkbox" id="check">show password
-                </div>
-
-                <div class="form-forget">
-                    <a href="#">Forgot password?</a>
+                <div class="form-options">
+                    <div class="show_password">
+                        <input type="checkbox" id="check">
+                        <label for="check">Show password</label>
+                    </div>
+                    <div class="form-forget">
+                        <a href="#">Forgot password?</a>
+                    </div>
                 </div>
                 <button type="submit" class="Login_button">Login</button>
                 <div class="signup-link">
-                    <p> Don't have an account ? <a href="#" class="signuplink">Signup</a></p>
+                    <p>Don't have an account? <a href="#" class="signuplink">Signup</a></p>
                 </div>
             </form>
         </div>
         <span class="circle2"><span class="circle2_child1"></span><span class="circle2_child2"></span></span>
         <div class="circle2_child3"></div>
     </div>
-    <!-- gsap plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
 
