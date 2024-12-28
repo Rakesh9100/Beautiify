@@ -41,7 +41,7 @@ const lazyLoadObserver = new IntersectionObserver((entries) => {
 /** loads a single page of contributors */
 async function fetchContributors(pageNumber) {
     if (isLoading) return;
-    
+
     isLoading = true;
     const perPage = 20; // Reduced number of items per page
     const apiUrl = '/.netlify/functions/contributors';
@@ -51,7 +51,7 @@ async function fetchContributors(pageNumber) {
         loadingSpinner.style.display = 'block';
 
         const response = await fetch(`${apiUrl}?page=${pageNumber}&per_page=${perPage}`);
-        
+
         if (!response.ok) {
             throw new Error(`Failed to fetch contributors. Status: ${response.status}`);
         }
@@ -60,10 +60,10 @@ async function fetchContributors(pageNumber) {
 
         // Check if we have more data to load
         hasMore = contributorsData.length === perPage;
-        
+
         // Create and append contributor cards
         await displayContributors(contributorsData);
-        
+
         currentPage++;
     } catch (error) {
         errorMessage.style.display = 'block';
@@ -71,7 +71,7 @@ async function fetchContributors(pageNumber) {
     } finally {
         isLoading = false;
         loadingSpinner.style.display = 'none';
-        
+
         // Add observer to the last card for infinite scroll
         const allCards = cont.querySelectorAll('.contributor-card');
         if (allCards.length > 0) {
@@ -93,7 +93,7 @@ async function displayContributors(contributors) {
         // Create avatar with lazy loading
         const avatarImg = document.createElement('img');
         avatarImg.classList.add('lazy');
-        avatarImg.src = '../svgs/avatar_fallback.svg'; // Add a placeholder image
+        avatarImg.src = '../images/avatar.svg'; // Add a placeholder image
         avatarImg.dataset.src = contributor.avatar_url;
         avatarImg.alt = `${contributor.login}'s Picture`;
 

@@ -97,7 +97,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px; 
+    width: 120px;
     margin: 10px;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     text-align: center;
@@ -167,18 +167,30 @@ body {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 #error-message {
-    color: red;
-    text-align: center;
+    color: white;
     padding: 20px;
     display: none;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
 }
