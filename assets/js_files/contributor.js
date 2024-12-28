@@ -1,7 +1,7 @@
 const cont = document.getElementById('contributor');
 let currentPage = 1; // Start from page 1
 let isLoading = false; // Flag to track loading state
-let hasMore = true; // Flag to track if theres more data to load
+let hasMore = true; // Flag to track if there's more data to load
 
 // Loading spinner element
 const loadingSpinner = document.getElementById('loading-spinner');
@@ -16,11 +16,11 @@ const observerOptions = {
     threshold: 0.1
 };
 
-// use when one page is loaded, and then scroll down to load more
+// Use when one page is loaded, and then scroll down to load more
 const intersectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting && !isLoading && hasMore) {
-            // if intersecting, not in loading state, and has more data to load
+            // If intersecting, not in loading state, and has more data to load
             fetchContributors(currentPage);
         }
     });
@@ -38,12 +38,12 @@ const lazyLoadObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-/** loads a single page of contributors */
+// Loads a single page of contributors
 async function fetchContributors(pageNumber) {
     if (isLoading) return;
 
     isLoading = true;
-    const perPage = 20; // Reduced number of items per page
+    const perPage = 20; // Number of items per page
     const apiUrl = '/.netlify/functions/contributors';
 
     try {
@@ -80,7 +80,7 @@ async function fetchContributors(pageNumber) {
     }
 }
 
-/** Displays the contributors on the page */
+// Displays the contributors on the page
 async function displayContributors(contributors) {
     const fragment = document.createDocumentFragment();
 
