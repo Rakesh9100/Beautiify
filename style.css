@@ -408,9 +408,17 @@ section {
     z-index: 100;
 }
 
+.comp-section {
+    height: 100vh;
+    display: grid;
+    color: var(--secondary);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .comp-section .compcontainer .logo img {
-    width: 250px;
-    margin-bottom: -25px;
+    width: clamp(200px, 20vw, 250px);
 }
 
 .comp-section .compcontainer h1,
@@ -422,7 +430,8 @@ section {
 }
 
 .comp-section .compcontainer h1 {
-    font-size: 7rem;
+    margin-top: -25px;
+    font-size: clamp(4rem, 4vw, 7rem);
     text-shadow: 2px 2px 3px black, 1px 1px 2px white;
     animation: lights 5s 750ms linear infinite;
 }
@@ -475,15 +484,15 @@ section {
 }
 
 .comp-section .compcontainer h3 {
-    font-weight: 300;
-    font-size: 2.8rem;
-    margin: 0.5%;
+    font-weight: 600;
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin: 10px 10px 20px;
     text-shadow: 2px 2px 2px black, 0.5px 0.5px 1px white;
 }
 
 .paragraph {
-    font-size: 2rem;
-    width: 70%;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    width: 80%;
     text-align: center;
     margin: auto;
     padding: 10px;
@@ -497,7 +506,7 @@ section {
 
 .comp-section .compcontainer .started {
     height: auto;
-    font-size: 25px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: 600;
     margin-top: 20px;
     padding: 10px 45px;
@@ -988,7 +997,7 @@ footer {
     text-align: center;
 }
 
-/* Media Queries */
+/* Media queries for responsiveness */
 
 @media (max-width: 1200px) {
     nav ul {
@@ -1018,23 +1027,6 @@ footer {
     }
 }
 
-@media (max-width: 1030px) {
-    .comp-section {
-        flex-direction: column;
-        text-align: center;
-        width: auto;
-        height: 90vh;
-    }
-
-    .started {
-        height: 7vh;
-        font-size: 22px;
-        font-weight: 500;
-        margin-top: 19px;
-        padding: 8px 40px;
-    }
-}
-
 @media (min-width: 925px) and (max-width: 970px) {
     .navbar .nav-link {
         font-size: 16px;
@@ -1056,28 +1048,6 @@ footer {
 
     nav ul {
         gap: 1rem;
-    }
-}
-
-@media (max-width: 925px) {
-    .comp-section {
-        flex-direction: column;
-        text-align: center;
-        width: auto;
-        height: fit-content;
-    }
-
-    .compcontainer {
-        border: 1px transparent;
-        padding-bottom: 10px;
-    }
-
-    .started {
-        height: 6vh;
-        font-size: 20px;
-        font-weight: 400;
-        margin-top: 19px;
-        padding: 6px 35px;
     }
 }
 
@@ -1122,29 +1092,9 @@ footer {
 }
 
 @media (max-width: 786px) {
-    .comp-section {
-        flex-direction: column;
-        text-align: center;
-        width: auto;
-        height: fit-content;
-    }
-
-    .compcontainer {
-        border: 1px transparent;
-        padding-bottom: 10px;
-    }
-
     #mySearch {
         height: 6rem;
         width: 50rem;
-    }
-
-    .started {
-        height: 6vh;
-        font-size: 20px;
-        font-weight: 300;
-        margin-top: 15vh;
-        padding: 8px 30px;
     }
 }
 
@@ -1156,15 +1106,6 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .comp-section {
-        height: fit-content;
-    }
-
-    .compcontainer {
-        border: 1px transparent;
-        padding-bottom: 0px;
-    }
-
     #mySearch {
         height: 5rem;
         width: 30rem;
@@ -1333,14 +1274,6 @@ footer {
     .paragraph {
         width: 100%;
         padding: 2px;
-    }
-
-    .started {
-        height: 5vh;
-        font-size: 20px;
-        font-weight: 100;
-        margin-top: 6vh;
-        padding: 5px 30px;
     }
 
     .box {
