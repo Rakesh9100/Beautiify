@@ -314,7 +314,33 @@ button {
         0 0 60px #FFBF00;
 }
 
+/* @media (max-width: 768px) {
+    .login-box {
+        width: 75%;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .input-box {
+        width: 95%;
+    }
+
+    button {
+        width: 90%;
+    }
+} */
 @media (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Ensure vertical alignment if needed */
+        padding: 0 10px; /* Optional padding for smaller screens */
+    }
+
     .login-box {
         width: 75%;
         height: auto;
@@ -333,12 +359,28 @@ button {
     }
 }
 
+@media (max-width: 500px) {
+    body {
+        background: linear-gradient(45deg, #360033, #0b8793) fixed; /* Add `fixed` to prevent background shift */
+        background-size: cover; /* Ensure the gradient covers the entire viewport */
+    }
+}
+
 @media (max-width: 480px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Ensure vertical alignment if needed */
+        padding: 62px; /* Optional padding for smaller screens */
+    }
     .login-box {
         padding-left: 10px;
         padding-right: 12px;
         padding: 10px;
         border-radius: 15px;
+        width: 85%;
+        height: auto;
     }
 
     h2 {
@@ -354,24 +396,96 @@ button {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 450px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px; /* Add padding to prevent content from touching edges */
+    }
+
     .login-box {
-        width: 97%;
-        padding: 10px;
-        border-radius: 10px;
+        width: 80%; /* Adjust width to fit smaller screens */
+        height:auto /* Center the box horizontally */
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.5em; /* Reduce font size for better scaling */
     }
 
-    
     .input-box {
-        width: 100%;
-        margin: 15px 0;
+        width: 100%; /* Ensure input fields take full width */
     }
 
     button {
-        font-size: 0.8em;
+        width: 100%; /* Adjust button width */
+        font-size: 0.9em; /* Slightly reduce font size */
+    }
+
+    .register-link {
+        font-size: 0.8em; /* Adjust link font size */
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px; /* Add padding to prevent content from touching edges */
+    }
+
+    .login-box {
+        width: 85%; /* Adjust width to fit smaller screens */
+        height:auto; /* Center the box horizontally */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Reduce font size for better scaling */
+    }
+
+    .input-box {
+        width: 100%; /* Ensure input fields take full width */
+    }
+
+    button {
+        width: 100%; /* Adjust button width */
+        font-size: 0.9em; /* Slightly reduce font size */
+    }
+
+    .register-link {
+        font-size: 0.8em; /* Adjust link font size */
+    }
+}
+
+@media (max-width: 350px)  {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Ensure vertical alignment */
+        padding-left: 62px; /* Reduce padding for smaller screens */
+    }
+
+    .login-box {
+        width: 95%; /* Reduce width slightly for better fit */
+        margin: 0 auto; /* Ensure centering */
+    }
+    
+    h2 {
+        font-size: 1.3em; /* Adjust font size for smaller screens */
+    }
+
+    .input-box {
+        width: 100%; /* Full-width input fields */
+    }
+
+    button {
+        width: 100%; /* Full-width buttons */
+        font-size: 0.8em; /* Slightly smaller font */
+    }
+
+    .register-link {
+        font-size: 0.7em; /* Smaller text size */
     }
 }
