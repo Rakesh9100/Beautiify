@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -311,4 +312,66 @@ button {
         0 0 30px #FFBF00,
         0 0 45px #FFBF00,
         0 0 60px #FFBF00;
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        width: 75%;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .input-box {
+        width: 95%;
+    }
+
+    button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding-left: 10px;
+        padding-right: 12px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .input-box {
+        width: 100%;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 320px) {
+    .login-box {
+        width: 97%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    
+    .input-box {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    button {
+        font-size: 0.8em;
+    }
 }
