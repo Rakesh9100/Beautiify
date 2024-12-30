@@ -389,7 +389,7 @@ input {
         padding: 12px 40px;
     }
 
- .small-screen-register-message p, .small-screen-login-message p{
+    .helper-message p{
         margin:10px;
     }
 
