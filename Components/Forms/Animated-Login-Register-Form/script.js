@@ -19,8 +19,7 @@ const smallScreenRegisterContainer = document.getElementById("small-screen-regis
 const smallScreenLoginContainer = document.getElementById("small-screen-login-container");
 const smallScreenLoginButton = document.getElementById("go-to-login-btn");
 
-
-smallScreenRegisterButton.addEventListener("click",showRegister)
+smallScreenRegisterButton.addEventListener("click", showRegister)
 
 smallScreenLoginButton.addEventListener("click", showLogin);
 
