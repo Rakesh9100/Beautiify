@@ -72,7 +72,59 @@
             </div>
         </div>
     </div>
-
+    <div class="small-container" id="container">
+        <!-- Register Form Container -->
+        <div class="small-form-container small-screen-register-container" id="register-form">
+            <form action="#">
+                <h1>TOUR GUIDE</h1>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <button type="button" onclick="showLogin()">Register</button>
+                <span>or use your account</span>
+                <div class="social-container">
+                    <a href="" class="social"><i class="lni lni-facebook-fill"></i></a>
+                    <a href="" target="_blank"><i class="lni lni-google"></i></a>
+                    <a href="" class="social"><i class="lni lni-linkedin-original"></i></a>
+                    <a href="" class="social"><i class="lni lni-github"></i></a>
+                </div>
+                <div class="helper-message">
+                    <p>If You have an account, login here and have fun</p>
+                    <button type="button" id="go-to-login-btn" onclick="showLogin()">Login</button>
+                </div>
+            </form>
+        </div>
+        <!-- Login Form Container -->
+        <div class="small-form-container small-screen-login-container" id="login-form" style="display: none;">
+            <form action="#">
+                <h1>TOUR GUIDE</h1>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <div class="content">
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label>Remember me</label>
+                    </div>
+                    <div class="pass-link">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+                <a href="index.html"><button type="button">Login</button></a>
+                <span>or use your account</span>
+                <div class="social-container">
+                    <a href="" class="social"><i class="lni lni-facebook-fill"></i></a>
+                    <a href="" target="_blank"><i class="lni lni-google"></i></a>
+                    <a href="" class="social"><i class="lni lni-linkedin-original"></i></a>
+                    <a href="" class="social"><i class="lni lni-github"></i></a>
+                </div>
+                <div class="helper-message">
+                    <p>If You don't have an account, Register here.</p>
+                    <button type="button" id="go-to-register-btn" onclick="showRegister()">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
