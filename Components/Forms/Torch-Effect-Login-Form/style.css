@@ -12,10 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
-    /* 1) Remove or change overflow so the background/torch doesn't get “cut off.” */
-    /* overflow: hidden; */            /* Commenting this out */
-    /* or use: overflow: auto; */      /* if you still want scrolling */
     position: relative;
     background: linear-gradient(45deg, #360033, #0b8793);
 }
@@ -41,7 +37,7 @@ h2 {
     transition: .5s ease;
 }
 
-.input-check:checked ~ h2 {
+.input-check:checked~h2 {
     color: #FFBF00;
     text-shadow: 0 0 15px #FFBF00, 0 0 30px #FFBF00;
 }
@@ -62,7 +58,7 @@ h2 {
     transition: .5s ease;
 }
 
-.input-check:checked ~ .input-box .input-line {
+.input-check:checked~.input-box .input-line {
     background: #FFBF00;
     box-shadow: 0 0 10px #FFBF00;
 }
@@ -78,12 +74,12 @@ h2 {
     transition: .5s ease;
 }
 
-.input-box input:focus ~ label,
-.input-box input:valid ~ label {
+.input-box input:focus~label,
+.input-box input:valid~label {
     top: -5px;
 }
 
-.input-check:checked ~ .input-box label {
+.input-check:checked~.input-box label {
     color: #FFBF00;
     text-shadow: 0 0 10px #FFBF00;
 }
@@ -100,7 +96,7 @@ h2 {
     transition: .5s ease;
 }
 
-.input-check:checked ~ .input-box input {
+.input-check:checked~.input-box input {
     color: #FFBF00;
     text-shadow: 0 0 5px #FFBF00;
 }
@@ -114,7 +110,7 @@ h2 {
     transition: .5s ease;
 }
 
-.input-check:checked ~ .input-box .icon {
+.input-check:checked~.input-box .icon {
     color: #FFBF00;
     filter: drop-shadow(0 0 5px #FFBF00);
 }
@@ -128,7 +124,7 @@ h2 {
     transition: .5s ease;
 }
 
-.input-check:checked ~ .remember-forgot {
+.input-check:checked~.remember-forgot {
     color: #FFBF00;
     text-shadow: 0 0 10px #FFBF00;
 }
@@ -139,7 +135,7 @@ h2 {
     transition: .5s ease;
 }
 
-.input-check:checked ~ .remember-forgot label input {
+.input-check:checked~.remember-forgot label input {
     accent-color: #FFBF00;
 }
 
@@ -153,7 +149,7 @@ h2 {
     text-decoration: underline;
 }
 
-.input-check:checked ~ .remember-forgot a {
+.input-check:checked~.remember-forgot a {
     color: #FFBF00;
 }
 
@@ -171,7 +167,7 @@ button {
     transition: .5s ease;
 }
 
-.input-check:checked ~ button {
+.input-check:checked~button {
     background: #FFBF00;
     box-shadow: 0 0 15px #FFBF00, 0 0 15px #FFBF00;
 }
@@ -184,7 +180,7 @@ button {
     transition: .5s ease;
 }
 
-.input-check:checked ~ .register-link {
+.input-check:checked~.register-link {
     color: #FFBF00;
     text-shadow: 0 0 10px #FFBF00;
 }
@@ -200,7 +196,7 @@ button {
     text-decoration: underline;
 }
 
-.input-check:checked ~ .register-link p a {
+.input-check:checked~.register-link p a {
     color: #FFBF00;
 }
 
@@ -221,23 +217,19 @@ button {
 /* The “torch effect” overlay */
 .light {
     position: absolute;
-    /* 2) If you want to reduce how far it moves off-screen, adjust this: */
-    top: -200%; /* You can try -100% or -50% if you prefer */
+    top: -200%;
     left: 0;
     width: 100%;
-    /* 3) If page gets taller than the viewport, 100vh might cause unexpected cutoffs. 
-          You can change to something bigger, or let it scroll. */
     height: 100vh;
     background: linear-gradient(to bottom,
-      rgba(255, 255, 255, 0.3) -50%,
-      rgba(255, 255, 255, 0) 90%
-    );
+            rgba(255, 255, 255, 0.3) -50%,
+            rgba(255, 255, 255, 0) 90%);
     clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
     pointer-events: none;
     transition: .5s ease;
 }
 
-.input-check:checked ~ .light {
+.input-check:checked~.light {
     top: -90%;
 }
 
@@ -280,7 +272,7 @@ button {
     transition: .5s ease;
 }
 
-.input-check:checked ~ .toggle::after {
+.input-check:checked~.toggle::after {
     top: 65px;
 }
 
@@ -308,7 +300,7 @@ button {
     opacity: 1;
 }
 
-.input-check:checked ~ .toggle .text.off {
+.input-check:checked~.toggle .text.off {
     top: 76px;
     opacity: 0;
 }
@@ -317,35 +309,34 @@ button {
     opacity: 0;
 }
 
-.input-check:checked ~ .toggle .text.on {
+.input-check:checked~.toggle .text.on {
     top: 76px;
     opacity: 1;
     color: #FFBF00;
     text-shadow: 0 0 15px #FFBF00,
-                 0 0 30px #FFBF00,
-                 0 0 45px #FFBF00,
-                 0 0 60px #FFBF00;
+        0 0 30px #FFBF00,
+        0 0 45px #FFBF00,
+        0 0 60px #FFBF00;
 }
 
-/* Responsive Adjustments */
+/* Media queries for responsiveness */
 @media (max-width: 1024px) {
-    
     body {
-        background: linear-gradient(45deg, #360033, #0b8793) fixed; 
+        background: linear-gradient(45deg, #360033, #0b8793) fixed;
         background-size: cover;
     }
+
     .toggle {
         right: -90px;
     }
 }
 
 @media (max-width: 666px) {
-    
-
     body {
         background: linear-gradient(45deg, #360033, #0b8793) fixed;
         background-size: cover;
     }
+
     .toggle {
         right: -68px;
     }
@@ -356,18 +347,20 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; 
-        padding: 0 10px; 
+        flex-direction: column;
+        padding: 0 10px;
     }
-    
+
 
     body {
-        background: linear-gradient(45deg, #360033, #0b8793) fixed; 
-        background-size: cover; 
+        background: linear-gradient(45deg, #360033, #0b8793) fixed;
+        background-size: cover;
     }
+
     h2 {
         font-size: 1.8em;
     }
+
     .input-box {
         margin: 20px 0;
     }
@@ -378,20 +371,23 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; 
-        padding: 0 10px; 
+        flex-direction: column;
+        padding: 0 10px;
     }
 
     body {
-        background: linear-gradient(45deg, #360033, #0b8793) fixed; 
-        background-size: cover; 
+        background: linear-gradient(45deg, #360033, #0b8793) fixed;
+        background-size: cover;
     }
+
     h2 {
         font-size: 1.5em;
     }
+
     .input-box label {
         font-size: 0.9em;
     }
+
     .toggle {
         right: -70px;
     }
