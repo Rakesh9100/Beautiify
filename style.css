@@ -203,7 +203,7 @@ html {
 }
 
 button#dark-mode-toggle {
-    background-image: url('assets/images/dark-mode.png');
+    background-image: url('assets/images/light-mode.png');
     background-color: transparent;
     background-size: cover;
     position: fixed;
