@@ -31,7 +31,7 @@ body:
 
         - label: "I am a SWOC'25 contributor."
           required: true
-  
+
         - label: "I am a KWOC'24 contributor."
           required: true
 
