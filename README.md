@@ -102,16 +102,27 @@ Beautiify offers a diverse range of components and animations designed to enhanc
 
 <h3>Home/Main Page :-</h3>
 
-![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/f07fd337-8503-47e2-807e-b33c9355dd3b)<br><br>
+![image](https://github.com/user-attachments/assets/ab684423-7264-482b-9a66-b6a0b3843ac3)<br><br>
+<h3>About Page :-</h3>
+
+![image](https://github.com/user-attachments/assets/97842915-39a8-4c4d-a965-ed82ef7677ac)<br><br>
 <h3>Components Page :-</h3>
 
-![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/70a1a164-626b-47c3-b344-353516ee5910)<br><br>
+![image](https://github.com/user-attachments/assets/6894f539-afbe-4830-9ff8-a7cc5ea4d5b0)<br><br>
+<h3>Contributors Page :-</h3>
+
+![image](https://github.com/user-attachments/assets/d06e0a8f-5c97-4b6c-ac5f-3a17972ff020)<br><br>
+<h3>FAQ Page :-</h3>
+
+![image](https://github.com/user-attachments/assets/525cdac6-ac6c-44ab-9fb8-82dc369a04b0)<br><br>
 <h3>Contact Page :-</h3>
 
-![image](https://github.com/Rakesh9100/Beautiify/assets/73993775/a8b66b02-633e-44bb-8c3d-0bd48e0be5d5)
+![image](https://github.com/user-attachments/assets/bdd4c938-394d-468a-82a9-143d67cfc6b8)<br><br>
+<h3>Footer :-</h3>
+
+![image](https://github.com/user-attachments/assets/569b271a-0899-4939-bf1f-1b8c74f07073)
 <br><br>
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-------------------------------------------------->
 
