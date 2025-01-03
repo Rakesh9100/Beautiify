@@ -1,7 +1,7 @@
 # <p align="center">✨Beautiify✨</p>
-<!-------------------------------------------------------------------------------------------------------------------------------------->
- <div align="center">
- <p>
+<!-------------------------------------------------->
+<div align="center">
+<p>
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8d5cd3ed-52d0-4619-bc27-3dcc46f8a0fa/deploy-status)](https://app.netlify.com/sites/beautiify/deploys)
@@ -17,10 +17,10 @@
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Rakesh9100/Beautiify)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/Rakesh9100/Beautiify)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Rakesh9100/Beautiify)
- </p>
- </div>
+</p>
+</div>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <div id="top"></div>
 
@@ -36,7 +36,7 @@
 - [Contributing is fun🧡](#contributing-is-fun)
 <br>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Introduction📌</h2>
 
@@ -64,7 +64,7 @@ Beautiify offers a diverse range of components and animations designed to enhanc
 8. **Footers** -- Footers are customizable sections at the bottom of pages. Beautiify includes Animated Footer, Classic Footer, Waves Footer, and so on.
 
 9. **Forms** -- Forms are essential for user input. Beautiify provides a range of form designs, including Animated Login Form, Black Red Signup Form, Contact Form, and so on.
-    
+
 10. **Heroes** -- Heroes are a large, attention-grabbing picture with text typically shown in the above-the-fold area. Beautiify provides various hero designs such as Carousel Hero, Collage-Style-Hero and so on.
 
 11. **Loaders** -- Loaders indicate the loading process. Beautiify features various loader designs such as Bird Loader, Clock Loader, Helix Loader, and so on.
@@ -76,14 +76,14 @@ Beautiify offers a diverse range of components and animations designed to enhanc
 14. **Search Bars** -- Search Bars enable users to search content on your site. Beautiify provides 3D Search Bar, Google Search Bar, Neumorphism Search Bar, and so on.
 
 15. **Text Animations** -- Text Animations add dynamic effects to text. Beautiify includes Flip Text Animation, Fog Text Animation, Glowing Text Animation, and so on.
-    
+
 16. **Toggle Switches** -- Toggle switches prompt users to choose between two mutually exclusive options and always have a default value. Available designs are Robo Toggle Switch, Light Toggle Switch, and so on.
-    
+
 17. **Tooltips** -- A tooltip is a brief, informative message that appears when a user interacts with an element. Beautiify provides various designs like Animated Tooltip, Shopping Cart Tooltip, and so on.
 
 18. **Transfer Lists** -- Transfer Lists allow items to be moved between lists. Available styles are Neuromorphism Transfer List.
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Technology Used🚀</h2>
 
@@ -94,7 +94,7 @@ Beautiify offers a diverse range of components and animations designed to enhanc
 </p>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Overview⭐</h2>
 
@@ -113,7 +113,7 @@ Beautiify offers a diverse range of components and animations designed to enhanc
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Getting Started💥</h2>
 
@@ -159,19 +159,19 @@ git push origin <your_branch_name>
 - Celebrate 🥳 your success after your pull request is merged successfully.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Contributing Guidelines📑</h2>
 
 Read our [Contributing Guidelines](https://github.com/Rakesh9100/Beautiify/blob/main/.github/CONTRIBUTING_GUIDELINES.md) to learn about our development process, how to propose bugfixes and improvements, and how to build to Beautiify.
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Code Of Conduct📑</h2>
 
 This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/Rakesh9100/Beautiify/blob/main/.github/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>This repo has been part of the following Open Source Programs🥳</h2>
 
@@ -192,7 +192,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
 </table>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Project Admin⚡</h2>
 
@@ -204,7 +204,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
 </tr>
 </table>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Project Contributors🫂</h2>
 
@@ -212,7 +212,7 @@ This project and everyone participating in it is governed by the [Code of Conduc
   <img src="https://contrib.rocks/image?repo=rakesh9100/beautiify" />
 </a>
 
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-------------------------------------------------->
 
 <h2>Contributing is fun🧡</h2>
 
