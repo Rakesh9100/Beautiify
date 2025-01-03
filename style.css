@@ -203,7 +203,7 @@ html {
 }
 
 button#dark-mode-toggle {
-    background-image: url('assets/images/light-mode.png');
+    background-image: url('assets/images/theme-mode.png');
     background-color: transparent;
     background-size: cover;
     position: fixed;
@@ -218,37 +218,32 @@ button#dark-mode-toggle {
     border-radius: 50%;
     z-index: 999;
     margin-top: 4px;
-}
-/* highlights the icon */
-button#dark-mode-toggle:hover {
-    transform: scale(1.2); 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); 
+    transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button#dark-mode-toggle:hover {
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 
-                0 0 20px 10px rgba(255, 255, 255, 0.3);
+    transform: scale(1.2);
     animation: shine 1.5s infinite ease-in-out;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 0 0 20px 10px rgba(255, 255, 255, 0.3);
 }
+
 /* Keyframes for glowing animation */
 @keyframes shine {
     0% {
-        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 
-                    0 0 20px 10px rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 0 0 20px 10px rgba(255, 255, 255, 0.3);
     }
+
     50% {
-        box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.7), 
-                    0 0 30px 15px rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.7), 0 0 30px 15px rgba(255, 255, 255, 0.4);
     }
+
     100% {
-        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 
-                    0 0 20px 10px rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 0 0 20px 10px rgba(255, 255, 255, 0.3);
     }
 }
+
 .dark-mode button#dark-mode-toggle {
-    background-image: url('assets/images/dark-mode.png');
-    background-color: transparent;
-    background-size: cover;
+    filter: grayscale(100%);
 }
 
 .header1 {
@@ -1235,25 +1230,7 @@ footer {
     }
 
     button#dark-mode-toggle {
-        background-image: url('./assets/images/dark.png');
-        background-color: transparent;
-        background-size: cover;
-        position: fixed;
-        top: 5.5px;
         right: 45px;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        z-index: 999;
-    }
-
-    .dark-mode button#dark-mode-toggle {
-        background-image: url('./assets/images/light.png');
-        background-color: transparent;
-        background-size: cover;
     }
 
     .hamburger {
