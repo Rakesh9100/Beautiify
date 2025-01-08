@@ -1,85 +1,89 @@
- body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f9f9f9;
-            font-family: 'Roboto', Arial, sans-serif;
-        }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: 'Roboto', Arial, sans-serif;
+}
 
-        .button-container {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-            background-color: white;
-            padding: 16px;
-            border-radius: 100px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.9);
-        }
+.button-container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.9);
+}
 
-        .yt-button {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            padding: 8px 16px;
-            border: none;
-            background-color: #f2f2f2;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            font-size: 12px;
-            color: #0f0f0f;
-            height: 36px;
-        }
+.yt-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 12px;
+    color: #0f0f0f;
+    height: 36px;
+}
 
-        .yt-button:hover {
-            background-color: #e5e5e5;
-        }
+.yt-button:hover {
+    background-color: #e5e5e5;
+}
 
-        .subscribe-btn {
-            background-color: #0f0f0f;
-            color: white;
-            height: 36px;
-        }
+.subscribe-btn {
+    background-color: #0f0f0f;
+    color: white;
+    height: 36px;
+}
 
-        .subscribe-btn:hover {
-            background-color: #272727;
-        }
+.subscribe-btn:hover {
+    background-color: #272727;
+}
 
-        .divider {
-            width: 1px;
-            height: 24px;
-            background-color: #e5e5e5;
-            margin: 0 8px;
-        }
+.divider {
+    width: 1px;
+    height: 24px;
+    background-color: #e5e5e5;
+    margin: 0 8px;
+}
 
-        .button-count {
-            font-size: 14px;
-            margin-left: 4px;
-        }
-        .likes-container{
-            background-color: #f2f2f2;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            font-size: 14px;
-            color: #0f0f0f;
-            height: 36px;
-        }
-        .rounded-button{
-            border-radius: 18px;
-        }
-        .left-rounded-button{
-            border-top-left-radius: 18px;
-            border-bottom-left-radius: 18px;
-        }
-        .right-rounded-button{
-            border-top-right-radius: 18px;
-            border-bottom-right-radius: 18px;
-        }
-        .like-divider{
-            width: 2px;
-            height: 24px;
-            margin: 6px -4px 0 -4px;
-            background-color: #e5e5e5;
-        }
+.button-count {
+    font-size: 14px;
+    margin-left: 4px;
+}
 
+.likes-container {
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 14px;
+    color: #0f0f0f;
+    height: 36px;
+}
+
+.rounded-button {
+    border-radius: 18px;
+}
+
+.left-rounded-button {
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.right-rounded-button {
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.like-divider {
+    width: 2px;
+    height: 24px;
+    margin: 6px -4px 0 -4px;
+    background-color: #e5e5e5;
+}
