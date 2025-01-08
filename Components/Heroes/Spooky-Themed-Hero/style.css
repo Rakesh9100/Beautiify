@@ -179,6 +179,7 @@ header {
     font-size: 18px;
     color: #fff;
     text-transform: capitalize;
+
 }
 
 /* Media Queries for responsiveness */
@@ -262,4 +263,5 @@ header {
     .skill {
         width: 100%;
     }
+
 }

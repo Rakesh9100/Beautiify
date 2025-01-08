@@ -119,3 +119,9 @@ body {
 #closePopup:hover {
     color: #0072ff; /* Matching hover color */
 }
+
+@media (max-width: 400px) {
+    #popupTitle {
+        font-size: 28px;
+    }
+}

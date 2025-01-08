@@ -27,7 +27,9 @@ span {
     align-items: center;
     border-radius: 0.75rem;
     color: #ffffff;
-    width: 64rem;
+    width: 100%;
+    max-width: 64rem;
+    box-sizing: border-box;
 }
 
 .error__box {
@@ -43,7 +45,8 @@ span {
 }
 
 .style__box {
-    width: 50%;
+    width: 100%;
+    max-width: 50%;
     height: 80px;
     box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -131,4 +134,34 @@ span {
     padding: 1rem;
     background: #2e3440;
     color: #d8dee9;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .style__box {
+        width: 90%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        width: 100%;
+    }
+
+    .style__box {
+        width: 100%;
+        height: 60px;
+    }
+
+    .blob {
+        width: 180px;
+        height: 180px;
+    }
 }

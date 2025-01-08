@@ -61,7 +61,7 @@ body {
 }
 
 .box {
-    background-image: url('https://media.giphy.com/media/63I6FXZTXks2A/giphy.gif');
+    background-image: url('assets/background.webp');
     background-repeat: no-repeat;
     background-size: 500px 500px;
     position: relative;

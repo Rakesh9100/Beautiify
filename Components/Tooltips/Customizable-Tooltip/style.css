@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.tooltip-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.tooltip-btn {
+    background-color: #e4e4e4;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    position: relative;
+}
+
+.tooltip-btn span {
+    display: block;
+}
+
+.tooltip-content {
+    background-color: #2d2d2d;
+    color: #b0b0b0;
+    padding: 8px;
+    border-radius: 8px;
+    position: absolute;
+    display: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.tooltip-content::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+    transform: rotate(45deg);
+}
+
+/* Tooltip position: Top */
+.tooltip-btn.top:hover .tooltip-content {
+    display: block;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+.tooltip-btn.top:hover .tooltip-content::after {
+    top: 100%;
+    left: 50%;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+/* Tooltip position: Left */
+.tooltip-btn.left:hover .tooltip-content {
+    display: block;
+    top: 50%;
+    right: 130%;
+    transform: translateY(-50%) rotate(180deg);
+    opacity: 1;
+}
+
+.tooltip-btn.left:hover .tooltip-content::after {
+    top: 50%;
+    right: 100%;
+    transform: rotate(45deg) translateY(-50%);
+}
+
+/* Tooltip position: Right */
+.tooltip-btn.right:hover .tooltip-content {
+    display: block;
+    top: 50%;
+    left: 130%;
+    transform: translateY(-50%) rotate(180deg);
+    opacity: 1;
+}
+
+.tooltip-btn.right:hover .tooltip-content::after {
+    top: 50%;
+    left: 100%;
+    transform: rotate(45deg) translateY(-50%);
+}
+
+/* Tooltip position: Bottom */
+.tooltip-btn.bottom:hover .tooltip-content {
+    display: block;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+.tooltip-btn.bottom:hover .tooltip-content::after {
+    bottom: 100%;
+    left: 50%;
+    transform: rotate(45deg) translateX(-50%);
+}

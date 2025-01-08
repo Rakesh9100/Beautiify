@@ -1,31 +1,20 @@
-/*
-    1. Use a more-intuitive box-sizing model. */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/*
-    2. Remove default margin
-*/
 * {
     margin: 0;
 }
 
-/*
-    Typographic tweaks!
-    3. Add accessible line-height
-    4. Improve text rendering
-*/
 body {
+    min-height: 100vh;
+    height: 100%;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
 
-/*
-    5. Improve media defaults
-*/
 img,
 picture,
 video,
@@ -35,9 +24,6 @@ svg {
     max-width: 100%;
 }
 
-/*
-    6. Remove built-in form typography styles
-*/
 input,
 button,
 textarea,
@@ -45,9 +31,6 @@ select {
     font: inherit;
 }
 
-/*
-    7. Avoid text overflows
-*/
 p,
 h1,
 h2,
@@ -58,9 +41,6 @@ h6 {
     overflow-wrap: break-word;
 }
 
-/*
-    8. Create a root stacking context
-*/
 #root,
 #__next {
     isolation: isolate;
@@ -72,10 +52,11 @@ html {
     width: 100vw;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
+    overflow-y: hidden;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #bgv {
@@ -103,6 +84,8 @@ img {
     font-family: 'Norse Bold', sans-serif;
     font-size: 6.5rem;
     color: white;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 form>div {
@@ -112,17 +95,21 @@ form>div {
     margin-top: 10px;
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
     border: 1px solid white;
-    height: 100%;
-    width: clamp(400px, 50%, 600px);
+    height: auto;
+    max-width: 600px;
+    width: 90%;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 30px;
-    animation: borderColorChange 3s infinite;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 @keyframes borderColorChange {
@@ -130,12 +117,10 @@ form>div {
     0%,
     100% {
         border-color: #fac834;
-        /* Starting color */
     }
 
     50% {
         border-color: #ed5dfc;
-        /* Middle color */
     }
 }
 
@@ -143,16 +128,15 @@ form>div {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    height: auto;
     gap: 1rem;
+    margin-bottom: 20px;
 }
 
 .wrapper>h2 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 300;
     color: rgb(255, 255, 255);
-    position: relative;
-    bottom: 3vh;
     font-size: 2.5rem;
 }
 
@@ -160,13 +144,10 @@ form>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80%;
     align-items: center;
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 1.5rem;
+    width: 100%;
 }
 
 .login {
@@ -193,10 +174,13 @@ form {
 }
 
 input {
-    width: max(65%, 300px);
+    width: 100%;
+    max-width: 300px;
     border-radius: 12px;
     border: 1px solid crimson;
     box-shadow: 0 0 8px rgb(251, 104, 104);
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 input:hover {
@@ -210,29 +194,75 @@ input:focus {
 
 input[type='password']:invalid {
     border: 2px solid #ff0000;
-    /* Red border for invalid input */
     box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
-    /* Optional: add a red box shadow */
 }
 
 .password:hover input[type='password']:invalid {
-    /* Styles applied to password input when parent .formgroup is hovered and input is invalid */
     box-shadow: 0 0 25px rgb(255, 0, 0);
 }
 
 form>.Signin>input[type="submit"] {
-    width: 25%;
+    width: 100%;
+    max-width: 150px;
     height: 40px;
     margin-top: 15px;
     background-color: #e95560;
     color: aliceblue;
-
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
 }
 
 form>.Signin>input[type="submit"]:hover {
     background-color: #ed969c;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Example box shadow */
     color: #2d1113;
     border: 1px solid crimson;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #head {
+        font-size: 4rem;
+    }
+
+    .wrapper>h2 {
+        font-size: 2rem;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+    form>.Signin>input[type="submit"] {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #head {
+        font-size: 3rem;
+    }
+
+    .wrapper>h2 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    form>.Signin>input[type="submit"] {
+        height: 35px;
+    }
 }

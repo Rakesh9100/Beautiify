@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 
 * {
     box-sizing: border-box;
@@ -16,7 +16,6 @@ body {
     background: url("assets/background.gif");
     background-size: cover;
     opacity: 1.2;
-
 }
 
 h1 {
@@ -34,6 +33,15 @@ h1.title {
 }
 
 p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+    text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+}
+
+.small-container>p {
     font-size: 14px;
     font-weight: 100;
     line-height: 20px;
@@ -171,6 +179,7 @@ input {
     width: 768px;
     max-width: 100%;
     min-height: 500px;
+    min-width: 300px;
 }
 
 .form-container {
@@ -314,4 +323,107 @@ input {
 
 .social-container a:hover {
     border: 1px solid #296543;
+}
+
+.small-container {
+    display: none;
+    border-radius: 25px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    .social-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .small-container {
+        display: block;
+        height: 100%;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .small-form-container,
+    form {
+        border-radius: 25px;
+    }
+
+    .small-form-container form .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .register-container {
+        display: block;
+        border: 1px solid green;
+    }
+
+    .login-container {
+        display: block;
+        border: 1px solid green;
+        opacity: 1;
+    }
+
+    .overlay-container {
+        display: block;
+        position: relative;
+        height: 200px;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+
+    .container.right-panel-active .overlay {
+        transform: translateX(100%);
+    }
+
+    button {
+        padding: 12px 40px;
+    }
+
+    .helper-message p {
+        margin: 10px;
+    }
+
+    .small-form-container span {
+        margin-top: 10px;
+    }
+
+    #go-to-login-btn,
+    #go-to-register-btn {
+        border: 1px solid #aaef18;
+        background-color: #aaef18 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    h1.title {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .social-container a {
+        height: 35px;
+        width: 35px;
+    }
 }

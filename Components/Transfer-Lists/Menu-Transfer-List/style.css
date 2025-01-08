@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
 body {
     font-family: 'Open Sans', sans-serif;
     background: linear-gradient(to right, #ffecd2, #fcb69f);
@@ -6,6 +8,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 .container {
@@ -16,6 +19,8 @@ body {
     width: 90%;
     max-width: 1000px;
     text-align: center;
+    overflow: auto;
+    max-height: 90vh;
 }
 
 h1 {
@@ -29,15 +34,17 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .list-container {
     flex: 1;
-    margin: 0 20px;
+    margin: 10px;
     background: #f8f8f8;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
 }
 
 .item-list {
@@ -76,6 +83,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
 }
 
 .btn {
@@ -94,4 +102,43 @@ h1 {
 .btn:hover {
     background: #e5533d;
     transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .list-container {
+        margin: 10px 0;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .list-container {
+        margin: 5px 0;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.8em;
+    }
 }

@@ -17,7 +17,6 @@ window.addEventListener('mousemove', function (event) {
     mouse.x = event.x;
     mouse.y = event.y;
     mouse.radius = 170;
-    console.log(mouse.radius);
 });
 
 document.onmousemove = (function (event) {

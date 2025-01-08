@@ -21,7 +21,7 @@ h2 {
     position: absolute;
     z-index: 10;
     padding: 20px 20px;
-    width: 18vw;
+    width: 25vw;
     margin: auto;
     background-color: rgba(133, 47, 133, 0.479);
     display: flex;
@@ -34,7 +34,7 @@ h2 {
     z-index: 10;
     cursor: pointer;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 15vw;
+    width: 21vw;
     margin: auto;
     padding: 10px 10px;
     color: azure;
@@ -42,7 +42,6 @@ h2 {
     box-shadow: inset 0px 0px 20px rgba(163, 26, 161, 0.68);
     text-align: center;
     border-radius: 20px;
-
 }
 
 .info:hover {
@@ -53,4 +52,14 @@ h2 {
 
 .info:active {
     background-color: rgba(219, 209, 219, 0.813);
+}
+
+@media screen and (max-width: 768px) {
+    #main {
+        width: 45vw;
+    }
+    
+    .info {
+        width: 37vw;
+    }
 }

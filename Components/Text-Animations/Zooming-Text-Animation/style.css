@@ -41,6 +41,7 @@ body {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
     animation: zoom 1.5s infinite ease-in-out;
     transition: all 0.3s ease-in-out;
+    font-size: 1vw;
 }
 
 .text:hover {

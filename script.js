@@ -1,3 +1,43 @@
+// Load the components categories from the JSON file
+document.addEventListener('DOMContentLoaded', () => {
+    // Check if the current file is 'index.html'
+    if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
+        fetch('./components.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.querySelector('.container');
+                data.forEach(component => {
+                    const zoomEffectDiv = document.createElement('div');
+                    zoomEffectDiv.classList.add('zoom-effect');
+
+                    const boxDiv = document.createElement('div');
+                    boxDiv.classList.add('box');
+
+                    const anchor = document.createElement('a');
+                    anchor.href = component.href;
+                    anchor.target = '_blank';
+
+                    const contentDiv = document.createElement('div');
+                    contentDiv.classList.add('content');
+
+                    const icon = document.createElement('i');
+                    icon.className = component.icon;
+
+                    const title = document.createElement('h2');
+                    title.textContent = component.title;
+
+                    contentDiv.appendChild(icon);
+                    contentDiv.appendChild(title);
+                    anchor.appendChild(contentDiv);
+                    boxDiv.appendChild(anchor);
+                    zoomEffectDiv.appendChild(boxDiv);
+                    container.appendChild(zoomEffectDiv);
+                });
+            })
+            .catch(error => console.error('Error loading components:', error));
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.querySelector("body").classList.add("loaded");

@@ -40,25 +40,25 @@ body {
 }
 
 .a1 {
-    background-image: url("https://img.freepik.com/free-vector/cute-boy-cheek-pinching-his-girlfriend-happy-valentine-cartoon-character-illustration_56104-367.jpg");
+    background-image: url("assets/image1.jpg");
 }
 
 .a2 {
-    background-image: url("https://w0.peakpx.com/wallpaper/853/160/HD-wallpaper-sugar-glider-irresistible-pure-white-adorable-big-eyes-strawberry.jpg")
+    background-image: url("assets/image2.jpg")
 }
 
 .a3 {
-    background-image: url("https://images.pexels.com/photos/129207/pexels-photo-129207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("assets/image3.jpg");
     color: #fff;
 }
 
 .a4 {
-    background-image: url("https://images.pexels.com/photos/240038/pexels-photo-240038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("assets/image4.jpg");
     color: #fff;
 }
 
 .a5 {
-    background-image: url("https://images.pexels.com/photos/220994/pexels-photo-220994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("assets/image5.jpg");
 }
 
 p {

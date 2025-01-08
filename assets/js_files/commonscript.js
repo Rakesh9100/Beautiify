@@ -135,3 +135,37 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+// Load components from the JSON files
+function loadComponents(jsonFile) {
+    fetch(jsonFile)
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('components-container');
+            data.forEach(component => {
+                const box = document.createElement('div');
+                box.className = 'box';
+                box.innerHTML = `
+                    <h1>${component.title}</h1>
+                    <div class="preview">
+                        <a href="${component.previewLink}" title="Live Preview" target="_blank">
+                            <img src="../images/link.png">
+                        </a>
+                    </div>
+                    <div class="source">
+                        <a href="${component.sourceLink}" title="Source Code" target="_blank">
+                            <img src="../images/github.png">
+                        </a>
+                    </div>
+                `;
+                container.appendChild(box);
+            });
+        })
+        .catch(error => console.error(`Error loading components from ${jsonFile}:`, error));
+}
+
+// Get the JSON file to load from the HTML data attribute
+const jsonFile = document.currentScript.getAttribute('data-json-file');
+if (jsonFile) {
+    loadComponents(jsonFile);
+}

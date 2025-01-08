@@ -203,7 +203,7 @@ html {
 }
 
 button#dark-mode-toggle {
-    background-image: url('./assets/images/dark.png');
+    background-image: url('assets/images/theme-mode.png');
     background-color: transparent;
     background-size: cover;
     position: fixed;
@@ -211,18 +211,39 @@ button#dark-mode-toggle {
     right: 16px;
     border: none;
     padding: 10px;
+    outline: none;
     cursor: pointer;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     z-index: 999;
     margin-top: 4px;
+    transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button#dark-mode-toggle:hover {
+    transform: scale(1.2);
+    animation: shine 1.5s infinite ease-in-out;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 0 0 20px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Keyframes for glowing animation */
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 0 0 20px 10px rgba(255, 255, 255, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.7), 0 0 30px 15px rgba(255, 255, 255, 0.4);
+    }
+
+    100% {
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 0 0 20px 10px rgba(255, 255, 255, 0.3);
+    }
 }
 
 .dark-mode button#dark-mode-toggle {
-    background-image: url('./assets/images/light.png');
-    background-color: transparent;
-    background-size: cover;
+    filter: grayscale(100%);
 }
 
 .header1 {
@@ -408,9 +429,17 @@ section {
     z-index: 100;
 }
 
+.comp-section {
+    height: 100vh;
+    display: grid;
+    color: var(--secondary);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .comp-section .compcontainer .logo img {
-    width: 250px;
-    margin-bottom: -25px;
+    width: clamp(200px, 20vw, 250px);
 }
 
 .comp-section .compcontainer h1,
@@ -422,7 +451,8 @@ section {
 }
 
 .comp-section .compcontainer h1 {
-    font-size: 7rem;
+    margin-top: -25px;
+    font-size: clamp(4rem, 4vw, 7rem);
     text-shadow: 2px 2px 3px black, 1px 1px 2px white;
     animation: lights 5s 750ms linear infinite;
 }
@@ -475,15 +505,15 @@ section {
 }
 
 .comp-section .compcontainer h3 {
-    font-weight: 300;
-    font-size: 2.8rem;
-    margin: 0.5%;
+    font-weight: 600;
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin: 10px 10px 20px;
     text-shadow: 2px 2px 2px black, 0.5px 0.5px 1px white;
 }
 
 .paragraph {
-    font-size: 2rem;
-    width: 70%;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    width: 80%;
     text-align: center;
     margin: auto;
     padding: 10px;
@@ -497,7 +527,7 @@ section {
 
 .comp-section .compcontainer .started {
     height: auto;
-    font-size: 25px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: 600;
     margin-top: 20px;
     padding: 10px 45px;
@@ -988,56 +1018,29 @@ footer {
     text-align: center;
 }
 
-/* Media Queries */
+/* Media queries for responsiveness */
 
-@media (max-width: 1030px) {
-    .comp-section {
-        flex-direction: column;
-        text-align: center;
-        width: auto;
-        height: 90vh;
-    }
-
-    .started {
-        height: 7vh;
-        font-size: 22px;
-        font-weight: 500;
-        margin-top: 19px;
-        padding: 8px 40px;
+@media (max-width: 1200px) {
+    nav ul {
+        gap: 2rem;
     }
 }
 
-@media (min-width: 901px) and (max-width: 990px) {
-    nav a {
-        font-size: 1.8rem;
+@media (max-width: 1125px) {
+    .navbar .nav-link {
+        font-size: 19px;
     }
 }
 
-@media (max-width: 925px) {
-    .comp-section {
-        flex-direction: column;
-        text-align: center;
-        width: auto;
-        height: fit-content;
-    }
-
-    .compcontainer {
-        border: 1px transparent;
-        padding-bottom: 10px;
-    }
-
-    .started {
-        height: 6vh;
-        font-size: 20px;
-        font-weight: 400;
-        margin-top: 19px;
-        padding: 6px 35px;
+@media (min-width: 1030px) and (max-width: 1070px) {
+    .navbar .nav-link {
+        font-size: 18px;
     }
 }
 
-@media (min-width: 851px) and (max-width: 900px) {
-    nav a {
-        font-size: 1.8rem;
+@media (min-width: 970px) and (max-width: 1030px) {
+    .navbar .nav-link {
+        font-size: 17px;
     }
 
     nav ul {
@@ -1045,9 +1048,23 @@ footer {
     }
 }
 
-@media (min-width: 768px) and (max-width: 851px) {
-    nav a {
-        font-size: 1.7rem;
+@media (min-width: 925px) and (max-width: 970px) {
+    .navbar .nav-link {
+        font-size: 16px;
+    }
+
+    nav ul {
+        gap: 1.2rem;
+    }
+}
+
+@media (min-width: 855px) and (max-width: 925px) {
+    nav {
+        padding: 0;
+    }
+
+    .navbar .nav-link {
+        font-size: 15px;
     }
 
     nav ul {
@@ -1055,30 +1072,50 @@ footer {
     }
 }
 
+@media (min-width: 790px) and (max-width: 855px) {
+    nav {
+        padding: 0;
+    }
+
+    .navbar .nav-link {
+        font-size: 14px;
+    }
+
+    nav ul {
+        gap: 0.1rem;
+    }
+
+    button#dark-mode-toggle {
+        height: 32px;
+        width: 32px;
+        margin-top: 8px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 790px) {
+    nav {
+        padding: 0;
+    }
+
+    .navbar .nav-link {
+        font-size: 13.5px;
+    }
+
+    nav ul {
+        gap: 0;
+    }
+
+    button#dark-mode-toggle {
+        height: 32px;
+        width: 32px;
+        margin-top: 8px;
+    }
+}
+
 @media (max-width: 786px) {
-    .comp-section {
-        flex-direction: column;
-        text-align: center;
-        width: auto;
-        height: fit-content;
-    }
-
-    .compcontainer {
-        border: 1px transparent;
-        padding-bottom: 10px;
-    }
-
     #mySearch {
         height: 6rem;
         width: 50rem;
-    }
-
-    .started {
-        height: 6vh;
-        font-size: 20px;
-        font-weight: 300;
-        margin-top: 15vh;
-        padding: 8px 30px;
     }
 }
 
@@ -1090,15 +1127,6 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .comp-section {
-        height: fit-content;
-    }
-
-    .compcontainer {
-        border: 1px transparent;
-        padding-bottom: 0px;
-    }
-
     #mySearch {
         height: 5rem;
         width: 30rem;
@@ -1143,25 +1171,7 @@ footer {
     }
 
     button#dark-mode-toggle {
-        background-image: url('./assets/images/dark.png');
-        background-color: transparent;
-        background-size: cover;
-        position: fixed;
-        top: 5.5px;
         right: 45px;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        z-index: 999;
-    }
-
-    .dark-mode button#dark-mode-toggle {
-        background-image: url('./assets/images/light.png');
-        background-color: transparent;
-        background-size: cover;
     }
 
     .hamburger {
@@ -1219,18 +1229,54 @@ footer {
     }
 }
 
+@media (max-width: 500px) {
+    .company-info {
+        flex: 1 1 100%; /* Make company info take full width */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Split the quick-links into two columns */
+    .footer-ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .send-message {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .group1 {
+        flex-direction: column;
+    }
+
+    .group1 input {
+        margin-bottom: 5px;
+    }
+
+    .send-message input,
+    .send-message textarea {
+        width: 100%;
+        resize: vertical;
+    }
+
+    .social {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .social a {
+        font-size: 2.5rem;
+    }
+}
+
 @media (max-width: 400px) {
     .paragraph {
         width: 100%;
         padding: 2px;
-    }
-
-    .started {
-        height: 5vh;
-        font-size: 20px;
-        font-weight: 100;
-        margin-top: 6vh;
-        padding: 5px 30px;
     }
 
     .box {

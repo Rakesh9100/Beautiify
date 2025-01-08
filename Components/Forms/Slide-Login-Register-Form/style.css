@@ -1,12 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .theme-switch {
     --toggle-size: 15px;
-    /* the size is adjusted using font-size,
-        this is not transform scale,
-        so you can choose any size */
     --container-width: 5.625em;
     --container-height: 2.5em;
     --container-radius: 6.25em;
-    /* radius 0 - minecraft mode :) */
     --container-light-bg: #3D7EAE;
     --container-night-bg: #1D1F2C;
     --circle-container-diameter: 3.375em;
@@ -22,6 +33,9 @@
     --circle-transition: .3s cubic-bezier(0, -0.02, 0.35, 1.17);
     display: flex;
     justify-content: right;
+    position: absolute !important;
+    right: 0px;
+    top: 0px;
 }
 
 .theme-switch,
@@ -40,6 +54,7 @@
 }
 
 .theme-switch__container {
+    margin-top: -25px;
     width: var(--container-width);
     height: var(--container-height);
     background-color: var(--container-light-bg);
@@ -175,8 +190,6 @@
     transition: var(--transition);
 }
 
-/* actions */
-
 .theme-switch__checkbox:checked+.theme-switch__container {
     background-color: var(--container-night-bg);
 }
@@ -225,14 +238,13 @@
 }
 
 .main {
-    position: relative;
-    left: 600px;
+    max-height: 470px;
+    width: 350px;
+    overflow: hidden;
+    border: 2px solid blue;
     display: flex;
     flex-direction: column;
     background-color: #240046;
-    max-height: 500px;
-    max-width: 350px;
-    overflow: hidden;
     border-radius: 12px;
     box-shadow: 7px 7px 10px 3px #24004628;
 }
@@ -244,12 +256,10 @@
     padding: 24px;
 }
 
-/*checkbox to switch from sign up to login*/
 #chk {
     display: none;
 }
 
-/*Login*/
 .login {
     position: relative;
     width: 100%;
@@ -281,7 +291,6 @@ label {
     border-radius: 4px;
 }
 
-/*Register*/
 .register {
     background: #eee;
     border-radius: 60% / 10%;
@@ -307,7 +316,6 @@ label {
     margin: 5% 0 5%;
 }
 
-/*Button*/
 .form button {
     width: 85%;
     height: 40px;

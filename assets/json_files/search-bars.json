@@ -1,0 +1,57 @@
+[
+    {
+        "title": "3D Search Bar",
+        "previewLink": "../../Components/Search-Bars/3D-Search-Bar/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/3D-Search-Bar"
+    },
+    {
+        "title": "Autocomplete Search Bar",
+        "previewLink": "../../Components/Search-Bars/Autocomplete-Search-Bar/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Autocomplete-Search-Bar"
+    },
+    {
+        "title": "Expandable Search Bar",
+        "previewLink": "../../Components/Search-Bars/Expandable-Search-Bar/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Expandable-Search-Bar"
+    },
+    {
+        "title": "Google Search Bar",
+        "previewLink": "../../Components/Search-Bars/Google-Search-Bar/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Google-Search-Bar"
+    },
+    {
+        "title": "Icon To Bar Search Bar",
+        "previewLink": "../../Components/Search-Bars/Icon-To-Bar-Search-Bar/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Icon-To-Bar-Search-Bar"
+    },
+    {
+        "title": "Magnifying Glass Search Bar",
+        "previewLink": "../../Components/Search-Bars/Magnifying-Glass-Search-Bar/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Magnifying-Glass-Search-Bar"
+    },
+    {
+        "title": "Neumorphism Search Bar",
+        "previewLink": "../../Components/Search-Bars/Neumorphism-Search-Bar/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Neumorphism-Search-Bar"
+    },
+    {
+        "title": "Operating Search Bar",
+        "previewLink": "../../Components/Search-Bars/Operating-Search-Bar/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Operating-Search-Bar"
+    },
+    {
+        "title": "Pulse Animated Search Bar",
+        "previewLink": "../../Components/Search-Bars/Pulse-Animated-Search-Bar/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Pulse-Animated-Search-Bar"
+    },
+    {
+        "title": "Simple Search Bar",
+        "previewLink": "../../Components/Search-Bars/Simple-Search-Bar/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Simple-Search-Bar"
+    },
+    {
+        "title": "Voice Command Search Bar",
+        "previewLink": "../../Components/Search-Bars/Voice-Command-Search-Bar/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Search-Bars/Voice-Command-Search-Bar"
+    }
+]

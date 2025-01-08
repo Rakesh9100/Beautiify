@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 body {
@@ -13,20 +12,22 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    position: relative;
     background: linear-gradient(45deg, #360033, #0b8793);
-    overflow: hidden;
-
 }
 
 .login-box {
     position: relative;
-    width: 400px;
-    height: 450px;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
     background: linear-gradient(45deg, #283c86, #45a247);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -38,14 +39,12 @@ h2 {
 
 .input-check:checked~h2 {
     color: #FFBF00;
-    text-shadow:
-        0 0 15px #FFBF00,
-        0 0 30px #FFBF00;
+    text-shadow: 0 0 15px #FFBF00, 0 0 30px #FFBF00;
 }
 
 .input-box {
     position: relative;
-    width: 310px;
+    width: 100%;
     margin: 30px 0;
 }
 
@@ -201,24 +200,30 @@ button {
     color: #FFBF00;
 }
 
+/* The yellow bar at the top */
 .login-light {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 500px;
-    height: 10px;
-    background: #FFBF00;
+    position: fixed;
+    top: 0; /* Center vertically relative to the body */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to stay at the center */
+    width: 100%;
+    max-width: 500px; /* Limit its size */
+    height: 10px; /* Maintain the height of the yellow line */
+    background: #FFBF00; /* Keep the yellow color */
     border-radius: 20px;
+    z-index: -1; /* Keep it behind other elements */
 }
 
+/* The “torch effect” overlay */
 .light {
     position: absolute;
     top: -200%;
     left: 0;
     width: 100%;
-    height: 950px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, .3) -50%, rgba(255, 255, 255, 0) 90%);
+    height: 100vh;
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.3) -50%,
+            rgba(255, 255, 255, 0) 90%);
     clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
     pointer-events: none;
     transition: .5s ease;
@@ -228,6 +233,7 @@ button {
     top: -90%;
 }
 
+/* The toggle switch */
 .toggle {
     position: absolute;
     top: 20px;
@@ -236,6 +242,7 @@ button {
     height: 120px;
     background: #191919;
     border-radius: 10px;
+    transition: right 0.3s ease;
 }
 
 .toggle::before {
@@ -306,9 +313,82 @@ button {
     top: 76px;
     opacity: 1;
     color: #FFBF00;
-    text-shadow:
-        0 0 15px #FFBF00,
+    text-shadow: 0 0 15px #FFBF00,
         0 0 30px #FFBF00,
         0 0 45px #FFBF00,
         0 0 60px #FFBF00;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    body {
+        background: linear-gradient(45deg, #360033, #0b8793) fixed;
+        background-size: cover;
+    }
+
+    .toggle {
+        right: -90px;
+    }
+}
+
+@media (max-width: 666px) {
+    body {
+        background: linear-gradient(45deg, #360033, #0b8793) fixed;
+        background-size: cover;
+    }
+
+    .toggle {
+        right: -68px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+
+    body {
+        background: linear-gradient(45deg, #360033, #0b8793) fixed;
+        background-size: cover;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .input-box {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    body {
+        background: linear-gradient(45deg, #360033, #0b8793) fixed;
+        background-size: cover;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .input-box label {
+        font-size: 0.9em;
+    }
+
+    .toggle {
+        right: -70px;
+    }
 }

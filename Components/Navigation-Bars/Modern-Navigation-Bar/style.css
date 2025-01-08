@@ -2,36 +2,47 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic');
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Nunito', serif;
     font-weight: 600;
+    background-color: #f0f2f5;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.navbar ul {
+.navbar, .navbar2, .navbar3 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px 0;
+}
+
+.navbar ul, .navbar2 ul, .navbar3 ul {
     border: 2px solid rgb(151, 20, 184);
     border-radius: 15px;
     margin: 10px;
-    padding: 0px 10px;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.navbar ul li {
+.navbar ul li, .navbar2 ul li, .navbar3 ul li {
     list-style: none;
 }
 
-.navbar ul li a {
+.navbar ul li a, .navbar2 ul li a, .navbar3 ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,41 +51,16 @@ body {
     text-decoration: none;
     color: rgb(173, 19, 211);
     font-size: 15px;
+    transition: color 0.3s ease;
 }
 
-.navbar ul li a:hover {
+.navbar ul li a:hover, .navbar2 ul li a:hover, .navbar3 ul li a:hover {
     color: rgb(133, 12, 163);
 }
 
-.navbar ul li a i {
+.navbar ul li a i, .navbar2 ul li a i, .navbar3 ul li a i {
     font-size: 22px;
     margin-bottom: 5px;
-}
-
-.navbar2 ul {
-    border: 2px solid rgb(151, 20, 184);
-    border-radius: 15px;
-    margin: 10px;
-    padding: 0px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar2 ul li {
-    list-style: none;
-}
-
-.navbar2 ul li a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    margin: 10px 25px;
-    padding: 10px 25px;
-    text-decoration: none;
-    color: rgb(173, 19, 211);
-    font-size: 15px;
 }
 
 .navbar2 ul li a:after {
@@ -84,51 +70,50 @@ body {
     width: 0;
     bottom: 2px;
     background-color: rgb(151, 20, 184);
+    transition: width 0.3s ease;
 }
 
 .navbar2 ul li a:hover:after {
     width: 70%;
-    transition: 0.3s;
-}
-
-.navbar2 ul li a i {
-    font-size: 22px;
-    margin-bottom: 5px;
-}
-
-.navbar3 ul {
-    border: 2px solid rgb(151, 20, 184);
-    border-radius: 15px;
-    margin: 10px;
-    padding: 0px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar3 ul li {
-    list-style: none;
-}
-
-.navbar3 ul li a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 25px;
-    padding: 10px 25px;
-    text-decoration: none;
-    color: rgb(173, 19, 211);
-    font-size: 15px;
 }
 
 .navbar3 ul li a:hover {
-    transition: 0.4s;
     background-color: rgb(173, 19, 211);
     color: rgb(244, 205, 253);
     border-radius: 5px;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-.navbar3 ul li a i {
-    font-size: 22px;
-    margin-bottom: 5px;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar ul li a, .navbar2 ul li a, .navbar3 ul li a {
+        margin: 10px 15px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .navbar ul li a i, .navbar2 ul li a i, .navbar3 ul li a i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .navbar ul, .navbar2 ul, .navbar3 ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li a, .navbar2 ul li a, .navbar3 ul li a {
+        margin: 5px 0;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .navbar ul li a i, .navbar2 ul li a i, .navbar3 ul li a i {
+        font-size: 16px;
+    }
 }

@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Carousel Hero",
+        "previewLink": "../../Components/Heroes/Carousel-Hero/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Carousel-Hero"
+    },
+    {
+        "title": "Collage Style Hero",
+        "previewLink": "../../Components/Heroes/Collage-Style-Hero/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Collage-Style-Hero"
+    },
+    {
+        "title": "Full Screen Image Hero",
+        "previewLink": "../../Components/Heroes/Full-Screen-Image-Hero/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Full-Screen-Image-Hero"
+    },
+    {
+        "title": "Full Screen Video Hero",
+        "previewLink": "../../Components/Heroes/Full-Screen-Video-Hero/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Full-Screen-Video-Hero"
+    },
+    {
+        "title": "Interactive Particle Hero",
+        "previewLink": "../../Components/Heroes/Interactive-Particle-Hero/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Interactive-Particle-Hero"
+    },
+    {
+        "title": "Neon Glow Hero",
+        "previewLink": "../../Components/Heroes/Neon-Glow-Hero/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Neon-Glow-Hero"
+    },
+    {
+        "title": "Split Screen Hero",
+        "previewLink": "../../Components/Heroes/Split-Screen-Hero/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Split-Screen-Hero"
+    },
+    {
+        "title": "Spooky Themed Hero",
+        "previewLink": "../../Components/Heroes/Spooky-Themed-Hero/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Spooky-Themed-Hero"
+    },
+    {
+        "title": "Text Only Hero",
+        "previewLink": "../../Components/Heroes/Text-Only-Hero/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Heroes/Text-Only-Hero"
+    }
+]
