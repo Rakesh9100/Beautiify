@@ -15,9 +15,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css_files/progressbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./assets/js_files/hamburgerMenu.js"></script>
+    <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>Beautiify</title>
 </head>
 
@@ -208,6 +207,16 @@
         </div>
         <div class="zoom-effect">
             <div class="box">
+                <a href="./assets/html_files/error-pages.html" target="_blank">
+                    <div class="content">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h2>Error Pages</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="zoom-effect">
+            <div class="box">
                 <a href="./assets/html_files/footers.html" target="_blank">
                     <div class="content">
                         <i class="fa-regular fa-window-maximize"></i>
@@ -359,13 +368,13 @@
             </div>
             <div class="send-message">
                 <h1 class="heading">Keep In Touch</h1>
-                <form action="#">
+                <form id="contact-form" name="Beautiify Contact" autocomplete="off" netlify>
                     <div class="form-group group1">
-                        <input type="text" id="name" name="name" placeholder="Enter your name">
-                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required oninput="validateName('name')">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required oninput="validateEmail('email')">
                     </div>
                     <div class="form-group group1">
-                        <textarea id="message" name="message" placeholder="Leave your message"></textarea>
+                        <textarea id="message" name="message" placeholder="Leave your message" required></textarea>
                         <button type="submit">SEND</button>
                     </div>
                 </form>
@@ -381,6 +390,7 @@
                 </div>
             </div>
         </div>
+
         <p class="copyright">Created By Rakesh Roshan ❤️ | ©
             <script>
                 document.write(new Date().getFullYear());
@@ -395,8 +405,7 @@
 
     <script src="./script.js"></script>
     <script src="./assets/js_files/cursor.js"></script>
-    <script src="./assets/js_files/dark-mode.js"></script>
-    <script src="./assets/js_files/progressBar.js"></script>
+    <script src="./assets/js_files/commonscript.js"></script>
 </body>
 
 </html>
