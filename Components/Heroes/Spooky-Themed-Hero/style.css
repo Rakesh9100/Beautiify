@@ -12,13 +12,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
-body {
+html, body {
     width: 100%;
-    height: 100vh;
-    background: url("assets/images/background.png")
+    min-height: 100vh;
+    background: url("assets/images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 header {
@@ -26,6 +29,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 130px;
+    position: relative;
+    width: 100%;
 }
 
 .nav ul {
@@ -36,6 +41,7 @@ header {
     padding: 0;
     list-style: none;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .nav ul li {
@@ -57,7 +63,7 @@ header {
     font-weight: 400;
     font-size: 23px;
     color: #fff;
-    transition: 0.5;
+    transition: 0.5s;
 }
 
 .logo h5:hover {
@@ -75,36 +81,59 @@ header {
     box-shadow: 0px 0px 10px 0px #72ed2f;
 }
 
-.content h1 {
-    font-family: "Something-Strange", sans-serif;
-    font-size: 100px;
-    width: 500px;
-    letter-spacing: 10px;
-    color: #5fe117;
-    line-height: 125px;
-}
-
 .hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 160px;
+    padding: 20px 160px;
+    min-height: calc(100vh - 80px);
+    gap: 40px;
+}
+
+.content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.content h1 {
+    font-family: "Something-Strange", sans-serif;
+    font-size: clamp(40px, 8vw, 100px);
+    letter-spacing: clamp(2px, 1vw, 10px);
+    color: #5fe117;
+    line-height: 1.25;
+    word-wrap: break-word;
 }
 
 .content p {
     font-family: "Roboto-Regular";
     font-weight: 400;
-    font-size: 20px;
+    font-size: clamp(16px, 2vw, 20px);
     color: #fff;
-    width: 540px;
-    line-height: 33px;
+    line-height: 1.6;
     padding: 40px 0px;
 }
 
 .content button {
     font-family: "Roboto-Regular";
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(14px, 1.5vw, 18px);
     background: #72ed2f;
     padding: 15px 25px;
     border: none;
@@ -122,8 +151,9 @@ header {
 .skill-set {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .skill {
@@ -140,6 +170,7 @@ header {
 .skill img {
     width: 40px;
     height: auto;
+    max-width: 100%;
 }
 
 .skill h3 {
@@ -148,4 +179,87 @@ header {
     font-size: 18px;
     color: #fff;
     text-transform: capitalize;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1400px) {
+    .hero-section {
+        padding: 20px 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 20px 80px;
+    }
+    
+    .hero-section {
+        padding: 20px 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .hero-section {
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+
+    .content, .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        order: -1; /* Moves image above content on smaller screens */
+    }
+
+    .hero-image img {
+        max-height: 50vh;
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-section {
+        padding: 20px 30px;
+    }
+
+    .hero-image img {
+        max-height: 40vh;
+    }
+
+    .skill {
+        width: calc(50% - 15px);
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 20px 15px;
+    }
+
+    .hero-section {
+        padding: 20px 15px;
+    }
+
+    .hero-image img {
+        max-height: 30vh;
+    }
+
+    .skill {
+        width: 100%;
+    }
 }

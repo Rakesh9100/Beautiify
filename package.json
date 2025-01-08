@@ -6,10 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["github", "contributors", "fetch"],
+  "keywords": [
+    "github",
+    "contributors",
+    "fetch"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "beautiify": "file:",
     "node-fetch": "^3.3.2"
   }
 }
