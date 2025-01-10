@@ -7,6 +7,7 @@ body {
     background-color: #f9f9f9;
     font-family: 'Roboto', Arial, sans-serif;
 }
+
 body {
     display: flex;
     justify-content: center;
@@ -50,6 +51,7 @@ body {
     color: #0f0f0f;
     height: 36px;
 }
+
 .yt-button {
     display: flex;
     align-items: center;
@@ -67,6 +69,7 @@ body {
 .yt-button:hover {
     background-color: #e5e5e5;
 }
+
 .yt-button:hover {
     background-color: #e5e5e5;
 }
@@ -81,6 +84,7 @@ body {
 .subscribe-btn:hover {
     background-color: #272727;
 }
+
 .subscribe-btn:hover {
     background-color: #272727;
 }
@@ -91,6 +95,7 @@ body {
     background-color: #e5e5e5;
     margin: 0 8px;
 }
+
 .divider {
     width: 1px;
     height: 24px;
@@ -146,7 +151,7 @@ body {
     overflow-x: auto;
     gap: 12px;
     width: 100%;
-    
+
     scrollbar-width: none;
 }
 
