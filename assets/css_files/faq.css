@@ -6,7 +6,7 @@
 
 body {
     background-image: url(../images/bg3.png);
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 50%;
@@ -43,8 +43,8 @@ body {
     font-weight: bold;
     padding-top: 3rem;
     font-size: 4rem;
-    text-shadow: 0px 0px 20px rgb(51, 34, 101), 0px 0px 40px rgb(121, 102, 175);
-    color: rgb(0, 212, 255, 1);
+    text-shadow: 0px 0px 10px rgba(51, 34, 101, 0.5), 0px 0px 20px rgba(121, 102, 175, 0.5);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .faqs_container {
@@ -65,7 +65,7 @@ body {
 .faq {
     height: fit-content;
     padding: 1.5rem;
-    background-color: #0000;
+    background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -73,19 +73,27 @@ body {
     flex-flow: column;
     border-radius: 0.5rem;
     cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.faq:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
 .faq_title {
     font-size: 18px;
-    font-weight: 500;
-    font-family: Inter;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #ffffff;
 }
 
 .faq_title .plus {
     cursor: pointer;
+    font-size: 1.5rem;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -93,13 +101,27 @@ body {
     padding: .5rem;
 }
 
+.faq_title .plus:hover {
+    transform: scale(1.2);
+}
+
+.faq.expanded .faq_title .plus {
+    content: "-";
+    transform: rotate(180deg);
+}
+
 .faq_content {
     height: 0;
     overflow: hidden;
     font-size: 1.7rem;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     color: #f7f7f7;
-    transition: height 0.2s ease-in-out, padding 0.2s ease-in-out;
+    transition: height 0.4s ease-in-out, padding 0.4s ease-in-out;
+}
+
+.faq.expanded .faq_content {
+    height: auto;
+    padding-top: 1rem;
 }
 
 .faqWrapper a {
@@ -110,8 +132,6 @@ body {
 .faqWrapper a:hover {
     text-decoration: underline;
 }
-
-/* Responsive Media Query */
 
 @media screen and (max-width: 768px) {
     .faqs_container {
