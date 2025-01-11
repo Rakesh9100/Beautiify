@@ -14,7 +14,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     min-height: 100vh;
     background: url("assets/images/background.png");
@@ -179,10 +180,9 @@ header {
     font-size: 18px;
     color: #fff;
     text-transform: capitalize;
-
 }
 
-/* Media Queries for responsiveness */
+/* Media queries for responsiveness */
 @media (max-width: 1400px) {
     .hero-section {
         padding: 20px 100px;
@@ -193,7 +193,7 @@ header {
     header {
         padding: 20px 80px;
     }
-    
+
     .hero-section {
         padding: 20px 80px;
     }
@@ -209,7 +209,8 @@ header {
         flex-direction: column;
     }
 
-    .content, .hero-image {
+    .content,
+    .hero-image {
         max-width: 100%;
     }
 
@@ -263,5 +264,4 @@ header {
     .skill {
         width: 100%;
     }
-
 }
