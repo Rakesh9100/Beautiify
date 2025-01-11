@@ -238,5 +238,10 @@
         "title": "Wiggle Button",
         "previewLink": "../../Components/Buttons/Wiggle-Button/index.html",
         "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Wiggle-Button"
+    },
+    {
+        "title": "Youtube Button",
+        "previewLink": "../../Components/Buttons/Youtube-Button/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Youtube-Button"
     }
 ]

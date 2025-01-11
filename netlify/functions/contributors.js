@@ -9,7 +9,7 @@ exports.handler = async function(event, context) {
     const repoName = 'Beautiify';
 
     const url = `https://api.github.com/repos/${owner}/${repoName}/contributors?page=${page}&per_page=${perPage}`;
-    
+
     try {
         const response = await fetch(url, {
             method: 'GET',
@@ -26,7 +26,7 @@ exports.handler = async function(event, context) {
         }
 
         const contributorsData = await response.json();
-        
+
         return {
             statusCode: 200,
             body: JSON.stringify(contributorsData)
