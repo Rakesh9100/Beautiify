@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -78,17 +79,26 @@ body {
 
 .faq:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .faq_title {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     font-family: Inter, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #ffffff;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.faq_title:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .faq_title .plus {
@@ -126,11 +136,38 @@ body {
 
 .faqWrapper a {
     text-decoration: none;
-    color: #629add;
+    color: #82cfff; /* Brighter and more saturated color for better visibility */
 }
 
 .faqWrapper a:hover {
     text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+    }
+
+    .faq {
+        background-color: rgba(30, 30, 30, 0.9);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .faq_title {
+        background-color: rgba(40, 40, 40, 0.9);
+    }
+
+    .faq_title:hover {
+        background-color: rgba(70, 70, 70, 0.9);
+    }
+
+    .faqWrapper a {
+        color: #9ecaff;
+    }
+
+    .faqWrapper a:hover {
+        color: #c0e5ff;
+    }
 }
 
 @media screen and (max-width: 768px) {
