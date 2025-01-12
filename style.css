@@ -430,16 +430,7 @@ section {
 }
 
 .comp-section {
-    height: 100vh;
-    display: grid;
-    color: var(--secondary);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.comp-section {
-    height: 100vh;
+    height: 80vh;
     display: grid;
     color: var(--secondary);
     justify-content: center;
@@ -1019,6 +1010,19 @@ footer {
     text-align: center;
 }
 
+/* Error Page Css */
+
+.error-section {
+    height: 100vh;
+}
+
+#error-img {
+    width: 640px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
 /* Media queries for responsiveness */
 
 @media (min-width: 769px) and (max-width: 855px) {
@@ -1033,6 +1037,13 @@ footer {
     #mySearch {
         height: 6rem;
         width: 50rem;
+    }
+
+    #error-img {
+        width: 90vw;
+        height: auto;
+        object-fit: cover;
+        border-radius: 25px;
     }
 }
 
