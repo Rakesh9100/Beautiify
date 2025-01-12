@@ -438,6 +438,16 @@ section {
     text-align: center;
 }
 
+.comp-section {
+    height: 100vh;
+    display: grid;
+    color: var(--secondary);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
 .comp-section .compcontainer .logo img {
     width: clamp(200px, 20vw, 250px);
 }
@@ -556,15 +566,6 @@ section {
     background: #b1c2d4;
 }
 
-.comp-section {
-    height: 80vh;
-    display: grid;
-    color: var(--secondary);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 2;
-}
 
 /* Container Section Css */
 
