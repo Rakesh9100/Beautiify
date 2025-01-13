@@ -383,7 +383,7 @@ nav a {
     display: block;
     width: 0;
     height: 3.2px;
-    background: #FF5733;
+    background: #ce4f9b;
     transition: width 0.3s ease;
     position: absolute;
     left: 50%;
@@ -392,7 +392,7 @@ nav a {
 }
 
 .nav-menu .nav-item .nav-link:hover {
-    color: #C70039;
+    color: #d72590;
 }
 
 .nav-menu .nav-item .nav-link:hover::after {
@@ -683,7 +683,7 @@ footer {
     display: block;
     width: 0;
     height: 3px;
-    background: #d31313; /* Color of the underline */
+    background: #d76cc2; /* Color of the underline */
     transition: width 0.3s ease-in-out;
     position: absolute;
     bottom: -2px;
@@ -771,8 +771,8 @@ footer {
     font-size: 24px;
     margin-bottom: 20px;
     background: #00F260;
-    background: -webkit-linear-gradient(to right, #f50414, #CCC);
-    background: linear-gradient(to right, #f50414, #CCC);
+    background: -webkit-linear-gradient(to right, #f70479, #CCC);
+    background: linear-gradient(to right, #f70479, #CCC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -805,8 +805,8 @@ footer {
 
 .send-message button {
     height: 50px;
-    background: -webkit-linear-gradient(to right, #f50414, #ccc);
-    background: linear-gradient(to right, #f50414, #ccc);
+    background: -webkit-linear-gradient(to right, #f70479, #ccc);
+    background: linear-gradient(to right, #f70479, #ccc);
     color: white;
     padding: 10px 20px;
     border: none;
