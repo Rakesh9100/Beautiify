@@ -1,12 +1,22 @@
 [
     {
-        "title": "Expandable Row Table",
-        "previewLink": "../../Components/Tables/Expandable-Row-Table/index.html",
-        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Tables/Expandable-Row-Table"
+        "title": "Bending Sheet Table",
+        "previewLink": "../../Components/Tables/Bending-Sheet-Table/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Tables/Bending-Sheet-Table"
     },
     {
         "title": "Interactive Flip Table",
         "previewLink": "../../Components/Tables/Interactive-Flip-Table/index.html",
         "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Tables/Interactive-Flip-Table"
+    },
+    {
+        "title": "Expandable Row Table",
+        "previewLink": "../../Components/Tables/Expandable-Row-Table/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Tables/Expandable-Row-Table"
+    },
+    {
+        "title": "Pop Up Table",
+        "previewLink": "../../Components/Tables/Pop-Up-Table/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Tables/Pop-Up-Table"
     }
 ]
