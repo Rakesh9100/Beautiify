@@ -165,14 +165,14 @@ main {
     }
 }
 
-@media (min-width:360px ) and (max-width: 456px) {
+@media (min-width:360px) and (max-width: 456px) {
     .swiper {
         max-width: 360px;
         aspect-ratio: 3.2/5.1;
     }
 }
 
-@media (min-width:457px ) and (max-width: 676px) {
+@media (min-width:457px) and (max-width: 676px) {
     .swiper {
         max-width: 450px;
         aspect-ratio: 4.8/5;
