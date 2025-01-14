@@ -173,9 +173,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const componentsLink = document.querySelector('.nav-menu a[href="#components"]');
 
     // Check if elements exist before adding event listeners
-    const searchBarSection = document.getElementById('searchBar');
     const componentsSection = document.getElementById('components');
 
+    // Proceed only if all required elements exist
     if (homeLink && componentsLink && componentsSection) {
         componentsLink.addEventListener('click', (event) => {
             event.preventDefault();
@@ -200,10 +200,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 homeLink.style.color = 'red';
             }
         });
-    } else {
-        // If any of the navbar elements are missing, log a warning but don't stop the script
-        if (!homeLink) console.warn("Home link not found");
-        if (!componentsLink) console.warn("Components link not found");
-        if (!componentsSection) console.warn("Components section not found");
     }
+    // If elements are missing, silently do nothing
 });
