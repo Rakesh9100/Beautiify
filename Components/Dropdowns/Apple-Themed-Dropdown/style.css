@@ -1,9 +1,9 @@
 /* Apple inspired theme */
 :root {
-    --background-color: #fff;
-    --text-color: #000;
-    --button-bg-color: #000;
-    --button-text-color: #fff;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --button-bg-color: #000000;
+    --button-text-color: #ffffff;
     --dropdown-bg-color: #f9f9f9;
     --dropdown-item-hover-bg: #e5e5e5;
 }
@@ -15,12 +15,12 @@ body {
 }
 
 body.dark-theme {
-    --background-color: #000;
-    --text-color: #fff;
-    --button-bg-color: #fff;
-    --button-text-color: #000;
-    --dropdown-bg-color: #333;
-    --dropdown-item-hover-bg: #555;
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --button-bg-color: #ffffff;
+    --button-text-color: #000000;
+    --dropdown-bg-color: #333333;
+    --dropdown-item-hover-bg: #555555;
 }
 
 .btn-apple {

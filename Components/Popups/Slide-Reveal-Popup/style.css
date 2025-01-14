@@ -11,8 +11,8 @@ body {
 #openPopup {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #fff;
-    border: 2px solid #333;
+    background-color: #ffffff;
+    border: 2px solid #333333;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -47,7 +47,7 @@ body {
     width: 50%;
     height: 100%;
     top: 0;
-    background: linear-gradient(135deg, #111, #333);
+    background: linear-gradient(135deg, #111111, #333333);
     transition: transform 0.7s ease;
     z-index: 1;
 }
@@ -73,7 +73,7 @@ body {
 #popupContent {
     position: relative;
     z-index: 2;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px 40px; /* Added padding to fit text properly */
     border-radius: 10px;
     text-align: center;
@@ -111,7 +111,7 @@ body {
     right: 10px;
     font-size: 24px;
     cursor: pointer;
-    color: #fff;
+    color: #ffffff;
     z-index: 3;
     transition: color 0.3s ease;
 }

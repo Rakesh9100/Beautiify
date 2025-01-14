@@ -9,7 +9,7 @@
 
 body {
     display: flex;
-    background: #333;
+    background: #333333;
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 100vh;
@@ -44,7 +44,7 @@ body {
 
 .social-icon__link {
     font-size: 2rem;
-    color: #fff;
+    color: #ffffff;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
@@ -56,7 +56,7 @@ body {
 
 .menu__link {
     font-size: 1.2rem;
-    color: #fff;
+    color: #ffffff;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
@@ -70,7 +70,7 @@ body {
 }
 
 .footer p {
-    color: #fff;
+    color: #ffffff;
     margin: 15px 0 10px 0;
     font-size: 1rem;
     font-weight: 300;

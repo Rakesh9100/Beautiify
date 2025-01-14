@@ -20,11 +20,11 @@ body {
 .quote-text {
     font-size: 1.2em;
     font-style: italic;
-    color: #333;
+    color: #333333;
     margin-bottom: 15px;
 }
 
 .quote-author {
     font-weight: bold;
-    color: #555;
+    color: #555555;
 }

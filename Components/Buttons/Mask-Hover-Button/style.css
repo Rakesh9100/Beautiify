@@ -40,13 +40,13 @@
     font-size: 11px;
     letter-spacing: 1px;
     font-weight: bold;
-    background: #000;
+    background: #000000;
     -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
     mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
     -webkit-mask-size: 2300% 100%;
     mask-size: 2300% 100%;
     border: none;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     animation: ani2 0.7s steps(22) forwards;
 }
@@ -63,7 +63,7 @@
     margin-right: auto;
     margin-top: 7vh;
     overflow: hidden;
-    border: 1px solid #000;
+    border: 1px solid #000000;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     transition: 0.5s;
@@ -79,13 +79,13 @@
     font-size: 11px;
     letter-spacing: 1px;
     font-weight: bold;
-    background: #000;
+    background: #000000;
     -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
     mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
     -webkit-mask-size: 3000% 100%;
     mask-size: 3000% 100%;
     border: none;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     animation: ani2 0.7s steps(29) forwards;
 }
@@ -96,7 +96,7 @@
 
 .mas {
     position: absolute;
-    color: #000;
+    color: #000000;
     text-align: center;
     width: 101%;
     font-family: "Lato", sans-serif;
@@ -144,7 +144,7 @@ a {
     margin-right: auto;
     margin-top: 8vh;
     overflow: hidden;
-    border: 1px solid #000;
+    border: 1px solid #000000;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     transition: 0.5s;
@@ -160,13 +160,13 @@ a {
     font-size: 11px;
     letter-spacing: 1px;
     font-weight: bold;
-    background: #000;
+    background: #000000;
     -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
     mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
     -webkit-mask-size: 7100% 100%;
     mask-size: 7100% 100%;
     border: none;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     animation: ani2 0.7s steps(70) forwards;
 }

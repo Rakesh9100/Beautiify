@@ -22,7 +22,7 @@ body {
     line-height: 2rem;
     font-weight: 700;
     letter-spacing: -0.025em;
-    color: #fff;
+    color: #ffffff;
 }
 
 .description {
@@ -60,7 +60,7 @@ body {
 }
 
 .form div button {
-    color: #fff;
+    color: #ffffff;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 1.25rem;

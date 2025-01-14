@@ -89,12 +89,12 @@ body {
 }
 
 .dropdown-list::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #888888;
     border-radius: 10px;
 }
 
 .dropdown-list::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #555555;
 }
 
 .dropdown-list .list-item {

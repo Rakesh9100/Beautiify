@@ -56,7 +56,7 @@ span {
 }
 
 a {
-    color: #333;
+    color: #333333;
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0;
@@ -82,7 +82,7 @@ a:hover {
 }
 
 .content input {
-    accent-color: #333;
+    accent-color: #333333;
     width: 12px;
     height: 12px;
 }
@@ -98,7 +98,7 @@ button {
     border-radius: 20px;
     border: 1px solid #296543;
     background-color: #296543;
-    color: #fff;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 700;
     margin: 10px;
@@ -122,8 +122,8 @@ button:focus {
 
 button.ghost {
     background-color: rgba(225, 225, 225, 0.2);
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid #ffffff;
+    color: #ffffff;
 }
 
 button.ghost i {
@@ -151,7 +151,7 @@ button.ghost:hover i.login {
 }
 
 form {
-    background-color: #fff;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +162,7 @@ form {
 }
 
 input {
-    background-color: #eee;
+    background-color: #eeeeee;
     border-radius: 10px;
     border: none;
     padding: 12px 15px;
@@ -171,7 +171,7 @@ input {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 25px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
@@ -248,7 +248,7 @@ input {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
-    color: #fff;
+    color: #ffffff;
     position: relative;
     left: -100%;
     height: 100%;

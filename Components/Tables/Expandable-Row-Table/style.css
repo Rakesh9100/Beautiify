@@ -3,14 +3,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
-    color: #333;
+    color: #333333;
 }
 
 h2 {
     text-align: center;
     margin-top: 20px;
     font-size: 2rem;
-    color: #444;
+    color: #444444;
 }
 
 table {
@@ -28,7 +28,7 @@ td {
     padding: 15px;
     text-align: left;
     font-size: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
 }
 
 th {
@@ -58,7 +58,7 @@ tr.details:hover {
     display: none;
     background-color: #f9f9f9;
     font-style: italic;
-    color: #555;
+    color: #555555;
 }
 
 .details td {

@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #000;
+    background: #000000;
 }
 
 ul {
@@ -38,7 +38,7 @@ li:hover::after {
     bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
-    color: #fff;
+    color: #ffffff;
     padding: 6px 10px;
     border-radius: 5px;
     opacity: 0;
@@ -64,7 +64,7 @@ li:hover::after {
     height: 50px;
     border-radius: 50%;
     color: #4d4d4d;
-    background-color: #fff;
+    background-color: #ffffff;
     transition: all 0.3s ease-in-out;
 }
 
@@ -90,7 +90,7 @@ li:hover::after {
     left: 0;
     width: 100%;
     height: 0;
-    background-color: #000;
+    background-color: #000000;
     transition: all 0.3s ease-in-out;
 }
 

@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@ body {
 button {
     background: linear-gradient(to right, #79b6da, #0a5064);
     border: none;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;

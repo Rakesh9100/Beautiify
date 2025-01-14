@@ -44,7 +44,7 @@ body {
 .info-wrap {
     width: 50%;
     background: linear-gradient(144deg, rgba(126, 39, 156, 0.9) 0%, rgba(49, 39, 157, 0.9) 49%);
-    color: #fff;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,7 +83,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 18px;
-    color: #fff;
+    color: #ffffff;
     text-shadow: 1px 1px 2px black;
 }
 
@@ -105,7 +105,7 @@ body {
 }
 
 .info-details li a {
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     text-decoration: none;
     transition: all .4s;
@@ -129,7 +129,7 @@ body {
 .social-icons li a {
     display: inline-block;
     background: #49025f;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 15px;
     font-size: 21px;
     border-radius: 22%;
@@ -138,7 +138,7 @@ body {
 }
 
 .social-icons li a:hover {
-    background: #fff;
+    background: #ffffff;
     color: #49025f;
     box-shadow: 0 4px 15px rgba(73, 2, 95, 0.8), 0 0 10px rgba(73, 2, 95, 0.5);
     transform: scale(1.1);
@@ -175,9 +175,9 @@ body {
 .form-group1 textarea {
     width: 100%;
     font-size: 16px;
-    color: #555;
+    color: #555555;
     background: none;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     padding: 21px 36px;
     outline: none;
@@ -203,7 +203,7 @@ body {
     border: none;
     border-radius: 30px;
     background: #49025f;
-    color: #fff;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;

@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #000;
+    background: #000000;
 }
 
 .loader {
@@ -18,7 +18,7 @@ body {
     pointer-events: none;
     top: 0;
     left: 0;
-    background: var(--bg-color, #000);
+    background: var(--bg-color, #000000);
     min-height: 100vh;
     width: 100vw;
     display: flex;

@@ -124,7 +124,7 @@ button:active {
 input[type="text"] {
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 8px;
     width: 100%;
     transition: border-color 0.2s;
@@ -138,5 +138,5 @@ input[type="text"]:focus {
 .list-container div {
     margin-top: 5px;
     font-weight: bold;
-    color: #555;
+    color: #555555;
 }

@@ -36,7 +36,7 @@ function generateQRCode() {
         text: qrText.value,
         height: size,
         width: size,
-        colorLight: "#fff",
-        colorDark: "#000",
+        colorLight: "#ffffff",
+        colorDark: "#000000",
     });
 }

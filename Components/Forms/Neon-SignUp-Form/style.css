@@ -65,7 +65,7 @@ body {
 }
 
 .signup-form h2 {
-    color: #fff;
+    color: #ffffff;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
@@ -74,17 +74,17 @@ body {
     padding: 10px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 1px solid #333;
+    border: 1px solid #333333;
     border-radius: 50px;
     background-color: #2222226b;
-    color: #fff;
+    color: #ffffff;
     outline: none;
 
     transition: all linear .2s;
 }
 
 .signup-form input:hover {
-    border-color: #00f, #f00, #0f0;
+    border-color: #0000ff, #ff0000, #00ff00;
     box-shadow: 0px -10px 15px -6px rgba(0, 255, 0, 0.8),
         0px 5px 15px 0px rgba(255, 0, 0, 0.8),
         5px 0px 15px 0px rgba(0, 0, 255, 0.8),
@@ -93,7 +93,7 @@ body {
 
 .signup-form button {
     background-color: #4caf50;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;

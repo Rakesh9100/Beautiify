@@ -4,7 +4,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: #000; /* Black background to enhance smoke visibility */
+    background-color: #000000; /* Black background to enhance smoke visibility */
 }
 
 #canvas {

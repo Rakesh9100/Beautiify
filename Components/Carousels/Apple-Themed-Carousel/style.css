@@ -1,8 +1,8 @@
 :root {
     --background-color: rgba(255, 255, 255, 0.8);
-    --text-color: #000;
+    --text-color: #000000;
     --button-bg-color: rgba(0, 0, 0, 0.7);
-    --button-text-color: #fff;
+    --button-text-color: #ffffff;
     --carousel-bg-color: rgba(255, 255, 255, 0.2);
     --carousel-border-color: rgba(255, 255, 255, 0.5);
     --background-gradient: linear-gradient(135deg, rgba(240, 240, 240, 0.8) 25%, rgba(255, 255, 255, 0.8) 100%);
@@ -11,9 +11,9 @@
 
 body.dark-theme {
     --background-color: rgba(0, 0, 0, 0.8);
-    --text-color: #fff;
+    --text-color: #ffffff;
     --button-bg-color: rgba(255, 255, 255, 0.7);
-    --button-text-color: #000;
+    --button-text-color: #000000;
     --carousel-bg-color: rgba(0, 0, 0, 0.2);
     --carousel-border-color: rgba(0, 0, 0, 0.5);
     --background-gradient: var(--dark-background-gradient);

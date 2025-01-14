@@ -37,7 +37,7 @@ section {
     padding: 8px 16px;
     transform: translateY(0);
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     text-shadow: 0 -1px rgba(0, 0, 0, .25);
     transition-property: transform;
     transition-duration: .2s;
@@ -59,7 +59,7 @@ section {
     box-sizing: content-box;
     background-image: radial-gradient(#cd3f64, #9d3656);
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, .2), 0 1px 2px 1px rgba(255, 255, 255, .2);
     transition-property: border-radius, padding, width, transform;
     transition-duration: .2s;
@@ -80,7 +80,7 @@ section {
     width: calc(100% - 8px);
     height: calc(100% - 10px);
     box-sizing: content-box;
-    background-color: #803;
+    background-color: #880033;
     background-image: radial-gradient(4px 8px at 4px calc(100% - 8px), rgba(255, 255, 255, .25), transparent), radial-gradient(4px 8px at calc(100% - 4px) calc(100% - 8px), rgba(255, 255, 255, .25), transparent), radial-gradient(16px at -4px 0, white, transparent), radial-gradient(16px at calc(100% + 4px) 0, white, transparent);
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5), inset 0 -1px 3px 3px rgba(0, 0, 0, .4);
     transition-property: border-radius, padding-top;

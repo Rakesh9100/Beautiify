@@ -92,7 +92,7 @@ body {
     --moon-bg: #C4C9D1;
     --spot-color: #959DB1;
     --circle-container-offset: calc((var(--circle-container-diameter) - var(--container-height)) / 2 * -1);
-    --stars-color: #fff;
+    --stars-color: #ffffff;
     --clouds-color: #F3FDFF;
     --back-clouds-color: #AACADF;
     --transition: .5s cubic-bezier(0, -0.02, 0.4, 1.25);

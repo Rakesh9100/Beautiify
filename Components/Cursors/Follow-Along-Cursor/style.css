@@ -10,11 +10,11 @@ body {
 h1,
 p,
 a {
-    color: #fff;
+    color: #ffffff;
 }
 
 a {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #ffffff;
     padding: 10px 0;
     margin-top: 25px;
 }
@@ -46,15 +46,15 @@ a {
 }
 
 .right {
-    background: #fff;
+    background: #ffffff;
 }
 
 .right a {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #000000;
 }
 
 .right h1,
 .right p,
 .right a {
-    color: #000;
+    color: #000000;
 }

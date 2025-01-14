@@ -34,7 +34,7 @@ input {
 
 .title {
     font-size: 2em;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 30px;
     font-weight: 500;
     animation: fadeIn 1s ease-in-out;
@@ -111,10 +111,10 @@ label.toggle-item:before {
     position: absolute;
     width: 8px;
     height: 8px;
-    background: #222;
+    background: #222222;
     border-radius: 50%;
     transform: translate(8px, 14px);
-    box-shadow: 16px 0 0 #222, 22px -4px 0 12px #e4ac04;
+    box-shadow: 16px 0 0 #222222, 22px -4px 0 12px #e4ac04;
 }
 
 .dog-rollover label .ear {
@@ -144,13 +144,13 @@ label.toggle-item:before {
     width: 2.5em;
     height: 2.5em;
     position: absolute;
-    background: #fff;
+    background: #ffffff;
     z-index: 8;
 }
 
 .dog-rollover label .mouth {
     position: absolute;
-    background: #222;
+    background: #222222;
     width: 14px;
     height: 7px;
     left: 50%;

@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #000;
+    background: #000000;
 }
 
 h2 {
@@ -19,7 +19,7 @@ h2 {
     margin: 20px 0 0;
     font-size: 4em;
     font-weight: 900;
-    color: #fff;
+    color: #ffffff;
     z-index: 1;
     overflow: hidden;
 }
@@ -30,7 +30,7 @@ h2:before {
     left: 0;
     width: 120%;
     height: 100%;
-    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+    background: linear-gradient(90deg, transparent 0%, #000000 5%, #000000 100%);
     animation: animate 5.5s linear forwards;
     animation-delay: 1.2s;
 }

@@ -11,9 +11,9 @@ body {
 .wrapper {
     --input-focus: #2d8cf0;
     --font-color: #323232;
-    --font-color-sub: #666;
-    --bg-color: #fff;
-    --bg-color-alt: #666;
+    --font-color-sub: #666666;
+    --bg-color: #ffffff;
+    --bg-color-alt: #666666;
     --main-color: #323232;
     font-family: Montserrat, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji" !important
 }

@@ -22,7 +22,7 @@ h1 {
 .loader-container {
     width: 80%;
     max-width: 600px;
-    background-color: #444;
+    background-color: #444444;
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

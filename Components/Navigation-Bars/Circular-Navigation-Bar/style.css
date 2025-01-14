@@ -49,13 +49,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: #ffffff;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     transform: rotate(calc(360deg / -8 * var(--i)));
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
-    color: #111;
+    color: #111111;
     transition: 0.5s;
 }
 
@@ -69,7 +69,7 @@ body {
     position: absolute;
     width: 80px;
     height: 80px;
-    background-color: #fff;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;

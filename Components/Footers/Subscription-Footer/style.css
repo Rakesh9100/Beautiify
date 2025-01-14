@@ -16,7 +16,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
-    border: 1px solid #000;
+    border: 1px solid #000000;
     margin: 20px;
 }
 
@@ -39,7 +39,7 @@ body {
 
 .footer .column a {
     text-decoration: none;
-    color: #000;
+    color: #000000;
     margin-bottom: 5px;
     font-size: 16px;
 }
@@ -65,14 +65,14 @@ body {
 .footer .subscribe input[type="email"] {
     padding: 5px;
     margin-bottom: 10px;
-    border: 1px solid #000;
+    border: 1px solid #000000;
     border-radius: 3px;
     font-size: 14px;
 }
 
 .footer .subscribe button {
     padding: 5px 10px;
-    border: 1px solid #000;
+    border: 1px solid #000000;
     border-radius: 3px;
     cursor: pointer;
     font-size: 14px;
@@ -82,7 +82,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    border-top: 1px solid #000;
+    border-top: 1px solid #000000;
 }
 
 .footer-terms {
@@ -93,7 +93,7 @@ body {
 
 .footer-bottom a {
     text-decoration: none;
-    color: #000;
+    color: #000000;
     margin-top: 15px;
 }
 
@@ -105,7 +105,7 @@ body {
 .social-icons a {
     margin-left: 10px;
     text-decoration: none;
-    color: #000;
+    color: #000000;
     font-size: 18px;
 }
 

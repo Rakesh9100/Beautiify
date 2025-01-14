@@ -34,7 +34,7 @@ input {
 
 .title {
     font-size: 2em;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 30px;
     font-weight: 500;
     animation: fadeIn 1s ease-in-out;
@@ -104,7 +104,7 @@ label.toggle-item:before {
     width: 2.5em;
     height: 2.5em;
     box-shadow: inset 0.5px -1px 1px rgba(0, 0, 0, 0.35);
-    background: #fff;
+    background: #ffffff;
     transform: rotate(-25deg);
 }
 

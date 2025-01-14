@@ -46,7 +46,7 @@ div[class*=box] {
 ========================
 */
 .btn-one {
-    color: #FFF;
+    color: #FFFFFF;
     transition: all 0.3s;
     position: relative;
 }
@@ -107,7 +107,7 @@ div[class*=box] {
 ========================
 */
 .btn-two {
-    color: #FFF;
+    color: #FFFFFF;
     transition: all 0.5s;
     position: relative;
 }
@@ -163,7 +163,7 @@ div[class*=box] {
 ========================
 */
 .btn-three {
-    color: #FFF;
+    color: #FFFFFF;
     transition: all 0.5s;
     position: relative;
 }

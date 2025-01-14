@@ -44,7 +44,7 @@ body {
 }
 
 .btn_get:hover {
-    color: #fff;
+    color: #ffffff;
     background: #6754e2;
     border-color: #6754e2;
     -webkit-box-shadow: none;
@@ -126,7 +126,7 @@ button:focus {
     box-shadow: none;
     background: #5e2ced;
     border-color: #5e2ced;
-    color: #fff;
+    color: #ffffff;
 }
 
 .btn_get_two:hover {

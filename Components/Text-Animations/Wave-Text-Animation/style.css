@@ -9,7 +9,7 @@
 
 body {
     display: flex;
-    background: #000;
+    background: #000000;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@ body {
 }
 
 .content h2 {
-    color: #fff;
+    color: #ffffff;
     font-size: 10vw;
     position: absolute;
     transform: translate(-50%, -50%);

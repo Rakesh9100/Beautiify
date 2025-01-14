@@ -33,7 +33,7 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #dddddd;
     transition: ease-in 0.5s;
     color: black;
     box-shadow: 0px 0px 2px 0px black;
@@ -60,7 +60,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #dddddd;
 }
 
 .dropdown:hover .dropdown-content {

@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #fff;
+    color: #ffffff;
     flex-direction: column;
     padding: 15px;
 }
@@ -22,7 +22,7 @@ h1 {
 
 .container {
     background: rgba(255, 255, 255, 0.9);
-    color: #333;
+    color: #333333;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     padding: 25px;
@@ -50,13 +50,13 @@ h1 {
 
 .form-group label {
     font-weight: 600;
-    color: #555;
+    color: #555555;
     display: block;
 }
 
 .form-group input {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 5px;
     width: 100%;
     margin-top: 5px;
@@ -72,7 +72,7 @@ h1 {
 
 .submit-btn {
     background: #2575fc;
-    color: #fff;
+    color: #ffffff;
     padding: 15px 20px;
     border: none;
     border-radius: 5px;

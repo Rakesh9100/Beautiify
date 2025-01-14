@@ -14,7 +14,7 @@ button:focus {
 }
 
 body {
-    background-color: #222;
+    background-color: #222222;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@ body {
     text-transform: uppercase;
     line-height: 0.76em;
     position: absolute;
-    color: #fff;
+    color: #ffffff;
     font-size: 3.5em;
     white-space: nowrap;
     font-weight: bold;

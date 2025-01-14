@@ -37,7 +37,7 @@ body {
 }
 
 .dot {
-    background: #fff;
+    background: #ffffff;
     border-radius: 50%;
     height: 10px;
     margin-right: 5px;
@@ -49,7 +49,7 @@ body {
 }
 
 .drop {
-    background: #fff;
+    background: #ffffff;
     border-radius: 1.2px;
     height: 5px;
     transform: translateY(5px);

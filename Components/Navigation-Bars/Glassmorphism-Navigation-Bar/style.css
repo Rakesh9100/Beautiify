@@ -48,7 +48,7 @@ body {
 }
 
 .logo {
-    color: #fff;
+    color: #ffffff;
     font-size: 25px;
     text-decoration: none;
     font-weight: 600;
@@ -56,7 +56,7 @@ body {
 }
 
 .navbar a {
-    color: #fff;
+    color: #ffffff;
     font-size: 18px;
     text-decoration: none;
     margin-left: 35px;
@@ -64,12 +64,12 @@ body {
 }
 
 .navbar a:hover {
-    color: #f00;
+    color: #ff0000;
 }
 
 #menu-icon {
     font-size: 36px;
-    color: #fff;
+    color: #ffffff;
     display: none;
 }
 

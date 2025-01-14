@@ -3,7 +3,7 @@ body {
 }
 
 body {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .sign-up-container {
@@ -20,8 +20,8 @@ body {
     position: relative;
     top: -205px;
     padding: 1rem 1.4rem 125px 1.4rem;
-    background: #fff;
-    background: -webkit-linear-gradient(top, #f1f1f1 43%, #fff 100%);
+    background: #ffffff;
+    background: -webkit-linear-gradient(top, #f1f1f1 43%, #ffffff 100%);
     background: linear-gradient(to bottom, #f1f1f1 43%, #eee2b4 100%);
     color: #db4344;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -48,7 +48,7 @@ h1 {
 }
 
 .button {
-    border: 1px solid #999;
+    border: 1px solid #999999;
     -webkit-transition: background 0.1s, color 0.1s;
     transition: background 0.1s, color 0.1s;
 }
@@ -59,8 +59,8 @@ h1 {
 }
 
 .text-input {
-    background: #fff;
-    color: #333;
+    background: #ffffff;
+    color: #333333;
 }
 
 .text-input::-webkit-input-placeholder {

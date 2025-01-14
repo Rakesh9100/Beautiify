@@ -49,8 +49,8 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .stats div {

@@ -6,7 +6,7 @@ article.accordion {
     display: block;
     width: 43em;
     margin: 9rem auto;
-    background-color: #666;
+    background-color: #666666;
     overflow: auto;
     border-radius: 5px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
@@ -19,8 +19,8 @@ article.accordion section {
     width: 2em;
     height: 12em;
     margin: 0.5em 0 0.5em 0.5em;
-    color: #333;
-    background-color: #333;
+    color: #333333;
+    background-color: #333333;
     overflow: hidden;
     border-radius: 3px;
 }
@@ -36,7 +36,7 @@ article.accordion section h2 {
     text-indent: 1em;
     padding: 0;
     margin: 0;
-    color: #ddd;
+    color: #dddddd;
     -webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
@@ -61,15 +61,15 @@ article.accordion section h2 a {
 article.accordion section:target {
     width: 30em;
     padding: 0 1em;
-    color: #333;
-    background-color: #fff;
+    color: #333333;
+    background-color: #ffffff;
 }
 
 article.accordion section:target h2 {
     position: static;
     font-size: 1.3em;
     text-indent: 0;
-    color: #333;
+    color: #333333;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);

@@ -72,7 +72,7 @@ section {
     justify-content: center;
     padding: 20px;
     align-items: center;
-    color: #fff;
+    color: #ffffff;
 }
 
 .content h4 {
@@ -106,7 +106,7 @@ section {
 
 .links li a {
     text-transform: uppercase;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 

@@ -35,7 +35,7 @@ input[type="text"] {
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     transition: border-color 0.3s ease-in-out;
 }
@@ -58,7 +58,7 @@ input[type="text"]:focus {
 
 .rating label {
     font-size: 24px;
-    color: #ccc;
+    color: #cccccc;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
 }
@@ -80,7 +80,7 @@ input[type="text"]:focus {
 
 input[type="submit"] {
     background-color: #4caf50;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;

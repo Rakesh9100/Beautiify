@@ -11,7 +11,7 @@ body {
 }
 
 .product-card {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -62,7 +62,7 @@ body {
     top: 10px;
     left: 20px;
     background-color: #e74c3c;
-    color: #fff;
+    color: #ffffff;
     padding: 5px;
     border-radius: 3px;
 }
@@ -99,11 +99,11 @@ body {
 
 .product-name {
     margin: 0;
-    color: #333;
+    color: #333333;
 }
 
 .product-description {
-    color: #666;
+    color: #666666;
     text-align: center;
 }
 
@@ -126,12 +126,12 @@ body {
 }
 
 .stats-label {
-    color: #333;
+    color: #333333;
 }
 
 .buy-button {
     background-color: #3498db;
-    color: #fff;
+    color: #ffffff;
     border: none;
     padding: 10px;
     border-radius: 5px;

@@ -13,7 +13,7 @@ body {
 .container {
     max-width: 800px;
     margin: 20px; /* Adjusted margin */
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px; /* Increased padding for better spacing */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px; /* Slightly increased border-radius */
@@ -21,7 +21,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #333333;
     font-size: 28px;
     margin-bottom: 20px; /* Added spacing below the heading */
     font-weight: 700;
@@ -44,7 +44,7 @@ label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
-    color: #555; /* Darker label color for better contrast */
+    color: #555555; /* Darker label color for better contrast */
 }
 
 input[type="text"],
@@ -56,7 +56,7 @@ select {
     width: calc(100% - 20px);
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 16px;
     background-color: #f9f9f9; /* Slight background color for inputs */
@@ -71,7 +71,7 @@ button {
     width: 100%;
     padding: 15px;
     background-color: #007BFF;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     font-size: 18px;

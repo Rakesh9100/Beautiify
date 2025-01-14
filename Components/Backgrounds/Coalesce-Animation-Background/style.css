@@ -77,8 +77,8 @@ hr {
 }
 
 mark {
-    background: #ff0;
-    color: #000;
+    background: #ffff00;
+    color: #000000;
 }
 
 code,
@@ -217,7 +217,7 @@ table {
 }
 
 html {
-    background: #000;
+    background: #000000;
 }
 
 body {
@@ -225,7 +225,7 @@ body {
     min-height: 100vh;
     color: #57585c;
     color: var(--color-text);
-    background-color: #000;
+    background-color: #000000;
     overflow: hidden;
 }
 
@@ -234,7 +234,7 @@ body {
 .demo-4 {
     --color-text: #f0ea42;
     --color-link: #ce8c32;
-    --color-link-hover: #fff;
+    --color-link-hover: #ffffff;
     --color-title: #ce8c32;
 }
 

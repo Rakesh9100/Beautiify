@@ -19,9 +19,9 @@ body {
     /* color | background active */
     --breadcrumb-theme-2: #FFFFFF;
     /* background | color active */
-    --breadcrumb-theme-3: linear-gradient(45deg, #E91E63, #111);
+    --breadcrumb-theme-3: linear-gradient(45deg, #E91E63, #111111);
     /* hover */
-    --breadcrumb-theme-4: linear-gradient(45deg, #E91E63, #222);
+    --breadcrumb-theme-4: linear-gradient(45deg, #E91E63, #222222);
     /* arrow */
 }
 

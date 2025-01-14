@@ -34,7 +34,7 @@ input {
 
 .title {
     font-size: 2em;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 30px;
     font-weight: 500;
     animation: fadeIn 1s ease-in-out;
@@ -95,17 +95,17 @@ label.toggle-item:before {
 
 .transparent label {
     background: transparent;
-    border: 3px solid #fff;
+    border: 3px solid #ffffff;
     height: 3.35em;
 }
 
 .transparent label:before {
-    border: 3px solid #fff;
+    border: 3px solid #ffffff;
     width: 2em;
     height: 2em;
     top: 0.3em;
     left: 0.3em;
-    background: #fff;
+    background: #ffffff;
 }
 
 #transparent:checked+label:before {

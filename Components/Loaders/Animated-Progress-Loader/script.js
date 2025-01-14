@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           clearInterval(interval);
           return;
         }
-        progress.style.background = `conic-gradient(${color} ${degree}%, #222 0%)`;
+        progress.style.background = `conic-gradient(${color} ${degree}%, #222222 0%)`;
         number.innerHTML = `${degree}<span>%</span>`;
         number.style.color = color;
       }, 50);

@@ -22,7 +22,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #333333;
     font-family: 'Georgia', serif;
     margin-bottom: 20px;
 }
@@ -51,7 +51,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #333333;
     font-family: 'Georgia', serif;
     margin-bottom: 20px;
 }
@@ -72,14 +72,14 @@ legend {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #333333;
 }
 
 input, select, textarea {
     width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 16px;
     box-sizing: border-box;
@@ -103,7 +103,7 @@ button {
 }
 
 button:hover {
-    background-color: #333;
+    background-color: #333333;
 }
 
 input:focus, select:focus, textarea:focus {
@@ -141,14 +141,14 @@ legend {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #333333;
 }
 
 input, select, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -171,7 +171,7 @@ button {
 }
 
 button:hover {
-    background-color: #333;
+    background-color: #333333;
 }
 
 input:focus, select:focus, textarea:focus {

@@ -23,7 +23,7 @@ body {
 
 #text {
     font-size: 5em;
-    color: #fff;
+    color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50%;
@@ -49,7 +49,7 @@ body {
 .sec h2 {
     text-align: center;
     font-size: 3em;
-    color: #fff;
+    color: #ffffff;
     /* margin-bottom: 10px;
     margin-top: 100px; */
     top: 50%;

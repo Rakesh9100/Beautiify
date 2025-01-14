@@ -52,7 +52,7 @@
     top: 0;
     width: 51%;
     height: 100%;
-    background: #fff;
+    background: #ffffff;
     z-index: 1000;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -756,7 +756,7 @@ footer {
 .send-message input[type="email"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
 }
 
@@ -764,15 +764,15 @@ footer {
     margin-top: 30px;
     text-align: center;
     padding: 0 20px;
-    color: #ccc;
+    color: #cccccc;
 }
 
 .heading {
     font-size: 24px;
     margin-bottom: 20px;
     background: #00F260;
-    background: -webkit-linear-gradient(to right, #f70479, #CCC);
-    background: linear-gradient(to right, #f70479, #CCC);
+    background: -webkit-linear-gradient(to right, #f70479, #CCCCCC);
+    background: linear-gradient(to right, #f70479, #CCCCCC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -792,7 +792,7 @@ footer {
 .send-message textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
@@ -805,8 +805,8 @@ footer {
 
 .send-message button {
     height: 50px;
-    background: -webkit-linear-gradient(to right, #f70479, #ccc);
-    background: linear-gradient(to right, #f70479, #ccc);
+    background: -webkit-linear-gradient(to right, #f70479, #cccccc);
+    background: linear-gradient(to right, #f70479, #cccccc);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -989,7 +989,7 @@ footer {
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    color: #555;
+    color: #555555;
     font-size: 21px;
     transition: color 0.3s ease-in-out;
     cursor: pointer;
@@ -1116,7 +1116,7 @@ footer {
         display: block;
         width: 25px;
         height: 3px;
-        background-color: #fff;
+        background-color: #ffffff;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
     }

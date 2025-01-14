@@ -17,14 +17,14 @@ body {
 .terminal-box {
     width: 100%;
     max-width: 500px;
-    background-color: #222;
+    background-color: #222222;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header {
-    background-color: #333;
+    background-color: #333333;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -63,7 +63,7 @@ body {
 
 .loading-text {
     padding: 20px;
-    color: #0f0;
+    color: #00ff00;
     font-size: 16px;
     display: flex;
     justify-content: center;

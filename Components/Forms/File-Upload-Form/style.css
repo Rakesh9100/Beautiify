@@ -21,7 +21,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding-bottom: 20px;
-  background: #fff;
+  background: #ffffff;
   -webkit-animation: fadeup 0.5s 0.5s ease both;
           animation: fadeup 0.5s 0.5s ease both;
   transform: translateY(20px);
@@ -34,7 +34,7 @@ body {
   text-align: center;
 }
 .upload .upload-files header p {
-  color: #fff;
+  color: #ffffff;
   font-size: 40px;
   margin: 0;
   padding: 50px 0;
@@ -91,24 +91,24 @@ body {
   border: dashed 2px #4db6ac;
 }
 .upload .upload-files .body.active i {
-  box-shadow: 0 0 0 -3px #fff, 0 0 0 lightgray, 0 0 0 -3px #fff, 0 0 0 lightgray;
+  box-shadow: 0 0 0 -3px #ffffff, 0 0 0 lightgray, 0 0 0 -3px #ffffff, 0 0 0 lightgray;
   -webkit-animation: file 0.5s ease both;
           animation: file 0.5s ease both;
 }
 @-webkit-keyframes file {
   50% {
-    box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 lightgray, -8px 8px 0 -3px #fff, -8px 8px 0 lightgray;
+    box-shadow: -8px 8px 0 -3px #ffffff, -8px 8px 0 lightgray, -8px 8px 0 -3px #ffffff, -8px 8px 0 lightgray;
   }
   75%, 100% {
-    box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 lightgray, -16px 16px 0 -3px #fff, -16px 16px 0 lightgray;
+    box-shadow: -8px 8px 0 -3px #ffffff, -8px 8px 0 lightgray, -16px 16px 0 -3px #ffffff, -16px 16px 0 lightgray;
   }
 }
 @keyframes file {
   50% {
-    box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 lightgray, -8px 8px 0 -3px #fff, -8px 8px 0 lightgray;
+    box-shadow: -8px 8px 0 -3px #ffffff, -8px 8px 0 lightgray, -8px 8px 0 -3px #ffffff, -8px 8px 0 lightgray;
   }
   75%, 100% {
-    box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 lightgray, -16px 16px 0 -3px #fff, -16px 16px 0 lightgray;
+    box-shadow: -8px 8px 0 -3px #ffffff, -8px 8px 0 lightgray, -16px 16px 0 -3px #ffffff, -16px 16px 0 lightgray;
   }
 }
 .upload .upload-files .body.active .pointer-none {
@@ -243,7 +243,7 @@ body {
 .upload .upload-files footer .list-files .file .done #path {
   stroke-dashoffset: 7387.5942382813;
   stroke-dasharray: 7387.5942382813 7387.5942382813;
-  stroke: #fff;
+  stroke: #ffffff;
   fill: transparent;
   stroke-width: 50px;
 }
@@ -314,7 +314,7 @@ body {
 }
 .upload .upload-files footer .importar:hover {
   background: #4db6ac;
-  color: #fff;
+  color: #ffffff;
 }
 @-webkit-keyframes fadeup {
   to {

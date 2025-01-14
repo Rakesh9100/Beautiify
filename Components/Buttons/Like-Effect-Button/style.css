@@ -33,7 +33,7 @@ button {
 }
 
 button:hover {
-    background-color: #eee;
+    background-color: #eeeeee;
     transform: scale(105%);
     animation: movingBorders 3s infinite;
 }

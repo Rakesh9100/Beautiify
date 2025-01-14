@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
     background: linear-gradient(135deg, #6a11cb, #2575fc);
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: #333333;
     padding: 10px;
     overflow-y: auto;
 }
