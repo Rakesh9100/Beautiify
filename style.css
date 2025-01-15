@@ -778,6 +778,17 @@ footer {
     text-align: center;
 }
 
+.title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    background: #00F260;
+    background: -webkit-linear-gradient(to right, #f70479, #CCCCCC);
+    background: linear-gradient(to right, #f70479, #CCCCCC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
 .form-group {
     margin-bottom: 15px;
 }
