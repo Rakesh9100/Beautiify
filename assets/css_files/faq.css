@@ -172,6 +172,8 @@ body {
 @media screen and (max-width: 768px) {
     .faqs_container {
         grid-template-columns: 1fr;
+        margin: auto;
+        padding-left: 0;
     }
 
     .faqs {
