@@ -173,7 +173,7 @@ body {
     .faqs_container {
         grid-template-columns: 1fr;
         margin: auto;
-        padding-left: 0;
+        padding-left: 0px;
     }
 
     .faqs {
