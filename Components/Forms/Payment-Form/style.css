@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -29,7 +29,7 @@ form {
 }
 
 h1 {
-    color: #333;
+    color: #333333;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -45,7 +45,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
-    color: #333;
+    color: #333333;
 }
 
 .inputtext p {
@@ -76,7 +76,7 @@ textarea {
     border: 2px solid #3498db;
     border-radius: 6px;
     font-size: 16px;
-    color: #333;
+    color: #333333;
 }
 
 input[type="radio"],

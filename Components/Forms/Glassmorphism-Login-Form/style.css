@@ -76,7 +76,7 @@ section .color:nth-child(3) {
 
 .form h2 {
     position: relative;
-    color: #fff;
+    color: #ffffff;
     font-size: 24px;
     letter-spacing: 1px;
     margin-bottom: 40px;
@@ -89,7 +89,7 @@ section .color:nth-child(3) {
     bottom: -10px;
     width: 80px;
     height: 4px;
-    background: #fff;
+    background: #ffffff;
 }
 
 .form .inputbox {
@@ -109,17 +109,17 @@ section .color:nth-child(3) {
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 16px;
     letter-spacing: 1px;
-    color: #fff;
+    color: #ffffff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .form .inputbox input::placeholder {
-    color: #fff;
+    color: #ffffff;
 }
 
 .form .inputbox input[type="submit"] {
-    background: #fff;
-    color: #666;
+    background: #ffffff;
+    color: #666666;
     max-width: 100px;
     cursor: pointer;
     margin-bottom: 20px;
@@ -128,11 +128,11 @@ section .color:nth-child(3) {
 
 .forget {
     margin-top: 5px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .forget a {
-    color: #fff;
+    color: #ffffff;
     font-weight: 600;
 }
 

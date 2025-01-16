@@ -9,7 +9,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Fjalla One', sans-serif;
-    background: linear-gradient(#fff, #fefefe, #eaeaea);
+    background: linear-gradient(#ffffff, #fefefe, #eaeaea);
 }
 
 .accordion {
@@ -49,12 +49,12 @@ body {
 
 .a3 {
     background-image: url("assets/image3.jpg");
-    color: #fff;
+    color: #ffffff;
 }
 
 .a4 {
     background-image: url("assets/image4.jpg");
-    color: #fff;
+    color: #ffffff;
 }
 
 .a5 {

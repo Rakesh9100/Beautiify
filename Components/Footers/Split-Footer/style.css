@@ -18,7 +18,7 @@ h3 {
 }
 
 .content {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -29,8 +29,8 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #222;
-    color: #fff;
+    background-color: #222222;
+    color: #ffffff;
     padding: 30px;
 }
 
@@ -50,7 +50,7 @@ h3 {
 }
 
 .social-links a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.5em;

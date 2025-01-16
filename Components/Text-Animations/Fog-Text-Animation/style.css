@@ -1,7 +1,7 @@
 body {
     margin: 0;
     overflow: hidden;
-    background-color: #111;
+    background-color: #111111;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@ body {
 
 .text-container {
     font-size: 4em;
-    color: #fff;
+    color: #ffffff;
     font-family: 'Arial', sans-serif;
     position: absolute;
     top: 50%;

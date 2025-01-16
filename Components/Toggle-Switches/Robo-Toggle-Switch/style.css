@@ -263,7 +263,7 @@ body {
 }
 
 .head .stripe.three {
-    background: #999;
+    background: #999999;
     height: 4px;
     opacity: 0.5;
     bottom: 3px;
@@ -583,8 +583,8 @@ body {
 }
 
 .slider:checked+.switch .moons .star {
-    -webkit-box-shadow: 0 0 20px 2px #fff;
-    box-shadow: 0 0 20px 2px #fff;
+    -webkit-box-shadow: 0 0 20px 2px #ffffff;
+    box-shadow: 0 0 20px 2px #ffffff;
 }
 
 .slider:checked+.switch .moons .star.star-1 {

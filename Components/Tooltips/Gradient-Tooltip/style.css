@@ -24,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #fff;
+    fill: #ffffff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -76,7 +76,7 @@ body {
     align-items: center;
     justify-content: right;
     padding-right: 16px;
-    color: #fff;
+    color: #ffffff;
     font-size: 18px;
     font-family: sans-serif;
     font-weight: 800px;

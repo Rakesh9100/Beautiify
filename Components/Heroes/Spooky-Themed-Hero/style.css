@@ -50,7 +50,7 @@ header {
     font-weight: 400;
     font-size: 17px;
     margin-left: 20px;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     transition: color 0.3s;
 }
@@ -63,7 +63,7 @@ header {
     font-family: "Nightcore";
     font-weight: 400;
     font-size: 23px;
-    color: #fff;
+    color: #ffffff;
     transition: 0.5s;
 }
 
@@ -126,7 +126,7 @@ header {
     font-family: "Roboto-Regular";
     font-weight: 400;
     font-size: clamp(16px, 2vw, 20px);
-    color: #fff;
+    color: #ffffff;
     line-height: 1.6;
     padding: 40px 0px;
 }
@@ -178,7 +178,7 @@ header {
     font-family: "Roboto-Regular";
     font-weight: 400;
     font-size: 18px;
-    color: #fff;
+    color: #ffffff;
     text-transform: capitalize;
 }
 

@@ -22,7 +22,7 @@ a {
 }
 
 .login-root {
-    background: #fff;
+    background: #ffffff;
     display: flex;
     width: 100%;
     min-height: 100vh;
@@ -194,7 +194,7 @@ input[type="submit"] {
         rgba(0, 0, 0, 0) 0px 0px 0px 0px,
         rgba(0, 0, 0, 0) 0px 0px 0px 0px,
         rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
-    color: #fff;
+    color: #ffffff;
     font-weight: 600;
     cursor: pointer;
 }

@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #fff;
+    background: #ffffff;
 }
 
 .button {
@@ -12,8 +12,8 @@ body {
     --tooltip-height: 35px;
     --tooltip-width: 90px;
     --gap-between-tooltip-to-button: 18px;
-    --button-color: #222;
-    --tooltip-color: #fff;
+    --button-color: #222222;
+    --tooltip-color: #ffffff;
     width: var(--width);
     height: var(--height);
     background: var(--button-color);
@@ -29,9 +29,9 @@ body {
     content: attr(data-tooltip);
     width: var(--tooltip-width);
     height: var(--tooltip-height);
-    background-color: #555;
+    background-color: #555555;
     font-size: 0.9rem;
-    color: #fff;
+    color: #ffffff;
     border-radius: 0.25em;
     line-height: var(--tooltip-height);
     bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
@@ -44,7 +44,7 @@ body {
     width: 0;
     height: 0;
     border: 10px solid transparent;
-    border-top-color: #555;
+    border-top-color: #555555;
     left: calc(50% - 10px);
     bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
 }
@@ -70,7 +70,7 @@ body {
     width: 100%;
     height: 100%;
     left: 0;
-    color: #fff;
+    color: #ffffff;
 }
 
 .text {
@@ -83,7 +83,7 @@ body {
 }
 
 .icon {
-    color: #fff;
+    color: #ffffff;
     top: 100%;
     display: flex;
     align-items: center;
@@ -96,7 +96,7 @@ body {
 }
 
 .button:hover {
-    background: #222;
+    background: #222222;
 }
 
 .button:hover .text {

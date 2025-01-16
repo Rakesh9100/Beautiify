@@ -25,14 +25,14 @@ h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 24px;
     text-align: center;
-    color: #333;
+    color: #333333;
     margin-bottom: 20px;
 }
 
 label {
     display: block;
     margin-bottom: 8px;
-    color: #555;
+    color: #555555;
     font-weight: bold;
     font-family: 'Lobster', cursive;
 }
@@ -43,7 +43,7 @@ textarea {
     width: 100%; /* Changed to 100% */
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 16px;
     font-family: 'Arial', sans-serif;

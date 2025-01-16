@@ -13,8 +13,8 @@
     display: grid;
     overflow: hidden;
     width: 380px;
-    -webkit-mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000);
-    mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000);
+    -webkit-mask: linear-gradient(90deg, #0000, #000000 10% 90%, #0000);
+    mask: linear-gradient(90deg, #0000, #000000 10% 90%, #0000);
 }
 
 .gallery>img {

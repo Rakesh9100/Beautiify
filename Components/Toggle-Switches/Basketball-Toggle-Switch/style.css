@@ -34,7 +34,7 @@ input {
 
 .title {
     font-size: 2em;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 30px;
     font-weight: 500;
     animation: fadeIn 1s ease-in-out;
@@ -146,7 +146,7 @@ label.toggle-item:before {
     background: repeating-linear-gradient(45deg, transparent, transparent 13px, white 13px, white 15px), repeating-linear-gradient(-45deg, transparent, transparent 13px, white 13px, white 15px);
     top: 8px;
     border-radius: 0 0 20% 20%/40% 40% 60% 60%;
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
     border-width: 0 2px;
     left: 2px;
     z-index: 20;

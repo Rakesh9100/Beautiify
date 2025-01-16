@@ -10,7 +10,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-image: radial-gradient(circle, #fff 30%, #ccc);
+    background-image: radial-gradient(circle, #ffffff 30%, #cccccc);
     overflow: hidden;
     font-family: sans-serif;
 }
@@ -183,8 +183,8 @@ body {
 }
 
 footer {
-    background-color: #222;
-    color: #fff;
+    background-color: #222222;
+    color: #ffffff;
     font-size: 14px;
     bottom: 0;
     position: fixed;

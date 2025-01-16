@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #000;
+    background: #000000;
 }
 
 section {
@@ -32,7 +32,7 @@ section::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#000, #0f0, #000);
+    background: linear-gradient(#000000, #00ff00, #000000);
     animation: animate 5s linear infinite;
 }
 
@@ -57,14 +57,14 @@ section span {
 }
 
 section span:hover {
-    background: #0f0;
+    background: #00ff00;
     transition: 0s;
 }
 
 section .signin {
     position: absolute;
     width: 400px;
-    background: #222;
+    background: #222222;
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -86,7 +86,7 @@ section .signin .content {
 
 section .signin .content h2 {
     font-size: 2em;
-    color: #0f0;
+    color: #00ff00;
     text-transform: uppercase;
 }
 
@@ -105,12 +105,12 @@ section .signin .content .form .inputBox {
 section .signin .content .form .inputBox input {
     position: relative;
     width: 100%;
-    background: #333;
+    background: #333333;
     border: none;
     outline: none;
     padding: 25px 10px 7.5px;
     border-radius: 4px;
-    color: #fff;
+    color: #ffffff;
     font-weight: 500;
     font-size: 1em;
 }
@@ -120,7 +120,7 @@ section .signin .content .form .inputBox i {
     left: 0;
     padding: 15px 10px;
     font-style: normal;
-    color: #aaa;
+    color: #aaaaaa;
     transition: 0.5s;
     pointer-events: none;
 }
@@ -129,7 +129,7 @@ section .signin .content .form .inputBox i {
 .signin .content .form .inputBox input:valid~i {
     transform: translateY(-7.5px);
     font-size: 0.8em;
-    color: #fff;
+    color: #ffffff;
 }
 
 .signin .content .form .links {
@@ -140,19 +140,19 @@ section .signin .content .form .inputBox i {
 }
 
 .signin .content .form .links a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .signin .content .form .links a:nth-child(2) {
-    color: #0f0;
+    color: #00ff00;
     font-weight: 600;
 }
 
 .signin .content .form .inputBox input[type="submit"] {
     padding: 10px;
-    background: #0f0;
-    color: #000;
+    background: #00ff00;
+    color: #000000;
     font-weight: 600;
     font-size: 1.35em;
     letter-spacing: 0.05em;

@@ -52,7 +52,7 @@ body {
     border: none;
     background: rgba(255, 255, 255, 0.7);
     font-family: inherit;
-    color: #333;
+    color: #333333;
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
@@ -95,7 +95,7 @@ body {
 }
 
 .dots__dot--active {
-    background-color: #fff;
+    background-color: #ffffff;
     opacity: 1;
 }
 

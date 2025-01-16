@@ -14,7 +14,7 @@ body {
     justify-content: center;
     width: 30em;
     height: 30em;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 40px;
 }
 
@@ -217,8 +217,8 @@ body {
     height: 7.85em;
     font-family: Montserrat;
     border: 2px solid #1d0e01;
-    background: repeating-radial-gradient(#000 0 0.0001%, #ffffff 0 0.0002%) 50% 0/2500px 2500px,
-        repeating-conic-gradient(#000 0 0.0001%, #ffffff 0 0.0002%) 60% 60%/2500px 2500px;
+    background: repeating-radial-gradient(#000000 0 0.0001%, #ffffff 0 0.0002%) 50% 0/2500px 2500px,
+        repeating-conic-gradient(#000000 0 0.0001%, #ffffff 0 0.0002%) 60% 60%/2500px 2500px;
     background-blend-mode: difference;
     animation: b 0.2s infinite alternate;
     border-radius: 10px;

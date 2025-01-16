@@ -20,7 +20,7 @@ body {
     height: auto;
     max-width: 730px;
     width: 100%;
-    background: #FFF;
+    background: #FFFFFF;
     margin: 0 15px;
     padding: 15px;
     border-radius: 8px;
@@ -76,18 +76,18 @@ body {
 .accordion-content header .title {
     font-size: 22px;
     font-weight: 500;
-    color: #333;
+    color: #333333;
 }
 
 .accordion-content header i {
     font-size: 25px;
-    color: #333;
+    color: #333333;
 }
 
 .accordion-content .description {
     height: 0;
     font-size: 18px;
-    color: #333;
+    color: #333333;
     font-weight: 400;
     padding: 0 15px;
     transition: all 0.2s linear;

@@ -2,7 +2,7 @@
     --primary-color: #4BB34B;
     --secondary-color: #2AE42A;
     --background-color: #f4f4f4;
-    --text-color: #333;
+    --text-color: #333333;
     --accent-color: #FFC107;
 }
 
@@ -90,7 +90,7 @@ body {
     top: 20px;
     right: 20px;
     font-size: 30px;
-    color: #aaa;
+    color: #aaaaaa;
     cursor: pointer;
     transition: all 0.3s ease;
     opacity: 0.6;
@@ -122,7 +122,7 @@ body {
 }
 
 .modal-content p {
-    color: #666;
+    color: #666666;
     margin-bottom: 30px;
     font-size: clamp(15px, 4vw, 17px);
     line-height: 1.7;
@@ -184,14 +184,14 @@ body {
 .rating h2 {
     margin-right: 20px;
     font-size: clamp(18px, 4vw, 22px);
-    color: #555;
+    color: #555555;
 }
 
 .rating__star {
     font-size: clamp(28px, 6vw, 34px);
     margin: 0 7px;
     cursor: pointer;
-    color: #ddd;
+    color: #dddddd;
     transition: all 0.3s ease;
 }
 

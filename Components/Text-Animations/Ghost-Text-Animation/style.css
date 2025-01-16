@@ -43,9 +43,9 @@ body {
     height: 12vmin;
     background-color: var(--white);
     background-image: url("assets/background.png");
-    background-image: radial-gradient(ellipse at 35% 40%, #000 8%, transparent 0%),
-        radial-gradient(ellipse at 65% 40%, #000 8%, transparent 0%),
-        radial-gradient(ellipse at 50% 60%, #000 8%, transparent 0%);
+    background-image: radial-gradient(ellipse at 35% 40%, #000000 8%, transparent 0%),
+        radial-gradient(ellipse at 65% 40%, #000000 8%, transparent 0%),
+        radial-gradient(ellipse at 50% 60%, #000000 8%, transparent 0%);
     border-radius: 100% / 70% 70% 0% 0%;
     transform: translateX(100em) rotateZ(-90deg);
     position: relative;

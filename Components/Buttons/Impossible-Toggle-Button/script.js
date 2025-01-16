@@ -102,7 +102,7 @@ const App = () => {
                             SOUNDS.OFF.play();
                         },
                         duration: checkboxDuration,
-                        backgroundColor: '#aaa'
+                        backgroundColor: '#aaaaaa'
                     },
 
                     delay).

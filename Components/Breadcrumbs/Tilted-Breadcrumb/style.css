@@ -40,7 +40,7 @@ body {
 .cont_breadcrumbs_1>ul>li {
     position: relative;
     transform: skewX(-15deg);
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: -2px 0px 20px -6px rgba(0, 0, 0, 0.5);
     z-index: 1;
     width: 70px;
@@ -54,7 +54,7 @@ body {
     font-size: 20px;
     transform: skewX(15deg);
     text-decoration: none;
-    color: #444;
+    color: #444444;
     font-weight: 300;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .cont_breadcrumbs_1>ul>li:last-child>a {
-    color: #fff;
+    color: #ffffff;
 }
 
 .cont_breadcrumbs_1>ul:hover>li {

@@ -26,7 +26,7 @@ body {
     --moon-bg: #C4C9D1;
     --spot-color: #959DB1;
     --circle-container-offset: calc((var(--circle-container-diameter) - var(--container-height)) / 2 * -1);
-    --stars-color: #fff;
+    --stars-color: #ffffff;
     --clouds-color: #F3FDFF;
     --back-clouds-color: #AACADF;
     --transition: .5s cubic-bezier(0, -0.02, 0.4, 1.25);
@@ -272,7 +272,7 @@ body {
 }
 
 label {
-    color: #fff;
+    color: #ffffff;
     font-size: 2rem;
     justify-content: center;
     display: flex;
@@ -292,7 +292,7 @@ label {
 }
 
 .register {
-    background: #eee;
+    background: #eeeeee;
     border-radius: 60% / 10%;
     transition: .8s ease-in-out;
 }
@@ -320,7 +320,7 @@ label {
     width: 85%;
     height: 40px;
     margin: 20px auto 10%;
-    color: #fff;
+    color: #ffffff;
     background: #573b8a;
     font-size: 1rem;
     font-weight: bold;

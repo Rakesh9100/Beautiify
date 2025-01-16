@@ -21,16 +21,16 @@ canvas {
     right: 10px;
     position: fixed;
     border-radius: 10px;
-    background: #fff;
+    background: #ffffff;
     padding: 0 12px 6px 12px;
-    border: 1px solid #000;
+    border: 1px solid #000000;
 }
 
 .github a:hover,
 .github a:link,
 .github a:visited,
 .github a:active {
-    color: #000;
+    color: #000000;
     text-decoration: none;
 }
 

@@ -7,7 +7,7 @@ body {
 }
 
 #container {
-    color: #999;
+    color: #999999;
     font-size: 36px;
     font-weight: bold;
     padding-top: 200px;
@@ -23,7 +23,7 @@ body {
 }
 
 #flip>div>div {
-    color: #fff;
+    color: #ffffff;
     padding: 4px 12px;
     height: 45px;
     margin-bottom: 45px;

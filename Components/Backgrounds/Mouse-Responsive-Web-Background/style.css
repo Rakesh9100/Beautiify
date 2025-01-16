@@ -1,10 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 canvas#canvas {
     display: block;
-    background: #000;
+    background: #000000;
 }

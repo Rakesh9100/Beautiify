@@ -9,15 +9,15 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #000;
+    background: #000000;
 }
 
 h1 {
     position: relative;
     font-size: 9vw;
-    color: #222;
+    color: #222222;
     text-transform: uppercase;
-    border-bottom: 16px solid #222;
+    border-bottom: 16px solid #222222;
     letter-spacing: 0.05em;
     line-height: 1.2em;
     text-align: center;

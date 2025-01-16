@@ -90,7 +90,7 @@ body {
     cursor: pointer;
     outline: none;
     border: none;
-    color: #eee;
+    color: #eeeeee;
     padding: 0;
     margin: 0;
 }
@@ -111,7 +111,7 @@ body {
 
 .btn .price,
 .shopping-cart {
-    background: #333;
+    background: #333333;
     border: 0;
     margin: 0;
 }
@@ -124,7 +124,7 @@ body {
 .btn .shopping-cart {
     transform: translateX(-100%);
     position: absolute;
-    background: #333;
+    background: #333333;
     z-index: 1;
     left: 0;
     top: 0;
@@ -167,7 +167,7 @@ body {
     text-align: left;
     font-size: 105%;
     cursor: no-drop;
-    color: #fff;
+    color: #ffffff;
     height: 100%;
     width: 100%;
     left: 0;

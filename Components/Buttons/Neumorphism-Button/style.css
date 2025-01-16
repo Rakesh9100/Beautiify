@@ -73,7 +73,7 @@ div.circle_black.long {
 }
 
 div.circle:before {
-    box-shadow: 8px 8px 20px #a9a8b7, -8px -8px 20px #fff;
+    box-shadow: 8px 8px 20px #a9a8b7, -8px -8px 20px #ffffff;
 }
 
 div.circle_black:before {
@@ -82,8 +82,8 @@ div.circle_black:before {
 }
 
 div.circle:hover:before {
-    box-shadow: 8px 8px 20px #a9a8b7, -8px -8px 20px #fff,
-        inset -8px -8px 20px #fff, inset 8px 8px 20px #a9a8b7;
+    box-shadow: 8px 8px 20px #a9a8b7, -8px -8px 20px #ffffff,
+        inset -8px -8px 20px #ffffff, inset 8px 8px 20px #a9a8b7;
 }
 
 div.circle_black:hover:before {

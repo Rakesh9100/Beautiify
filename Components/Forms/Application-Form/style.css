@@ -3,7 +3,7 @@ body {
     background: linear-gradient(to bottom, #f0f4f7, #d9e9f2);
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #333333;
 }
 
 .container {
@@ -34,7 +34,7 @@ label {
     font-weight: bold;
     display: block;
     margin: 10px 0 5px;
-    color: #555;
+    color: #555555;
 }
 
 input[type="text"],
@@ -46,7 +46,7 @@ textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 1em;
     background-color: #f8f8f8;
@@ -70,7 +70,7 @@ input[type="checkbox"] {
 
 .submit-btn {
     background-color: #2b6777;
-    color: #fff;
+    color: #ffffff;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;

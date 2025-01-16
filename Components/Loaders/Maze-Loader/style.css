@@ -1,5 +1,5 @@
 * {
-    background-color: #000;
+    background-color: #000000;
 }
 
 .loader {
@@ -9,10 +9,10 @@
     width: 70px;
     aspect-ratio: 1;
     background:
-        radial-gradient(farthest-side, #000 90%, #0000) 0 0/8px 8px no-repeat,
+        radial-gradient(farthest-side, #000000 90%, #0000) 0 0/8px 8px no-repeat,
         conic-gradient(from -90deg at 30px 30px, #0000 90deg, #ffffff 0) 0 0/40px 40px,
-        conic-gradient(from 90deg at 10px 10px, #0000 90deg, #fff 0) 0 0/40px 40px no-repeat,
-        conic-gradient(from -90deg at 30px 30px, #0000 90deg, #fff 0) 100% 100%/40px 40px no-repeat;
+        conic-gradient(from 90deg at 10px 10px, #0000 90deg, #ffffff 0) 0 0/40px 40px no-repeat,
+        conic-gradient(from -90deg at 30px 30px, #0000 90deg, #ffffff 0) 100% 100%/40px 40px no-repeat;
     animation: l5 2s infinite;
 }
 

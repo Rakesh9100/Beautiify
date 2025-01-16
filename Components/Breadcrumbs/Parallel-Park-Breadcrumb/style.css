@@ -69,7 +69,7 @@ main {
     background-color: #dcd6d6;
     padding: 20px;
     position: relative;
-    border-top: 2px solid #fff;
+    border-top: 2px solid #ffffff;
     -moz-box-shadow: 0px -20px 0px #c4baba;
     -webkit-box-shadow: 0px -20px 0px #c4baba;
     box-shadow: 0px -20px 0px #c4baba;
@@ -81,7 +81,7 @@ main {
     content: "";
     position: absolute;
     height: 100%;
-    border-left: 2px dashed #fff;
+    border-left: 2px dashed #ffffff;
     width: 2px;
     top: 0px;
 }
@@ -155,7 +155,7 @@ main {
     font-size: 31px;
     text-align: center;
     line-height: 1.5;
-    color: #333;
+    color: #333333;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -225,9 +225,9 @@ main {
     -ms-transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    -moz-box-shadow: 0px 3px 0 #fff;
-    -webkit-box-shadow: 0px 3px 0 #fff;
-    box-shadow: 0px 3px 0 #fff;
+    -moz-box-shadow: 0px 3px 0 #ffffff;
+    -webkit-box-shadow: 0px 3px 0 #ffffff;
+    box-shadow: 0px 3px 0 #ffffff;
 }
 
 .car .car-front:after {
@@ -595,7 +595,7 @@ main {
     position: absolute;
     top: 0;
     left: 30px;
-    background: #444;
+    background: #444444;
     font-weight: bold;
     text-align: center;
     color: #495d65;
@@ -615,13 +615,13 @@ main {
 
 .breadcrumbs.breadcrumbs-flat>label:before {
     background: white;
-    box-shadow: 0 0 0 1px #ccc;
+    box-shadow: 0 0 0 1px #cccccc;
 }
 
 .breadcrumbs.breadcrumbs-flat>label:hover,
 .breadcrumbs.breadcrumbs-flat>label:hover:after {
     background-color: #495d65;
-    color: #fff;
+    color: #ffffff;
 }
 
 .congrats {
@@ -751,7 +751,7 @@ input.passo1:checked+input.passo2:checked+input.passo3:checked~.breadcrumbs>.pas
 input.passo1:checked+input.passo2:checked+input.passo3:checked+input.passo4:checked~.breadcrumbs>.passo4-label,
 input.passo1:checked+input.passo2:checked+input.passo3:checked+input.passo4:checked~.breadcrumbs>.passo4-label:after {
     background-color: #495d65;
-    color: #fff;
+    color: #ffffff;
 }
 
 .passo2-label,

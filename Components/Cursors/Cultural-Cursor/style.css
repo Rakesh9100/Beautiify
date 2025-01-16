@@ -12,7 +12,7 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #ffffff;
     pointer-events: none;
     background: linear-gradient(45deg, #008080, #40E0D0, #20B2AA);
     box-shadow: 0 0 10px rgba(32, 178, 170, 0.5);

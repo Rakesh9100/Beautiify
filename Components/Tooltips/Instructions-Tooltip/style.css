@@ -1,6 +1,6 @@
 body {
     background-color: #1a1a1a;
-    color: #fff;
+    color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     margin: 0;
@@ -68,7 +68,7 @@ body {
     padding: 35px 0;
     opacity: 0;
     transition: opacity 0.7s ease, visibility 0.7s ease;
-    color: #fff;
+    color: #ffffff;
     visibility: hidden;
     pointer-events: none;
 }
@@ -80,7 +80,7 @@ body {
     opacity: 1;
     -webkit-transition: opacity 0.7s ease, visibility 0.7s ease;
     transition: opacity 0.7s ease, visibility 0.7s ease;
-    color: #fff;
+    color: #ffffff;
     visibility: visible;
     pointer-events: none;
 }
@@ -90,7 +90,7 @@ body {
     bottom: 29px;
     left: 0;
     content: "";
-    background-color: #fff;
+    background-color: #ffffff;
     height: 1px;
     position: absolute;
     transition: width 0.4s;
@@ -110,7 +110,7 @@ body {
     left: 0;
     width: 80px;
     content: "";
-    background-color: #fff;
+    background-color: #ffffff;
     height: 1px;
     position: absolute;
     opacity: 1;

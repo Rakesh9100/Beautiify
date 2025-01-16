@@ -31,7 +31,7 @@ body {
 
 .carousel {
     max-width: 800px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -53,7 +53,7 @@ body {
 
 .carousel-control-prev-icon:before,
 .carousel-control-next-icon:before {
-    color: #fff;
+    color: #ffffff;
 }
 
 .carousel-indicators {
@@ -65,7 +65,7 @@ body {
 }
 
 .carousel-indicators .active {
-    background-color: #000;
+    background-color: #000000;
 }
 
 .carousel-item img {

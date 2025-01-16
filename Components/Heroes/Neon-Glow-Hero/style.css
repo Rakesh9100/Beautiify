@@ -4,7 +4,7 @@ html {
     padding: 0;
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #111;
+    background-color: #111111;
 }
 
 .hero {
@@ -42,7 +42,7 @@ html {
 .content {
     text-align: center;
     z-index: 1;
-    color: #fff;
+    color: #ffffff;
     position: relative;
 }
 
@@ -65,7 +65,7 @@ html {
     padding: 15px 30px;
     background-color: #FF00FF;
     /* Neon pink */
-    color: #fff;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     font-size: 1.2rem;

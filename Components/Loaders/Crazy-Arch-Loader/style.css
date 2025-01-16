@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(#222, #101010);
+    background: radial-gradient(#222222, #101010);
 }
 
 .content {
@@ -29,8 +29,8 @@ body {
     --in: 80%;
     --ar: #ff9800;
     --dt: #ffea34;
-    --shadow: drop-shadow(0vmin 0vmin 0.5vmin #000) drop-shadow(0vmin 1vmin 0.5vmin #0004);
-    --cross: linear-gradient(0deg, #fff0 calc(50% - 2px), #000 calc(50% - 1px) calc(50% + 1px), #fff0 calc(50% + 2px)), linear-gradient(90deg, #fff0 calc(50% - 2px), #000 calc(50% - 1px) calc(50% + 1px), #fff0 calc(50% + 2px));
+    --shadow: drop-shadow(0vmin 0vmin 0.5vmin #000000) drop-shadow(0vmin 1vmin 0.5vmin #0004);
+    --cross: linear-gradient(0deg, #fff0 calc(50% - 2px), #000000 calc(50% - 1px) calc(50% + 1px), #fff0 calc(50% + 2px)), linear-gradient(90deg, #fff0 calc(50% - 2px), #000000 calc(50% - 1px) calc(50% + 1px), #fff0 calc(50% + 2px));
     border: 6vmin solid var(--ar);
     width: var(--in);
     height: var(--in);

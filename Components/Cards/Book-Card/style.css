@@ -4,8 +4,8 @@
     width: 220px;
     height: 300px;
     background-color: whitesmoke;
-    -webkit-box-shadow: 1px 1px 12px #000;
-    box-shadow: 1px 1px 12px #000;
+    -webkit-box-shadow: 1px 1px 12px #000000;
+    box-shadow: 1px 1px 12px #000000;
     -webkit-transform: preserve-3d;
     -ms-transform: preserve-3d;
     transform: preserve-3d;
@@ -20,7 +20,7 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    color: #000;
+    color: #000000;
 }
 
 body {
@@ -43,8 +43,8 @@ body {
     -webkit-transform-origin: 0;
     -ms-transform-origin: 0;
     transform-origin: 0;
-    -webkit-box-shadow: 1px 1px 12px #000;
-    box-shadow: 1px 1px 12px #000;
+    -webkit-box-shadow: 1px 1px 12px #000000;
+    box-shadow: 1px 1px 12px #000000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

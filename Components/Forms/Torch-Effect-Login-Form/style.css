@@ -32,7 +32,7 @@ body {
 
 h2 {
     font-size: 2em;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     transition: .5s ease;
 }
@@ -54,7 +54,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 2.5px;
-    background: #fff;
+    background: #ffffff;
     transition: .5s ease;
 }
 
@@ -69,7 +69,7 @@ h2 {
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #fff;
+    color: #ffffff;
     pointer-events: none;
     transition: .5s ease;
 }
@@ -91,7 +91,7 @@ h2 {
     border: none;
     outline: none;
     font-size: 1em;
-    color: #fff;
+    color: #ffffff;
     padding: 0 35px 0 5px;
     transition: .5s ease;
 }
@@ -104,7 +104,7 @@ h2 {
 .input-box .icon {
     position: absolute;
     right: 8px;
-    color: #fff;
+    color: #ffffff;
     font-size: 1.2em;
     line-height: 57px;
     transition: .5s ease;
@@ -116,7 +116,7 @@ h2 {
 }
 
 .remember-forgot {
-    color: #fff;
+    color: #ffffff;
     font-size: .9em;
     margin: -15px 0 15px;
     display: flex;
@@ -130,7 +130,7 @@ h2 {
 }
 
 .remember-forgot label input {
-    accent-color: #fff;
+    accent-color: #ffffff;
     margin-right: 3px;
     transition: .5s ease;
 }
@@ -140,7 +140,7 @@ h2 {
 }
 
 .remember-forgot a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     transition: color .5s ease;
 }
@@ -156,7 +156,7 @@ h2 {
 button {
     width: 100%;
     height: 40px;
-    background: #fff;
+    background: #ffffff;
     border: none;
     outline: none;
     border-radius: 40px;
@@ -173,7 +173,7 @@ button {
 }
 
 .register-link {
-    color: #fff;
+    color: #ffffff;
     font-size: .9em;
     text-align: center;
     margin: 25px 0 10px;
@@ -186,7 +186,7 @@ button {
 }
 
 .register-link p a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
     transition: color .5s ease;
@@ -253,7 +253,7 @@ button {
     transform: translate(-50%, -50%);
     width: 10px;
     height: 80%;
-    background: #000;
+    background: #000000;
 }
 
 .toggle::after {
@@ -264,7 +264,7 @@ button {
     transform: translateX(-50%);
     width: 45px;
     height: 45px;
-    background: #333;
+    background: #333333;
     border: 2px solid #191919;
     border-radius: 10px;
     cursor: pointer;
@@ -288,7 +288,7 @@ button {
     top: 17px;
     left: 50%;
     transform: translateX(-50%);
-    color: #fff;
+    color: #ffffff;
     font-size: 1em;
     z-index: 1;
     text-transform: uppercase;

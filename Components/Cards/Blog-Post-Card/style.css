@@ -19,7 +19,7 @@
     max-width: 550px;
     border-radius: 1em;
     margin: auto;
-    background-color: #fff;
+    background-color: #ffffff;
     -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
     box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
     width: 400px;
@@ -35,12 +35,12 @@
 }
 
 .descrip-div {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1em;
 }
 
 .user-div {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 0em 0em 1em 1em;
     padding: 0.5em;
     display: grid;
@@ -54,25 +54,25 @@
 }
 
 .details {
-    background-color: #fff;
+    background-color: #ffffff;
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
 
 .read-more {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .user-details {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 small,
 h2 {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 a {
-    background-color: #fff;
+    background-color: #ffffff;
     color: #4b5956;
 }

@@ -62,7 +62,7 @@ main {
     width: 80%;
     height: 80%;
     border-radius: 30px;
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
     filter: grayscale(40%);
 }
 
@@ -72,7 +72,7 @@ main {
     justify-content: center;
     align-items: flex-start;
     gap: 25px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .title>h1 {
@@ -102,7 +102,7 @@ main {
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 /* ANIMATED BACKGROUND */

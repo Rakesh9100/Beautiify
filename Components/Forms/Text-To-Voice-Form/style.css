@@ -17,7 +17,7 @@ body {
 }
 
 ::selection {
-    color: #fff;
+    color: #ffffff;
     background: #5256AD;
 }
 
@@ -25,7 +25,7 @@ body {
     width: 370px;
     padding: 25px 30px;
     border-radius: 7px;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 7px 7px 30px rgba(209, 203, 203, 0.745)
 }
 
@@ -67,7 +67,7 @@ form .row textarea {
     height: 110px;
     font-size: 15px;
     padding: 8px 10px;
-    border: 1px solid #999;
+    border: 1px solid #999999;
 }
 
 form .row textarea::-webkit-scrollbar {
@@ -81,7 +81,7 @@ form .row .outer {
     align-items: center;
     border-radius: 5px;
     justify-content: center;
-    border: 1px solid #999;
+    border: 1px solid #999999;
 }
 
 form .row select {
@@ -94,18 +94,18 @@ form .row select::-webkit-scrollbar {
 }
 
 form .row select::-webkit-scrollbar-track {
-    background: #fff;
+    background: #ffffff;
 }
 
 form .row select::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #888888;
     border-radius: 8px;
     border-right: 2px solid #ffffff;
 }
 
 form button {
     height: 52px;
-    color: #fff;
+    color: #ffffff;
     font-size: 17px;
     cursor: pointer;
     margin-top: 10px;

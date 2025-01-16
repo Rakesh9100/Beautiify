@@ -23,8 +23,8 @@ body {
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #fff;
-    text-shadow: 0 10px 10px #000;
+    color: #ffffff;
+    text-shadow: 0 10px 10px #000000;
     cursor: pointer;
     transform: rotateX(70deg) rotateZ(30deg);
     transform-style: preserve-3d;

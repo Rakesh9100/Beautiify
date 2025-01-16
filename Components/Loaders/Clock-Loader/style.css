@@ -4,7 +4,7 @@ body {
 
 .clock {
     border-radius: 70px;
-    border: 3px solid #fff;
+    border: 3px solid #ffffff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,7 +19,7 @@ body {
     position: absolute;
     font-size: 14px;
     font-weight: bold;
-    color: #fff;
+    color: #ffffff;
     transform: translate(-50%, -50%);
 }
 

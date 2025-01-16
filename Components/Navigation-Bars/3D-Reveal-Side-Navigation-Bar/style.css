@@ -71,7 +71,7 @@ nav h1 {
 
 nav h1:hover {
     color: var(--menuColor);
-    background: #fff;
+    background: #ffffff;
 }
 
 nav ul {
@@ -94,7 +94,7 @@ nav li:nth-of-type(2n) {
 }
 
 nav li:hover {
-    background: #fff;
+    background: #ffffff;
 }
 
 main {

@@ -116,12 +116,12 @@ li {
     position: relative;
     flex: 0 0 100%;
     width: 100%;
-    background-color: #f99;
+    background-color: #ff9999;
     counter-increment: item;
 }
 
 .carousel__slide:nth-child(even) {
-    background-color: #99f;
+    background-color: #9999ff;
 }
 
 .carousel__slide:before {
@@ -130,7 +130,7 @@ li {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -40%, 70px);
-    color: #fff;
+    color: #ffffff;
     font-size: 2em;
 }
 
@@ -184,7 +184,7 @@ li {
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
-    background-color: #333;
+    background-color: #333333;
     background-clip: content-box;
     border: 0.25rem solid transparent;
     border-radius: 50%;
@@ -233,11 +233,11 @@ li {
 .carousel::after {
     content: '';
     z-index: 1;
-    background-color: #333;
+    background-color: #333333;
     background-size: 1.5rem 1.5rem;
     background-repeat: no-repeat;
     background-position: center center;
-    color: #fff;
+    color: #ffffff;
     font-size: 2.5rem;
     line-height: 4rem;
     text-align: center;

@@ -12,7 +12,7 @@ h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 2em;
     margin-bottom: 20px;
-    color: #333;
+    color: #333333;
 }
 
 .reservation-form {
@@ -41,7 +41,7 @@ h1 {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 

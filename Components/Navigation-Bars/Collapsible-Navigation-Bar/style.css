@@ -34,7 +34,7 @@
 }
 
 .sidebar .logo-details .logo_name {
-    color: #fff;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 600;
     opacity: 0;
@@ -64,7 +64,7 @@
 }
 
 .sidebar i {
-    color: #fff;
+    color: #ffffff;
     height: 60px;
     min-width: 50px;
     font-size: 28px;
@@ -88,7 +88,7 @@
     top: -20px;
     left: calc(100% + 15px);
     z-index: 3;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     padding: 6px 12px;
     border-radius: 4px;
@@ -114,7 +114,7 @@
 
 .sidebar input {
     font-size: 15px;
-    color: #fff;
+    color: #ffffff;
     font-weight: 400;
     outline: none;
     height: 50px;
@@ -138,16 +138,16 @@
     transform: translateY(-50%);
     font-size: 22px;
     background: #1d1b31;
-    color: #fff;
+    color: #ffffff;
 }
 
 .sidebar.open .bx-search:hover {
     background: #1d1b31;
-    color: #fff;
+    color: #ffffff;
 }
 
 .sidebar .bx-search:hover {
-    background: #fff;
+    background: #ffffff;
     color: #11101d;
 }
 
@@ -163,11 +163,11 @@
 }
 
 .sidebar li a:hover {
-    background: #fff;
+    background: #ffffff;
 }
 
 .sidebar li a .links_name {
-    color: #fff;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 400;
     white-space: nowrap;
@@ -220,7 +220,7 @@
 .sidebar li.profile .job {
     font-size: 15px;
     font-weight: 400;
-    color: #fff;
+    color: #ffffff;
     white-space: nowrap;
 }
 

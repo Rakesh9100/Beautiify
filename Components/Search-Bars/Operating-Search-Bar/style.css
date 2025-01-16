@@ -28,7 +28,7 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
     font-size: 13px;
-    color: #555;
+    color: #555555;
 }
 
 .main:focus {
@@ -65,7 +65,7 @@ body {
     right: 12px;
     top: 6px;
     border-radius: 100%;
-    box-shadow: 0px 1px 2px 0px #555;
+    box-shadow: 0px 1px 2px 0px #555555;
 }
 
 .microphone:after {
@@ -111,7 +111,7 @@ body {
     width: 35px;
     background: #43b3e7;
     border-radius: 100%;
-    box-shadow: 0px 1px 2px 0px #555;
+    box-shadow: 0px 1px 2px 0px #555555;
     cursor: pointer;
     opacity: 0;
     transition: 0.4s;
@@ -370,7 +370,7 @@ input:focus~.icon-holder>.icon {
     position: absolute;
     font-size: 12px;
     color: white;
-    background: #555;
+    background: #555555;
     padding: 8px;
     top: 15px;
     border-radius: 15%;
@@ -380,7 +380,7 @@ input:focus~.icon-holder>.icon {
 .tooltip:after {
     content: "";
     position: absolute;
-    background: #555;
+    background: #555555;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     height: 18px;
     width: 18px;

@@ -66,15 +66,15 @@ body {
     padding: 12px 30px;
     padding-left: 40px;
     border-radius: 30px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
     font-size: 16px;
-    color: #333;
+    color: #333333;
     transition: background-color 0.3s;
 }
 
 .input-group input:focus {
-    background-color: #333;
+    background-color: #333333;
     color: white;
     outline: none;
     border-color: #00BFFF;

@@ -34,12 +34,12 @@
 }
 
 .card::before {
-    border-color: #fff;
+    border-color: #ffffff;
     background-image: url(assets/image.jpg);
 }
 
 .card::after {
-    border-color: #fff;
+    border-color: #ffffff;
     background-image: url(assets/image2.png);
 }
 

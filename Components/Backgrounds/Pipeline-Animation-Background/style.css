@@ -72,8 +72,8 @@ hr {
 }
 
 mark {
-    background: #ff0;
-    color: #000;
+    background: #ffff00;
+    color: #000000;
 }
 
 code,
@@ -212,7 +212,7 @@ table {
 }
 
 html {
-    background: #000;
+    background: #000000;
 }
 
 body {
@@ -220,43 +220,43 @@ body {
     min-height: 100vh;
     color: #57585c;
     color: var(--color-text);
-    background-color: #000;
+    background-color: #000000;
     overflow: hidden;
 }
 
 /* Color schemes */
 .demo-1 {
     --color-text: #86eae7;
-    --color-link: #fff;
+    --color-link: #ffffff;
     --color-link-hover: #86eae7;
-    --color-title: #fff;
+    --color-title: #ffffff;
 }
 
 .demo-2 {
     --color-text: #ff53ff;
     --color-link: #3c48fa;
-    --color-link-hover: #fff;
-    --color-title: #fff;
+    --color-link-hover: #ffffff;
+    --color-title: #ffffff;
 }
 
 .demo-3 {
     --color-text: #1ed97c;
-    --color-link: #fff;
-    --color-link-hover: #fff;
-    --color-title: #fff;
+    --color-link: #ffffff;
+    --color-link-hover: #ffffff;
+    --color-title: #ffffff;
 }
 
 .demo-4 {
     --color-text: #f0ea42;
     --color-link: #ce8c32;
-    --color-link-hover: #fff;
+    --color-link-hover: #ffffff;
     --color-title: #ce8c32;
 }
 
 .demo-5 {
     --color-text: #5c5ee7;
     --color-link: #0ab5e4;
-    --color-link-hover: #fff;
+    --color-link-hover: #ffffff;
     --color-title: #0ab5e4;
 }
 

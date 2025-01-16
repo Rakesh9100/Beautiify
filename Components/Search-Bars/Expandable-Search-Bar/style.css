@@ -22,7 +22,7 @@ html {
 .search-bar {
     width: 8rem;
     height: 8rem;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10rem;
     box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.6);
     text-align: right;
@@ -64,7 +64,7 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     transition: opacity 0.3s 0.3s;
 }

@@ -144,14 +144,14 @@ body::before {
     .banner .content h1 {
         text-align: center;
         width: 100%;
-        text-shadow: 0 10px 20px #000;
+        text-shadow: 0 10px 20px #000000;
         font-size: 7em;
     }
 
     .banner .content .author {
-        color: #fff;
+        color: #ffffff;
         padding: 20px;
-        text-shadow: 0 10px 20px #000;
+        text-shadow: 0 10px 20px #000000;
         z-index: 2;
         max-width: unset;
         width: 100%;

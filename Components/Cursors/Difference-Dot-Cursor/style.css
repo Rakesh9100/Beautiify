@@ -33,7 +33,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #333333;
     overflow-x: hidden;
 }
 
@@ -41,9 +41,9 @@ body {
 header {
     position: relative;
     width: 100%;
-    background-color: #333;
+    background-color: #333333;
     /* Dark background for the header */
-    color: #fff;
+    color: #ffffff;
 }
 
 .sticky-nav {
@@ -69,8 +69,8 @@ header {
     right: 0;
     width: 300px;
     height: 100%;
-    background-color: #444;
-    color: #fff;
+    background-color: #444444;
+    color: #ffffff;
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
@@ -80,7 +80,7 @@ header {
 .nav-col a,
 .nav-contact a {
     display: block;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin: 10px 0;
     padding: 10px;
@@ -89,7 +89,7 @@ header {
 
 .nav-col a:hover,
 .nav-contact a:hover {
-    background-color: #555;
+    background-color: #555555;
     border-radius: 4px;
 }
 
@@ -102,7 +102,7 @@ header {
 /* Sections */
 section {
     padding: 60px 20px;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     min-height: 100vh;
 }
@@ -158,7 +158,7 @@ input.btn {
 
 button,
 .btn {
-    background: #333;
+    background: #333333;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -183,7 +183,7 @@ input,
 textarea {
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s;

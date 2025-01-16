@@ -52,7 +52,7 @@
     top: 0;
     width: 51%;
     height: 100%;
-    background: #fff;
+    background: #ffffff;
     z-index: 1000;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -654,7 +654,6 @@ section {
 
 footer {
     background-color: #2b0038;
-    font-weight: 900;
     color: #fefefe;
     padding: 20px 0;
     width: 100%;
@@ -669,6 +668,50 @@ footer {
     margin: 0 auto;
     max-width: 1300px;
     padding: 0 20px;
+}
+
+.company-info {
+    font-weight: 600;
+    flex: 1 1 30%;
+}
+
+.company-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.company-name img {
+    width: 36px;
+    width: 36px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.company-info p {
+    line-height: 1.8;
+    text-align: center;
+}
+
+.quick-links {
+    flex: 1 1 30%;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background: #00F260;
+    background: -webkit-linear-gradient(to right, #f70479, #cccccc);
+    background: linear-gradient(to right, #f70479, #cccccc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.footer-ul {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
 }
 
 .footer-ul li a {
@@ -692,48 +735,84 @@ footer {
 }
 
 .footer-ul li a:hover {
-    color: #ec685c; /* Color of the text on hover */
+    color: #ec685c;
 }
 
 .footer-ul li a:hover::after {
     width: 100%; /* Fully expand the underline */
 }
 
-.company-info {
-    font-weight: 600;
-    flex: 1 1 30%;
-}
-
-.quick-links {
-    flex: 1 1 30%;
-}
-
 .send-message {
     flex: 1 1 30%;
 }
 
-.company-name {
-    font-size: 24px;
-    margin-bottom: 10px;
+.form-group {
+    margin-bottom: 15px;
+}
+
+.group1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.send-message input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.send-message input,
+.send-message textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.send-message textarea {
+    height: 50px;
+    color: black;
+}
+
+.send-message button {
+    height: 50px;
+    background: -webkit-linear-gradient(to right, #f70479, #cccccc);
+    background: linear-gradient(to right, #f70479, #cccccc);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social {
+    font-size: 3.5rem;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.company-name img {
-    width: 36px;
-    width: 36px;
-    vertical-align: middle;
-    margin-top: -5px;
+.social a i {
+    transition: transform 0.3s ease-in-out;
 }
 
-.company-info p {
-    line-height: 1.8;
+.copyright {
+    color: #cccccc;
+    padding: 0 20px;
+    margin-top: 30px;
+    font-weight: 900;
     text-align: center;
-}
-
-.quick-links h2,
-.send-message h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
 }
 
 .quick-links ul,
@@ -753,93 +832,6 @@ footer {
     text-decoration: none;
 }
 
-.send-message input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.copyright {
-    margin-top: 30px;
-    text-align: center;
-    padding: 0 20px;
-    color: #ccc;
-}
-
-.heading {
-    font-size: 24px;
-    margin-bottom: 20px;
-    background: #00F260;
-    background: -webkit-linear-gradient(to right, #f70479, #CCC);
-    background: linear-gradient(to right, #f70479, #CCC);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.group1 {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.send-message input,
-.send-message textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-.send-message textarea {
-    height: 50px;
-    color: black;
-}
-
-.send-message button {
-    height: 50px;
-    background: -webkit-linear-gradient(to right, #f70479, #ccc);
-    background: linear-gradient(to right, #f70479, #ccc);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.footer-ul {
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-}
-
-.social {
-    font-size: 3.5rem;
-    text-decoration: none;
-    margin: 0 1rem;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.social a i {
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Pop up effect */
-
 .social a:hover i {
     transform: translateY(-8px);
 }
@@ -853,11 +845,11 @@ footer {
 }
 
 .social a.message:hover {
-    color: #D44638;
+    color: #d44638;
 }
 
 .social a.linkedin:hover {
-    color: #0A66C2;
+    color: #0a66c2;
 }
 
 .social a.github:hover {
@@ -865,19 +857,19 @@ footer {
 }
 
 .social a.instagram:hover {
-    color: #E1306C;
+    color: #e1306c;
 }
 
 .social a.facebook:hover {
-    color: #1877F2;
+    color: #1877f2;
 }
 
 .social a.twitter:hover {
-    color: #1DA1F2;
+    color: #1da1f2;
 }
 
 .social a.discord:hover {
-    color: #5865F2;
+    color: #5865f2;
 }
 
 #progress {
@@ -989,7 +981,7 @@ footer {
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    color: #555;
+    color: #555555;
     font-size: 21px;
     transition: color 0.3s ease-in-out;
     cursor: pointer;
@@ -1116,7 +1108,7 @@ footer {
         display: block;
         width: 25px;
         height: 3px;
-        background-color: #fff;
+        background-color: #ffffff;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
     }

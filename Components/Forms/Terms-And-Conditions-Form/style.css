@@ -75,7 +75,7 @@ button:hover:enabled {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #888888;
     width: 80%;
     max-width: 600px;
     border-radius: 10px;
@@ -88,7 +88,7 @@ button:hover:enabled {
 }
 
 .close {
-    color: #aaa;
+    color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -96,7 +96,7 @@ button:hover:enabled {
 
 .close:hover,
 close:focus {
-    color: #000;
+    color: #000000;
     text-decoration: none;
     cursor: pointer;
 }

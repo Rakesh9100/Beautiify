@@ -47,7 +47,7 @@ input:checked+label {
 input:checked+label:after {
     left: 490px;
     transform: translateX(-100%);
-    background: linear-gradient(180deg, #777, #3a3a3a);
+    background: linear-gradient(180deg, #777777, #3a3a3a);
 }
 
 label:active:after {
@@ -76,7 +76,7 @@ label svg {
 
 label svg.sun {
     left: 37px;
-    /* fill: #fff; */
+    /* fill: #ffffff; */
     transition: 0.3s;
 }
 
@@ -87,7 +87,7 @@ label svg.moon {
 }
 
 input:checked+label+svg.sun {
-    fill: #fff;
+    fill: #ffffff;
 }
 
 input:checked+label+svg.moon {

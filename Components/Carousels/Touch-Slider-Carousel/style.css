@@ -19,7 +19,7 @@
     background-position: center;
     background-size: cover;
     width: 320px;
-    background-color: #fff;
+    background-color: #ffffff;
     overflow: hidden;
     border-radius: 8px;
 }
@@ -45,7 +45,7 @@
 .switext1k {
     margin: 0;
     font-size: 20px;
-    color: #000;
+    color: #000000;
 }
 
 .switext2k {

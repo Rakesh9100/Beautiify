@@ -32,7 +32,7 @@
 }
 
 .button:hover {
-    color: #fff;
+    color: #ffffff;
     border: 2px solid rgba(0, 0, 0, 0);
     box-shadow: 0 0 0px var(--color);
 }

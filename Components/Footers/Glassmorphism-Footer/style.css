@@ -155,7 +155,7 @@ section .color:nth-child(3) {
 
 .social-icon__link {
     font-size: 2rem;
-    color: #fff;
+    color: #ffffff;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
@@ -167,7 +167,7 @@ section .color:nth-child(3) {
 
 .menu__link {
     font-size: 1.2rem;
-    color: #fff;
+    color: #ffffff;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
@@ -182,7 +182,7 @@ section .color:nth-child(3) {
 }
 
 .footer p {
-    color: #fff;
+    color: #ffffff;
     margin: 15px 0 10px 0;
     font-size: 1rem;
     font-weight: 300;
