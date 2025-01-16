@@ -34,15 +34,14 @@ body {
 }
 
 .faqWrapper {
-    padding: 5rem 0 4rem;
+    padding: 3rem 0;
 }
 
 .faqHeading {
-    font-size: 3rem;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 3rem;
     font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
     text-shadow: 0px 0px 10px rgba(51, 34, 101, 0.5), 0px 0px 20px rgba(121, 102, 175, 0.5);
     color: rgba(255, 255, 255, 0.9);
 }
@@ -172,6 +171,8 @@ body {
 @media screen and (max-width: 768px) {
     .faqs_container {
         grid-template-columns: 1fr;
+        margin: auto;
+        padding-left: 0px;
     }
 
     .faqs {
@@ -182,5 +183,11 @@ body {
         margin-top: 2rem;
         padding: 0 0.5rem;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .faqHeading {
+        font-size: 3rem;
     }
 }
