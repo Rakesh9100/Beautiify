@@ -654,7 +654,6 @@ section {
 
 footer {
     background-color: #2b0038;
-    font-weight: 900;
     color: #fefefe;
     padding: 20px 0;
     width: 100%;
@@ -669,6 +668,50 @@ footer {
     margin: 0 auto;
     max-width: 1300px;
     padding: 0 20px;
+}
+
+.company-info {
+    font-weight: 600;
+    flex: 1 1 30%;
+}
+
+.company-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.company-name img {
+    width: 36px;
+    width: 36px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.company-info p {
+    line-height: 1.8;
+    text-align: center;
+}
+
+.quick-links {
+    flex: 1 1 30%;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background: #00F260;
+    background: -webkit-linear-gradient(to right, #f70479, #cccccc);
+    background: linear-gradient(to right, #f70479, #cccccc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.footer-ul {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
 }
 
 .footer-ul li a {
@@ -692,90 +735,15 @@ footer {
 }
 
 .footer-ul li a:hover {
-    color: #ec685c; /* Color of the text on hover */
+    color: #ec685c;
 }
 
 .footer-ul li a:hover::after {
     width: 100%; /* Fully expand the underline */
 }
 
-.company-info {
-    font-weight: 600;
-    flex: 1 1 30%;
-}
-
-.quick-links {
-    flex: 1 1 30%;
-}
-
 .send-message {
     flex: 1 1 30%;
-}
-
-.company-name {
-    font-size: 24px;
-    margin-bottom: 10px;
-    align-items: center;
-}
-
-.company-name img {
-    width: 36px;
-    width: 36px;
-    vertical-align: middle;
-    margin-top: -5px;
-}
-
-.company-info p {
-    line-height: 1.8;
-    text-align: center;
-}
-
-.quick-links h2,
-.send-message h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.quick-links ul,
-.send-message form {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.quick-links li,
-.send-message button {
-    margin-bottom: 10px;
-}
-
-.quick-links a,
-.send-message button {
-    text-decoration: none;
-}
-
-.send-message input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-}
-
-.copyright {
-    margin-top: 30px;
-    text-align: center;
-    padding: 0 20px;
-    color: #cccccc;
-}
-
-.heading {
-    font-size: 24px;
-    margin-bottom: 20px;
-    background: #00F260;
-    background: -webkit-linear-gradient(to right, #f70479, #CCCCCC);
-    background: linear-gradient(to right, #f70479, #CCCCCC);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
 }
 
 .title{
@@ -797,6 +765,13 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+
+.send-message input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
 }
 
 .send-message input,
@@ -827,12 +802,6 @@ footer {
     font-weight: bold;
 }
 
-.footer-ul {
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-}
-
 .social {
     font-size: 3.5rem;
     text-decoration: none;
@@ -849,7 +818,30 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Pop up effect */
+.copyright {
+    color: #cccccc;
+    padding: 0 20px;
+    margin-top: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.quick-links ul,
+.send-message form {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li,
+.send-message button {
+    margin-bottom: 10px;
+}
+
+.quick-links a,
+.send-message button {
+    text-decoration: none;
+}
 
 .social a:hover i {
     transform: translateY(-8px);
@@ -864,11 +856,11 @@ footer {
 }
 
 .social a.message:hover {
-    color: #D44638;
+    color: #d44638;
 }
 
 .social a.linkedin:hover {
-    color: #0A66C2;
+    color: #0a66c2;
 }
 
 .social a.github:hover {
@@ -876,19 +868,19 @@ footer {
 }
 
 .social a.instagram:hover {
-    color: #E1306C;
+    color: #e1306c;
 }
 
 .social a.facebook:hover {
-    color: #1877F2;
+    color: #1877f2;
 }
 
 .social a.twitter:hover {
-    color: #1DA1F2;
+    color: #1da1f2;
 }
 
 .social a.discord:hover {
-    color: #5865F2;
+    color: #5865f2;
 }
 
 #progress {
