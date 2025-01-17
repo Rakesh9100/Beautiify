@@ -23,6 +23,7 @@ body {
     padding: 30px 70px;
     text-align: center;
     position: relative;
+    margin-bottom: 25px;
 }
 
 .contributors .heading-box:after {
@@ -41,6 +42,8 @@ body {
 
 .contributors .heading {
     font-size: 4.5rem;
+    margin-bottom: 30px;
+    color: rgb(50, 50, 12);
     transition: color 0.3s ease-in-out;
 }
 
@@ -193,4 +196,10 @@ body {
     font-size: 19px;
     font-weight: 600;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contributors .heading {
+        font-size: 3.5rem;
+    }
 }

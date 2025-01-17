@@ -138,27 +138,23 @@
     transition: all 0.3s ease-out;
 }
 
-@-webkit-keyframes spin {
+@keyframes spin {
     0% {
-        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
 
     100% {
-        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
 
-@keyframes spin {
+@-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
     }
 
     100% {
         -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
     }
 }
 
@@ -452,9 +448,12 @@ section {
 }
 
 .comp-section .compcontainer h1 {
-    margin-top: -25px;
+    margin: -25px 0 20px;
     font-size: clamp(4rem, 4vw, 7rem);
-    text-shadow: 2px 2px 3px black, 1px 1px 2px white;
+    background: linear-gradient(to right, #f70479, #cccccc);
+    background: -webkit-linear-gradient(to right, #f70479, #cccccc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: lights 5s 750ms linear infinite;
 }
 
@@ -670,18 +669,23 @@ footer {
     padding: 0 20px;
 }
 
+.footer-container .heading {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #f70479, #cccccc);
+    background: -webkit-linear-gradient(to right, #f70479, #cccccc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .company-info {
     font-weight: 600;
     flex: 1 1 30%;
 }
 
-.company-name {
-    font-size: 24px;
-    margin-bottom: 10px;
-    align-items: center;
-}
-
-.company-name img {
+.company-info img {
     width: 36px;
     width: 36px;
     vertical-align: middle;
@@ -695,17 +699,6 @@ footer {
 
 .quick-links {
     flex: 1 1 30%;
-}
-
-.heading {
-    font-size: 24px;
-    margin-bottom: 20px;
-    background: #00F260;
-    background: -webkit-linear-gradient(to right, #f70479, #cccccc);
-    background: linear-gradient(to right, #f70479, #cccccc);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
 }
 
 .footer-ul {

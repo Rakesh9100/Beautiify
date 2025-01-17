@@ -43,17 +43,17 @@ body {
 }
 
 body.dark-mode .SearchDarkMode {
-    color: #FFFFFF;
+    color: white;
 }
 
 section {
     z-index: 100;
 }
 
-.heading {
+section .heading {
     font-size: 4em;
     font-weight: bolder;
-    color: white;
+    color: cornsilk;
     text-align: center;
     margin: 75px 0 80px;
     text-shadow: 2px 2px 2px black, 1px 1px 1px white;
@@ -67,7 +67,7 @@ section {
 }
 
 .box {
-    border: 3px solid #ffffff;
+    border: 3px solid white;
     border-radius: 14px;
     box-shadow: 3px 3px 6px 1px white;
     margin: 20px 40px;
