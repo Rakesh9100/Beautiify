@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+body{
+    background: radial-gradient(circle, #0D0015, #2B002C, #003660, #1A1A1A);
+
+}
+div{
+    top: 90px;
+    padding: 40px;
+    font-size: 95px;
+    font-family: 'Monoton' ;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 80px red, 0 0 30px firebrick ,  0 0 6px darkred;
+    color: rgb(49, 17, 17);
+}
+div p{
+    margin: 5px;
+}
+#error:hover {
+    text-shadow: 0 0 120px #FFFF00, 0 0 80px #00FF00, 0 0 10px #00FFFF;
+}
+
+#code:hover {
+    text-shadow: 0 0 150px #FF00FF, 0 0 60px #8A2BE2, 0 0 20px #FF4500;
+}
+#error {
+    color: #00FFFF; /* Neon Cyan */
+    text-shadow: 0 0 80px #00FFFF, 0 0 40px #8A2BE2, 0 0 10px #FF00FF;
+}
+#code {
+    color: #FF6347; /* Tomato Red */
+    text-shadow: 0 0 100px #FF4500, 0 0 50px #FF6347, 0 0 20px #FF7F50;
+}
+#error span, #code span {
+    animation: glow 3s ease-in-out infinite alternate;
+}
+#code span:nth-of-type(2){
+    animation: lower 9s linear infinite;
+}
+#code span:nth-of-type(1){
+    text-shadow: none;
+    opacity: .4;
+}
+@keyframes upper {
+    0%, 19.999%, 22%,62.999%, 64%, 64.999%,70%, 100%{
+        opacity: .99;
+        text-shadow: 0 0 80px #ffffff, 0 0 30px #008000, 0 0 6px #0000ff;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999%{
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+@keyframes lower {
+    0%, 12%,18.999%,23%, 31.999%, 37%, 44.999%,46%, 49.999%, 51%, 58.999%, 61%, 68.999%,96%,100%{
+        opacity: 0.99;
+        text-shadow: 0 0 80px red, 0 0 30px firebrick,0 0 6px darkred;
+    }
+    19%, 22.99%, 32%, 36.999%, 45%, 45.666%, 50%, 50.999%, 59%, 60.999%, 69%, 70.999%,86%, 95.999%{
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #FFFF00, 0 0 20px #FF4500;
+    }
+    100% {
+        text-shadow: 0 0 80px #FF00FF, 0 0 40px #8A2BE2;
+    }
+}   
