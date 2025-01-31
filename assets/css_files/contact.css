@@ -56,7 +56,11 @@ body {
     margin-bottom: 20px;
     text-align: center;
     transition: all 0.3s ease-in-out;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+        0 0 10px rgba(255, 175, 204, 0.8),
+        0 0 15px rgba(255, 105, 135, 0.6),
+        0 0 20px rgba(255, 65, 108, 0.6);
+    filter: blur(0.1px);
 }
 
 .info-title:hover {
@@ -104,12 +108,17 @@ body {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(255, 255, 255, 0.6);
 }
 
+.info-details li a .hide {
+    display: none;
+}
+
 .info-details li a {
     color: #ffffff;
     font-size: 16px;
     text-decoration: none;
     transition: all .4s;
-    word-break: break-all; /* Allow email to break */
+    align-self: center;
+    word-break: keep-all;
 }
 
 .info-details li a:hover {
@@ -155,8 +164,11 @@ body {
     font-size: 30px;
     letter-spacing: 0.5px;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 2px #49025f, 1px 1px 2px white;
-    color: #49025f;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
+        0 0 10px rgba(255, 175, 204, 0.8),
+        0 0 15px rgba(255, 105, 135, 0.6),
+        0 0 20px rgba(255, 65, 108, 0.6);
+    color: #130e15;
 }
 
 .form-fields {
@@ -183,7 +195,7 @@ body {
     outline: none;
     border-radius: 25px;
     box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
-    border-bottom: 4px solid #49025f;
+    border-bottom: 4px solid #130e15;
 }
 
 .form-fields .form-group1 input::placeholder,
@@ -248,5 +260,26 @@ body {
     .info-wrap,
     .form-wrap {
         padding: 30px;
+    }
+}
+
+@media (max-width: 433px) {
+
+    .info-details li span {
+        display: none;
+    }
+}
+
+@media (max-width: 352px) {
+    .info-details li a .hide {
+        display: inline;
+    }
+
+    .info-details li a .show {
+        display: none;
+    }
+
+    .info-details li span {
+        display: none;
     }
 }
