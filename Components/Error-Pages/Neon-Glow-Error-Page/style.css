@@ -2,13 +2,16 @@
 
 body {
     background: radial-gradient(circle, #0D0015, #2B002C, #003660, #1A1A1A);
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 div {
-    top: 90px;
-    padding: 40px;
-    font-size: 95px;
+    padding: 20px;
+    font-size: 10vw;
     font-family: 'Monoton';
     text-align: center;
     text-transform: uppercase;
@@ -53,7 +56,6 @@ div p {
 }
 
 @keyframes upper {
-
     0%,
     19.999%,
     22%,
@@ -78,7 +80,6 @@ div p {
 }
 
 @keyframes lower {
-
     0%,
     12%,
     18.999%,
@@ -124,5 +125,18 @@ div p {
 
     100% {
         text-shadow: 0 0 80px #FF00FF, 0 0 40px #8A2BE2;
+    }
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 600px) {
+    div {
+        font-size: 15vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    div {
+        font-size: 12vw;
     }
 }
