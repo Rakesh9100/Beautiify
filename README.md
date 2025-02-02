@@ -190,6 +190,21 @@ This project and everyone participating in it is governed by the [Code of Conduc
 
 <tr>
 <td align="center">
+<a href="https://iwoc3.live/"><img src="https://github.com/user-attachments/assets/31929aa2-68c1-4621-9a25-85cd2b5a9616" height="140px" width="140px" alt="IWOC2025"></a><br><sub><b>IWOC 2k25</b></sub>
+</td>
+<td align="center">
+<a href="https://www.socialwinterofcode.com/"><img src="https://github.com/Rakesh9100/Beautiify/assets/73993775/9235952f-9062-4352-992d-eb34e4d60283" height="140px" width="180px" alt="SWOC2025"></a><br><sub><b>SWOC 2k25</b></sub>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<a href="https://kwoc.kossiitkgp.org/"><img src="https://github.com/user-attachments/assets/cb303f6e-e912-4618-9f5b-7f36c1b8b3a6" height="140px" width="140px" alt="KWOC2024"></a><br><sub><b>KWOC 2k24</b></sub>
+</td>
+<td align="center">
+<a href="https://gssoc.girlscript.tech/"><img src="https://github.com/Rakesh9100/CalcDiverse/assets/73993775/910a2a16-0906-4234-bc7f-90f65b259527" height="140px" width="140px" alt="GSSOC2024"></a><br><sub><b>GSSOC 2k24</b></sub>
+</td>
+<td align="center">
 <a href="https://iwoc.codes/"><img src="https://github.com/Rakesh9100/Beautiify/assets/73993775/8ed95409-8fe5-42f5-b60c-51dc9f995df5" height="140px" width="140px" alt="IWOC2024"></a><br><sub><b>IWOC 2k24</b></sub>
 </td>
 <td align="center">
