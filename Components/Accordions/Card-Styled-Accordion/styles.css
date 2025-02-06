@@ -1,0 +1,76 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #f3e8ff, #dbeafe);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 24px;
+    color: #4f46e5;
+    margin-bottom: 20px;
+}
+
+/* Accordion */
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordion-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Button */
+.accordion-trigger {
+    width: 100%;
+    background: #ffffff;
+    color: #4f46e5;
+    font-size: 18px;
+    text-align: left;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.accordion-trigger:hover {
+    background: #eef2ff;
+}
+
+/* Accordion Content */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    background: white;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+/* Show content when active */
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+    padding: 15px;
+}
