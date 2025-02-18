@@ -17,3 +17,8 @@ body {
         background-position: 100% 50%;
     }
 }
+
+h1 {
+    color: white;
+    font-family: Arial, sans-serif;
+}
