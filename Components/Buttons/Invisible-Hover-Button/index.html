@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4; /* Light background color */
+        }
+
+        .hidden-text {
+            color: transparent; /* Text is invisible */
+            text-decoration: none;
+            text-underline-offset: 4px;
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: #e0e0e0; /* Background color */
+            border-radius: 8px;
+            transition: color 0.3s ease-in-out, text-decoration-color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .hidden-text:hover {
+            color: blue;
+            text-decoration: wavy underline;
+            text-decoration-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button class="hidden-text">Hover me</button>
+</body>
+</html>

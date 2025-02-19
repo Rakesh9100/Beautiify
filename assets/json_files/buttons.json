@@ -243,5 +243,10 @@
         "title": "Youtube Button",
         "previewLink": "../../Components/Buttons/Youtube-Button/index.html",
         "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Youtube-Button"
+    },
+    {
+        "title": "Invisible Hover Button",
+        "previewLink": "../../Components/Buttons/Invisible-Hover-Button/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Buttons/Invisible-Hover-Button"
     }
 ]
