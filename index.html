@@ -19,7 +19,264 @@
     <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
     <title>Beautiify</title>
 </head>
+<style>
+    footer {
+    background-color: #2b0038;
+    color: #fefefe;
+    padding: 40px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 20px;
+}
+
+.footer-container .heading {
+    font-size: 28px;  /* Increased font size */
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #f70479, #cccccc);
+    background: -webkit-linear-gradient(to right, #f70479, #cccccc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.company-info {
+    font-weight: 600;
+    flex: 1 1 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+.company-info img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    line-height: 1.8;
+    text-align: center;
+    font-size: 1.1rem;  /* Increased font size */
+}
+
+.quick-links {
+    flex: 1 1 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+}
+
+.footer-ul li a {
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    font-size: 1.2rem;  /* Increased font size */
+    font-weight: 500;
+    color: #fefefe;
+}
+
+.footer-ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #d76cc2;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-ul li a:hover {
+    color: #ec685c;
+}
+
+.footer-ul li a:hover::after {
+    width: 100%;
+}
+
+.send-message {
+    flex: 1 1 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.group1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.send-message input,
+.send-message textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.1rem;  /* Increased font size */
+}
+
+.send-message button {
+    height: 50px;
+    background: linear-gradient(to right, #f70479, #cccccc);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.3rem;  /* Increased font size */
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.send-message button:hover {
+    background: #d76cc2;
+    transform: scale(1.05);
+}
+
+.social {
+    font-size: 3rem;  /* Increased font size */
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social a {
+    color: #fefefe;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social a:hover {
+    transform: translateY(-8px);
+}
+
+.social a.user:hover {
+    color: #4af3b5;
+}
+
+.social a.message:hover {
+    color: #d44638;
+}
+
+.social a.linkedin:hover {
+    color: #0a66c2;
+}
+
+.social a.github:hover {
+    color: #181717;
+}
+
+.social a.instagram:hover {
+    color: #e1306c;
+}
+
+.social a.facebook:hover {
+    color: #1877f2;
+}
+
+.social a.twitter:hover {
+    color: #1da1f2;
+}
+
+.social a.discord:hover {
+    color: #5865f2;
+}
+
+.copyright {
+    color: #cccccc;
+    padding: 20px;
+    margin-top: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.quick-links ul,
+.send-message form {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li,
+.send-message button {
+    margin-bottom: 10px;
+}
+
+.quick-links a,
+.send-message button {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-info,
+    .quick-links,
+    .send-message {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .social {
+        font-size: 2.8rem;  /* Increased font size */
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .send-message input,
+    .send-message textarea {
+        width: 100%;
+    }
+
+    .footer-container {
+        padding: 10px;
+    }
+
+    .company-info p {
+        font-size: 1.2rem;  /* Increased font size */
+    }
+}
+
+</style>
 <body>
     <div id="loader-wrapper">
         <div id="loader"></div>
