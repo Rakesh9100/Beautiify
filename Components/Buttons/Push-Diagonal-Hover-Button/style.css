@@ -1,0 +1,74 @@
+ /* Centering the button */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light background */
+    }
+
+/* Button Styling */
+.group {
+    position: relative;
+    display: inline-flex;
+    height: 50px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid #525252;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Default Text */
+.button-text {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+    transition: transform 0.5s ease-in-out;
+}
+/* Hover Background Effect */
+.button-hover {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.button-hover span:first-child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%) skewY(12deg) scaleY(0);
+    background-color: #3498db; /* Blue background */
+    transition: transform 0.5s ease-in-out;
+}
+
+.button-hover span:last-child {
+    position: relative;
+    z-index: 10;
+}
+
+/* Hover Effect */
+.group:hover .button-text {
+    transform: translateY(-100%);
+}
+.group:hover .button-hover {
+    transform: translateY(0);
+}
+.group:hover .button-hover span:first-child {
+    transform: translateY(0) skewY(0) scaleY(1.5);
+}
