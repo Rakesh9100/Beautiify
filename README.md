@@ -32,7 +32,9 @@
 - [Getting Started💥](#getting-started)
 - [Contributing Guidelines📑](#contributing-guidelines)
 - [Code Of Conduct📑](#code-of-conduct)
+- [Open Source Programs🥳](#this-repo-has-been-part-of-the-following-open-source-programs)
 - [Project Admin⚡](#project-admin)
+- [Project Contributors🫂](#project-contributors)
 - [Contributing is fun🧡](#contributing-is-fun)
 <br>
 
@@ -47,41 +49,49 @@ Beautiify offers a diverse range of components and animations designed to enhanc
 
 <h3>Components🎨</h3>
 
-1. **Accordions** -- Accordions are expandable sections that reveal or hide content when clicked. Beautiify offers various styles, including 3D Accordion, Glassmorphism Accordion, Horizontal Picture Accordion, and so on.
+1. **Accordions** ➡️ Accordions are expandable sections that reveal or hide content when clicked. Beautiify offers various styles, including 3D Accordion, Glassmorphism Accordion, Horizontal Picture Accordion, and so on.
 
-2. **Backgrounds** -- Beautiify includes a collection of visually appealing backgrounds to enhance the look of your site. Options include 3D Boxes Background, Abstract Background, Animated Colorful Background, and so on.
+2. **Backgrounds** ➡️ Beautiify includes a collection of visually appealing backgrounds to enhance the look of your site. Options include 3D Boxes Background, Abstract Background, Animated Colorful Background, and so on.
 
-3. **Breadcrumbs** -- Breadcrumbs provide navigational links to enhance user experience. Available designs include 3D Breadcrumb, Animated Breadcrumb, Gaming Breadcrumb, and so on.
+3. **Breadcrumbs** ➡️ Breadcrumbs provide navigational links to enhance user experience. Available designs include 3D Breadcrumb, Animated Breadcrumb, Gaming Breadcrumb, and so on.
 
-4. **Buttons** -- Stylish and functional buttons are available in different shapes and sizes. Designs include Blob Button, Glow Button, Hover Button, and so on.
+4. **Buttons** ➡️ Stylish and functional buttons are available in different shapes and sizes. Designs include Blob Button, Glow Button, Hover Button, and so on.
 
-5. **Cards** -- Cards are versatile containers for displaying content. Beautiify provides various card designs, such as 3D Animated Card, Blog Post Card, Flip Card, and so on.
+5. **Cards** ➡️ Cards are versatile containers for displaying content. Beautiify provides various card designs, such as 3D Animated Card, Blog Post Card, Flip Card, and so on.
 
-6. **Carousels** -- Carousels are rotating sliders for showcasing images or content. Available types include 3D Image Carousel, Draggable Carousel, Neumorphism Carousel, and so on.
+6. **Carousels** ➡️ Carousels are rotating sliders for showcasing images or content. Available types include 3D Image Carousel, Draggable Carousel, Neumorphism Carousel, and so on.
 
-7. **Dropdowns** -- Dropdowns allow users to select options from a list. Beautiify offers several styles which include Apple Themed Dropdown, and The More Menu Dropdown.
+7. **Cursors** ➡️ Cursors are customizable mouse pointers that enhance interactivity and user experience. Beautiify offers designs like Dot Cursor, Pulsating Cursor, and so on.
 
-8. **Footers** -- Footers are customizable sections at the bottom of pages. Beautiify includes Animated Footer, Classic Footer, Waves Footer, and so on.
+8. **Dropdowns** ➡️ Dropdowns allow users to select options from a list. Beautiify offers several styles which include Apple Themed Dropdown, The More Menu Dropdown, and so on.
 
-9. **Forms** -- Forms are essential for user input. Beautiify provides a range of form designs, including Animated Login Form, Black Red Signup Form, Contact Form, and so on.
+9. **Error Pages** ➡️ Error Pages are displayed when a user encounters an issue, such as a broken link or missing page. Beautiify provides creative designs like 404 Error Page, Neon Glow Error Page, and so on.
 
-10. **Heroes** -- Heroes are a large, attention-grabbing picture with text typically shown in the above-the-fold area. Beautiify provides various hero designs such as Carousel Hero, Collage-Style-Hero and so on.
+10. **Footers** ➡️ Footers are customizable sections at the bottom of pages. Beautiify includes Animated Footer, Classic Footer, Waves Footer, and so on.
 
-11. **Loaders** -- Loaders indicate the loading process. Beautiify features various loader designs such as Bird Loader, Clock Loader, Helix Loader, and so on.
+11. **Forms** ➡️ Forms are essential for user input. Beautiify provides a range of form designs, including Animated Login Form, Black Red Signup Form, Contact Form, and so on.
 
-12. **Navigation Bars** -- Navigation Bars provide links for site navigation. Beautiify offers Circular Navigation Bar, Hamburger Navigation Bar, Overlay Navigation Bar, and so on.
+12. **Heroes** ➡️ Heroes are a large, attention-grabbing picture with text typically shown in the above-the-fold area. Beautiify provides various hero designs such as Carousel Hero, Collage-Style Hero, and so on.
 
-13. **Popups** -- Popups display messages or content overlays. Available designs include Context Menu Popup, Error Notification Popup, Success Notification Popup, and so on.
+13. **Loaders** ➡️ Loaders indicate the loading process. Beautiify features various loader designs such as Bird Loader, Clock Loader, Helix Loader, and so on.
 
-14. **Search Bars** -- Search Bars enable users to search content on your site. Beautiify provides 3D Search Bar, Google Search Bar, Neumorphism Search Bar, and so on.
+14. **Navigation Bars** ➡️ Navigation Bars provide links for site navigation. Beautiify offers Circular Navigation Bar, Hamburger Navigation Bar, Overlay Navigation Bar, and so on.
 
-15. **Text Animations** -- Text Animations add dynamic effects to text. Beautiify includes Flip Text Animation, Fog Text Animation, Glowing Text Animation, and so on.
+15. **Popups** ➡️ Popups display messages or content overlays. Available designs include Context Menu Popup, Error Notification Popup, Success Notification Popup, and so on.
 
-16. **Toggle Switches** -- Toggle switches prompt users to choose between two mutually exclusive options and always have a default value. Available designs are Robo Toggle Switch, Light Toggle Switch, and so on.
+16. **Scrollbars** ➡️ Scrollbars are customizable elements that allow users to navigate through content. Beautiify offers designs like Elegant Custom Scrollbar, Rainbow Scrollbar, and so on.
 
-17. **Tooltips** -- A tooltip is a brief, informative message that appears when a user interacts with an element. Beautiify provides various designs like Animated Tooltip, Shopping Cart Tooltip, and so on.
+17. **Search Bars** ➡️ Search Bars enable users to search content on your site. Beautiify provides 3D Search Bar, Google Search Bar, Neumorphism Search Bar, and so on.
 
-18. **Transfer Lists** -- Transfer Lists allow items to be moved between lists. Available styles are Neuromorphism Transfer List.
+18. **Tables** ➡️ Tables are used to organize and display data in rows and columns. Beautiify offers designs like Bending Sheet Table, Pop Up Table, and so on.
+
+19. **Text Animations** ➡️ Text Animations add dynamic effects to text. Beautiify includes Flip Text Animation, Fog Text Animation, Glowing Text Animation, and so on.
+
+20. **Toggle Switches** ➡️ Toggle switches prompt users to choose between two mutually exclusive options and always have a default value. Available designs are Robo Toggle Switch, Light Toggle Switch, and so on.
+
+21. **Tooltips** ➡️ A tooltip is a brief, informative message that appears when a user interacts with an element. Beautiify provides various designs like Animated Tooltip, Shopping Cart Tooltip, and so on.
+
+22. **Transfer Lists** ➡️ Transfer Lists allow items to be moved between lists. Available styles are Card Based Transfer List, Neumorphism Transfer List, and so on.
 
 <!-------------------------------------------------->
 
@@ -98,7 +108,7 @@ Beautiify offers a diverse range of components and animations designed to enhanc
 
 <h2>Overview⭐</h2>
 
-<h2>Live Project -- (https://beautiify.netlify.app/)</h2>
+<h3>Live Project --> (https://beautiify.netlify.app)</h3>
 
 <h3>Home/Main Page :-</h3>
 

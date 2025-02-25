@@ -1,0 +1,61 @@
+/* Centering the button */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light background */
+}
+
+/* Button Styling */
+.group {
+    position: relative;
+    display: inline-flex;
+    height: 50px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid #525252;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Default Text */
+.button-text {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #222;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Text */
+.button-hover {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db; /* Blue background */
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.group:hover .button-text {
+    transform: translateY(-100%);
+}
+
+.group:hover .button-hover {
+    transform: translateY(0);
+}
