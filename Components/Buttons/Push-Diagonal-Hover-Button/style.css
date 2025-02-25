@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4; /* Light background */
-    }
+}
 
 /* Button Styling */
 .group {
@@ -35,6 +35,7 @@ body {
     color: #222;
     transition: transform 0.5s ease-in-out;
 }
+
 /* Hover Background Effect */
 .button-hover {
     position: absolute;
@@ -66,9 +67,11 @@ body {
 .group:hover .button-text {
     transform: translateY(-100%);
 }
+
 .group:hover .button-hover {
     transform: translateY(0);
 }
+
 .group:hover .button-hover span:first-child {
     transform: translateY(0) skewY(0) scaleY(1.5);
 }
