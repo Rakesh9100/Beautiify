@@ -55,6 +55,7 @@ body {
 .group:hover .button-text {
     transform: translateX(-100%);
 }
+
 .group:hover .button-hover {
     transform: translateX(0);
 }
