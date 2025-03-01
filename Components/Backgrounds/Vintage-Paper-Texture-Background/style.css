@@ -1,8 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background: url('https://www.transparenttextures.com/patterns/aged-paper.png'),
-                linear-gradient(to bottom, #e8d8c4, #cbb59e);
+    background:  linear-gradient(to bottom, #e8d8c4, #cbb59e);
     background-size: cover;
     font-family: 'Times New Roman', serif;
     display: flex;
