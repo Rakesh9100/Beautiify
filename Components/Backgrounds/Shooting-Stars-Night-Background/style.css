@@ -15,8 +15,13 @@ body {
 }
 
 @keyframes twinkle {
-    0% { opacity: 0.5; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .shooting-star {
@@ -30,6 +35,15 @@ body {
 }
 
 @keyframes shooting {
-    0% { top: -10%; left: 80%; opacity: 1; }
-    100% { top: 100%; left: 20%; opacity: 0; }
+    0% {
+        top: -10%;
+        left: 80%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 100%;
+        left: 20%;
+        opacity: 0;
+    }
 }
