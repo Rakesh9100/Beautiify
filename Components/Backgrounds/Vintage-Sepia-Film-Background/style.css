@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle, #a78c7b, #4a4031);
+    overflow: hidden;
+}
+
+.film-grain {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/noise-pattern.png');
+    opacity: 0.2;
+    animation: flicker 0.5s infinite alternate;
+}
+
+.scratches {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/old-wall.png');
+    opacity: 0.1;
+    animation: moveScratches 4s infinite linear;
+}
+
+@keyframes flicker {
+    0% { opacity: 0.2; }
+    100% { opacity: 0.3; }
+}
+
+@keyframes moveScratches {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
