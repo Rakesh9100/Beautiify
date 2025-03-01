@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, #1e1e2e, #0a0a12);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
