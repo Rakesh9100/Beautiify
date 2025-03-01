@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shooting Stars Night Background</title>
+</head>
+<body>
+    <script>
+        function createStar() {
+            const star = document.createElement("div");
+            star.classList.add("star");
+            document.body.appendChild(star);
+
+            const size = Math.random() * 3 + "px";
+            star.style.width = size;
+            star.style.height = size;
+            star.style.left = Math.random() * 100 + "vw";
+            star.style.top = Math.random() * 100 + "vh";
+            star.style.animationDuration = Math.random() * 3 + 2 + "s";
+
+            setTimeout(() => { star.remove(); }, 5000);
+        }
+
+        function createShootingStar() {
+            const shootingStar = document.createElement("div");
+            shootingStar.classList.add("shooting-star");
+            document.body.appendChild(shootingStar);
+
+            shootingStar.style.left = Math.random() * 100 + "vw";
+            shootingStar.style.top = Math.random() * 100 + "vh";
+            shootingStar.style.animationDuration = Math.random() * 5 + 3 + "s";
+
+            setTimeout(() => { shootingStar.remove(); }, 5000);
+        }
+
+        setInterval(createStar, 300);
+        setInterval(createShootingStar, 4000);
+    </script>
+</body>
+</html>
