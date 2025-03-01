@@ -40,9 +40,14 @@
         "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Aurora-Borealis-Background"
     },
     {
-        "title": "Bubble Float Background",
-        "previewLink": "../../Components/Backgrounds/Bubble-Float-Background/index.html",
-        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Bubble-Float-Background"
+        "title": "Bubbles Floating Background",
+        "previewLink": "../../Components/Backgrounds/Bubbles-Floating-Background/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Bubbles-Floating-Background"
+    },
+    {
+        "title": "Bubbles Floating Background-2",
+        "previewLink": "../../Components/Backgrounds/Bubbles-Floating-Background-2/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Backgrounds/Bubbles-Floating-Background-2"
     },
     {
         "title": "Coalesce Animation Background",
