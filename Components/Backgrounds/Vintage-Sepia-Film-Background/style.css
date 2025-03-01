@@ -18,7 +18,6 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('https://www.transparenttextures.com/patterns/old-wall.png');
     opacity: 0.1;
     animation: moveScratches 4s infinite linear;
 }
