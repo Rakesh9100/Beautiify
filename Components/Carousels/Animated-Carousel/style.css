@@ -1,24 +1,22 @@
 @-webkit-keyframes slidein {
     0% {
-        top: -400px;
+        top: -100%;
         opacity: 0;
     }
-
     100% {
+        top: 0;
         opacity: 1;
-        top: 0px;
     }
 }
 
 @keyframes slidein {
     0% {
-        top: -400px;
+        top: -100%;
         opacity: 0;
     }
-
     100% {
+        top: 0;
         opacity: 1;
-        top: 0px;
     }
 }
 
@@ -27,9 +25,8 @@
         top: 0;
         opacity: 1;
     }
-
     100% {
-        top: -400px;
+        top: -100%;
         opacity: 0;
     }
 }
@@ -39,300 +36,416 @@
         top: 0;
         opacity: 1;
     }
-
     100% {
-        top: -400px;
+        top: -100%;
         opacity: 0;
     }
 }
 
 body {
     background: #eeeeee;
-    font-family: "Tahoma";
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+    font-family: "Tahoma", sans-serif;
     user-select: none;
-    height: 100%;
+    margin: 0;
     min-height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-body #scene {
+#scene {
     display: flex;
-    align-items: center;
-    justify-content: left;
-    width: 1000px;
-    height: 400px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1000px;
+    height: 60vh;
+    max-height: 500px;
+    margin: 20px auto;
     background-color: #ffffff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     overflow: hidden;
+    position: relative;
 }
 
-body #scene #left-zone {
+#left-zone {
     background: #ffffff;
-    height: 75%;
-    flex-grow: 0;
+    height: 100%;
+    width: 35%;
+    min-width: 150px;
     display: flex;
-    width: 350px;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
-body #scene #left-zone .list {
+#left-zone .list {
     display: flex;
-    list-style: none;
-    align-content: stretch;
     flex-direction: column;
-    flex-grow: 1;
+    list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
-body #scene #left-zone .list li.item input[type=radio] {
+#left-zone .list li.item input[type="radio"] {
     display: none;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~label {
+#left-zone .list li.item input[type="radio"] ~ label {
     display: block;
     opacity: 0.5;
     height: 50px;
     text-align: center;
     line-height: 50px;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+    position: relative;
+    padding-left: 60px;
+    box-sizing: border-box;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~label:first-letter {
+#left-zone .list li.item input[type="radio"] ~ label:first-letter {
     text-transform: uppercase;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~label:hover {
+#left-zone .list li.item input[type="radio"] ~ label:hover {
     opacity: 0.75;
     cursor: pointer;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~label.label_strawberry:before {
-    content: " ";
+#left-zone .list li.item input[type="radio"] ~ label.label_strawberry:before,
+#left-zone .list li.item input[type="radio"] ~ label.label_banana:before,
+#left-zone .list li.item input[type="radio"] ~ label.label_apple:before,
+#left-zone .list li.item input[type="radio"] ~ label.label_orange:before {
+    content: "";
     display: block;
     position: absolute;
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: center;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+}
+
+#left-zone .list li.item input[type="radio"] ~ label.label_strawberry:before {
     background-image: url("assets/image1.png");
-    background-position: center;
-    background-size: 75% 75%;
-    background-repeat: no-repeat;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~label.label_banana:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
+#left-zone .list li.item input[type="radio"] ~ label.label_banana:before {
     background-image: url("assets/image2.png");
-    background-position: center;
-    background-size: 75% 75%;
-    background-repeat: no-repeat;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~label.label_apple:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
+#left-zone .list li.item input[type="radio"] ~ label.label_apple:before {
     background-image: url("assets/image3.png");
-    background-position: center;
-    background-size: 75% 75%;
-    background-repeat: no-repeat;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~label.label_orange:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
+#left-zone .list li.item input[type="radio"] ~ label.label_orange:before {
     background-image: url("assets/image4.png");
-    background-position: center;
-    background-size: 75% 75%;
-    background-repeat: no-repeat;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~.content {
+#left-zone .list li.item input[type="radio"] ~ .content {
     position: absolute;
-    left: 350px;
-    top: -400px;
-    width: 650px;
-    height: 400px;
-    -webkit-animation-duration: 0.75s;
-    animation-duration: 0.75s;
-    -webkit-animation-name: slideout;
-    animation-name: slideout;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+    left: 35%;
+    top: -100%;
+    width: calc(65% - 2px); 
+    height: 100%;
+    animation: slideout 0.75s ease-out;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~.content.content_strawberry .picto {
-    height: 100px;
-    width: 100px;
-    background-image: url("assets/image5.png");
+#left-zone .list li.item input[type="radio"] ~ .content .picto {
+    max-width: 80px;
+    max-height: 80px;
+    width: 20vw;
+    height: 20vw;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    flex-shrink: 0;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~.content.content_strawberry h1 {
+#left-zone .list li.item input[type="radio"] ~ .content.content_strawberry .picto {
+    background-image: url("assets/image5.png");
+}
+
+#left-zone .list li.item input[type="radio"] ~ .content.content_strawberry h1 {
     color: #D64541;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~.content.content_banana .picto {
-    height: 100px;
-    width: 100px;
+#left-zone .list li.item input[type="radio"] ~ .content.content_banana .picto {
     background-image: url("assets/image6.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~.content.content_banana h1 {
+#left-zone .list li.item input[type="radio"] ~ .content.content_banana h1 {
     color: #F5D76E;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~.content.content_apple .picto {
-    height: 100px;
-    width: 100px;
+#left-zone .list li.item input[type="radio"] ~ .content.content_apple .picto {
     background-image: url("assets/image7.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~.content.content_apple h1 {
+#left-zone .list li.item input[type="radio"] ~ .content.content_apple h1 {
     color: #00B16A;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~.content.content_orange .picto {
-    height: 100px;
-    width: 100px;
+#left-zone .list li.item input[type="radio"] ~ .content.content_orange .picto {
     background-image: url("assets/image8.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~.content.content_orange h1 {
+#left-zone .list li.item input[type="radio"] ~ .content.content_orange h1 {
     color: #F27935;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~.content h1:first-letter {
+#left-zone .list li.item input[type="radio"] ~ .content h1 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+#left-zone .list li.item input[type="radio"] ~ .content h1:first-letter {
     text-transform: uppercase;
 }
 
-body #scene #left-zone .list li.item input[type=radio]~.content p {
-    max-width: 50%;
+#left-zone .list li.item input[type="radio"] ~ .content p {
+    max-width: 90%;
     text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    overflow: auto;
+    max-height: 50%;
 }
 
-body #scene #left-zone .list li.item input[type=radio]:checked~label {
+#left-zone .list li.item input[type="radio"]:checked ~ label {
     opacity: 1;
-    -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-body #scene #left-zone .list li.item input[type=radio]:checked~label.label_strawberry {
+#left-zone .list li.item input[type="radio"]:checked ~ label.label_strawberry {
     color: #D64541;
-    border-right: solid 4px #D64541;
+    border-right: 4px solid #D64541;
 }
 
-body #scene #left-zone .list li.item input[type=radio]:checked~label.label_banana {
+#left-zone .list li.item input[type="radio"]:checked ~ label.label_banana {
     color: #F5D76E;
-    border-right: solid 4px #F5D76E;
+    border-right: 4px solid #F5D76E;
 }
 
-body #scene #left-zone .list li.item input[type=radio]:checked~label.label_apple {
+#left-zone .list li.item input[type="radio"]:checked ~ label.label_apple {
     color: #00B16A;
-    border-right: solid 4px #00B16A;
+    border-right: 4px solid #00B16A;
 }
 
-body #scene #left-zone .list li.item input[type=radio]:checked~label.label_orange {
+#left-zone .list li.item input[type="radio"]:checked ~ label.label_orange {
     color: #F27935;
-    border-right: solid 4px #F27935;
+    border-right: 4px solid #F27935;
 }
 
-body #scene #left-zone .list li.item input[type=radio]:checked~.content {
-    -webkit-animation-duration: 0.75s;
-    animation-duration: 0.75s;
-    -webkit-animation-name: slidein;
-    animation-name: slidein;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+#left-zone .list li.item input[type="radio"]:checked ~ .content {
+    animation: slidein 0.75s ease-out forwards;
 }
 
-body #scene #middle-border {
+#middle-border {
     background-color: #eeeeee;
-    height: 75%;
-    flex-grow: 1;
-    max-width: 2px;
-    z-index: 0;
+    width: 2px;
+    height: 100%;
+    flex-shrink: 0;
 }
 
-body #scene #right-zone {
+#right-zone {
     background: #ffffff;
     height: 100%;
-    flex-grow: 3;
+    flex-grow: 1;
+    display: none;
 }
 
-/* Media query for responsive  */
+/* Media Queries for Responsiveness */
 
-@media only screen and (min-width: 600px) {
+/* Small screens (mobile, <600px) */
+@media only screen and (max-width: 600px) {
+    #scene {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        min-height: 80vh;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #left-zone {
+        width: 100%;
+        height: auto;
+        min-height: 120px;
+        padding: 10px 0;
+    }
+
+    #left-zone .list {
+        flex-direction: column; 
+        align-items: stretch;
+        padding: 0 10px;
+    }
+
+    #left-zone .list li.item {
+        flex: 1 1 auto;
+        margin: 5px 0;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ label {
+        font-size: 1rem;
+        height: 48px; 
+        line-height: 48px;
+        padding-left: 60px;
+        opacity: 0.7;
+        transition: all 0.2s ease;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ label:hover {
+        opacity: 1;
+        background-color: #f0f0f0;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ label:before {
+        width: 36px;
+        height: 36px;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-size: 80% 80%;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ .content {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+        padding: 15px;
+        top: 0;
+        animation: none;
+        display: none;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin: 10px 0;
+    }
+
+    #left-zone .list li.item input[type="radio"]:checked ~ .content {
+        display: flex;
+        animation: slidein 0.4s ease-out forwards;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ .content .picto {
+        max-width: 70px;
+        max-height: 70px;
+        width: 20vw;
+        height: 20vw;
+        min-width: 50px;
+        min-height: 50px;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ .content h1 {
+        font-size: 1.2rem;
+        margin: 8px 0;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ .content p {
+        font-size: 0.85rem;
+        max-height: 120px;
+        overflow-y: auto;
+        padding: 0 10px;
+        line-height: 1.5;
+    }
+
     #middle-border {
-        display: block;
-        width: 2px;
-        background-color: #cccccc;
-        height: 80%;
-        margin: 0 auto;
+        display: none;
     }
 
-    .content {
-        display: block;
+    #right-zone {
+        display: none;
     }
 }
 
-@media only screen and (min-width: 768px) {
+/* Medium screens (tablet, 600px-768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    #scene {
+        width: 95%;
+        height: 70vh;
+    }
+
+    #left-zone {
+        width: 40%;
+        min-width: 180px;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ label {
+        font-size: 1rem;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ .content {
+        left: 40%;
+        width: calc(60% - 2px);
+        padding: 15px;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ .content .picto {
+        max-width: 70px;
+        max-height: 70px;
+        width: 18vw;
+        height: 18vw;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ .content h1 {
+        font-size: 1.2rem;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ .content p {
+        font-size: 0.85rem;
+        max-height: 55%;
+    }
+
+    #middle-border {
+        width: 2px;
+        height: 90%;
+    }
+}
+
+/* Large screens (>768px) */
+@media only screen and (min-width: 769px) {
+    #left-zone .list li.item input[type="radio"] ~ label {
+        font-size: 1.2rem;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ .content .picto {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ .content h1 {
+        font-size: 1.3rem;
+    }
+
+    #left-zone .list li.item input[type="radio"] ~ .content p {
+        font-size: 0.9rem;
+        max-height: 50%;
+    }
+
     #middle-border {
         height: 100%;
-    }
-
-    .label_strawberry,
-    .label_banana,
-    .label_apple,
-    .label_orange {
-        font-size: 1.2em;
-    }
-
-    .picto {
-        width: 80px;
-        height: 80px;
-    }
-
-    .content {
-        padding: 30px;
     }
 }
