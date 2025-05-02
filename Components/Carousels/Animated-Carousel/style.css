@@ -3,6 +3,7 @@
         top: -100%;
         opacity: 0;
     }
+
     100% {
         top: 0;
         opacity: 1;
@@ -14,6 +15,7 @@
         top: -100%;
         opacity: 0;
     }
+
     100% {
         top: 0;
         opacity: 1;
@@ -25,6 +27,7 @@
         top: 0;
         opacity: 1;
     }
+
     100% {
         top: -100%;
         opacity: 0;
@@ -36,6 +39,7 @@
         top: 0;
         opacity: 1;
     }
+
     100% {
         top: -100%;
         opacity: 0;
@@ -91,7 +95,7 @@ body {
     display: none;
 }
 
-#left-zone .list li.item input[type="radio"] ~ label {
+#left-zone .list li.item input[type="radio"]~label {
     display: block;
     opacity: 0.5;
     height: 50px;
@@ -104,19 +108,19 @@ body {
     box-sizing: border-box;
 }
 
-#left-zone .list li.item input[type="radio"] ~ label:first-letter {
+#left-zone .list li.item input[type="radio"]~label:first-letter {
     text-transform: uppercase;
 }
 
-#left-zone .list li.item input[type="radio"] ~ label:hover {
+#left-zone .list li.item input[type="radio"]~label:hover {
     opacity: 0.75;
     cursor: pointer;
 }
 
-#left-zone .list li.item input[type="radio"] ~ label.label_strawberry:before,
-#left-zone .list li.item input[type="radio"] ~ label.label_banana:before,
-#left-zone .list li.item input[type="radio"] ~ label.label_apple:before,
-#left-zone .list li.item input[type="radio"] ~ label.label_orange:before {
+#left-zone .list li.item input[type="radio"]~label.label_strawberry:before,
+#left-zone .list li.item input[type="radio"]~label.label_banana:before,
+#left-zone .list li.item input[type="radio"]~label.label_apple:before,
+#left-zone .list li.item input[type="radio"]~label.label_orange:before {
     content: "";
     display: block;
     position: absolute;
@@ -130,27 +134,27 @@ body {
     background-repeat: no-repeat;
 }
 
-#left-zone .list li.item input[type="radio"] ~ label.label_strawberry:before {
+#left-zone .list li.item input[type="radio"]~label.label_strawberry:before {
     background-image: url("assets/image1.png");
 }
 
-#left-zone .list li.item input[type="radio"] ~ label.label_banana:before {
+#left-zone .list li.item input[type="radio"]~label.label_banana:before {
     background-image: url("assets/image2.png");
 }
 
-#left-zone .list li.item input[type="radio"] ~ label.label_apple:before {
+#left-zone .list li.item input[type="radio"]~label.label_apple:before {
     background-image: url("assets/image3.png");
 }
 
-#left-zone .list li.item input[type="radio"] ~ label.label_orange:before {
+#left-zone .list li.item input[type="radio"]~label.label_orange:before {
     background-image: url("assets/image4.png");
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content {
+#left-zone .list li.item input[type="radio"]~.content {
     position: absolute;
     left: 35%;
     top: -100%;
-    width: calc(65% - 2px); 
+    width: calc(65% - 2px);
     height: 100%;
     animation: slideout 0.75s ease-out;
     display: flex;
@@ -162,7 +166,7 @@ body {
     overflow: hidden;
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content .picto {
+#left-zone .list li.item input[type="radio"]~.content .picto {
     max-width: 80px;
     max-height: 80px;
     width: 20vw;
@@ -173,39 +177,39 @@ body {
     flex-shrink: 0;
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content.content_strawberry .picto {
+#left-zone .list li.item input[type="radio"]~.content.content_strawberry .picto {
     background-image: url("assets/image5.png");
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content.content_strawberry h1 {
+#left-zone .list li.item input[type="radio"]~.content.content_strawberry h1 {
     color: #D64541;
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content.content_banana .picto {
+#left-zone .list li.item input[type="radio"]~.content.content_banana .picto {
     background-image: url("assets/image6.png");
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content.content_banana h1 {
+#left-zone .list li.item input[type="radio"]~.content.content_banana h1 {
     color: #F5D76E;
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content.content_apple .picto {
+#left-zone .list li.item input[type="radio"]~.content.content_apple .picto {
     background-image: url("assets/image7.png");
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content.content_apple h1 {
+#left-zone .list li.item input[type="radio"]~.content.content_apple h1 {
     color: #00B16A;
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content.content_orange .picto {
+#left-zone .list li.item input[type="radio"]~.content.content_orange .picto {
     background-image: url("assets/image8.png");
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content.content_orange h1 {
+#left-zone .list li.item input[type="radio"]~.content.content_orange h1 {
     color: #F27935;
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content h1 {
+#left-zone .list li.item input[type="radio"]~.content h1 {
     font-size: 1.3rem;
     margin: 10px 0;
     text-align: center;
@@ -215,11 +219,11 @@ body {
     max-width: 100%;
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content h1:first-letter {
+#left-zone .list li.item input[type="radio"]~.content h1:first-letter {
     text-transform: uppercase;
 }
 
-#left-zone .list li.item input[type="radio"] ~ .content p {
+#left-zone .list li.item input[type="radio"]~.content p {
     max-width: 90%;
     text-align: center;
     font-size: 0.85rem;
@@ -228,31 +232,31 @@ body {
     max-height: 50%;
 }
 
-#left-zone .list li.item input[type="radio"]:checked ~ label {
+#left-zone .list li.item input[type="radio"]:checked~label {
     opacity: 1;
 }
 
-#left-zone .list li.item input[type="radio"]:checked ~ label.label_strawberry {
+#left-zone .list li.item input[type="radio"]:checked~label.label_strawberry {
     color: #D64541;
     border-right: 4px solid #D64541;
 }
 
-#left-zone .list li.item input[type="radio"]:checked ~ label.label_banana {
+#left-zone .list li.item input[type="radio"]:checked~label.label_banana {
     color: #F5D76E;
     border-right: 4px solid #F5D76E;
 }
 
-#left-zone .list li.item input[type="radio"]:checked ~ label.label_apple {
+#left-zone .list li.item input[type="radio"]:checked~label.label_apple {
     color: #00B16A;
     border-right: 4px solid #00B16A;
 }
 
-#left-zone .list li.item input[type="radio"]:checked ~ label.label_orange {
+#left-zone .list li.item input[type="radio"]:checked~label.label_orange {
     color: #F27935;
     border-right: 4px solid #F27935;
 }
 
-#left-zone .list li.item input[type="radio"]:checked ~ .content {
+#left-zone .list li.item input[type="radio"]:checked~.content {
     animation: slidein 0.75s ease-out forwards;
 }
 
@@ -292,7 +296,7 @@ body {
     }
 
     #left-zone .list {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: stretch;
         padding: 0 10px;
     }
@@ -302,9 +306,9 @@ body {
         margin: 5px 0;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ label {
+    #left-zone .list li.item input[type="radio"]~label {
         font-size: 1rem;
-        height: 48px; 
+        height: 48px;
         line-height: 48px;
         padding-left: 60px;
         opacity: 0.7;
@@ -313,12 +317,12 @@ body {
         background-color: #f9f9f9;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ label:hover {
+    #left-zone .list li.item input[type="radio"]~label:hover {
         opacity: 1;
         background-color: #f0f0f0;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ label:before {
+    #left-zone .list li.item input[type="radio"]~label:before {
         width: 36px;
         height: 36px;
         left: 12px;
@@ -327,7 +331,7 @@ body {
         background-size: 80% 80%;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ .content {
+    #left-zone .list li.item input[type="radio"]~.content {
         position: relative;
         left: 0;
         width: 100%;
@@ -343,12 +347,12 @@ body {
         margin: 10px 0;
     }
 
-    #left-zone .list li.item input[type="radio"]:checked ~ .content {
+    #left-zone .list li.item input[type="radio"]:checked~.content {
         display: flex;
         animation: slidein 0.4s ease-out forwards;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ .content .picto {
+    #left-zone .list li.item input[type="radio"]~.content .picto {
         max-width: 70px;
         max-height: 70px;
         width: 20vw;
@@ -357,12 +361,12 @@ body {
         min-height: 50px;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ .content h1 {
+    #left-zone .list li.item input[type="radio"]~.content h1 {
         font-size: 1.2rem;
         margin: 8px 0;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ .content p {
+    #left-zone .list li.item input[type="radio"]~.content p {
         font-size: 0.85rem;
         max-height: 120px;
         overflow-y: auto;
@@ -391,30 +395,30 @@ body {
         min-width: 180px;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ label {
+    #left-zone .list li.item input[type="radio"]~label {
         font-size: 1rem;
         height: 45px;
         line-height: 45px;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ .content {
+    #left-zone .list li.item input[type="radio"]~.content {
         left: 40%;
         width: calc(60% - 2px);
         padding: 15px;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ .content .picto {
+    #left-zone .list li.item input[type="radio"]~.content .picto {
         max-width: 70px;
         max-height: 70px;
         width: 18vw;
         height: 18vw;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ .content h1 {
+    #left-zone .list li.item input[type="radio"]~.content h1 {
         font-size: 1.2rem;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ .content p {
+    #left-zone .list li.item input[type="radio"]~.content p {
         font-size: 0.85rem;
         max-height: 55%;
     }
@@ -427,20 +431,20 @@ body {
 
 /* Large screens (>768px) */
 @media only screen and (min-width: 769px) {
-    #left-zone .list li.item input[type="radio"] ~ label {
+    #left-zone .list li.item input[type="radio"]~label {
         font-size: 1.2rem;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ .content .picto {
+    #left-zone .list li.item input[type="radio"]~.content .picto {
         max-width: 80px;
         max-height: 80px;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ .content h1 {
+    #left-zone .list li.item input[type="radio"]~.content h1 {
         font-size: 1.3rem;
     }
 
-    #left-zone .list li.item input[type="radio"] ~ .content p {
+    #left-zone .list li.item input[type="radio"]~.content p {
         font-size: 0.9rem;
         max-height: 50%;
     }
