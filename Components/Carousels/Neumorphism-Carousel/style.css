@@ -55,10 +55,10 @@ main {
     border: 2px solid rgba(255, 255, 255, 0.1);
     background: #23232a;
     box-shadow: inset 18px 18px 8px rgba(0, 0, 0, 0.2),
-    inset -10px -18px 8px rgba(255, 255, 255, 0.1);
+        inset -10px -18px 8px rgba(255, 255, 255, 0.1);
 }
 
-.swiper-slide > img {
+.swiper-slide>img {
     width: 80%;
     height: 80%;
     border-radius: 30px;
@@ -75,7 +75,7 @@ main {
     color: #ffffff;
 }
 
-.title > h1 {
+.title>h1 {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -84,14 +84,14 @@ main {
     font-size: 1.3rem;
 }
 
-.title > h3 {
+.title>h3 {
     line-height: 1.5;
     letter-spacing: 0.05rem;
     color: #6b7280;
     font-size: 1.1rem;
 }
 
-.content > p {
+.content>p {
     line-height: 1.5;
     color: #9ca3af;
     font-size: 1rem;
@@ -122,7 +122,7 @@ main {
     height: 30px;
     background: #7edd90;
     box-shadow: 0 0 0 10px #7edd9044, 0 0 50px #7edd90, -100px 0 #475c9a99,
-    100px 0 #475c9a99;
+        100px 0 #475c9a99;
     margin: 0 4px;
     border-radius: 50%;
     animation: animate calc(190s / var(--i)) ease infinite;
@@ -131,13 +131,13 @@ main {
 .particles span:nth-child(2n) {
     background: #475c9a;
     box-shadow: 0 0 0 10px #475c9a44, 0 0 50px #475c9a, -100px 0 #7edd9099,
-    100px 0 #7edd9099;
+        100px 0 #7edd9099;
 }
 
 .particles span:nth-child(3n) {
     background: #9a4772;
     box-shadow: 0 0 0 10px #9a477244, 0 0 50px #9a4772, -100px 0 #7edd9099,
-    100px 0 #7edd9099;
+        100px 0 #7edd9099;
 }
 
 @keyframes animate {
@@ -171,7 +171,7 @@ main {
         gap: 10px;
     }
 
-    .swiper-slide > img {
+    .swiper-slide>img {
         width: 40%;
         height: 80%;
         max-height: 300px;
@@ -184,15 +184,15 @@ main {
         gap: 20px;
     }
 
-    .title > h1 {
+    .title>h1 {
         font-size: 1.2rem;
     }
 
-    .title > h3 {
+    .title>h3 {
         font-size: 1rem;
     }
 
-    .content > p {
+    .content>p {
         font-size: 0.9rem;
     }
 
@@ -224,7 +224,7 @@ main {
         gap: 5px;
     }
 
-    .swiper-slide > img {
+    .swiper-slide>img {
         width: 50%;
         height: auto;
         max-height: 300px;
@@ -239,15 +239,15 @@ main {
         gap: 15px;
     }
 
-    .title > h1 {
+    .title>h1 {
         font-size: 1.2rem;
     }
 
-    .title > h3 {
+    .title>h3 {
         font-size: 1rem;
     }
 
-    .content > p {
+    .content>p {
         font-size: 0.9rem;
     }
 
