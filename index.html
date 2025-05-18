@@ -55,11 +55,11 @@
     </div>
 
     <header class="header1">
-        <nav class="navbar" class="nav-bg1">
+        <nav class="navbar">
             <a href="index.html">
                 <div class="flex-container">
                     <div class="flex-item-left"><img src="./assets/images/logo.png" width="37px" height="37px"></div>
-                    <div class="flex-item-right" class="logo">Beautiify</div>
+                    <div class="flex-item-right">Beautiify</div>
                 </div>
             </a>
 
@@ -82,8 +82,19 @@
                 <li class="nav-item">
                     <a href="./assets/html_files/contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> Contact</a>
                 </li>
+                <li class="nav-item color-dropdown">
+                    <a href="#" class="nav-link"><i class="fa-solid fa-palette"></i> Theme</a>
+                    <div class="color-dropdown-content">
+                        <a href="#" data-color="purple" class="color-option"><span class="color-preview purple-preview"></span>Purple</a>
+                        <a href="#" data-color="dark" class="color-option"><span class="color-preview dark-preview"></span>Dark</a>
+                        <a href="#" data-color="blue" class="color-option"><span class="color-preview blue-preview"></span>Blue</a>
+                        <a href="#" data-color="green" class="color-option"><span class="color-preview green-preview"></span>Green</a>
+                        <a href="#" data-color="orange" class="color-option"><span class="color-preview orange-preview"></span>Orange</a>
+                    </div>
+                </li>
             </ul>
-            <button id="dark-mode-toggle"></button>
+            
+            <!-- <button id="dark-mode-toggle"></button> -->
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>

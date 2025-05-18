@@ -198,50 +198,7 @@ html {
     scroll-behavior: smooth;
 }
 
-button#dark-mode-toggle {
-    background-image: url('assets/images/theme-mode.png');
-    background-color: transparent;
-    background-size: cover;
-    position: fixed;
-    top: 5.5px;
-    right: 16px;
-    border: none;
-    padding: 10px;
-    outline: none;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    z-index: 999;
-    margin-top: 4px;
-    transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-button#dark-mode-toggle:hover {
-    transform: scale(1.2);
-    animation: shine 1.5s infinite ease-in-out;
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 0 0 20px 10px rgba(255, 255, 255, 0.3);
-}
-
-/* Keyframes for glowing animation */
-@keyframes shine {
-    0% {
-        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 0 0 20px 10px rgba(255, 255, 255, 0.3);
-    }
-
-    50% {
-        box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.7), 0 0 30px 15px rgba(255, 255, 255, 0.4);
-    }
-
-    100% {
-        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), 0 0 20px 10px rgba(255, 255, 255, 0.3);
-    }
-}
-
-.dark-mode button#dark-mode-toggle {
-    filter: grayscale(100%);
-}
-
+/* Header styling for themes - updated for consistent look */
 .header1 {
     position: sticky;
     top: 0;
@@ -251,6 +208,8 @@ button#dark-mode-toggle:hover {
     background-image: url(./assets/images/navbar.png);
     background-size: cover;
     background-position: 50% 50%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .dark-mode .header1 {
@@ -267,6 +226,8 @@ button#dark-mode-toggle:hover {
     background-image: url(./assets/images/bg3.png);
     background-size: cover;
     background-position: 50% 50%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .dark-mode .header2 {
@@ -284,6 +245,8 @@ button#dark-mode-toggle:hover {
     background-image: url(./assets/images/bg2.png);
     background-size: cover;
     background-position: 50% 50%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .dark-mode .header3 {
@@ -294,9 +257,9 @@ button#dark-mode-toggle:hover {
 .navbar {
     margin: 0 auto;
     z-index: 1000;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 21px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
@@ -348,7 +311,8 @@ nav {
 nav ul {
     display: flex;
     gap: 1rem;
-    margin-right: 61px;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 nav li {
@@ -556,6 +520,44 @@ section {
     background: #b1c2d4;
 }
 
+/* Blue theme Get Components button style */
+body.blue-bg .comp-section .compcontainer .started {
+    color: rgb(12, 52, 102);
+    background: linear-gradient(to bottom, #6dd5fa, #c8eeff);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(41, 128, 185, 0.7);
+}
+
+body.blue-bg .comp-section .compcontainer .started:hover {
+    background: linear-gradient(to bottom, #c8eeff, #ffffff);
+    border: 2px solid rgba(41, 128, 185, 0.7);
+}
+
+/* Green theme Get Components button style */
+body.green-bg .comp-section .compcontainer .started {
+    color: rgb(27, 94, 32);
+    background: linear-gradient(to bottom, #a8e063, #d7ffa5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(86, 171, 47, 0.7);
+}
+
+body.green-bg .comp-section .compcontainer .started:hover {
+    background: linear-gradient(to bottom, #d7ffa5, #ffffff);
+    border: 2px solid rgba(86, 171, 47, 0.7);
+}
+
+/* Orange theme Get Components button style */
+body.orange-bg .comp-section .compcontainer .started {
+    color: rgb(130, 60, 0);
+    background: linear-gradient(to bottom, #ffc837, #ffe0a3);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(255, 128, 8, 0.7);
+}
+
+body.orange-bg .comp-section .compcontainer .started:hover {
+    background: linear-gradient(to bottom, #ffe0a3, #ffffff);
+    border: 2px solid rgba(255, 128, 8, 0.7);
+}
 
 /* Container Section Css */
 
@@ -1006,6 +1008,209 @@ footer {
     height: 450px;
     object-fit: cover;
     border-radius: 25px;
+}
+
+.color-dropdown {
+    position: relative;
+}
+
+.color-dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    border-radius: 10px;
+    padding: 10px;
+    right: 0;
+}
+
+.color-dropdown:hover .color-dropdown-content {
+    display: block;
+}
+
+.color-option {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+.color-option:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.color-preview {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dark-preview {
+    background: linear-gradient(45deg, #232526, #414345);
+}
+
+.blue-preview {
+    background: linear-gradient(45deg, #2980b9, #6dd5fa);
+}
+
+.green-preview {
+    background: linear-gradient(45deg, #56ab2f, #a8e063);
+}
+
+.orange-preview {
+    background: linear-gradient(45deg, #ff8008, #ffc837);
+}
+
+.purple-preview {
+    background: linear-gradient(45deg, #9c27b0, #d559e2);
+}
+
+body.pink-bg {
+    background-image: url(./assets/images/bg1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+body.dark-bg {
+    background-image: url(./assets/images/dbg.jpg);
+    background-color: #222222;
+    color: #eeeeee;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+body.blue-bg {
+    background-image: url(./assets/images/bg_blue.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+body.green-bg {
+    background-image: url(./assets/images/bg_green.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+body.orange-bg {
+    background-image: url(./assets/images/bg_orange.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+body.blue-bg .header1, body.blue-bg .header2, body.blue-bg .header3 {
+    background-image: none;
+    background: linear-gradient(135deg, rgba(41, 128, 185, 0.3), rgba(109, 213, 250, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+body.blue-bg .navbar {
+    background: linear-gradient(135deg, rgba(41, 128, 185, 0.2), rgba(109, 213, 250, 0.4));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+body.blue-bg .nav-menu .nav-item .nav-link::after {
+    background: #2980b9;
+}
+
+body.blue-bg .nav-menu .nav-item .nav-link:hover {
+    color: #2980b9;
+}
+
+body.blue-bg nav li:hover {
+    background-color: rgba(41, 128, 185, 0.3);
+}
+
+body.green-bg .header1, body.green-bg .header2, body.green-bg .header3 {
+    background-image: none;
+    background: linear-gradient(135deg, rgba(86, 171, 47, 0.3), rgba(168, 224, 99, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+body.green-bg .navbar {
+    background: linear-gradient(135deg, rgba(86, 171, 47, 0.2), rgba(168, 224, 99, 0.4));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+body.green-bg .nav-menu .nav-item .nav-link::after {
+    background: #56ab2f;
+}
+
+body.green-bg .nav-menu .nav-item .nav-link:hover {
+    color: #56ab2f;
+}
+
+body.green-bg nav li:hover {
+    background-color: rgba(86, 171, 47, 0.3);
+}
+
+body.orange-bg .header1, body.orange-bg .header2, body.orange-bg .header3 {
+    background-image: none;
+    background: linear-gradient(135deg, rgba(255, 128, 8, 0.3), rgba(255, 200, 55, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+body.orange-bg .navbar {
+    background: linear-gradient(135deg, rgba(255, 128, 8, 0.2), rgba(255, 200, 55, 0.4));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+body.orange-bg .nav-menu .nav-item .nav-link::after {
+    background: #ff8008;
+}
+
+body.orange-bg .nav-menu .nav-item .nav-link:hover {
+    color: #ff8008;
+}
+
+body.orange-bg nav li:hover {
+    background-color: rgba(255, 128, 8, 0.3);
+}
+
+body.dark-bg .header1, body.dark-bg .header2, body.dark-bg .header3 {
+    background-image: none;
+    background: linear-gradient(135deg, rgba(34, 34, 34, 0.7), rgba(17, 17, 17, 0.9));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+body.dark-bg .navbar {
+    background: linear-gradient(135deg, rgba(34, 34, 34, 0.5), rgba(17, 17, 17, 0.7));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+@keyframes bgShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 /* Media queries for responsiveness */
