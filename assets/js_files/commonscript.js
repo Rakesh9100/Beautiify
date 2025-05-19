@@ -1,9 +1,81 @@
 // Dark mode
-function toggleDarkMode() {
-    const body = document.body;
-    body.classList.toggle("dark-mode");
-    localStorage.setItem("darkMode", body.classList.contains("dark-mode"));
+// function toggleDarkMode() {
+//     const body = document.body;
+//     body.classList.toggle("dark-mode");
+//     localStorage.setItem("darkMode", body.classList.contains("dark-mode"));
+// }
+// Function to show and hide the color picker popup
+function toggleColorPicker() {
+    const popup = document.getElementById("color-picker-popup");
+    popup.style.display = popup.style.display === "flex" ? "none" : "flex";
 }
+
+// Function to apply the selected color and save the preference
+function applyColor(color) {
+    console.log("Applying color:", color); // 调试
+    const body = document.body;
+    body.style.backgroundColor = color;
+// 移除现有的模式类
+    body.classList.remove("dark-mode", "blue-mode", "yellow-mode");
+
+    // // Change dark-mode based on the color selection
+    // if (color === "#222222") {
+    //     body.classList.add("dark-mode");
+    // } else {
+    //     body.classList.remove("dark-mode");
+    // }
+// 根据选择的颜色设置对应的背景色和文字色
+    // 根据选择的颜色添加对应的类
+    if (color === "#222222") {
+        body.classList.add("dark-mode");
+    } else if (color === "#1327ff") {
+        body.classList.add("blue-mode");
+    } else if (color === "#f7f26c") {
+        body.classList.add("yellow-mode");
+    }
+    // Save the selected color preference to localStorage
+    localStorage.setItem("colorMode", color);
+
+    // Close the popup after selection
+    document.getElementById("color-picker-popup").style.display = "none";
+}
+
+// Function to load saved color preference
+function loadSavedColor() {
+    const savedColor = localStorage.getItem("colorMode");
+    if (savedColor) {
+        document.body.style.backgroundColor = savedColor;
+        if (savedColor === "#222222") {
+            document.body.classList.add("dark-mode");
+        }else if (savedColor === "#1327ff") {
+            document.body.classList.add("blue-mode");
+        } else if (savedColor === "#f7f26c") {
+            document.body.classList.add("yellow-mode");
+        }
+
+    }
+}
+
+// Initialize by loading the saved color
+loadSavedColor();
+
+// Event listeners
+document.getElementById("dark-mode-toggle").addEventListener("click", toggleColorPicker);
+
+// Close popup when user clicks on the close button
+document.getElementById("close-popup").addEventListener("click", function () {
+    document.getElementById("color-picker-popup").style.display = "none";
+});
+
+// Add event listener to color options
+//遍历所有具有 color-option 类的元素并为它们添加点击事件
+const colorOptions = document.querySelectorAll(".color-option");
+colorOptions.forEach(option => {
+    option.addEventListener("click", function () {
+        const selectedColor = option.getAttribute("data-color");
+        applyColor(selectedColor);
+    });
+});
 
 // Check for saved preference on page load
 const savedPreference = localStorage.getItem("darkMode");
