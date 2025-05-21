@@ -38,12 +38,13 @@ main {
     z-index: 10;
 }
 
-/* SLIDE-IN/SLIDE-OUT ANIMATIONS */
+/* Slide-In/Slide-Out Animations */
 @-webkit-keyframes slidein {
     0% {
         top: -100%;
         opacity: 0;
     }
+
     100% {
         top: 0;
         opacity: 1;
@@ -55,6 +56,7 @@ main {
         top: -100%;
         opacity: 0;
     }
+
     100% {
         top: 0;
         opacity: 1;
@@ -66,6 +68,7 @@ main {
         top: 0;
         opacity: 1;
     }
+
     100% {
         top: -100%;
         opacity: 0;
@@ -77,13 +80,13 @@ main {
         top: 0;
         opacity: 1;
     }
+
     100% {
         top: -100%;
         opacity: 0;
     }
 }
 
-/* SWIPER */
 .swiper {
     max-width: 750px;
     width: 100%;
@@ -110,7 +113,7 @@ main {
     border: 2px solid rgba(255, 255, 255, 0.1);
     background: #23232a;
     box-shadow: inset 18px 18px 8px rgba(0, 0, 0, 0.2),
-    inset -10px -18px 8px rgba(255, 255, 255, 0.1);
+        inset -10px -18px 8px rgba(255, 255, 255, 0.1);
     position: relative;
     overflow: hidden;
 }
@@ -170,7 +173,6 @@ main {
     background-color: #ffffff;
 }
 
-/* ANIMATED BACKGROUND */
 .particles {
     position: fixed;
     top: 0;
@@ -215,15 +217,17 @@ main {
     0% {
         transform: translateY(120vh) scale(0, 0) rotate(180deg);
     }
+
     20% {
         transform: translateY(100vh) scale(1, 1) rotate(0deg);
     }
+
     100% {
         transform: translateY(-120vh) scale(0.5, 0.5) rotate(360deg);
     }
 }
 
-/* RESPONSIVENESS */
+/* Responsiveness */
 @media (max-width: 900px) {
     main {
         padding: 0 10px;
