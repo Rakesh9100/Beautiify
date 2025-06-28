@@ -159,7 +159,7 @@ if (SpeechRecognition) {
             newtranscript = transcript.endsWith('.') ? transcript.slice(0, -1) : transcript;
             console.log(newtranscript)
             searchBarInput.value = newtranscript;
-            filterComponents();
+            searchBarInput.dispatchEvent(new Event("input", { bubbles: true }));
         }
     }
 } else {
