@@ -5,6 +5,13 @@
     padding: 0;
     margin: 0;
 }
+.color-picker-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;  /* 确保弹窗位于页面最上层 */
+}
 
 body {
     font-family: 'Playfair Display', serif;

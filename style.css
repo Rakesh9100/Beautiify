@@ -9,12 +9,13 @@
 }
 
 :root {
-    --primary: #ff1b82;
-    --secondary: #ffffff;
-    --ternary: #1327ff;
-    --light: #f7f26c;
-    --dark: #f50414;
+    --primary: #ff1b82;  /* 主色 */
+    --secondary: #ffffff; /* 次色 */
+    --ternary: #1327ff;  /* 备用色 */
+    --light: #f7f26c;    /* 浅色 */
+    --dark: #f50414;     /* 深色 */
 }
+
 
 /* Scrollbar Css */
 
@@ -177,16 +178,35 @@ body {
 }
 
 .dark-mode {
-    background-color: #222222;
-    color: #eeeeee;
-    background-image: url(./assets/images/dbg.jpg);
+    background-color: #222222;/* 设置深色模式背景色为深灰色 */
+    color: #eeeeee;/* 设置深色模式下的文字颜色为浅灰色 */
+    background-image: url(./assets/images/dbg.jpg);/* 设置深色模式下背景图片为 dbg.jpg */
+}
+/*这段代码表示，当页面应用 dark-mode 类时，背景色变为深色，文字颜色为浅色，并且背景图片变为 dbg.jpg。*/
+/*对于浅色模式，默认情况下，页面没有 .dark-mode 类，因此会应用默认的浅色模式。*/
+.blue-mode {
+    background-color: #1327ff; /* 蓝色背景 */
+    color: #ffffff; /* 白色文字 */
+    background-image: url(./assets/images/lanse.jpg);
+}
+.yellow-mode {
+    background-color: #f7f26c; /* 黄色背景 */
+    color: #333333; /* 黑色文字 */
+    background-image: url(./assets/images/huanse.jpg);
 }
 
 body .dark-mode {
-    background-image: none;
-    background-color: black;
+    background-image: none; /* 取消深色模式下的背景图片 */
+    background-color: black; /* 设置背景色为黑色 */
 }
-
+body .blue-mode {
+    background-image: none; /* 取消深色模式下的背景图片 */
+    background-color: blue; /* 设置背景色为蓝色 */
+}
+body .yellow-mode {
+    background-image: none; /* 取消深色模式下的背景图片 */
+    background-color: yellow; /* 设置背景色为黄色 */
+}
 html {
     font-size: 62.5%;
 }
@@ -257,7 +277,14 @@ button#dark-mode-toggle:hover {
     background-image: none;
     background-color: black;
 }
-
+.blue-mode .header1 {
+    background-image: none;
+    background-color: blue;
+}
+.yellow-mode .header1 {
+    background-image: none;
+    background-color: yellow;
+}
 .header2 {
     position: sticky;
     top: 0;
@@ -273,7 +300,14 @@ button#dark-mode-toggle:hover {
     background-image: none;
     background-color: black;
 }
-
+.blue-mode .header2 {
+    background-image: none;
+    background-color: blue;
+}
+.yellow-mode .header2 {
+    background-image: none;
+    background-color: yellow;
+}
 .header3 {
     position: fixed;
     top: 0;
@@ -291,6 +325,14 @@ button#dark-mode-toggle:hover {
     background-image: none;
 }
 
+.blue-mode .header3 {
+    background-color: blue;
+    background-image: none;
+}
+.yellow-mode .header3 {
+    background-image: none;
+    background-color: yellow;
+}
 .navbar {
     margin: 0 auto;
     z-index: 1000;
@@ -592,16 +634,26 @@ section {
     border: 3px solid rgb(108, 155, 202);
     box-shadow: 1px 1px 2px 1px rgb(91, 131, 164);
 }
+.blue-mode .container .box {
+    background: linear-gradient(to bottom, #9e97e6, #ffffff);
+    border: 3px solid rgb(108, 155, 202);
+    box-shadow: 1px 1px 2px 1px rgb(91, 131, 164);
+}
 
 .dark-mode .container .box:hover {
     background: rgb(79, 97, 112);
     border: 3px solid rgba(234, 223, 244, 0.743);
     box-shadow: 1px 1px 2px 1px rgba(224, 202, 245, 0.743);
 }
-
+.blue-mode .container .box:hover {
+    background: rgb(79, 97, 112);
+    border: 3px solid rgba(234, 223, 244, 0.743);
+    box-shadow: 1px 1px 2px 1px rgba(224, 202, 245, 0.743);
+}
 .container .zoom-effect {
     transition: transform 0.5s ease-in-out;
 }
+
 
 .container .zoom-effect:hover {
     transform: scale(1.04);
@@ -628,6 +680,10 @@ section {
     text-shadow: 1px 1px 2px black, 1px 1px 2px #a5b9c5;
 }
 
+.blue-mode .container .box .content i {
+    text-shadow: 1px 1px 2px black, 1px 1px 2px #a5b9c5;
+}
+
 .container .box .content h2 {
     font-size: 23px;
     font-weight: 500px;
@@ -648,7 +704,11 @@ section {
     color: rgba(253, 252, 253, 0.743);
     text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(175, 189, 200);
 }
-
+.blue-mode .container .box:hover .content i,
+.blue-mode .container .box:hover .content h2 {
+    color: rgba(253, 252, 253, 0.743);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px rgb(175, 189, 200);
+}
 /* Footer Css */
 
 footer {
@@ -1196,4 +1256,58 @@ footer {
         width: 280px !important;
         margin: 15px !important;
     }
+}
+
+
+
+/* Popup for color selection */
+.color-picker-popup {
+    position: fixed;
+    top: 50%; /* Adjust the top position */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    width: 300px; /* Adjust the width if necessary */
+    height: auto;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.color-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.color-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.color-option:hover {
+    opacity: 0.8;
 }

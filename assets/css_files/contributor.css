@@ -60,19 +60,35 @@ body {
     background-color: grey;
     border: 2px solid black;
 }
-
+.blue-mode .contributors .heading-box {
+    background-color: #1a2a4a; /* 更深的蓝色背景 */
+    border: 2px solid #3a5fcd; /* 亮蓝色边框 */
+}
+.yellow-mode .contributors .heading-box {
+    background-color: yellow;
+    border: 2px solid yellowgreen;
+}
 .dark-mode .contributors .heading-box:after {
     border-top-color: grey;
 }
-
+.blue-mode .contributors .heading-box:after {
+    border-top-color: blue;
+}
+.yellow-mode .contributors .heading-box:after {
+    border-top-color: yellow;
+}
 .dark-mode .contributors .heading {
     color: white;
 }
-
+.blue-mode .contributors .heading {
+    color: white;
+}
 .dark-mode .contributors .heading:hover {
     color: lightgrey;
 }
-
+.blue-mode .contributors .heading:hover {
+    color: lightgrey;
+}
 .contributors {
     margin: 0;
     padding: 0;
@@ -81,12 +97,21 @@ body {
 .dark-mode .contributors h1 {
     color: beige;
 }
-
+.blue-mode .contributors h1 {
+    color: beige;
+}
 .dark-mode header.header2 {
     background-image: none;
     background-color: black;
 }
-
+.blue-mode header.header2 {
+    background-image: none;
+    background-color: blue;
+}
+.yellow-mode header.header2 {
+    background-image: none;
+    background-color: yellow;
+}
 #contributor {
     margin-top: 10px;
     display: flex;
