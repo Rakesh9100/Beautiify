@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ab {
+    height: 72px;
+    width: 72px;
+    background-color: #e8e2f6;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    border-radius: 18px;
+    border: 0.5px solid;
+    overflow: hidden;
+    transition: height 300ms;
+}
+
+.ab.active {
+    height: 246px;
+}
+
+.plus {
+    transition: transform 200ms;
+}
+
+.ab.active .plus {
+    transform: rotate(45deg);
+}
+
+.item {
+    display: none;
+}
+
+.ab.active .item {
+    display: inline;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+}
