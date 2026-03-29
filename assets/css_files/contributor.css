@@ -110,7 +110,7 @@ body {
 
 .contributor-card:hover {
     transform: scale(1.22);
-    opacity: 10;
+    opacity: 0.5;
 }
 
 .contributor-card img {
