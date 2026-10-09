@@ -130,6 +130,11 @@
         "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Quotes-Card"
     },
     {
+        "title": "Rating Card",
+        "previewLink": "../../Components/Cards/Rating-Card/index.html",
+        "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Rating-Card"
+    },
+    {
         "title": "Slider Card",
         "previewLink": "../../Components/Cards/Slider-Card/index.html",
         "sourceLink": "https://github.com/Rakesh9100/Beautiify/tree/main/Components/Cards/Slider-Card"

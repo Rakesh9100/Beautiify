@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff8f2">
+    <title>Rating Card | Beautiify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="rating-page">
+        <article class="rating-card">
+            <div class="food-image">
+                <img
+                    src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=900&q=80"
+                    alt="A comforting bowl of noodles"
+                    class="dish-photo"
+                    id="dishPhoto"
+                >
+                <span class="photo-label">TODAY'S PICK</span>
+            </div>
+
+            <div class="card-content">
+                <div class="card-topline">
+                    <span class="category-label">A LITTLE TASTE OF HAPPINESS</span>
+                    <span class="rating-badge" id="ratingBadge">0.0 / 5</span>
+                </div>
+
+                <h1 id="dishName">Cheesy Masala Maggi</h1>
+                <p class="dish-description" id="dishDescription">A warm, spicy bowl of comfort for slow, rainy evenings.</p>
+
+                <div class="dish-details">
+                    <span id="dishTag">Comfort food</span>
+                    <span id="dishPrice">₹60</span>
+                </div>
+
+                <section class="rating-section" aria-labelledby="ratingTitle">
+                    <div class="rating-heading">
+                        <h2 id="ratingTitle">RATE YOUR CRAVING</h2>
+                        <span id="ratingHint" aria-live="polite">Choose your favourite</span>
+                    </div>
+
+                    <label class="select-label" for="foodType">Choose a food</label>
+                    <select id="foodType">
+                        <option value="maggi">Maggi</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="coffee">Coffee</option>
+                        <option value="cupcake">Cupcake</option>
+                        <option value="sushi">Sushi</option>
+                    </select>
+
+                    <div class="food-rating" id="foodRating" role="group" aria-label="Rate this food from 1 to 5">
+                        <button class="rating-icon" type="button" data-rating="1" aria-label="1 out of 5" aria-pressed="false">🍜</button>
+                        <button class="rating-icon" type="button" data-rating="2" aria-label="2 out of 5" aria-pressed="false">🍜</button>
+                        <button class="rating-icon" type="button" data-rating="3" aria-label="3 out of 5" aria-pressed="false">🍜</button>
+                        <button class="rating-icon" type="button" data-rating="4" aria-label="4 out of 5" aria-pressed="false">🍜</button>
+                        <button class="rating-icon" type="button" data-rating="5" aria-label="5 out of 5" aria-pressed="false">🍜</button>
+                    </div>
+
+                    <div class="rating-summary">
+
+                        <span class="rating-caption" id="ratingCaption" aria-live="polite">Ready for a rating</span>
+                    </div>
+                </section>
+
+                <div class="review-note">
+                    <span class="note-mark" aria-hidden="true">“</span>
+                    <p id="reviewText">One bite, and suddenly the whole day feels better.</p>
+                </div>
+
+                <button class="reset-rating" id="resetRating" type="button">
+                    Reset rating <span aria-hidden="true">↺</span>
+                </button>
+            </div>
+        </article>
+
+        <p class="page-footnote">Made for the food we love <span aria-hidden="true">♡</span></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
